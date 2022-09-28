@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2NkPIOxFZUjioYZn+9i3/Z3lQEEKclBtC7rZyO427yQ=",
+  "Hash": "QYnHdt6Ar/lrhxOg6prp8vLqFU/+0Z2DJ+vDTHwXhVI=",
   "Source": "MvcAlecScripts",
   "BasePath": "_content/MvcAlecScripts",
   "Mode": "Default",
@@ -51,6 +51,40 @@
       "OriginalItemSpec": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/obj/Debug/net6.0/scopedcss/projectbundle/MvcAlecScripts.bundle.scp.css"
     },
     {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/wwwroot/.DS_Store",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/wwwroot/css/prism.css",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "css/prism.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/prism.css"
+    },
+    {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/wwwroot/css/site.css",
       "SourceId": "MvcAlecScripts",
       "SourceType": "Discovered",
@@ -83,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/wwwroot/js/prism.js",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "js/prism.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/prism.js"
     },
     {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/wwwroot/js/site.js",

@@ -1,0 +1,233 @@
+@{
+    ViewData["Title"] = "Python - Functions";
+    string[] Toc = {
+            "Types", "Creating", "Calling",
+            "Docstrings", "Return", "Pass",
+            "Scope", "Arguments"
+            };
+}
+<div class="text-center my-5">
+    <h3 class="display-4 rounded-3">Python - Functions</h3>
+</div>
+<div style="border-bottom: 1px solid rgb(1,1,1,.09);" class="text-left pb-3">
+    
+    <ul class="toc-container">
+    @foreach (var item in Toc)
+    {
+       <li><a class="link" href="#@item">@item</a></li>
+    }
+    </ul>
+  
+</div>
+
+<div class="text-left pt-3" >
+    <h6 id="Types" class="display-6">
+        Types
+    </h6>
+    <div class="container bg-light p-5 shadow-sm mb-5">
+        <p>
+            Python has built in functions and user defined functions. Some built-in functions include abs() and len() while user defined functions are named with the <code class="language-python">def</code> keyword.
+        </p>
+        <p>
+            See <a title="https://docs.python.org/3/library/functions.html" style="text-decoration: none;" href="https://docs.python.org/3/library/functions.html">Built-ins</a>
+        </p>
+        <p>
+            Functions are dynamic in python, meaning they can accept any object as input and return any object, including other functions, as output without the user having to specify the type.
+        </p>
+    </div>
+    <h6 id="Creating" class="display-6">
+        Creating
+    </h6>
+    <div class="container bg-light p-5 shadow-sm mb-5">
+        <p>
+            User-defined functions have a couple syntax rules:
+            <ul>
+                <li>
+                    <code class="language-python">def</code> followed by function name
+                </li>
+                <li>
+                    Parenthesis and a colon <code class="language-python">():</code> after function name
+                </li>
+                <li>
+                    A tab <code class="language-python">"\t"</code> to indicate the function body
+                </li>
+            </ul>
+            Example:
+            <pre><code class="language-py">
+def print_something():
+    print("something")   
+            </code></pre>
+            <code class="language-python">print_something</code> is the function name, followed by parenthesis, a colon and a tab
+            to start the body. There has to be an indent for the function, or python will throw an error.
+            
+        </p>
+    </div>
+    
+    <h6 id="Calling" class="display-6">
+        Calling
+    </h6>
+    <div class="container bg-light p-5 shadow-sm mb-5">
+        <p>
+            Functions only act when they are called<code class="language-python">()</code>. Calling a function 
+            is the same thing as running a function. Take the <code class="language-python">  print_something</code> function defined earlier. 
+            It will not print something until it is called: <code class="language-python">print_something()</code> -> <code class="language-python">"something"</code>.
+        </p>
+        <p>
+            Functions also act in the traditional sense of taking in inputs and returning them. If something 
+            is returned it needs to be assigned to a variable.
+        </p>
+        <pre><code class="language-py">
+def call_me():
+    print("I was called")
+
+# call function
+call_me()
+
+# Output
+# "I was called"</code></pre>
+    </div>
+
+    <h6 id="Docstrings" class="display-6">
+        Docstrings
+    </h6>
+    <div class="container bg-light p-5 shadow-sm mb-5 ">
+        <p>A docstring is a multiline string at the beginning of a function to describe what it does and why.
+            They are simple enough to use, having to put three quotes before and after it. 
+            Technically speaking, Docstrings and triple quoted strings are different things.
+            Triple quoted strings can be used for anything, 
+            but they are mostly used as docstrings.
+        </p>
+        <pre><code class="language-py">
+def function():
+    '''          &lt;- docstring start
+    This is a docstring.
+    It is multiline and  
+    describes the function.
+    '''          # &lt;- docstring end
+    ...          # &lt;- "..." tells python the function will be wrote later 
+
+        </code></pre>
+        <div class="tip">
+            <p class="bg-dark text-light p-3 rounded-3">
+                To get the docstring of a function, 
+                use the <code class="language-python">__doc__</code> magic variable. 
+            </p>
+        </div>
+        <pre><code class="lang-py">print(function.__doc__)
+    # Outputs
+    '''          <- docstring start
+    This is a docstring.
+    It is multiline and  
+    describes the function.
+    '''</code></pre>
+    </div>
+
+    <h6 id="Return" class="display-6">
+        Return Values
+    </h6>
+    <div class="container bg-light p-5 shadow-sm mb-5">
+        <p>
+            The <code class="language-python">return</code> keyword is used to return a 
+            value from a function. When it returns a value, 
+            it stops the function and accepts whatever value
+            it returned on that call.
+        </p>
+        <pre><code class="language-py">
+# Example Function
+def absolute_value(n):
+    """
+    Return |n| (absolute value)
+    Get |n| by multiplying n 
+    by -1 if negative, else n 
+    """
+    # return n * -1 if n is negative else return n
+    return n * -1 if n &lt; 0 else n
+
+# Capture Output of absolute_value function
+x = absolute_value(-9)
+
+# display x
+print(x) # --&gt; 9
+        </code></pre>
+
+    <p>
+        If a return value is not supplied the function will return an 
+        implicit <code class="language-python">None</code>. 
+    </p>
+
+    </div>
+
+    <h6 id="Pass" class="display-6">
+        Pass
+    </h6>
+    <div class="container bg-light p-5 shadow-sm mb-5">
+        <p>
+            <code class="language-python">pass</code> is a keyword that tells python
+            not to do anything. Normally, if a function
+            is defined with no body an error is thrown, but, by 
+            using pass, one can overcome that. <code class="language-python">...</code> can 
+            also be used.
+        </p>
+        <pre><code class="language-python">
+def do_nothing():
+    pass # or use ...
+do_nothing()
+# No error is thrown
+
+# Error without pass
+def do_nothing():
+
+# IndentationError: expected an indented 
+# block after function definition...
+</code></pre>
+    </div>
+
+    <h6 id="Scope" class="display-6">
+        Scope
+    </h6>
+   <div class="container bg-light p-5 shadow-sm mb-5">
+        <p>
+            Scope in function terms is what a function can and cannot see/access. Variables 
+            defined inside the function will be in the function scope. If a variable is
+            defined in another function, not every other function has access to that variable.
+            Only the function it is inside of.
+        </p>    
+        <pre><code class="language-python">
+def f():
+    var = 2
+def f2():
+    print(var)
+# NameError: name 'var' is not defined.
+        </code></pre>
+        
+    </div>
+
+    <h6 id="Arguments" class="display-6">
+        Arguments
+    </h6>
+   <div class="container bg-light p-5 shadow-sm mb-5">
+
+        <p>
+            Arguments are objects that are passed into the function. Positional
+            arguments go first, followed by keyword arguments. These keyword arguments
+            can have a default value and therefore be optional.
+        </p>
+        <pre><code class="language-python">def foo(a, b, c="c"):
+    print(c)
+foo()
+# c</code></pre>
+
+    <p>
+        In the above example a and b are positional arguments and c is
+        a keyword argument. To mark an argument as <i>keyword-only</i> use 
+        the <code class="lang-py">*</code> symbol after the argument.<br> <code class="lang-py">def foo(a, b, c, *)</code>
+        Here, c has to be given a keyword when called. If c is passed in as a positional argument, python will throw a TypeError:
+        <pre><code  class=" lang-py">TypeError: foo() takes 0 positional arguments but 1 was given</code></pre>
+    </p>
+    
+    </div>
+    
+    
+</div>
+ 
+    

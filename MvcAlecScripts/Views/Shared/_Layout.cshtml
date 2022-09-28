@@ -7,12 +7,86 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MvcAlecScripts.styles.css" asp-append-version="true" />
+    @* Google fonts *@
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    @* /Google fonts *@
+
+    @* /Prism CSS *@
+    <link rel="stylesheet" href="~/css/prism.css" asp-append-version="true" />
 </head>
+
+@{
+    string[] Toc = {
+            "Types", "Creating", "Calling",
+            "Docstrings", "Return", "Pass",
+            "Scope", "Arguments"
+            };
+    string toc = "Types Creating Calling Docstrings Return Pass Scope";
+    ViewData["toc_python"] = toc;
+}
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom shadow-sm mb-3">
+    <nav class="sticky-top">
+        <div class="shadow-sm" id="sidebar">
+            <nav>
+                <a class="sidebar-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </nav>
+            <nav>
+                <a class="sidebar-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </nav>
+            <nav>
+                <button id='b1' class="  btn-custom " onclick="showID('py-func-master'), flip('b1')"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                                                                </svg> 
+                    </button>
+                <a class="sidebar-link" asp-area="" asp-controller="Python" asp-action="Index">Python</a>
+            </nav>
+                    @* Set hidden to display none with js or c# *@
+                <nav id="py-func-master" class="hidden"> 
+                    <div>
+                        <a class="link" href="~/Python/split">Split</a>
+                    </div>
+                    <div>
+                        <a class="link" asp-controller="Python" asp-action="passwords" >Passwords</a>
+                    </div>
+                    
+                <nav>
+                    
+                    
+                        <button id='b2' class="  btn-custom " onclick="showID('py-functions-sidebar'), flip('b2')"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                                                                </svg> 
+                    </button>
+                        <a class="sidebar-link" asp-area="" asp-controller="Python" asp-action="Functions">Functions</a>
+                        
+                    </nav>
+                    <nav id="py-functions-sidebar" class="hidden">
+                        @foreach (var link in Toc)
+                            {
+                                <nav class="indent-2">
+                                    @* This is useful *@
+                                    <a class="link" href="~/Python/Functions#@link">@link</a>
+                                </nav>
+                            }
+                    </nav>
+                </nav>
+            
+
+        </div>
+    </nav>
+    <header class="sticky-top">
+        <nav id="navy" class=" navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom shadow-sm mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Alec Scripts</a>
+                <a id="flipMe" class="sidebarBtn">
+                    <button class="btn" onclick="showID('sidebar'), flip('flipMe')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="dark" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    </button>
+                </a>
+                <a class="navbar-brand text-dark" asp-area="" asp-controller="Home" asp-action="Index">Alec Scripts</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,33 +94,62 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        @* <li class="nav-item">
+                            <a class="nav-link text-black" asp-area="" asp-controller="Home" asp-action="Test">Test Page</a>
+                        </li> *@
+                        
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Test">Test Page</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Python" asp-action="Index">Python</a>
                         </li>
+                        @* <a id="s" class="sidebarBtn">
+                            <button class="btn" onclick="darkMode()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                                </svg>
+                            </button>
+                        </a> *@
                     </ul>
                 </div>
+                
             </div>
         </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+        
 
-    <footer class="border-top footer text-muted">
+ 
+ 
+ 
+ 
+
+    
+    </header>
+    
+
+        <div class="container col-sm-8">
+            <main  id="bodyRender" role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+    <footer class=" border-top footer text-muted">
         <div class="container">
             &copy; 2022 - MvcAlecScripts - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+        <div class="container" style="font-size: small;">
+            Made with .NET | bootstrap | python
+        </div>
+        <div class="container" style="font-size: small;">
+            Designed and made by &rAarr; Alec Sears 
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @* Prism JS *@
+    <script src="~/js/prism.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

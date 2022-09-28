@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Python Page";
+    string[] headers = { "Functions", "Loops", "Data Types" };
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<ul>
+@foreach (var header in headers)
+{
+    <li>@header</li>
+}
+</ul>
