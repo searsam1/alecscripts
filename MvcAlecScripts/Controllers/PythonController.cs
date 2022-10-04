@@ -25,9 +25,14 @@ namespace MvcMovie.Controllers
     {
         return View();
     }
-
+    public IActionResult swapcase()
+    {
+        return View();
+    }
+    public IActionResult vars()
+    {
+        return View();
+    }
     
-
-        
     }
 }

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,9 +9,9 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MvcAlecScripts.styles.css" asp-append-version="true" />
     @* Google fonts *@
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&family=Poppins&display=swap" rel="stylesheet">
     @* /Google fonts *@
 
     @* /Prism CSS *@
@@ -23,8 +24,7 @@
             "Docstrings", "Return", "Pass",
             "Scope", "Arguments"
             };
-    string toc = "Types Creating Calling Docstrings Return Pass Scope";
-    ViewData["toc_python"] = toc;
+    double Version = 1.2;
 }
 
 <body>
@@ -46,13 +46,20 @@
                     @* Set hidden to display none with js or c# *@
                 <nav id="py-func-master" class="hidden"> 
                     <div>
-                        <a class="link" href="~/Python/split">Split</a>
+                        <a class="sidebar-link" href="~/Python/split">Split</a>
                     </div>
                     <div>
-                        <a class="link" asp-controller="Python" asp-action="passwords" >Passwords</a>
+                        <a class="sidebar-link" asp-controller="Python" asp-action="passwords" >Passwords</a>
+                    </div>
+                    <div>
+                        <a class="sidebar-link" asp-controller="Python" asp-action="swapcase" >swapcase</a>
+                    </div>
+                    <div>
+                        <a class="sidebar-link" asp-controller="Python" asp-action="vars" >vars()</a>
                     </div>
                     
                 <nav>
+            
                     
                     
                         <button id='b2' class="  btn-custom " onclick="showID('py-functions-sidebar'), flip('b2')"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -67,13 +74,24 @@
                             {
                                 <nav class="indent-2">
                                     @* This is useful *@
-                                    <a class="link" href="~/Python/Functions#@link">@link</a>
+                                    <a class="sidebar-link" href="~/Python/Functions#@link">@link</a>
                                 </nav>
                             }
                     </nav>
                 </nav>
             
-
+        <nav>
+                <button id='js-sidebar-btn' class="  btn-custom " onclick="showID('js-stuff'), flip('js-sidebar-btn')"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                                                                </svg> 
+                    </button>
+                <a class="sidebar-link" asp-area="" asp-controller="Js" asp-action="Index">JavaScript</a>
+            </nav>
+            <nav id="js-stuff" class="hidden">
+                <a class="sidebar-link">
+                    hidden
+                </a>
+            </nav>
         </div>
     </nav>
     <header class="sticky-top">
@@ -103,6 +121,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Python" asp-action="Index">Python</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Js" asp-action="Index">JavaScript</a>
+                        </li>
                         @* <a id="s" class="sidebarBtn">
                             <button class="btn" onclick="darkMode()">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-moon-fill" viewBox="0 0 16 16">
@@ -115,32 +136,46 @@
                 
             </div>
         </nav>
-        
-
- 
- 
- 
- 
-
-    
     </header>
-    
-
         <div class="container col-sm-8">
-            <main  id="bodyRender" role="main" class="pb-3">
-                @RenderBody()
+            <main  id="bodyRender" role="main" class="pb-3 ">
+                <div class="text-center my-5">
+                    <h3 class="display-4 rounded-3">@ViewData["Title"]</h3>
+                </div>
+
+                <div class="text-left pb-3">
+    
+                    <ul class="toc-container">
+                    
+                    @* @foreach (var item in Toc)
+                    {
+                    <li><a class="link" href="#@item">@item</a></li>
+                    } *@
+                    </ul>
+  
+                </div>
+                <div id="mainBody" class="text-left pt-3" >
+                    @RenderBody()
+                </div>
+                
             </main>
         </div>
 
-    <footer class=" border-top footer text-muted">
+    <footer id="foot" class="text-center border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - MvcAlecScripts - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; alecscripts.com &trade; <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
         <div class="container" style="font-size: small;">
             Made with .NET | bootstrap | python
         </div>
         <div class="container" style="font-size: small;">
-            Designed and made by &rAarr; Alec Sears 
+            Designed and made by <i>Alec Sears</i>
+            <p class="box">
+                Version @Version
+            </p>
+            <p>
+                <a class="link" href="https://github.com/searsam1/alecscripts/commits/main">Repository</a>
+            </p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -149,6 +184,7 @@
 
     @* Prism JS *@
     <script src="~/js/prism.js" asp-append-version="true"></script>
+    @* Make toc *@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

@@ -1,0 +1,77 @@
+
+@{
+    ViewData["title"] = "python - vars()";
+}
+
+<h1 class="display-6">
+    Description
+</h1>
+
+<div class="container">
+    <div class="container"> 
+        <p>
+            Returns what <code class="bg-light text-dark p-1">__dict__</code> returns of an object. This 
+            is the dictionary mapping attribute of the supplied object.
+            If an object has no <code class="bg-light text-dark p-1">__dict__</code> attribute it returns a <code class="bg-light text-dark p-1">TypeError</code>.
+        </p>
+        <p>
+            This makes accessing variables names easy and efficient  
+            because of python's dictionaries.
+        </p>
+        <p>
+            If no argument is given it acts like <a href="https://docs.python.org/3/library/functions.html#locals">locals()</a>.
+            This means it will return everything in the __main__ namespace, including all variables. If one were 
+            to call vars() without any arguments inside of a function then it would return 
+            the variables in the scope of that function.
+        </p>
+    </div>
+</div>
+
+<h1 class="display-6">
+    Example 1
+</h1>
+
+<div class="container">
+    <div class="container"> 
+        <pre><code class="lang-py">
+x, y, z = 1, 2, 3
+
+print(vars()) # <--- Call with no argument
+...
+#      
+# 'x': 1, 'y': 2, 'z': 3 <--- Returns locals
+
+        </code></pre>
+
+        <p>
+            Python uses a dictionary for almost everything. 
+            Understanding the history behind them 
+            and why they work is nice to know 
+            when coding. For example, if one needed to access
+            a function given a string input, instead
+            of writing if-else statements, one can 
+            use vars and call the function if its the correct 
+            function.
+        </p>
+        <p>
+            One can think of different data types in python 
+            as islands. Say one needs to go
+            from a string to a function to an integer to a bool.
+            Python has all the tools to go back and forth and
+            vars makes that easier.
+        </p>
+        <p>
+            OOP is nice because it allows for greater abstraction. 
+            Instead of having a box full of strings, I can make the strings 
+            and keep them anywhere in memory while putting their 
+            locations in the box and not the strings themselves. 
+            In order for this to work, however, there needs 
+            to be a way to map things together. That's where dictionaries come in, and knowing 
+            vars() is a good way to enforce this concept.
+        </p>
+    </div>
+</div>
+
+
+
+

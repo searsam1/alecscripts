@@ -9,13 +9,10 @@ for (const cls of hidden){
     cls.style.display = "none";
 }
 
-console.log(hidden);
-
 
 function showID(id){
     let ele = document.getElementById(id);
     let screenWidth = document.getElementsByTagName("body")[0].clientWidth;
-    console.log(screenWidth);
 
     if (!ele.style.display){
         if (screenWidth > 1250){
@@ -68,4 +65,37 @@ function darkMode(){
         body.style.backgroundColor = "black";
         
     }
+}
+
+function createTocLink(e, id_){
+    var li = document.createElement("li");
+    var a = document.createElement("a");
+    var href = document.createAttribute("href")
+    href.value = `#${id_}`
+    a.setAttributeNode(href)
+    a.setAttribute("class", "link")
+    a.textContent = e.textContent.trim(" ")
+    li.appendChild(a)
+    return li;
+}
+
+function createTOC(){
+    headers = document.getElementsByClassName("display-6")
+    toc = document.getElementsByClassName("toc-container")[0]
+    console.log(toc)
+
+    var i = 0;
+    for (header of headers){
+        var att = document.createAttribute("id")
+        att.value = i;
+        i++;
+        header.setAttributeNode(att)
+        toc.appendChild(createTocLink(header, att.value))
+            
+    }
+}
+createTOC();
+
+function copyToClip(){
+    
 }
