@@ -1,7 +1,10 @@
 @{
     ViewData["Title"] = "Python - Home";
+    ViewData["description"] = "Python is a programming language that is easy to learn and use. It refers to Monty Python and not the snake.";
     string[] pythonTOC = {"Split", "Passwords"};
 }
+
+
 
 @{
     string BuiltIns = @"
@@ -123,6 +126,33 @@ __import__()
     List<string> block = new List<string>();
 }
 
+
+<h6 class="display-6">
+    Python Tutorials
+</h6>
+<div class="container">
+    <div class="container">
+       <p>
+        <a class="link" asp-action="functions" asp-controller="Python"> Functions </a>
+       </p>
+       <p>
+        <a class="link" asp-action="passwords" asp-controller="Python"> Passwords </a>
+       </p>
+       <p>
+        <a class="link" asp-action="split" asp-controller="Python"> Split </a>
+       </p>
+       <p>
+        <a class="link" asp-action="swapcase" asp-controller="Python"> Swapcase </a>
+       </p>
+       <p>
+        <a class="link" asp-action="vars" asp-controller="Python"> Vars </a>
+       </p>
+       <p>
+        <a class="link" asp-action="abs" asp-controller="Python"> Abs </a>
+       </p>
+       
+    </div>
+</div>
 
 <h6 class="display-6">
     What is Python?

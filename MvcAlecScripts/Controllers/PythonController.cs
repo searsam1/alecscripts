@@ -3,6 +3,11 @@ using System.Text.Encodings.Web;
 
 namespace MvcMovie.Controllers
 {
+    public class PythonLinks {
+        public static string getLinks(){
+            return "s";
+        }
+    }
     public class PythonController : Controller
     {
         // GET: /Python/
@@ -34,5 +39,19 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult abs()
+    {
+        return View();
+    }
+
+    public IActionResult funnyNumbers()
+    {
+        return View();
+    }
+    public IActionResult stringFormattingTypes()
+    {
+        return View();
+    }
+
     }
 }

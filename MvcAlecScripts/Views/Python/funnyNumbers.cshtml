@@ -1,0 +1,80 @@
+
+@{
+    ViewData["Title"] = "Funny Numbers";
+    ViewData["description"] = "Funny Numbers in Python";
+}
+
+<h1 class="display-6">
+    Funny Numbers
+</h1>
+
+<div class="container">
+    <div class="container">
+        
+        <p>
+            Given a starting value <code>n</code> and a 
+            starting exponent <code>p</code>, loop through each digit and 
+            raise it to the power of p. Add 1 to <code>p</code> on each iteration.
+
+        </p>
+        
+        <pre><code class="lang-py">
+def funny_numbers(n, p):
+	
+    """
+    funny_numbers(89, 1) -> 1
+    funny_numbers(1878, 2) -> 19
+    funny_numbers(10383, 6) -> 12933
+    """
+    
+    sum_, res = 0, [int(i) for i in str(n)]	
+	for i in res:
+		sum_ += (i**p)
+		p += 1
+	return sum_ // n if sum_ % n == 0 else None            
+        
+
+
+        </code></pre>
+
+        <details>
+            <pre><code class="lang-py">
+Test.assert_equals(funny_numbers(89, 1), 1)
+Test.assert_equals(funny_numbers(92, 1), None)
+Test.assert_equals(funny_numbers(46288, 3), 51)
+Test.assert_equals(funny_numbers(114, 3), 9)
+Test.assert_equals(funny_numbers(46288, 5), None)
+Test.assert_equals(funny_numbers(135, 1), 1)
+Test.assert_equals(funny_numbers(175, 1), 1)
+Test.assert_equals(funny_numbers(518, 1), 1)
+Test.assert_equals(funny_numbers(598, 1), 1)
+Test.assert_equals(funny_numbers(1306, 1), 1)
+Test.assert_equals(funny_numbers(2427, 1), 1)
+Test.assert_equals(funny_numbers(2646798, 1), 1)
+Test.assert_equals(funny_numbers(3456789, 1), None)
+Test.assert_equals(funny_numbers(3456789, 5), None)
+Test.assert_equals(funny_numbers(198, 1), 3)
+Test.assert_equals(funny_numbers(249, 1), 3)
+Test.assert_equals(funny_numbers(1377, 1), 2)
+Test.assert_equals(funny_numbers(1676, 1), 1)
+Test.assert_equals(funny_numbers(695, 2), 2)
+Test.assert_equals(funny_numbers(1878, 2), 19)
+Test.assert_equals(funny_numbers(7388, 2), 5)
+Test.assert_equals(funny_numbers(47016, 2), 1)
+Test.assert_equals(funny_numbers(542186, 2), 1)
+Test.assert_equals(funny_numbers(261, 3), 5)
+Test.assert_equals(funny_numbers(1385, 3), 35)
+Test.assert_equals(funny_numbers(2697, 3), 66)
+Test.assert_equals(funny_numbers(6376, 3), 10)
+Test.assert_equals(funny_numbers(6714, 3), 1)
+Test.assert_equals(funny_numbers(63760, 3), 1)
+Test.assert_equals(funny_numbers(63761, 3), 1)
+Test.assert_equals(funny_numbers(132921, 3), 4)
+Test.assert_equals(funny_numbers(10383, 6), 12933)
+            </code></pre>
+            <summary>
+                Tests
+            </summary>
+        </details>
+    </div>
+</div>

@@ -96,6 +96,43 @@ function createTOC(){
 }
 createTOC();
 
-function copyToClip(){
+function createSidebar(){
+    let sidebar = document.getElementById("sidebar");
     
+    let pageHeader = document.getElementsByClassName("display-4")[0].textContent
+    let nav = document.createElement("NAV");
+    nav.textContent = pageHeader
+    nav.setAttribute("style", "font-family: 'Poppins', sans-serif; color: crimson;")
+
+
+    headers = document.getElementsByClassName("display-6");
+
+    let i = 0;
+    for (let header of headers){
+        let p = document.createElement("P");
+        let a = document.createElement("A");
+        a.textContent = header.textContent;
+        a.setAttribute("href", `#${i}`);
+        a.setAttribute("class", "sidebar-link");
+        p.appendChild(a);
+        nav.appendChild(p);
+
+        i += 1;
+    }
+    sidebar.appendChild(nav);
+
+    return nav;
+    // <nav><a></a></nav>
 }
+createSidebar()
+
+
+function formatLinks(){
+    allLinks = document.getElementsByTagName("a");
+    for (let link of allLinks){
+        link.setAttribute("title", link.href);
+    }
+}
+formatLinks()
+
+
