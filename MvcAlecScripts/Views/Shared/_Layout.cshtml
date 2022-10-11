@@ -27,7 +27,7 @@
 "Docstrings", "Return", "Pass",
 "Scope", "Arguments"
 };
-    double Version = 1.22;
+    double Version = 1.6;
 }
 
 <header class="sticky-top">
@@ -35,45 +35,50 @@
         <div class="container-fluid">
             <a id="flipMe" class="sidebarBtn">
                 <button class="btn" onclick="showID('sidebar'), flip('flipMe')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="dark" class="bi bi-list"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list"
                         viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg>
                 </button>
             </a>
-            <a style="font-family: 'Dancing Script', cursive; font-size: 30px;" class="navbar-brand text-dark"
+            <a style="font-family: 'Dancing Script', cursive; font-size: 30px;" class="navbar-brand text-white"
                 asp-area="" asp-controller="Home" asp-action="Index">Alec Scripts</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span style="color: white;" class=" navbar-toggler-icon bg-secondary rounded"></span>
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <a class="nav-link text-secondary" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                     </li>
                     @* <li class="nav-item">
                         <a class="nav-link text-black" asp-area="" asp-controller="Home" asp-action="Test">Test Page</a>
                         </li> *@
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Python" asp-action="Index">Python</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Python" asp-action="Index">Python</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Js" asp-action="Index">JavaScript</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Js" asp-action="Index">JavaScript</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Cpp" asp-action="Index">C++</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Cpp" asp-action="Index">C++</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Html" asp-action="Index">HTML</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Html" asp-action="Index">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-area="" asp-controller="Dotnet" asp-action="Index">.NET</a>
                     </li>
 
                 </ul>
 
-                <span class="navbar-text">
-                    v @Version
-                </span>
+                <div style="font-size: 10px;">
+                  <span class="navbar-text text-info">
+                    v <span class="border-bottom text-secondary">@Version</span>
+                  </span>
+                </div>
             </div>
 
         </div>
@@ -83,7 +88,7 @@
 
 
 <body>
-    <nav class="sticky-top">
+    <nav class="sticky-top ">
         <div class="shadow-sm" id="sidebar">
             <p>
             <nav class="sidebarHeader">Js<nav>
@@ -161,7 +166,7 @@
         || <a href="https://github.com/searsam1/alecscripts/commits/main">Repository</a>
     </div>
     <div style="font-size: small;">
-        Version 1.22
+        Version @Version
     </div>
     <div style="font-size: small;">
         <a asp-area="" asp-controller="Home" asp-action="Python">Python</a>
