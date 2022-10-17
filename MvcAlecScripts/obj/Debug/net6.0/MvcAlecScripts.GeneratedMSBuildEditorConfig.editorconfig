@@ -15,12 +15,44 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cMYT0T3SLfA3Owg93TF0H.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2NNWVQwVDNTTGZBM093ZzkzVEYwSC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cUieTmgawXxaKw4FroF.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2NVaWVUbWdhd1h4YUt3NEZyb0YuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cXrVpSBJrEPoaSx3rgYG.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2NYclZwU0JKckVQb2FTeDNyZ1lHLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/drinkSoda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2RyaW5rU29kYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/getOdds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2dldE9kZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/pXSfUeawyjrRc4IlzjsG.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL3BYU2ZVZWF3eWpyUmM0SWx6anNHLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Cpp/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Dotnet/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Dotnet/randomNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L3JhbmRvbU51bWJlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Home/Index.cshtml]
@@ -71,12 +103,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL2Ficy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/controllerGetter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL2NvbnRyb2xsZXJHZXR0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/functions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL2Z1bmN0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/funnyNumbers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL2Z1bm55TnVtYmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/GetStreet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL0dldFN0cmVldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/index.cshtml]

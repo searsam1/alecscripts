@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MvcAlecScripts.Models;
 
+
 namespace MvcAlecScripts.Controllers;
 
 public class HomeController : Controller
@@ -15,6 +16,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        
         return View();
     }
 

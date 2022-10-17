@@ -23,38 +23,63 @@
             </tr>
             <tr>
                 <td>Left Align</td>
-                <td>%</td>
-                <td><code> ({'o:<10'}) Python is coo         l! </code></td>
+                <td> <code> :< </code> </td>
+                <td>
+                     Python is coo         l! 
+                    <br>
+                    <code>f"Python is co{'o':<10}l!"</code></td>
             </tr>
             <tr>
                 <td>Right Align</td>
                 <td> <code> :> </code> </td>
-                <td><code> Py         thon is cool! </code></td>
+                <td> Py         thon is cool! 
+                <br>
+                <code>f"Py{'t':>10}hon is cool!"</code>
+                
+                </td>
             </tr>
             <tr>
                 <td>Center Align</td>
-                <td>%</td>
-                <td><code> Py    t     hon is cool! </code></td>
+                <td> <code> :^ </code> </td>
+                <td> Py    t     hon is cool! 
+                    <br>
+                    <code>f"Py{'t':^10}hon is cool!" </code>
+                </td>
             </tr>
             <tr>
                 <td>Binary</td>
-                <td>%</td>
-                <td><code> 102 in binary is: 1100110 </code></td>
+                <td> <code> :b </code> </td>
+                <td> 102 in binary is: 1100110 
+                    <br><code>f"102 in binary is: {102:b}" </code>
+                </td>
             </tr>
             <tr>
                 <td>Fixed</td>
-                <td>%</td>
-                <td><code> Pi is about: 3.14 </code></td>
+                <td> <code> :.2f </code> </td>
+                <td> Pi is about: 3.14 
+                    <br>
+                    <code>f"Pi is about: {3.14159:.2f}" </code>
+                </td>
             </tr>
             <tr>
                 <td>Percent</td>
-                <td>%</td>
-                <td><code> 1/2 is: 50% </code></td>
+                <td><code> :% </code></td>
+                <td>1/2 is: 50% 
+                    <br>
+                    <code>
+                        f"1/2 is: {1/2:.0%}" 
+                    </code>
+                </td>
             </tr>
             <tr>
                 <td>Comma</td>
-                <td>%</td>
-                <td><code> 1,000,000 </code></td>
+                <td> <code> :, </code></td>
+                <td> 1,000,000 
+                    <br>
+                    <code>
+                        f"{1_000_000:,}" 
+                    </code>
+                </td>
             </tr>
         </table>
         </p>

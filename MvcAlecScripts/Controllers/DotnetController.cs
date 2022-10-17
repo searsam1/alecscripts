@@ -1,4 +1,6 @@
 using System;
+using System.Security.Cryptography;
+using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,6 +12,10 @@ namespace MvcMovie.Controllers
     {
         public IActionResult Index()
         {
+            return View();
+        }
+
+        public IActionResult randomNumber(){
             return View();
         }
     }
