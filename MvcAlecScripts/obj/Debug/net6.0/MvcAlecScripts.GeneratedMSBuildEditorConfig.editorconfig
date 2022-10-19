@@ -15,8 +15,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cI4SqWjPfopM5fXYrPCyB.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2NJNFNxV2pQZm9wTTVmWFlyUEN5Qi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cMYT0T3SLfA3Owg93TF0H.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2NNWVQwVDNTTGZBM093ZzkzVEYwSC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cQbZ8GrNvPwoF3ZRWi9GQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2NRYlo4R3JOdlB3b0YzWlJXaTlHUS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cUieTmgawXxaKw4FroF.cshtml]
@@ -55,20 +63,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L3JhbmRvbU51bWJlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Financial/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmluYW5jaWFsL2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Home/pythonhomepage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9weXRob25ob21lcGFnZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Home/test.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS90ZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Html/index.cshtml]
@@ -107,28 +111,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL2NvbnRyb2xsZXJHZXR0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/functions.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL2Z1bmN0aW9ucy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/funnyNumbers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL2Z1bm55TnVtYmVycy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/GetStreet.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL0dldFN0cmVldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/passwords.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL3Bhc3N3b3Jkcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/split.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL3NwbGl0LmNzaHRtbA==
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/password.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL3Bhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/stringFormattingTypes.cshtml]

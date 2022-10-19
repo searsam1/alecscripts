@@ -5,8 +5,7 @@
 
 *::selection {
     background-color: black;
-    color: white;
-}
+    color: white;}
 
 html {
     font-size: 14px;
@@ -28,10 +27,6 @@ html {
     }
 }
 
-nav#sidebar{
-    overflow-y: scroll;
-}
-
 #sidebar {
     border-radius: 10px;
     padding-left: 30px;
@@ -41,25 +36,25 @@ nav#sidebar{
 
 #sidebar::-webkit-scrollbar {
     width: 1em;
-    
-  }
-   
-  #sidebar::-webkit-scrollbar-thumb {
+
+}
+
+#sidebar::-webkit-scrollbar-thumb {
     background-color: crimson;
-  }
+}
 
 a.sidebar-link {
     color: black;
     font-size: 13px;
     margin-left: 20px;
-    
+
 }
 
 a.sidebar-link:hover {
-    
+
     border-bottom-width: 10px;
     border-bottom: 1px solid red;
-    
+
 }
 
 @media (min-width: 1250px) {
@@ -117,11 +112,9 @@ main {
     border-radius: 20px;
 }
 
-
 p {
-    
-    padding-right: 25%;
-
+    max-width: 750px;
+    padding-left: 3%;
 }
 
 li.nav-item {
@@ -137,18 +130,12 @@ li.nav-item:hover {
 
 .toc-container {
 
-    border: 2px solid crimson;
-    border-radius: 4px;
-    padding: 20px;
     font-family: 'Poppins', sans-serif;
 }
-
-
 
 .sidebarBtn {
     transition: transform .5s;
 }
-
 
 .indent-1 {
     margin-left: 20px;
@@ -159,14 +146,13 @@ li.nav-item:hover {
 }
 
 .link {
-    color: black;
+    color: blue;
     text-decoration: none;
 }
 
 .link:hover {
-    text-decoration: underline;
-    text-decoration-color: red;
     color: black;
+    transition: color .5s;
 }
 
 .navbar-brand {
@@ -186,31 +172,9 @@ nav {
     margin-left: 40px;
 }
 
-
-
-
-
-
-
 li a.toc {
     text-decoration: none;
     color: black;
-}
-
-.toc {
-    background-color: #f8f9fa;
-    text-align: center;
-    border: 1px solid black;
-    margin: 10px;
-
-    /* box-shadow: -3px 3px 2px 1px rgba(0, 0, 0, 0.808);
-  transition: padding .25s; */
-}
-
-.toc:hover {
-    /* padding: 15px;
-  transition: padding .5s;
-  color: crimson; */
 }
 
 div.container {
@@ -256,12 +220,13 @@ div.container div div div {
     font-size: 37px;
     font-family: 'Lexend', sans-serif;
 
-
     /* border-top-right-radius:60px;
   border-bottom-right-radius:60px; */
-    margin-top: 40px;
+    border-bottom: 5px double black;
+    max-width: fit-content;
+    margin-bottom: 25px;
 
-    
+
     padding: 10px;
     text-shadow: 1px 1px 1px 1px;
     /* background-color:  #f8f9fa */
@@ -269,10 +234,8 @@ div.container div div div {
 
 .display-4 {
     padding: 10px;
-    
     font-family: 'Lexend', sans-serif;
 }
-
 
 a {
     scroll-margin-top: 200px;
@@ -310,7 +273,7 @@ td {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     text-align: center;
-    
+
 }
 
 textarea {
@@ -327,7 +290,14 @@ textarea {
     color: maroon;
 }
 
+.code-toolbar {
+    padding-left: 3%;
+}
 
-.code-toolbar{
-    padding-right: 25%;
+ul {
+    padding-left: 5%;   
+}
+
+h4 {
+    padding-left: 3%;   
 }

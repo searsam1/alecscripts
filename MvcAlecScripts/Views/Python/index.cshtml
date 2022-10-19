@@ -2,163 +2,13 @@
     ViewData["Title"] = "Python - Home";
     ViewData["description"] = "Python is a programming language that is easy to learn and use. It refers to Monty Python and not the snake.";
     string[] pythonTOC = {"Split", "Passwords"};
-}
+}       
 
-
-
-@{
-    string BuiltIns = @"
-    A
-abs()
-aiter()
-all()
-any()
-anext()
-ascii()
-
-B
-bin()
-bool()
-breakpoint()
-bytearray()
-bytes()
-
-C
-callable()
-chr()
-classmethod()
-compile()
-complex()
-
-D
-delattr()
-dict()
-dir()
-divmod()
-
-E
-enumerate()
-eval()
-exec()
-
-F
-filter()
-float()
-format()
-frozenset()
-
-G
-getattr()
-globals()
-
-H
-hasattr()
-hash()
-help()
-hex()
-
-I
-id()
-input()
-int()
-isinstance()
-issubclass()
-iter()
-L
-len()
-list()
-locals()
-
-M
-map()
-max()
-memoryview()
-min()
-
-N
-next()
-
-O
-object()
-oct()
-open()
-ord()
-
-P
-pow()
-print()
-property()
-
-
-
-
-R
-range()
-repr()
-reversed()
-round()
-
-S
-set()
-setattr()
-slice()
-sorted()
-staticmethod()
-str()
-sum()
-super()
-
-T
-tuple()
-type()
-
-V
-vars()
-
-Z
-zip()
-
-_
-__import__()
-    ";
-    string [] arr = BuiltIns.Split("\n");
-    List<List<string>> blocks = new List<List<string>>();
-    List<string> block = new List<string>();
-}
-
-
-<h6 class="display-6">
-    Python Tutorials
-</h6>
-<div class="container">
-    <div class="container">
-       <p>
-        <a class="link" asp-action="functions" asp-controller="Python"> Functions </a>
-       </p>
-       <p>
-        <a class="link" asp-action="passwords" asp-controller="Python"> Passwords </a>
-       </p>
-       <p>
-        <a class="link" asp-action="split" asp-controller="Python"> Split </a>
-       </p>
-       <p>
-        <a class="link" asp-action="swapcase" asp-controller="Python"> Swapcase </a>
-       </p>
-       <p>
-        <a class="link" asp-action="vars" asp-controller="Python"> Vars </a>
-       </p>
-       <p>
-        <a class="link" asp-action="abs" asp-controller="Python"> Abs </a>
-       </p>
-       
-    </div>
-</div>
 
 <h6 class="display-6">
     What is Python?
 </h6>
-<div class="container">
-    <div class="container">
+
         <p>
             Python is a programming language 
             that is easy to learn and use. It refers to 
@@ -208,15 +58,11 @@ python3 Hello_world.py
             things organized. 
         </p>
 
-    </div>
-</div>
+
 
 <h6 class="display-6">
     Basic Maths
 </h6>
-<div class="container">
-    
-    <div class="container">
          <p>
             Python comes with the standard 
             set of math operations (+, -, *, /), along 
@@ -241,24 +87,22 @@ x ** y # => 8
         <p>
             Python also follows the normal order of operations. 
         </p>
-    </div>
-</div>
+
 
 <h6 class="display-6">
     Variables and Data Types
 </h6>
-<div class="container">
-    <div class="container">
+
         <p>
             There are strings or characters along with various math types like int and float.
-            These values are stored in variables, like in math. Use the <code class="lang-py">=</code> operator 
-            to assign a value to a variable, like how <code class="lang-py">x</code> and <code class="lang-py">y</code>
+            These values are stored in variables, like in math. Use the <code>=</code> operator 
+            to assign a value to a variable, like how <code>x</code> and <code>y</code>
             are assigned int values in the example above.
         </p>
         <p>
             In statically typed language like C++, the type of the 
             variable must be declared when creating a variable:
-            <code class="lang-cpp"> int n = 2;</code>. int is the type, n is the name and 
+            <code > int n = 2;</code>. int is the type, n is the name and 
             2 is the integer value n takes on. Python, however, has dynamic variables 
             which means they do not need type declaration and can change types.
         </p>
@@ -274,18 +118,15 @@ boolean = True # or False
 int n = 2;
 string s = "hello world";
       </code></pre>
-    </div>
-</div>
+
 
 <h6 class="display-6">
     Sequence Types 
 </h6>
-<div class="container">
-    <div class="container">
         <p>
             Sequence types are just containers that hold other objects.
             Lists are the most dynamic and easy to use. They start and end with square
-            brackets <code class="lang-py">[]</code>, while their objects
+            brackets <code>[]</code>, while their objects
             are separated by commas. Items are accessed via index, starting at zero and
             ending at -1.
             <pre><code class="lang-py">
@@ -324,20 +165,16 @@ d["key"]
         </p>
         <pre><code class="lang-py">t = (1, 2, 3, 4)
 t[0] = 2</code></pre>
-        <p><code class="lang-py">TypeError: 'tuple' object does not support item assignment</code></p>
-    </div>
-</div>
+        <p><code>TypeError: 'tuple' object does not support item assignment</code></p>
 
 <h6 class="display-6">
     Iteration
 </h6>
-<div class="container">
-    <div class="container">
         <p>
             Iterating is going through the items in a container. People iterate 
             over their shopping list when they go to the store to make sure 
             they do not forget anything, for example. Lists can 
-            be iterated by index and the <code class="lang-py">range</code> function.
+            be iterated by index and the <code>range</code> function.
         </p>
         <p>
             Before iterating over a list one must understand what looping is.
@@ -373,14 +210,11 @@ for i in range(len(lst)):
 2
 3
 """</code></pre>
-    </div>
-</div>
 
 <h6 class="display-6">
     Functions
 </h6>
-<div class="container">
-    <div class="container">
+
         <p>
             Functions are blocks of code that can be executed 
             without having to retype all the code. The values they 
@@ -388,8 +222,8 @@ for i in range(len(lst)):
             is no return value is specified.
         </p>
         <p>
-            The Syntax is simple enough, being defined with the <code class="lang-py">def</code> keyword followed 
-            by the function name: <code class="lang-py">def foo():</code>. Where python differs from
+            The Syntax is simple enough, being defined with the <code>def</code> keyword followed 
+            by the function name: <code>def foo():</code>. Where python differs from
             other languages is that the body of the function must be indented. If something comes after 
             the function and it is not in the indented body, python will not consider 
             it apart of the function. While most languages use {}, python uses
@@ -404,33 +238,9 @@ do_something(556)
         Defining a function is not the same as calling it. Calling a function is executing the code 
         found in the function definition. 
     </p>
-    </div>
-</div>
+    
 
 
 <h6 class="display-6">
     Built-in Functions 
 </h6>
-<div class="container">
-    <button id='builtInBtn' class="btn-custom " onclick="showID('builtIns'), flip('builtInBtn')"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                                                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                                                                                </svg> 
-                    </button>
-    <div  id="builtIns" class="container hidden">
-        <p>
-            @foreach (var item in arr)
-            {
-                if (item.Trim().Trim(')').Length == 1){
-                    
-                    <p class="bg-light rounded shadow-sm text-center">
-                        <span>@item</span>
-                    </p>
-                    
-                }
-                else if (item.Trim().Length != 0){
-                    <code><a class=" link p-3" title="Go to @item on docs.Python " href="https://docs.python.org/3/library/functions.html#@item.Trim(')', '(')">@item.Trim()</a></code>
-                }
-            }
-        </p>
-    </div>
-</div>

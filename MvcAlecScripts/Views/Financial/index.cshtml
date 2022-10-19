@@ -1,0 +1,19 @@
+@model MvcAlecScripts.Models.FinancialModel
+@{
+    ViewData["title"] = "Financial";
+}
+Name: 
+<p>
+    @Model.Name
+</p>
+
+Func:
+
+<p id="val">
+    10
+</p>
+
+<p>
+    @Model.func("333")
+</p>
+

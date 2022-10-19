@@ -297,7 +297,7 @@ function findDigitAmount(num) {
         Name = "Depth-first Search", 
         Author = "Alec Sears",
         Language = "Python",
-        Description = "Return if a given number is in the tree.",
+        Description = "Return if a given number is in the tree. Use the Depth-first search method where each nested list is new level of the tree.",
         Examples = @"
 tree = [ 1, [2, [4, [8, [12, 13] ,9], 5, [10, 11]]], [3, [6,7]] ]
 
@@ -320,6 +320,65 @@ def flatten(tree, target):
     return res
 ",
         Notes = "The tree will only contain other nodes and ints.",
+    };
+        return View(viewModel);
+    }
+
+    public IActionResult cI4SqWjPfopM5fXYrPCyB() {
+        
+        var viewModel = new ChallengeModel()
+    {
+        // Example Challenge
+        Name = "Reverse Sort a Number", 
+        Author = "Alec Sears",
+        Language = "JS",
+        Description = "Take a number in string or int form and reverse sort by its digits.",
+        Examples = @"
+rotateMaxNumber(123) ➞ 321
+
+rotateMaxNumber(""003"") ➞ 300
+
+rotateMaxNumber(989) ➞ 998
+
+function rotateMaxNumber(num) {
+    // vvv Not mine vvv
+    let myFunc = num => Number(num);	
+  	var intArr = Array.from(String(num), myFunc);
+    // ^^^ Not mine ^^^
+    
+    // sort, reverse, join
+	return parseInt(intArr.sort().reverse().join(""""));
+}
+
+",
+        Notes = "Got the function from GeeksForGeeks and the challenge from edabit.com (https://edabit.com/challenge/NJQ64N6xhrppEMkjY)",
+    };
+        return View(viewModel);
+    }
+
+    public IActionResult cQbZ8GrNvPwoF3ZRWi9GQ() {
+        
+        var viewModel = new ChallengeModel()
+    {
+        // Example Challenge
+        Name = "Sum of Cube", 
+        Author = "Alec Sears",
+        Language = "JS",
+        Description = "Return the sum of 1^3 to n^3.",
+        Examples = @"
+sumCubes(1) -> 1
+sumCubes(2) -> 9
+sumCubes(123) -> 58155876
+sumCubes(7) -> 784
+sumCubes(9) -> 2025
+
+function sumCubes(n) {
+	let sum_ = 0;
+  	while (n > 0){sum_ += n**3; n--;}
+  	return sum_;
+}
+",
+        Notes = "None",
     };
         return View(viewModel);
     }

@@ -124,7 +124,7 @@ function createSidebar(){
     return nav;
     // <nav><a></a></nav>
 }
-createSidebar()
+// createSidebar()
 
 
 function formatLinks(){
