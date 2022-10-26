@@ -36,5 +36,9 @@ This is my simple API
     {
         return View();
     }
+    public IActionResult Json()
+    {
+        return View();
+    }
     }
 }

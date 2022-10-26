@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    string Version = "1.6c";
+}
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,22 +32,14 @@
 "Docstrings", "Return", "Pass",
 "Scope", "Arguments"
 };
-    string Version = "1.6b";
+    
 }
 
-<header @*class="sticky-top"*@> 
-    <nav id="navy" class=" navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom shadow-sm ">
+<header class="sticky-top"> 
+    <nav id="navy" class="px-4 py-0 navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom shadow-sm ">
         <div class="container-fluid">
-            <a id="flipMe" class="sidebarBtn">
-                <button class="btn" onclick="showID('sidebar'), flip('flipMe')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list"
-                        viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                    </svg>
-                </button>
-            </a>
-            <a style="font-family: 'Dancing Script', cursive; font-size: 30px;" class="navbar-brand text-white"
+            
+            <a style="font-family: 'Dancing Script', cursive; font-size: 12px;" class="navbar-brand text-white"
                 asp-area="" asp-controller="Home" asp-action="Index">Alec Scripts</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,25 +48,28 @@
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                     </li>
                     @* <li class="nav-item">
                         <a class="nav-link text-black" asp-area="" asp-controller="Home" asp-action="Test">Test Page</a>
                         </li> *@
                     <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Python" asp-action="Index">Python</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Python" asp-action="Index">Python</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Js" asp-action="Index">JavaScript</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Js" asp-action="Index">JavaScript</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Cpp" asp-action="Index">C++</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Cpp" asp-action="Index">C++</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Html" asp-action="Index">HTML</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Html" asp-action="Index">HTML</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Dotnet" asp-action="Index">.NET</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Dotnet" asp-action="Index">.NET</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Java" asp-action="Index">Java</a>
                     </li>
 
                 </ul>
@@ -93,20 +93,52 @@
 
 <div class="row">
     
-        <div id="sidebar" class="col-sm-2 pt-5">
-            <nav class="sidebarHeader">Challenge<nav><div> <a class="sidebar-link" asp-action="GetOdds" asp-controller="Challenge"> Get Odds </a> </div><div> <a class="sidebar-link" asp-action="Index" asp-controller="Challenge"> Index </a> </div><div> <a class="sidebar-link" asp-action="cI4SqWjPfopM5fXYrPCyB" asp-controller="Challenge"> c I4Sq Wj Pfop M5f XYr PCy B </a> </div><div> <a class="sidebar-link" asp-action="cMYT0T3SLfA3Owg93TF0H" asp-controller="Challenge"> c MYT0T3SLf A3Owg93TF0H </a> </div><div> <a class="sidebar-link" asp-action="cQbZ8GrNvPwoF3ZRWi9GQ" asp-controller="Challenge"> c Qb Z8Gr Nv Pwo F3ZRWi9GQ </a> </div><div> <a class="sidebar-link" asp-action="cUieTmgawXxaKw4FroF" asp-controller="Challenge"> c Uie Tmgaw Xxa Kw4Fro F </a> </div><div> <a class="sidebar-link" asp-action="cXrVpSBJrEPoaSx3rgYG" asp-controller="Challenge"> c Xr Vp SBJr EPoa Sx3rg YG </a> </div><div> <a class="sidebar-link" asp-action="drinkSoda" asp-controller="Challenge"> drink Soda </a> </div><div> <a class="sidebar-link" asp-action="pXSfUeawyjrRc4IlzjsG" asp-controller="Challenge"> p XSf Ueawyjr Rc4Ilzjs G </a> </div><nav class="sidebarHeader">Cpp<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Cpp"> Index </a> </div><nav class="sidebarHeader">Dotnet<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Dotnet"> Index </a> </div><div> <a class="sidebar-link" asp-action="randomNumber" asp-controller="Dotnet"> random Number </a> </div><nav class="sidebarHeader">Home<nav><div> <a class="sidebar-link" asp-action="Error" asp-controller="Home"> Error </a> </div><div> <a class="sidebar-link" asp-action="Index" asp-controller="Home"> Index </a> </div><div> <a class="sidebar-link" asp-action="Privacy" asp-controller="Home"> Privacy </a> </div><div> <a class="sidebar-link" asp-action="PythonHomePage" asp-controller="Home"> Python Home Page </a> </div><nav class="sidebarHeader">Html<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Html"> Index </a> </div><div> <a class="sidebar-link" asp-action="Tags" asp-controller="Html"> Tags </a> </div><nav class="sidebarHeader">Js<nav><div> <a class="sidebar-link" asp-action="BinaryArraytoDecimal" asp-controller="Js"> Binary Arrayto Decimal </a> </div><div> <a class="sidebar-link" asp-action="Expressions_and_operators" asp-controller="Js"> Expressions_and_operators </a> </div><div> <a class="sidebar-link" asp-action="Index" asp-controller="Js"> Index </a> </div><div> <a class="sidebar-link" asp-action="ToFixed" asp-controller="Js"> To Fixed </a> </div><div> <a class="sidebar-link" asp-action="jsGetMonth" asp-controller="Js"> js Get Month </a> </div><nav class="sidebarHeader">Nav<nav><nav class="sidebarHeader">Python<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Python"> Index </a> </div><div> <a class="sidebar-link" asp-action="abs" asp-controller="Python"> abs </a> </div><div> <a class="sidebar-link" asp-action="cg" asp-controller="Python"> cg </a> </div><div> <a class="sidebar-link" asp-action="controllerGetter" asp-controller="Python"> controller Getter </a> </div><div> <a class="sidebar-link" asp-action="funnyNumbers" asp-controller="Python"> funny Numbers </a> </div><div> <a class="sidebar-link" asp-action="stringFormattingTypes" asp-controller="Python"> string Formatting Types </a> </div><div> <a class="sidebar-link" asp-action="swapcase" asp-controller="Python"> swapcase </a> </div><div> <a class="sidebar-link" asp-action="vars" asp-controller="Python"> vars </a> </div>
+        <div class="sidebar pt-3 fixed-top" style="" >
+            <p>
+                <p>
+                    <a style="color: black; padding-right: 100%;" class="link" href="#bodyRender">
+                         @ViewData["title"] 
+
+                    </a>
+                </p>
+                <p>
+                    <a class=link asp-action=index asp-controller=python>
+                        Python
+                    </a>
+                </p>
+                <p>
+                    <details>
+                        <summary>
+                            <a class=link asp-action=index asp-controller=js>
+                                JavaScript
+                            </a>
+                        </summary>
+                        <p>
+                            <a style="font-size:14px; padding-right: 10px" class=link asp-action=json asp-controller=js>
+                                json
+                            </a>
+                            <br>
+                            <a style="font-size:14px; padding-right: 10px" class=link asp-action=json asp-controller=js>
+                                json
+                            </a>
+                        </p>
+                        
+                    </details>
+                </p>
+                
+            </p>
         </div>
     
-    <div class="col-sm-10">
+    <div class="col-sm-12">
         <main id="bodyRender" role="main" class="pb-3 ">
             <div class="pt-5">
                 <h3 class="display-4 rounded-3">@ViewData["Title"]</h3>
             </div>
 
-            <div class="text-left">
+            <div id="toc">
 
-                <ul class="toc-container">
-
+                <ul  class="toc-container">
+                    <span>Table of Contents</span> 
                     @* @foreach (var item in Toc)
                         {
                         <li><a class="link" href="#@item">@item</a></li>
@@ -114,11 +146,21 @@
                 </ul>
 
             </div>
-            <div id="mainBody" class="text-left pt-3">
+            <div id="mainBody" class="pt-3">
                 @RenderBody()
             </div>
         </main>
     </div>
+
+    @* <div class="sidebar col-sm-4 pt-5">
+            <nav class="sidebarHeader">Challenge<nav><div> <a class="sidebar-link" asp-action="GetOdds" asp-controller="Challenge"> Get Odds </a> </div><div> <a class="sidebar-link" asp-action="Index" asp-controller="Challenge"> Index </a> </div><div> <a class="sidebar-link" asp-action="cI4SqWjPfopM5fXYrPCyB" asp-controller="Challenge"> c I4Sq Wj Pfop M5f XYr PCy B </a> </div><div> <a class="sidebar-link" asp-action="cMYT0T3SLfA3Owg93TF0H" asp-controller="Challenge"> c MYT0T3SLf A3Owg93TF0H </a> </div><div> <a class="sidebar-link" asp-action="cQbZ8GrNvPwoF3ZRWi9GQ" asp-controller="Challenge"> c Qb Z8Gr Nv Pwo F3ZRWi9GQ </a> </div><div> <a class="sidebar-link" asp-action="cUieTmgawXxaKw4FroF" asp-controller="Challenge"> c Uie Tmgaw Xxa Kw4Fro F </a> </div><div> <a class="sidebar-link" asp-action="cXrVpSBJrEPoaSx3rgYG" asp-controller="Challenge"> c Xr Vp SBJr EPoa Sx3rg YG </a> </div><div> <a class="sidebar-link" asp-action="drinkSoda" asp-controller="Challenge"> drink Soda </a> </div><div> <a class="sidebar-link" asp-action="pXSfUeawyjrRc4IlzjsG" asp-controller="Challenge"> p XSf Ueawyjr Rc4Ilzjs G </a> </div><nav class="sidebarHeader">Cpp<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Cpp"> Index </a> </div><nav class="sidebarHeader">Dotnet<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Dotnet"> Index </a> </div><div> <a class="sidebar-link" asp-action="randomNumber" asp-controller="Dotnet"> random Number </a> </div><nav class="sidebarHeader">Home<nav><div> <a class="sidebar-link" asp-action="Error" asp-controller="Home"> Error </a> </div><div> <a class="sidebar-link" asp-action="Index" asp-controller="Home"> Index </a> </div><div> <a class="sidebar-link" asp-action="Privacy" asp-controller="Home"> Privacy </a> </div><div> <a class="sidebar-link" asp-action="PythonHomePage" asp-controller="Home"> Python Home Page </a> </div><nav class="sidebarHeader">Html<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Html"> Index </a> </div><div> <a class="sidebar-link" asp-action="Tags" asp-controller="Html"> Tags </a> </div><nav class="sidebarHeader">Js<nav><div> <a class="sidebar-link" asp-action="BinaryArraytoDecimal" asp-controller="Js"> Binary Arrayto Decimal </a> </div><div> <a class="sidebar-link" asp-action="Expressions_and_operators" asp-controller="Js"> Expressions_and_operators </a> </div><div> <a class="sidebar-link" asp-action="Index" asp-controller="Js"> Index </a> </div><div> <a class="sidebar-link" asp-action="ToFixed" asp-controller="Js"> To Fixed </a> </div><div> <a class="sidebar-link" asp-action="jsGetMonth" asp-controller="Js"> js Get Month </a> </div><nav class="sidebarHeader">Nav<nav><nav class="sidebarHeader">Python<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Python"> Index </a> </div><div> <a class="sidebar-link" asp-action="abs" asp-controller="Python"> abs </a> </div><div> <a class="sidebar-link" asp-action="cg" asp-controller="Python"> cg </a> </div><div> <a class="sidebar-link" asp-action="controllerGetter" asp-controller="Python"> controller Getter </a> </div><div> <a class="sidebar-link" asp-action="funnyNumbers" asp-controller="Python"> funny Numbers </a> </div><div> <a class="sidebar-link" asp-action="stringFormattingTypes" asp-controller="Python"> string Formatting Types </a> </div><div> <a class="sidebar-link" asp-action="swapcase" asp-controller="Python"> swapcase </a> </div><div> <a class="sidebar-link" asp-action="vars" asp-controller="Python"> vars </a> </div>
+            <div class="sticky-top">
+                <a asp-action="index" asp-controller="python" class="link"> Python </a>
+                <br>
+                <a asp-action="index" asp-controller="js" class="link"> JS </a>
+            </div>
+        </div> *@
+
 </div>
 
 
@@ -140,6 +182,7 @@
         <a asp-area="" asp-controller="passwords" asp-action="Python">Passwords</a>
         ||
         <a asp-area="" asp-controller="swapcase" asp-action="Python">Swapcase</a>
+
 
 
     </div>
