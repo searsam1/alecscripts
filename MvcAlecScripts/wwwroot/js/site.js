@@ -71,10 +71,22 @@ function createTocLink(e, id_){
     var li = document.createElement("li");
     var a = document.createElement("a");
     var href = document.createAttribute("href")
+
+    let classes = e.className.split(' ')
+
+
+    if (classes[1] == "fs-4"){
+        var indent = document.createAttribute("style")
+        indent.value = "padding-left: 5%; font-size: medium; color: rgb(1,1,1,.75);"
+        a.setAttributeNode(indent)
+        a.textContent = "- ";
+        li.setAttribute("style", "list-style-type: none; ")
+    }
+
     href.value = `#${id_}`
     a.setAttributeNode(href)
     a.setAttribute("class", "link")
-    a.textContent = e.textContent.trim(" ")
+    a.textContent += e.textContent.trim(" ")
     li.appendChild(a)
     return li;
 }
@@ -85,6 +97,9 @@ function createTOC(){
 
     var i = 0;
     for (header of headers){
+
+
+
         var att = document.createAttribute("id")
         att.value = i;
         i++;
@@ -137,5 +152,5 @@ function openSidebarLink(){
     let sidebar = document.querySelector(".sidebar")
     let controllers = sidebar.querySelectorAll("summary")
     let roots = [...controllers].map((summary) => summary.textContent.trim());
-    console.log(roots)
+    
 }

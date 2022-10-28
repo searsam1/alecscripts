@@ -1,0 +1,81 @@
+@{
+    ViewData["title"] = "JSON";
+}
+<h4 class="display-6">
+    JSON (JavaScript Object Notation)
+</h4>
+
+<p>
+    Json works where objects are wrapped in "double quotes"
+    and key-value pairs are linked with <code>:</code> colons.
+    Its a good data structure to learn and is useful for 
+    storing organized information.
+</p>
+
+@* #- Code -# *@
+<pre><code class=" lang-json">
+[
+    {
+        "key": "Value",
+        "list": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ],
+        "objInObj": {
+            "key": "Value"
+        }
+    }
+]
+</code></pre>
+@* #- Code -# *@
+<p>
+    One can then access the data through a scripting language like
+    python and run an analysis or whatever is needed. 
+</p>
+<p>
+    Json has a container that can hold a list of other objects that are separated by a comma. 
+</p>
+<p>
+    <code>{ "list" : ["I", "Am", "Legend", "Mr. Wayne"] }</code>
+</p>
+<p>
+    Lists, a.k.a arrays, are accessed by index while values are accessed with 
+    a <code>.</code> and the key. This is if one is working inside of 
+    JavaScript; depending on the language used to decipher the json, 
+</p>
+<p>
+    The nice thing about JSON is its human-readability and 
+    ease of use through extended language support.
+</p>
+<h4 class="display-6">
+    Examples
+</h4>
+<p>
+    <pre><code class="lang-json">
+
+{
+    "Dream-Word-Coke" : {
+        "Total-Fat" : "0g",
+        "Sodium" : "50mg",
+        "Total Sugar" : "65g"
+    }
+}        
+    </code></pre>
+</p>
+
+<p>
+    <pre><code class="lang-json">
+
+{
+    "Good Habits" : {
+        "Exercising" : "Everyday",
+        "Reading" : "Twice a day",
+        "Mediation" : "30 mins. a day",
+        "Singing in the Shower" : "Three times daily",
+    }
+}        
+    </code></pre>
+</p>

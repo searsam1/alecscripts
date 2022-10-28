@@ -1,0 +1,43 @@
+@* GoLang home *@
+@{
+    ViewData["title"] = "Go";
+}
+
+<h1 class="display-6">
+    What is Go?
+</h1>
+<p>
+    Go was created by Google to replace C and is a statically 
+    typed, compiled language that is similar to C but has safer memory 
+    with garbage collection.
+</p>
+<p>
+    Statically typed means variables must be given a type 
+    when created. For example, <code>var a int</code>; the <code>a</code>
+    is the name of the variable, the <code>int</code> is the type which stand for integer (whole number), 
+    and <code>var</code> is declaring a to be a variable. 
+</p>
+<p>
+    All languages are compiled, but what is meant by Go is a 
+    compiled language is that one has to compile it manually (build it)
+    and run the output file.
+</p>
+
+
+<h1 class="display-6">
+    Hello World
+</h1>
+<p>
+    <pre><code class="lang-go">
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Println("fmt.Println('Hello, World!') -> Hello, World!" )
+  // fmt.Println('Hello, World!') -> Hello, World!
+}
+    </code></pre>
+</p>
