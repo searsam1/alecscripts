@@ -126,6 +126,8 @@ li.nav-item:hover {
     color: rgb(0, 0, 0);
     font-size: 20px;
     text-decoration-color: rgba(0, 0, 0, 0.3508);
+    transition: padding-left .5s, color .5s, background-color 1s;
+
 }
 .sidebar .link{
     color: whitesmoke;
@@ -274,7 +276,7 @@ ul {
 }
 
 .navbar-brand:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 
 }
 

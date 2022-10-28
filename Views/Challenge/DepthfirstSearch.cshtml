@@ -1,0 +1,25 @@
+@model MvcAlecScripts.Models.ChallengeModel
+@{
+    ViewData["title"] = Model.Name;
+}
+
+<h1 class="display-6">
+    @Model.Name
+</h1>
+<p class="text-secondary" style="border-bottom: 1px solid black;">By 
+    <i>@Model.Author</i> 
+    in
+    <span class="text-danger">
+        @Model.Language
+    </span>
+</p>
+<h4 class="mt-3">Description</h4>
+<p>
+    @Model.Description
+</p>
+<h4 class="mt-3">Examples</h4>
+<pre><code class="lang-@Model.Language">@Model.Examples</code></pre>
+<h4 class="mt-3">Notes</h4>
+<p>
+    @Model.Notes
+</p>

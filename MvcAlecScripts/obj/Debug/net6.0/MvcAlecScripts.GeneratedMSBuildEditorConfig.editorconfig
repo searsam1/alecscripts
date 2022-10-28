@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Bash/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/AreaOfAHexagon.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL0FyZWFPZkFIZXhhZ29uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -61,6 +65,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Dotnet/randomNumber.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L3JhbmRvbU51bWJlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Go/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR28vaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Home/Index.cshtml]
