@@ -9,8 +9,10 @@ namespace MvcAlecScripts.Controllers
 {
     public class JavaController : Controller
     {
+        public string controllerName = "Java";
         public IActionResult Index()
         {
+            ViewData["controller"] = controllerName;
             var viewModel = new LanguageModel
             {
                 Language = "Java",

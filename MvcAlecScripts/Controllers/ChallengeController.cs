@@ -8,11 +8,12 @@ namespace MvcMovie.Controllers
 {
     public class ChallengeController : Controller
     {
+        public string controllerName = "Challenge";
         // GET: /Python/
 
     public IActionResult Index()
     {   
-        
+        ViewData["controller"] = controllerName;
     var viewModel = new ChallengeModel()
     {
         // Example Challenge
@@ -42,6 +43,7 @@ namespace MvcMovie.Controllers
       
     public IActionResult GetOdds()
     { 
+        ViewData["controller"] = controllerName;
         var viewModel = new ChallengeModel()
             {
                 // Example Challenge
@@ -70,6 +72,7 @@ namespace MvcMovie.Controllers
 
     public IActionResult drinkSoda()
     { 
+        ViewData["controller"] = controllerName;
         var viewModel = new ChallengeModel()
             {
                 // Example Challenge
@@ -213,8 +216,9 @@ assert soda(99) == '12827.92 Liters'"
                 return View(viewModel);
     }
 
-    public IActionResult pXSfUeawyjrRc4IlzjsG() {
+    public IActionResult CensoredVowels() {
         
+        ViewData["controller"] = controllerName;
         var viewModel = new ChallengeModel()
     {
         // Example Challenge
@@ -236,8 +240,9 @@ uncensor(""*PP*RC*S*"", ""UEAE"") ➞ ""UPPERCASE""
         return View(viewModel);
     }
 
-    public IActionResult cMYT0T3SLfA3Owg93TF0H() {
+    public IActionResult AreaOfAHexagon() {
         
+        ViewData["controller"] = controllerName;
         var viewModel = new ChallengeModel()
     {
         // Example Challenge
@@ -264,8 +269,9 @@ const areaOfHexagon = (s) => s > 0 ?
     }
 
 
-public IActionResult cXrVpSBJrEPoaSx3rgYG() {
+public IActionResult NumberLength() {
         
+        ViewData["controller"] = controllerName;
         var viewModel = new ChallengeModel()
     {
         // Example Challenge
@@ -289,8 +295,9 @@ function findDigitAmount(num) {
         return View(viewModel);
     }
 
-    public IActionResult cUieTmgawXxaKw4FroF() {
+    public IActionResult DepthfirstSearch() {
         
+        ViewData["controller"] = controllerName;
         var viewModel = new ChallengeModel()
     {
         // Example Challenge
@@ -324,8 +331,9 @@ def flatten(tree, target):
         return View(viewModel);
     }
 
-    public IActionResult cI4SqWjPfopM5fXYrPCyB() {
+    public IActionResult ReverseSortANumber() {
         
+        ViewData["controller"] = controllerName;
         var viewModel = new ChallengeModel()
     {
         // Example Challenge
@@ -356,8 +364,9 @@ function rotateMaxNumber(num) {
         return View(viewModel);
     }
 
-    public IActionResult cQbZ8GrNvPwoF3ZRWi9GQ() {
+    public IActionResult SumOfCube() {
         
+        ViewData["controller"] = controllerName;
         var viewModel = new ChallengeModel()
     {
         // Example Challenge

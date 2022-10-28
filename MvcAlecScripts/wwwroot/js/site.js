@@ -82,7 +82,6 @@ function createTocLink(e, id_){
 function createTOC(){
     headers = document.getElementsByClassName("display-6")
     toc = document.getElementsByClassName("toc-container")[0]
-    console.log(toc)
 
     var i = 0;
     for (header of headers){
@@ -133,6 +132,10 @@ function formatLinks(){
         link.setAttribute("title", link.href);
     }
 }
-formatLinks()
 
-
+function openSidebarLink(){
+    let sidebar = document.querySelector(".sidebar")
+    let controllers = sidebar.querySelectorAll("summary")
+    let roots = [...controllers].map((summary) => summary.textContent.trim());
+    console.log(roots)
+}

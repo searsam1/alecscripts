@@ -1,6 +1,7 @@
-﻿
-@{
-    string Version = "1.6c";
+﻿@{
+    string Version = "1.6d";
+    string LastUpdate = "Wed Oct 26 17:09:12 MDT 2022";
+    string WebMaster = "Web Master";
 }
 
 <!DOCTYPE html>
@@ -18,32 +19,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lexend:wght@200&family=Poppins&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&family=Lexend:wght@200&family=Poppins&display=swap"
         rel="stylesheet">
     @* /Google fonts *@
 
     @* /Prism CSS *@
     <link rel="stylesheet" href="~/css/prism.css" asp-append-version="true" />
 </head>
-
-@{
-    string[] Toc = {
-"Types", "Creating", "Calling",
-"Docstrings", "Return", "Pass",
-"Scope", "Arguments"
-};
-    
-}
-
-<header class="sticky-top"> 
+<header class="sticky-top">
     <nav id="navy" class="px-4 py-0 navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom shadow-sm ">
         <div class="container-fluid">
-            
-            <a style="font-family: 'Dancing Script', cursive; font-size: 12px;" class="navbar-brand text-white"
+
+            <a style="font-family: 'Dancing Script', cursive; font-size: 12px;" class="navbar-brand text-dark"
                 asp-area="" asp-controller="Home" asp-action="Index">Alec Scripts</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span style="color: white;" class=" navbar-toggler-icon bg-secondary rounded"></span>
+                <span style="color: white;" class=" navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
@@ -75,9 +66,9 @@
                 </ul>
 
                 <div style="font-size: 10px;">
-                  <span class="navbar-text text-info">
-                    v <span class="border-bottom text-secondary">@Version</span>
-                  </span>
+                    <span class="navbar-text text-info">
+                        v<i><span class="border-bottom text-secondary">@Version</span></i>
+                    </span>
                 </div>
             </div>
 
@@ -88,80 +79,338 @@
 
 
 <body>
-    
 
 
-<div class="row">
-    
-        <div class="sidebar pt-3 fixed-top" style="" >
-            <p>
-                <p>
-                    <a style="color: black; padding-right: 100%;" class="link" href="#bodyRender">
-                         @ViewData["title"] 
 
-                    </a>
-                </p>
-                <p>
-                    <a class=link asp-action=index asp-controller=python>
-                        Python
-                    </a>
-                </p>
-                <p>
-                    <details>
-                        <summary>
-                            <a class=link asp-action=index asp-controller=js>
-                                JavaScript
-                            </a>
-                        </summary>
-                        <p>
-                            <a style="font-size:14px; padding-right: 10px" class=link asp-action=json asp-controller=js>
-                                json
-                            </a>
-                            <br>
-                            <a style="font-size:14px; padding-right: 10px" class=link asp-action=json asp-controller=js>
-                                json
-                            </a>
-                        </p>
-                        
-                    </details>
-                </p>
-                
-            </p>
+    <div class="row">
+
+        <div class="sidebar pt-3 fixed-top" style="">
+            <details>
+                <summary>
+                    Challenge
+                </summary>
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=GetOdds
+                    asp-controller=Challenge>
+                    Get Odds
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Index
+                    asp-controller=Challenge>
+                    Index
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link
+                    asp-action=ReverseSortANumber asp-controller=Challenge>
+                    Reverse Sort A Number
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link
+                    asp-action="AreaofAHexagon" asp-controller=Challenge>
+                    Area of a Hexagon
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=SumOfCube
+                    asp-controller=Challenge>
+                    Sum Of Cube
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link
+                    asp-action=DepthfirstSearch asp-controller=Challenge>
+                    Depth-first Search
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=NumberLength
+                    asp-controller=Challenge>
+                    Number Length
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=drinkSoda
+                    asp-controller=Challenge>
+                    Drink Soda
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link
+                    asp-action="CensoredVowels" asp-controller=Challenge>
+                    Censored Vowels
+                </a>
+            </details>
+            <details>
+                <summary>
+                    Cpp
+                </summary>
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Index
+                    asp-controller=Cpp>
+                    Index
+                </a>
+            </details>
+            <details>
+                <summary>
+                    Dotnet
+                </summary>
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Index
+                    asp-controller=Dotnet>
+                    Index
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=randomNumber
+                    asp-controller=Dotnet>
+                    Random Number
+                </a>
+            </details>
+            <details>
+                <summary>
+                    Home
+                </summary>
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Error
+                    asp-controller=Home>
+                    Error
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Index
+                    asp-controller=Home>
+                    Index
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Privacy
+                    asp-controller=Home>
+                    Privacy
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link
+                    asp-action=PythonHomePage asp-controller=Home>
+                    Python Home Page
+                </a>
+            </details>
+            <details>
+                <summary>
+                    Html
+                </summary>
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Index
+                    asp-controller=Html>
+                    Index
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Tags
+                    asp-controller=Html>
+                    Tags
+                </a>
+            </details>
+            <details>
+                <summary>
+                    Java
+                </summary>
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Index
+                    asp-controller=Java>
+                    Index
+                </a>
+            </details>
+            <details>
+                <summary>
+                    Networking
+                </summary>
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Index
+                    asp-controller=Networking>
+                    Index
+                </a>
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=IpDataGram
+                    asp-controller=Networking>
+                    Ip Datagrams
+                </a>
+            </details>
+            <details>
+                <summary>
+                    Js
+                </summary>
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link
+                    asp-action=BinaryArraytoDecimal asp-controller=Js>
+                    Binary Arrayto Decimal
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link
+                    asp-action=Expressions_and_operators asp-controller=Js>
+                    Expressions_And_Operators
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Index
+                    asp-controller=Js>
+                    Index
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Json
+                    asp-controller=Js>
+                    Json
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=ToFixed
+                    asp-controller=Js>
+                    To Fixed
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=jsGetMonth
+                    asp-controller=Js>
+                    Js Get Month
+                </a>
+            </details>
+            <details>
+                <summary>
+                    Python
+                </summary>
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Index
+                    asp-controller=Python>
+                    Index
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Password
+                    asp-controller=Python>
+                    Password
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=abs
+                    asp-controller=Python>
+                    Abs
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=cg
+                    asp-controller=Python>
+                    Cg
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link
+                    asp-action=controllerGetter asp-controller=Python>
+                    Controller Getter
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=funnyNumbers
+                    asp-controller=Python>
+                    Funny Numbers
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link
+                    asp-action=stringFormattingTypes asp-controller=Python>
+                    String Formatting Types
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=swapcase
+                    asp-controller=Python>
+                    Swapcase
+                </a>
+
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=vars
+                    asp-controller=Python>
+                    Vars
+                </a>
+            </details>
+            <details>
+                <summary>
+                    Financial
+                </summary>
+
+
+                <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action=Index
+                    asp-controller=financial>
+                    Index
+                </a>
+            </details>
+
+
         </div>
-    
-    <div class="col-sm-12">
-        <main id="bodyRender" role="main" class="pb-3 ">
-            <div class="pt-5">
-                <h3 class="display-4 rounded-3">@ViewData["Title"]</h3>
-            </div>
 
-            <div id="toc">
+        <div class="col-sm-12">
+            <main style="border-left: 1px solid rgb(1,1,1,.1);" id="bodyRender" role="main" class="pb-3 ">
+                <div class="pt-5">
+                    <h3 class="display-4 rounded-3">@ViewData["Title"]</h3>
+                </div>
 
-                <ul  class="toc-container">
-                    <span>Table of Contents</span> 
-                    @* @foreach (var item in Toc)
-                        {
-                        <li><a class="link" href="#@item">@item</a></li>
-                        } *@
-                </ul>
+                <div id="toc">
 
-            </div>
-            <div id="mainBody" class="pt-3">
-                @RenderBody()
-            </div>
-        </main>
+                    <ul class="toc-container">
+                        <h4 class="border-bottom">
+                            Table of Contents
+                        </h4>
+                        @* @foreach (var item in Toc)
+                            {
+                            <li><a class="link" href="#@item">@item</a></li>
+                            } *@
+                    </ul>
+
+                </div>
+                <div id="mainBody" class="pt-3 p-3">
+                    @RenderBody()
+                </div>
+            </main>
+        </div>
+
+
+
     </div>
-
-    @* <div class="sidebar col-sm-4 pt-5">
-            <nav class="sidebarHeader">Challenge<nav><div> <a class="sidebar-link" asp-action="GetOdds" asp-controller="Challenge"> Get Odds </a> </div><div> <a class="sidebar-link" asp-action="Index" asp-controller="Challenge"> Index </a> </div><div> <a class="sidebar-link" asp-action="cI4SqWjPfopM5fXYrPCyB" asp-controller="Challenge"> c I4Sq Wj Pfop M5f XYr PCy B </a> </div><div> <a class="sidebar-link" asp-action="cMYT0T3SLfA3Owg93TF0H" asp-controller="Challenge"> c MYT0T3SLf A3Owg93TF0H </a> </div><div> <a class="sidebar-link" asp-action="cQbZ8GrNvPwoF3ZRWi9GQ" asp-controller="Challenge"> c Qb Z8Gr Nv Pwo F3ZRWi9GQ </a> </div><div> <a class="sidebar-link" asp-action="cUieTmgawXxaKw4FroF" asp-controller="Challenge"> c Uie Tmgaw Xxa Kw4Fro F </a> </div><div> <a class="sidebar-link" asp-action="cXrVpSBJrEPoaSx3rgYG" asp-controller="Challenge"> c Xr Vp SBJr EPoa Sx3rg YG </a> </div><div> <a class="sidebar-link" asp-action="drinkSoda" asp-controller="Challenge"> drink Soda </a> </div><div> <a class="sidebar-link" asp-action="pXSfUeawyjrRc4IlzjsG" asp-controller="Challenge"> p XSf Ueawyjr Rc4Ilzjs G </a> </div><nav class="sidebarHeader">Cpp<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Cpp"> Index </a> </div><nav class="sidebarHeader">Dotnet<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Dotnet"> Index </a> </div><div> <a class="sidebar-link" asp-action="randomNumber" asp-controller="Dotnet"> random Number </a> </div><nav class="sidebarHeader">Home<nav><div> <a class="sidebar-link" asp-action="Error" asp-controller="Home"> Error </a> </div><div> <a class="sidebar-link" asp-action="Index" asp-controller="Home"> Index </a> </div><div> <a class="sidebar-link" asp-action="Privacy" asp-controller="Home"> Privacy </a> </div><div> <a class="sidebar-link" asp-action="PythonHomePage" asp-controller="Home"> Python Home Page </a> </div><nav class="sidebarHeader">Html<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Html"> Index </a> </div><div> <a class="sidebar-link" asp-action="Tags" asp-controller="Html"> Tags </a> </div><nav class="sidebarHeader">Js<nav><div> <a class="sidebar-link" asp-action="BinaryArraytoDecimal" asp-controller="Js"> Binary Arrayto Decimal </a> </div><div> <a class="sidebar-link" asp-action="Expressions_and_operators" asp-controller="Js"> Expressions_and_operators </a> </div><div> <a class="sidebar-link" asp-action="Index" asp-controller="Js"> Index </a> </div><div> <a class="sidebar-link" asp-action="ToFixed" asp-controller="Js"> To Fixed </a> </div><div> <a class="sidebar-link" asp-action="jsGetMonth" asp-controller="Js"> js Get Month </a> </div><nav class="sidebarHeader">Nav<nav><nav class="sidebarHeader">Python<nav><div> <a class="sidebar-link" asp-action="Index" asp-controller="Python"> Index </a> </div><div> <a class="sidebar-link" asp-action="abs" asp-controller="Python"> abs </a> </div><div> <a class="sidebar-link" asp-action="cg" asp-controller="Python"> cg </a> </div><div> <a class="sidebar-link" asp-action="controllerGetter" asp-controller="Python"> controller Getter </a> </div><div> <a class="sidebar-link" asp-action="funnyNumbers" asp-controller="Python"> funny Numbers </a> </div><div> <a class="sidebar-link" asp-action="stringFormattingTypes" asp-controller="Python"> string Formatting Types </a> </div><div> <a class="sidebar-link" asp-action="swapcase" asp-controller="Python"> swapcase </a> </div><div> <a class="sidebar-link" asp-action="vars" asp-controller="Python"> vars </a> </div>
-            <div class="sticky-top">
-                <a asp-action="index" asp-controller="python" class="link"> Python </a>
-                <br>
-                <a asp-action="index" asp-controller="js" class="link"> JS </a>
-            </div>
-        </div> *@
-
-</div>
 
 
 </body>
@@ -175,21 +424,37 @@
         Version @Version
     </div>
     <div style="font-size: small;">
-        <a asp-area="" asp-controller="Home" asp-action="Python">Python</a>
-        ||
-        <a asp-area="" asp-controller="functions" asp-action="Python">Functions</a>
-        ||
-        <a asp-area="" asp-controller="passwords" asp-action="Python">Passwords</a>
-        ||
-        <a asp-area="" asp-controller="swapcase" asp-action="Python">Swapcase</a>
-
-
-
+        Last Update: <i><span class="border-bottom text-secondary">@LastUpdate</span></i>
+    </div>
+    <div style="font-size: small;">
+        Contact: @WebMaster
+    </div>
+    <div id="controller" style="font-size: small;">
+        @ViewData["controller"]
     </div>
 </footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+<script>
+function openSidebarLink(){
+    let sidebar = document.querySelector(".sidebar");
+    let controllers = sidebar.querySelectorAll("details");
+    let pageController = document.querySelector("#controller").textContent.trim();
+    
+
+    for (let c of controllers){
+        if (c.querySelector("summary").textContent.trim() == pageController){
+            console.log(c.querySelector("summary").textContent.trim())
+            c.setAttribute("open", "open")
+        }
+    }
+    
+}
+openSidebarLink()
+</script>
 
 @* Prism JS *@
 <script src="~/js/prism.js" asp-append-version="true"></script>

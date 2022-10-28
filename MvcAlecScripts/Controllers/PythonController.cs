@@ -8,46 +8,56 @@ namespace MvcMovie.Controllers
         public static string getLinks(){
             return "s";
         }
+        
     }
+    
     public class PythonController : Controller
     {
-        // GET: /Python/
+        public string controllerName = "Python";
 
     public IActionResult Index()
     {
+        ViewData["controller"] = controllerName;
         return View();
     }
 
     public IActionResult Password()
     {
+        ViewData["controller"] = controllerName;
         return View();
     }
 
     public IActionResult swapcase()
     {
+        ViewData["controller"] = controllerName;
         return View();
     }
     public IActionResult vars()
     {
+        ViewData["controller"] = controllerName;
         return View();
     }
     
     public IActionResult abs()
     {
+        ViewData["controller"] = controllerName;
         return View();
     }
 
     public IActionResult funnyNumbers()
     {
+        ViewData["controller"] = controllerName;
         return View();
     }
     public IActionResult stringFormattingTypes()
     {
+        ViewData["controller"] = controllerName;
         return View();
     }
 
     public IActionResult controllerGetter()
     {
+        ViewData["controller"] = controllerName;
         return View();
     }
 

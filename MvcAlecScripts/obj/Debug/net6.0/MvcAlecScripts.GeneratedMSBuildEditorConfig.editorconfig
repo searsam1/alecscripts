@@ -15,24 +15,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cI4SqWjPfopM5fXYrPCyB.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2NJNFNxV2pQZm9wTTVmWFlyUEN5Qi5jc2h0bWw=
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/AreaOfAHexagon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL0FyZWFPZkFIZXhhZ29uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cMYT0T3SLfA3Owg93TF0H.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2NNWVQwVDNTTGZBM093ZzkzVEYwSC5jc2h0bWw=
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/CensoredVowels.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL0NlbnNvcmVkVm93ZWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cQbZ8GrNvPwoF3ZRWi9GQ.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2NRYlo4R3JOdlB3b0YzWlJXaTlHUS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cUieTmgawXxaKw4FroF.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2NVaWVUbWdhd1h4YUt3NEZyb0YuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/cXrVpSBJrEPoaSx3rgYG.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2NYclZwU0JKckVQb2FTeDNyZ1lHLmNzaHRtbA==
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/DepthfirstSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL0RlcHRoZmlyc3RTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/drinkSoda.cshtml]
@@ -47,8 +39,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/pXSfUeawyjrRc4IlzjsG.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL3BYU2ZVZWF3eWpyUmM0SWx6anNHLmNzaHRtbA==
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/NumberLength.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL051bWJlckxlbmd0aC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/ReverseSortANumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL1JldmVyc2VTb3J0QU51bWJlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Challenge/SumOfCube.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL1N1bU9mQ3ViZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Cpp/index.cshtml]
@@ -109,6 +109,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Js/ToFixed.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvVG9GaXhlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Networking/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmV0d29ya2luZy9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Networking/IpDataGram.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmV0d29ya2luZy9JcERhdGFHcmFtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/Views/Python/abs.cshtml]

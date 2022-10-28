@@ -1,22 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
+using System.Linq;
 
-namespace MvcMovie.Controllers
+namespace MvcAlecScripts.Controllers
 {
-    public class HtmlController : Controller
+    
+    public class NetworkingController : Controller
     {
-        // GET: /Python/
-        public string controllerName = "Html";
+
+        public string controllerName = "Networking";
         public IActionResult Index()
         {
             ViewData["controller"] = controllerName;
             return View();
         }
-        public IActionResult Tags()
+        public IActionResult IpDataGram()
         {
             ViewData["controller"] = controllerName;
             return View();
         }
-       
+    
     }
 }
