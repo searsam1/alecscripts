@@ -63,8 +63,9 @@ th {
 :not(pre)>code {
     color: black;
     background-color: rgba(0, 0, 0, 0.0508);
-    padding: 5px;
+    padding: 2px;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 #navy {
@@ -74,7 +75,7 @@ th {
 
 body {
     margin-bottom: 60px;
-    background-color: #f8f9fa;
+    background-color: black;
 }
 
 main {
@@ -98,11 +99,6 @@ p:not(a) {
     max-width: fit-content ;
 }
 
-details > a:hover{
-    background-color: #f8f9fa;
-    border-radius: 2px;
-    
-}
 
 li.nav-item {
     border-bottom: 1px solid #f8f9fa;
@@ -131,10 +127,16 @@ li.nav-item:hover {
     font-size: 20px;
     text-decoration-color: rgba(0, 0, 0, 0.3508);
 }
+.sidebar .link{
+    color: whitesmoke;
+    transition: padding-left .5s, color .5s, background-color 1s;
+}
 
 .link:hover {
     color: black;
-    transition: color .5s;
+    background-color: whitesmoke;
+    transition: padding-left .5s, color .5s, background-color 1s;
+    padding-left: 10px;
 }
 
 .navbar-brand {
@@ -228,7 +230,7 @@ a {
     padding-right: 20px;
     margin-top: 100px;
     position: absolute;
-    bottom: -301px;
+    bottom: -1000px;
     z-index: -1;
 
 }
@@ -288,8 +290,8 @@ summary {
     overflow-y: scroll;
     overflow-x: scroll;
     max-width: 20%;
-    background-color: white;
-    top: 74px;
+    color: white;
+    top: 60px;
     font-family: 'Lato', sans-serif;
 }
 

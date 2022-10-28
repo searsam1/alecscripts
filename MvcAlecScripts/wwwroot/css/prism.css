@@ -37,10 +37,9 @@ pre[class*=language-] {
 }
 
 pre:not(code) {
-    border-top: 20px solid rgb(0, 0, 255, .6);
+    border-top: 20px solid black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
 }
 
 
@@ -77,12 +76,12 @@ pre[class*=language-] {
 :not(pre)>code[class*=language-],
 pre[class*=language-] {
     color: white;
-    background-color: black;
+    background-color: rgb(8, 6, 69);
 
 }
 
 :not(pre)>code[class*=language-] {
-    background-color: rgb(224, 224, 224, .5);
+    background-color: rgb(224, 224, 224, 1);
     border-left: none;
     padding: .1em;
     border-radius: .3em;
