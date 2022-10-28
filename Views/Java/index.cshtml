@@ -1,0 +1,37 @@
+@model MvcAlecScripts.Models.LanguageModel
+
+@{
+    ViewData["title"] = "Java";
+}
+<p>
+     <b>Language</b> - @Model.Language
+</p>
+<p>
+    <b>Release Date</b> - @Model.ReleaseDate By: @Model.Inventor
+</p>
+
+<p>
+    <b>Use</b> - @Model.Use
+</p>
+
+
+<details>
+    <pre><code class="lang-java">
+public class BasicExample {
+ 
+ public static void main(String[] args) {
+  System.out.println("Hello\nAlexandra Abramov!");
+            // +=======+
+            // |Outputs|
+            // +=======+
+            // $ Hello                                                                                                   
+            // $ Alexandra Abramov!
+ }
+ 
+}
+
+    </code></pre>
+    <summary>
+        Basic Example
+    </summary>
+</details>

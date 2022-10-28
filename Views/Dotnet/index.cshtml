@@ -1,0 +1,36 @@
+@{
+    ViewData["title"] = ".NET";
+    ViewData["description"] = "Create a New controller from the command line.";
+}
+
+<h1 class="display-6">
+    .NET 
+</h1>
+
+<p>
+    .NET is a framework designed for building internet connected apps.
+The names are confusing but .NET Core is now just .NET. It offers
+a powerful way to make web apps or applications 
+for windows and mac. It uses a language called razor, 
+which is just html and C# and it is easy to learn.
+</p>
+    
+
+
+
+<h1 class="display-6">
+    Create a New controller from the command line.
+</h1>
+
+
+<p>
+    Install the dotnet-aspnet-codegenerator tool from nuget and add it
+    to your projects packages.
+
+<pre class="bg-dark text-white"><code class="lang-bash">dotnet tool install -g dotnet-aspnet-codegenerator
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.10</code></pre>
+</p>
+<p>
+    To add a controller, run 
+    <pre class="bg-dark text-white"><code class="lang-shell">dotnet-aspnet-codegenerator -p "MyProject.csproj" controller -name MyDemoModelController -outDir Controllers -namespace My.Namespace.Controllers</code></pre>
+</p>
