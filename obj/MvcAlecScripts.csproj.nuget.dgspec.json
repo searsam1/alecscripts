@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/MvcAlecScripts.csproj": {}
+    "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts.csproj": {}
   },
   "projects": {
-    "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/MvcAlecScripts.csproj": {
+    "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/MvcAlecScripts.csproj",
+        "projectUniqueName": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts.csproj",
         "projectName": "MvcAlecScripts",
-        "projectPath": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/MvcAlecScripts.csproj",
+        "projectPath": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts.csproj",
         "packagesPath": "/Users/111244rfsf/.nuget/packages/",
-        "outputPath": "/Users/111244rfsf/Documents/Repositories/alecscripts/MvcAlecScripts/obj/",
+        "outputPath": "/Users/111244rfsf/Documents/Repositories/alecscripts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/111244rfsf/.nuget/NuGet/NuGet.Config"

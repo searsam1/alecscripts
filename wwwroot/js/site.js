@@ -10,6 +10,16 @@ for (const cls of hidden){
 }
 
 
+function showClass(className){
+    let cls = document.querySelector(`.${className}`)
+    let display = cls.style.display
+    // check == "" to see if there is no display element 
+    // if its none and btn is clicked, display in block
+    // if its block, hide it with setting display to "none"
+    cls.style.display = display == "" ? "block" : display == "none" ? "block" : "none"
+
+}
+
 function showID(id){
     let ele = document.getElementById(id);
     let screenWidth = document.getElementsByTagName("body")[0].clientWidth;
