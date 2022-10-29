@@ -287,7 +287,8 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
 }
 
 .command-line-prompt>span[data-user]:before {
-    content: "[" attr(data-user) "@" attr(data-host) "] $"
+    content: "$";
+    color: lime;
 }
 
 .command-line-prompt>span[data-user=root]:before {
@@ -317,4 +318,26 @@ pre.language-json {
 code.language-json>.token {
     color: lime;
     font-size: 12px;
+}
+
+pre.language-bash {
+    background-color: rgb(0, 0, 0);
+    border-top: 10px solid darkgrey;
+}
+
+pre.language-bash code:not(.bashOutput)::before{
+    content: "$Bash";
+    color: grey;
+    opacity: 60%;
+}
+pre.language-bash code.bashOutput{
+    color: gold;
+}
+pre.language-bash code.bashOutput::before{
+    content: "# Output";
+    color: #999;
+}
+pre.language-bash code.bashOutput::after{
+    content: "#";
+    color: #999;
 }

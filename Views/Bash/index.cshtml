@@ -47,28 +47,502 @@
     Programming With Bash
 </h1>
 <p>
-    
+    Programming in bash is as simple as naming a file 
+    with the <code>.sh</code> extension. Follow the syntax
+    of bash when writing the script to execute, which is covered after this section.
 </p>
+<h1 class="display-6 fs-4 indent-1">
+    Example File
+</h1>
+<p>
+    The purpose of programming a bash script is 
+    to avoid running tedious code in the terminal more
+    than once. Take a program that copies the date 
+    to the clipboard. This can be done with: 
+    <code>date | pbcopy</code>.
+</p>
+
+<p>
+    Instead of writing that over and over, just create a file named getDate.sh
+    and copy paste <code>date | pbcopy</code> into the <code>.sh</code> file.
+    Now naviagte to the files directory and run it with <code>./getDate.sh</code>.
+</p>
+
 
 <h1 class="display-6">
     Bash Control Structures 
 </h1>
+<h1 class="display-6 fs-4 indent-1">
+    Looping
+</h1>
 <p>
+    Bash has three loops: <b>while</b>, <b>for</b> and <b>for-in</b>. 
+    Loops are used to repeat code until a condition is met. 
+    For loops loop until the iteration variable reaches its target. While loops
+    go until a certain condition is met, like until a string becomes a certain length 
+    or an integer reaches a certain target. For-in loops 
+    iterate over a container and go through each element.
+</p>
+<h1 class="display-6 fs-4 indent-1">
+    Conditionals
+</h1>
+<p>
+    Loops work in conjunction with <b>conditionals</b>: a boolean 
+    statement that checks if something is true or false. A real-world 
+    example might be: if it's raining, put on a jacket. If it's warm, 
+    where a t-shirt.
+</p>
+
+<h1 class="display-6 fs-4 indent-1">
+    Bash Test Operators 
+</h1>
+<p>
+    The <b>Test</b> keyword allows for comparison between
+    two values. The syntax is <br><code>test value1 -option value2</code>.
+    <code>eq</code> is a common operator (equals) for testing 
+    if two values are the same.
+
+
+    <pre><code class="lang-bash command-line">
+num=5
+test $num -eq 10 # <- Test
+echo $?
+# (Output)
+# 1
+</code></pre>
+</p>
+
+<div class="container">
+    <table>
+    <tr>
+        <th>
+            Int Comparisons
+        </th>
+        <th>
+            ƒ(x)
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <code>-gt</code>
+        </td>
+        <td>
+            Greater Than
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>-lt</code>
+        </td>
+        <td>
+            Less Than
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>-ge</code>
+        </td>
+        <td>
+            Greater-than-or-equal-to
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>-le</code>
+        </td>
+        <td>
+            Less-than-or-equal-to
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>-eq</code>
+        </td>
+        <td>
+            Equal
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <code>-ne</code>
+        </td>
+        <td>
+            Not Equal
+        </td>
+    </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>
+                String Comparisons
+            </th>
+            <th>
+                ƒ(x)
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <code>-z</code>
+            </td>
+            <td>
+                Empty String 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>=</code>
+            </td>
+            <td>
+                Equals (string)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>!=</code>
+            </td>
+            <td>
+                Not Equals (string)
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>
+                Logical Comparisons
+            </th>
+            <th>
+                ƒ(x)
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <code>-a</code>
+            </td>
+            <td>
+                LOGICAL AND
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>-o</code>
+            </td>
+            <td>
+                LOGICAL OR
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>!</code>
+            </td>
+            <td>
+                LOGICAL NOT
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>
+                File Tests
+            </th>
+            <th>
+                ƒ(x)
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <code>-f</code>
+            </td>
+            <td>
+                File Exists and is normal
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>-s</code>
+            </td>
+            <td>
+                Not an empty file
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>-r</code>
+            </td>
+            <td>
+                readable
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>-w</code>
+            </td>
+            <td>
+                File is writeable (can be changed)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>-x</code>
+            </td>
+            <td>
+                File is executable
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>-d</code>
+            </td>
+            <td>
+                File is directory name
+            </td>
+        </tr>
+    </table>
+</div>
+
+<br>
+<p>
+    Brackets <code>[]</code> can also be used instead of the <code>test</code> keyword, like so: 
+
+    <pre><code class="lang-bash command-line">
+[ $num -eq 10 ] 
+# must have white space on both sides
+    </code></pre>
+</p>
+
+<h1 class="display-6 fs-4 indent-1">
+    Conditionals - Syntax
+</h1>
+<p>
+    Conditionals control what does or doesn't happen
+    in a program or loop. The main flow uses <code>if else</code> 
+    with <code>fi</code> ending the control flow (<code>esac</code> for a <code>case</code>). 
+    One of the differences between Bash and other languages is that 
+    it tests the success of other commands and not expressions.
+</p>
+<p>
+        <pre><code class="lang-bash command-line">
+value=something
+if [  "$value" = something  ] # Condition
+    then
+        # do something
+    else
+        # do something else :)
+fi # <- End If Block
+    </code></pre>
+</p>
+
+<p>
+    Bash also has <code>elif</code> which stand for else-if. 
+    Else runs if all other checks fail, while else-if makes another check 
+    and only runs if that check passes, while still being in the same if-block (instead of 
+    making separate if blocks)
+        <pre><code class="lang-bash command-line">
+value=something
+if [  "$value" = something  ] # Condition
+    then
+        # do something
+    elif # check another condition
+        then 
+            # do something
+    else
+        # do something else :)
+fi # <- End If Block
+    </code></pre>
+</p>
+
+<p>
+    <pre><code class="lang-bash command-line">
+choice="sss"
+if [  "$choice" = s  ]
+    then
+        echo "S"
+    else
+        echo "Not S"
+fi
+</code></pre>
+
+<pre><code class="lang-bash command-line bashOutput">
+Not S
+</code></pre>
+</p>
+
+<h1 class="display-6 fs-4 indent-1">
+    Case Statements 
+</h1>
+
+<p>
+    Case statements are better to use than long if-else blocks. 
+    It takes a variable and checks if it matches a certain number of 
+    criteria. Say the variable is how much money one has. Instead of writing:
+    if I have $10 go make more money, if i have $100 relax, if I have $200 put 
+    some money in savings, one could use a case statement excluding all those ifs:
+    <pre><code class="lang-bash command-line">
+VAR="$10"
+case $VAR in 
+
+    "10$")
+    # go to work
+    ;;
+
+    "100$")
+    # relax
+    ;;
     
+    # and so on...
+esac
+    </code></pre>
+
+
+    <br>
+    <p>
+        Here is a basic template for a case statement:
+    </p>
+    <pre><code class="lang-bash command-line">
+#!/bin/bash
+VAR
+
+case $VAR in
+
+  OPTION1)
+    # do something 
+    ;;
+
+  OPTION2)
+    # do something 
+    ;;
+
+  OPTION13)
+    # do something 
+    ;;
+
+  *)
+    # Else
+    ;;
+esac # <- end case block
+</code></pre>
+</p>
+
+<p>
+    Below is an example case statement. Basically, 
+    set a car value to something and if its a Lamborghini its 
+    "Amazing", if its a "Ford" its "Awful" and if its a "Ferrari" its 
+    "realy Awful"
+    <pre><code class="lang-bash command-line">
+#!/bin/bash
+
+# echo -n "Enter the name of a country: "
+# read COUNTRY
+CAR="Lamborghini"
+
+echo -n "My car is "
+
+case $CAR in
+
+  Lamborghini)
+    echo -n "Amazing"
+    ;;
+
+  Ford)
+    echo -n "Awful"
+    ;;
+
+  Ferrari)
+    echo -n "Really Awful"
+    ;;
+
+  *)
+    echo -n "So bad its unknown"
+    ;;
+esac
+echo -n -e "\n" # -e for newline
+
+</code></pre>
+
+<pre><code class="lang-bash command-line bashOutput">
+My car is Amazing
+</code></pre>
+</p>
+
+<h1 class="display-6 fs-4 indent-1">
+    Loop Syntax
+</h1>
+<p>
+    The three looping methods in Bash (for, for-in, and while) all 
+    have similar syntax to each other and other 
+    languages.
+</p>
+<h1 class="display-6 fs-4 indent-1">While/until Loops</h1>
+<p>
+    <b>While loops</b> are loops continue until a condition is true.
+    If done incorrectly they run on forever (infinte loop). <b>Until loops</b>
+    are similar to while loops but they run while a condition is false. 
+    <pre><code class="lang-bash">
+while command # while/until
+do 
+    command 
+done
+    </code></pre>
+</p>
+
+<h1 class="display-6 fs-4 indent-1">
+    For Loops
+</h1>
+<p>
+    <b>For Loops</b> run off of an iteration variable. 
+    Each loop through, the variable is assigned something. For var in range(0,10), print(var) would increment 
+    var from 0 to 10 through each iteration.
+    <pre><code class="lang-bash">
+for variable
+do 
+    command 
+done
+    </code></pre>
+</p>
+<p>
+    <b>For-In</b> loops work off of an iteration variable as well but it is assigned a 
+    value from a list on each iteration. Each iteration is the next value of the list.
+    <pre><code class="lang-bash">
+for variable in list
+do 
+    command 
+done
+    </code></pre>
 </p>
 
 <h1 class="display-6">
     Interacting With The User 
 </h1>
+<h1 class="display-6 fs-4 indent-1">
+    read command
+</h1>
 <p>
-    
+    User input is collected with the <code>read</code> command. 
+    Enter read into the terminal and press enter: a blank 
+    line will be presented for input. Once enter is pressed again 
+    the shell knows its done. This input is stored in a variable named
+    <code>$REPLY</code>. 
 </p>
+<p>
+    To save the input in a variable named something 
+    other than REPLY, include a name after read: <code>read input</code>.
+    The same process of entering the data as before occurs, but 
+    now it can be accessed with <code>$input</code>.
+
+</p>
+
 
 <h1 class="display-6">
     Bash In the Real World
 </h1>
 <p>
-    
+    Bash is be used for a variety reasons in the real world. Some real word 
+    examples are a CPU temp getter, a directory lister and so much more. Bash is powerful 
+    because it allows for OS manipulation on the fly. It also makes using the 
+    computer easier the better one gets at bash, because one can automate tedious tasks or leverage
+    a scripts repeatability to do thousands of tasks at once.
 </p>
 
 <h1 class="display-6">
@@ -77,3 +551,21 @@
 <p>
     
 </p>
+
+<h1 class="display-6">
+    References
+</h1>
+<div class="bg-light text-dark p-3 rounded-3">
+    <ul>Links
+        <li>
+            <a class="text-success" href="https://phoenixnap.com/kb/bash-read">phoenixnap.com</a>
+        </li>
+        <li>
+            <a class="text-success" href="https://linuxhint.com/echo-newline-bash/">linuxhint.com</a>
+        </li>
+        <li>
+            <a class="text-danger" href="http://litux.nl/Reference/books/7213/ddu0071.html">http://litux.nl</a>
+        </li>
+    </ul>
+</div>
+
