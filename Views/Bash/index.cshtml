@@ -6,7 +6,11 @@
     Introduction
 </h1>
 <p>
-
+    BASH stands for Borne Again SHell, and is a reboot of the 
+    Bourne shell. It was first released in 1989 by Brian Fox 
+    as part of the GNU Project and now serves as the default shell
+    for most linux systems. It is a unix shell that piping and variables, along
+    with wildcard matching and condition testing.
 </p>
 
 <h1 class="display-6">
@@ -110,6 +114,14 @@ echo $?
 # (Output)
 # 1
 </code></pre>
+</p>
+<p>
+    Brackets <code>[]</code> can also be used instead of the <code>test</code> keyword, like so: 
+
+    <pre><code class="lang-bash command-line">
+[ $num -eq 10 ] 
+# must have white space on both sides
+    </code></pre>
 </p>
 
 <div class="container">
@@ -301,16 +313,6 @@ echo $?
         </tr>
     </table>
 </div>
-
-<br>
-<p>
-    Brackets <code>[]</code> can also be used instead of the <code>test</code> keyword, like so: 
-
-    <pre><code class="lang-bash command-line">
-[ $num -eq 10 ] 
-# must have white space on both sides
-    </code></pre>
-</p>
 
 <h1 class="display-6 fs-4 indent-1">
     Conditionals - Syntax
@@ -531,6 +533,159 @@ done
     The same process of entering the data as before occurs, but 
     now it can be accessed with <code>$input</code>.
 
+    <img width="100%" src="~/lib/Resources/ss.png">
+    Read has optional flags that make the command
+    more customizable. For example, <code>-d delim</code>
+    defines a custom stopping point, while <code>-e</code> 
+    makes turn read into readline.
+
+<div class="container">
+    <table>
+        <tr>
+            <th>
+                String Comparisons
+            </th>
+            <th>
+                ƒ(x)
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    -a 
+                </code>
+                <i>&lt; aname &gt;</i>
+            </td>
+            <td>
+                Assign to an array <code>aname</code>
+                starting at 0
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    -d
+                </code>
+                <i>&lt; delim &gt;</i>
+            </td>
+            <td>
+                Stop when first character of <i>delim</i> is reached.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    -e
+                </code>
+            </td>
+            <td>
+                Makes <code>\n</code> a newline.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    -i
+                </code>
+                <i>&lt; text &gt;</i>
+            </td>
+            <td>
+                If readline is being used, place text into 
+                editing buffer 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    -n
+                </code>
+                <i>&lt; nchars &gt;</i>
+            </td>
+            <td>
+                return after <i>nchars</i> instead 
+                of looking for a character
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    -N
+                </code>
+                <i>&lt; nchars &gt;</i>
+            </td>
+            <td>
+                Like <code>-n</code> except returns 
+                after the exact amount of
+                <code>nchars</code> has been met.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    -p
+                </code>
+                <i>&lt;prompt&gt;</i>
+            </td>
+            <td>
+                Display prompt on read
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    -r
+                </code>
+            </td>
+            <td>
+                DO NOT treat <code>\</code> backslash as 
+                an escape character.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    -s
+                </code>
+            </td>
+            <td>
+                Do not echo characters, silent mode.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    -t 
+                </code>
+                <i>&lt; timeout&gt;</i>
+            </td>
+            <td>
+                Return a failure within <code>timeout</code> seconds.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
+                    -u
+                </code>
+                <i>&lt; fd&gt;</i>
+            </td>
+            <td>
+                Read from <code>fd</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <i>&lt; name&gt;</i>
+            </td>
+            <td>
+                Replace<i> <code>$REPLY</code> with <code>name</code></i>
+            </td>
+        </tr>
+        
+
+</table>
+</div>
+
 </p>
 
 
@@ -538,7 +693,7 @@ done
     Bash In the Real World
 </h1>
 <p>
-    Bash is be used for a variety reasons in the real world. Some real word 
+    Bash can be used for a variety reasons in the real world. Some real word 
     examples are a CPU temp getter, a directory lister and so much more. Bash is powerful 
     because it allows for OS manipulation on the fly. It also makes using the 
     computer easier the better one gets at bash, because one can automate tedious tasks or leverage
@@ -569,3 +724,4 @@ done
     </ul>
 </div>
 
+<img width="100%" src="~/lib/size_testing.png">

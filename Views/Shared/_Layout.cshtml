@@ -1,5 +1,5 @@
 ﻿@{
-    string Version = "1.6g";
+    string Version = "1.6h";
     string LastUpdate = "Fri Oct 28 22:58:45 MDT 2022";
     string WebMaster = "Web Master";
 }
@@ -48,9 +48,9 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                     </li>
-                    @* <li class="nav-item">
-                        <a class="nav-link text-black" asp-area="" asp-controller="Home" asp-action="Test">Test Page</a>
-                        </li> *@
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Python" asp-action="Index">Python</a>
                     </li>
@@ -84,7 +84,11 @@
     
 </header>
 
-
+<div class="sticky-top">
+    <button onclick="window.scrollTo(0,0);" class="skipToTopBtn btn btn-light">
+        ⇧⇧⇧
+    </button>
+</div>
 
 <body>
 

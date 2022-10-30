@@ -164,3 +164,4 @@ function openSidebarLink(){
     let roots = [...controllers].map((summary) => summary.textContent.trim());
     
 }
+
