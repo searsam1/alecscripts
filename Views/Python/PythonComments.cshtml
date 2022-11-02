@@ -1,0 +1,78 @@
+@{
+    ViewData["title"] = "Python Comments";
+}
+
+<h1 class="display-6">
+    Comments
+</h1>
+<p>
+    Comments make code more readable, define what not to execute, and 
+    explain the code. Comments are ignored 
+    by the computer and are only useful for humans.
+</p>
+
+<h1 class="display-6">
+    Comments In Python    
+</h1>
+<p>
+    Hashtags (<code>#</code>) are used to define a comment in python. 
+    Once a newline is hit and there is no hashtag, the comment ends and 
+    the computer starts executing the code again. The code below is a 
+    simple example of how comments are used to explain 
+    why certain things are happening in the function. It's simple now, but 
+    more complex function need comments so other developers can 
+    understand their code without deciphering it.
+
+    <pre><code class="lang-py">
+def kg_to_grams(kg):
+    # convert given kilograms to grams 
+    # .001 kilograms in a gram, so 
+    # multiply (*) kg by 1000
+    return kg * 1000
+    </code></pre>
+</p>
+
+<h1 class="display-6">
+    Multi-line Comments
+</h1>
+<p>
+    Python has two ways of doing multi-line comments. First, 
+    by using multiple hashtags (<code>#</code>), second, by using three
+    quotes (starting and ending). Triple quotes are actually multi-line 
+    strings, but they can also serve as comments and are interpreted as 
+    docstrings if its on the first line.
+    <pre><code class="lang-py"># This is 
+# a multi-line
+# comment
+
+"""
+A multi-line comment 
+using triple quotes (''')
+"""
+</code></pre>
+<pre><code class="lang-py">
+def docstring():
+    """
+    This is a docstring. It 
+    defines what the function does, but more 
+    importantly, why it does it. 
+    """
+print(docstring.__doc__)
+# use .__doc__ to access docstring
+"""
+    This is a docstring. It 
+    defines what the function does, but more 
+    importantly, why it does it.
+"""
+
+</code></pre>
+</p>
+
+<h1 class="display-6">
+    References
+</h1>
+<p>
+    <p><a href="https://peps.python.org/pep-0257/">pep-0257/</a></p>
+    <p><a href="https://www.w3schools.com/python/python_comments.asp">python_comments.asp</a></p>
+</p>
+

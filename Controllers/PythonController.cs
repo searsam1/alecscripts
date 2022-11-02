@@ -61,6 +61,11 @@ namespace MvcMovie.Controllers
         return View();
     }
 
+    public IActionResult PythonComments()
+    {
+        ViewData["controller"] = controllerName;
+        return View();
+    }
     // make an api
     // public IActionResult cg()
     // {

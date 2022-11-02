@@ -1,3 +1,6 @@
+<center class="bg-light">
+    <img style="width: 300px;" src="lib/Resources/monochrome_dark.svg">
+</center>
 @{
     ViewData["title"] = "Bash";
 }
@@ -5,11 +8,22 @@
 <h1 class="display-6">
     Introduction
 </h1>
+
+
+
+<p>
+    Computers operate from a kernel which is wrapped by a shell.
+    The shell is what controls the computer and is more efficient
+    to use than a GUI. The shell is just a box that accepts 
+    text input from the user and that text tells 
+    the computer what to do.
+</p>
+
 <p>
     BASH stands for Borne Again SHell, and is a reboot of the 
     Bourne shell. It was first released in 1989 by Brian Fox 
     as part of the GNU Project and now serves as the default shell
-    for most linux systems. It is a unix shell that piping and variables, along
+    for most linux systems. It is a unix shell that supports piping and variables along
     with wildcard matching and condition testing.
 </p>
 
@@ -124,6 +138,9 @@ echo $?
     </code></pre>
 </p>
 
+<h1 class="display-6 fs-4 indent-1">
+        -operators
+    </h1>
 <div class="container">
     <table>
     <tr>
@@ -704,7 +721,10 @@ done
     Conclusion 
 </h1>
 <p>
-    
+    Bash is a powerful language that is used on most linux distributions. 
+    It supports multiple operating systems, loops, conditionals. Input can 
+    be read from the user with the <code>read</code> command, and it is 
+    customizable with flags.
 </p>
 
 <h1 class="display-6">
@@ -724,4 +744,3 @@ done
     </ul>
 </div>
 
-<img width="100%" src="~/lib/size_testing.png">

@@ -1,5 +1,5 @@
 ﻿@{
-    string Version = "1.6h";
+    string Version = "1.6i";
     string LastUpdate = "Fri Oct 28 22:58:45 MDT 2022";
     string WebMaster = "Web Master";
 }
@@ -85,7 +85,7 @@
 </header>
 
 <div class="sticky-top">
-    <button onclick="window.scrollTo(0,0);" class="skipToTopBtn btn btn-light">
+    <button onclick="window.scrollTo(0,0);" class="skipToTopBtn btn btn-secondary">
         ⇧⇧⇧
     </button>
 </div>
@@ -116,7 +116,9 @@
 
                     <ul class="toc-container">
                         <h4 class="border-bottom">
-                            Table of Contents
+                            <div class="text-center">
+                                Table of Contents
+                            </div>
                         </h4>
                         @* @foreach (var item in Toc)
                             {
@@ -126,11 +128,21 @@
 
                 </div>
                 
-                <div id="mainBody" class="pt-3 p-3">
+                <div id="mainBody" class="pt-3">
                     @RenderBody()
                 </div>
+                <center>
+                    @* <p class="btn btn-dark"> *@
+                        Learn 
+                        <a asp-controller=@ViewData["controller"] asp-action="index">
+                            @ViewData["controller"]
+                        </a>
+                    </p>
+                </center>
             </main>
+            
         </div>
+        
 
 
 
@@ -139,12 +151,12 @@
 
 </body>
 
-<footer id="foot" class="sticky-bottom border-top  footer text-muted">
+<footer id="foot" class="sticky-bottom  footer text-muted">
     <div style="font-size: small;">
         &copy; alecscripts.com &trade; <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         || <a href="https://github.com/searsam1/alecscripts/commits/main">Repository</a>
     </div>
-    <div style="font-size: small;">
+    <div style="font-size: small;" class="pb-0">
         Version @Version
     </div>
     <div style="font-size: small;">
@@ -153,9 +165,11 @@
     <div style="font-size: small;">
         Contact: @WebMaster
     </div>
-    <div id="controller" style="font-size: small;">
+    <div id="controller" style="font-size: small; margin-top: none;">
         @ViewData["controller"]
     </div>
+    
+    
 </footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -167,11 +181,11 @@ function openSidebarLink(){
     let sidebar = document.querySelector(".sidebar");
     let controllers = sidebar.querySelectorAll("details");
     let pageController = document.querySelector("#controller").textContent.trim();
-    
+    let header
 
     for (let c of controllers){
-        if (c.querySelector("summary").textContent.trim() == pageController){
-            console.log(c.querySelector("summary").textContent.trim())
+        header = c.querySelector("summary").textContent.trim()
+        if (header == pageController){
             c.setAttribute("open", "open")
         }
     }

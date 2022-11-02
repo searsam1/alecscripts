@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MvcAlecScripts.Models;
 
@@ -22,6 +23,27 @@ public class HomeController : Controller
     {
         ViewData["controller"] = controllerName;
         return View();
+    }
+
+    // dotnet-aspnet-codegenerator view ViewName Empty -outDir Views/ViewName
+    // dotnet-aspnet-codegenerator razorpage Test Edit -outDir Views/Tests
+
+    public static string ControllerInput(string name="")
+    {
+        string project = "MvcAlecScripts.csproj";
+        if (name == ""){
+            name = "NewController";
+        }
+        string outDir = "Controllers";
+        string namespace_ = "MvcAlecScripts.Controllers";
+        return $@"dotnet-aspnet-codegenerator -p ""{project}"" controller -name ""{name}Controller"" -outDir ""{outDir}"" -namespace ""{namespace_}""";
+    }
+
+    public string CreateController(string name)
+    {
+        // Code To make a new controller
+        // dotnet-aspnet-codegenerator -p "MyProject.csproj" controller -name MyDemoModelController -outDir Controllers -namespace My.Namespace.Controllers
+        return ControllerInput(name);
     }
 
     public IActionResult Privacy()

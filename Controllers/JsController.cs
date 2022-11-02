@@ -9,12 +9,15 @@ namespace MvcMovie.Controllers
     {
         public string controllerName = "Js";
 
-    public string Get(){
+    public string DreamWorldCoke(){
         return @"
         
-This is my simple API
-
-        ";
+{
+    ""Dream-Word-Coke"" : {
+        ""Total-Fat"" : ""0g"",
+        ""Sodium"" : ""50mg""
+    }
+}";
     }
     public IActionResult Index()
     {

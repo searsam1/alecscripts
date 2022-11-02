@@ -157,11 +157,3 @@ function formatLinks(){
         link.setAttribute("title", link.href);
     }
 }
-
-function openSidebarLink(){
-    let sidebar = document.querySelector(".sidebar")
-    let controllers = sidebar.querySelectorAll("summary")
-    let roots = [...controllers].map((summary) => summary.textContent.trim());
-    
-}
-
