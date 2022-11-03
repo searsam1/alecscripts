@@ -110,7 +110,7 @@ pre[class*=language-] {
 .token.property,
 .token.symbol,
 .token.tag {
-    color: rgb(117, 105, 224)
+    color: rgb(165, 247, 2)
 }
 
 .token.attr-name,

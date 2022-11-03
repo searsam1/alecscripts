@@ -1,0 +1,248 @@
+@{
+    ViewData["title"] = "Sass";
+}
+
+<h1 class="display-6">
+    Sass Variables 
+</h1>
+
+<p>
+    Variables in Sass are assigned and accessed through <code>$</code>. Since 
+    multiple elements can be assigned using the variable, the variable can be 
+    changed once instead of changing every element. 
+<pre><code class="lang-sass">$text-color = red;</code></pre>
+<pre><code class="lang-css">p {
+    color: $text-color;
+    /* color: red; */ 
+}</code></pre>
+</p>
+
+<h1 class="display-6">
+    CSS Nesting With Sass
+</h1>
+
+<p>
+    With Sass a CSS document can be better organized through the nesting of elements. 
+    Instead of having to refer to the parent class over and over, with sass elements 
+    are nested inside the parent and a child can be the parent to another nested 
+    element. 
+<pre><code class="lang-sass">table {
+    tr {
+        padding: 3px;
+            td {
+                color: red;
+        }
+    }
+}
+</code></pre>
+</p>
+
+<p>
+    In the example td is inside tr which is inside table. This is much cleaner than 
+    table tr td, table tr, table. 
+</p>
+
+
+
+<h1 class="display-6">
+    Mixins
+</h1>
+
+<p>
+   Mixins are like functions that create reuseable CSS.
+   This is useful when lots of properties are set on one 
+   value. That value can be automatically distributed to each browser 
+   version. 
+<pre><code class="lang-css">
+div {
+  -webkit-box-shadow: 0px 0px 10px green;
+  -moz-box-shadow: 0px 0px 10px green;
+  -ms-box-shadow: 0px 0px 10px green;
+  box-shadow: 0px 0px 10px green;
+}
+</code></pre>
+</p>
+<p>
+    In the example, <code>0px 0px 10px green</code> is repeated four times. Instead, 
+    use a Sass mixin and reuse variables. 
+</p>
+
+<pre><code class="lang-scss">
+@@mixin box-shadow($x, $y, $blur, $c){ 
+  -webkit-box-shadow: $x $y $blur $c;
+  -moz-box-shadow: $x $y $blur $c;
+  -ms-box-shadow: $x $y $blur $c;
+  box-shadow: $x $y $blur $c;
+}
+</code></pre>
+
+<p>
+    Now, when inside an element, use <code>@@include</code> followed by the mixin name 
+    and its arguments. 
+</p>
+
+<pre><code class="lang-scss">
+div {
+    @@include box-shadow(0px 0px 10px green);
+}
+</code></pre>
+
+<h1 class="display-6">
+    if and else
+</h1>
+
+<p>
+    In order to control which elements get styling at what time, sass 
+    has the @@if and @@else keywords. It works just like javaScripts control flow. Sass 
+    also comes with the <code>else if</code> statement. 
+</p>
+<pre><code class="lang-scss">
+@@mixin bold($isBold){
+    @@if $isBold == true {
+        color: black;
+    }
+    @@else if $isBold == false {
+        color: grey;
+    }
+    @@else {
+        color: none;
+    }
+}
+
+p {
+    @@include bold(true);
+}
+</code></pre>
+
+<h1 class="display-6">
+    For Loops Using Sass
+</h1>
+<p>
+    For loops are useful for creating different sizes of elements without 
+    going through each class individually. To use a for loop, use the 
+    <code>@@for</code> command and either to or though. To goes to the max 
+    value - 1, while through goes to the max number. <code>from 1 through 12</code> will go 
+    start at 1 and go to 12, while <code>from 1 to 12</code> will stop at 11. 
+</p>
+
+<p>
+    <code>#{$i}</code>  is used to combine the iterator and text to make text.
+</p>
+<pre><code class="lang-scss">@@for $i from 1 through 6 {
+    /// stops at 6 (through) 
+    .text-#{$i} { font-size: #{$i * 10}px; }
+    /// .text-1 {font-size: 10px;}
+
+  }
+</code></pre>
+
+<p class="text-1">text-1</p>
+<p class="text-2">text-2</p>
+<p class="text-3">text-3</p>
+<p class="text-4">text-4</p>
+<p class="text-5">text-5</p>
+
+<pre><code class="lang-css">
+.text-1 {
+  font-size: 10px;
+}
+
+.text-2 {
+  font-size: 20px;
+}
+
+.text-3 {
+  font-size: 30px;
+}
+
+.text-4 {
+  font-size: 40px;
+}
+
+.text-5 {
+  font-size: 50px;
+}
+
+.text-6 {
+  font-size: 60px;
+}
+</code></pre>
+<h1 class="display-6">
+    For Each Loops
+</h1>
+<p>
+    For each loops iterate over a list or map using an 
+    arbitrarily defined iterator variable. Use <code>@@each $var in ListOrMap{}</code>. In each 
+    iteration the variable in the next item in the list or map. 
+</p>
+<pre><code class="lang-scss">/// map
+$colors: (color1: blue, color2: black, color3: red);
+
+@@each $key, $color in $colors {
+  .#{$color}-bg {background-color: $color;}
+}
+/// $key is required to get $color 
+
+/// list
+@@each $color in blue, red, green {
+  .#{$color}-text {color: $color;}
+}
+</code></pre>
+
+<h1 class="display-6">
+    While Loops
+</h1>
+<p>
+    While loops go until a condition is false. If the condition never turn to 
+    false there will be an infinite loop. Use the <code>@@while</code> directive in Sass to create a 
+    a while loop. 
+</p>
+<pre><code class="lang-scss">
+$x: 1;
+@@while $x < 13 {    
+    .text-#{$x} { font-size: #{12 * $x}px;}
+    $x: $x + 1; 
+    /// increment x by 1 
+    /// to avoid infinite loop
+}
+</code></pre>
+
+<h1 class="display-6">
+    Organize Sass With Partials
+</h1>
+<p>
+    Partials are chunks of sass code that 
+    are separate from the main source code. These files 
+    start with underscores<code>_</code> and end with <code>.scss</code>.
+    To import the code of a partial file, use <code>@@import 'filename'</code>
+</p>
+<p>
+    If there was a file named _partial.scss, it would be imported with: 
+</p>
+<pre><code class="lang-scss">@@import 'partial'
+</code></pre>
+<p>
+    The underscore and file extension are not needed when importing 
+    a partial, only with the filename itself. 
+</p>
+
+<h1 class="display-6">
+    Extend CSS From One Element To Another 
+</h1>
+<p>
+    Sass has an <code>@@extend</code> directive that can be used 
+    to copy css from one element into another. This can save a lot of space and time 
+    by not having to add everything to every element that is similar. 
+</p>
+<pre><code class="lang-scss">
+.box{
+  background-color: red;
+  height: 70px;
+  border: 2px solid green;
+}
+.square{
+    @@extend .box;
+    width: 70px;
+}
+
+</code></pre>

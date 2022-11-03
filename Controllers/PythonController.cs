@@ -66,6 +66,37 @@ namespace MvcMovie.Controllers
         ViewData["controller"] = controllerName;
         return View();
     }
+
+    public IActionResult PythonSyntax()
+    {
+        ViewData["controller"] = controllerName;
+        return View();
+    }
+    public IActionResult PythonVariablesNames()
+    {
+        ViewData["controller"] = controllerName;
+        return View();
+    }
+    public IActionResult PythonVariablesValues()
+    {
+        ViewData["controller"] = controllerName;
+        return View();
+    }
+    public IActionResult PythonVariablesOutput()
+    {
+        ViewData["controller"] = controllerName;
+        return View();
+    }
+    public IActionResult PythonVariablesGlobals()
+    {
+        ViewData["controller"] = controllerName;
+        return View();
+    }
+    public IActionResult PythonDataTypes()
+    {
+        ViewData["controller"] = controllerName;
+        return View();
+    }
     // make an api
     // public IActionResult cg()
     // {

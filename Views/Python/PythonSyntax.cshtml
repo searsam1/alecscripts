@@ -1,0 +1,62 @@
+@{
+    ViewData["title"] = "Python Syntax";
+    ViewData["description"] = "Basic Syntax in Python";
+}
+
+<h1 class="display-6">
+    What is Syntax? 
+</h1>
+<p>
+    Syntax is the blueprint of a programming language in terms 
+    of its structure. Some syntaxes make it harder to read certain languages 
+    than others, like C++ for example, while some like python make it 
+    intuitive to understand by using obvious syntax.
+</p>
+
+<h1 class="display-6">
+    Indentation
+</h1>
+<p>
+    Python is strict about its indents. This is because it uses them to determine 
+    where certain structures start and end instead of using brackets <code>{}</code>. There is 
+    also a colon <code>:</code> put before the indentation and the newline.
+
+    <pre><code class="lang-py">
+def foo():
+    ... # Ident and colon
+while program_is_on:
+    ...
+    break 
+    </code></pre>
+
+</p>
+<p>
+    Python will throw an <code>IndentationError</code> will the script is not 
+    properly indented.
+</p>
+<pre><code class="lang-py">
+def foo():
+print("This will give an IndentationError.")    
+    
+# IndentationError: expected an indented block after function definition on line 1
+</code></pre>
+<p>
+    <br>
+    The amount of spaces in the indent depends on the programmer. It is common 
+    to use four, but at least one must be used and they must be kept consistent. 
+    If one space and two spaces are used in the same block there will be an error.
+</p>
+
+
+<h1 class="display-6">
+    Broader Syntax
+</h1>
+<p>
+    Syntax is a wide scope, meaning there are specific cases 
+    on a wide range of data types and different things in the language. 
+    Syntax is learned when trying to do something 
+    in the language: if a list needs to be created the 
+    list syntax is the first thing to learn.
+</p>
+
+

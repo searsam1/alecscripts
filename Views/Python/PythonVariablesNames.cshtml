@@ -1,0 +1,105 @@
+@{
+    ViewData["title"] = "Python Variables Names";
+}
+
+<h1 class="display-6">
+    Syntax
+</h1>
+<p>
+    A variable is a container that holds an object, and the 
+    label of that container is the variable name. Think x and 
+    y from math. Though, unlike math, variables have a syntax 
+    that must be followed. 
+</p>
+<p>
+    Variable names must start with a letter 
+    and can only contain letters, numbers and underscores <code>_</code>.
+    The names are typically separated by underscores <code>like_this</code> and not 
+    camel case. While this is not required, it's good practice so 
+    everyone is on the same page.
+</p>
+<pre><code class="lang-py">
+var = 2
+name = "name"
+variable = 10
+
+# Variable Name Examples
+</code></pre>
+
+<p>
+    Variables need a good name, but don't spend to 
+    much time thinking about it. Be descriptive, but not 
+    to long or verbose. Do not use single letter variables in 
+    most cases; they are meaningless and make it 
+    harder for the programmer to understand. 
+</p>
+
+
+<h1 class="display-6">
+    i
+</h1>
+<p>
+    Lowercase i is used for iterating over a range in a for loop. 
+    While this is arbitrary, most people use <code>for i in range(...)</code>, instead 
+    of assigning the iterator variable a name. This is ok because 
+    it is widely accepted to use <code>i</code>, so other programmers 
+    will have an idea of what <code>i</code> is.
+</p>
+
+<h1 class="display-6">
+    Cases
+</h1>
+
+<h1 class="display-6 fs-4 indent-1">
+    Title Case
+</h1>
+<p>
+    Title case is where each word starts with a capital letter, like in a title. 
+    <pre><code class="lang-py">
+"This Is Title Case"
+    </code></pre>
+</p>
+
+<h1 class="display-6 fs-4 indent-1">
+    Camel Case
+</h1>
+<p>
+    Camel case is where each word is separated by an uppercase letter and not a space. 
+    <pre><code class="lang-py">
+"iPhone"
+"macOS"
+"alecScripts"
+"thisIsCamelCase"
+    </code></pre>
+</p>
+
+<h1 class="display-6 fs-4 indent-1">
+    Snake Case
+</h1>
+<p>
+    Snake Case is often used in python: it is words that are separated 
+    by an underscore <code>_</code>.
+    <pre><code class="lang-py">
+variable_names_are_often_snake_case = "variable_names_are_often_snake_case"
+    </code></pre>
+</p>
+
+<h1 class="display-6">
+    Classes
+</h1>
+<p>
+    Classes are worth mentioning here because 
+    they are often capitalized, unlike most other 
+    objects in python.
+</p>
+<pre><code class="lang-py">
+class Class:
+    ...
+class Integer:
+    ...
+
+def foo():
+    # foo is lowercase because it is not a class
+    ...
+
+</code></pre>

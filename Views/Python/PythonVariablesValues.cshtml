@@ -1,0 +1,87 @@
+@{
+    ViewData["title"] = "Python Variable Values";
+}
+
+<h1 class="display-6">
+    Assignment  
+</h1>
+<p>
+    Values are given to a variable in its assignment 
+    when it is first created. Their value can be changed 
+    are added to after they are created. The equals sign <code>=</code> is 
+    used to assign a value to a variable:<br> <code>weather = "sunny"</code>.
+</p>
+<p>
+    There is no type-setting when the variable is given a value. The interpreter
+    takes the value and determines its type. Type hints are used in certain places, but they 
+    are just a hint and do not restrict anything.
+<pre><code class="lang-py">
+weather = "sunny"
+temp = 99
+</code></pre>
+</p>
+<p>
+    Everything in python is an object, which means 
+    anything can be stored inside a variable, including other variables. 
+    If a one variable is stored inside another, at the time 
+    of assignment it will copy the other variables value 
+    and take it as its own.
+</p>
+<p>
+    Containers can also be stored in variables, like a list or a dictionary.
+    It is extremely important to be able to store containers inside of variables 
+    so they can be reused later and labeled. If a list is like a clothes drawer, the variable 
+    is the dresser that holds the drawer. The point is, if something is in a container 
+    there still needs to be a container holding the container.  
+<pre><code class="lang-py">
+lst = [1, 2, 3, 4]
+d = {1 : "1", "2" : 2}
+
+</code></pre>
+</p>
+
+<h1 class="display-6">
+    Working With Multiple Values
+</h1>
+<p>
+    Multiple variables can be assigned at once. 
+    This saves a lot of space but can make the code 
+    harder to read. The variables on the left 
+    side with correspond to the position of the right side. 
+    The first variable on the left is assigned the first value on the first, and so on. 
+<pre><code class="lang-py">
+first, second, third = 1, 2, 3
+# first = 1
+# second = 2
+# third = 3
+</code></pre>
+</p>
+
+<h1 class="display-6 fs-4 indent-1">
+    Unpacking
+</h1>
+<p>
+    The right side of the variable expression 
+    can be a container. If the left side has the same 
+    amount of variables as the container does objects, the same 
+    thing happens as mentioned above: each variable of the left 
+    is assigned with its corresponding value on the right.
+<pre><code class="lang-py">
+lst = [1, 2, 3]
+first, second, third = lst
+# first = 1
+# second = 2
+# third = 3
+</code></pre>
+</p>
+
+<p>
+    Certain values can be skipped by using an underscore <code>_</code>. The 
+    number of variables on the left much match the amount of object on the left. 
+<pre><code class="lang-py">
+lst = [1, 2, 3]
+first, _, third = lst
+# first = 1
+# third = 3
+</code></pre>
+</p>

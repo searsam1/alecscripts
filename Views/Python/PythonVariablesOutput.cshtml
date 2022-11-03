@@ -1,0 +1,75 @@
+@{
+    ViewData["title"] = "Python Variables: Output";
+}
+<h1 class="display-6">
+    Print
+</h1>
+<p>
+    Printing is the most common way to 
+    output a variable to the programmer/user. Printing 
+    is just displaying something to a screen, not actually printing a 
+    piece of paper. To print something in python, use the <code>print(a)</code> function. <code>a</code> is 
+    whatever the user needs to be printed. 
+    <pre><code class="lang-py">
+weather = "sunny"
+print(weather)
+
+# "sunny"
+    </code></pre>
+</p>
+
+<h1 class="display-6">
+    Combining variables 
+</h1>
+<p>
+    Variables can be combined inside the print function by adding them together 
+    if they are of the same type. For example, if <code>x = 2, y = 2</code>, then
+    <code>print(x + y)</code> would give <code>4</code>.
+    It also works with strings: <code>x = "Hello ", y = "World!"</code>, then
+    <code>print(x + y)</code> would give <code>Hello World!</code>
+
+    However, an error occurs when two different types are being added 
+    together, like a string and a number. 
+    <pre><code class="lang-py">
+string = "1"
+number = 2
+print(string + number)
+
+# Gives a TypeError: 
+TypeError: can only concatenate str (not "int") to str
+
+print(number + 1)
+# 3
+
+print(string + "9")
+# "19"
+    </code></pre>
+</p>
+
+
+<h1 class="display-6">
+    Using Commas 
+</h1>
+<p>
+    A good way to print multiple variables in one print statement 
+    is by passing in all the variables to the print function and 
+    separating them by commas: <code>print(var1, var2, var3)</code>. This way, 
+    variables with all data types will be printed and not combined into one 
+    object but rather one string printable representation of all the objects. 
+<pre><code class="lang-py">
+first = "John"
+second = "Max"
+third = "Joe"
+
+print(first, second, third)
+# John Max Joe
+</code></pre>
+
+<pre><code class="lang-py">
+first, second, third = "John", "Max", "Joe"
+lst = [first, second, third]
+
+print(1, first, 2, second, 3, third)
+# 1 John 2 Max 3 Joe
+</code></pre>
+</p>

@@ -1,0 +1,242 @@
+@{
+    ViewData["title"] = "Python Data Types";
+}
+<h1 class="display-6">
+    Data Types
+</h1>
+<p>
+    Data types are different objects in python 
+    that naturally behave a certain way. Strings 
+    act like words and characters, while number 
+    types act like mathematical numbers.
+</p>
+<table>
+        <tr>
+            <th>
+                Description
+            </th>
+            <th>
+                Type
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Text
+            </td>
+            <td>
+                <code>str</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Numeric
+            </td>
+            <td>
+                <code>int, float, complex</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Sequence
+            </td>
+            <td>
+                <code>list, tuple, range</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mapping
+            </td>
+            <td>
+                <code>dict</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Set
+            </td>
+            <td>
+                <code>set, frozenset</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Boolean
+            </td>
+            <td>
+                <code>bool</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Binary
+            </td>
+            <td>
+                <code>bytes, bytearray, memoryview</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                None
+            </td>
+            <td>
+                <code>None</code>
+            </td>
+        </tr>
+</table>
+
+<h1 class="display-6 fs-4 indent-1">
+    Text
+</h1>
+<p>
+    The text type in python is <code>str</code> for string. 
+    Strings are a group of letters or characters 
+    that start and end with quotes (double or single). 
+    <pre><code class="lang-py">string = "Lost"
+string = 'Lost'
+# 'single-quotes' same as "double-quotes"</code></pre>
+</p>
+@* ====== *@
+<h1 class="display-6 fs-4 indent-1">
+    Numeric
+</h1>
+<p>
+    The numeric or number types in python are 
+    <code>int</code> (integer), 
+    <code>float</code> (decimal) 
+    and 
+    <code>complex</code> (imaginary). 
+
+    Floats are used when there is a decimal place involved and 
+    has some special methods to itself apart from ints. An int or integer
+    is a while number that can be positive or negative. Complex / imaginary numbers 
+    use <code>j</code> to represent the imaginary part of the number.  
+    <pre><code class="lang-py">
+int_ = 5
+float_ = 5.25
+complex_ = 5 + 6j
+    </code></pre>
+</p>
+@* ====== *@
+<h1 class="display-6 fs-4 indent-1">
+    Sequence
+</h1>
+<p>
+    Sequence types are containers in python that all act 
+    a little differently. Lists are the basic arrays that 
+    are mutable, while tuples are lists 
+    that cannot be changed. There are also sets, which are 
+    unique lists (each element can only exist once).
+    <pre><code class="lang-py">
+list_ = [1, 2, 3] # Use [ square brackets for lists ]
+tuple_ = (1, 2, 3) # Use ( parenthesis for tuples OR nothing )
+tuple_ = 1, 2, 3 # Nothing
+set_ = {1, 2, 3} # Use { curly braces for sets }
+    </code></pre>
+</p>
+@* ====== *@
+<h1 class="display-6 fs-4 indent-1">
+    Mapping
+</h1>
+<p>
+    Python uses the <code>dict</code> (dictionary) type for 
+    hash maps in python. Dictionaries are widely used in the internals
+    of python. Dictionaries consist of key-value pairs separated by commas (the keys
+    are mapped to the values by a colon<code>:</code>).
+<pre><code class="lang-py">
+dictionary = {
+        "password" : "1234", 
+        "user" : "john cena"
+        }
+print( dictionary[password] )
+# "1234"
+</code></pre>
+</p>
+<p>
+    Dictionaries are like sets in that every key must be unique. Existing keys 
+    will be overridden by the new value supplied. 
+</p>
+@* ====== *@
+<h1 class="display-6 fs-4 indent-1">
+    Set
+</h1>
+<p>
+    Sets are arrays that have no repeating elements. They cannot be 
+    subscripted in python, however, unlike tuples and lists. Use curly brackets 
+    like dictionaries, except with no colons.
+<pre><code class="lang-py">set_ = {1, 2, 3}</code></pre>
+</p>
+
+@* ====== *@
+<h1 class="display-6 fs-4 indent-1">
+    Boolean
+</h1>
+<p>
+    <code>True</code> or <code>False</code> are 
+    the two boolean values in python (and they are capitalized). False 
+    is a 0, None and empty objects. True is a 1, or anything that is not False. 
+    <code>bool()</code> is used to convert to True or False. Booleans are used in control flow 
+    to determine which path to take.
+    <pre><code class="lang-py">
+boolean_true = True
+boolean_false = False
+bool_conversion = bool(99) # True
+    </code></pre>
+</p>
+@* ====== *@
+<h1 class="display-6 fs-4 indent-1">
+    Binary
+</h1>
+<p>
+    Binary is just base-2 math. Base-10, a.k.a. decimal, works by using ten digits (0 - 9)
+    to create numbers. Each digit is a counter that is multiplied by its index and 10. It's easier 
+    to see by example: 
+<pre><code class="lang-">    987 
+
+    9 100's 
+    8 10's 
+    7 1's 
+
+    999 -> 1000</code></pre>
+</p>
+<p>
+    The point is that each digit's tens place is multiplied by 10 on the way up.
+    If the number has 3 digits it is in the hundreds. If it is in 
+    the hundreds, the next tens place up would be 1000 (100 * 10).
+</p>
+<p>
+    Binary is just base-2: it uses 2 digits (0 and 1) to store numbers. 
+    Every digit up is a successive power of 2. <code>2^0 = 1, 2^1 = 2, 2^2 = 4, etc.</code>.
+    Since there are only the digits 0 and 1, any number with bigger digits is not base 2. 
+    Instead, every time a 1 goes over, move the power of 2 up one more. In the case of 4, 
+    it would be <code>100</code> in binary because <code>2^2 = 4</code> and 2 is the third index (starts at zero). 
+    When reading binary, treat each position as a power of 2 and if there is a one 
+    in a position raise 2 to the index. Keep track of these in a sum 
+    and that is the answer in base-10. 
+</p>
+<p>
+    In python, use <code>bin()</code> to convert a number into a binary object. 
+    Every binary object in python is prefaced by a <code>0b</code> to show its a 
+    binary object. 
+</p>
+<pre><code class="lang-py">bin(4)
+# 0b100</code></pre>
+@* ====== *@
+<h1 class="display-6 fs-4 indent-1">    
+    None
+</h1>
+<p>
+    <code>None</code> is the null or empty type in python. It is 
+    used to implicitly return something when nothing is specified as well (no <code>return</code> keyword inside function).
+    Like True and False, it is also capitalized. 
+<pre><code class="lang-py">null = None
+
+def foo():
+    ...
+
+print( foo() )
+# None
+
+</code></pre>
+</p>
+@* ====== *@

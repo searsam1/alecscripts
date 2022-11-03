@@ -1,0 +1,62 @@
+@{
+    ViewData["title"] = "Python Variables: Globals";
+}
+<h1 class="display-6">
+    Scope
+</h1>
+<p>
+    Scope is a layering system in a programming language. 
+    Certain layers can see others while some 
+    are hidden to others. For example, a function 
+    will have its own scope, or namespace. A scope is a 
+    just a namespace: a place to store names (variable names).
+</p>
+
+<h1 class="display-6">
+    Global Scope
+</h1>
+<p>
+    Global scope, however, is every name that is not inside something else with a 
+    scope like a function. These variables can be accessed from anywhere in the script. 
+    <pre><code class="lang-py">
+month = "May"
+
+def foo():
+    # Define a different month variable 
+    # in the foo scope
+    month = "October"
+    return month
+
+print(month, foo())
+# May October
+    </code></pre>
+</p>
+<p>
+    In the example above, month is first defined outside of <code>foo()</code> in 
+    the global scope. Inside of <code>foo()</code> a different local variable also 
+    called month is defined. A good way to comprehend this is thinking of location in 
+    memory. Though these variables have the same name, they are not in the same 
+    memory location and are therefore different variables even if they shared the same 
+    value.  
+</p>
+
+<h1 class="display-6">
+    Getting Scopes With vars
+</h1>
+<p>
+    Python comes with a handy function <code>vars()</code> which 
+    is used to display the __dic__ attribute of the given object. 
+    In other terms, it can be used to display the current variables 
+    in a function or global space. 
+    <pre><code class="lang-py">
+def foo():
+    x = 2
+    print(vars())
+foo()
+# prints: {'x': 2}
+    </code></pre> 
+</p>
+<p>
+    Vars will return a dictionary where the keys are the variable names in string 
+    form and the values are the values of the variables. 
+</p>

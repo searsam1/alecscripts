@@ -51,15 +51,15 @@ td,
 th {
     padding-left: 10px;
     padding-right: 10px;
-    border-left: 1px solid rgba(0, 0, 0, 0.108);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.108);
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 th {
-    text-align: center;
+    text-align: left;
     font-family: 'Courier New', Courier, monospace;
 }
 table{
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 2%;
 }
 
 :not(pre)>code {
@@ -77,7 +77,7 @@ table{
 
 body {
     margin-bottom: 60px;
-    background-color: black;
+    background-color: white;
 }
 
 main {
@@ -137,15 +137,20 @@ li.nav-item:hover {
 
 
 .sidebar .link{
-    color: whitesmoke;
+    color: whitesbmoke;
     transition: padding-left .5s, color .5s, background-color 1s;
 }
 
 .link:hover {
     color: black;
-    background-color: whitesmoke;
+    background-color: gainsboro;
     transition: padding-left .5s, color .5s, background-color 1s;
     padding-left: 10px;
+}
+
+.sidebar .link:hover{
+    padding-right: 100%;
+    
 }
 
 .navbar-brand {
@@ -208,7 +213,8 @@ div.container div div div {
     /* border-top-right-radius:60px;
   border-bottom-right-radius:60px; */
     max-width: fit-content;
-    margin-bottom: 25px;
+    
+    margin-top: 10px;
     font-family: 'Lato', sans-serif;
 
     padding: 10px;
@@ -241,7 +247,7 @@ a {
 } */
 
 #foot {
-    background-color: black;
+    background-color: #f8f9fa;
     padding-right: 20px;
     margin-top: 100px;
     position: absolute;
@@ -258,15 +264,12 @@ li {
 
 td,
 th,
-table {
-    border: none;
-}
+
 
 td {
-    border: 1px solid black;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -304,19 +307,18 @@ summary {
     max-height: 92%;
     overflow-y: scroll;
     overflow-x: hidden;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     top: 59px;
     font-family: 'Lato', sans-serif;
     max-width: 19%;
     padding-bottom: 20px;
+    
 }
 
 @media (max-width: 1250px) {
     .sidebar {
         display: none;
-        color: white;
-        background-color: black;
         max-width: 100%;
         width: 100%;
         z-index: 25;
@@ -378,3 +380,5 @@ summary {
 .toc-container {
     list-style-type: none;
 }
+
+
