@@ -404,3 +404,20 @@ a.link.link-inner:hover {
 a.link.link-inner{
     transition: margin-left .5s;
 }
+.borderless {
+    border: none;
+}
+
+.sexy {
+    background-image: repeating-linear-gradient(Magenta, DeepPink, Tomato, HotPink, Coral, DarkOrange);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    padding-top: 35px;
+}
+.sexy:hover{
+    transform: rotate(720deg);
+    transition: transform 1s;
+}
