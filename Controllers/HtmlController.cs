@@ -17,6 +17,11 @@ namespace MvcMovie.Controllers
             ViewData["controller"] = controllerName;
             return View();
         }
+        public IActionResult Colors()
+        {
+            ViewData["controller"] = controllerName;
+            return View();
+        }
        
     }
 }

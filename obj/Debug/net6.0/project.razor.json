@@ -16523,6 +16523,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/colors.cshtml",
+      "TargetPath": "Views\\Html\\colors.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/Expressions_and_operators.cshtml",
       "TargetPath": "Views\\Js\\Expressions_and_operators.cshtml",
       "FileKind": "mvc"
