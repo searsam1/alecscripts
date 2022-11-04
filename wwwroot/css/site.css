@@ -221,8 +221,12 @@ div.container div div div {
     text-shadow: 1px 1px 1px 1px;
     /* background-color:  #f8f9fa */
 }
-.display-6::before{
+ .display-6:not(.fs-4)::before {
     content: "𝜱";
+}
+.fs-4::before {
+    content: "𐦉";
+    font-size: 17px;
 }
 
 .display-4 {
@@ -373,12 +377,28 @@ summary {
     text-align: left;
     content: "iii ";
     font-size: 10px;
-    color: goldenrod;
-
-    
+    color: goldenrod; 
 }
 .toc-container {
     list-style-type: none;
 }
 
+.toc-container li a.link:not(.link-inner):hover{
+    background-color: inherit;
+}
 
+a.link.link-inner::before {
+    content: "𐦉";
+    font-size: 110%;
+    color: goldenrod;
+    border-radius: 4px;
+}
+
+a.link.link-inner:hover {
+    background-color: inherit;
+    margin-left: 10px;
+    transition: margin-left .5s;
+}
+a.link.link-inner{
+    transition: margin-left .5s;
+}

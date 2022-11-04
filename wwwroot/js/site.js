@@ -87,15 +87,21 @@ function createTocLink(e, id_){
 
     if (classes[1] == "fs-4"){
         var indent = document.createAttribute("style")
-        indent.value = "padding-left: 5%; font-size: medium; color: rgb(1,1,1,.75);"
+        indent.value = "padding-left: 5%; font-size: 90%;"
         a.setAttributeNode(indent)
-        a.textContent = "- ";
         li.setAttribute("style", "list-style-type: none; ")
     }
 
     href.value = `#${id_}`
     a.setAttributeNode(href)
-    a.setAttribute("class", "link")
+    
+    if (classes[1] == "fs-4"){
+        a.setAttribute("class", "link link-inner")
+    }
+    else{
+        a.setAttribute("class", "link")
+    }   
+
     a.textContent += e.textContent.trim(" ")
     li.appendChild(a)
     return li;
