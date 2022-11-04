@@ -52,6 +52,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult CodeTut()
+    {
+        ViewData["controller"] = controllerName;
+        return View();
+    }
 
     // public IActionResult PythonHomePage()
     // {

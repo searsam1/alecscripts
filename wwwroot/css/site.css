@@ -231,10 +231,12 @@ div.container div div div {
 
 .display-4 {
     padding: 10px;
-    font-family: 'Dancing Script', cursive; font-size: 30px;
-    
-    
-    color: maroon;
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-decoration-thickness: 1px;
+    text-decoration-style: double;
 }
 
 .display-4::before {

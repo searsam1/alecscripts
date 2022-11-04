@@ -1,0 +1,49 @@
+@{
+    ViewData["title"] = "Coding Tutorials";
+
+    string[] CodingLangs = { 
+        "BASH",
+        "CPP",
+        "DOTNET",
+        "GO",
+        "HTML",
+        "JAVA",
+        "JS",
+        "NETWORKS",
+        "PYTHON",
+        "SASS",
+    };
+    Array.Sort(CodingLangs);
+}
+
+<h1 class="display-6">
+    Links
+</h1>
+
+<ul id="CodingLinks">
+    
+    @foreach (string codingLang in CodingLangs)
+    {
+        <li>
+            <a class="nav-link text-dark" asp-action="index" asp-controller="@codingLang">
+                @codingLang
+            </a>
+        </li>
+    }
+</ul>
+<style>
+    a.nav-link.text-dark{
+        border-bottom:2px solid rgb(247, 248, 249); 
+        transition: border-bottom .25s;
+    }
+
+    a.nav-link.text-dark:hover{
+        border-bottom:2px solid crimson;
+        transition: border-bottom .25s;
+        
+    }
+    #CodingLinks{
+        list-style-type: upper-roman;
+        color: crimson;
+    }
+</style>
