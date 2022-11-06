@@ -97,6 +97,11 @@ namespace MvcMovie.Controllers
         ViewData["controller"] = controllerName;
         return View();
     }
+    public IActionResult PythonNumbers()
+    {
+        ViewData["controller"] = controllerName;
+        return View();
+    }
     // make an api
     // public IActionResult cg()
     // {

@@ -1,0 +1,5 @@
+
+// style.scss
+@use 'library' with (
+  $red: rgb(240, 11, 107),
+);

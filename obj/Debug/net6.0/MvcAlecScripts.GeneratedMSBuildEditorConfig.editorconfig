@@ -55,6 +55,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL1N1bU9mQ3ViZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/CPPVersionHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL0NQUFZlcnNpb25IaXN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -119,6 +123,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvSnNvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/RandomColorCreater.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvUmFuZG9tQ29sb3JDcmVhdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/ToFixed.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvVG9GaXhlZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -159,6 +167,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1B5dGhvbkRhdGFUeXBlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/PythonNumbers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1B5dGhvbk51bWJlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/PythonSyntax.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1B5dGhvblN5bnRheC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -193,6 +205,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Sass/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2Fzcy9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Sass/SassVariables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2Fzcy9TYXNzVmFyaWFibGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/Error.cshtml]

@@ -1,0 +1,95 @@
+@{
+    ViewData["Title"] = "Create Random Color With javaScript";
+}
+
+<h1 class="display-6">
+    Colors
+</h1>
+
+<h1 class="display-6 fs-4 indent-1">
+    Red, Green, Blue
+</h1>
+<p>
+    Colors are made from three bytes, or three parts 
+    that are in a range from 0-255 (256 total). To generate random 
+    numbers in <code>JS</code>, use the <code>Math.random() * n</code>, where 
+    <code>n</code> is the max value. Since we are generating three bytes, 
+    we want the range to be 256 (goes to 255). After three rounds of that, 
+    put those numbers into the <code>rgb</code> function.
+</p>
+<pre><code class="lang-js">
+
+function randomByte(){
+    return Math.floor(Math.random() * 256);
+}
+
+let rgb_ = []
+// generate 3 random numbers 
+// from  0 - 255
+for (let i=0; i<3; i++){
+    rgb_[i] = randomByte()
+}
+// [89, 195, 4]
+
+
+</code></pre>
+<pre><code class="lang-js">// create random number 
+// in the range 0 - 255
+function randomByte(){
+    return Math.floor(Math.random() * 256);
+}
+// random color in form {"r" : r, "g" : g, "b": b}
+function randomColor(){
+    let r = randomByte(), g = randomByte(), b = randomByte()
+    return {"r" : r, "g" : g, "b": b}
+}
+
+function changeColor(){
+    // get all red circles on the page
+    let elements = document.getElementsByClassName("randomColor");
+    let RGB;
+
+    for (let ele of elements){
+        RGB = randomColor();
+        // [1, 11, 111] 
+        ele.style.backgroundColor = `rgb(${RGB.r}, ${RGB.g}, ${RGB.b})`    
+        // rgb(1, 11, 111)
+        ele.textContent = `#${RGB.r.toString(16)}${RGB.g.toString(16)}${RGB.b.toString(16)}`;
+        // #010b6f
+    }
+    
+}
+</code></pre>
+
+
+
+<script>
+// create random number 
+// in the range0 - 255
+function randomByte(){
+    return Math.floor(Math.random() * 256);
+}
+function randomColor(){
+    let r = randomByte(), g = randomByte(), b = randomByte()
+    return {"r" : r, "g" : g, "b": b}
+}
+
+function changeColor(){
+    let elements = document.getElementsByClassName("randomColor");
+    let RGB;
+
+    for (let ele of elements){
+        RGB = randomColor();
+        ele.style.backgroundColor = `rgb(${RGB.r}, ${RGB.g}, ${RGB.b})`    
+        ele.textContent = `#${RGB.r.toString(16)}${RGB.g.toString(16)}${RGB.b.toString(16)}`;
+    }
+    
+}
+</script>
+<p class="text-center">
+    <button onclick="changeColor()">
+        Random Color
+    </button>
+    <div class="randomColor" style="background-color:red; width: 100px; height: 100px; border-radius: 50%; margin-left: 20px;"></div>
+    <div class="randomColor" style="background-color:red; width: 100px; height: 100px; border-radius: 50%; margin-left: 20px;"></div>
+</p>    

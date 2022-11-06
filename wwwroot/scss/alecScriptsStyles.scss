@@ -25,6 +25,17 @@ $dancing-script: "'Dancing Script', cursive";
             border: 1px solid #{$color};
         }
     }    
-
 }
 
+$color: red; // Global
+$background-color: black;
+
+@if $color {
+    $background-color: white;
+}
+.example {
+    background-color: $background-color
+}
+// .example {
+//     background-color: white;
+//   }

@@ -50,5 +50,10 @@ namespace MvcMovie.Controllers
         ViewData["controller"] = controllerName;
         return View();
     }
+    public IActionResult RandomColorCreater()
+    {
+        ViewData["controller"] = controllerName;
+        return View();
+    }
     }
 }

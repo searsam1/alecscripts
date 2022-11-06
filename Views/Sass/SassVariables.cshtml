@@ -1,0 +1,123 @@
+
+@{
+    ViewData["TItle"] = "Sass Variables";
+}
+
+<h1 class="display-6">
+    Declaring Variables
+</h1>
+
+<p>
+    Use a <code>$</code> followed by the name of the variable. That is followed by a colon <code>:</code> and the value of the variable. 
+    <pre><code class="lang-scss">
+$color: red;
+$background-color: #ffffff;
+    </code></pre>
+</p>
+
+<h1 class="display-6">
+    Default Values
+</h1>
+
+<p>
+    Variables sometimes need to be assigned something else for a user's liking. 
+    Inside a module it will have a pre-defined value that can be changed if the 
+    value is hit with the <code>!default</code> flag. 
+    <pre><code class="lang-scss">// _library.scss
+$red: #ff0000 !default; // default value
+
+#codeExample {
+  color: $red;
+}
+    </code></pre>
+</p>
+
+<pre><code class="lang-scss">// style.scss
+@@use 'library' with (
+  // Change Default Value before using in module
+  $red: rgb(240, 11, 107), 
+);</code></pre>
+
+
+<h1 class="display-6">
+    Built-in Variables
+</h1>
+<p>
+    Built-ins cannot be mutated or changed.  
+</p>
+<pre><code class="lang-scss">
+@@use "sass:math" as math;
+
+// This assignment will fail.
+math.$pi: 0;
+</code></pre>
+
+<h1 class="display-6">
+    Scope
+</h1>
+
+<p>
+    Scope is where a variable can and can't be accessed. If a variable is 
+    out of scope, then it can't be referenced and an error will be thrown. 
+    <code>Global</code> scope is defined at the base level of the scss file. 
+    It can be accessed by any other scope. Variables created inside of a block 
+    will only be available in that block. 
+</p>
+
+<p>Below is an example of assigning a new value to <code>$color</code> in the local scope.
+Another <code>$color</code> is globally defined, but it is override by the local definition. 
+
+</p>
+<pre><code class="lang-scss">$color: red; // Global
+.element {
+  $color: green; // local
+}</code></pre>
+<pre><code class="lang-css">.element {
+  color: green; /* Uses local $color */
+}
+</code></pre>
+<p>
+    <br>
+    Another example shows how a local can be assigned a global. Of course, the value 
+    of <code>color</code> could be set to the global initially, but this is for learning purposes. 
+</p>
+<pre><code class="lang-scss">$color: red; // Global
+.element {
+  $local-color: $color; // Copy Global to new local
+  color: $local-color;
+}</code></pre>
+
+<pre><code class="lang-css">.element {
+  color: red; /* Uses global $color */
+}</code></pre>
+
+<h1 class="display-6 fs-4 indent-1">
+    Flow Control Scope
+</h1>
+<p>
+    Inside of flow control loops scope automatically is the same
+    as the global scope. This makes it easier to reference variables 
+    for conditionals.  
+</p>
+<pre><code class="lang-scss">
+$color: red; // Global
+$background-color: black;
+
+@@if $color {
+    // Assign Global $background-color to white
+    $background-color: white; 
+}
+.example {
+    background-color: $background-color
+    // Will use global value (white)
+}
+// .example {
+//     background-color: white;
+//   }
+</code></pre>
+
+<p>
+    <div class="rounded text-center text-primary bg-light border border-danger p-3">
+        New Variables <u style="border: none; background-color: inherit;" class="color-Black">cannot</u> be defined in the control flow scope. 
+    </div>
+</p>
