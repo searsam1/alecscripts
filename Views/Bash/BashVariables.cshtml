@@ -1,0 +1,104 @@
+@{
+    ViewData["title"] = "Bash Variables";
+}
+
+
+<h1 class="display-6">
+    Assignment
+</h1>
+<p>
+    Variables do not need a type, just a value. They can hold numbers, strings and characters. 
+    Dollar signs are needed to access the variable after declaration, but they are not used 
+    in the declaration. 
+</p>
+<pre><code class="lang-bash">
+STR="This is a string!"
+# Notice there are no spaces
+# before the = 
+</code></pre>
+
+<h1 class="display-6">
+    Reference 
+</h1>
+<p>
+    To access or refer to a define variable, use a dollar sign <code>$</code>. 
+<pre><code class="lang-bash">
+STR="print me"
+echo $STR
+# print me
+</code></pre>
+</p>
+
+
+<h1 class="display-6 fs-4 indent-1">
+    Inner Reference 
+</h1>
+<p>
+    Variables can be referenced in other variables. Use the <code>$</code> and the variable name. 
+    <pre><code class="lang-bash">
+STR1="hello"
+STR2="$STR1 World"
+echo $STR2
+# hello World
+    </code></pre>
+</p>
+
+
+<h1 class="display-6">
+    Command Line Arguments
+</h1>
+<p>
+    Bash comes with built-in variables for quick access to useful 
+    script information. 
+</p>
+<p>
+    <ul>
+        <li><b>$0</b> - Script name</li>
+        <li><b>$1 - $9</b> - First 9 arguments</li>
+        <li><b>$#</b> - Number of arguments</li>
+        <li><b>$@@</b> - All arguments</li>
+        <li><b>$?</b> - Last process status</li>
+        <li><b>$$</b> - Process ID</li>
+        <li><b>$USER</b> - Username</li>
+        <li><b>$HOSTNAME</b> - Hostname of machine </li>
+        <li><b>$SECONDS</b> - Seconds passed</li>
+        <li><b>$RANDOM</b> - New random number</li>
+        <li><b>$LINENO</b> - Current line number</li>
+	</ul>
+</p>
+
+<h1 class="display-6">
+    Command Substitution
+</h1>
+<p>
+    A useful part of bash is inserting a return value into 
+    a variable instead of say print it to the screen. 
+</p>
+<p>
+    Use <code>var=$(command)</code> to pipe the commands output to <code>var</code>.
+<pre><code class="lang-bash">
+TODAY=$(date)
+echo $TODAY
+# Sat Nov 5 20:51:25 MDT 2022
+
+cls=$(clear)
+$cls
+# clear screen
+</code></pre>
+</p>
+
+<h1 class="display-6">
+    Homework 
+</h1>
+
+<h1 class="display-6 fs-4 indent-1">
+    Exercise 1.1
+</h1>
+<p>
+    Create a script that echos how many arguments were supplied, then 
+    echo all of the arguments.
+</p>
+<pre><code class="lang-bash">
+# /exercise1_1.sh
+
+</code></pre>

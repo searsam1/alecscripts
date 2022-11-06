@@ -11,7 +11,12 @@ namespace MvcMovie.Controllers
     public IActionResult Index()
     {   
         ViewData["controller"] = controllerName;
-        ViewBag.py = PythonLinks.getLinks();
+        return View();
+    }
+
+    public IActionResult BashVariables()
+    {   
+        ViewData["controller"] = controllerName;
         return View();
     }
       

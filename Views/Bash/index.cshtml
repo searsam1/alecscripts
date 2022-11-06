@@ -513,14 +513,14 @@ done
 </h1>
 <p>
     <b>For Loops</b> run off of an iteration variable. 
-    Each loop through, the variable is assigned something. For var in range(0,10), print(var) would increment 
-    var from 0 to 10 through each iteration.
+    Each loop through, the variable is assigned something. To loop over a range of numbers, 
+    use <code>for i in {1..n}</code>
     <pre><code class="lang-bash">
-for variable
+for variable in {1..8}
 do 
-    command 
+    echo $n
 done
-    </code></pre>
+</code></pre>
 </p>
 <p>
     <b>For-In</b> loops work off of an iteration variable as well but it is assigned a 
