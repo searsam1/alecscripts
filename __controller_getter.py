@@ -27,7 +27,7 @@ def title_split(s):
 def asp_link(controller, action):
     string = f"""
     
-        <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action={action} asp-controller={controller}>
+        <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action={action} asp-controller={controller}>
             {controller} {title_split(action)}
         </a>
         <br>

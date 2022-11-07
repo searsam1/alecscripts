@@ -27,7 +27,8 @@
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-family-lato: 'Lato', sans-serif
+    --font-family-lato: 'Lato', sans-serif;
+    --font-family-dance: 'Dancing Script', cursive;
   }
 
 * {
@@ -135,7 +136,7 @@ details > a{
 
 details {
     padding-bottom: 5px;
-    color: var(--gray-dark);
+    color: var(--secondary);
 }
 
 
@@ -266,16 +267,18 @@ div.container div div div {
 .display-4 {
     padding: 10px;
     text-align: center;
-    margin-bottom: 50px;
-    text-decoration: underline;
-    text-decoration-color: crimson;
-    text-decoration-thickness: 1px;
-    text-decoration-style: double;
+    font-weight: 100;
 }
 
-.display-4::before {
-    content: "\01F4DA";
+.underlineBox{
+    height: 10px;
+    max-width: 100%;
+    background-image: repeating-radial-gradient(red,magenta, DeepPink, pink, white);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    
 }
+
 
 a {
     scroll-margin-top: 200px;
@@ -317,9 +320,10 @@ textarea {
     background-color: #f8f9fa;
     font-family: monospace;
     font-size: 14px;
-    min-height: 750px;
-    width: 80%;
+    min-height: 300px;
+    min-width: 75%;
     line-height: normal;
+    margin-left: 3%;
 }
 
 
@@ -339,7 +343,10 @@ ul {
 
 summary {
     margin-left: 4%;
-    
+    font-size: 12px;
+}
+a.link {
+    font-size: 12px;
 }
 
 .sidebar {
@@ -428,9 +435,14 @@ summary {
 
 a.link.link-inner::before {
     content: "𐦉";
-    font-size: 110%;
     color: goldenrod;
     border-radius: 4px;
+}
+
+a.sidebarLink{
+    text-decoration:none; 
+    font-size: 12px; 
+    padding-right: 100%
 }
 
 a.link.link-inner:hover {
