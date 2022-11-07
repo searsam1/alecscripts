@@ -61,52 +61,54 @@ namespace MvcMovie.Controllers
         return View();
     }
 
-    public IActionResult PythonComments()
+    public IActionResult Comments()
     {
         ViewData["controller"] = controllerName;
         return View();
     }
 
-    public IActionResult PythonSyntax()
+    public IActionResult Syntax()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Syntax";
         return View();
     }
-    public IActionResult PythonVariablesNames()
+    public IActionResult VariableNames()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Variable Names";
+        
         return View();
     }
-    public IActionResult PythonVariablesValues()
+    public IActionResult VariableValues()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Variable Values";
         return View();
     }
-    public IActionResult PythonVariablesOutput()
+    public IActionResult VariableOutput()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Variable Output";
         return View();
     }
-    public IActionResult PythonVariablesGlobals()
+    public IActionResult VariableGlobals()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Variable Globals";
         return View();
     }
-    public IActionResult PythonDataTypes()
+    public IActionResult DataTypes()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Data Types";
         return View();
     }
-    public IActionResult PythonNumbers()
+    public IActionResult Numbers()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Numbers";
         return View();
     }
-    // make an api
-    // public IActionResult cg()
-    // {
-    //     return View("controllerGetter");
-    // }
-
     }
 }

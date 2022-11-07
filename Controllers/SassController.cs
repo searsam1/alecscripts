@@ -17,6 +17,7 @@ namespace MvcAlecScripts.Controllers
         public IActionResult SassVariables()
         {
             ViewData["controller"] = controllerName;
+            ViewData["title"] = "Sass Variables";
             return View();
         }
     }

@@ -14,6 +14,7 @@ namespace MvcMovie.Controllers
     public IActionResult Index()
     {   
         ViewData["controller"] = controllerName;
+        ViewData["title"] ="Home";
     var viewModel = new ChallengeModel()
     {
         // Example Challenge
@@ -243,6 +244,7 @@ uncensor(""*PP*RC*S*"", ""UEAE"") ➞ ""UPPERCASE""
     public IActionResult AreaOfAHexagon() {
         
         ViewData["controller"] = controllerName;
+        ViewData["title"] ="Area Of Ahexagon";
         var viewModel = new ChallengeModel()
     {
         // Example Challenge
@@ -295,9 +297,10 @@ function findDigitAmount(num) {
         return View(viewModel);
     }
 
-    public IActionResult DepthfirstSearch() {
+    public IActionResult DepthFirstSearch() {
         
         ViewData["controller"] = controllerName;
+        ViewData["title"] ="Depth First Search";
         var viewModel = new ChallengeModel()
     {
         // Example Challenge
@@ -334,6 +337,7 @@ def flatten(tree, target):
     public IActionResult ReverseSortANumber() {
         
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Reverse Sort Anumber";
         var viewModel = new ChallengeModel()
     {
         // Example Challenge
@@ -367,6 +371,7 @@ function rotateMaxNumber(num) {
     public IActionResult SumOfCube() {
         
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Sum Of Cube";
         var viewModel = new ChallengeModel()
     {
         // Example Challenge

@@ -13,6 +13,7 @@ namespace MvcAlecScripts.Controllers
         public IActionResult Index()
         {
             ViewData["controller"] = controllerName;
+            ViewData["title"] = "Home";
             var viewModel = new LanguageModel
             {
                 Language = "Java",

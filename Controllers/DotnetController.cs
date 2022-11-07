@@ -15,11 +15,13 @@ namespace MvcMovie.Controllers
         public IActionResult Index()
         {
             ViewData["controller"] = controllerName;
+            ViewData["title"] = "Home";
             return View();
         }
 
-        public IActionResult randomNumber(){
+        public IActionResult RandomNumber(){
             ViewData["controller"] = controllerName;
+            ViewData["title"] = "Random Number";
             return View();
         }
     }

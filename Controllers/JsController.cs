@@ -22,37 +22,45 @@ namespace MvcMovie.Controllers
     public IActionResult Index()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Home";
         return View();
     }
 
-    public IActionResult jsGetMonth()
+    public IActionResult GetMonth()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Get Month";
+        
         return View();
     }
-    public IActionResult Expressions_and_operators()
+    public IActionResult ExpressionsOperators()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Expressions Operators";
         return View();
     }
-    public IActionResult BinaryArraytoDecimal() 
+    public IActionResult BinaryArrayToDecimal() 
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Binary Array To Decimal";
         return View();
     }
     public IActionResult ToFixed() 
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "To Fixed";
         return View();
     }
     public IActionResult Json()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Json";
         return View();
     }
     public IActionResult RandomColorCreater()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Random Color Creater";
         return View();
     }
     }

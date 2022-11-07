@@ -15,12 +15,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/111244rfsf/Documents/Repositories/alecscripts
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/BashVariables.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9CYXNoVmFyaWFibGVzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/PrintVariables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9QcmludFZhcmlhYmxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Variables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9WYXJpYWJsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/AreaOfAHexagon.cshtml]
@@ -31,8 +35,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL0NlbnNvcmVkVm93ZWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/DepthfirstSearch.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL0RlcHRoZmlyc3RTZWFyY2guY3NodG1s
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/DepthFirstSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL0RlcHRoRmlyc3RTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/drinkSoda.cshtml]
@@ -59,20 +63,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL1N1bU9mQ3ViZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/CPPVersionHistory.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL0NQUFZlcnNpb25IaXN0b3J5LmNzaHRtbA==
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/CPPversionHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL0NQUHZlcnNpb25IaXN0b3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL2luZGV4LmNzaHRtbA==
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L2luZGV4LmNzaHRtbA==
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/randomNumber.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L3JhbmRvbU51bWJlci5jc2h0bWw=
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/RandomNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L1JhbmRvbU51bWJlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Go/index.cshtml]
@@ -107,20 +111,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9pbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/BinaryArraytoDecimal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvQmluYXJ5QXJyYXl0b0RlY2ltYWwuY3NodG1s
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/BinaryArrayToDecimal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvQmluYXJ5QXJyYXlUb0RlY2ltYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/Expressions_and_operators.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvRXhwcmVzc2lvbnNfYW5kX29wZXJhdG9ycy5jc2h0bWw=
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/ExpressionsOperators.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvRXhwcmVzc2lvbnNPcGVyYXRvcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/GetMonth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvR2V0TW9udGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvaW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/jsGetMonth.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvanNHZXRNb250aC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/Json.cshtml]
@@ -147,8 +151,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL2Ficy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Comments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL0NvbW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/controllerGetter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL2NvbnRyb2xsZXJHZXR0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/DataTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL0RhdGFUeXBlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/funnyNumbers.cshtml]
@@ -159,40 +171,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Numbers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL051bWJlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/password.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL3Bhc3N3b3JkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/PythonComments.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1B5dGhvbkNvbW1lbnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/PythonDataTypes.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1B5dGhvbkRhdGFUeXBlcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/PythonNumbers.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1B5dGhvbk51bWJlcnMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/PythonSyntax.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1B5dGhvblN5bnRheC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/PythonVariablesGlobals.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1B5dGhvblZhcmlhYmxlc0dsb2JhbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/PythonVariablesNames.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1B5dGhvblZhcmlhYmxlc05hbWVzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/PythonVariablesOutput.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1B5dGhvblZhcmlhYmxlc091dHB1dC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/PythonVariablesValues.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1B5dGhvblZhcmlhYmxlc1ZhbHVlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/stringFormattingTypes.cshtml]
@@ -201,6 +185,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/swapcase.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL3N3YXBjYXNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Syntax.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1N5bnRheC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableGlobals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1ZhcmlhYmxlR2xvYmFscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableNames.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1ZhcmlhYmxlTmFtZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableOutput.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1ZhcmlhYmxlT3V0cHV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableValues.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1ZhcmlhYmxlVmFsdWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/vars.cshtml]

@@ -12,11 +12,13 @@ namespace MvcAlecScripts.Controllers
         public IActionResult Index()
         {
             ViewData["controller"] = controllerName;
+            ViewData["title"] = "Home";
             return View();
         }
         public IActionResult IpDataGram()
         {
             ViewData["controller"] = controllerName;
+            ViewData["title"] = "Ip Data Gram";
             return View();
         }
     

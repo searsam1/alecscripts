@@ -11,12 +11,21 @@ namespace MvcMovie.Controllers
     public IActionResult Index()
     {   
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Home";
         return View();
     }
 
-    public IActionResult BashVariables()
+    public IActionResult Variables()
     {   
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Variables";
+        return View();
+    }
+
+    public IActionResult PrintVariables()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Print Variables";
         return View();
     }
       

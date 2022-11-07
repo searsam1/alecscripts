@@ -10,16 +10,19 @@ namespace MvcMovie.Controllers
         public IActionResult Index()
         {
             ViewData["controller"] = controllerName;
+            ViewData["title"] = "Home";
             return View();
         }
         public IActionResult Tags()
         {
             ViewData["controller"] = controllerName;
+            ViewData["title"] = "Tags";
             return View();
         }
         public IActionResult Colors()
         {
             ViewData["controller"] = controllerName;
+            ViewData["title"] = "Colors";
             return View();
         }
        

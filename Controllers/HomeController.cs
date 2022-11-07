@@ -22,52 +22,29 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Home";
         return View();
-    }
-
-    // dotnet-aspnet-codegenerator view ViewName Empty -outDir Views/ViewName
-    // dotnet-aspnet-codegenerator razorpage Test Edit -outDir Views/Tests
-
-    public static string ControllerInput(string name="")
-    {
-        string project = "MvcAlecScripts.csproj";
-        if (name == ""){
-            name = "NewController";
-        }
-        string outDir = "Controllers";
-        string namespace_ = "MvcAlecScripts.Controllers";
-        return $@"dotnet-aspnet-codegenerator -p ""{project}"" controller -name ""{name}Controller"" -outDir ""{outDir}"" -namespace ""{namespace_}""";
-    }
-
-    public string CreateController(string name)
-    {
-        // Code To make a new controller
-        // dotnet-aspnet-codegenerator -p "MyProject.csproj" controller -name MyDemoModelController -outDir Controllers -namespace My.Namespace.Controllers
-        return ControllerInput(name);
     }
 
     public IActionResult Privacy()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Privacy";
         return View();
     }
 
     public IActionResult CodeTut()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Code Tut";
         return View();
     }
 
-    // public IActionResult PythonHomePage()
-    // {
-    //     return View();
-    // }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
+    // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    // public IActionResult Error()
     
-    {
-        ViewData["controller"] = controllerName;
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
+    // {
+    //     ViewData["controller"] = controllerName;
+    //     return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    // }
 }

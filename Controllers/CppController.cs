@@ -10,14 +10,14 @@ namespace MvcMovie.Controllers
     public IActionResult Index()
     {   
         ViewData["controller"] = controllerName;
-        ViewBag.py = PythonLinks.getLinks();
+        ViewData["title"] = "Home";
         return View();
     }
 
-    public IActionResult CPPVersionHistory()
+    public IActionResult CPPversionHistory()
     {   
         ViewData["controller"] = controllerName;
-        ViewBag.py = PythonLinks.getLinks();
+        ViewData["title"] = "Cppversion History";
         return View();
     }
       

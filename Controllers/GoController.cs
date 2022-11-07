@@ -15,6 +15,7 @@ namespace MvcMovie.Controllers
         public IActionResult Index()
         {
             ViewData["controller"] = controllerName;
+            ViewData["title"] = "Home";
             return View();
         }
     }
