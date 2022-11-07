@@ -405,7 +405,7 @@ a.link {
 
 .toc-container{
     
-    background-image: repeating-linear-gradient(magenta, hotpink);
+    background-image: repeating-linear-gradient(coral,orange, coral);
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
