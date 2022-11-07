@@ -112,6 +112,7 @@ table{
 body {
     margin-bottom: 60px;
     background-color: white;
+    overflow-x: hidden;
 }
 
 main {
@@ -136,7 +137,7 @@ details > a{
 
 details {
     padding-bottom: 5px;
-    color: var(--secondary);
+    color: var(--black);
 }
 
 
@@ -164,7 +165,7 @@ li.nav-item:hover {
 }
 
 .link {
-    color: var(--secondary);
+    color: var(--black);
     font-size: 20px;
     text-decoration-color: rgba(0, 0, 0, 0.3508);
     transition: padding-left .5s, color .5s, background-color 1s;
@@ -172,13 +173,12 @@ li.nav-item:hover {
 
 
 .sidebar .link{
-    color: whitesbmoke;
     transition: padding-left .5s, color .5s, background-color 1s;
 }
 
 .link:hover {
     color: black;
-    background-color: gainsboro;
+    background-color: magenta;
     transition: padding-left .5s, color .5s, background-color 1s;
     padding-left: 10px;
 }
@@ -188,9 +188,6 @@ li.nav-item:hover {
     
 }
 
-.navbar-brand {
-    color: white;
-}
 
 nav {
     font-size: 14px;
@@ -355,12 +352,13 @@ a.link {
     max-height: 92%;
     overflow-y: scroll;
     overflow-x: hidden;
-    color: black;
-    background-color: white;
+    border-radius: 10px;
     top: 59px;
     font-family: 'Lato', sans-serif;
     max-width: 19%;
     padding-bottom: 20px;
+
+    background-image: repeating-linear-gradient(Magenta, DeepPink, Tomato, HotPink, Coral, DarkOrange);
     
 }
 
@@ -407,7 +405,7 @@ a.link {
 
 .toc-container{
     
-    background-color: #f8f9fa;
+    background-image: repeating-linear-gradient(magenta, hotpink);
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -466,11 +464,31 @@ a.link.link-inner{
     text-align: center;
     padding-top: 35px;
 }
+.sexy-sm {
+    background-image: repeating-linear-gradient(Magenta, DeepPink, Tomato, HotPink, Coral, DarkOrange);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 .sexy:hover{
     transform: rotate(720deg);
     transition: transform 1s;
+}
+.sexy-sm:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+    border-bottom: none;
 }
 
 .tagFormat{
     color: var(--primary);
 }
+
+.sidebar {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.sidebar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
