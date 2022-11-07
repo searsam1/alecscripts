@@ -458,3 +458,7 @@ a.link.link-inner{
     transform: rotate(720deg);
     transition: transform 1s;
 }
+
+.tagFormat{
+    color: var(--primary);
+}

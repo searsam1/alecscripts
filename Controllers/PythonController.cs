@@ -58,6 +58,7 @@ namespace MvcMovie.Controllers
     public IActionResult controllerGetter()
     {
         ViewData["controller"] = controllerName;
+        ViewData["title"] = "Controller Getter";
         return View();
     }
 

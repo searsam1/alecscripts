@@ -28,7 +28,7 @@ def asp_link(controller, action):
     string = f"""
     
         <a style="text-decoration:none; font-size:14px; padding-right: 100%" class=link asp-action={action} asp-controller={controller}>
-            {title_split(action)}
+            {controller} {title_split(action)}
         </a>
         <br>
 """.replace("\n", "")
