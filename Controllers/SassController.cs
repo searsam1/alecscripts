@@ -14,10 +14,10 @@ namespace MvcAlecScripts.Controllers
             ViewData["controller"] = controllerName;
             return View();
         }
-        public IActionResult SassVariables()
+        public IActionResult Variables()
         {
             ViewData["controller"] = controllerName;
-            ViewData["title"] = "Sass Variables";
+            ViewData["title"] = "Variables";
             return View();
         }
     }

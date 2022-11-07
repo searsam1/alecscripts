@@ -16443,11 +16443,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Sass/SassVariables.cshtml",
-      "TargetPath": "Views\\Sass\\SassVariables.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/getOdds.cshtml",
       "TargetPath": "Views\\Challenge\\getOdds.cshtml",
       "FileKind": "mvc"
@@ -16575,6 +16570,11 @@
     {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Comments.cshtml",
       "TargetPath": "Views\\Python\\Comments.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Sass/Variables.cshtml",
+      "TargetPath": "Views\\Sass\\Variables.cshtml",
       "FileKind": "mvc"
     }
   ],
