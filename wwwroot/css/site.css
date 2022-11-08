@@ -255,10 +255,16 @@ div.container div div div {
 }
  .display-6:not(.fs-4)::before {
     content: "𝜱";
+    font-size: 70%;
+    vertical-align: top;
+    color: red;
+    
 }
 .fs-4::before {
     content: "𐦉";
-    font-size: 17px;
+    color: coral;
+    font-size: 70%;
+    vertical-align: top;
 }
 
 .display-4 {
