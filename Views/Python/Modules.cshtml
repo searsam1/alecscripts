@@ -1,0 +1,144 @@
+
+
+<h1 class="display-6">
+    What is a Module?
+</h1>
+<p>
+    Modules are packaged bits of python 
+    code that can be imported into 
+    another file. 
+</p>
+<p>
+    The <code>import</code> keyword is used to grab outside 
+    code. Module folders must have an <code>__init__.py</code> file 
+    for it to be importable. 
+    <pre><code class="lang-plain">module              <span>          # Top-level Folder</span>
+   | -- __init__.py <span>          # required</span>
+   | -- hello.py    <span>          # code file</span>
+           | -- hello_world<span>   # function name</span></code></pre>
+</p>
+<p>
+    Module is the top-level folder, and hello.py is the source code file. From hello.py 
+    functions can be imported to be used in a different file. 
+    <pre><code class="lang-py"># hello.py
+def hello_world():
+    print("Hello world!")</code></pre>
+<br>
+<p>Paths are created with <code>.</code> dot notation: <code>module.file.function</code>
+In the example below, the hello_world function is being imported from the hello_world.py file 
+that lives inside the module folder. 
+</p>
+<pre><code class="lang-py">import module.hello.hello_world
+
+# must use full-name
+module.hello.hello_world()
+# Hello world!
+</code></pre>
+</p>
+<h1 class="display-6">
+    as Keyword
+</h1>
+<p>
+    The <code>as</code> keyword in python allows for custom module names and shorter syntax. 
+    Instead of typing a modules full path, it can be typed once using the <code>from Module import package as name</code> 
+    syntax. 
+<pre><code class="lang-py">from module.file import function as custom_name
+# doesnt have to type full path 
+custom_name()    
+</code></pre>
+
+<pre><code class="lang-py">from math import factorial as fact
+print( fact(5) )
+# 120
+</code></pre>
+</p>
+
+<h1 class="display-6">
+    math Module
+</h1>
+<p>
+    Python comes with basic operations, but to gain a richer 
+    math library, import the <code>math</code> module. 
+</p>
+
+<h1 class="display-6 fs-4 indent-1">
+    Number Functions
+</h1>
+
+@{
+    Dictionary<string, string> numberFunctions =
+    new Dictionary<string, string>();
+    
+    numberFunctions.Add(".ceil( x )", "Return x rounded up to the nearest integer.");
+    numberFunctions.Add(".comb( n, k )", "Return all combinations of n and k. -- n! / (k! * (n - k)!)");
+    numberFunctions.Add(".copysign( x, y )", "Return the abs(x) with the sign of y.");
+    numberFunctions.Add(".fabs( x )", "Return absolute value of x.");
+    numberFunctions.Add(".factorial( x )", "Return factorial of x (x!).");
+    numberFunctions.Add(".floor( x )", "Return x rounded down to the nearest integer.");
+    numberFunctions.Add(".fmod( x, y )", "Return the C function fmod( x,y ). Preferred over % when using floats. ");
+    numberFunctions.Add(".frexp( x )", "Return the mantissa and exponent of x as (m, e).");
+    numberFunctions.Add(".fsum( x )", "Precision summing of floating point numbers.");
+    numberFunctions.Add(".gcd( *integers )", "Greatest common divisor of given numbers.");
+    numberFunctions.Add(".isclose(a, b, *, rel_tol=1e-09, abs_tol=0.0)", "Return true if a and b are close to each other, as defined by rel_tol.");
+    numberFunctions.Add(".isfinite( x )", "Return True if x is not an infinity or NAN.");
+    numberFunctions.Add(".isinf( x )", "Return True if x is a positive or negative infinity.");
+    numberFunctions.Add(".isnan( x )", "Return True if x is NAN (not a number).");
+    numberFunctions.Add(".isqrt( x )", "Return the integer square root of x.");
+    numberFunctions.Add(".lcm( *integers )", "Return lowest common multiple of *integers.");
+    numberFunctions.Add(".ldexp(x, i)", "Returns x * (2**i)");
+    numberFunctions.Add(".modf(x)", "Returns integer and fractional part of x");
+    numberFunctions.Add(".nextafter( x, y )", "Return the next floating-point value after x towards y.");
+    numberFunctions.Add(".perm( n, k=none )", "Return permutations of n and k.");
+    numberFunctions.Add(".prod( iterable, *, start=1 )", "Returns all elements of iterable multiplied together.");
+    numberFunctions.Add(".remainder( x, y )", "Return remainder of x with respect to y.");
+    numberFunctions.Add(".trunc( x )", "Chop off fractional part of float.");
+    numberFunctions.Add(".ulp( x )", "Return the value of the least significant bit of the float x");
+}
+
+<table>
+    <tr style="top: 58px; z-index: 30;" class="sticky-top">
+        <th>
+            Name
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    @foreach (KeyValuePair<string, string> kvp in numberFunctions)
+    {
+        <tr>
+            <td>
+                <code>@kvp.Key</code>
+            </td>
+
+            <td style="text-align: right;">
+                @kvp.Value
+            </td>
+        </tr>    
+    }
+    
+</table>
+
+<h1 class="display-6">
+    Testing
+</h1>
+<p>
+    blah blah blah... blahblah blah blah... blahblah blah blah... blahblah blah blah... blahblah blah blah... blahblah blah blah... blahblah blah blah... blahblah blah blah... blahblah blah blah... blahblah blah blah... blah
+
+</p>
+
+@* In beta  *@
+
+<script>
+@* 
+let d6 = document.getElementsByClassName("display-6")
+for (let d of d6){
+    d.setAttribute("class", "sticky-top display-6");
+    d.style.top = "60px";
+    d.style.backgroundColor = "white";
+    d.style.maxWidth = "100%"
+    d.style.zIndex = 35;
+} *@
+
+
+</script>

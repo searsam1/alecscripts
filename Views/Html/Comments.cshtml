@@ -1,0 +1,41 @@
+
+@{
+    string pTag = "<p>"; string pTagEnd = "</p>";
+}
+
+<h1 class="display-6">
+    Comment Tag
+</h1>
+<p>
+    Comments are started with <code>&lt;!--</code>  and end with <code>--&gt;</code>. 
+    Use the inspect tool on your browser to find a comment after this line. 
+    <!-- Hidden Text --> Notice how the start tag has a <code>!</code> while the end does not.
+    <pre><code class="lang-html">&lt;!-- Comment Goes Here --&gt;
+&lt;!-- Comment --&gt;
+@pTag
+    I think my dogs went through the garbage...
+@pTagEnd
+&lt;!-- Yet Another Comment --&gt;
+&lt;!-- So Many Comments ☄️ --&gt;</code></pre>
+
+</p>
+
+<h1 class="display-6 fs-4 indent-1">
+    Multi-line Comments
+</h1>
+<p>
+    Comments can be multi-line as well: 
+<pre><code class="lang-html">&lt;!-- 
+Wow
+Such 
+Amazing
+--&gt;</code></pre>
+</p>
+
+<h1 class="display-6 fs-4 indent-1">
+    Inline Comments
+</h1>
+<p>
+    Inline comments are inline. They can be used to debug or hide text. 
+<pre><code class="lang-html">@pTag Even More &lt;!-- Inline Comment --&gt; Amazing Examples @pTagEnd </code></pre>
+</p>

@@ -38,7 +38,7 @@ function showID(id){
 }
 function flip(id){
     let ele = document.getElementById(id)
-    // console.log(ele.style.transform)
+    
 
     if ( !ele.style.transform){
         ele.style.transform = 'rotate(90deg)'    
@@ -52,7 +52,7 @@ function flip(id){
 }
 function flip2(id){
     let ele = document.getElementById(id)
-    // console.log(ele.style.transform)
+    
 
     if ( !ele.style.transform){
         ele.style.transform = 'rotate(90deg)'    
@@ -107,18 +107,24 @@ function createTocLink(e, id_){
     return li;
 }
 
+
+function randomByte(){
+    return Math.floor(Math.random() * 1048576);
+}
+
+
+
 function createTOC(){
     headers = document.getElementsByClassName("display-6")
     toc = document.getElementsByClassName("toc-container")[0]
-
-    var i = 0;
+    let txt;
+    
+    let i;
     for (header of headers){
-
-
-
+        txt = header.textContent.split(" ").join("").split(",").join("").split("?").join("");
+        i = randomByte();
         var att = document.createAttribute("id")
-        att.value = i;
-        i++;
+        att.value = txt.trim() + "-" + i.toString().trim();
         header.setAttributeNode(att)
         toc.appendChild(createTocLink(header, att.value))
             

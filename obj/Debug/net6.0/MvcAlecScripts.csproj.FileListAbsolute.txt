@@ -248,7 +248,6 @@
 /Users/111244rfsf/Documents/Repositories/alecscripts/bin/Debug/net6.0/MvcAlecScripts.deps.json
 /Users/111244rfsf/Documents/Repositories/alecscripts/bin/Debug/net6.0/MvcAlecScripts.runtimeconfig.json
 /Users/111244rfsf/Documents/Repositories/alecscripts/bin/Debug/net6.0/MvcAlecScripts.dll
-/Users/111244rfsf/Documents/Repositories/alecscripts/bin/Debug/net6.0/ref/MvcAlecScripts.dll
 /Users/111244rfsf/Documents/Repositories/alecscripts/bin/Debug/net6.0/MvcAlecScripts.pdb
 /Users/111244rfsf/Documents/Repositories/alecscripts/bin/Debug/net6.0/Humanizer.dll
 /Users/111244rfsf/Documents/Repositories/alecscripts/bin/Debug/net6.0/MessagePack.dll
@@ -482,3 +481,4 @@
 /Users/111244rfsf/Documents/Repositories/alecscripts/obj/Debug/net6.0/ref/MvcAlecScripts.dll
 /Users/111244rfsf/Documents/Repositories/alecscripts/obj/Debug/net6.0/MvcAlecScripts.pdb
 /Users/111244rfsf/Documents/Repositories/alecscripts/obj/Debug/net6.0/MvcAlecScripts.genruntimeconfig.cache
+/Users/111244rfsf/Documents/Repositories/alecscripts/bin/Debug/net6.0/ref/MvcAlecScripts.dll

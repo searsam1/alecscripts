@@ -1,0 +1,44 @@
+
+<h1 class="display-6">
+    What is the .bashrc file?
+</h1>
+<p>
+    <code>.bashrc</code> is like a controller for the bash terminal. 
+    It can be set to hold the environment variables among other things like 
+    user preferences. 
+</p>
+
+<h1 class="display-6">
+    Where is the .bashrc file?
+</h1>
+<p>
+    <code>~/.bashrc</code> is probably where it is located. 
+    This file has to be created sometimes, so if its not there at first,
+    create it in the home directory (<code>~/</code>). 
+</p>
+
+<h1 class="display-6">
+    Example .bashrc file
+</h1>
+
+<p>
+    Here is a random .bashrc example 
+    from <a href="https://stackoverflow.com/questions/19662713/where-do-i-find-the-bashrc-file-on-mac">this S/O post</a>. 
+    <pre><code class="lang-bash">
+# .bashrc
+
+# User specific aliases and functions
+. .alias
+alias ducks='du -cks * | sort -rn | head -15'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+PATH=$PATH:/home/username/bin:/usr/local/homebrew
+export PATH
+
+# Author 2096338 (Peter Party Bus)
+    </code></pre>
+</p>

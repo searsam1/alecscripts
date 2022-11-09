@@ -6,6 +6,8 @@ $dancing-script: "'Dancing Script', cursive";
     font-size: 50px;
 }
 
+
+
 @for $i from 1 through 6 {
     .text-#{$i} { font-size: #{$i * 10}px; }
   }
@@ -36,6 +38,24 @@ $background-color: black;
 .example {
     background-color: $background-color
 }
-// .example {
-//     background-color: white;
-//   }
+@for $i from 1 through 20 {
+    $width: #{$i * 10}px;
+    $height: $width;
+    .circle-#{$i} { 
+        width: $width;
+        height: $height;
+        border-radius: 50%;
+        background-color: red;
+    }
+  }
+
+@each $color, $hex in $colors{
+    .btm-border-#{$color}{
+        border-bottom: 1px solid #{$color};
+    }
+    .btm-border-#{$color}:hover{
+        color: #{$color};
+    }
+}
+
+

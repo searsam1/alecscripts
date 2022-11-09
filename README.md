@@ -19,3 +19,12 @@
 
 ### [ color-Color ]
 - `<a class="color-HotPink">` 
+
+### [ circle-[ 1-20 ] ]
+- smaller 
+- `<div class="circle-1">`
+- `<div class="circle-2">`  
+- `<div class="circle-3">` 
+- `...`
+- `<div class="circle-20">` 
+- bigger

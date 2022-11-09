@@ -91,6 +91,7 @@ th {
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
 }
+
 table{
     margin-top: 10px;
     margin-left: 2%;
@@ -146,10 +147,6 @@ li.nav-item {
 }
 
 
-li.nav-item:hover {
-    border-bottom: 1px solid black;
-}
-
 .toc-container {
 
     font-family: 'Lato', sans-serif;
@@ -176,7 +173,7 @@ li.nav-item:hover {
     transition: padding-left .5s, color .5s, background-color 1s;
 }
 
-.link:hover {
+.link:hover  {
     color: black;
     background-color: magenta;
     transition: padding-left .5s, color .5s, background-color 1s;
@@ -287,6 +284,8 @@ a {
     scroll-margin-top: 200px;
 }
 
+
+
 /* 
 .container{
     background-color: #f8f9fa;
@@ -330,17 +329,13 @@ textarea {
 }
 
 
+
 .code-toolbar {
     padding-left: 3%;
 }
 
 ul {
     padding-left: 5%;
-}
-
-.navbar-brand:hover {
-    border-bottom: 1px solid black;
-
 }
 
 
@@ -475,6 +470,7 @@ a.link.link-inner{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    transition: transform 1s;
 }
 .sexy:hover{
     transform: rotate(720deg);
@@ -498,3 +494,73 @@ a.link.link-inner{
     display: none;  /* Safari and Chrome */
 }
 
+.circle {
+    background: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+table tr td {
+    font-family: monospace;
+    color: var(--black);
+    padding: 10px;
+}
+
+table tr th {
+    font-family: monospace;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.908);
+    color: white;;
+}
+
+a.nav-link.btm-border-Coral{
+    transition: background-color .5s, box-shadow 1.25s, border-radius .2s;
+    
+}
+a.nav-link.btm-border-Coral:hover{
+    background-color: coral;
+    transition: background-color 1s, box-shadow .25s, border-radius 1s;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.0508);
+    border-radius: 4px;
+}
+
+a.nav-link.btm-border-HotPink{
+    transition: background-color .5s, box-shadow 1.25s, border-radius .2s;
+    
+}
+a.nav-link.btm-border-HotPink:hover{
+    background-color: hotpink;
+    transition: background-color 1s, box-shadow .25s, border-radius 1s;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.0508);
+    border-radius: 4px;
+}
+
+a.nav-link.btm-border-Magenta{
+    transition: background-color .5s, box-shadow 1.25s, border-radius .2s;
+    
+}
+a.nav-link.btm-border-Magenta:hover{
+    background-color: magenta;
+    transition: background-color 1s, box-shadow .25s, border-radius 1s;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.0508);
+    border-radius: 4px;
+}
+
+.glossary-header{
+    font-size: 1.2em;
+    background-color: #f8f9fa;
+    max-width: 100%;
+}
+
+.glossary-text{
+    font-size: .9em;
+}
+
+footer a {
+    padding-right: 10px;
+}
+footer span {
+    padding-right: 10px;
+}

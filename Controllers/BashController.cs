@@ -28,6 +28,13 @@ namespace MvcMovie.Controllers
         ViewData["title"] = "Print Variables";
         return View();
     }
+
+    public IActionResult Bashrc()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Bashrc";
+        return View();
+    }
       
     }
 }

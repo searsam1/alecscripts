@@ -1,0 +1,34 @@
+
+@{
+    Dictionary<string, string> glossary =
+    new Dictionary<string, string>();
+    glossary.Add("Cascading", "Arrange (a number of devices or objects) in a series or sequence.");
+    @* 
+    glossary.Add("", ""); 
+    *@
+    glossary.Add("Algorithm(Algo)", "A set of instructions to perform."); 
+    glossary.Add("Coding", "Writing a set of instructions that will be compiled to another version or language."); 
+    glossary.Add("Variable Types", "The way an object is meant to be viewed by the computer."); 
+    glossary.Add("Loop", "Repeat until a condition is met"); 
+    glossary.Add("For Loop", "Repeat a set number of times"); 
+    glossary.Add("For-In Loop", "Repeat for every object in a container"); 
+    glossary.Add("Variable", "A container that holds objects or other variables"); 
+    glossary.Add("Script", "File for computer to read and programmer to write"); 
+    glossary.Add("IDE", "Integrated Development Environment"); 
+    glossary.Add("CSS", "Cascading Style Sheets");
+    glossary.Add("HTML", "Hyper Text Markup Language");
+    glossary.Add("man·tis·sa", "the part of a floating-point number that represents the significant digits of that number, and that is multiplied by the base raised to the exponent to give the actual value of the number.");
+    
+
+
+    foreach( KeyValuePair<string, string> kvp in glossary )
+    {
+
+        <h1 class="display-6 glossary-header">
+            @kvp.Key
+        </h1>
+        <p class="indent-1 glossary-text">
+            @kvp.Value
+        </p>
+    }
+}

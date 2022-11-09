@@ -1,5 +1,4 @@
 
-from turtle import title
 import clipboard  # copy()
 import re  # findall()
 import os  # walk
@@ -75,10 +74,11 @@ def get_controls():
         lst.append(string)
         string = ""
     lst = list(map(lambda x: " ".join(x),map(lambda x: x.split(), lst)))
-    return lst
+    return " ".join(lst)
 
 
 res = get_controls()
+new_sidebar = res
 
-clipboard.copy(" ".join(res))
+# clipboard.copy(res)
 

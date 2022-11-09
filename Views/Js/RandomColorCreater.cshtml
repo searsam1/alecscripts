@@ -11,13 +11,29 @@
 </h1>
 <p>
     Colors are made from three bytes, or three parts 
-    that are in a range from 0-255 (256 total). To generate random 
-    numbers in <code>JS</code>, use the <code>Math.random() * n</code>, where 
-    <code>n</code> is the max value. Since we are generating three bytes, 
+    that are in a range from 0-255 (256 total). Since we are generating three bytes, 
     we want the range to be 256 (goes to 255). After three rounds of that, 
     put those numbers into the <code>rgb</code> function.
 </p>
+<h1 class="display-6 fs-4 indent-1">
+    Random Numbers
+</h1>
+<p>
+    To generate random 
+    numbers in <code class="px-2 pt-1 color-Red">javaScript</code>, use <code>Math.random() * n</code>, where 
+    <code>n</code> is the max value. The normal random function only returns a number between 1 and 0. It is multiplied by 
+    n to get a bigger number.
+
+    <pre><code class="lang-js">
+Math.random()
+// 0.002040265523331364
+// 0.5274400974024632
+// 0.4646505209922962
+    </code></pre>
+</p>
 <pre><code class="lang-js">
+
+
 
 function randomByte(){
     return Math.floor(Math.random() * 256);

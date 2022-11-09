@@ -111,5 +111,19 @@ namespace MvcMovie.Controllers
         ViewData["title"] = "Numbers";
         return View();
     }
+    public IActionResult Modules()
+    {
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Modules";
+        return View();
+    }
+
+    public IActionResult ReFlags()
+    {
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Re Flags";
+        return View();
+    }
+
     }
 }

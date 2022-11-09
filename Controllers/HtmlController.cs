@@ -26,10 +26,26 @@ namespace MvcMovie.Controllers
             return View();
         }
 
+        
         public IActionResult BasicExample()
         {
             ViewData["controller"] = controllerName;
             ViewData["title"] = "Basic Example";
+            return View();
+        }
+        
+        // HTML Comments
+        public IActionResult Comments()
+        {
+            ViewData["controller"] = controllerName;
+            ViewData["title"] = "Comments";
+            return View();
+        }
+
+        public IActionResult CSS()
+        {
+            ViewData["controller"] = controllerName;
+            ViewData["title"] = "CSS";
             return View();
         }
        
