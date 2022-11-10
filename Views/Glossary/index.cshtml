@@ -18,9 +18,32 @@
     glossary.Add("CSS", "Cascading Style Sheets");
     glossary.Add("HTML", "Hyper Text Markup Language");
     glossary.Add("man·tis·sa", "the part of a floating-point number that represents the significant digits of that number, and that is multiplied by the base raised to the exponent to give the actual value of the number.");
+    glossary.Add("tdd", "Test Driven Development - Tests first, code second");
+    glossary.Add("Recursion", "When a function calls itself with different inputs");
+    glossary.Add("Node.js", "Javascript runtime that can be ran outside of the web browser.");
+    glossary.Add("PHP", "Backend language known for its quirks but still extremely popular");
+    glossary.Add("Programming Language", "A language designed for humans and computers to communicate");
+    glossary.Add("High-level", "Programing language closer to humans than computers");
+    glossary.Add("Low-level", "Programing language closer to computers than humans");
+    glossary.Add("Functional Programming", "Programming paradigm that uses functions without side effects");
+    glossary.Add("Side Effects", "When a function does something other than return a value (like modify a variable)");
+    glossary.Add("(Object-Oriented Programming (OOP)", "Programming paradigm that emphasizes objects, object attributes and object methods.");
+    glossary.Add("API", "Application Programming Interface: waiter between the server and the client");
+    @* glossary.Add("CSS", "Cascading Style Sheets"); *@
+    @* glossary.Add("CSS", "Cascading Style Sheets"); *@
+    @* glossary.Add("CSS", "Cascading Style Sheets"); *@
+    @* glossary.Add("CSS", "Cascading Style Sheets"); *@
+    @* glossary.Add("CSS", "Cascading Style Sheets"); *@
+    @* glossary.Add("CSS", "Cascading Style Sheets"); *@
+    @* glossary.Add("CSS", "Cascading Style Sheets"); *@
     
 
-
+    int term_count = glossary.Count;
+    <center>
+        <p class="btm-border-Magenta">
+            @term_count Total Terms
+        </p>
+    </center>
     foreach( KeyValuePair<string, string> kvp in glossary )
     {
 
