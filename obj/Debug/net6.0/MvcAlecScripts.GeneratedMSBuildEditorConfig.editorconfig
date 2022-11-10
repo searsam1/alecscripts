@@ -75,12 +75,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/RandomNumber.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L1JhbmRvbU51bWJlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2l0L2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Glossary/index.cshtml]

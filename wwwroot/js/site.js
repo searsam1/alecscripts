@@ -121,10 +121,14 @@ function createTOC(){
     
     let i;
     for (header of headers){
-        txt = header.textContent.split(" ").join("").split(",").join("").split("?").join("");
-        i = randomByte();
+        // https://stackoverflow.com/questions/4328500/how-can-i-strip-all-punctuation-from-a-string-in-javascript-using-regex
+        txt = header.textContent.replace(/[^\w\s\']|_/g, "")
+        .replace(/\s+/g, " ")
+        .trim(" ")
+        .replace(/\s/g, "-")
+
         var att = document.createAttribute("id")
-        att.value = txt.trim() + "-" + i.toString().trim();
+        att.value = txt.trim() + "-" + randomByte().toString().trim();
         header.setAttributeNode(att)
         toc.appendChild(createTocLink(header, att.value))
             
