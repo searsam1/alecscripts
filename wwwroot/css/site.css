@@ -106,8 +106,10 @@ table{
 }
 
 #navy {
-    background-color: #f8f9fa;
+    background-color: var(--light);
+    
     font-family: 'Poppins', sans-serif;
+    color: black;
 }
 
 body {
@@ -170,19 +172,22 @@ li.nav-item {
 
 
 .sidebar .link{
-    transition: padding-left .5s, color .5s, background-color 1s;
+    transition: color .25s, background-color .1s;
+    border-radius: 4px;
 }
 
 .link:hover  {
     color: black;
-    background-color: magenta;
-    transition: padding-left .5s, color .5s, background-color 1s;
-    padding-left: 10px;
+    transition: color .1s, background-color .25s;
+    
+
 }
 
 .sidebar .link:hover{
-    padding-right: 100%;
-    
+
+    background-color: var(--pink);
+    color: white;
+
 }
 
 
@@ -351,15 +356,16 @@ a.link {
     z-index: 0;
     text-align: left;
     max-height: 92%;
+    height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    border-radius: 10px;
     top: 59px;
     font-family: 'Lato', sans-serif;
     max-width: 19%;
     padding-bottom: 20px;
-
-    background-image: repeating-linear-gradient(Magenta, DeepPink, Tomato, HotPink, Coral, DarkOrange);
+    border-bottom-right-radius: 100px;
+    /* background-image: repeating-linear-gradient(Magenta, DeepPink, Tomato, HotPink, Coral, DarkOrange); */
+    background-image: repeating-linear-gradient(white, silver);
     
 }
 
@@ -406,8 +412,12 @@ a.link {
 
 .toc-container{
     
-    background-image: repeating-linear-gradient(coral,orange, coral);
-    border-radius: 10px;
+    background-image: repeating-linear-gradient(white, var(--light));
+    
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -546,6 +556,7 @@ a.nav-link.btm-border-Magenta:hover{
     transition: background-color 1s, box-shadow .25s, border-radius 1s;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.0508);
     border-radius: 4px;
+    
 }
 
 .glossary-header{
