@@ -25,6 +25,12 @@ public class HomeController : Controller
         ViewData["title"] = "Home";
         return View();
     }
+    public IActionResult GetRepo()
+    {
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Home";
+        return View();
+    }
 
     public IActionResult Privacy()
     {

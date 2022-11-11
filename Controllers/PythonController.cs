@@ -125,5 +125,12 @@ namespace MvcMovie.Controllers
         return View();
     }
 
+    public IActionResult Casting()
+    {
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Casting";
+        return View();
+    }
+
     }
 }

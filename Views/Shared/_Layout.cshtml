@@ -4,6 +4,8 @@
     string WebMaster = "amsears60441@gmail.com";
 }
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +17,7 @@
     <meta name="author" content="Alec Scripts" />
     
     
-    <title>@ViewData["Title"] - Alec Scripts</title>
+    <title>@ViewData["controller"] @ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="icon" href="~/lib/favicon.ico?ver=2" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -36,6 +38,7 @@
 
     @* /Prism CSS *@
     <link rel="stylesheet" href="~/css/prism.css" asp-append-version="true" />
+    
 </head>
 
 
@@ -43,7 +46,7 @@
 <body>
     <div class="row sticky-top">
         
-                <nav id="navy" class="px-4 py-0 navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom shadow-sm ">
+                <nav id="navy" class="px-4 py-0 navbar navbar-expand-sm navbar-toggleable-sm navbar-light shadow-sm ">
         <div class="container-fluid">
 
             <a class="my-1  sexy-sm navbar-brand text-black" >
@@ -71,21 +74,7 @@
                     </li>
                 </ul>
                     
-                <div style="font-size: 10px;">
-                    
-                    <span class="navbar-text text-dark">
-                        <span style="font-size: 25px; padding-top: 15px; font-family: var(--font-family-dance)">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="lime" class="bi bi-prescription" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M5.5 6a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 1 0V9h.293l2 2-1.147 1.146a.5.5 0 0 0 .708.708L9 11.707l1.146 1.147a.5.5 0 0 0 .708-.708L9.707 11l1.147-1.146a.5.5 0 0 0-.708-.708L9 10.293 7.695 8.987A1.5 1.5 0 0 0 7.5 6h-2ZM6 7v1h1.5a.5.5 0 0 0 0-1H6Z"/>
-  <path fill-rule="evenodd" d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1V1Zm2 3h8v10.5a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5V4ZM3 3V1h10v2H3Z"/>
-</svg>
-                        </span>
-                    </span>
-                    <span class="navbar-text text-info">
-                        v @Version
-                    </span>
-                    
-                </div>
+                
             </div>
 
         </div>
@@ -93,27 +82,19 @@
         </div>
     </div>
     <div class="row">
-        
-
-        
-    
-    
-    
-    
-    
     
     
     @* Sidebar *@ 
-        <div class="sidebar pt-3 fixed-top shadow-sm" >
-            <details> <summary> Bash </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Bash> Bash Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Variables asp-controller=Bash> Bash Variables </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=PrintVariables asp-controller=Bash> Bash Print Variables </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Bashrc asp-controller=Bash> Bash Bashrc </a> <br></details> <details> <summary> Challenge </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Challenge> Challenge Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=GetOdds asp-controller=Challenge> Challenge Get Odds </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=drinkSoda asp-controller=Challenge> Challenge Drink Soda </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=CensoredVowels asp-controller=Challenge> Challenge Censored Vowels </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=AreaOfAHexagon asp-controller=Challenge> Challenge Area Of Ahexagon </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=NumberLength asp-controller=Challenge> Challenge Number Length </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=DepthFirstSearch asp-controller=Challenge> Challenge Depth First Search </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=ReverseSortANumber asp-controller=Challenge> Challenge Reverse Sort Anumber </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=SumOfCube asp-controller=Challenge> Challenge Sum Of Cube </a> <br></details> <details> <summary> Cpp </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Cpp> Cpp Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=CPPversionHistory asp-controller=Cpp> Cpp Cppversion History </a> <br></details> <details> <summary> Css </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Css> Css Home </a> <br></details> <details> <summary> Dotnet </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Dotnet> Dotnet Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=RandomNumber asp-controller=Dotnet> Dotnet Random Number </a> <br></details> <details> <summary> Git </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Git> Git Home </a> <br></details> <details> <summary> Glossary </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Glossary> Glossary Home </a> <br></details> <details> <summary> Go </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Go> Go Home </a> <br></details> <details> <summary> Home </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Home> Home Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Privacy asp-controller=Home> Home Privacy </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=CodeTut asp-controller=Home> Home Code Tut </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Error asp-controller=Home> Home Error </a> <br></details> <details> <summary> Html </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Html> Html Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Tags asp-controller=Html> Html Tags </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Colors asp-controller=Html> Html Colors </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=BasicExample asp-controller=Html> Html Basic Example </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Comments asp-controller=Html> Html Comments </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=CSS asp-controller=Html> Html Css </a> <br></details> <details> <summary> Java </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Java> Java Home </a> <br></details> <details> <summary> Js </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Js> Js Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=GetMonth asp-controller=Js> Js Get Month </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=ExpressionsOperators asp-controller=Js> Js Expressions Operators </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=BinaryArrayToDecimal asp-controller=Js> Js Binary Array To Decimal </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=ToFixed asp-controller=Js> Js To Fixed </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Json asp-controller=Js> Js Json </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=RandomColorCreater asp-controller=Js> Js Random Color Creater </a> <br></details> <details> <summary> Networking </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Networking> Networking Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=IpDataGram asp-controller=Networking> Networking Ip Data Gram </a> <br></details> <details> <summary> Python </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Python> Python Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Password asp-controller=Python> Python Password </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=swapcase asp-controller=Python> Python Swapcase </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=vars asp-controller=Python> Python Vars </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=abs asp-controller=Python> Python Abs </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=funnyNumbers asp-controller=Python> Python Funny Numbers </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=stringFormattingTypes asp-controller=Python> Python String Formatting Types </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=controllerGetter asp-controller=Python> Python Controller Getter </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Comments asp-controller=Python> Python Comments </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Syntax asp-controller=Python> Python Syntax </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=VariableNames asp-controller=Python> Python Variable Names </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=VariableValues asp-controller=Python> Python Variable Values </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=VariableOutput asp-controller=Python> Python Variable Output </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=VariableGlobals asp-controller=Python> Python Variable Globals </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=DataTypes asp-controller=Python> Python Data Types </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Numbers asp-controller=Python> Python Numbers </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Modules asp-controller=Python> Python Modules </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=ReFlags asp-controller=Python> Python Re Flags </a> <br></details> <details> <summary> Sass </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Sass> Sass Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Variables asp-controller=Sass> Sass Variables </a> <br></details> 
+        <div class="sidebar pt-3 fixed-top" >
+            <details> <summary> Bash </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Bash> Bash Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Variables asp-controller=Bash> Bash Variables </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=PrintVariables asp-controller=Bash> Bash Print Variables </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Bashrc asp-controller=Bash> Bash Bashrc </a> <br></details> <details> <summary> Challenge </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Challenge> Challenge Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=GetOdds asp-controller=Challenge> Challenge Get Odds </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=drinkSoda asp-controller=Challenge> Challenge Drink Soda </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=CensoredVowels asp-controller=Challenge> Challenge Censored Vowels </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=AreaOfAHexagon asp-controller=Challenge> Challenge Area Of Ahexagon </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=NumberLength asp-controller=Challenge> Challenge Number Length </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=DepthFirstSearch asp-controller=Challenge> Challenge Depth First Search </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=ReverseSortANumber asp-controller=Challenge> Challenge Reverse Sort Anumber </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=SumOfCube asp-controller=Challenge> Challenge Sum Of Cube </a> <br></details> <details> <summary> Cpp </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Cpp> Cpp Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=CPPversionHistory asp-controller=Cpp> Cpp Cppversion History </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Comments asp-controller=Cpp> Cpp Comments </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Variables asp-controller=Cpp> Cpp Variables </a> <br></details> <details> <summary> Css </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Css> Css Home </a> <br></details> <details> <summary> Dotnet </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Dotnet> Dotnet Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=RandomNumber asp-controller=Dotnet> Dotnet Random Number </a> <br></details> <details> <summary> Git </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Git> Git Home </a> <br></details> <details> <summary> Glossary </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Glossary> Glossary Home </a> <br></details> <details> <summary> Go </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Go> Go Home </a> <br></details> <details> <summary> Home </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Home> Home Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Privacy asp-controller=Home> Home Privacy </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=CodeTut asp-controller=Home> Home Code Tut </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Error asp-controller=Home> Home Error </a> <br></details> <details> <summary> Html </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Html> Html Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Tags asp-controller=Html> Html Tags </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Colors asp-controller=Html> Html Colors </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=BasicExample asp-controller=Html> Html Basic Example </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Comments asp-controller=Html> Html Comments </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=CSS asp-controller=Html> Html Css </a> <br></details> <details> <summary> Java </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Java> Java Home </a> <br></details> <details> <summary> Js </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Js> Js Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=GetMonth asp-controller=Js> Js Get Month </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=ExpressionsOperators asp-controller=Js> Js Expressions Operators </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=BinaryArrayToDecimal asp-controller=Js> Js Binary Array To Decimal </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=ToFixed asp-controller=Js> Js To Fixed </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Json asp-controller=Js> Js Json </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=RandomColorCreater asp-controller=Js> Js Random Color Creater </a> <br></details> <details> <summary> Networking </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Networking> Networking Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=IpDataGram asp-controller=Networking> Networking Ip Data Gram </a> <br></details> <details> <summary> Python </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Python> Python Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Password asp-controller=Python> Python Password </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=swapcase asp-controller=Python> Python Swapcase </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=vars asp-controller=Python> Python Vars </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=abs asp-controller=Python> Python Abs </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=funnyNumbers asp-controller=Python> Python Funny Numbers </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=stringFormattingTypes asp-controller=Python> Python String Formatting Types </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=controllerGetter asp-controller=Python> Python Controller Getter </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Comments asp-controller=Python> Python Comments </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Syntax asp-controller=Python> Python Syntax </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=VariableNames asp-controller=Python> Python Variable Names </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=VariableValues asp-controller=Python> Python Variable Values </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=VariableOutput asp-controller=Python> Python Variable Output </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=VariableGlobals asp-controller=Python> Python Variable Globals </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=DataTypes asp-controller=Python> Python Data Types </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Numbers asp-controller=Python> Python Numbers </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Modules asp-controller=Python> Python Modules </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=ReFlags asp-controller=Python> Python Re Flags </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Casting asp-controller=Python> Python Casting </a> <br></details> <details> <summary> Sass </summary> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Index asp-controller=Sass> Sass Home </a> <br> <a style="text-decoration:none; font-size:12px; padding-right: 100%" class=link asp-action=Variables asp-controller=Sass> Sass Variables </a> <br></details> 
         </div>
-    @* /Sidebar *@         
+    @* /Sidebar *@           
 
         <div class="col-sm-12 ">
             
             <main  id="bodyRender" role="main" class="pb-3 ">
                 <div class="pt-5">
-                    <h3 class="display-4 rounded-3">@ViewData["controller"] - @ViewData["Title"]  <div class="underlineBox"></div></h3>
+                    <h3 class="display-4 rounded-3">@ViewData["controller"] @ViewData["Title"]  <div class="shadow underlineBox"></div></h3>
                 </div>
                 <div id="toc">
 
@@ -130,7 +111,7 @@
                     </ul>
 
                     
-
+                
                 </div>
                 
                 <div id="mainBody" class="pt-3">
@@ -148,35 +129,43 @@
         </div>
     </div>
 
-
+<div id="controller" class="hidden">
+    @ViewData["controller"]
+</div>
 
 </body>
 
-<footer id="foot" class="sticky-bottom  footer text-muted">
-    <div style="font-size: small;">
-        &copy; alecscripts.com &trade; <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        || <a href="https://github.com/searsam1/alecscripts/commits/main">Repository</a>
-    </div>
-    <div style="font-size: small;" class="pb-0">
-        Version @Version
-    </div>
-    <div style="font-size: small;">
-        Last Update: <i><span class="border-bottom text-secondary">@LastUpdate</span></i>
-    </div>
-    <div style="font-size: small;">
-        Contact: @WebMaster
-    </div>
-    <div id="controller" style="font-size: small; margin-top: none;">
-        @ViewData["controller"]
-    </div>
-    
-    
+<footer id="foot" class="sticky-bottom text-muted">
+    <ul>
+        <li>
+            <a style="color: var(--pink);" href="https://github.com/searsam1/alecscripts/commits/main">Repository</a>
+            |
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            |
+            <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            |
+            <a asp-area="" asp-controller="Python" asp-action="Index">Python</a>
+
+        </li>
+        <li>
+            <span class="text-dark">@@Version</span> 
+        </li>
+        <li>
+            @Version
+        </li>
+        <li>
+            <span class="text-dark">@@Webmaster</span>: 
+        </li>
+        <li>
+            @WebMaster
+        </li>
+    </ul>
 </footer>
+
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/HToDisplay.js" asp-append-version="true"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
-
-
 
 <script>
 function openSidebarLink(){
@@ -205,9 +194,12 @@ function openSidebarLink(){
 openSidebarLink()
 </script>
 
+
 @* Prism JS *@
 
 <script src="~/js/prism.js" asp-append-version="true"></script>
+
+
 
 @* Make toc *@
 

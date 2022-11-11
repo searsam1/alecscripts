@@ -113,7 +113,6 @@ function randomByte(){
 }
 
 
-
 function createTOC(){
     headers = document.getElementsByClassName("display-6")
     toc = document.getElementsByClassName("toc-container")[0]
@@ -135,6 +134,10 @@ function createTOC(){
     }
 }
 createTOC();
+
+
+
+
 
 function createSidebar(){
     let sidebar = document.getElementById("sidebar");

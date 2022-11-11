@@ -24,7 +24,7 @@ pre[class*=language-] {
 }
 
 pre:not(code) {
-    border-top: 7px solid rgb(241, 5, 249);
+    border-top: 7px solid var(--pink);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }

@@ -20,6 +20,19 @@ namespace MvcMovie.Controllers
         ViewData["title"] = "Cppversion History";
         return View();
     }
+
+    public IActionResult Comments()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Comments";
+        return View();
+    }
+    public IActionResult Variables()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Variables";
+        return View();
+    }
       
     }
 }
