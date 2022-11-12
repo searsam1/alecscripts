@@ -176,3 +176,10 @@ function formatLinks(){
         link.setAttribute("title", link.href);
     }
 }
+
+function assignPageId(){
+    let idHolder = document.querySelector("#pageID");
+    idHolder.textContent =  
+    idHolder.textContent += Math.floor(Math.random() * 100000000);
+}
+assignPageId()

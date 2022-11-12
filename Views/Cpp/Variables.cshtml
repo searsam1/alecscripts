@@ -1,3 +1,5 @@
+
+@* Types of Variables *@
 <section>
     <h1>
         Types of Variables
@@ -10,17 +12,69 @@
         <li>
             int 
         </li>
+            <ul><li>Integer <code>(1, 2, 3)</code></li></ul>
         <li>
             double
         </li>
+            <ul><li>Float <code>(2.71828)</code></li></ul>
         <li>
             char 
         </li>
+            <ul><li>Character <code>(a, b, c)</code></li></ul>
         <li>
             string 
         </li>   
+            <ul><li>A collection of characters <code>("Hello World!")</code></li></ul>
         <li>
             bool
         </li>
+            <ul>
+                <li>True or False (<code>true false</code>)</li>
+                <li>(<code>true false</code>) is lowercase in <i>C++</i></li>    
+            </ul>
     </ul>
+</section>
+
+@* Declaration *@
+<section>
+    <h1>
+        Declaration
+    </h1>
+    <p>
+        Variables are declared with a type and a value. 
+        The value is optional, and a buffer of that type's 
+        size will take its place. Note that if a variable already 
+        has a variable and is reassigned, its value can change, 
+        but not its type. 
+    </p>
+    <pre><code class="lang-cpp">#include &lt;iostream&gt;
+    int main() {
+        int x = 1889; // Declare x variable
+        std::cout << x << "\n";    
+        return 0;
+    }
+    // Outputs 1889</code></pre>
+
+</section>
+
+@* Display Variables *@
+<section>
+    <h1>
+        Display Variables
+    </h1>
+    <p>
+        Variables like <code>ints</code> and <code>strings</code> are
+        printed out using the <code>std::cout << var</code> function. Variables 
+        that hold a container like an <code>array</code> how to be printed over a 
+        loop (to print each element). 
+    </p>
+    <pre><code class="lang-cpp">#include &lt;iostream&gt;
+    int main(){
+        int var = 22;
+        std::cout << var << "\n";
+        return 0;
+    }        
+    // output:
+    // 22
+    </code></pre>
 </section>
