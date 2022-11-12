@@ -54,7 +54,7 @@ def get_actions(fn, control):
 
 
 def get_controls():
-    fp = "Controllers"
+    fp = "/Users/111244rfsf/Documents/Repositories/alecscripts/Controllers"
     fn, _, controls = list(os.walk(fp))[0]
     string = ""
     lst = []

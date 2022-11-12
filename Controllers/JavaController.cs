@@ -24,5 +24,15 @@ namespace MvcAlecScripts.Controllers
             };
             return View(viewModel);
         }
+
+    
+    
+    public IActionResult Comments()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Comments";
+        return View();
+    }
+    
     }
 }

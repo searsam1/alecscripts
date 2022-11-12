@@ -27,6 +27,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9QcmludFZhcmlhYmxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/PromptExpansion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9Qcm9tcHRFeHBhbnNpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Variables.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9WYXJpYWJsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -141,6 +145,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/tags.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHRtbC90YWdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Comments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9Db21tZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/index.cshtml]
@@ -269,10 +277,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/layout_copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL2xheW91dF9jb3B5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_ValidationScriptsPartial.cshtml]

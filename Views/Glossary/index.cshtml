@@ -46,14 +46,21 @@
             @term_count Total Terms
         </p>
     </center>
-    foreach( KeyValuePair<string, string> kvp in sortedGlossary )
+    <ul>
+        <h1>
+            Definitions
+        </h1>
+    @foreach( KeyValuePair<string, string> kvp in sortedGlossary )
     {
 
-        <h1 class="display-6 glossary-header">
+        <li>
             @kvp.Key
-        </h1>
-        <p class="indent-1 glossary-text">
-            @kvp.Value
-        </p>
+        </li>
+        <ul class="pb-3">
+            <li>
+                @kvp.Value
+            </li>
+        </ul>
     }
+    </ul>
 }

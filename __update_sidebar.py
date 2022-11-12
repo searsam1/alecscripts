@@ -21,12 +21,11 @@ def text_repl(matchgroup):
 
 
 
-updated_file = re.sub(p, text_repl, get_file_text(), flags=re.DOTALL)
-clipboard.copy(updated_file)
-print("Copied updated html")
+
+
 
 def update_file(path=r"""/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_Layout.cshtml"""):
+    updated_file = re.sub(p, text_repl, get_file_text(), flags=re.DOTALL)
     with open(path, 'w') as f:
         f.write(updated_file)
     print("updated _layout with fresh sidebar.")
-update_file()

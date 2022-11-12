@@ -35,6 +35,15 @@ namespace MvcMovie.Controllers
         ViewData["title"] = "Bashrc";
         return View();
     }
-      
+    
+
+    
+    public IActionResult PromptExpansion()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Prompt Expansion";
+        return View();
+    }
+    
     }
 }
