@@ -1,0 +1,41 @@
+<section>
+    <h1>
+        Split Using awk
+    </h1>
+    <p>
+        Pipe a string to <code>awk -F</code> followed 
+        by a separator (like a dash). 
+    </p>
+    <pre><code class="lang-bash">
+str="abc-def-ghi"
+echo "$str" | awk -F'-' '{print $1,$2,$3}'        
+# abc def ghi
+    </code></pre>
+    <p>
+        In the example above, <code>"-"</code> is the separator
+        and <code>$1, $2, $3</code> are the first three variables supplied from splitting 
+        the array, excluding the array itself (<code>$0</code>).
+    </p>
+</section>
+
+<section>
+    <h1>
+        IFS (Internal Field Separator)
+    </h1>
+    <p>
+        IFS is where the string is split into an array based on a character. 
+    </p>
+    <pre><code class="lang-bash">
+STR="one-two-three"
+IFS='-' array=($STR)
+
+for ele in "${array[@@]}"; 
+    do
+        echo $ele;
+    done        
+# one
+# two
+# three
+    </code></pre>
+
+</section>

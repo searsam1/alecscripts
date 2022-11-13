@@ -36,12 +36,45 @@ namespace MvcMovie.Controllers
         return View();
     }
     
-
-    
-    public IActionResult PromptExpansion()
+    public IActionResult Comments()
     {   
         ViewData["controller"] = controllerName;
-        ViewData["title"] = "Prompt Expansion";
+        ViewData["title"] = "Comments";
+        return View();
+    }
+    
+    public IActionResult Lowercase()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Lowercase";
+        return View();
+    }
+    
+    public IActionResult Uppercase()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Uppercase";
+        return View();
+    }
+    
+    public IActionResult StringLength()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "String Length";
+        return View();
+    }
+    
+    public IActionResult SplitString()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Split String";
+        return View();
+    }
+    
+    public IActionResult Substring()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Substring";
         return View();
     }
     

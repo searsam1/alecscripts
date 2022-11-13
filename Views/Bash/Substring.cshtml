@@ -1,0 +1,22 @@
+<section>
+    <p>Being able to check if a string is in another string 
+        is a common task for a programmer. There are a couple 
+        nice ways of doing this in <i>bash</i>.
+    </p>
+    <h1>
+        Grep
+    </h1>
+    <p>
+        Grep is used to check if a substring is in a given string. Pipe 
+        the "main" string into the <code>grep</code> command, followed <code>-q</code> and  
+        the substring to check for.
+    </p>
+    <pre><code class="lang-bash">
+mainstring='Sour Edsel'
+if echo "$mainstring" | grep -q "Edsel"; 
+    then
+        echo "Edsel is Sour"
+fi
+# Edsel is Sour
+    </code></pre>
+</section>

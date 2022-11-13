@@ -1,0 +1,61 @@
+<section>
+    <h1>
+        Comments
+    </h1>
+    <p>
+        Comments are descriptions of what the code does that is 
+        ignored by the computer. Use a hashtag <code>#</code> for a single-line comment in bash. 
+    </p>
+    <pre><code class="lang-bash">
+# This is a comment
+echo "Hello World!" 
+    </code></pre>
+</section>
+
+<section>
+    <h1>
+        Multiline Comments
+    </h1>
+    <h2>
+        Using <code>&lt;&lt;comment</code>
+    </h2>
+    <p>
+        Multiline comments can be made using the <code> &lt;&lt;comment ... comment</code> syntax. The <code>...</code> is 
+        where the comment goes, and the last <code>comment</code> word marks the end of the comment. 
+    </p>
+<pre><code class="lang-bash">
+&lt;&lt;comment       # <----- Start
+Comment Goes Here 
+comment         # <----- End
+</code></pre>
+    <pre><code class="lang-bash">
+&lt;&lt;comment
+...
+This is a multiline comment 
+...
+comment
+echo hello
+    </code></pre>
+        <h2>
+        Using <code> <code>: ' ' </code> </code>
+    </h2>
+    <p>
+        Another method of making multiline comments is by 
+        using the <code>: '  '</code> syntax. The comment 
+        goes between the single quotes <code>' '</code> and after the colon <code>:</code>.
+    </p>
+    <pre><code class="lang-bash">
+: ' Comment Goes Here '</code></pre>
+    <pre><code class="lang-bash">
+echo hello
+: 'This is a <----- Start
+multiline 
+comment' # <----- end
+echo world
+
+: '
+Output: 
+hello world
+'
+    </code></pre>
+</section>

@@ -15,7 +15,6 @@ pre[class*=language-] {
     -ms-hyphens: none;
     hyphens: none;
     max-width: 750px;
-    font-size:.87em;
     text-align:left;
     white-space:pre;
     /* --font-family-monospace; */

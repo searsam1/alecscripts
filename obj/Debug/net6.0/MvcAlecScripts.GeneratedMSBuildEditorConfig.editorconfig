@@ -19,16 +19,36 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9CYXNocmMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Comments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9Db21tZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Lowercase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9Mb3dlcmNhc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/PrintVariables.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9QcmludFZhcmlhYmxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/PromptExpansion.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9Qcm9tcHRFeHBhbnNpb24uY3NodG1s
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/SplitString.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9TcGxpdFN0cmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/StringLength.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9TdHJpbmdMZW5ndGguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Substring.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9TdWJzdHJpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Uppercase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9VcHBlcmNhc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Variables.cshtml]

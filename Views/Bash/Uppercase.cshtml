@@ -1,0 +1,55 @@
+
+<section>
+    <h1>
+        Using tr 
+    </h1>
+    <p>
+        tr is a translate command in bash used to 
+        jump from one format to another. 
+        Use <code>tr '[:lower:]' '[:upper:]'</code> to switch from 
+        lowercase to uppercase. 
+    </p>
+    <pre><code class="lang-bash">
+STR="harry potter"
+echo "$STR" | tr '[:lower:]' '[:upper:]'
+# HARRY POTTER
+    </code></pre>
+    <p>
+        <code>'a-z' 'A-Z'</code> can also be used in place of 
+        <code>'[:lower:]' '[:upper:]'</code>
+    </p>
+    <pre><code class="lang-bash">
+STR="harry potter"
+echo "$STR" | tr 'a-z' 'A-Z'
+# HARRY POTTER        
+    </code></pre>
+</section>
+
+<section>
+    <h1>
+        awk
+    </h1>
+    <p>
+        Similarly to the tr command, variables can be converted to uppercase by using awk's print toupper command.
+    </p>
+    <pre><code class="lang-bash">
+STR="pop tarts"
+echo "$STR" | awk '{print toupper($0)}'
+# POP TARTS
+    </code></pre>
+</section>
+
+<section>
+    <h1>
+        perl
+    </h1>
+    <p>
+        Perl has a <code>'print uc'</code> command that converts 
+        lowercase to uppercase as well. 
+    </p>
+    <pre><code class="lang-bash">
+STR="POP TARTS"
+echo "$STR" | perl -ne 'print uc'  
+# POP TARTS
+    </code></pre>
+</section>

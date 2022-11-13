@@ -175,7 +175,7 @@ li.nav-item {
 .link {
     color: var(--black);
     font-size: 20px;
-    text-decoration-color: rgba(0, 0, 0, 0.3508);
+    text-decoration: none;
     transition: padding-left .5s, color .5s, background-color 1s;
 }
 
@@ -414,6 +414,7 @@ a.link {
     font-family: var(--font-family-sans-serif);
     word-spacing: 3px;
     color: var(--gray-dark);
+    padding-top: 20px;
     /* font-size: 1.1em; */
   }
 

@@ -1,0 +1,38 @@
+<section>
+    <h1>
+        Using the Dollar Sign ($)
+    </h1>
+    <p>
+        The first way to find a string's length 
+        is to use the <code>${#variable}</code> syntax. 
+    </p>
+    <pre><code class="lang-bash">
+STR="Hello World."
+STRLEN=${#STR} 
+
+echo $STRLEN 
+# 12
+    </code></pre>
+</section>
+
+<section>
+    <h1>
+        Using wc -m
+    </h1>
+    <p>
+        Use the pipe <code>|</code> operator to pipe a string to 
+        <code>wc -m</code>.
+    </p>
+    <pre><code class="lang-bash">
+echo -n 'Hello World.' | wc -m; 
+# 12
+
+MSG="Hello World."
+
+STRLEN=`echo -n $MSG | wc -m`   
+echo $STRLEN 
+# 12
+
+        </code>
+    </pre>
+</section>
