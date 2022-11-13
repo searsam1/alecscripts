@@ -246,37 +246,13 @@ div.container div div div {
 }
 
 .display-6 {
-    /* color: black;
-  
-  font-weight: 100; */
     scroll-margin-top: 80px;
-    font-size: 37px;
-    /* font-family: 'Lexend', sans-serif; */
-
-    /* border-top-right-radius:60px;
-  border-bottom-right-radius:60px; */
+    font-size: 2.5em;
     max-width: fit-content;
-    
-    margin-top: 10px;
-    font-family: 'Lato', sans-serif;
-
+    margin-top: 50px;
+    text-transform: capitalize;
     padding: 10px;
-    text-shadow: 1px 1px 1px 1px;
-    /* background-color:  #f8f9fa */
 }
- /* .display-6:not(.fs-4)::before {
-    content: "𝜱";
-    font-size: 70%;
-    vertical-align: top;
-    color: hotpink;
-    
-} */
-/* .fs-4::before {
-    content: "𐦉";
-    color: hotpink;
-    font-size: 70%;
-    vertical-align: top;
-} */
 
 .display-4 {
     padding: 10px;
@@ -370,7 +346,7 @@ ul {
 
 summary {
     margin-left: 4%;
-    font-size: .9em;
+    font-size: 1em;
 }
 a.link {
     font-size: 12px;
@@ -422,6 +398,7 @@ a.link {
     
     background-image: repeating-linear-gradient(white, var(--light));   
     padding-bottom: 10px;
+    text-transform: capitalize;
 }
 
 .toc-container .link {
@@ -562,7 +539,7 @@ ul {
 }
 
 .sidebar-link {
-    font-size: .9em;
+    font-size: 1em;
     color: black;
     text-decoration: none;
     

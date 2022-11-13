@@ -1,0 +1,58 @@
+<section class="intro">
+    Append:  <p>
+        <i>"add [something] as an attachment or supplement."</i>
+    </p>
+    <p style="font-size: .9em;">Definitions from Oxford Languages</p>
+    <p>
+        Appending is another way of saying adding. With
+        programming, it means adding to the end of a container 
+        and not the front. A string is just a container of chars or 
+        characters, so appending to a string is just 
+        adding another byte to the end. 
+    </p>
+</section>
+
+
+<section>
+    <h1>
+        Concatenation
+    </h1>
+    <p>
+        Concatenation is a fancy word for saying "adding two strings together". It is tossed 
+        around a lot in the community, so best become familiar with it. To add or concatenate 
+        two variables or strings, place them next to each other when referencing them. 
+    </p>
+    <pre><code class="lang-bash">
+STR1="Hello"
+STR2="Malek"
+STR3=$STR1$STR2
+
+# Can also place inside quotes 
+STR4="$STR1 $STR2"
+
+echo $STR3
+# HelloMalek
+
+echo $STR4
+# Hello Malek
+    </code></pre>
+</section>
+
+<section>
+    <h1>
+        plus equals operator (+= )
+    </h1>
+    <p>
+        Another way of combing strings is by 
+        using the <code>+=</code> operator, which 
+        appends or adds the right operand to the left. 
+    </p>
+    <pre><code class="lang-bash">
+STR="sour"
+STR+=" Apple"
+
+echo $STR
+# sour Apple
+    </code></pre>
+
+</section>

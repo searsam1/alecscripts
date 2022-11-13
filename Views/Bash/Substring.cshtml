@@ -20,3 +20,40 @@ fi
 # Edsel is Sour
     </code></pre>
 </section>
+
+<section>
+    <h1>
+        re
+    </h1>
+    <p>
+        There is a way to use a regular expression (re) to find if a 
+        given substring is in a string. Use the <code>~= </code> operator inside 
+        double square brackets, followed by the substring to check. 
+    </p>
+    <pre><code class="lang-bash">
+mainstring='Hello Mars'
+if [[ $mainstring =~ "Mars" ]]; 
+    then
+        echo "We are at Mars"
+fi
+# We are at Mars
+    </code></pre>
+</section>
+
+<section>
+    <h1>
+        comparison operator
+    </h1>
+    <p>
+        The comparison operator <code>==</code> can be combined with the wildcard 
+        operator <code>**</code> to check if a substring is in a string. 
+        Wrap the wild card operator around the substring, <code>*"like so"*</code>
+    </p>
+    <pre><code class="lang-bash">
+mainstring='Welcome to Saturn'
+if [[ $mainstring == *"Saturn"* ]]; then
+  echo "Hi Saturn"
+fi        
+# Hi Saturn
+    </code></pre>
+</section>

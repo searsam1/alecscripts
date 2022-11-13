@@ -10,7 +10,7 @@ function editH1(){
         }
         else if (classAttribs.trim() != "display-6 fs-4 indent-1") {
             H1.setAttribute("class", "display-6")
-        }   
+        }
     }
 }
 

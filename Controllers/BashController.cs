@@ -78,5 +78,12 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult AppendString()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Append String";
+        return View();
+    }
+    
     }
 }

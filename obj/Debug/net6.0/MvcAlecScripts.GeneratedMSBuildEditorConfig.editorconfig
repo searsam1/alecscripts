@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/111244rfsf/Documents/Repositories/alecscripts
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/AppendString.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9BcHBlbmRTdHJpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Bashrc.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9CYXNocmMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
