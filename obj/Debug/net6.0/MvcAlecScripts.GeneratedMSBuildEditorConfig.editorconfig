@@ -27,6 +27,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9Db21tZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/FileNames.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9GaWxlTmFtZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9pbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -49,6 +53,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Substring.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9TdWJzdHJpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Tips.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9UaXBzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Uppercase.cshtml]
@@ -177,6 +185,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/AlternateTableRows.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvQWx0ZXJuYXRlVGFibGVSb3dzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/BinaryArrayToDecimal.cshtml]

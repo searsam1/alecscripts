@@ -1,0 +1,220 @@
+
+<section>
+    <p>
+        Bash is a great language with lots of different tips and 
+        tricks to learn. Here are a few to help your programming journey 
+        in bash. 
+    </p>
+</section>
+<section>
+    <h1>
+        Clear Screen / Exit
+    </h1>
+    <p>
+        The <code>clear</code> command is used to clear the screen, 
+        but <code>Ctrl + L</code> is an even faster way of doing it. One can also type <code>exit</code> 
+        to quit, but it is also faster to use <code>Ctrl + d</code> closes the command line. 
+    </p>
+</section>
+<section>
+    <h1>
+        Find program execution time
+    </h1>
+    <p>
+        Prepend <code>time</code> while running a script 
+        and bash will output how long that program took to execute. 
+    </p>
+    <pre><code class="lang-bash command-line">
+time ./script.sh # <---- run script with ./</code></pre>
+    <pre><code class="lang-bash ">
+# Output
+: ' 
+real	0m0.326s
+user	0m0.009s
+sys	    0m0.005s
+' </code></pre>
+</section>
+
+<section>
+    <h1>
+        Mass Produce Files with Brace Expansion
+    </h1>
+    <p>
+        To create a thousand C++ files <i> file1.cpp file2.cpp ... file1000.cpp </i>, 
+        use the syntax <code> touch file{1..1000}.cpp</code>. This is a simple way to 
+        create files in bulk. 
+    </p>
+    <pre><code class="lang-bash">
+touch file{1..1000}.cpp # <-- Create 1,000 C++ files at once
+ls 
+: 'file1.cpp    file249.cpp  file4.cpp    file55.cpp   file70.cpp   file850.cpp
+file10.cpp   file25.cpp   file40.cpp   file550.cpp  file700.cpp  file851.cpp
+file100.cpp  file250.cpp  file400.cpp  file551.cpp  file701.cpp  file852.cpp
+file1000.cpp file251.cpp  file401.cpp  file552.cpp  file702.cpp  file853.cpp
+file112.cpp  file263.cpp  file413.cpp  file564.cpp  file714.cpp  file865.cpp
+file245.cpp  file396.cpp  file546.cpp  file697.cpp  file847.cpp  file998.cpp
+file246.cpp  file397.cpp  file547.cpp  file698.cpp  file848.cpp  file999.cpp
+file247.cpp  file398.cpp  file548.cpp  file699.cpp  file849.cpp
+file248.cpp  file399.cpp  file549.cpp  file7.cpp    file85.cpp'
+    </code></pre>
+    <p>
+        Another useful trick is to use brace expansion to 
+        create multiple directories.
+    </p>
+    <pre><code class="lang-bash command-line">
+mkdir {folder1, folder2, folder3}
+ls</code></pre>
+<pre><code class="lang-bash">
+# folder1 folder2 folder3    
+</code></pre>
+</section>
+
+<section>
+    <h1>
+        Parameter expansion
+    </h1>
+    <p>
+        Save time by not reapting code with parameter expansion. 
+        Instead of typing the filename twice when renaming an extension, use 
+        <code> mv filename.{extOld,extNew} </code>. The variables inside the 
+        curly braces are separated by commas. Do not put spaces between the elements, it will cause an error. 
+    </p>
+    <pre><code class="lang-bash command-line">
+# Rename README.txt to README.md
+mv README.{txt,md}
+    </code></pre>
+    <p>
+        It works for other commands as well, like echo: 
+    </p>
+    <pre><code class="lang-bash">
+echo {3,4,5}
+# 3 4 5
+    </code></pre>
+</section>
+
+<section>
+    <h1>
+        Quickly find Last Argument
+    </h1>
+    <p>
+        Instead of retyping an argument, use <code>$_</code> to get the last argument
+        supplied. 
+    </p>
+    <pre><code class="lang-bash">
+echo hello
+# hello 
+echo $_
+# hello 
+    </code></pre>
+</section>
+
+<section>
+    <h1>
+        Speedy Substitution
+    </h1>
+    <p>
+        Instead of retyping a command with different elements, use the <code>^old^new</code>
+        syntax to quickly replace text. 
+    </p>
+    <pre><code class="lang-bash">
+echo helloWorld
+# helloWorld 
+^World^Mars       
+echo hellomars
+# hellomars
+    </code></pre>
+</section>
+
+
+
+
+
+@{
+    string moreTips = @"
+
+
+
+Parameter expansion with {a,b} — to avoid retyping on a single command
+Accessing the last argument with $_ — to avoid retyping from the last command
+Quick substitution with ^old^new — to quickly change part of the last command
+
+All of these tricks are also compatible with zsh.
+
+
+Parameter Expansion With {a,b}
+When writing a single command, it’s common to repeat yourself.
+Take the example of changing the suffix on a file, which we can do using mv:
+$ mv README.txt README.md
+Notice how we write README twice?
+Parameter expansion will avoid this repetition — allowing us to change the suffix on our file without typing README twice:
+$ mv README.{txt,md}
+mv README.txt README.md
+The parameter expansion we use is {txt,md}, which is expanded to two arguments — txt md (separated by a space).
+Parameter expansion creates one argument for each element inside the curly braces, separated by a comma:
+$ echo {1,2,3}
+1 2 3
+$  echo pre{1,2,3}fix
+pre1fix pre2fix pre3fix
+An empty entry will create an argument with nothing substituted:
+$ echo pre{,1,2}fix
+prefix pre1fix pre2fix
+Another example — renaming a models folder to ml inside a data folder:
+$ mv data/models data/ml
+We can save retyping data/ by using parameter expansion:
+$ mv data/{models,ml}
+mv data/models data/ml
+We can use parameter expansion with a sequence of numbers — useful to create numbered directories:
+$ mkdir data{0..2}
+mkdir data0 data1 data2
+We can also do parameter expansion inside an argument — for example, to change a folder halfway up a path:
+$ cat models/{baseline,final}/data.csv
+cat models/baseline/data.csv models/final/data.csv
+A final example, using three parameters — moving two Python test files into a `tests` folder:
+$ mv tests{_unit.py,_system.py,}
+mv tests_unit.py tests_system.py tests
+Summary
+Any time you are retyping something multiple times in a single command, it’s likely parameter expansion can help save your exhausted hands.
+
+
+Accessing the Last Argument With $_
+Terminals are operated by a sequence of commands — we often reuse information across multiple commands.
+Our previous tip, parameter expansion, is about typing less on a single command — this tip is about typing less across multiple commands.
+Take the simple case of making a folder and moving into it:
+$ mkdir temp
+$ cd temp
+Notice that we reuse the argument temp again in our second command?
+We can save retyping temp and bring it forward from the previous command using $_:
+$ mkdir temp
+$ cd $_
+cd temp
+Above, we use $_ to access the last argument of the previous command, which in this case is temp.
+This use case of wanting to reuse the last argument of the last command (here temp) is so common that Bash stores it in a special variable _, which we access using a $ prefix (same as for $PATH or $HOME).
+Another example of using $_— moving a file and printing to STDOUT using cat:
+$ mv main.py src/main.py 
+$ cat src/main.py
+Notice how we are again reusing the last argument src/main.py?
+You can rewrite this using $_ to automatically bring forward src/main.py into your second command:
+$ mv main.py src/main.py 
+$ cat $_
+cat src/main.py
+Using $_ means you don't need to rewrite a complicated file path, giving you no chance to incorrectly retype it.
+Summary
+Any time you are retyping something multiple times across multiple commands, it’s likely using $_ can help reduce the strain on your weary hands.
+
+
+Quick Substitution With ^old^new
+Sometimes (often in our case) we run a command in the Shell and quickly realize we made a mistake.
+Rather than retyping the command again, we can use quick substitution to fix the mistake by replacing text in the previous command.
+An example — you are SSHing into a server and run the command to connect — only to realise it should have beenuser instead of ubuntu all along!
+$ ssh ubuntu@198.compute.com
+Instead of retyping the entire command again, you can use quick substitution to change just the part you want — here to change ubuntu into user:
+$ ^ubuntu^user
+ssh user@198.compute.com
+The pattern in quick substitution is ^old^new. It is the equivalent of doing:
+$ !!:s/old/new
+!! to get the last command and :s for a substitute regex. I think you'll agree ^old^new is a little easier!
+Summary
+Any time you are retyping something multiple times across multiple commands, it’s likely using $_ can help reduce the strain on your worn out hands.
+Thanks for reading!
+Thanks to Zack Shapiro";
+}

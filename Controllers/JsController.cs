@@ -63,5 +63,12 @@ namespace MvcMovie.Controllers
         ViewData["title"] = "Random Color Creater";
         return View();
     }
+    public IActionResult AlternateTableRows()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Alternate Table Rows";
+        return View();
+    }
+    
     }
 }

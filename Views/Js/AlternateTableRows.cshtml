@@ -1,0 +1,182 @@
+
+<section>
+    It is nice to have a table that alternates its colors every other row. It makes it 
+    easier to read.         
+</section>
+
+<section>
+    <h1>
+        What is an HTML Table?
+    </h1>
+    <p>
+        Tables in HTML consist of table rows <code>&lt;tr&gt;</code> 
+        that have table data <code>&lt;td&gt;</code>. The table header tag <code>&lt;th&gt;</code>
+        can be used instead of td to define a header. 
+    </p>
+</section>
+
+@{
+    string table = @"<table>
+        <tr>
+            <th> Name </th>
+            <th> Age </th>
+            <th> Height </th>
+        </tr>
+        <tr>
+            <td> John </td>
+            <td> 26 </td>
+            <td> 5'10"" </td>
+        </tr>
+        <tr>
+            <td> Kathy </td>
+            <td> 35 </td>
+            <td> 5'5"" </td>
+        </tr>
+        <tr>
+            <td> Issac </td>
+            <td> 45 </td>
+            <td> 5'9"" </td>
+        </tr>
+</table>";
+}
+
+<section>
+    <h1>
+        Example
+    </h1>
+    <pre><code class="lang-html">@table</code></pre>
+    <p>
+        <table>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    Height
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    John 
+                </td>
+                <td>
+                    26
+                </td>
+                <td>
+                    5'10"
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kathy
+                </td>
+                <td>
+                    35
+                </td>
+                <td>
+                    5'5"
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Issac
+                </td>
+                <td>
+                    45
+                </td>
+                <td>
+                    5'9"
+                </td>
+            </tr>
+        </table>
+    </p>
+</section>
+
+<section>
+    <h1>
+        How to get alternating colors using JS
+    </h1>
+    <p>
+        Start by creating a variable to hold the tables 
+        in the HTML document. Loop through each table and 
+        follow the other steps.  
+    </p>
+    <p>
+        For the table selected, find all the <code>tr</code> tags 
+        using <code>document.querySelectorAll("TR")</code>. Then loop through 
+        each row and make it a desired color if its on the right row. Assign a variable 
+        to <code>-1</code> and add one though each iteration. If the number if odd, make it 
+        colored.
+    </p>
+    <p>
+        Example Source Code and Table
+    </p>
+    <pre><code class="lang-js">function alternateTableColor(){
+    // get all tables in document 
+    let tables = document.querySelectorAll("TABLE");
+    // for each table 
+    for (let table of tables){
+        // get all rows from table
+        let trs = table.querySelectorAll("tr")
+        i = -1; 
+        // for each row 
+        for (let tr of trs){
+            i++; 
+            // if i is odd 
+            if (i % 2){
+                // make bg red
+                tr.style.backgroundColor = "red";
+            }
+            
+        }
+    }
+}
+    </code></pre>
+    <p>
+        <table>
+            <tr>
+                <th>
+                    FirstName
+                </th>
+                <th>
+                    LastName
+                </th>
+            </tr>
+            <tr>
+                <td style="background-color: red; color: black">
+                    John 
+                </td>
+                <td style="background-color: red; color: black">
+                    Wayne
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kathy
+                </td>
+                <td>
+                    Bates
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: red; color: black">
+                    Sarah
+                </td>
+                <td style="background-color: red; color: black">
+                    McLachlan
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Serena 
+                </td>
+                <td>
+                    Williams 
+                </td>
+            </tr>
+        </table>
+    </p>
+</section>

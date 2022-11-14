@@ -177,9 +177,32 @@ function formatLinks(){
     }
 }
 
-function assignPageId(){
-    let idHolder = document.querySelector("#pageID");
-    idHolder.textContent =  
-    idHolder.textContent += Math.floor(Math.random() * 100000000);
+
+function alternateTableColor(){
+    let tables = document.querySelectorAll("TABLE");
+
+    for (let table of tables){
+        let trs = table.querySelectorAll("tr")
+        i = -1; 
+        for (let tr of trs){
+            i++; 
+            if (i % 2){
+                tr.style.backgroundColor = "rgb(255,1,200, .2)";
+            }
+            
+        }
+    }
 }
-assignPageId()
+alternateTableColor()
+
+function applyShadowToCode(){
+    
+    // PREs (like multiple pre)
+    let pres = document.querySelectorAll("PRE", "CODE")
+    for (let pre of pres){
+        pre.setAttribute("class", " shadow-sm")
+        console.log(pre)
+    }
+
+}
+applyShadowToCode()

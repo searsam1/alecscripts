@@ -1,0 +1,33 @@
+<section>
+    <h1>
+        Get filename and extension from path variable
+    </h1>
+    <p>
+        To get filenames from a path, first define the 
+        filepath in a variable. Plug that variable into the 
+        syntax <code> $(basename -- "$filepath") </code>. From there, the 
+        file extension and name can be grabbed using the <code> ##*.</code> and 
+        <code> %.*</code> syntax, respectively. 
+    </p>
+    <pre><code class="lang-bash">
+"${filename##*.}"
+# Get file extension </code></pre>
+
+<pre><code class="lang-bash">
+"${filename%.*}"
+# Get filename</code></pre>
+    <pre><code class="lang-bash">
+# define path to file
+fullfile="issac/home/desktop/testing.sh"
+filename=$(basename -- "$fullfile")
+
+# Get extension using ##*. 
+extension="${filename##*.}"
+
+# Get filename using %.*
+filename="${filename%.*}"
+
+echo $filename.$extension
+# testing.sh
+    </code></pre>
+</section>
