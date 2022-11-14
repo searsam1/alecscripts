@@ -537,3 +537,14 @@ ul {
     text-decoration: none;
     
 }
+
+figcaption {
+    color: var(--gray);
+    font-size: .8em;
+}
+
+img {
+    border-radius: 10px;
+    width: 80%;
+    border: 2px solid var(--pink);
+}
