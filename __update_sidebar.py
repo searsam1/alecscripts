@@ -29,3 +29,5 @@ def update_file(path=r"""/Users/111244rfsf/Documents/Repositories/alecscripts/Vi
     with open(path, 'w') as f:
         f.write(updated_file)
     print("updated _layout with fresh sidebar.")
+
+update_file()

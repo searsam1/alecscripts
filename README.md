@@ -1,5 +1,15 @@
 # alecscripts
 
+## Commands 
+- `sidebar`
+    - Updates Sidebar
+- `page`
+    - Create new Page
+- `controller`
+    - Create New Controller 
+
+----
+
 - Fixed Sidebar scroll-x issues
 - Added color to the website (magenta sunset)
 - Changed SassVariable -> Variables + update sidebar
