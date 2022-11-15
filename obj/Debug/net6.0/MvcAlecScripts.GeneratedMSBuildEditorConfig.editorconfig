@@ -67,42 +67,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9WYXJpYWJsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/AreaOfAHexagon.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL0FyZWFPZkFIZXhhZ29uLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/CensoredVowels.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL0NlbnNvcmVkVm93ZWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/DepthFirstSearch.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL0RlcHRoRmlyc3RTZWFyY2guY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/drinkSoda.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2RyaW5rU29kYS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/getOdds.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2dldE9kZHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL2luZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/NumberLength.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL051bWJlckxlbmd0aC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/ReverseSortANumber.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL1JldmVyc2VTb3J0QU51bWJlci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenge/SumOfCube.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlL1N1bU9mQ3ViZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Comments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL0NvbW1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -217,14 +181,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/ToFixed.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvVG9GaXhlZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Networking/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmV0d29ya2luZy9pbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Networking/IpDataGram.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmV0d29ya2luZy9JcERhdGFHcmFtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/abs.cshtml]

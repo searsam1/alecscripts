@@ -1,7 +1,7 @@
 
-<h1 class="display-6">
+<h2 class="display-6">
     What is CSS?
-</h1>
+</h2>
 
 <p>
     Cascading style sheets, or CSS, is a way to style 
@@ -13,9 +13,9 @@
 @{
     string example3 = @"<!-- Index.html -->
 <link rel=""stylesheet"" href=""stylesheet.css"">";}
-<h1 class="display-6 fs-4 indent-1">
+<h3>
     External Example
-</h1>
+</h3>
 <p>
 
 <pre><code class="lang-css">/*  stylesheet.css  */
@@ -27,9 +27,9 @@ p {
 
 </p>
 
-<h1 class="display-6 fs-4 indent-1">
+<h3>
     Internal Example
-</h1>
+</h3>
 @{
         string example2 = @"<style> 
     p { 
@@ -39,9 +39,9 @@ p {
     }
 <pre><code class="lang-html">@example2</code></pre>
 
-<h1 class="display-6 fs-4 indent-1">
+<h3>
     Inline Example
-</h1>
+</h3>
 <p>
     @{
         string example = @"<p style=""color: red""> This is inline styling </p>";
@@ -49,9 +49,9 @@ p {
     <pre><code class="lang-html">@example</code></pre>
 </p>
 
-<h1 class="display-6">
+<h2 class="display-6">
     Basic Syntax 
-</h1>
+</h2>
 
 <p>
     Css has a nice syntax that uses the tag name followed by curly brackets <code>{}</code>. 
@@ -67,9 +67,9 @@ p {
     Now the text color of &lt;p&gt; is red. 
 </p>
 
-<h1 class="display-6 fs-4 indent-1">
+<h3>
     Classes
-</h1>
+</h3>
 <p>
     Use dot <code>.</code> notation before the class name to 
     access a class. 
@@ -79,9 +79,7 @@ p {
 } 
 </code></pre>
 
-<h1 class="display-6 fs-4 indent-1">
-    IDs
-</h1>
+<h3>IDs</h3>
 <p>
     Use a hashtag <code>#</code> before the element name to access an element by ID. 
 </p>  

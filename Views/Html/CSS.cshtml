@@ -1,7 +1,7 @@
 
-<h1 class="display-6">
+<h2>
     What is CSS?
-</h1>
+</h2>
 <p>
     CSS stands for cascading style sheets. 
     <a asp-action="index" asp-controller="glossary" > Cascading</a>: arrange (a number of devices or objects) in a series or sequence.
@@ -10,13 +10,11 @@
     It saves time by making styling and layout easy with its intuitive syntax. 
 </p>
 
-<h1 class="display-6">
+<h2>
     Display
-</h1>
+</h2>
 
-<h1 class="display-6 fs-4 indent-1">
-    Inline
-</h1>
+<h3>Inline</h3>
 <p>
     Inline is a quick and easy way to change the style of one 
     element. It goes in the style <i>attribute</i>. 
@@ -25,21 +23,21 @@
 </p>";}
     <pre><code class="lang-html">@example1</code></pre>
 </p>
-<h1 class="display-6 fs-4 indent-1">
-    Internal 
-</h1>
+<h3>
+    Internal
+</h3>
 <p>
     Use the <code>style</code> <i>tag</i> the insert CSS directly into a HTML page. 
     @{string example2 = @"<style>
-    h1{
+    h2{
         color: blue;
     } 
 </style>";} 
     <pre><code class="lang-html">@example2</code></pre>
 </p>
-<h1 class="display-6 fs-4 indent-1">
+<h3>
     External
-</h1>
+</h3>
 <p>
     To add an external stylesheet to HTML page, insert a <code>link</code> tag 
     with the <code>rel</code> attribute set to <code>"stylesheet"</code> inside 
@@ -49,7 +47,7 @@
 <pre><code class="lang-html">@example3</code></pre>
 
 <pre><code class="lang-css">/*   /stylesheet.css   */
-h1{
+h2{
     color: blue;
 } 
 </code></pre>

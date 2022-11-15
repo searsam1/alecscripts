@@ -1,7 +1,7 @@
 <section>
-    <h1>
+    <h2>
         tr command
-    </h1>
+    </h2>
     <p>
         The first method for converting to lowercase in bash 
         is to use the <code>tr</code> command. 
@@ -18,9 +18,9 @@ echo "$STR" | tr '[:upper:]' '[:lower:]'
         In the example above, <code>$STR</code> is piped to <code>tr</code> 
         with the <code>|</code> pipe operator. 
     </p>
-    <h2>
+    <h3>
         "A-Z" "a-z" Syntax
-    </h2>
+    </h3>
     <pre><code class="lang-bash">
 STR="POP TARTS"
 echo "$STR" | tr 'A-Z' 'a-z'
@@ -29,9 +29,9 @@ echo "$STR" | tr 'A-Z' 'a-z'
 </section>
 
 <section>
-    <h1>
+    <h2>
         Using awk
-    </h1>
+    </h2>
     <p>
         Similarly to the <code>tr</code> command, 
         variables can be lowercased by using awk's 
@@ -45,9 +45,9 @@ echo "$STR" | awk '{print tolower($0)}'
 </section>
 
 <section>
-    <h1>
+    <h2>
         Using perl
-    </h1>
+    </h2>
     <p>
         <code>perl</code> can be used with <code>print lc</code> to also 
         lowercase a string. 
@@ -59,9 +59,9 @@ echo "$STR" | perl -ne 'print lc'
     </code></pre>
 </section>
 
-<h1>
+<h2>
     References
-</h1>
+</h2>
 <p>
     <a href="https://www.w3schools.io/terminal/bash-string-lowercase/">
         w3schools.io/
