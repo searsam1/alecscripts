@@ -1,4 +1,8 @@
 
+<center>
+    <img alt="" src="~/lib/Resources/typewriter-g7fca08b4e_1920.jpeg">
+    <figcaption>Image by <a href="https://pixabay.com/users/ha11ok-1785462/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1248088">ha11ok</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1248088">Pixabay</a></figcaption>
+</center>
 <section>
     <h2>
         cin (see - in)
@@ -11,16 +15,56 @@
 int number; 
 
 // Print prompt
-cout << "Number: "; 
+std::cout << "Number: "; 
 
 // Get user input from the keyboard
-cin >> number; 
+std::cin >> number; 
 
  // Display number (the input value)
-cout << "Your number is: " << number;
+std::cout << "Your number is: " << number;
 
 // Number: 5
 // Your number is: 5
+    </code></pre>
+</section>
+
+<section>
+    <h2>
+        getline
+    </h2>
+    <p>
+        Another way to collect input from the user in C++ is 
+        with the standard library's <code>getline</code> function. It 
+        accepts user input and stores it in a variable until a 
+        delimiter is reached. 
+    </p>
+    <pre><code class="lang-cpp">istream& getline (istream& from, string& str, char delim);
+// or use with default delimiter (\n)
+istream& getline (istream& from, string& str);</code></pre>
+    <p>
+        <code>from</code> is where the input comes from, and <code>str</code>
+        is the variable it gets stored in. Delimiter is the character where the input ends, (or a newline <code>\n</code>
+        if none is given).
+    </p>
+    <h3>
+        Getline Example 
+    </h3>
+    <pre><code class="lang-cpp">// extract user input to name variable 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main ()
+{
+  std::string name;
+  // print prompt
+  std::cout << "Please, enter your full name: ";
+  // use std::cin to collect input 
+  // and store in string name 
+  std::getline (std::cin,name);
+  std::cout << "Hello, " << name << "!\n";
+
+  return 0;
+}
     </code></pre>
 </section>
 
@@ -30,20 +74,26 @@ cout << "Your number is: " << number;
     </h2>
     <p>
         BMI stand for body mass index. It is calculated by 
-        <code>BMI = w/m^2 </code>. Below is a C++ example of a 
+        <code>BMI = w/m^2 </code>, where <code>w</code> Below is a C++ example of a 
         program that accepts input and displays the BMI. 
     </p>
     <pre><code class="lang-cpp">
 #include &lt;iostream&gt;
 
 double BMI(){
+    // Height in Meters 
+    // weight in Kilograms
+    // declare weight, height and sum 
     double weight = 0, height = 0, sum = 0;
     std::cout << "Weight? ";
+    // use cin to assign input to weight variable 
     std::cin >> weight;
     
     std::cout << "Height? ";
+    // use cin to assign input to height variable 
     std::cin >> height ;
     
+    // return BMI (weight / height^2)
     return weight / (height * height);
 }
 

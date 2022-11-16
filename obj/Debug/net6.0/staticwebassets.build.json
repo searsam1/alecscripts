@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ov3a3LlmKSBwNti2bbkqwkgO2ryNuyWtUufInYfWQPE=",
+  "Hash": "6lvikiIUZsMHgudo/Ir/8FiqE4oCBA5rNXdQj2d0Ivc=",
   "Source": "MvcAlecScripts",
   "BasePath": "_content/MvcAlecScripts",
   "Mode": "Default",
@@ -270,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
+    },
+    {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/.DS_Store",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/.DS_Store"
     },
     {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/android-chrome-192x192.png",
@@ -1428,6 +1445,23 @@
       "OriginalItemSpec": "wwwroot/lib/Resources/monochrome_dark.svg"
     },
     {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/paper-stack.jpeg",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/Resources/paper-stack.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/Resources/paper-stack.jpeg"
+    },
+    {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/python-logo-only.svg",
       "SourceId": "MvcAlecScripts",
       "SourceType": "Discovered",
@@ -1477,6 +1511,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/Resources/ss.png"
+    },
+    {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/surgery-g097654862_1920.jpeg",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/Resources/surgery-g097654862_1920.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/Resources/surgery-g097654862_1920.jpeg"
     },
     {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/site.webmanifest",

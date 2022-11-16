@@ -15,6 +15,7 @@ pre[class*=language-] {
     -ms-hyphens: none;
     hyphens: none;
     max-width: 750px;
+
     text-align:left;
     white-space:pre;
     /* --font-family-monospace; */
@@ -71,7 +72,8 @@ pre[class*=language-] {
     border-left: none;
     padding: .1em;
     border-radius: .3em;
-    white-space: normal
+    white-space: normal;
+    
 }
 
 .token.cdata,

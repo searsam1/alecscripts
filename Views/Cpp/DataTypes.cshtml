@@ -1,0 +1,176 @@
+
+<center>
+    <img alt="Stack of Papers and Folders" src="~/lib/Resources/paper-stack.jpeg">
+    <figcaption>Image by <a href="https://pixabay.com/users/myrfa-3126475/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1614223">Ag Ku</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1614223">Pixabay</a></figcaption>
+</center>
+
+<section>
+    <h2>
+        Static Variables 
+    </h2>
+    <p>
+        C++ is a statically typed language, meaning, variables 
+        need a type on declaration (creation). This is where data 
+        types come in. It lets the complier know 
+        what kind of data is being stored inside a variable. 
+    </p>
+    
+@{
+    string ex1 = @"#include <iostream>
+
+int main(int argc, char const *argv[])
+{
+    int x = 10; 
+    std::string str = ""Hello C++""; 
+    char c = 'A';
+    std::cout << x << ""\n"" << ""\"""" << str << ""\"""" << ""\n"" << c << ""\n"";
+}
+// 10
+// ""Hello C++""
+// A
+";
+}
+    <pre><code class="lang-cpp">@ex1</code></pre>
+</section>
+
+<section>
+    <h2>
+        Basic Data Types 
+    </h2>
+    <p>
+        Different types take up different amounts of space in memory. 
+    </p>
+    <p>
+        There are a few basic types in C++: 
+    </p>
+    <ul>
+        <li>
+            Integer - <code>int</code>
+        </li>
+        <li>
+            Float - <code>float</code>
+        </li>
+        <li>
+            Double - <code>double</code>
+        </li>
+        <li>
+            Character - <code>char</code>
+        </li>
+        <li>
+            Boolean - <code>bool</code>
+        </li>
+        <li>
+            String - <code>std::string</code>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>
+        Examples
+    </h2>
+    <h3>
+        Integer
+    </h3>
+    <p>
+        An integer, or "int" for short, is a mathematical 
+        term used to describe all whole numbers (positive or negative). It takes 
+        two or four bytes in memory. They can take up more space, like long long ints, but the standard is 4 bytes for 
+        just a base integer. 
+    </p>
+    <pre><code class="lang-cpp">
+#include &lt;iostream&gt;
+
+int main(int argc, char const *argv[])
+{
+    int exampleInt = 0; 
+    std::cout << exampleInt << "\n";
+    // 0
+    std::cout << sizeof(exampleInt) << "\n";
+    // 4 
+    
+    // Example of 2 byte short int
+    short int shortInt = 123;
+    std::cout << sizeof(shortInt) << "\n";
+    // 2
+
+    // Example of 8 byte long long int
+    long long int longLongInt = 1844674407370955169;
+    std::cout << sizeof(longLongInt) << "\n";
+    std::cout << (&longLongInt) << "\n";
+    // 8
+
+    return 0;
+}        
+    </code></pre>
+    <h3>
+        Float // double
+    </h3>
+    <p>
+        Floats have 7 decimal digits of precision and doubles have double 
+        that amount at 15. They are always decimal numbers, which are numbers 
+        with a fractional value, i.e., <code>1.25</code>, where <code>.25</code> is the fractional part. 
+    </p>
+    <p>
+        Doubles have a size of 8 (4*2) bytes, and floats have a size of 4. 
+    </p>
+    <pre><code class="lang-cpp">#include &lt;iostream&gt;
+int main(){
+    double double_ = 1.9;
+    float float_ = 1.55;
+    std::cout << double_ << " Size: " << sizeof(double_) << "\n";
+    // 1.9 Size: 8
+    std::cout << float_ << " Size: " << sizeof(float_) << "\n";
+    // 1.55 Size: 4
+    return 0; 
+}</code></pre>
+<h3>
+    Character
+</h3>
+<p>
+    Characters, or chars/char for short, are <b>one byte</b> wide 
+    and contain one character like <code>'A'</code>. The character 
+    must be surrounded by <b>single</b> quotes <code>'A'</code>. Characters 
+    are the sort of building blocks used in strings. 
+</p>
+<pre><code class="lang-cpp">#include &lt;iostream&gt;
+int main(){
+    char c = 'A';
+    std::cout << c << "\n";
+    // A
+    return 0;
+}</code></pre>
+<h3>
+    Booleans
+</h3>
+<p>
+    Booleans are true or false values. True or false can also be represented by 
+    1 or 0. 
+</p>
+<pre><code class="lang-cpp">#include &lt;iostream&gt;
+int main(){
+    bool trueOrFalse = false; // false == 0 
+    std::cout << trueOrFalse << "\n";
+    // 0
+    trueOrFalse = true; // true == 1
+    std::cout << trueOrFalse << "\n";
+    // 1
+}</code></pre>
+<h3>
+    String
+</h3>
+<p>
+    Strings are blocks of characters to make a word or sentence. <code>"This is a string"</code>: strings are wrapped 
+    in <b>double</b> quotes The size of the string depends on how 
+    many characters it has, in which each character has 1 byte. 
+    Use the <code>length</code> method to find the size of the string. 
+</p>
+<pre><code class="lang-cpp">#include <iostream>
+int main(){
+    std::string str = "scar";
+    std::cout << str << "\n";
+    // "scar"
+    std::cout << str.length() << "\n";
+    // 4 [bytes]
+}</code></pre>
+</section>

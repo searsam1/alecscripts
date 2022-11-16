@@ -1,0 +1,102 @@
+
+<center>
+    <img alt="Surgeons (operators) Operating On Patient" src="~/lib/Resources/surgery-g097654862_1920.jpeg">
+    <figcaption>Image by <a href="https://pixabay.com/users/sasint-3639875/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1807541">Sasin Tipchai</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1807541">Pixabay</a></figcaption>
+</center>
+
+<section>
+    <h2 class="display-6" id="Basic-Math-Operations-143655">Arithmetic (math) Operators</h2>
+    
+    <h3>Addition</h3>
+    <p>
+        Use the <code>+</code> operator to add two objects. It works with normal numbers, but also with strings. This is called concatenating (adding two strings together).
+    </p>
+    <pre><code class="lang-cpp">
+int x = 1, y = 1;
+int sum_ = x + y;
+// 2
+
+std::string str1 = "hello ", str2 = "world";
+// concatenating str1 and str2
+std::string res = str1 + str2;
+std::cout << res << "\n";
+// hello world
+    </code></pre>
+    
+    <h3>Subtraction</h3>
+    <p>
+        Subtraction is used with the minus sign (<code>-</code>). 
+    </p>
+    <pre><code class="lang-cpp">int x = 1;
+int y = 1;
+int res = x - y;
+std::cout << res << "\n";
+// 0</code></pre>
+    
+    <h3>Multiplication</h3>
+    <p>
+        Multiplication is done with the asterisk <code>*</code> operator. 
+    </p>
+    <pre><code class="lang-cpp">
+int x = 2;
+int y = 2;
+int res = x * y;
+std::cout << res << "\n";
+// 4
+    </code></pre>
+    
+    <h3>Division</h3>
+    <p>
+        Division is accomplished with the forward slash symbol <code>/</code>, but be careful 
+        <b>not</b> to divide by <b>zero</b> <code>0</code>.
+    </p>
+    <pre><code class="lang-cpp">int x = 2, y = 2;
+int res = x / y;
+std::cout << res << "\n";
+// 1</code></pre>
+    
+    <h3>Modulus</h3>
+    <p>
+        The modulus, or mod, operator is the percent symbol <code>%</code>. 
+        It gives the remainder of diving two numbers: <code>5 % 2 = 1</code>.
+    </p>
+    <pre><code class="lang-cpp">
+int x1 = 15;
+int x2 = 4;
+int res = x1 % x2; // 15 mod 4
+std::cout << res << "\n";
+// 3
+    </code></pre>
+    
+    <h3>Increment</h3>
+    <p>
+        Increment is when one is added to a number. Use the <code>++</code> 
+        operator. 
+    </p>
+    <pre><code class="lang-cpp">
+int n = 10;
+for (int i=0; i < n; i++){ // i = i + 1
+    std::cout << i << " ";
+}      
+// 0 1 2 3 4 5 6 7 8 9  
+n++; // n = n + 1 OR n = 10 + 1
+std::cout << n << "\n";
+// 11
+    </code></pre>
+    
+    <h3>Decrement</h3>
+    <p>
+        Decrement is subtracting one from a value and 
+        assigning it to a variable. It is done with <code>--</code>.
+    </p>
+        <pre><code class="lang-cpp">
+int n = 0;
+for (int i=10; i > n; i--){ // i = i - 1
+    std::cout << i << " ";
+}      
+// 10 9 8 7 6 5 4 3 2 1
+n--; // n = n - 1 OR n = 0 - 1
+std::cout << n << "\n";
+// -1
+    </code></pre>
+</section>

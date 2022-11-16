@@ -78,6 +78,9 @@ function darkMode(){
 }
 
 function createTocLink(e, id_){
+    if (e.textContent.trim(" ") == "Table of Contents"){
+        return null;
+    }
     var li = document.createElement("li");
     var a = document.createElement("a");
     var href = document.createAttribute("href")
@@ -114,9 +117,9 @@ function randomByte(){
 
 
 function createTOC(){
-    headers = document.getElementsByClassName("display-6")
-    toc = document.getElementsByClassName("toc-container")[0]
-    let txt;
+    let headers = document.getElementsByClassName("display-6")
+    let toc = document.getElementsByClassName("toc-container")[0]
+    let txt, child, childIsBorn;
     
     let i;
     for (header of headers){
@@ -129,7 +132,11 @@ function createTOC(){
         var att = document.createAttribute("id")
         att.value = txt.trim() + "-" + randomByte().toString().trim();
         header.setAttributeNode(att)
-        toc.appendChild(createTocLink(header, att.value))
+        child = createTocLink(header, att.value)
+        childIsBorn = child != null;
+        if (childIsBorn){
+            toc.appendChild(child)
+        }
             
     }
 }
@@ -201,7 +208,7 @@ function applyShadowToCode(){
     let pres = document.querySelectorAll("PRE", "CODE")
     for (let pre of pres){
         pre.setAttribute("class", " shadow-sm")
-        console.log(pre)
+        
     }
 
 }

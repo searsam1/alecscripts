@@ -41,5 +41,26 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult DataTypes()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Data Types";
+        return View();
+    }
+    
+    public IActionResult Operators()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Operators";
+        return View();
+    }
+    
+    public IActionResult AssignmentOperators()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Assignment Operators";
+        return View();
+    }
+    
     }
 }
