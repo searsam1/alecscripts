@@ -43,7 +43,7 @@
 
 
 html {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 @keyframes op {
@@ -56,12 +56,6 @@ html {
     }
 }
 
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
 @media (min-width: 900px) {
     .sidebar {
         display: inline-block;
@@ -69,12 +63,6 @@ html {
 }
 
 
-
-.tip::before {
-    content: ">> Quick Tip <<";
-    font-style: italic;
-    font-size: 5px;
-}
 
 html {
     position: relative;
@@ -107,7 +95,7 @@ table{
 
 #navy {
     background-color: var(--light);
-    border-bottom: 2px solid hotpink;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.0508);
     font-family: 'Poppins', sans-serif;
     color: black;
 }
@@ -166,6 +154,7 @@ li.nav-item {
 
 .indent-1 {
     margin-left: 20px;
+    font-family: none;
 }
 
 .indent-2 {
@@ -252,10 +241,10 @@ div.container div div div {
     margin-top: 50px;
     text-transform: capitalize;
     padding: 10px;
+    font-family: serif;
 }
 
 .display-4 {
-    padding: 10px;
     /* text-align: center; */
     /* font-weight: 100; */
 }
@@ -357,12 +346,12 @@ summary {
     overflow-y: scroll;
     overflow-x: hidden;
     top: 59px;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-family-lato);
     max-width: 19%;
     padding-bottom: 20px;
     
-    /* background-image: repeating-linear-gradient(Magenta, DeepPink, Tomato, HotPink, Coral, DarkOrange); */
-    background-image: repeating-linear-gradient(white, silver);
+    background-color: white;
+    border-right: 2px solid rgba(0, 0, 0, 0.0508);
 }
 
 @media (max-width: 1250px) {
@@ -384,11 +373,10 @@ summary {
   }
 
   p {
-    font-family: var(--font-family-sans-serif);
+    font-family: var(--font-family-lato);
     word-spacing: 3px;
-    color: var(--gray-dark);
+    color: black;
     padding-top: 20px;
-    /* font-size: 1.1em; */
   }
 
 .toc-container{

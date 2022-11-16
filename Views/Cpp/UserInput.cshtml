@@ -1,0 +1,55 @@
+
+<section>
+    <h2>
+        cin (see - in)
+    </h2>
+    <p>
+        <code>std::cin</code> is an operator like <code>cout</code> but accepts input from 
+        the user. <code>>></code> is used, instead of <code><<</code> with <code>std::cout</code>. 
+    </p>
+    <pre><code class="lang-cpp">
+int number; 
+
+// Print prompt
+cout << "Number: "; 
+
+// Get user input from the keyboard
+cin >> number; 
+
+ // Display number (the input value)
+cout << "Your number is: " << number;
+
+// Number: 5
+// Your number is: 5
+    </code></pre>
+</section>
+
+<section>
+    <h2>
+        Make a BMI Calculator
+    </h2>
+    <p>
+        BMI stand for body mass index. It is calculated by 
+        <code>BMI = w/m^2 </code>. Below is a C++ example of a 
+        program that accepts input and displays the BMI. 
+    </p>
+    <pre><code class="lang-cpp">
+#include &lt;iostream&gt;
+
+double BMI(){
+    double weight = 0, height = 0, sum = 0;
+    std::cout << "Weight? ";
+    std::cin >> weight;
+    
+    std::cout << "Height? ";
+    std::cin >> height ;
+    
+    return weight / (height * height);
+}
+
+int main(){
+    std::cout << BMI() << "\n";
+    return 0;
+}
+    </code></pre>
+</section>

@@ -34,5 +34,12 @@ namespace MvcMovie.Controllers
         return View();
     }
       
+    public IActionResult UserInput()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "User Input";
+        return View();
+    }
+    
     }
 }

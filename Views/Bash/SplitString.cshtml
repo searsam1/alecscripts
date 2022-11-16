@@ -4,9 +4,9 @@
         are lots of real-world applications involving the process of separating a string by a 
         certain character. 
     </p>
-    <h1>
+    <h2>
         Split Using awk
-    </h1>
+    </h2>
     <p>
         Pipe a string to <code>awk -F</code> followed 
         by a separator (like a dash). 
@@ -24,9 +24,9 @@ echo "$str" | awk -F'-' '{print $1,$2,$3}'
 </section>
 
 <section>
-    <h1>
+    <h2>
         IFS (Internal Field Separator)
-    </h1>
+    </h2>
     <p>
         IFS is where the string is split into an array based on a character. 
     </p>
