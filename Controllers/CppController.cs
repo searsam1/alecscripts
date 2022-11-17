@@ -62,5 +62,12 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult ComparisonOperators()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Comparison Operators";
+        return View();
+    }
+    
     }
 }

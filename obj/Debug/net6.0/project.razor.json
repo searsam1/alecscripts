@@ -16608,6 +16608,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/ComparisonOperators.cshtml",
+      "TargetPath": "Views\\Cpp\\ComparisonOperators.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/DataTypes.cshtml",
       "TargetPath": "Views\\Cpp\\DataTypes.cshtml",
       "FileKind": "mvc"
