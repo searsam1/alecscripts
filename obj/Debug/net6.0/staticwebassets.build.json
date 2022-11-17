@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6lvikiIUZsMHgudo/Ir/8FiqE4oCBA5rNXdQj2d0Ivc=",
+  "Hash": "BF+FcQwxYzpnKTw47XSt94HzXBrEL16WPmvU+3fHGxo=",
   "Source": "MvcAlecScripts",
   "BasePath": "_content/MvcAlecScripts",
   "Mode": "Default",
@@ -1428,6 +1428,23 @@
       "OriginalItemSpec": "wwwroot/lib/Resources/Git-Logo-1788C.svg"
     },
     {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/justitia-ge9c60c1ef_1920.jpeg",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/Resources/justitia-ge9c60c1ef_1920.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/Resources/justitia-ge9c60c1ef_1920.jpeg"
+    },
+    {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/monochrome_dark.svg",
       "SourceId": "MvcAlecScripts",
       "SourceType": "Discovered",
@@ -1528,6 +1545,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/Resources/surgery-g097654862_1920.jpeg"
+    },
+    {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/typewriter-g7fca08b4e_1920.jpeg",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/Resources/typewriter-g7fca08b4e_1920.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/Resources/typewriter-g7fca08b4e_1920.jpeg"
     },
     {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/site.webmanifest",

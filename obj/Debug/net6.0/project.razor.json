@@ -12,7 +12,7 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -165057800,
+        "HashCode": 228627980,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -89,7 +89,7 @@
         }
       },
       {
-        "HashCode": -1870522420,
+        "HashCode": 1059859836,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -167,7 +167,7 @@
         }
       },
       {
-        "HashCode": -1129733027,
+        "HashCode": 693504076,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -198,7 +198,7 @@
         }
       },
       {
-        "HashCode": -392483472,
+        "HashCode": 1522784769,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -230,7 +230,7 @@
         }
       },
       {
-        "HashCode": 1312763991,
+        "HashCode": -1801040052,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -249,7 +249,7 @@
         }
       },
       {
-        "HashCode": 1020555696,
+        "HashCode": 2025667918,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -269,7 +269,7 @@
         }
       },
       {
-        "HashCode": -1146457299,
+        "HashCode": 1056143313,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -365,7 +365,7 @@
         }
       },
       {
-        "HashCode": -316930577,
+        "HashCode": -302625546,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -462,7 +462,7 @@
         }
       },
       {
-        "HashCode": -1235661290,
+        "HashCode": 819294957,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -493,7 +493,7 @@
         }
       },
       {
-        "HashCode": -1416417333,
+        "HashCode": -529117005,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -525,7 +525,7 @@
         }
       },
       {
-        "HashCode": 1660285806,
+        "HashCode": 512193236,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -556,7 +556,7 @@
         }
       },
       {
-        "HashCode": -1751142858,
+        "HashCode": 76514678,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -588,7 +588,7 @@
         }
       },
       {
-        "HashCode": -1560329146,
+        "HashCode": 1755663231,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -619,7 +619,7 @@
         }
       },
       {
-        "HashCode": -2118863720,
+        "HashCode": -83476821,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -651,7 +651,7 @@
         }
       },
       {
-        "HashCode": -388779726,
+        "HashCode": -210784893,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -670,7 +670,7 @@
         }
       },
       {
-        "HashCode": -1256620976,
+        "HashCode": 1866211356,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -690,7 +690,7 @@
         }
       },
       {
-        "HashCode": 1960893599,
+        "HashCode": 1917358395,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -718,7 +718,7 @@
         }
       },
       {
-        "HashCode": -199220709,
+        "HashCode": 1599640826,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -747,7 +747,7 @@
         }
       },
       {
-        "HashCode": -2057478803,
+        "HashCode": 123507201,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -766,7 +766,7 @@
         }
       },
       {
-        "HashCode": -1598618808,
+        "HashCode": 1414772368,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -786,7 +786,7 @@
         }
       },
       {
-        "HashCode": 604764895,
+        "HashCode": 1023550214,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -855,7 +855,7 @@
         }
       },
       {
-        "HashCode": 1906063175,
+        "HashCode": 1428863070,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -925,7 +925,7 @@
         }
       },
       {
-        "HashCode": -327328137,
+        "HashCode": 2120059268,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -944,7 +944,7 @@
         }
       },
       {
-        "HashCode": -1238075366,
+        "HashCode": 2001728290,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -964,7 +964,7 @@
         }
       },
       {
-        "HashCode": 1529167189,
+        "HashCode": 1741981483,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.DynamicComponent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1002,7 +1002,7 @@
         }
       },
       {
-        "HashCode": -2064723828,
+        "HashCode": 2047151170,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.DynamicComponent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1041,7 +1041,7 @@
         }
       },
       {
-        "HashCode": -1806872622,
+        "HashCode": 750867068,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.LayoutView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1079,7 +1079,7 @@
         }
       },
       {
-        "HashCode": -2113334869,
+        "HashCode": -53178539,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.LayoutView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1118,7 +1118,7 @@
         }
       },
       {
-        "HashCode": 2098788518,
+        "HashCode": -1552474036,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.LayoutView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1137,7 +1137,7 @@
         }
       },
       {
-        "HashCode": 1930438949,
+        "HashCode": -1740277039,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.LayoutView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1157,7 +1157,7 @@
         }
       },
       {
-        "HashCode": 958332433,
+        "HashCode": 38465365,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.RouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1195,7 +1195,7 @@
         }
       },
       {
-        "HashCode": -1223298152,
+        "HashCode": 1921591225,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.RouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1234,7 +1234,7 @@
         }
       },
       {
-        "HashCode": 842349273,
+        "HashCode": 651970016,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1333,7 +1333,7 @@
         }
       },
       {
-        "HashCode": -458954656,
+        "HashCode": -627549418,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1433,7 +1433,7 @@
         }
       },
       {
-        "HashCode": 1036176497,
+        "HashCode": -818588581,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.NotFound",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1452,7 +1452,7 @@
         }
       },
       {
-        "HashCode": 1237758279,
+        "HashCode": -1019450919,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.NotFound",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1472,7 +1472,7 @@
         }
       },
       {
-        "HashCode": 398015474,
+        "HashCode": 653241953,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Found",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1503,7 +1503,7 @@
         }
       },
       {
-        "HashCode": -1809807309,
+        "HashCode": 1648805193,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Found",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1535,7 +1535,7 @@
         }
       },
       {
-        "HashCode": -1915156645,
+        "HashCode": -1108650850,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Navigating",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1554,7 +1554,7 @@
         }
       },
       {
-        "HashCode": -797492086,
+        "HashCode": -162489528,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Navigating",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1574,7 +1574,7 @@
         }
       },
       {
-        "HashCode": -525161742,
+        "HashCode": -1520113112,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.DataAnnotationsValidator",
         "AssemblyName": "Microsoft.AspNetCore.Components.Forms",
@@ -1591,7 +1591,7 @@
         }
       },
       {
-        "HashCode": -486620882,
+        "HashCode": -1879851293,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.DataAnnotationsValidator",
         "AssemblyName": "Microsoft.AspNetCore.Components.Forms",
@@ -1609,7 +1609,7 @@
         }
       },
       {
-        "HashCode": -59174504,
+        "HashCode": -521817646,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -1705,7 +1705,7 @@
         }
       },
       {
-        "HashCode": 977130425,
+        "HashCode": 2041440398,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -1802,7 +1802,7 @@
         }
       },
       {
-        "HashCode": -2025779291,
+        "HashCode": -1752983710,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -1833,7 +1833,7 @@
         }
       },
       {
-        "HashCode": -444937602,
+        "HashCode": -1262028833,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -1865,7 +1865,7 @@
         }
       },
       {
-        "HashCode": -1434945854,
+        "HashCode": -916405254,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -1930,7 +1930,7 @@
         }
       },
       {
-        "HashCode": -1108203266,
+        "HashCode": -94098001,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -1996,7 +1996,7 @@
         }
       },
       {
-        "HashCode": 65658600,
+        "HashCode": 943015154,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2095,7 +2095,7 @@
         }
       },
       {
-        "HashCode": -335372159,
+        "HashCode": -1697406224,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2195,7 +2195,7 @@
         }
       },
       {
-        "HashCode": -1278017046,
+        "HashCode": -569623060,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputFile",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2233,7 +2233,7 @@
         }
       },
       {
-        "HashCode": -269652921,
+        "HashCode": 1369746707,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputFile",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2272,7 +2272,7 @@
         }
       },
       {
-        "HashCode": 1223292528,
+        "HashCode": 262072976,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2361,7 +2361,7 @@
         }
       },
       {
-        "HashCode": 1709934396,
+        "HashCode": 1396371975,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2451,7 +2451,7 @@
         }
       },
       {
-        "HashCode": 722695136,
+        "HashCode": 330648170,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadio<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2510,7 +2510,7 @@
         }
       },
       {
-        "HashCode": 1810539462,
+        "HashCode": -883712106,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadio<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2570,7 +2570,7 @@
         }
       },
       {
-        "HashCode": -913632193,
+        "HashCode": 1622115444,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2669,7 +2669,7 @@
         }
       },
       {
-        "HashCode": -426284745,
+        "HashCode": 1525600045,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2769,7 +2769,7 @@
         }
       },
       {
-        "HashCode": -46327029,
+        "HashCode": 449108531,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2788,7 +2788,7 @@
         }
       },
       {
-        "HashCode": 267811905,
+        "HashCode": -931625646,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2808,7 +2808,7 @@
         }
       },
       {
-        "HashCode": 643091260,
+        "HashCode": -817789983,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2898,7 +2898,7 @@
         }
       },
       {
-        "HashCode": -1219218266,
+        "HashCode": -1020241243,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2989,7 +2989,7 @@
         }
       },
       {
-        "HashCode": 1181154376,
+        "HashCode": 247727071,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3008,7 +3008,7 @@
         }
       },
       {
-        "HashCode": 585273281,
+        "HashCode": 1378649966,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3028,7 +3028,7 @@
         }
       },
       {
-        "HashCode": 204710050,
+        "HashCode": -834380676,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3093,7 +3093,7 @@
         }
       },
       {
-        "HashCode": -928752081,
+        "HashCode": -1279829149,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3159,7 +3159,7 @@
         }
       },
       {
-        "HashCode": -806689014,
+        "HashCode": -1232543369,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3224,7 +3224,7 @@
         }
       },
       {
-        "HashCode": 1073807540,
+        "HashCode": -2086923461,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3290,7 +3290,7 @@
         }
       },
       {
-        "HashCode": 603033024,
+        "HashCode": 1523644291,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3340,7 +3340,7 @@
         }
       },
       {
-        "HashCode": -240837120,
+        "HashCode": -1942751544,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3391,7 +3391,7 @@
         }
       },
       {
-        "HashCode": -1767693305,
+        "HashCode": 1856568975,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationSummary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3428,7 +3428,7 @@
         }
       },
       {
-        "HashCode": -1006003407,
+        "HashCode": 289437939,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationSummary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3466,7 +3466,7 @@
         }
       },
       {
-        "HashCode": -1555785694,
+        "HashCode": 161122896,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3503,7 +3503,7 @@
         }
       },
       {
-        "HashCode": -765542271,
+        "HashCode": 1476009463,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3541,7 +3541,7 @@
         }
       },
       {
-        "HashCode": 1363863696,
+        "HashCode": -1722695227,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3598,7 +3598,7 @@
         }
       },
       {
-        "HashCode": 750877562,
+        "HashCode": 368768330,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3656,7 +3656,7 @@
         }
       },
       {
-        "HashCode": -762972948,
+        "HashCode": -1079614274,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3675,7 +3675,7 @@
         }
       },
       {
-        "HashCode": 475490653,
+        "HashCode": 2071585136,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3695,7 +3695,7 @@
         }
       },
       {
-        "HashCode": -1360968064,
+        "HashCode": 1525097405,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3724,7 +3724,7 @@
         }
       },
       {
-        "HashCode": -1202513291,
+        "HashCode": -2089521795,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3754,7 +3754,7 @@
         }
       },
       {
-        "HashCode": -1926516980,
+        "HashCode": -98513627,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3773,7 +3773,7 @@
         }
       },
       {
-        "HashCode": 810501479,
+        "HashCode": 1597760512,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3793,7 +3793,7 @@
         }
       },
       {
-        "HashCode": -1273281506,
+        "HashCode": 1735704760,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3810,7 +3810,7 @@
         }
       },
       {
-        "HashCode": 1259576582,
+        "HashCode": 468984354,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3828,7 +3828,7 @@
         }
       },
       {
-        "HashCode": -877434288,
+        "HashCode": 2027283690,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3857,7 +3857,7 @@
         }
       },
       {
-        "HashCode": -366791882,
+        "HashCode": -594786041,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3887,7 +3887,7 @@
         }
       },
       {
-        "HashCode": 1575080713,
+        "HashCode": -280694482,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3906,7 +3906,7 @@
         }
       },
       {
-        "HashCode": 1492728318,
+        "HashCode": -456067497,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3926,7 +3926,7 @@
         }
       },
       {
-        "HashCode": -298910018,
+        "HashCode": 768305419,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3984,7 +3984,7 @@
         }
       },
       {
-        "HashCode": 1564641298,
+        "HashCode": -721244835,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4043,7 +4043,7 @@
         }
       },
       {
-        "HashCode": -1595104750,
+        "HashCode": 165189250,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4062,7 +4062,7 @@
         }
       },
       {
-        "HashCode": -172791793,
+        "HashCode": 874871695,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4082,7 +4082,7 @@
         }
       },
       {
-        "HashCode": -1987645954,
+        "HashCode": 280733719,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ErrorContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4113,7 +4113,7 @@
         }
       },
       {
-        "HashCode": 605991781,
+        "HashCode": 262372401,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ErrorContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4145,7 +4145,7 @@
         }
       },
       {
-        "HashCode": -1209844021,
+        "HashCode": 2054361589,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4257,7 +4257,7 @@
         }
       },
       {
-        "HashCode": -1615266637,
+        "HashCode": -1701958366,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4370,7 +4370,7 @@
         }
       },
       {
-        "HashCode": -1375068286,
+        "HashCode": 1616555675,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4401,7 +4401,7 @@
         }
       },
       {
-        "HashCode": 1086421297,
+        "HashCode": 1326322402,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4433,7 +4433,7 @@
         }
       },
       {
-        "HashCode": 1176331872,
+        "HashCode": -2065023882,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ItemContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4464,7 +4464,7 @@
         }
       },
       {
-        "HashCode": 2076358297,
+        "HashCode": 1925312713,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ItemContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4496,7 +4496,7 @@
         }
       },
       {
-        "HashCode": -427431302,
+        "HashCode": -1660898550,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.Placeholder",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4527,7 +4527,7 @@
         }
       },
       {
-        "HashCode": -190680007,
+        "HashCode": 1119116896,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.Placeholder",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4559,7 +4559,7 @@
         }
       },
       {
-        "HashCode": 1331113805,
+        "HashCode": 1941856303,
         "Kind": "Components.EventHandler",
         "Name": "onfocus",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -4640,7 +4640,7 @@
         }
       },
       {
-        "HashCode": 724108410,
+        "HashCode": -2109639668,
         "Kind": "Components.EventHandler",
         "Name": "onblur",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -4721,7 +4721,7 @@
         }
       },
       {
-        "HashCode": 1635840672,
+        "HashCode": 647617885,
         "Kind": "Components.EventHandler",
         "Name": "onfocusin",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -4802,7 +4802,7 @@
         }
       },
       {
-        "HashCode": -254829931,
+        "HashCode": -685481662,
         "Kind": "Components.EventHandler",
         "Name": "onfocusout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -4883,7 +4883,7 @@
         }
       },
       {
-        "HashCode": 1412602885,
+        "HashCode": 426875422,
         "Kind": "Components.EventHandler",
         "Name": "onmouseover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -4964,7 +4964,7 @@
         }
       },
       {
-        "HashCode": -934097011,
+        "HashCode": 1772381245,
         "Kind": "Components.EventHandler",
         "Name": "onmouseout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5045,7 +5045,7 @@
         }
       },
       {
-        "HashCode": -758376557,
+        "HashCode": 1023040389,
         "Kind": "Components.EventHandler",
         "Name": "onmousemove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5126,7 +5126,7 @@
         }
       },
       {
-        "HashCode": -1642010178,
+        "HashCode": -1307780578,
         "Kind": "Components.EventHandler",
         "Name": "onmousedown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5207,7 +5207,7 @@
         }
       },
       {
-        "HashCode": 741079807,
+        "HashCode": -1541792778,
         "Kind": "Components.EventHandler",
         "Name": "onmouseup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5288,7 +5288,7 @@
         }
       },
       {
-        "HashCode": -1963896713,
+        "HashCode": -611004620,
         "Kind": "Components.EventHandler",
         "Name": "onclick",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5369,7 +5369,7 @@
         }
       },
       {
-        "HashCode": 667234289,
+        "HashCode": 1859955060,
         "Kind": "Components.EventHandler",
         "Name": "ondblclick",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5450,7 +5450,7 @@
         }
       },
       {
-        "HashCode": -1151539911,
+        "HashCode": -694287606,
         "Kind": "Components.EventHandler",
         "Name": "onwheel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5531,7 +5531,7 @@
         }
       },
       {
-        "HashCode": -1944018706,
+        "HashCode": -1004327387,
         "Kind": "Components.EventHandler",
         "Name": "onmousewheel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5612,7 +5612,7 @@
         }
       },
       {
-        "HashCode": -1058197161,
+        "HashCode": -1227624269,
         "Kind": "Components.EventHandler",
         "Name": "oncontextmenu",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5693,7 +5693,7 @@
         }
       },
       {
-        "HashCode": -1560624481,
+        "HashCode": 770444229,
         "Kind": "Components.EventHandler",
         "Name": "ondrag",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5774,7 +5774,7 @@
         }
       },
       {
-        "HashCode": -1366766555,
+        "HashCode": -1842154598,
         "Kind": "Components.EventHandler",
         "Name": "ondragend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5855,7 +5855,7 @@
         }
       },
       {
-        "HashCode": 495178795,
+        "HashCode": -1874940811,
         "Kind": "Components.EventHandler",
         "Name": "ondragenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -5936,7 +5936,7 @@
         }
       },
       {
-        "HashCode": -1653481354,
+        "HashCode": -1178522246,
         "Kind": "Components.EventHandler",
         "Name": "ondragleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6017,7 +6017,7 @@
         }
       },
       {
-        "HashCode": 475425468,
+        "HashCode": -1168542427,
         "Kind": "Components.EventHandler",
         "Name": "ondragover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6098,7 +6098,7 @@
         }
       },
       {
-        "HashCode": -1869558073,
+        "HashCode": 2044294972,
         "Kind": "Components.EventHandler",
         "Name": "ondragstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6179,7 +6179,7 @@
         }
       },
       {
-        "HashCode": -1883631563,
+        "HashCode": 1002023764,
         "Kind": "Components.EventHandler",
         "Name": "ondrop",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6260,7 +6260,7 @@
         }
       },
       {
-        "HashCode": -426030626,
+        "HashCode": 934424428,
         "Kind": "Components.EventHandler",
         "Name": "onkeydown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6341,7 +6341,7 @@
         }
       },
       {
-        "HashCode": 1327653446,
+        "HashCode": -1444979423,
         "Kind": "Components.EventHandler",
         "Name": "onkeyup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6422,7 +6422,7 @@
         }
       },
       {
-        "HashCode": -518476551,
+        "HashCode": -888903048,
         "Kind": "Components.EventHandler",
         "Name": "onkeypress",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6503,7 +6503,7 @@
         }
       },
       {
-        "HashCode": 1420346534,
+        "HashCode": -1586843293,
         "Kind": "Components.EventHandler",
         "Name": "onchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6584,7 +6584,7 @@
         }
       },
       {
-        "HashCode": -1833824327,
+        "HashCode": 792807285,
         "Kind": "Components.EventHandler",
         "Name": "oninput",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6665,7 +6665,7 @@
         }
       },
       {
-        "HashCode": 1771502618,
+        "HashCode": -1367085490,
         "Kind": "Components.EventHandler",
         "Name": "oninvalid",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6746,7 +6746,7 @@
         }
       },
       {
-        "HashCode": -452337542,
+        "HashCode": 1393497944,
         "Kind": "Components.EventHandler",
         "Name": "onreset",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6827,7 +6827,7 @@
         }
       },
       {
-        "HashCode": 1205128626,
+        "HashCode": -1061685484,
         "Kind": "Components.EventHandler",
         "Name": "onselect",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6908,7 +6908,7 @@
         }
       },
       {
-        "HashCode": -1350968043,
+        "HashCode": -645693018,
         "Kind": "Components.EventHandler",
         "Name": "onselectstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6989,7 +6989,7 @@
         }
       },
       {
-        "HashCode": -60469247,
+        "HashCode": 369907023,
         "Kind": "Components.EventHandler",
         "Name": "onselectionchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7070,7 +7070,7 @@
         }
       },
       {
-        "HashCode": -1201725228,
+        "HashCode": -1416739481,
         "Kind": "Components.EventHandler",
         "Name": "onsubmit",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7151,7 +7151,7 @@
         }
       },
       {
-        "HashCode": -281890818,
+        "HashCode": -268485595,
         "Kind": "Components.EventHandler",
         "Name": "onbeforecopy",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7232,7 +7232,7 @@
         }
       },
       {
-        "HashCode": -719121290,
+        "HashCode": -270021949,
         "Kind": "Components.EventHandler",
         "Name": "onbeforecut",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7313,7 +7313,7 @@
         }
       },
       {
-        "HashCode": -1392817970,
+        "HashCode": -404629426,
         "Kind": "Components.EventHandler",
         "Name": "onbeforepaste",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7394,7 +7394,7 @@
         }
       },
       {
-        "HashCode": 768118611,
+        "HashCode": 1841628227,
         "Kind": "Components.EventHandler",
         "Name": "oncopy",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7475,7 +7475,7 @@
         }
       },
       {
-        "HashCode": 806507272,
+        "HashCode": 171111326,
         "Kind": "Components.EventHandler",
         "Name": "oncut",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7556,7 +7556,7 @@
         }
       },
       {
-        "HashCode": -1745514960,
+        "HashCode": -882724302,
         "Kind": "Components.EventHandler",
         "Name": "onpaste",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7637,7 +7637,7 @@
         }
       },
       {
-        "HashCode": -930032992,
+        "HashCode": -716711683,
         "Kind": "Components.EventHandler",
         "Name": "ontouchcancel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7718,7 +7718,7 @@
         }
       },
       {
-        "HashCode": 528337981,
+        "HashCode": -2106548863,
         "Kind": "Components.EventHandler",
         "Name": "ontouchend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7799,7 +7799,7 @@
         }
       },
       {
-        "HashCode": -114080252,
+        "HashCode": 1125657296,
         "Kind": "Components.EventHandler",
         "Name": "ontouchmove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7880,7 +7880,7 @@
         }
       },
       {
-        "HashCode": -91652442,
+        "HashCode": -1956269822,
         "Kind": "Components.EventHandler",
         "Name": "ontouchstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7961,7 +7961,7 @@
         }
       },
       {
-        "HashCode": 512346422,
+        "HashCode": -1227522871,
         "Kind": "Components.EventHandler",
         "Name": "ontouchenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8042,7 +8042,7 @@
         }
       },
       {
-        "HashCode": -2028143719,
+        "HashCode": -467860812,
         "Kind": "Components.EventHandler",
         "Name": "ontouchleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8123,7 +8123,7 @@
         }
       },
       {
-        "HashCode": 732109038,
+        "HashCode": -1556218844,
         "Kind": "Components.EventHandler",
         "Name": "ongotpointercapture",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8204,7 +8204,7 @@
         }
       },
       {
-        "HashCode": -473335795,
+        "HashCode": -731744688,
         "Kind": "Components.EventHandler",
         "Name": "onlostpointercapture",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8285,7 +8285,7 @@
         }
       },
       {
-        "HashCode": -1736798435,
+        "HashCode": -1570889977,
         "Kind": "Components.EventHandler",
         "Name": "onpointercancel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8366,7 +8366,7 @@
         }
       },
       {
-        "HashCode": -491059936,
+        "HashCode": -1787302515,
         "Kind": "Components.EventHandler",
         "Name": "onpointerdown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8447,7 +8447,7 @@
         }
       },
       {
-        "HashCode": -1254614019,
+        "HashCode": 943761930,
         "Kind": "Components.EventHandler",
         "Name": "onpointerenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8528,7 +8528,7 @@
         }
       },
       {
-        "HashCode": 154834163,
+        "HashCode": -412526810,
         "Kind": "Components.EventHandler",
         "Name": "onpointerleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8609,7 +8609,7 @@
         }
       },
       {
-        "HashCode": 299920072,
+        "HashCode": -1580398382,
         "Kind": "Components.EventHandler",
         "Name": "onpointermove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8690,7 +8690,7 @@
         }
       },
       {
-        "HashCode": 1088712335,
+        "HashCode": 1681233735,
         "Kind": "Components.EventHandler",
         "Name": "onpointerout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8771,7 +8771,7 @@
         }
       },
       {
-        "HashCode": 2024205703,
+        "HashCode": 1629374832,
         "Kind": "Components.EventHandler",
         "Name": "onpointerover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8852,7 +8852,7 @@
         }
       },
       {
-        "HashCode": 381099394,
+        "HashCode": 365814942,
         "Kind": "Components.EventHandler",
         "Name": "onpointerup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8933,7 +8933,7 @@
         }
       },
       {
-        "HashCode": -348731965,
+        "HashCode": -1849704954,
         "Kind": "Components.EventHandler",
         "Name": "oncanplay",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9014,7 +9014,7 @@
         }
       },
       {
-        "HashCode": 355494396,
+        "HashCode": 229931572,
         "Kind": "Components.EventHandler",
         "Name": "oncanplaythrough",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9095,7 +9095,7 @@
         }
       },
       {
-        "HashCode": 1546258643,
+        "HashCode": 1612800939,
         "Kind": "Components.EventHandler",
         "Name": "oncuechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9176,7 +9176,7 @@
         }
       },
       {
-        "HashCode": 959459666,
+        "HashCode": -324030875,
         "Kind": "Components.EventHandler",
         "Name": "ondurationchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9257,7 +9257,7 @@
         }
       },
       {
-        "HashCode": -361575884,
+        "HashCode": 329517788,
         "Kind": "Components.EventHandler",
         "Name": "onemptied",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9338,7 +9338,7 @@
         }
       },
       {
-        "HashCode": -1710451802,
+        "HashCode": 779538248,
         "Kind": "Components.EventHandler",
         "Name": "onpause",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9419,7 +9419,7 @@
         }
       },
       {
-        "HashCode": -1085936734,
+        "HashCode": 453116553,
         "Kind": "Components.EventHandler",
         "Name": "onplay",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9500,7 +9500,7 @@
         }
       },
       {
-        "HashCode": -1897526368,
+        "HashCode": -764844150,
         "Kind": "Components.EventHandler",
         "Name": "onplaying",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9581,7 +9581,7 @@
         }
       },
       {
-        "HashCode": 473312804,
+        "HashCode": -1384301903,
         "Kind": "Components.EventHandler",
         "Name": "onratechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9662,7 +9662,7 @@
         }
       },
       {
-        "HashCode": 1808968017,
+        "HashCode": -991461633,
         "Kind": "Components.EventHandler",
         "Name": "onseeked",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9743,7 +9743,7 @@
         }
       },
       {
-        "HashCode": 239418088,
+        "HashCode": -706699426,
         "Kind": "Components.EventHandler",
         "Name": "onseeking",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9824,7 +9824,7 @@
         }
       },
       {
-        "HashCode": 1406584159,
+        "HashCode": 1566417086,
         "Kind": "Components.EventHandler",
         "Name": "onstalled",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9905,7 +9905,7 @@
         }
       },
       {
-        "HashCode": 381530038,
+        "HashCode": -696866434,
         "Kind": "Components.EventHandler",
         "Name": "onstop",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9986,7 +9986,7 @@
         }
       },
       {
-        "HashCode": -573146567,
+        "HashCode": 1233043548,
         "Kind": "Components.EventHandler",
         "Name": "onsuspend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10067,7 +10067,7 @@
         }
       },
       {
-        "HashCode": -1282332199,
+        "HashCode": -2061910816,
         "Kind": "Components.EventHandler",
         "Name": "ontimeupdate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10148,7 +10148,7 @@
         }
       },
       {
-        "HashCode": 479591889,
+        "HashCode": 1134817986,
         "Kind": "Components.EventHandler",
         "Name": "onvolumechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10229,7 +10229,7 @@
         }
       },
       {
-        "HashCode": -605270554,
+        "HashCode": 1732012340,
         "Kind": "Components.EventHandler",
         "Name": "onwaiting",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10310,7 +10310,7 @@
         }
       },
       {
-        "HashCode": -1353909172,
+        "HashCode": 1583361161,
         "Kind": "Components.EventHandler",
         "Name": "onloadstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10391,7 +10391,7 @@
         }
       },
       {
-        "HashCode": 1077029507,
+        "HashCode": 473410574,
         "Kind": "Components.EventHandler",
         "Name": "ontimeout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10472,7 +10472,7 @@
         }
       },
       {
-        "HashCode": 784112019,
+        "HashCode": -1723499155,
         "Kind": "Components.EventHandler",
         "Name": "onabort",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10553,7 +10553,7 @@
         }
       },
       {
-        "HashCode": -1982187997,
+        "HashCode": -311482452,
         "Kind": "Components.EventHandler",
         "Name": "onload",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10634,7 +10634,7 @@
         }
       },
       {
-        "HashCode": -194848746,
+        "HashCode": 689713075,
         "Kind": "Components.EventHandler",
         "Name": "onloadend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10715,7 +10715,7 @@
         }
       },
       {
-        "HashCode": 1292530608,
+        "HashCode": -1481195951,
         "Kind": "Components.EventHandler",
         "Name": "onprogress",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10796,7 +10796,7 @@
         }
       },
       {
-        "HashCode": -1412668170,
+        "HashCode": 1118576442,
         "Kind": "Components.EventHandler",
         "Name": "onerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10877,7 +10877,7 @@
         }
       },
       {
-        "HashCode": 847363055,
+        "HashCode": 531939750,
         "Kind": "Components.EventHandler",
         "Name": "onactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10958,7 +10958,7 @@
         }
       },
       {
-        "HashCode": 472450926,
+        "HashCode": 276915368,
         "Kind": "Components.EventHandler",
         "Name": "onbeforeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11039,7 +11039,7 @@
         }
       },
       {
-        "HashCode": -1959309581,
+        "HashCode": -1998622918,
         "Kind": "Components.EventHandler",
         "Name": "onbeforedeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11120,7 +11120,7 @@
         }
       },
       {
-        "HashCode": 2131170133,
+        "HashCode": 1855333949,
         "Kind": "Components.EventHandler",
         "Name": "ondeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11201,7 +11201,7 @@
         }
       },
       {
-        "HashCode": -1875164876,
+        "HashCode": 921647364,
         "Kind": "Components.EventHandler",
         "Name": "onended",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11282,7 +11282,7 @@
         }
       },
       {
-        "HashCode": -1718565914,
+        "HashCode": -413237290,
         "Kind": "Components.EventHandler",
         "Name": "onfullscreenchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11363,7 +11363,7 @@
         }
       },
       {
-        "HashCode": -300370775,
+        "HashCode": 1610212361,
         "Kind": "Components.EventHandler",
         "Name": "onfullscreenerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11444,7 +11444,7 @@
         }
       },
       {
-        "HashCode": 2033530190,
+        "HashCode": 1725044450,
         "Kind": "Components.EventHandler",
         "Name": "onloadeddata",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11525,7 +11525,7 @@
         }
       },
       {
-        "HashCode": -1559891102,
+        "HashCode": -554880019,
         "Kind": "Components.EventHandler",
         "Name": "onloadedmetadata",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11606,7 +11606,7 @@
         }
       },
       {
-        "HashCode": 231768426,
+        "HashCode": -1002183793,
         "Kind": "Components.EventHandler",
         "Name": "onpointerlockchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11687,7 +11687,7 @@
         }
       },
       {
-        "HashCode": 1275016750,
+        "HashCode": -1004771732,
         "Kind": "Components.EventHandler",
         "Name": "onpointerlockerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11768,7 +11768,7 @@
         }
       },
       {
-        "HashCode": 472570455,
+        "HashCode": 1441083792,
         "Kind": "Components.EventHandler",
         "Name": "onreadystatechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11849,7 +11849,7 @@
         }
       },
       {
-        "HashCode": 1562238986,
+        "HashCode": -32248590,
         "Kind": "Components.EventHandler",
         "Name": "onscroll",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11930,7 +11930,7 @@
         }
       },
       {
-        "HashCode": -114085418,
+        "HashCode": -2112460572,
         "Kind": "Components.EventHandler",
         "Name": "ontoggle",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12011,7 +12011,7 @@
         }
       },
       {
-        "HashCode": -1800294628,
+        "HashCode": -970395033,
         "Kind": "Components.Splat",
         "Name": "Attributes",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12050,7 +12050,7 @@
         }
       },
       {
-        "HashCode": 1390245213,
+        "HashCode": 1280730674,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
@@ -12365,7 +12365,7 @@
         }
       },
       {
-        "HashCode": -1896537439,
+        "HashCode": 1721591427,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -12562,7 +12562,7 @@
         }
       },
       {
-        "HashCode": -2026284721,
+        "HashCode": -1584737164,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.CacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -12689,7 +12689,7 @@
         }
       },
       {
-        "HashCode": -1562648103,
+        "HashCode": 475707470,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ComponentTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -12744,7 +12744,7 @@
         }
       },
       {
-        "HashCode": 1831529219,
+        "HashCode": 2026288845,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.DistributedCacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -12876,7 +12876,7 @@
         }
       },
       {
-        "HashCode": -30811470,
+        "HashCode": 1388431317,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -12922,7 +12922,7 @@
         }
       },
       {
-        "HashCode": 1413855466,
+        "HashCode": 348789094,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13339,7 +13339,7 @@
         }
       },
       {
-        "HashCode": 1248475500,
+        "HashCode": 1819884029,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13441,7 +13441,7 @@
         }
       },
       {
-        "HashCode": -1258582857,
+        "HashCode": -1194611281,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13487,7 +13487,7 @@
         }
       },
       {
-        "HashCode": -863581731,
+        "HashCode": -1318863146,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13557,7 +13557,7 @@
         }
       },
       {
-        "HashCode": 1807879076,
+        "HashCode": -90059991,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13590,7 +13590,7 @@
         }
       },
       {
-        "HashCode": -1047529582,
+        "HashCode": -531133849,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13786,7 +13786,7 @@
         }
       },
       {
-        "HashCode": 360598016,
+        "HashCode": 378123826,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13814,7 +13814,7 @@
         }
       },
       {
-        "HashCode": -1684403742,
+        "HashCode": 1892777142,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13895,7 +13895,7 @@
         }
       },
       {
-        "HashCode": 70460603,
+        "HashCode": 1760291584,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.PersistComponentStateTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -13924,7 +13924,7 @@
         }
       },
       {
-        "HashCode": 2044865704,
+        "HashCode": -1056050720,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14077,7 +14077,7 @@
         }
       },
       {
-        "HashCode": -908938226,
+        "HashCode": -1118733107,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14136,7 +14136,7 @@
         }
       },
       {
-        "HashCode": 1143173433,
+        "HashCode": 1494852280,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14178,7 +14178,7 @@
         }
       },
       {
-        "HashCode": -108287278,
+        "HashCode": -225514253,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14211,7 +14211,7 @@
         }
       },
       {
-        "HashCode": -1607860393,
+        "HashCode": 923627896,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14245,7 +14245,7 @@
         }
       },
       {
-        "HashCode": -1552342245,
+        "HashCode": 530604665,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14314,7 +14314,7 @@
         }
       },
       {
-        "HashCode": -344005353,
+        "HashCode": 2062502075,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14392,7 +14392,7 @@
         }
       },
       {
-        "HashCode": 803545262,
+        "HashCode": 752713932,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14470,7 +14470,7 @@
         }
       },
       {
-        "HashCode": 1324387977,
+        "HashCode": 1610418837,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14554,7 +14554,7 @@
         }
       },
       {
-        "HashCode": -1609104771,
+        "HashCode": -1389898876,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14638,7 +14638,7 @@
         }
       },
       {
-        "HashCode": 1666951916,
+        "HashCode": 1892215451,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14722,7 +14722,7 @@
         }
       },
       {
-        "HashCode": 1179927166,
+        "HashCode": 630911711,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14806,7 +14806,7 @@
         }
       },
       {
-        "HashCode": -1072485451,
+        "HashCode": 108757330,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14890,7 +14890,7 @@
         }
       },
       {
-        "HashCode": -1360680847,
+        "HashCode": -907458239,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -14974,7 +14974,7 @@
         }
       },
       {
-        "HashCode": 558079953,
+        "HashCode": 1923211443,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15058,7 +15058,7 @@
         }
       },
       {
-        "HashCode": 472995323,
+        "HashCode": 2071783409,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15142,7 +15142,7 @@
         }
       },
       {
-        "HashCode": -869680657,
+        "HashCode": -5227730,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15226,7 +15226,7 @@
         }
       },
       {
-        "HashCode": -2071796505,
+        "HashCode": 968662616,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15310,7 +15310,7 @@
         }
       },
       {
-        "HashCode": 1392883690,
+        "HashCode": -177497550,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15394,7 +15394,7 @@
         }
       },
       {
-        "HashCode": -583628491,
+        "HashCode": -1800452841,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15478,7 +15478,7 @@
         }
       },
       {
-        "HashCode": 1673885581,
+        "HashCode": 44654312,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15556,7 +15556,7 @@
         }
       },
       {
-        "HashCode": -586344711,
+        "HashCode": 1518704108,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15634,7 +15634,7 @@
         }
       },
       {
-        "HashCode": -1464886786,
+        "HashCode": -256328313,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -15675,7 +15675,7 @@
         }
       },
       {
-        "HashCode": 1984647077,
+        "HashCode": 2031745876,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -15717,7 +15717,7 @@
         }
       },
       {
-        "HashCode": 1696179511,
+        "HashCode": -1072881541,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -15758,7 +15758,7 @@
         }
       },
       {
-        "HashCode": -1587606474,
+        "HashCode": 634376890,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -15800,7 +15800,7 @@
         }
       },
       {
-        "HashCode": -917633038,
+        "HashCode": 857726405,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -15841,7 +15841,7 @@
         }
       },
       {
-        "HashCode": 600049963,
+        "HashCode": -1564612973,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -15883,7 +15883,7 @@
         }
       },
       {
-        "HashCode": 384995573,
+        "HashCode": 1011098678,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -15924,7 +15924,7 @@
         }
       },
       {
-        "HashCode": 2059713112,
+        "HashCode": -334627168,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -15966,7 +15966,7 @@
         }
       },
       {
-        "HashCode": 1935059105,
+        "HashCode": 833030462,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16007,7 +16007,7 @@
         }
       },
       {
-        "HashCode": 1759846020,
+        "HashCode": 505638473,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16049,7 +16049,7 @@
         }
       },
       {
-        "HashCode": 1088865929,
+        "HashCode": 299105223,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16090,7 +16090,7 @@
         }
       },
       {
-        "HashCode": -1442531582,
+        "HashCode": -337369237,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16132,7 +16132,7 @@
         }
       },
       {
-        "HashCode": -973231830,
+        "HashCode": 1206543251,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16173,7 +16173,7 @@
         }
       },
       {
-        "HashCode": 1447973156,
+        "HashCode": 538516137,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -16215,7 +16215,7 @@
         }
       },
       {
-        "HashCode": -1130300882,
+        "HashCode": -1284968773,
         "Kind": "Components.Ref",
         "Name": "Ref",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16254,7 +16254,7 @@
         }
       },
       {
-        "HashCode": 1959239969,
+        "HashCode": 1163896436,
         "Kind": "Components.Key",
         "Name": "Key",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16298,223 +16298,8 @@
   "RootNamespace": "MvcAlecScripts",
   "Documents": [
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableNames.cshtml",
-      "TargetPath": "Views\\Python\\VariableNames.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/seo/HtmlTags.cshtml",
-      "TargetPath": "Views\\seo\\HtmlTags.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Home/CodeTut.cshtml",
-      "TargetPath": "Views\\Home\\CodeTut.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/FileNames.cshtml",
-      "TargetPath": "Views\\Bash\\FileNames.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/funnyNumbers.cshtml",
-      "TargetPath": "Views\\Python\\funnyNumbers.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/StringLength.cshtml",
-      "TargetPath": "Views\\Bash\\StringLength.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/SplitString.cshtml",
-      "TargetPath": "Views\\Bash\\SplitString.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableGlobals.cshtml",
-      "TargetPath": "Views\\Python\\VariableGlobals.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Comments.cshtml",
-      "TargetPath": "Views\\Bash\\Comments.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/AlternateTableRows.cshtml",
-      "TargetPath": "Views\\Js\\AlternateTableRows.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/Colors.cshtml",
-      "TargetPath": "Views\\Html\\Colors.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Comments.cshtml",
-      "TargetPath": "Views\\Java\\Comments.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/RandomColorCreater.cshtml",
-      "TargetPath": "Views\\Js\\RandomColorCreater.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Sass/Variables.cshtml",
-      "TargetPath": "Views\\Sass\\Variables.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Substring.cshtml",
-      "TargetPath": "Views\\Bash\\Substring.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/index.cshtml",
-      "TargetPath": "Views\\Bash\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/Comments.cshtml",
-      "TargetPath": "Views\\Html\\Comments.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Glossary/index.cshtml",
-      "TargetPath": "Views\\Glossary\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Lowercase.cshtml",
-      "TargetPath": "Views\\Bash\\Lowercase.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableOutput.cshtml",
-      "TargetPath": "Views\\Python\\VariableOutput.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Numbers.cshtml",
-      "TargetPath": "Views\\Python\\Numbers.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/DataTypes.cshtml",
-      "TargetPath": "Views\\Python\\DataTypes.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Uppercase.cshtml",
-      "TargetPath": "Views\\Bash\\Uppercase.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/UserInput.cshtml",
-      "TargetPath": "Views\\Cpp\\UserInput.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/index.cshtml",
-      "TargetPath": "Views\\Js\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/tags.cshtml",
-      "TargetPath": "Views\\Html\\tags.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/index.cshtml",
-      "TargetPath": "Views\\Css\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/abs.cshtml",
-      "TargetPath": "Views\\Python\\abs.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/PrintVariables.cshtml",
-      "TargetPath": "Views\\Bash\\PrintVariables.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Tips.cshtml",
-      "TargetPath": "Views\\Bash\\Tips.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/ExpressionsOperators.cshtml",
-      "TargetPath": "Views\\Js\\ExpressionsOperators.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/index.cshtml",
-      "TargetPath": "Views\\Html\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Index.cshtml",
-      "TargetPath": "Views\\Cpp\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/swapcase.cshtml",
-      "TargetPath": "Views\\Python\\swapcase.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Casting.cshtml",
-      "TargetPath": "Views\\Python\\Casting.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/GetMonth.cshtml",
       "TargetPath": "Views\\Js\\GetMonth.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Sass/index.cshtml",
-      "TargetPath": "Views\\Sass\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/BinaryArrayToDecimal.cshtml",
-      "TargetPath": "Views\\Js\\BinaryArrayToDecimal.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16523,83 +16308,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/Index.cshtml",
-      "TargetPath": "Views\\Dotnet\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Comments.cshtml",
-      "TargetPath": "Views\\Cpp\\Comments.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/controllerGetter.cshtml",
-      "TargetPath": "Views\\Python\\controllerGetter.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableValues.cshtml",
-      "TargetPath": "Views\\Python\\VariableValues.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/seo/index.cshtml",
-      "TargetPath": "Views\\seo\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Comments.cshtml",
-      "TargetPath": "Views\\Python\\Comments.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/index.cshtml",
-      "TargetPath": "Views\\Python\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/BasicExample.cshtml",
-      "TargetPath": "Views\\Html\\BasicExample.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Variables.cshtml",
-      "TargetPath": "Views\\Bash\\Variables.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/vars.cshtml",
-      "TargetPath": "Views\\Python\\vars.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/index.cshtml",
-      "TargetPath": "Views\\Java\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/index.cshtml",
-      "TargetPath": "Views\\Git\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/AppendString.cshtml",
-      "TargetPath": "Views\\Bash\\AppendString.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/Json.cshtml",
-      "TargetPath": "Views\\Js\\Json.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Variables.cshtml",
-      "TargetPath": "Views\\Cpp\\Variables.cshtml",
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableGlobals.cshtml",
+      "TargetPath": "Views\\Python\\VariableGlobals.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16608,48 +16318,78 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Modules.cshtml",
-      "TargetPath": "Views\\Python\\Modules.cshtml",
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/Index.cshtml",
+      "TargetPath": "Views\\Dotnet\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/ToFixed.cshtml",
-      "TargetPath": "Views\\Js\\ToFixed.cshtml",
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/index.cshtml",
+      "TargetPath": "Views\\Bash\\index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/RandomNumber.cshtml",
-      "TargetPath": "Views\\Dotnet\\RandomNumber.cshtml",
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/seo/index.cshtml",
+      "TargetPath": "Views\\seo\\index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Go/index.cshtml",
-      "TargetPath": "Views\\Go\\index.cshtml",
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Operators.cshtml",
-      "TargetPath": "Views\\Cpp\\Operators.cshtml",
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Comments.cshtml",
+      "TargetPath": "Views\\Bash\\Comments.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/AssignmentOperators.cshtml",
-      "TargetPath": "Views\\Cpp\\AssignmentOperators.cshtml",
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/BinaryArrayToDecimal.cshtml",
+      "TargetPath": "Views\\Js\\BinaryArrayToDecimal.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/CPPversionHistory.cshtml",
-      "TargetPath": "Views\\Cpp\\CPPversionHistory.cshtml",
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Numbers.cshtml",
+      "TargetPath": "Views\\Python\\Numbers.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Bashrc.cshtml",
-      "TargetPath": "Views\\Bash\\Bashrc.cshtml",
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/BasicExample.cshtml",
+      "TargetPath": "Views\\Html\\BasicExample.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/DataTypes.cshtml",
-      "TargetPath": "Views\\Cpp\\DataTypes.cshtml",
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableValues.cshtml",
+      "TargetPath": "Views\\Python\\VariableValues.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/UserInput.cshtml",
+      "TargetPath": "Views\\Cpp\\UserInput.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/index.cshtml",
+      "TargetPath": "Views\\Css\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Sass/Variables.cshtml",
+      "TargetPath": "Views\\Sass\\Variables.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/CSS.cshtml",
+      "TargetPath": "Views\\Html\\CSS.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Tips.cshtml",
+      "TargetPath": "Views\\Bash\\Tips.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/AppendString.cshtml",
+      "TargetPath": "Views\\Bash\\AppendString.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16658,13 +16398,273 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/AlternateTableRows.cshtml",
+      "TargetPath": "Views\\Js\\AlternateTableRows.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/ExpressionsOperators.cshtml",
+      "TargetPath": "Views\\Js\\ExpressionsOperators.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/funnyNumbers.cshtml",
+      "TargetPath": "Views\\Python\\funnyNumbers.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/ToFixed.cshtml",
+      "TargetPath": "Views\\Js\\ToFixed.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Lowercase.cshtml",
+      "TargetPath": "Views\\Bash\\Lowercase.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Substring.cshtml",
+      "TargetPath": "Views\\Bash\\Substring.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Uppercase.cshtml",
+      "TargetPath": "Views\\Bash\\Uppercase.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Variables.cshtml",
+      "TargetPath": "Views\\Cpp\\Variables.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/index.cshtml",
+      "TargetPath": "Views\\Html\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/seo/HtmlTags.cshtml",
+      "TargetPath": "Views\\seo\\HtmlTags.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Operators.cshtml",
+      "TargetPath": "Views\\Cpp\\Operators.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/FileNames.cshtml",
+      "TargetPath": "Views\\Bash\\FileNames.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/abs.cshtml",
+      "TargetPath": "Views\\Python\\abs.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/password.cshtml",
       "TargetPath": "Views\\Python\\password.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/CSS.cshtml",
-      "TargetPath": "Views\\Html\\CSS.cshtml",
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Comments.cshtml",
+      "TargetPath": "Views\\Java\\Comments.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/RandomNumber.cshtml",
+      "TargetPath": "Views\\Dotnet\\RandomNumber.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Variables.cshtml",
+      "TargetPath": "Views\\Bash\\Variables.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Casting.cshtml",
+      "TargetPath": "Views\\Python\\Casting.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/Colors.cshtml",
+      "TargetPath": "Views\\Html\\Colors.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableNames.cshtml",
+      "TargetPath": "Views\\Python\\VariableNames.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/index.cshtml",
+      "TargetPath": "Views\\Python\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/RandomColorCreater.cshtml",
+      "TargetPath": "Views\\Js\\RandomColorCreater.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/Json.cshtml",
+      "TargetPath": "Views\\Js\\Json.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Sass/index.cshtml",
+      "TargetPath": "Views\\Sass\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Index.cshtml",
+      "TargetPath": "Views\\Cpp\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Go/index.cshtml",
+      "TargetPath": "Views\\Go\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/swapcase.cshtml",
+      "TargetPath": "Views\\Python\\swapcase.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Modules.cshtml",
+      "TargetPath": "Views\\Python\\Modules.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/Comments.cshtml",
+      "TargetPath": "Views\\Html\\Comments.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/CPPversionHistory.cshtml",
+      "TargetPath": "Views\\Cpp\\CPPversionHistory.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableOutput.cshtml",
+      "TargetPath": "Views\\Python\\VariableOutput.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/controllerGetter.cshtml",
+      "TargetPath": "Views\\Python\\controllerGetter.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/vars.cshtml",
+      "TargetPath": "Views\\Python\\vars.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/StringLength.cshtml",
+      "TargetPath": "Views\\Bash\\StringLength.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/Bashrc.cshtml",
+      "TargetPath": "Views\\Bash\\Bashrc.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/index.cshtml",
+      "TargetPath": "Views\\Git\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Glossary/index.cshtml",
+      "TargetPath": "Views\\Glossary\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/index.cshtml",
+      "TargetPath": "Views\\Js\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Comments.cshtml",
+      "TargetPath": "Views\\Cpp\\Comments.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/DataTypes.cshtml",
+      "TargetPath": "Views\\Cpp\\DataTypes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/DataTypes.cshtml",
+      "TargetPath": "Views\\Python\\DataTypes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/PrintVariables.cshtml",
+      "TargetPath": "Views\\Bash\\PrintVariables.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Home/CodeTut.cshtml",
+      "TargetPath": "Views\\Home\\CodeTut.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Bash/SplitString.cshtml",
+      "TargetPath": "Views\\Bash\\SplitString.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/index.cshtml",
+      "TargetPath": "Views\\Java\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/tags.cshtml",
+      "TargetPath": "Views\\Html\\tags.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Comments.cshtml",
+      "TargetPath": "Views\\Python\\Comments.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/AssignmentOperators.cshtml",
+      "TargetPath": "Views\\Cpp\\AssignmentOperators.cshtml",
       "FileKind": "mvc"
     }
   ],

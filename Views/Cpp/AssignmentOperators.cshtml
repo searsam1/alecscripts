@@ -2,24 +2,135 @@
     <img alt="God and Goddess Statues" src="~/lib/Resources/justitia-ge9c60c1ef_1920.jpeg">
     <figcaption>Image by <a href="https://pixabay.com/users/pixel2013-2364555/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2638651">S. Hermann / F. Richter</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2638651">Pixabay</a></figcaption>
 </center>
-
+@* 
 @{
     string[] assignmentOps = {
-        "Equals (=)","PlusEquals (+=)","MinusEquals (-=)",
-        "TimesEquals (*=)","DivideEquals (/=)","ModuloEquals (%=)",
-        "DereferenceEquals (&=)","OREquals (|=)","MinusEquals (-=)",
-        "^=", ">>=", "<<="
+        "Equals (=)","Plus Equals (+=)","Minus Equals (-=)",
+        "Times Equals (*=)","Divide Equals (/=)","Modulo Equals (%=)",
+        "Bitwise AND Equals (&=)","Bitwise OR Equals (|=)", "XOR Equals (^=)", 
+        "Shift Bits Right (>>=)", "Shift Bits Left (<<=)",
         
     
     };
-}
+} *@
 
 <section>
-    <h2>
-        Assignment Operators
+    <h2 class="display-6" id="Assignment-Compound-Operators-608725">
+        Assignment / Compound Operators
     </h2>
-    @foreach (string op in assignmentOps)
-    {
-        <h3>@op</h3>
-    }
+    <p>
+        Does an operation like normal, but automatically assigns the result to the first operand. 
+    </p>
+        <h3>Equals (=)</h3>
+        <p>
+            Assigns value to variable. Does not perform operation other than assignment. 
+        </p>
+        <pre><code class="lang-cpp">int x = 2;
+std::string str = "hello world";
+float y = 1.2;</code></pre>
+        <h3>Plus Equals (+=)</h3>
+        <p>
+            Add right operand to left. 
+        </p>
+        <pre><code class="lang-cpp">
+int x = 2;
+x += 2; // x = x + 2
+std::cout << x << "\n";
+// 4
+</code></pre>
+        <h3>Minus Equals (-=)</h3>
+        <p>
+            Subtract right operand from the left. 
+        </p>
+        <pre><code class="lang-cpp">int x = 2;
+x -= 2; // x = x - 2
+std::cout << x << "\n";
+// 0 
+
+</code></pre>
+        <h3>Times Equals (*=)</h3>
+        <p>
+            Multiply right operand from the left. 
+        </p>
+        <pre><code class="lang-cpp">
+int x = 2;
+x *= 2; // x = x * 2
+std::cout << x << "\n";
+// 4
+
+</code></pre>
+        <h3>Divide Equals (/=)</h3>
+        <p>
+            Divide right operand from the left.
+        </p>
+        <pre><code class="lang-cpp">
+int x = 2;
+x /= 2; // x = x / 2
+std::cout << x << "\n";
+// 1
+
+</code></pre>
+        <h3>Modulo Equals (%=)</h3>
+        <p>
+            Remainder of dividing right operand by the left.
+        </p>
+        <pre><code class="lang-cpp">
+int x = 2;
+x %= 2; // x = x % 2
+std::cout << x << "\n";
+// 0
+
+</code></pre>
+        <h3>Bitwise AND Equals (&amp;=)</h3>
+        <p>
+            Result of taking bitwise AND of left and right operand. 
+        </p>
+        <pre><code class="lang-cpp">
+int x = 2;
+x &= 2; // x = x & 2
+std::cout << x << "\n";
+// 2
+
+</code></pre>
+        <h3>Bitwise OR Equals (|=)</h3>
+        <p>
+            Result of taking bitwise OR of left and right operand. 
+        </p>
+        <pre><code class="lang-cpp">
+int x = 2;
+x |= 2; // x = x | 2
+std::cout << x << "\n";
+// 2
+
+</code></pre>        
+        <h3>XOR Equals (^=)</h3>
+        <p>
+            Result of taking bitwise XOR of left and right operand. 
+        </p>
+        <pre><code class="lang-cpp">
+int x = 2;
+x ^= 2; // x = x ^ 2
+std::cout << x << "\n";
+// 0
+</code></pre>
+        <h3>Shift Bits Right (&gt;&gt;=)</h3>
+        <p>
+            Shift left operand by right operand bits to the right. 
+        </p>
+        <pre><code class="lang-cpp">
+int x = 2;
+x >>= 2; // x = x >> 2
+std::cout << x << "\n";
+// 0
+</code></pre>    
+        <h3>Shift Bits Left (&lt;&lt;=)</h3>
+        <p>
+            Shift left operand by right operand bits to the left. 
+        </p>
+        <pre><code class="lang-cpp">
+int x = 2;
+x <<= 2; // x = x << 2
+std::cout << x << "\n";
+// 8
+</code></pre>          
 </section>
