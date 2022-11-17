@@ -19,7 +19,9 @@ pre[class*=language-] {
     text-align:left;
     white-space:pre;
     /* --font-family-monospace; */
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    
 
 }
 
@@ -80,7 +82,7 @@ pre[class*=language-] {
 .token.comment,
 .token.doctype,
 .token.prolog {
-    color: #05ee6a91
+    color: lightblue
 }
 
 .token.punctuation {
@@ -127,7 +129,7 @@ pre[class*=language-] {
 
 .token.class-name,
 .token.function {
-    color: #e2133c
+    color: cyan
 }
 
 .token.important,
@@ -195,10 +197,10 @@ div.code-toolbar {
 div.code-toolbar>.toolbar {
     position: absolute;
     z-index: 10;
-    top: -.2em;
-    left: 4em;
+    top: 0px;
+    left: 57%;
     transition: opacity .3s ease-in-out;
-    opacity: 0
+    opacity: 0;
 }
 
 div.code-toolbar:hover>.toolbar {

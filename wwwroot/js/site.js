@@ -194,7 +194,7 @@ function alternateTableColor(){
         for (let tr of trs){
             i++; 
             if (i % 2){
-                tr.style.backgroundColor = "rgb(255,1,200, .2)";
+                tr.style.backgroundColor = "rgb(0,0,0,.05)";
             }
             
         }
@@ -213,3 +213,12 @@ function applyShadowToCode(){
 
 }
 applyShadowToCode()
+
+
+function showHideSidebar(){
+    
+    let sidebar = document.querySelector(".col-sm-2");
+    console.log(sidebar);
+    sidebar.style.display = "inline-block"
+
+}

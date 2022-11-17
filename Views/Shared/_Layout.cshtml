@@ -44,11 +44,11 @@
 
 <body>
     <div class="row sticky-top">
-                <nav id="navy" class="px-4 py-0 navbar navbar-expand-sm navbar-toggleable-sm navbar-light shadow-sm ">
+                <nav id="navy" class="px-4 py-0 navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white shadow-sm ">
         <div class="container-fluid">
 
-            <a class="my-1  sexy-sm navbar-brand text-black" >
-                <button onclick='showClass("sidebar")' class="text-center" style=" font-family: 'Dancing Script', cursive; font-size: 30px; background: none; border: none;">
+            <a class="my-1 navbar-brand text-black" >
+                <button onclick='showHideSidebar()' class="text-center" style=" font-family: 'Dancing Script', cursive; font-size: 30px; background: none; border: none;">
                     AS
                 </button>
             </a>
@@ -137,14 +137,17 @@
                             <a style="color: var(--pink);" asp-controller=CSS asp-action=index> CSS </a>
                         </li>
                     </ul>
-                    <p class="p-3 bg-light text-center" style="font-size: 15px; margin-top: 250px; max-width: 100%; width: 100%;">
+                    <p class="shadow-sm p-3 bg-light text-center" style="font-size: 15px; margin-top: 250px; max-width: 100%; width: 100%;">
                         alecscripts aims to stay up-to-date on everything, but given 
                         the large number of topics, nothing can be guaranteed. Site is not responsible for 
                         any code written and/or executed.    
                     </p>
                 </div>
+                <hr>
             </main>
+        
         </div>
+
             <div class="col-sm-2">
     @* Other SB *@
         <div class="mt-5 sidebar-2 sticky-top">

@@ -384,7 +384,6 @@ summary {
 
 .toc-container{
     
-    background-image: repeating-linear-gradient(white, var(--light));   
     padding-bottom: 10px;
     text-transform: capitalize;
     color: var(--pink);
@@ -545,6 +544,9 @@ img {
     .col-sm-2{
         display: none;
         width: 0%;
+    }
+    .col-sm-8{
+        width: 100%;
     }
 }
 

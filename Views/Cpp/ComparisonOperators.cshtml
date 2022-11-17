@@ -4,3 +4,116 @@
         Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=310962">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=310962">Pixabay</a>
     </figcaption>
 </center>
+
+<section>
+    <h2>
+        Comparison Operators
+    </h2>
+    <p>
+        Comparison operators compare two values  
+        and return true or false based on the condition. 
+        <code>2 < 3</code> returns <code>true</code>, for example. 
+    </p>
+    @{
+        string[] ops = { "==-Is Equal", "!=-Not Equal", "<-Less Than", "<=-Less than or equal to", ">-Greater than", ">=-Greater than or equal to" };
+    }
+    <table>
+        <tr>
+            <th>
+                Operator
+            </th>
+            <th>
+                name
+            </th>
+        </tr>
+        @foreach (string op in ops)
+        {
+            <tr>
+                <td>
+                    @op.Split("-")[0]
+                </td>
+                <td>
+                    @op.Split("-")[1]
+                </td>
+            </tr>
+        }
+    </table>
+    <p>
+        Variables can also be compared like numbers, but they don't 
+        have to be numbers. It checks any condition. 
+    </p>
+    <pre><code class="lang-cpp">
+int main(){
+    std::string str1 = "hello";
+    std::string str2 = "world";
+    bool res = str1 == str2 ;
+    std::cout << res << "\n";
+    // 0 
+    return 0;
+}        
+    </code></pre>
+    <h3>
+        Is Equal ( == )
+    </h3>
+    <p>
+        Returns True if operands are equal. 
+    </p>
+    <pre><code class="lang-cpp">int x = 2, y = 3;
+std::cout << x == y;
+// false </code></pre>
+    <h3>
+        Not Equal ( != )
+    </h3>
+    <p>
+        Returns true if operands are not equal. 
+    </p>
+    <pre><code class="lang-cpp">
+int x = 2, y = 3;
+std::cout << x != y;
+// true        
+    </code></pre>
+    <h3>
+        Less than ( < )
+    </h3>
+    <p>
+        Returns true if left operand if less than right operand. 
+    </p>
+    <pre><code class="lang-cpp">
+int x = 2, y = 3;
+std::cout << x < y;
+// true             
+    </code></pre>
+    <h3>
+        Less than or Equal to ( <= )
+    </h3>
+    <p>
+        Returns true if left operand is less than OR equal to right operand. 
+    </p>
+        <pre><code class="lang-cpp">
+int x = 2, y = 3;
+std::cout << x <= y;
+// true             
+    </code></pre>
+    <h3>
+        Greater than ( > )
+    </h3>
+    <p>
+        Returns true if left operand is greater than right operand. 
+    </p>
+    <pre><code class="lang-cpp">
+int x = 2, y = 3;
+std::cout << x > y;
+// false   
+    </code></pre>
+    <h3>
+        Greater than or Equals to ( >= )
+    </h3>
+    <p>
+        Returns true if left operand is greater than or equal to right operand. 
+    </p>
+    <pre><code class="lang-cpp">
+int x = 2, y = 3;
+std::cout << x >= y;
+// false   
+    </code></pre>
+</section>
