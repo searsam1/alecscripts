@@ -3,10 +3,45 @@
     <h2>
         Boolean Values
     </h2>
+    <p>
+        A boolean value is either true or false, also known as 
+        zero(0) or one(1), respectively. Booleans have flow control 
+        in a program, where depending on if a value if true or false a 
+        program will go in a certain direction (or flow). 
+    </p>
+    <p>
+        C++ comes with <code>true</code> and <code>false</code> for its true and 
+        false values (also 1 and 0). 
+    </p>
+    <pre><code class="lang-cpp">
+bool truthy = 1 // true 
+bool falsey = 0 // false
+    </code></pre>
 </section>
 
 <section>
     <h2>
         Boolean Expressions 
     </h2>
+    <p>
+        A boolean expression outputs a true or false value. If 5 is greater than 6, do something. That is 
+        an example of a boolean expression. You will use a comparison operator to compare values 
+        and determine which conditions are false and true. 
+    </p>
+    <pre><code class="lang-cpp">
+int x = 2, y = 3;
+std::cout << y > x; // y > x
+// true (1)
+    </code></pre>
+    <pre><code class="lang-cpp">
+int x = 2, y = 3;
+std::cout << y < x; // y < x
+// false (0)
+    </code></pre>
+    <pre><code class="lang-cpp">
+int x = 2, y = 3;
+if (x < y){
+    std::cout << "x < y";
+}
+    </code></pre>
 </section>

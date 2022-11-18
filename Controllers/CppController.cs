@@ -90,5 +90,12 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult Conditions()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Conditions";
+        return View();
+    }
+    
     }
 }
