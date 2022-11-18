@@ -1,0 +1,45 @@
+<section>
+    <h2>
+        Concatenation 
+    </h2>
+    <p>
+        Also known as adding strings, use the <a class="link" href="/Cpp/Operators#Addition">+</a> operator between two strings. 
+    </p>
+    <pre><code class="lang-cpp">
+std::string firstName = "John ";
+std::string lastName = "Smith";
+std::string fullName = firstName + lastName;
+std::cout << fullName;
+// John Smith
+    </code></pre>
+    <h2>
+        String Length
+    </h2>
+    <p>
+        It's common to need a strings length. Use the <code>string.length()</code> syntax 
+        to find a string's length in C++. 
+    </p>
+    <pre><code class="lang-cpp">
+#include &lt;iostream&gt;
+int main(){
+    
+    std::string fullName = "John Smith";
+    int nameLength = fullName.length();
+    std::cout << nameLength << "\n";
+    // 10
+    return 0;
+}
+    </code></pre>
+    <h2>
+        Accessing 
+    </h2>
+    <p>
+        Getting a character at a strings index is done with the 
+        <code> string[idx]</code> syntax. 
+    </p>
+    <pre><code class="lang-cpp">
+std::string fullName = "John Smith";
+std::cout << fullName[0];
+// J
+    </code></pre>
+</section>

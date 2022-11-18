@@ -130,7 +130,7 @@ function createTOC(){
         .replace(/\s/g, "-")
 
         var att = document.createAttribute("id")
-        att.value = txt.trim() + "-" + randomByte().toString().trim();
+        att.value = txt.trim(); // + "-" + randomByte().toString().trim();
         header.setAttributeNode(att)
         child = createTocLink(header, att.value)
         childIsBorn = child != null;
