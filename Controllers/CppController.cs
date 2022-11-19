@@ -111,5 +111,12 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult WhileLoop()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "While Loop";
+        return View();
+    }
+    
     }
 }

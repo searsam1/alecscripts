@@ -16683,6 +16683,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/WhileLoop.cshtml",
+      "TargetPath": "Views\\Cpp\\WhileLoop.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/RandomColorCreater.cshtml",
       "TargetPath": "Views\\Js\\RandomColorCreater.cshtml",
       "FileKind": "mvc"
