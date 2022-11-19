@@ -1,0 +1,40 @@
+<section>
+    <h2>
+        While loops
+    </h2>
+    <p>
+        While loops go on until a condition is false. These loops 
+        are easy to make but also easy to turn into an 
+        infinite loop. They repeat a process as many times as needed,
+        which is nice, on the other hand.   
+    </p>
+    <h3>
+        Syntax
+    </h3>
+    <p>
+        The <code>while</code> keyword is used followed by a condition 
+        wrapped in parenthesis. The body of the loop is wrapped in <code>{}</code>. 
+    </p>
+    <pre><code class="lang-cpp">while (condition){
+    // do something;
+}</code></pre>
+<p>
+    Define the condition before hand, and run the while loop 
+    until that condition is false. Inside the loop, modify the condition 
+    so that it will eventually end the loop.
+</p>
+<h3>
+    Example
+</h3>
+<pre><code class="lang-cpp">
+#include < iostream >
+int main(){
+    int x = 10;
+    while (x > 1){
+        x--;   // x = x - 1
+        std::cout << x << "\n";
+    }
+}
+// 9 8 7 6 5 4 3 2 1
+</code></pre>
+</section>

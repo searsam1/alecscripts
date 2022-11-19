@@ -6,7 +6,7 @@ namespace MvcMovie.Controllers
     public class CppController : Controller
     {
         // GET: /Python/
-    public string controllerName = "Cpp";
+    public string controllerName = "C++";
     public IActionResult Index()
     {   
         ViewData["controller"] = controllerName;
@@ -115,6 +115,13 @@ namespace MvcMovie.Controllers
     {   
         ViewData["controller"] = controllerName;
         ViewData["title"] = "While Loop";
+        return View();
+    }
+    
+    public IActionResult ForLoop()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "For Loop";
         return View();
     }
     

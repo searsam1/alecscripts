@@ -24,10 +24,12 @@ def title_split(s):
 
 
 def asp_link(controller, action):
+    controller_label = controller.replace("Cpp", "C++")
+    action_label = title_split(action).replace("Cpp", "C++")
     string = f"""
     
         <a class="sidebar-link" asp-action={action} asp-controller={controller}>
-            {controller} {title_split(action)}
+            {controller_label} {action_label}
         </a>
         <br>
 """.replace("\n", "")
@@ -64,12 +66,16 @@ def get_controls():
         string += (f'<details>')
         string += f"""
         <summary>
-            {control.split("Controller.cs")[0].title()}
+            {control.split("Controller.cs")[0].title().replace("Cpp", "C++")}
         </summary>
         """.replace("\n", "")
+
+        
+
         string += "".join(asp_link(control.split("Controller.cs")
                             [0], action) 
                                 for action in get_actions(fn, control))
+
         string += (f'</details>')
         lst.append(string)
         string = ""

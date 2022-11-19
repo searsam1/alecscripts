@@ -1,0 +1,40 @@
+
+<section>
+    <h2>
+        For Loops
+    </h2>
+    <p>
+        Looping is doing something a given number of times.
+        For-looping is either looping over a range of numbers 
+        or looping over an array of objects. 
+    </p>
+    <pre><code class="lang-cpp">
+for (int i=0; i<10; i++){
+    std::cout << i << " ";
+}
+    </code></pre>
+    <p>
+        Use the <code>for</code> keyword followed by 
+        <code>( int var = 0; var < n; var++ )</code>, where var is the variable 
+        that will change value during the loop and n is the limit. 
+    </p>
+
+    <h3>
+        Looping over containers
+    </h3>
+    <p>
+        Sometimes it's useful to loop over every object in a container. 
+        Use the <code> for (int var : container) </code> where int is the type and var is the variable. 
+        It can be any type as long as it is congruent with the container. 
+    </p>
+    <pre><code class="lang-cpp">
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
+int main(){
+    std::vector&lt;int&gt; v = {1, 2, 3};
+    for (int i : v){
+        std::cout << i << " "; 
+    }        
+}
+    </code></pre>    
+</section>
