@@ -7,16 +7,82 @@
     <h2>
         The If Statement 
     </h2>
+    <p>
+        The <code>if</code> statement runs if a condition is true,
+        and will not run otherwise. The code to execute if a condition 
+        is true is called the "if-block". The if-block is surrounded by <code> {} </code> and the 
+        condition is surrounded by <code> () </code>: <code>if (condition) {do something}</code>
+    </p>
+        <pre><code class="lang-cpp">
+// if
+if ( ~Condition Goes here~ ){
+    // then 
+    ~Code Goes Here~;
+}            
+        </code></pre>
+    <pre><code class="lang-cpp">
+int x = 1, y = 2;
+
+if (x != y){
+    std::cout << "x Does Not Equal y!";
+}
+// x Does Not Equal y!
+    </code></pre>        
 </section>
 
 <section>
     <h2>
         The else statement 
     </h2>
+    <p>
+        The <code>else</code> block is connected to an if block; if that block is false then 
+        the else block always runs. 
+    </p>
+    <pre><code class="lang-cpp">
+if (condition1){
+    {do something;}
+}
+else{
+    {do somethingElse;}
+}
+    </code></pre>
+
+    <pre><code class="lang-cpp">
+int on = 1;
+if (on){
+    std::cout << "Program is on!" << "\n";
+}
+else if (!on){ // !on == not on 
+    std::cout << "Program is NOT on!" << "\n";
+}
+    </code></pre>
 </section>
 
 <section>
     <h2>
         The else-if statement 
     </h2>
+    <p>
+        The else-if statement is connected to an if: if that is false 
+        then it will try the else-if condition, but will only execute on a given condition. 
+    </p>
+    <pre><code class="lang-cpp">
+if (condition1){
+    {do something;}
+}
+else if (condition2){
+    {do somethingElse;}
+}
+    </code></pre>
+    <pre><code class="lang-cpp">
+#include < iostream >
+int main(){
+    int x = 3;
+    if (x == 3)
+        {std::cout << "x is Equal to 3!";}
+    else if (x > 3)
+        {std::cout << "x is greater than 3!";}
+    }
+// x is Equal to 3!
+    </code></pre>    
 </section>

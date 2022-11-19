@@ -95,7 +95,7 @@ table{
 }
 
 #navy {
-    background-color: var(--light);
+    
     border-bottom: 2px solid rgba(0, 0, 0, 0.0508);
     font-family: 'Poppins', sans-serif;
     color: black;
@@ -238,7 +238,7 @@ div.container div div div {
 
 .display-6 {
     scroll-margin-top: 80px;
-    font-size: 2.5em;
+    font-size: 2em;
     max-width: fit-content;
     margin-top: 50px;
     text-transform: capitalize;
@@ -247,8 +247,9 @@ div.container div div div {
 }
 
 .display-4 {
-    /* text-align: center; */
-    /* font-weight: 100; */
+     
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
 }
 
 .underlineBox{
@@ -571,3 +572,11 @@ img {
     color: var(--primary);
     text-decoration: underline;
 }
+
+.quote::before{
+    content: '"" ';
+}
+
+.quote::after{
+    content: ' ""';
+}   

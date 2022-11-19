@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+La1ZU8QHpGteKO0yMWxL8532bU71JNzitX0upza0yA=",
+  "Hash": "MT7PS5+UB1GKHqzGlbNBsU9hm1XEwC0BfH1LYUr9yC0=",
   "Source": "MvcAlecScripts",
   "BasePath": "_content/MvcAlecScripts",
   "Mode": "Default",
@@ -287,6 +287,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/.DS_Store"
+    },
+    {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/about.txt",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/about.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/about.txt"
     },
     {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/android-chrome-192x192.png",
@@ -1545,6 +1562,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/Resources/ScreenShot_a1.png"
+    },
+    {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/solitaire-g3db8a8d03_1920.jpeg",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/Resources/solitaire-g3db8a8d03_1920.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/Resources/solitaire-g3db8a8d03_1920.jpeg"
     },
     {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/ss.png",

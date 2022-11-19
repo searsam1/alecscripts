@@ -1,0 +1,76 @@
+
+<section>
+    <h2>
+        Switch Statements 
+    </h2>
+    <p>
+        Switch statements are preferred over long if-else blocks. 
+        They are easier to write, read and maintain.  
+    </p>
+    <pre><code class="lang-cpp">
+#include < iostream >
+int main(){
+    int x = 2;
+    switch(x) { // <-- switch keyword
+      case 1:   // <-- case keyword
+        std::cout << "x == 1!" << "\n";
+        break; // <-- break keyword
+      case 2:
+        // code block will execute 
+        // b/c x==2
+        std::cout << "x == 2!" << "\n";
+        break;
+      default:
+        std::cout << "x == " << "\n";
+    }
+}
+    </code></pre>
+    <p>
+        The condition is put inside the <code>switch</code> keyword, and the body is surrounded by <code>{}</code>. 
+        Instead of using an if statement, write <code>case</code> followed by a certain value to check against. 
+        Use a <code>:</code> after each case. 
+    </p>
+    <h3>
+        default keyword
+    </h3>
+    <p>
+        The default keyword will execute code if no case it matched. 
+    </p>
+    <pre><code class="lang-cpp">
+int day = 2;
+switch (day) {
+  case 5:
+    cout << "It's Saturday!";
+    break;
+  case 6:
+    cout << "It's Sunday!";
+    break;
+  default:
+    cout << "It's not party time yet";
+}
+// Outputs "It's not party time yet"        
+    </code></pre>
+    <h3>
+        break keyword
+    </h3>
+    <p>
+        Break is used inside case statements to end them. Once the break is hit, it will 
+        not check any of the other conditions. 
+    </p>
+        <pre><code class="lang-cpp">
+int day = 5;
+switch (day) {
+  case 5:
+    cout << "It's Saturday!";
+    // Will stop once this break is hit 
+    break;
+  case 6:
+    cout << "It's Sunday!";
+    break;
+  default:
+    cout << "It's not party time yet";
+}
+// It's Saturday!
+
+    </code></pre>
+</section>

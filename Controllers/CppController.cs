@@ -97,5 +97,19 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult TernaryOperator()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Ternary Operator";
+        return View();
+    }
+    
+    public IActionResult SwitchStatement()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Switch Statement";
+        return View();
+    }
+    
     }
 }
