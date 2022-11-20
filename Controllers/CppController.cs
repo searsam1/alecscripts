@@ -146,5 +146,12 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult References()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "References";
+        return View();
+    }
+    
     }
 }

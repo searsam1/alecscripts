@@ -16443,6 +16443,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/References.cshtml",
+      "TargetPath": "Views\\Cpp\\References.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Syntax.cshtml",
       "TargetPath": "Views\\Python\\Syntax.cshtml",
       "FileKind": "mvc"

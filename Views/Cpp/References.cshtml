@@ -1,0 +1,39 @@
+
+<section>
+    <h2>
+        Creating References
+    </h2>
+    <p>
+        Every variable in C++ has a location in memory. A reference is when 
+        two or more variables point to the same location. When you change one, you change all of them. 
+        References are just aliases in C++, sharing the same value they reference. 
+    </p>
+    <p>
+        The <code>&</code> symbol is used for creating new references. When creating a new reference, put the <code>&</code> on 
+        the left of the variable name after the type. 
+    </p>
+    <pre><code class="lang-cpp">
+int x = 4;
+int &y = x;
+// y = 4
+    </code></pre>
+    <h2>Memory</h2>
+    <p>
+        Since a reference just refers to the same location as 
+        another variable, printing the location with <code>&</code>
+        will show they have the same memory address. 
+    </p>
+<pre><code class="lang-cpp">
+int x = 4;
+int &y = x;
+
+std::cout << &y << "\n" << &x;
+// 0x16eea76e4
+// 0x16eea76e4 <-- Same Address 
+</code></pre>
+<p>
+    To recap: to make a new reference variable, put the <code>&</code> on the left. To 
+    get access to an address, use it outside of declaration. 
+    
+</p>
+</section>
