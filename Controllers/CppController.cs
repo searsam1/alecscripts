@@ -125,5 +125,19 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult BreakAndContinue()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Break And Continue";
+        return View();
+    }
+    
+    public IActionResult Arrays()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Arrays";
+        return View();
+    }
+    
     }
 }

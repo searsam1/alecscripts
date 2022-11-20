@@ -1,0 +1,42 @@
+<p>
+    The <code>break</code> and <code>continue</code> keywords are useful for 
+    stopping loops in C++. Place them inside the loop, after a condition. 
+</p>
+<section>
+    <h2>
+        Break
+    </h2>
+    <p>
+        Break stops the loop when hit. Usually, a condition is tested and if 
+        that is true, <code>break</code> the loop. 
+    </p>
+        <pre><code class="lang-cpp">
+for (int i = 0; i < 10; i++) {
+  if (i == 3) {
+    break; // Stops at 3
+  }
+  std::cout << i << " ";
+}
+// 0 1 2
+    </code></pre>
+</section>
+
+
+<section>
+    <h2>
+        Continue
+    </h2>
+    <p>
+        Continue will skip the current loop and move onto the next once 
+        hit in the loop. 
+    </p>
+    <pre><code class="lang-cpp">
+for (int i = 0; i < 10; i++) {
+  if (i == 3) {
+    continue; // skips the # 3 
+  }
+  std::cout << i << " ";
+}
+// 0 1 2 4 5 6 7 8 9 
+    </code></pre>
+</section>

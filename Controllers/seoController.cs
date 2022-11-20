@@ -23,6 +23,6 @@ namespace MvcAlecScripts.Controllers
         ViewData["title"] = "Html Tags";
         return View();
     }
-    
+
     }
 }
