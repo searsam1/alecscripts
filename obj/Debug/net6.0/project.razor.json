@@ -16483,6 +16483,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Structures.cshtml",
+      "TargetPath": "Views\\Cpp\\Structures.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/vars.cshtml",
       "TargetPath": "Views\\Python\\vars.cshtml",
       "FileKind": "mvc"
@@ -16625,6 +16630,11 @@
     {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/AssignmentOperators.cshtml",
       "TargetPath": "Views\\Cpp\\AssignmentOperators.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/ColorPicker.cshtml",
+      "TargetPath": "Views\\Html\\ColorPicker.cshtml",
       "FileKind": "mvc"
     },
     {

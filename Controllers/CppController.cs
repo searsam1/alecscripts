@@ -139,5 +139,12 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult Structures()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Structures";
+        return View();
+    }
+    
     }
 }

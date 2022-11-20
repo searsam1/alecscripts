@@ -387,7 +387,17 @@ summary {
     
     padding-bottom: 10px;
     text-transform: capitalize;
-    color: var(--pink);
+    list-style-type: none;
+    color: #007bff;
+}
+.toc-container li{
+    margin-bottom: 1px;
+}
+.toc-container li::before{
+    font-family: 'UnifrakturMaguntia', cursive; font-size: 35px;
+    content: ".";
+    margin-right: 10px;
+    vertical-align: 4px;
 }
 
 .toc-container .link {
@@ -580,3 +590,7 @@ img {
 .quote::after{
     content: ' ""';
 }   
+
+.sidebar-2 li a:visited {
+    color: blueviolet;
+}

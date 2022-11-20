@@ -49,5 +49,12 @@ namespace MvcMovie.Controllers
             return View();
         }
        
+    public IActionResult ColorPicker()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Color Picker";
+        return View();
+    }
+    
     }
 }

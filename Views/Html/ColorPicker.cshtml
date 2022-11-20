@@ -1,0 +1,44 @@
+
+<section>
+    <h2>
+        Input Tag
+    </h2>
+    <p>
+        The <code>input</code> tag is used with the <code>type</code> attribute set to color to 
+        make an html color picker. Additionally, the default value can be 
+        set with the <code>value</code> attribute, which must be in hexadecimal. 
+    </p>
+    @{
+        string example1 = @"<input type=""color"" id=""colorPicker"" value=""#0000ff"">";
+    }
+    <pre><code class="lang-html">@example1</code></pre>
+    <p>
+        That input is then combined with a <code>label</code> tag 
+        to show the color: 
+    </p>
+    @{
+        string example2 = @"<label for=""colorPicker"">Color Picker:</label>";
+    }
+    <pre><code class="lang-html">@example2
+@example1
+</code></pre>
+   <h3>
+        Example
+   </h3>
+   <p>
+        <label id="colorValue" for="colorpicker">Choose Color:</label>
+        <input onclick="
+            document.querySelector('#colorText').style.color = 
+            document.querySelector('#colorpicker').value; 
+         
+            document.querySelector('#colorText').textContent = 
+            document.querySelector('#colorpicker').value " type="color" id="colorpicker" value="#0000ff">
+   </p>
+   <p id="colorText">
+    Color
+   </p>
+   <script>
+    document.querySelector('#colorText').style.color = document.querySelector('#colorpicker').value
+   </script>
+   
+</section>

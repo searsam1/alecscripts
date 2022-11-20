@@ -1,0 +1,79 @@
+
+<section>
+    <h2>
+        Structures (struct)
+    </h2>
+    <p>
+        Another name for structures is struct, which is the keyword used to define a 
+        new structure in <i>@ViewData["controller"]</i>. They are simple, easy and 
+        powerful to use. They take use <code>.notation</code> to access 
+        variables defined within the struct. 
+    </p>
+    <pre><code class="lang-cpp">
+// Create structure called weekdays
+struct {
+    int Monday = 0, Tuesday = 1, Wednesday = 2, 
+    Thursday = 3, Friday = 4, Saturday = 5, 
+    Sunday = 6;
+} weekdays; // <---Struct name goes here
+    </code></pre>
+    <p>
+        To access a value of a variable, use the <code>struct.var</code> syntax. 
+        In the weekdays example above, to get the value of Friday, use <code>weekdays.Friday</code> (Would return 4). 
+    </p>
+    <h3>
+        Using Different Types
+    </h3>
+    <p>
+        Another nice things about structs is they can hold a mix 
+        of types at one time, like a string, int and float. 
+    </p>
+    <pre><code class="lang-cpp">
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
+int main(){
+    // Create structure called weekdays
+    struct {
+        int age = 34;
+        std::string name = "Joe";
+        float salary = 34000.899; // in $USD
+        float height = 177.8; // in centimeters
+    } person;
+    std::cout << person.name << "\n";
+    // Joe
+    std::cout << '$' << person.salary << "\n";
+    // $34000.9
+    std::cout <<  person.height << "cm" << "\n";
+    // 177.8cm    
+}
+    </code></pre>
+    <h3>
+        Named Structs
+    </h3>
+    <p>
+        Giving a name to struct means it can be 
+        used to create other struct objects. It will be treated 
+        as its own datatype. 
+    </p>
+    <pre><code class="lang-cpp">
+#include &lt;iostream&gt;
+int main(){
+    // declare car as new data type 
+    struct car { // Named struct "car"
+        std::string make;  
+        std::string model;
+        int mileage = 0;
+        };
+    // Make new ford car
+    car ford;
+    ford.model = "f-150";
+    ford.make = "ford";
+    ford.mileage = 50000;
+
+    // Make new mazda car
+    car mazda;
+    mazda.model = "787b";
+    mazda.make = "Mazda";
+    mazda.mileage = 100000;
+}</code></pre>
+</section>
