@@ -1,6 +1,80 @@
 
 <section>
+    <h2>
+        Vectors as arrays 
+    </h2>
     <p>
-        Arrays can hold more than one object and are a container. 
+        Arrays are containers that can hold multiple objects. 
+        They are defined by the <code>std::vector</code> heading.
+        The type of each variable must be set in the declaration of 
+        the array: (<code>std::vector&lt;int&gt;</code>). 
     </p>    
+    <pre><code class="lang-cpp">#include &lt;vector&gt;
+#include &lt;iostream&gt;
+int main(){
+    std::vector&lt;int&gt; v = { 1, 2, 3 };
+    return 0;
+}</code></pre>
+    <h3>
+        Get Vector Length
+    </h3>
+    <p>
+        Use the <code>.size()</code> operator to get the length 
+        of the array, in terms of object count and not bytes.  
+    </p>
+    <pre><code class="lang-cpp">
+#include &lt;vector&gt;
+#include &lt;iostream&gt;
+int main(){  
+    std::vector<char> myCharacters = { 'a', 'b', 'c' };
+    std::cout << myCharacters.size() << "\n";
+    // 3
+}        
+    </code></pre>
 </section>
+
+
+<section>
+    <h2>
+        Actual Arrays 
+    </h2>
+    <p>
+        To make an array that is not a vector, use the <code>type arr[len] = {  }</code> syntax. 
+    </p>
+    <pre><code class="lang-cpp">std::string arr[3] = {"ele1", "ele2", "ele3"};</code></pre>
+    <p>
+        Arrays are native to C and C++, where vectors aren't built-in with C. Arrays can 
+        also be static or dynamic while vectors are always dynamic.  
+    </p>
+    <h3>
+        Omit Length
+    </h3>    
+    <p>
+        When creating a new array one can omit the length part of the syntax. 
+    </p>
+    <pre><code class="lang-cpp">
+std::string arr[] = {"ele1", "ele2", "ele3"};        
+// versus std::string arr[3]
+    </code></pre>
+    <h3>
+        Get Array Length
+    </h3>
+    <p>
+        To get the length of an array use the <code>sizeof()</code> method. It returns 
+        the length of the array in bytes, which can be divided by the length of 
+        each object to get the length of the array. 
+    </p>
+    <p>
+        For example, say there is an array with the <code>int</code> type and a
+        <code>sizeof</code> 20 bytes. The length would be five(5), because each int is four(4)
+        bytes long. Divide twenty(20) by four(4) and get five(5) ints in the array.
+    </p>
+    <pre><code class="lang-cpp">
+int myNumbers[5] = { 1, 2, 3, 4, 5 };
+cout << sizeof(myNumbers);
+// 20 [bytes]
+// 1 int = 4 bytes
+// 5 ints * 4 bytes each = 20 total bytes
+    </code></pre>
+</section>
+
