@@ -8,11 +8,19 @@ namespace MvcAlecScripts.Controllers
 {
     public class CssController : Controller
     {
+        public string controllerName = "Css";
         public IActionResult Index()
         {
             ViewData["title"] = "Home";
             ViewData["controller"] = "Css";
             return View();
         }
+    public IActionResult SlowUnderlineWithCss()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Slow Underline With Css";
+        return View();
+    }
+    
     }
 }

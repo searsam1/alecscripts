@@ -144,7 +144,7 @@ details > summary::-webkit-details-marker {
 
 
 li.nav-item {
-    border-bottom: 1px solid #f8f9fa;
+    /* border-bottom: 1px solid #f8f9fa; */
 }
 
 
@@ -593,4 +593,22 @@ img {
 
 .sidebar-2 li a:visited {
     color: blueviolet;
+}
+
+
+.box {
+    width: 200px;
+    background-color: white;
+    border-radius: 0%;
+    color: black;
+}
+.innerBox {
+    width: 0%;
+    border-bottom: 3px solid black;
+    background-color: red;
+    transition: width .75s ease-in-out;
+}
+.innerBox:hover {
+    width: 175px;
+    transition: width .75s ease-in-out;
 }

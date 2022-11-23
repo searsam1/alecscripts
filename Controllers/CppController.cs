@@ -153,5 +153,20 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult Pointers()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Pointers";
+        return View();
+    }
+    
+    
+    public IActionResult RandomNumbers()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Random Numbers";
+        return View();
+    }
+    
     }
 }

@@ -119,6 +119,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL09wZXJhdG9ycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Pointers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL1BvaW50ZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/RandomNumbers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL1JhbmRvbU51bWJlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/References.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL1JlZmVyZW5jZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -153,6 +161,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/SlowUnderlineWithCss.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL1Nsb3dVbmRlcmxpbmVXaXRoQ3NzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/Index.cshtml]

@@ -1,0 +1,143 @@
+
+<section>
+    <h2>
+        Pointers
+    </h2>
+    <p>
+        Pointers are variables that hold addresses. Every variable in C++
+        has an address, which is just a location in a computer's memory. The pointer needs to 
+        have the same type as the variable it is pointing to.
+    </p>
+    <p>
+        To define a new pointer, use the <code>*</code> operator next to the type during declaration. 
+        The variable on the right needs a <code>&</code> as well, to tell the pointer where to point in memory. 
+    </p>
+    <pre><code class="lang-cpp">
+std::string car = "Supra";  // Variable named car with type of string
+std::string* ptr = &car;    // A pointer to the car variable 
+std::cout << ptr << "\n";
+// 0x16f40f6c0
+    </code></pre>
+    <p>
+        <code>ptr</code> is now a pointer that stores the address of the car variable. 
+    </p>
+</section>
+
+<section>
+    <h2>
+        Dereferencing 
+    </h2>
+    <p>
+        To get the value at a pointers address, dereference it 
+        with the <code>*</code> operator.
+    </p>
+    <pre><code class="lang-cpp">
+std::string car = "Supra";   // Declare car variable 
+std::string* ptr = &car;    // declare new string pointer 
+std::cout << *ptr << "\n"; // dereference ptr with *
+// Supra
+    </code></pre>
+</section>
+
+<section>
+    <h2>
+        Modifying Pointer Values
+    </h2>
+    <p>
+        The value of a pointer can be changed, but it will also change 
+        the value of the original variable. 
+    </p>
+    <pre><code class="lang-cpp">
+std::string car = "Supra";   // Declare car variable 
+std::string* ptr = &car;    // declare new string pointer 
+
+*ptr = "Prius"; // change value of ptr to prius 
+std::cout << *ptr << "\n";
+// Prius
+
+std::cout << car << "\n";
+// Prius
+    </code></pre>
+    <h3>
+        const pointers
+    </h3>
+    <p>
+        In order for a pointer to be locked to read-access, 
+        use the <code>const</code> keyword before or after the type. 
+    </p>
+<pre><code class="lang-cpp">
+std::string car = "Supra";   // Declare car variable 
+const std::string* ptr = &car;    // declare new string pointer 
+
+*ptr = "Prius"; // error: const pointer cannot write to variables 
+    </code></pre>
+
+    <p>
+        Even if the pointer is read-only in relation to its variable, 
+        it can still change addresses. 
+    </p>
+    <pre><code class="lang-cpp">
+std::string car = "Supra";   
+std::string car2 = "SUV";   
+const std::string* ptr = &car;
+
+ptr = &car2; // change ptr address 
+std::cout << *ptr;
+    </code></pre>
+</section>
+
+<section>
+    <h2>
+        Pointing To Functions 
+    </h2>
+    <p>
+        Pointers can also point to functions, which is usually used for 
+        passing a function as an argument of another function. Wrap the 
+        pointer in <code>()</code> and insert an asterisk <code>*</code> before the pointer name. 
+    </p>
+    <pre><code class="lang-cpp">
+#include &lt;iostream&gt;
+int passInExample (int x, int (*function)(int))
+{
+  int g;
+  g = (*function)(x);
+  return (g);
+}        
+
+int abs(int x){
+    // for example
+    return x > 0 ? x : x * -1;
+}
+
+int main(){
+    int res = passInExample(-10, abs);
+    std::cout << res << "\n";
+    // 10
+}
+    </code></pre>
+</section>
+
+<section>
+    <h2>
+        Pointing To Other Pointers
+    </h2>
+    <p>
+        Pointing to other pointers is done through multiple asterisks <code>*</code>, depending on how 
+        deep the nesting of pointers goes. 
+    </p>
+    <pre><code class="lang-cpp">
+char a;
+char * b;
+char ** c; 
+a = 'a';
+b = &a;
+c = &b;
+
+std::cout << a << "\n";
+// a
+std::cout << *b << "\n";
+// a
+std::cout << **c << "\n";
+// a
+    </code></pre>
+</section>
