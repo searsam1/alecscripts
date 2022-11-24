@@ -56,5 +56,12 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult MathSymbols()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Math Symbols";
+        return View();
+    }
+    
     }
 }

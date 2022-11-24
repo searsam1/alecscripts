@@ -1,0 +1,60 @@
+
+<h2>
+    Create random number
+    <h3>
+        rand
+    </h3>
+    <p>
+        The <code>rand</code> function from &lt;cstdlib&gt; generates random numbers in the range 
+        0 to <code>RAND_MAX</code>. The random numbers are generated from a seed which is 
+        initialized through the <code>srand</code> function. 
+    </p>
+    <pre><code class="lang-cpp">int randomNumber = rand()</code></pre>
+    <h3>
+        srand
+    </h3>
+    <p>
+        To initialize <code>srand</code>, use the <code>time</code> function 
+        from the C time.h library, paired with <code>NULL</code> from the C stdio.h library. 
+    </p>
+    <pre><code class="lang-cpp">#include &lt;time.h&gt;       /* time */
+#include &lt;stdio.h&gt;      /*  NULL */
+
+srand (time(NULL))</code></pre>
+    <h3>
+        Change Max using Modulo
+    </h3>
+    <p>
+        A common method to generate random numbers is to 
+        take the modulo of the max of the range and add the minimum of the range.  
+    </p>
+    
+    <pre><code class="lang-cpp">/* generate random number between 1 and 1000: */
+int randomNumber;
+randomNumber = rand() % 1000 + 1;</code></pre>
+    
+<h3>
+    Example
+</h3>
+<pre><code class="lang-cpp">
+/* generate a random number example */
+#include &lt;stdio.h&gt;      /*  NULL */
+#include &lt;stdlib.h&gt;     /* srand, rand */
+#include &lt;time.h&gt;       /* time */
+#include &lt;iostream&gt;     /* cout */
+
+int main ()
+{
+  int randomNumber;
+
+  /* initialize random seed: */
+  srand (time(NULL));
+
+  /* generate random number between 1 and 100: */
+  randomNumber = rand() % 100 + 1;
+  std::cout << randomNumber << "\n";
+
+  return 0;
+}      
+    </code></pre>
+</h2>

@@ -73,7 +73,7 @@ td,
 th {
     padding-left: 10px;
     padding-right: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    
 }
 th {
     text-align: left;
@@ -562,21 +562,25 @@ img {
 }
 
 .sidebar-2{
-    max-height: 16.5%;
     list-style-type: none;   
     padding: 10px;
-    padding-top: 50px;
+    overflow-y: scroll;
     z-index: 100;
-    top: 101px;
+    top: 50px;
+    max-height: 828px;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    
+    
 }
 
 .sidebar-2 ul li {
-    color: var(--pink);
+    color: var(--black);
 
 }
 .sidebar-2 ul li a{
     color: black;
-    text-decoration: none;
+    text-decoration: none;  
 }
 .sidebar-2 ul li a:hover{
     color: var(--primary);
