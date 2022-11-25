@@ -1,0 +1,151 @@
+
+    
+    <p style="max-width: 100%; width: 100%; height: 400px;background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);">
+        <span style="font-family:  'UnifrakturMaguntia', cursive; font-size: 35px;">
+            Linear Gradient
+        </span>    
+    </p>
+    <figcaption>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#try_it">
+            FROM MDN
+        </a>
+    </figcaption>
+
+<h2>
+    Linear Gradients
+</h2>
+<pre><code class="lang-css">linear-gradient(**angle**, **color1**, **color2**, ...);</code></pre>
+<p>
+    Linear Gradients work in one direction and must have at 
+    least two(2) colors (like red to green). It then transitions 
+    from one color to the next using a gradient, and moving in the 
+    direction defined by <code>**angle</code>. 
+</p>
+<p>
+    The <code>**angle</code> argument is optional. If no angle is supplied, 
+    then it defaults to "to bottom".
+</p>
+    
+<pre><code class="lang-css">linear-gradient(red, green);</code></pre>
+
+<p class="text-white" style="margin-left: 30px;background-image: linear-gradient(red, green);">
+    Gradient Red to Green Top to Bottom
+</p>
+<h3>
+    Angle Options
+</h3>
+<h3>
+    top/bottom & left/right
+</h3>
+<p>
+    The gradient angle can compose of the word <code>to</code> and up to two more words, 
+    one indicating vertical position (top bottom) and the other horizontal (left right). 
+    The ordering does not matter, (<code>to top left</code> is the same as <code>to left top</code>). 
+</p>
+<p>
+    Both directions do not have to be specified either, for example: <code>to bottom</code> or <code>to left</code>. 
+</p>
+
+<pre><code class="lang-css">linear-gradient(to left, red, green);</code></pre>
+
+<p class="text-white" style="margin-left: 30px;background-image: linear-gradient(to left, red, green);">
+    to left
+</p>
+
+<pre><code class="lang-css">linear-gradient(to bottom left, red, green);</code></pre>
+<p class="text-white" style="margin-left: 30px;background-image: 
+linear-gradient(
+    to bottom left, red, green
+    );">
+    to bottom left
+</p>
+
+<h3>
+    Using Degrees°
+</h3>
+<p>
+    Degrees can be used as well, with the number and then <code>deg</code> for degrees. 
+</p>
+<pre><code class="lang-css">linear-gradient(45deg, red, black);</code></pre>
+
+<p class="text-white" style="margin-left: 30px;background-image: 
+linear-gradient(
+    45deg, red, black
+    );">
+    45deg, red, black
+</p>
+<p>
+    Certain degrees match the <code>to</code> values:
+</p>
+<pre><code class="lang-css">    to top = 0deg
+    to bottom = 180deg
+    to left = 270deg
+    to right = 90deg
+</code></pre>
+
+<h3>
+    Custom Stop Position 
+</h3>
+<p>
+    The gradient can be radically customized with custom break or stop points, 
+    which explicitly state where each gradient ends. A length or a percentage <code>%</code> 
+    can be used for stop points.
+</p>
+<pre><code class="lang-css">linear-gradient(45deg, red 0%, orange 25%, yellow 50%, green 75%, blue 100%);
+</code></pre>
+
+<p style="margin-left: 35px; background: linear-gradient(45deg, red 0%, orange 25%, yellow 50%, green 75%, blue 100%);">
+    Custom Stops
+</p>
+
+<p>
+    The end stops can also be specified:
+</p>
+<pre><code class="lang-css">linear-gradient(45deg, red 0% 10%, orange 10% 50%, yellow 50% 75%, green 75% 90%, blue 90% 100%);
+</code></pre>
+<p style="margin-left: 35px; background: linear-gradient(45deg, red 0% 10%, orange 10% 50%, yellow 50% 75%, green 75% 90%, blue 90% 100%);">
+    Custom Stops
+</p>
+<pre><code class="lang-css">background: linear-gradient(45deg, black 25%, yellow 25% 50%, black 50% 75%, yellow 75% 100%);</code></pre>
+<p class="text-secondary" style="margin-left: 35px; background: linear-gradient(-45deg, black 25%, yellow 25% 50%, black 50% 75%, yellow 75% 100%);">
+    example
+</p>
+<p class="text-secondary" style="margin-left: 35px; background: linear-gradient(45deg, black 25%, yellow 25% 50%, black 50% 75%, yellow 75% 100%);">
+    example
+</p>
+<h3>
+    Syntax
+</h3>
+@{
+    string str = @"<linear-gradient()> = 
+  linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )  
+
+<side-or-corner> = 
+  [ left | right ]  ||
+  [ top | bottom ]  
+
+<color-stop-list> = 
+  <linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#  
+
+<linear-color-stop> = 
+  <color>               &&
+  <length-percentage>?  
+
+<linear-color-hint> = 
+  <length-percentage>  
+
+<length-percentage> = 
+  <length>      |
+  <percentage>  
+";
+}
+
+<pre><code class="lang-text">@str</code></pre>
+<p>
+    <a class="text-primary" href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient#formal_syntax">
+        From MDN
+    </a>
+</p>
+

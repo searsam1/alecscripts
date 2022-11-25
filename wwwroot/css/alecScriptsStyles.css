@@ -3,6 +3,10 @@
   font-size: 50px;
 }
 
+.mag {
+  font-family: 'UnifrakturMaguntia', cursive; font-size: 35px;
+}
+
 .text-1 {
   font-size: 10px;
 }
@@ -2242,5 +2246,6 @@
 .btm-border-White:hover {
   color: White;
 }
+
 
 /*# sourceMappingURL=alecScriptsStyles.css.map */

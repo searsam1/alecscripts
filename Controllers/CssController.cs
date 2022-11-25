@@ -22,5 +22,33 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Gradients()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Gradients";
+        return View();
+    }
+    
+    public IActionResult Colors()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Colors";
+        return View();
+    }
+    
+    public IActionResult Comments()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Comments";
+        return View();
+    }
+    
+    public IActionResult Backgrounds()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Backgrounds";
+        return View();
+    }
+    
     }
 }
