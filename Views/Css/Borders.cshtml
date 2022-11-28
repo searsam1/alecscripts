@@ -1,0 +1,256 @@
+
+<h2>
+    Borders in CSS
+</h2>
+<p>
+    A border consists of lines on the outside of an element that help display shape and contrast. 
+    They are fully customizable with CSS, including the style, width and color of the lines. 
+</p>
+
+<p class="border border-secondary p-5">
+    Border Example
+</p>
+
+<h3>
+    Border Styles
+</h3>
+
+@{
+    string str = @"dotted - Defines a dotted border
+    dashed - Defines a dashed border
+    solid - Defines a solid border
+    double - Defines a double border
+    groove - Defines a 3D grooved border. The effect depends on the border-color value
+    ridge - Defines a 3D ridged border. The effect depends on the border-color value
+    inset - Defines a 3D inset border. The effect depends on the border-color value
+    outset - Defines a 3D outset border. The effect depends on the border-color value
+    none - Defines no border
+    hidden - Defines a hidden border";
+}
+<table>
+@foreach (string style in str.Split("\n"))
+    {
+        string name =@style.Split(" - ")[0];
+        string desc =@style.Split(" - ")[1];
+        <tr >
+            <td>
+                @name
+            </td>
+            <td>
+                <span  class="text-black" style=" border: 5px @name black">@desc </span>
+            </td>
+        </tr>   
+    }
+</table>
+
+
+@foreach (string style in str.Split("\n")){
+    string name =@style.Split(" - ")[0];
+    <div class="pt-4 text-center bg-dark m-5" style="border: @name 10px crimson;  width: 50%; height: 100px">
+        <code>border: <span style="color: crimson;">@name</span> 10px red; </code>
+    </div>
+}
+
+<h3>
+    Border Width
+</h3>
+<p>
+    Border Width Controls the thickness of each border. Each size can be controlled by units (px, pt, cm, em, ...), 
+    or by using the predefined <code>thin</code> <code>medium</code> <code>thick</code> properties. 
+</p>
+<div class="pt-4 text-center  text-light bg-dark m-5" style="border: 10px solid crimson;  width: 50%; height: 100px">
+        10px Thickness
+</div>
+<div class="pt-4 text-center  text-light bg-dark m-5" style="border: 5px solid crimson;  width: 50%; height: 100px">
+        5px Thickness
+</div>
+<div class="pt-4 text-center bg-light m-5" style="border: 1px solid crimson;  width: 50%; height: 100px">
+        1px Thickness
+</div>
+
+<div class="pt-4 text-center m-5" style="border: thin solid crimson;  width: 50%; height: 100px">
+        thin
+</div>
+<div class="pt-4 text-center  m-5" style="border: medium solid crimson;  width: 50%; height: 100px">
+        medium
+</div>
+<div class="pt-4 text-center m-5" style="border: thick solid crimson;  width: 50%; height: 100px">
+        thick
+</div>
+
+<p>
+    Each side (left, right, top, bottom) can be independently modified and combined with 
+    the other side for a cool border. 
+</p>
+<div class="pt-4 text-center m-5" style="border-bottom: thin solid crimson; border-right: medium solid crimson; border-left: thick solid crimson;  width: 50%; height: 100px">
+        border-bottom: thin solid crimson; border-right: medium solid crimson; border-left: thick solid crimson;
+</div>
+
+<h3>
+    Border Color
+</h3>
+<p>
+    The border color can be set using: 
+    <ul>
+        <li>
+            name
+            <ul>
+                <li>
+                    Ex. <code>red</code>
+                </li>
+            </ul> 
+        </li>
+        <li>
+            hex
+            <ul>
+                <li>
+                    Ex. <code>#0000FF</code>
+                </li>
+            </ul>
+        </li>
+        <li>
+            rgb
+            <ul>
+                <li>
+                    Ex. <code>rgb(0, 0, 255)</code>
+                </li>
+            </ul> 
+        </li>
+        <li>
+            hsl 
+            <ul>
+                <li>
+                    (Ex. <code>hsl(0, 0%, 0%)</code>)
+                </li>
+            </ul>
+        </li>
+    </ul>
+</p>
+<div class="pt-4 text-center m-5" style="border: 1px solid crimson;  width: 50%; height: 100px">
+       border-color: crimson
+</div>
+<div class="pt-4 text-center m-5" style="
+border: 1px solid #00FF00;  width: 50%; height: 100px">
+       border-color:  #00FF00
+</div>
+
+<div class="pt-4 text-center m-5" style="
+border: 1px solid rgb(0,0,255);  width: 50%; height: 100px">
+       border-color: <code>rgb(0, 0, 255)</code>
+</div>
+
+<div class="pt-4 text-center m-5" style="
+border: 1px solid hsl(0,0%, 0%);  width: 50%; height: 100px">
+       border-color: <code>hsl(0, 0%, 0%)</code>
+</div>
+<p>
+    The colors of each side can be different by using border-left, border-right, etc... 
+</p>
+
+<div class="pt-4 text-center m-5" style="
+border-left: 3px solid black;
+border-right: 3px solid red;
+border-bottom: 3px solid blue;
+border-top: 3px solid green;
+  width: 50%; height: 100px">
+       left black - top green - right red - bottom blue
+</div>
+
+<p>
+    Find all 140 Colors <a class="nav-link" asp-action="Colors" asp-controller="Css">Here</a>
+</p>
+
+<h3>
+    Border Sides
+</h3>
+
+    <p>
+        There are four(4) sides to each border-element: 
+    </p>
+    <ul>
+        <li>
+            border-top
+        </li>
+        <li>
+            border-right
+        </li>
+        <li>
+            border-bottom
+        </li>
+        <li>
+            border-left
+        </li>
+    </ul>
+    
+<p>
+    Each side has its own styling, being independent from the others. If border-style is 
+    defined, it acts differently based on how many arguments are supplied. 
+</p>
+<ul>
+    <li>
+        Four(4) Values
+        <ul style="border-style: dotted solid groove double; border-color: blue green purple red">
+            <li>dotted - solid - groove - double</li>
+            <li>top, right, bottom, left</li>
+            <li>Each position matches the index of the argument</li>
+            <li>top = dotted, right = solid, bottom = groove, left = double</li>
+            
+        </ul>
+    </li>
+    <li>
+        Three(3) Values
+        <ul style="border-style: dotted solid groove; border-color: blue red green">
+            <li>dotted - solid - groove</li>
+            <li>top, right -- left, bottom </li>
+            <li>Right and left share the middle argument </li>
+        </ul>
+    </li>
+    <li>
+        Two(2) Values
+        <ul style="border-style: dotted solid; border-color: red blue">
+            <li>dotted - solid</li>
+            <li>
+                top -- bottom, right -- left
+            </li>
+            <li>
+                top and bottom share the first argument, while left and right share the second
+            </li>
+        </ul>
+    </li>
+    <li>
+        One(1) Value
+        <ul style="border-style: dotted; ">
+            <li>dotted</li>
+            <li>
+                top -- bottom -- right -- left
+            </li>
+            <li>They all take on the only one(1) value</li>
+        </ul>
+    </li>
+</ul>
+<p >
+    This can be done with all the properties and not just the border-style. 
+    It also works with border-color, which is how these examples were made. 
+</p>
+
+<h3>
+    Rounded Borders
+</h3>
+<p>
+    Use <code>border-radius</code> to change how round each edge is  
+</p>
+<p class="bg-dark text-light" style="margin-left: 3%">
+    <code>border-radius: 0px;</code>
+</p>
+<p class="bg-dark text-light" style="margin-left: 3%;border-radius: 4px;">
+    <code>border-radius: 4px;</code>
+</p>
+<p class="bg-dark text-light" style="margin-left: 3%; border-radius: 5px;">
+    <code>border-radius: 5px;</code>
+</p>
+<p class="bg-dark text-light" style="margin-left: 3%; border-radius: 10px;">
+    <code>border-radius: 10px;</code>
+</p>
+<p class="bg-dark text-light" style="margin-left: 3%; border-radius: 20px;">
+    <code>border-radius: 20px;</code>
+</p>

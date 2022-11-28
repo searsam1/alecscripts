@@ -50,5 +50,75 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Borders()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Borders";
+        return View();
+    }
+    
+    public IActionResult Margins()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Margins";
+        return View();
+    }
+    
+    public IActionResult Padding()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Padding";
+        return View();
+    }
+    
+    public IActionResult HeightAndWidth()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Height And Width";
+        return View();
+    }
+    
+    public IActionResult BoxModel()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Box Model";
+        return View();
+    }
+    
+    public IActionResult Outline()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Outline";
+        return View();
+    }
+    
+    public IActionResult Text()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Text";
+        return View();
+    }
+    
+    public IActionResult Fonts()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Fonts";
+        return View();
+    }
+    
+    public IActionResult Icons()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Icons";
+        return View();
+    }
+    
+    public IActionResult Links()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Links";
+        return View();
+    }
+    
     }
 }

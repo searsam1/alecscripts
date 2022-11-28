@@ -1,0 +1,119 @@
+
+<h2>
+    Margin
+</h2>
+<p>
+    Margin is the space between elements. A higher margin means 
+    more space between the elements, which can be controlled on 
+    all sides. 
+</p>
+
+<div style="margin-left: 3%;" class="row">
+    <div  style="font-size: .8em;" class="col-sm-1 bg-light mx-3">
+       Margin ->
+       Margin ->
+       Margin ->
+    </div>
+    <div  class="col-sm-1 bg-info text-info">
+        2
+    </div>
+    <div  style="font-size: .8em;" class="col-sm-1 bg-light mx-5">
+       Margin ->
+       Margin ->
+       Margin ->
+    </div>
+    <div  class="col-sm-1 bg-info text-info">
+        4
+    </div>
+</div>
+
+<h2>
+    Margin Sides & order
+</h2>
+<p>
+    Margin is the shorthand for all the margin sides (left, right, top, bottom)
+</p>
+<ul>
+    <li>margin-top</li>
+    <li>margin-right</li>
+    <li>margin-bottom</li>
+    <li>margin-left</li>
+</ul>
+
+<p>
+    If one(1) value is supplied, all sides will take on that property. If only 
+    two(2) are supplied, top and bottom will share the first and left and right 
+    will share the second. Three(3) will have the top take on the first, 
+    left and right will share the second, and bottom will take the third. If four(4)
+    are given, the order goes:
+    <ul>
+        <li>
+            top
+        </li>
+        <li>
+            right
+        </li>
+        <li>
+            bottom
+        </li>
+        <li>
+            left
+        </li>
+    </ul>
+</p>
+
+<h3>
+    Margin Example
+</h3>
+
+<button class="btn btn-info text-light" onclick="fn('target-1') ">
+    Move
+</button>
+<div class="row">
+    <div class="col-sm-1">
+        <div class="bg-dark" style=" width: 100px; height: 100px"></div>
+    </div>
+    <div class="col-sm-1">
+        <div class="bg-dark" style=" width: 100px; height: 100px"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-1">
+        <div class="bg-dark" style=" width: 100px; height: 100px"></div>
+    </div>
+    <div class="col-sm-1">
+        <div id="target-1" class="text-light bg-info" style="margin: 50px; width: 100px; height: 100px">
+            margin: 50px;
+        </div>
+    </div>
+    
+</div>
+
+<div class="row">
+    <div class="col-sm-1">
+        <div class="bg-dark" style=" width: 100px; height: 100px"></div>
+    </div>
+    <div class="col-sm-1">
+        <div class="bg-dark" style=" width: 100px; height: 100px"></div>
+    </div>
+</div>
+
+
+<script>
+    function fn(t){
+        let target = document.querySelector("#" + t)
+        target.style.margin =  target.style.margin == "50px" ? "0px" : "50px" ;
+        target.textContent = "margin: " +  target.style.margin + ";";
+    }    
+</script>
+
+<style>
+
+    #target-1 {
+        transition: margin 1s;
+    }
+    #target-2 {
+        transition: margin 1s;
+    }
+
+</style>

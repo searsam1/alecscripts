@@ -75,8 +75,6 @@ p {
     ">
     opacity: 60%
 </p>
-<p class="styleBox">
-</p>
 <pre><code class="lang-css">
     p {background: 
         linear-gradient(
@@ -86,6 +84,9 @@ p {
             rgb(255,0,0, 1) 90% 100%
         )}
 </code></pre>
+<p class="styleBox">
+</p>
+
 
 <style>
     .styleBox {
@@ -141,10 +142,10 @@ p {
 <h3>
     Python Logo Example
 </h3>
-<div class="shadow-sm rounded-3" style="width: 46.55%; background-repeat: repeat-x; border: 1px solid rgb(1,1,1,.1);  height: 200px; margin-left: 3%; background-image: url('/lib/Resources/python-logo-only.svg');">
+<div class="shadow-sm rounded-3" style="width: fit-content; background-repeat: repeat-x; border: 1px solid rgb(1,1,1,.1);  height: 200px; margin-left: 3%; background-image: url('/lib/Resources/python-logo-only.svg');">
     <div style="position: relative; bottom: -80%">
         <center>
-            Python Logo Example
+            <code>background-image: url("python-logo-only.svg");</code>
         </center>
     </div>
 </div>
@@ -152,13 +153,37 @@ p {
 <h3>
     Rome Example
 </h3>
-<div class="shadow-sm rounded-3" style="background-position: right bottom; width: 46.55%; background-repeat: repeat-x; border: 1px solid rgb(1,1,1,.1);  height: 200px; margin-left: 3%; 
+<pre><code class="lang-css">p {
+    background-image: url("rome-g7da2215cf_1920.jpeg");
+    }
+</code></pre>
+<div class="shadow-sm rounded-3" style="background-position: right bottom; width: fit-content; background-repeat: repeat-x; border: 1px solid rgb(1,1,1,.1);  height: 200px; margin-left: 3%; 
 background-image: url('/lib/Resources/rome-g7da2215cf_1920.jpeg');">
-    <div style="position: relative; left: 10%; bottom: -80%; color: yellow;">
-      
+    <div style="position: relative; bottom: -80%; color: white;">
             <span class="mag">
                 Rome Example
             </span>
       
+    </div>
+</div>
+
+<h2>
+    background-repeat
+</h2>
+<p>
+    The <code>background-repeat</code> property controls vertical and horizontal repeating 
+    of an image, but can also disable repeating all together. 
+</p>
+<p>
+    To repeat only vertically, use <code>background-repeat: repeat-y</code>, and 
+    <code>background-repeat: repeat-x</code> for horizontal repeating. 
+</p>
+<p>
+    <code>background-repeat: no-repeat;</code> disables repeating. 
+</p>
+
+<div class="shadow-sm rounded-3 " style="width: fit-content; background-repeat: no-repeat; border: 1px solid rgb(1,1,1,.1);  height: 200px; margin-left: 3%; background-image: url('/lib/Resources/python-logo-only.svg');">
+    <div style="position: relative; bottom: -80%; ">
+        <code>background-repeat: no-repeat;</code>
     </div>
 </div>

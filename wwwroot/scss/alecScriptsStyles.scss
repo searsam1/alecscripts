@@ -58,22 +58,3 @@ $background-color: black;
         background-color: red;
     }
   }
-
-@each $color, $hex in $colors{
-    .btm-border-#{$color}{
-        border-bottom: 1px solid #{$color};
-    }
-    .btm-border-#{$color}:hover{
-        color: #{$color};
-    }
-}
-
-@for $i from 1 through 100 {
-    .testing {
-        background: linear-gradient(
-            45deg, rgb(255,0,0, math.div($i, 100))
-        );
-    }
-    
-    
-  }

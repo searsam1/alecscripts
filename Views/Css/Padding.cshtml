@@ -1,0 +1,78 @@
+
+<h2>
+    Padding
+</h2>
+<pre><code class="lang-css">/* Syntax */
+padding: 1em;</code></pre>
+<p>
+    Padding controls the space within an element, unlike margin which controls the space 
+    around the element. <code>padding</code> is short hand for the padding on all sides. 
+
+    <div class="btn btn-info text-light">
+        Normal Padding
+    </div>
+    <div class="btn btn-info p-3 text-light">
+        Increased Padding 
+    </div>
+    <div class="btn btn-info p-0 text-light">
+        No Padding 
+    </div>
+</p>
+
+
+<p>
+    If one(1) value is supplied, all sides will take on that property. If only 
+    two(2) are supplied, top and bottom will share the first and left and right 
+    will share the second. Three(3) will have the top take on the first, 
+    left and right will share the second, and bottom will take the third. If four(4)
+    are given, the order goes:
+    <ul>
+        <li>
+            top
+        </li>
+        <li>
+            right
+        </li>
+        <li>
+            bottom
+        </li>
+        <li>
+            left
+        </li>
+    </ul>
+</p>
+
+<pre><code class="lang-css">p {
+    padding: 10px 20px 30px 40px; 
+}
+/* 
+padding-top: 10px; 
+padding-right: 20px;
+padding-bottom: 30px;
+padding-left: 40px;
+*/
+</code></pre>
+
+<p>
+    <p>
+        <div class="btn btn-info px-5 py-4">
+            padding on x & y axis
+        </div>
+    </p>
+    <p>
+        <div class="btn btn-info px-5 py-1">
+            padding on x axis
+        </div>
+    </p>
+    <p>
+        <div class="btn btn-info px-1 py-4">
+            padding on y axis
+        </div>
+    </p>
+    <p>
+        <div class="btn btn-dark" style="padding: 1px 10px 20px 40px;">
+            <code>padding: 1px 10px 20px 40px;</code>
+        </div>
+    </p>
+</p>
+

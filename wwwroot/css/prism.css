@@ -26,7 +26,7 @@ pre[class*=language-] {
 }
 
 pre:not(code) {
-    border-top: 7px solid var(--pink);
+    border-top: 7px solid silver;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -65,7 +65,8 @@ pre[class*=language-] {
 :not(pre)>code[class*=language-],
 pre[class*=language-] {
     color: white;
-    background-color: rgb(0,0,0,.93);
+    /* background-color: rgb(0,0,0,.93); */
+    background: linear-gradient(225deg, rgb(1,1,1,.85), black);
 
 }
 

@@ -1,0 +1,110 @@
+
+
+<h2>
+    Height
+</h2>
+
+<p class="bg-dark rounded-3 shadow-sm">
+    <code>height: &lt;value&gt;</code>
+</p>
+<p>
+    The height property defines an element's height if <code>box-sizing</code> is not set to <code>border-box</code>; if it is,  
+    the border area height will be set. 
+</p>
+
+<style>
+    .box-sm {
+        width: 100px;
+        height: 100px;
+
+        background: linear-gradient(45deg, black, grey);
+        color: white;
+        transition: all .5s;
+
+        border-radius: 5px;
+    }
+</style>
+
+<button class="btn border mb-2" onclick="changeHeight('#box-1', '200px')">
+    200 px
+</button>
+
+<button class="btn  border mb-2" onclick="changeHeight('#box-1', '10em')">
+    10em
+</button>
+
+<button class="btn  border mb-2" onclick="changeHeight('#box-1', '20em')">
+    20em
+</button>
+
+<button class="btn  border mb-2" onclick="changeHeight('#box-1', 'auto')">
+    Auto
+</button>
+
+<p class=" box-sm" id="box-1">100px</p>
+
+<div style=" width: 200px; height: 400px" class="bg-dark text-light rounded-3 shadow-sm text-center">
+    <code>400px</code>
+    <div style="width: 200px; height: 300px" class="bg-secondary text-light rounded-3 shadow-sm text-center">
+        <code>300px</code>
+        <div style="width: 200px; height: 200px" class="bg-warning text-light rounded-3 shadow-sm text-center">
+            <code>200px</code>
+            <div style="opacity:40%; width: 200px; height: 100px" class="bg-white text-light rounded-3 shadow-sm text-center">
+                <code>100px</code>
+            </div>
+        </div>
+    </div>
+</div>
+
+<pre><code class="lang-css">p {
+    height: 100px;
+}
+#box-container {
+    height: 10em;
+}
+</code></pre>
+
+
+
+
+<h2>
+    Width
+</h2>
+
+<p class="bg-dark rounded-3 shadow-sm">
+    <code>width: &lt;value&gt;</code>
+</p>
+
+<p>
+    The width property controls the width of the element, but like the height property, if border-box is set to box-sizing, it 
+    will change the border width.  
+</p>
+
+<div style="width: 400px; height: 200px" class="bg-dark text-light rounded-3 shadow-sm text-center">
+    &lt;------------------ <code>400px</code> ------------------&gt;
+</div>
+<br>
+
+<div style="width: 300px; height: 200px" class="bg-dark text-light rounded-3 shadow-sm text-center">
+    &lt;--------- <code>300px</code> ---------&gt;
+</div>
+<br>
+<div style="width: 200px; height: 200px" class="bg-dark text-light rounded-3 shadow-sm text-center">
+    &lt;--- <code>200px</code> ---&gt;
+</div>
+<br>
+<div style="width: 100px; height: 200px" class="bg-dark text-light rounded-3 shadow-sm text-center">
+    <code>100px</code>
+</div>
+
+
+
+<script>
+    function changeHeight(element_id, height){
+        element = document.querySelector(element_id)
+        element.style.height = height; 
+        element.textContent = element.style.height;
+    }
+</script>
+
+

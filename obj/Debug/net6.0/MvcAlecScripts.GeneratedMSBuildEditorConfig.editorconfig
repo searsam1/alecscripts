@@ -163,6 +163,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL0JhY2tncm91bmRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/Borders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL0JvcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/BoxModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL0JveE1vZGVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/Colors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL0NvbG9ycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -171,16 +179,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL0NvbW1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/Fonts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL0ZvbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/Gradients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL0dyYWRpZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/HeightAndWidth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL0hlaWdodEFuZFdpZHRoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/Icons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL0ljb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/Links.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL0xpbmtzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/Margins.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL01hcmdpbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/Outline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL091dGxpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/Padding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL1BhZGRpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/SlowUnderlineWithCss.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL1Nsb3dVbmRlcmxpbmVXaXRoQ3NzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Css/Text.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3NzL1RleHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/Index.cshtml]

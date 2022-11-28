@@ -11,7 +11,7 @@ namespace MvcMovie.Controllers
     
     public class DotnetController : Controller
     {
-        public string controllerName = "Dotnet";
+        public string controllerName = ".NET";
         public IActionResult Index()
         {
             ViewData["controller"] = controllerName;

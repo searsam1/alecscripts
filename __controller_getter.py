@@ -22,10 +22,26 @@ def title_split(s):
     string = (s[0] + res).title() 
     return string if string != "Index" else "Home"
 
+def replace_specials(txt):
+    """
+    Replace normal characters with special characters for display. 
+    
+    Ex. 
+    Cpp -> C++
+    
+    """
+
+    specials = {
+        "Cpp" : "C++", 
+        "Dotnet" : ".NET", 
+    }
+    for k,v in specials.items():
+        txt = txt.replace(k, v)
+    return txt 
 
 def asp_link(controller, action):
-    controller_label = controller.replace("Cpp", "C++")
-    action_label = title_split(action).replace("Cpp", "C++")
+    controller_label = replace_specials(controller)
+    action_label = replace_specials(title_split(action))
     string = f"""
     
         <a class="sidebar-link" asp-action={action} asp-controller={controller}>
@@ -61,12 +77,17 @@ def get_controls():
     string = ""
     lst = []
 
+    # sort controllers 
     controls = sorted(controls)
+
+    # move home to the top
+    controls.pop(controls.index("HomeController.cs"))
+    controls = ["HomeController.cs"] + controls
     for control in controls:
         string += (f'<details>')
         string += f"""
         <summary>
-            {control.split("Controller.cs")[0].title().replace("Cpp", "C++")}
+            {replace_specials(control.split("Controller.cs")[0].title())}
         </summary>
         """.replace("\n", "")
 
