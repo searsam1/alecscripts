@@ -1,0 +1,201 @@
+
+<h2>
+    The Box Model
+</h2>
+
+<p>
+    Each box model in CSS contains a:
+    <ul>
+        <li>
+            margin box
+        </li>
+        <li>
+            border box 
+        </li>
+        <li>
+            padding box 
+        </li>
+        <li>
+            content box 
+        </li>
+    </ul>
+    <img alt="Box Model Example" width="310" height="249" src="~/lib/Resources/css-box-outline.png" /> 
+    <figcaption>
+        Box Model Example
+    </figcaption>
+</p>
+
+<p>
+    The margin box is on the outside and every other element is nested inside it. 
+    The border is the next layer, wrapping around the padding of the content box. 
+</p>
+<p>
+    The content box is where the information is placed: text, images and so on. 
+</p>
+
+<!-- Margin Box -->
+<div class="rounded-3" style="margin-left: 3%; border: 2px dashed black; max-width: 300px;">
+    <!-- Border -->
+    <div style="max-width: 300px; border: 1px solid rgb(242, 197, 148); background: rgb(242, 197, 148);">
+        <!-- Padding -->
+        <div class="text-center" style="max-width: 300px; border: 20px solid rgb(247, 217, 144); margin: 20px; padding: 20px; background: rgb(185, 203, 124);">
+            <!-- Content -->
+            - <span style="border: 1px solid black; background: rgb(132,172,182)">Content Box</span> -            
+        </div>
+    </div>
+</div>
+
+@{
+    string s = @"<!-- Margin Box -->
+<div class=""rounded-3"" style=""margin-left: 3%; border: 2px dashed black; max-width: 300px;"">
+    <!-- Border -->
+    <div style=""max-width: 300px; border: 1px solid rgb(242, 197, 148); background: rgb(242, 197, 148);"">
+        <!-- Padding -->
+        <div class=""text-center"" style=""max-width: 300px; border: 20px solid rgb(247, 217, 144); margin: 20px; padding: 20px; background: rgb(185, 203, 124);"">
+            <!-- Content -->
+            - <span style=""border: 1px solid black; background: rgb(132,172,182)"">Content Box</span> -            
+        </div>
+    </div>
+</div>";
+}
+
+<pre><code class="lang-html">@s
+</code></pre>
+<figcaption style="margin-top: 10px; margin-left: 3%;">
+    CSS content box source code
+</figcaption>
+
+<h2>
+    margin box
+</h2>
+<p>
+    The margin box contains the margin which is the outer shell surrounding 
+    the element. The red box below represents the margin of the content box. 
+</p>
+<!-- Margin Box -->
+<div class="rounded-3" style="margin-left: 3%; border: 2px dashed black; max-width: 300px;">
+    <!-- Border -->
+    <div class="rounded-3" style="max-width: 300px; border: 1px solid rgb(242, 197, 148); background: red; ">
+        <!-- Padding -->
+        <div class="text-center" style="max-width: 300px; border: 20px solid rgb(247, 217, 144); margin: 20px; padding: 20px; background: rgb(185, 203, 124);">
+            <!-- Content -->
+            - <span style="border: 1px solid black; background: rgb(132,172,182)">Content Box</span> -            
+        </div>
+    </div>
+</div>
+<figcaption style="margin-top: 10px; margin-left: 3%;">
+    Margin-box is the red
+</figcaption>
+<pre><code class="lang-css">p {
+    margin: 10px; /* Apply to all sides */
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    /* margin-top: 10px; */
+    /* margin-center: 10px; */
+}
+</code></pre>
+<figcaption style="margin-top: 10px; margin-left: 3%;">
+    Margin Example
+</figcaption>
+<p>
+    Margin is the space around an element and its neighbors. Learn more 
+    about margin <a asp-controller="Css" asp-action="Margins">here</a>. 
+</p>
+
+<h2>
+    border box
+</h2>
+<p>
+    The border-box represents the border of the element: a rectangle of color 
+    that wraps the element, but is still inside the margin-box. Borders are fully 
+    customizable with CSS.  
+</p>
+<!-- Margin Box -->
+<div class="rounded-3" style="margin-left: 3%; border: 2px dashed black; max-width: 300px;">
+    <!-- Border -->
+    <div style="max-width: 300px; border: 1px solid rgb(242, 197, 148); background: rgb(242, 197, 148);">
+        <!-- Padding -->
+        <div class="text-center" style="max-width: 300px; border: 20px solid red; margin: 20px; padding: 20px; background: rgb(185, 203, 124);">
+            <!-- Content -->
+            - <span style="border: 1px solid black; background: rgb(132,172,182)">Content Box</span> -            
+        </div>
+    </div>
+</div>
+<figcaption style="margin-top: 10px; margin-left: 3%;">
+    Border-box in red
+</figcaption>
+
+<pre><code class="lang-css">p {
+    border: 10px solid red; /* Apply to all sides */
+    /* border-left: 10px solid red; */
+    /* border-right: 10px dashed red; */
+    /* border-top: 10px dotted red; */
+    /* border-center: 10px double red; */
+}
+</code></pre>
+<figcaption style="margin-top: 10px; margin-left: 3%;">
+    Border Example
+</figcaption>
+
+<p>
+    Learn more about borders <a asp-controller="Css" asp-action="Borders">here</a>. 
+</p>
+
+<h2>
+    padding box
+</h2>
+<p>
+    Padding is the space inside the element and separates the border from 
+    the content box. It generally makes text more readable. 
+</p>
+<!-- Margin Box -->
+<div class="rounded-3" style="margin-left: 3%; border: 2px dashed black; max-width: 300px;">
+    <!-- Border -->
+    <div style="max-width: 300px; border: 1px solid rgb(242, 197, 148); background: rgb(242, 197, 148);">
+        <!-- Padding -->
+        <div class="text-center" style="max-width: 300px; border: 20px solid rgb(247, 217, 144); margin: 20px; padding: 20px; background: red;">
+            <!-- Content -->
+            - <span style="border: 1px solid black; background: rgb(132,172,182)">Content Box</span> -            
+        </div>
+    </div>
+</div>
+<figcaption style="margin-top: 10px; margin-left: 3%;">
+    Padding-box in red
+</figcaption>
+<pre><code class="lang-css">p {
+    padding: 10px ; /* Apply to all sides */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* padding-top: 10px; */
+    /* padding-center: 10px; */
+}
+</code></pre>
+<figcaption style="margin-top: 10px; margin-left: 3%;">
+    padding Example
+</figcaption>
+<p>
+    Learn more about padding <a asp-controller="Css" asp-action="padding">here</a>. 
+</p>
+
+<h2>
+    content box
+</h2>
+<p>
+    The content box holds the text of the element. It is the main content. This can 
+    be images, text, buttons, icons, etc..
+</p>
+<!-- Margin Box -->
+<div class="rounded-3" style="margin-left: 3%; border: 2px dashed black; max-width: 300px;">
+    <!-- Border -->
+    <div style="max-width: 300px; border: 1px solid rgb(242, 197, 148); background: rgb(242, 197, 148);">
+        <!-- Padding -->
+        <div class="text-center" style="max-width: 300px; border: 20px solid rgb(247, 217, 144); margin: 20px; padding: 20px; background: rgb(185, 203, 124);">
+            <!-- Content -->
+            - <b><span style="border: 1px solid black; background: red">Content Box</span></b> -            
+        </div>
+    </div>
+</div>
+
+<figcaption style="margin-top: 10px; margin-left: 3%;">
+    Content-box in red
+</figcaption>

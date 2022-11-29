@@ -19,31 +19,320 @@
 <h2 class="display-6">
     Links
 </h2>
-
-<ul id="CodingLinks">
-    
-    @foreach (string codingLang in CodingLangs)
-    {
-        <li>
-            <a class="nav-link text-dark" asp-action="index" asp-controller="@codingLang">
-                @codingLang
-            </a>
-        </li>
-    }
-</ul>
-<style>
-    a.nav-link.text-dark{
-        border-bottom:2px solid rgb(247, 248, 249); 
-        transition: border-bottom .25s;
-    }
-
-    a.nav-link.text-dark:hover{
-        border-bottom:2px solid crimson;
-        transition: border-bottom .25s;
-        
-    }
-    #CodingLinks{
-        list-style-type: upper-roman;
-        color: crimson;
-    }
-</style>
+<h2><button class="btn btn-dark" >Home</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Home>
+    Home Home
+</a>
+<a class="btn btn-light m-2" asp-action=Privacy asp-controller=Home>
+    Home Privacy
+</a>
+<a class="btn btn-light m-2" asp-action=CodeTut asp-controller=Home>
+    Home Code Tut
+</a>
+<h2><button class="btn btn-dark" >Js</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Js>
+    Js Home
+</a>
+<a class="btn btn-light m-2" asp-action=GetMonth asp-controller=Js>
+    Js Get Month
+</a>
+<a class="btn btn-light m-2" asp-action=ExpressionsOperators asp-controller=Js>
+    Js Expressions Operators
+</a>
+<a class="btn btn-light m-2" asp-action=BinaryArrayToDecimal asp-controller=Js>
+    Js Binary Array To Decimal
+</a>
+<a class="btn btn-light m-2" asp-action=ToFixed asp-controller=Js>
+    Js To Fixed
+</a>
+<a class="btn btn-light m-2" asp-action=Json asp-controller=Js>
+    Js Json
+</a>
+<a class="btn btn-light m-2" asp-action=RandomColorCreater asp-controller=Js>
+    Js Random Color Creater
+</a>
+<a class="btn btn-light m-2" asp-action=AlternateTableRows asp-controller=Js>
+    Js Alternate Table Rows
+</a>
+<h2><button class="btn btn-dark" >C++</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Cpp>
+    C++ Home
+</a>
+<a class="btn btn-light m-2" asp-action=CPPversionHistory asp-controller=Cpp>
+    C++ C++version History
+</a>
+<a class="btn btn-light m-2" asp-action=Comments asp-controller=Cpp>
+    C++ Comments
+</a>
+<a class="btn btn-light m-2" asp-action=Variables asp-controller=Cpp>
+    C++ Variables
+</a>
+<a class="btn btn-light m-2" asp-action=UserInput asp-controller=Cpp>
+    C++ User Input
+</a>
+<a class="btn btn-light m-2" asp-action=DataTypes asp-controller=Cpp>
+    C++ Data Types
+</a>
+<a class="btn btn-light m-2" asp-action=Operators asp-controller=Cpp>
+    C++ Operators
+</a>
+<a class="btn btn-light m-2" asp-action=AssignmentOperators asp-controller=Cpp>
+    C++ Assignment Operators
+</a>
+<a class="btn btn-light m-2" asp-action=ComparisonOperators asp-controller=Cpp>
+    C++ Comparison Operators
+</a>
+<a class="btn btn-light m-2" asp-action=Strings asp-controller=Cpp>
+    C++ Strings
+</a>
+<a class="btn btn-light m-2" asp-action=Math asp-controller=Cpp>
+    C++ Math
+</a>
+<a class="btn btn-light m-2" asp-action=Booleans asp-controller=Cpp>
+    C++ Booleans
+</a>
+<a class="btn btn-light m-2" asp-action=Conditions asp-controller=Cpp>
+    C++ Conditions
+</a>
+<a class="btn btn-light m-2" asp-action=TernaryOperator asp-controller=Cpp>
+    C++ Ternary Operator
+</a>
+<a class="btn btn-light m-2" asp-action=SwitchStatement asp-controller=Cpp>
+    C++ Switch Statement
+</a>
+<a class="btn btn-light m-2" asp-action=WhileLoop asp-controller=Cpp>
+    C++ While Loop
+</a>
+<a class="btn btn-light m-2" asp-action=ForLoop asp-controller=Cpp>
+    C++ For Loop
+</a>
+<a class="btn btn-light m-2" asp-action=BreakAndContinue asp-controller=Cpp>
+    C++ Break And Continue
+</a>
+<a class="btn btn-light m-2" asp-action=Arrays asp-controller=Cpp>
+    C++ Arrays
+</a>
+<a class="btn btn-light m-2" asp-action=Structures asp-controller=Cpp>
+    C++ Structures
+</a>
+<a class="btn btn-light m-2" asp-action=References asp-controller=Cpp>
+    C++ References
+</a>
+<a class="btn btn-light m-2" asp-action=Pointers asp-controller=Cpp>
+    C++ Pointers
+</a>
+<a class="btn btn-light m-2" asp-action=RandomNumbers asp-controller=Cpp>
+    C++ Random Numbers
+</a>
+<h2><button class="btn btn-dark" >Python</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Python>
+    Python Home
+</a>
+<a class="btn btn-light m-2" asp-action=Password asp-controller=Python>
+    Python Password
+</a>
+<a class="btn btn-light m-2" asp-action=swapcase asp-controller=Python>
+    Python Swapcase
+</a>
+<a class="btn btn-light m-2" asp-action=vars asp-controller=Python>
+    Python Vars
+</a>
+<a class="btn btn-light m-2" asp-action=abs asp-controller=Python>
+    Python Abs
+</a>
+<a class="btn btn-light m-2" asp-action=funnyNumbers asp-controller=Python>
+    Python Funny Numbers
+</a>
+<a class="btn btn-light m-2" asp-action=stringFormattingTypes asp-controller=Python>
+    Python String Formatting Types
+</a>
+<a class="btn btn-light m-2" asp-action=controllerGetter asp-controller=Python>
+    Python Controller Getter
+</a>
+<a class="btn btn-light m-2" asp-action=Comments asp-controller=Python>
+    Python Comments
+</a>
+<a class="btn btn-light m-2" asp-action=Syntax asp-controller=Python>
+    Python Syntax
+</a>
+<a class="btn btn-light m-2" asp-action=VariableNames asp-controller=Python>
+    Python Variable Names
+</a>
+<a class="btn btn-light m-2" asp-action=VariableValues asp-controller=Python>
+    Python Variable Values
+</a>
+<a class="btn btn-light m-2" asp-action=VariableOutput asp-controller=Python>
+    Python Variable Output
+</a>
+<a class="btn btn-light m-2" asp-action=VariableGlobals asp-controller=Python>
+    Python Variable Globals
+</a>
+<a class="btn btn-light m-2" asp-action=DataTypes asp-controller=Python>
+    Python Data Types
+</a>
+<a class="btn btn-light m-2" asp-action=Numbers asp-controller=Python>
+    Python Numbers
+</a>
+<a class="btn btn-light m-2" asp-action=Modules asp-controller=Python>
+    Python Modules
+</a>
+<a class="btn btn-light m-2" asp-action=ReFlags asp-controller=Python>
+    Python Re Flags
+</a>
+<a class="btn btn-light m-2" asp-action=Casting asp-controller=Python>
+    Python Casting
+</a>
+<h2><button class="btn btn-dark" >Git</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Git>
+    Git Home
+</a>
+<h2><button class="btn btn-dark" >Go</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Go>
+    Go Home
+</a>
+<h2><button class="btn btn-dark" >Glossary</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Glossary>
+    Glossary Home
+</a>
+<h2><button class="btn btn-dark" >Bash</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Bash>
+    Bash Home
+</a>
+<a class="btn btn-light m-2" asp-action=Variables asp-controller=Bash>
+    Bash Variables
+</a>
+<a class="btn btn-light m-2" asp-action=PrintVariables asp-controller=Bash>
+    Bash Print Variables
+</a>
+<a class="btn btn-light m-2" asp-action=Bashrc asp-controller=Bash>
+    Bash Bashrc
+</a>
+<a class="btn btn-light m-2" asp-action=Comments asp-controller=Bash>
+    Bash Comments
+</a>
+<a class="btn btn-light m-2" asp-action=Lowercase asp-controller=Bash>
+    Bash Lowercase
+</a>
+<a class="btn btn-light m-2" asp-action=Uppercase asp-controller=Bash>
+    Bash Uppercase
+</a>
+<a class="btn btn-light m-2" asp-action=StringLength asp-controller=Bash>
+    Bash String Length
+</a>
+<a class="btn btn-light m-2" asp-action=SplitString asp-controller=Bash>
+    Bash Split String
+</a>
+<a class="btn btn-light m-2" asp-action=Substring asp-controller=Bash>
+    Bash Substring
+</a>
+<a class="btn btn-light m-2" asp-action=AppendString asp-controller=Bash>
+    Bash Append String
+</a>
+<a class="btn btn-light m-2" asp-action=FileNames asp-controller=Bash>
+    Bash File Names
+</a>
+<a class="btn btn-light m-2" asp-action=Tips asp-controller=Bash>
+    Bash Tips
+</a>
+<h2><button class="btn btn-dark" >Css</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Css>
+    Css Home
+</a>
+<a class="btn btn-light m-2" asp-action=SlowUnderlineWithCss asp-controller=Css>
+    Css Slow Underline With Css
+</a>
+<a class="btn btn-light m-2" asp-action=Gradients asp-controller=Css>
+    Css Gradients
+</a>
+<a class="btn btn-light m-2" asp-action=Colors asp-controller=Css>
+    Css Colors
+</a>
+<a class="btn btn-light m-2" asp-action=Comments asp-controller=Css>
+    Css Comments
+</a>
+<a class="btn btn-light m-2" asp-action=Backgrounds asp-controller=Css>
+    Css Backgrounds
+</a>
+<a class="btn btn-light m-2" asp-action=Borders asp-controller=Css>
+    Css Borders
+</a>
+<a class="btn btn-light m-2" asp-action=Margins asp-controller=Css>
+    Css Margins
+</a>
+<a class="btn btn-light m-2" asp-action=Padding asp-controller=Css>
+    Css Padding
+</a>
+<a class="btn btn-light m-2" asp-action=HeightAndWidth asp-controller=Css>
+    Css Height And Width
+</a>
+<a class="btn btn-light m-2" asp-action=BoxModel asp-controller=Css>
+    Css Box Model
+</a>
+<a class="btn btn-light m-2" asp-action=Outline asp-controller=Css>
+    Css Outline
+</a>
+<a class="btn btn-light m-2" asp-action=Text asp-controller=Css>
+    Css Text
+</a>
+<a class="btn btn-light m-2" asp-action=Fonts asp-controller=Css>
+    Css Fonts
+</a>
+<a class="btn btn-light m-2" asp-action=Icons asp-controller=Css>
+    Css Icons
+</a>
+<a class="btn btn-light m-2" asp-action=Links asp-controller=Css>
+    Css Links
+</a>
+<h2><button class="btn btn-dark" >Html</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Html>
+    Html Home
+</a>
+<a class="btn btn-light m-2" asp-action=Tags asp-controller=Html>
+    Html Tags
+</a>
+<a class="btn btn-light m-2" asp-action=Colors asp-controller=Html>
+    Html Colors
+</a>
+<a class="btn btn-light m-2" asp-action=BasicExample asp-controller=Html>
+    Html Basic Example
+</a>
+<a class="btn btn-light m-2" asp-action=Comments asp-controller=Html>
+    Html Comments
+</a>
+<a class="btn btn-light m-2" asp-action=CSS asp-controller=Html>
+    Html Css
+</a>
+<a class="btn btn-light m-2" asp-action=ColorPicker asp-controller=Html>
+    Html Color Picker
+</a>
+<a class="btn btn-light m-2" asp-action=MathSymbols asp-controller=Html>
+    Html Math Symbols
+</a>
+<h2><button class="btn btn-dark" >.NET</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Dotnet>
+    .NET Home
+</a>
+<a class="btn btn-light m-2" asp-action=RandomNumber asp-controller=Dotnet>
+    .NET Random Number
+</a>
+<h2><button class="btn btn-dark" >Java</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Java>
+    Java Home
+</a>
+<a class="btn btn-light m-2" asp-action=Comments asp-controller=Java>
+    Java Comments
+</a>
+<h2><button class="btn btn-dark" >Sass</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=Sass>
+    Sass Home
+</a>
+<a class="btn btn-light m-2" asp-action=Variables asp-controller=Sass>
+    Sass Variables
+</a>
+<h2><button class="btn btn-dark" >Seo</button></h2>
+<a class="btn btn-light m-2" asp-action=Index asp-controller=seo>
+    seo Home
+</a>
+<a class="btn btn-light m-2" asp-action=HtmlTags asp-controller=seo>
+    seo Html Tags
+</a>

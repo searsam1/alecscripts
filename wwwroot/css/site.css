@@ -392,25 +392,37 @@ summary {
     padding-bottom: 10px;
     text-transform: capitalize;
     list-style-type: none;
-    color: #007bff;
+    background-image: url("/lib/Resources/justitia-ge9c60c1ef_1920.jpeg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    /* background-attachment: local; */
+    /* background-attachment: fixed; */
+    
+    max-height: 500px;
+    overflow-y: scroll;
+    
+    
 }
 .toc-container li{
-    margin-bottom: 1px;
+    
 }
 .toc-container li::before{
     font-family: 'UnifrakturMaguntia', cursive; font-size: 35px;
     content: ".";
     margin-right: 10px;
-    vertical-align: 4px;
+    
 }
 
 .toc-container .link {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
-    color: black;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 4px;
 
 }
-.toc-container li a.link:not(.link-inner):hover{
+/* .toc-container li a.link:not(.link-inner):hover{
     background-color: inherit;
 }
 
@@ -424,7 +436,7 @@ a.link.link-inner:hover {
 }
 a.link.link-inner{
     transition: margin-left .5s;
-}
+} */
 .borderless {
     border: none;
 }
@@ -480,12 +492,13 @@ table tr td {
     padding: 10px;
 }
 
+
 table tr th {
     font-family: monospace;
     padding: 10px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.908);
-    color: white;;
+    background: linear-gradient(180deg, black, rgb(1,1,1,.8));
+    color: white;
 }
 
 a.nav-link.btm-border-Coral{
