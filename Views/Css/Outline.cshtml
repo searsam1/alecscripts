@@ -1,0 +1,57 @@
+
+<h2>
+    Outline Property
+</h2>
+<p>
+    The outline property acts like a border around the 
+    border-box. 
+</p>
+
+<p class="text-center " style="background: black; 
+margin-left: 3%; border: 
+5px solid silver; 
+outline: 10px solid red;">
+    <code>
+        border: 10px solid grey; 
+        <br>
+        outline: 10px solid red;
+    </code>
+</p>
+<p>
+    In the example, the border is in silver and the outline of the border 
+    is in red. 
+</p>
+
+@{
+    string[] borderProperties = "dotted dashed solid double groove ridge inset outset none hidden".Split(" ");
+}
+<h2>
+    Outline Styles 
+</h2>
+<p>Like borders, there are many styles 
+    that an outline can take on, like dotted or dashed: 
+</p>
+
+<pre><code class="lang-css">p {
+    /* color | style | width */
+    outline: red dotted 1px;
+    }
+/*
+style
+    dotted | dashed | solid 
+    double | groove | ridge 
+    inset  | outset | none 
+    hidden     
+*/
+</code></pre>
+
+<ul>
+@foreach (string prop in borderProperties)
+{
+    <li>
+        
+        <b style="text-transform: uppercase;"> @prop</b>
+        <div class="mb-4 bg-dark" style="border-radius: 5px; border:10px @prop red; width: 400px; height: 100px;"> </div>
+    </li>
+}
+</ul>

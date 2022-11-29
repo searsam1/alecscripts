@@ -1,0 +1,85 @@
+<h2>
+    Color
+</h2>
+<p>
+    Text-color is changed with the <code>color</code> property, and 
+    can take on <code>rgb</code>, <code>hsl</code>, <code>#hex</code> 
+    and <code>name</code> (like red) values. 
+</p>
+<style>
+    #red{
+        color: red;
+    }
+</style>
+<pre><code class="lang-css">/* make p element text color red */ 
+p{
+    color: red;
+}
+</code></pre>
+<p class="text-danger">
+    Ligula eu elementum. Vestibulum vehicula quis odio a sagittis. Ut luctus arcu non fringilla condimentum. Aenean at velit aliquam, aliquet turpis non, posuere nulla. Curabitur 
+</p>
+<pre><code class="lang-css">/* make p element text color blue */ 
+p{
+    color: blue;
+}
+</code></pre>
+<p class="text-primary">
+    Ligula eu elementum. Vestibulum vehicula quis odio a sagittis. Ut luctus arcu non fringilla condimentum. Aenean at velit aliquam, aliquet turpis non, posuere nulla. Curabitur 
+</p>
+<pre><code class="lang-css">/* make p element text color green */ 
+p{
+    color: green;
+}
+</code></pre>
+<p class="text-success">
+     Ligula eu elementum. Vestibulum vehicula quis odio a sagittis. Ut luctus arcu non fringilla condimentum. Aenean at velit aliquam, aliquet turpis non, posuere nulla. Curabitur 
+
+
+</p>
+
+<h2>
+    Alignment
+</h2>
+<p>
+    Aligning text is done with the <code>text-align</code>
+    property, which has a variety of styles like center, end, 
+    start, etc..
+</p>
+
+@{
+    string[] props = "start end left right center justify justify-all match-parent".Split(" ");
+}
+<ul>
+@foreach (string prop in props)
+{   
+    <li>@prop</li>
+}
+</ul>
+
+<div class="row">
+@foreach (string prop in props)
+{   
+    
+    <div class="shadow-sm bg-dark text-light p-3 mx-3 border rounded-3 col-sm-3" style="text-align: @prop;">
+    <h3>@prop</h3> Ligula eu elementum. Vestibulum vehicula quis odio a sagittis. Ut luctus arcu non fringilla condimentum. Aenean at velit aliquam, aliquet turpis non, posuere nulla. Curabitur 
+    </div>
+}
+</div>
+
+
+<h2>
+    Decoration
+</h2>
+
+<h2>
+    Transformation
+</h2>
+
+<h2>
+    Spacing
+</h2>
+
+<h2>
+    Shadow
+</h2>
