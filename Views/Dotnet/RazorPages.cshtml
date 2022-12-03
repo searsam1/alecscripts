@@ -1,0 +1,103 @@
+
+<p>
+    Razor is a markup language for writing .NET inside of an 
+    html document. 
+    Razor files end with <code>.cshtml</code> most of the time, but can 
+    also end with <code>.razor</code>. 
+</p>
+
+<h2>
+    HTML
+</h2>
+<p>
+    HTML is the base of razor documents. <code>C#</code> code is added 
+    to the HTML, meaning, any razor page is also an HTML page. 
+</p>
+
+<h2>
+    Use Razor with HTML
+</h2>
+<p>
+    Razor is <code>C#</code> code embedded inside HTML. To use inline <code>C#</code>, use the at <code>@@</code> symbol, 
+    followed by brackets <code>{}</code>. 
+</p>
+<pre><code class="lang-razor">@@{
+    string str = "Example String";
+}
+</code></pre>
+<p>
+    To use a literal at <code>@@</code> symbol, put another <code>@@</code> in front of it: <code>@@@@</code>
+</p>
+<pre><code class="lang-razor">&lt;p&gt;@@@@User&lt;/p&gt;
+</code></pre>
+
+<h2>
+    Comments
+</h2>
+<p>
+    Comments are razor based or HTML based, whichever is preferred. 
+</p>
+<h3>
+    Razor Comments
+</h3>
+<p>
+    Razor's comments start with <code>@@*</code> and end with <code>*@@</code>.
+</p>
+<pre><code class="lang-razor">@@* Comment Goes Here *@@
+@@* 
+Comment 
+Goes
+Here
+ *@@
+</code></pre>
+
+<h3>
+    HTML Comments
+</h3>
+<p>
+    Razor's comments start with <code>&lt;!--</code> and end with <code>--></code>.
+</p>
+<pre><code class="lang-html"> &lt;!-- Comment Goes Here -->
+</code></pre>
+
+<h2>
+    Explicit Expressions
+</h2>
+<p>
+    Explicit razor expressions are <code>C#</code> code wrapped 
+    around parenthesis. This is useful for spaces or other <code>C#</code> 
+    code that normally wouldn't normally execute in an implicit expression.
+</p>
+<pre><code class="lang-razor">
+@@(1 - 2)
+@@* -1 *@@
+
+@@(DateTime.Now - TimeSpan.FromDays(14))
+@@* @((DateTime.Now - TimeSpan.FromDays(14)).ToShortDateString()) *@@
+
+@@("hello" + " world")
+@@* @("hello" + " world") *@@
+
+@(@"@(""<a href='#'> link </a>"")")
+@("<a href='#'> link </a>")
+</code></pre>
+
+<h2>
+    Implicit transitions
+</h2>
+<p>
+    Like razor being inserted into HTML, HTML can also be inserted into a razor code block:
+</p>
+<pre><code class="lang-razor">@(@"
+@{
+    var inCSharp = true;
+    <p>Now in HTML, was in C# @inCSharp</p>
+}
+")
+@{
+var inCSharp = true;
+<p>@@*
+    Now in HTML, was in C# @inCSharp 
+*@@</p>
+}
+</code></pre>

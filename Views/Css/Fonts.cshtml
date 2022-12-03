@@ -1,0 +1,147 @@
+
+<h2>
+    Generic Fonts
+</h2>
+@{
+    string[] fonts = {"Serif", "Sans-serif", "Monospace", "Cursive", "Fantasy"};
+}
+<ul>
+@foreach (string font in fonts)
+{
+    <li>
+        <span style="font-family: @font;">@font</span>
+        <ul><li style="font-family: @font;">
+            The Quick Brown Fox Jumps Over The Lazy Dog
+        </li></ul>
+    </li>
+}
+</ul>
+<p>
+    Font is important when making a website: it portrays a theme, 
+    shows care and thought, but, more importantly, if a website is hard 
+    to read readers will leave and not return. Font plays a huge role in how 
+    easy or hard a website is to read.  
+</p>
+<p>
+    Since there are a lot of fonts, most of which are restricted, it is a good idea 
+    to have a few fallbacks and always a fallback to a generic font. This way, CSS has 
+    a backup text that is available on almost all browsers to display when 
+    the current font isn't supported.  
+</p>
+
+<p>
+    The <code>font-family</code> property is used to change the font. 
+</p>
+
+<pre><code class="lang-css">p {
+    font-family: /* font goes here */ 
+}
+</code></pre>
+
+<pre><code class="lang-css">/* Example 1 */
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Example 2 */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Example 3 */
+p {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+</code></pre>
+
+<h3>
+    Serif
+</h3>
+@{
+    string[] Serifs = {"Times New Roman", "Georgia", "Garamond"};
+}
+<ul>
+@foreach (string font in Serifs)
+{
+    <li>
+        <span style="font-family: @font;">@font</span>
+        <ul><li style="font-family: @font;">
+            The Quick Brown Fox Jumps Over The Lazy Dog
+        </li></ul>
+    </li>
+}
+</ul>
+
+<h3>
+Sans-Serif
+</h3>
+@{
+    string[] SanSerifs = {"Arial", "Verdana", "Helvetica"};
+}
+<ul>
+@foreach (string font in SanSerifs)
+{
+    <li>
+        <span style="font-family: @font;">@font</span>
+        <ul><li style="font-family: @font;">
+            The Quick Brown Fox Jumps Over The Lazy Dog
+        </li></ul>
+    </li>
+}
+</ul>
+
+<h3>
+Monospace
+</h3>
+@{
+    string[] Monospaces = {"Courier New", "Lucida Console", "Monaco"};
+}
+<ul>
+@foreach (string font in Monospaces)
+{
+    <li>
+        <span style="font-family: '@font';">@font</span>
+        <ul><li style="font-family: '@font';">
+            The Quick Brown Fox Jumps Over The Lazy Dog
+        </li></ul>
+    </li>
+}
+</ul>
+
+<h3>
+Cursive
+</h3>
+@{
+    string[] Cursives = {"Brush Script MT", "Lucida Handwriting"};
+}
+<ul>
+@foreach (string font in Cursives)
+{
+    <li>
+        <span style="font-family: '@font';">@font</span>
+        <ul><li style="font-family: '@font';">
+            The Quick Brown Fox Jumps Over The Lazy Dog
+        </li></ul>
+    </li>
+}
+</ul>
+
+<h3>
+Fantasy
+</h3>
+@{
+    string[] Fantasys = {"Copperplate", "Papyrus"};
+}
+<ul>
+@foreach (string font in Fantasys)
+{
+    <li>
+        <span style="font-family: '@font', fantasy;">@font</span>
+        <ul><li style="font-family: '@font';">
+            The Quick Brown Fox Jumps Over The Lazy Dog
+        </li></ul>
+    </li>
+}
+</ul>
+
+

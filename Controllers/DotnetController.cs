@@ -24,5 +24,12 @@ namespace MvcMovie.Controllers
             ViewData["title"] = "Random Number";
             return View();
         }
+    public IActionResult RazorPages()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Razor Pages";
+        return View();
+    }
+    
     }
 }

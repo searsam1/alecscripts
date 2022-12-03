@@ -2,6 +2,7 @@
 import clipboard  # copy()
 import re  # findall()
 import os  # walk
+controller_label_g = ""
 
 
 def title_split(s):
@@ -39,17 +40,31 @@ def replace_specials(txt):
         txt = txt.replace(k, v)
     return txt 
 
+
+
 def asp_link(controller, action):
     controller_label = replace_specials(controller)
     action_label = replace_specials(title_split(action))
-    string = f"""
-    
-        <a class="sidebar-link" asp-action={action} asp-controller={controller}>
-            {controller_label} {action_label}
-        </a>
-        <br>
-""".replace("\n", "")
+    string = f"""<li><a class="link-dark rounded" asp-action="{action}" asp-controller="{controller}">{controller_label} {action_label}</a></li>"""
+    controller_label_g = controller_label
     return string
+
+def html(controller, actions):
+    controller = controller.split("Controller.cs")[0]
+    print(controller)
+    return f"""
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#{controller}-collapse" aria-expanded="false">
+                                    {replace_specials(controller)}
+                                </button>
+                                <div class="collapse" id="{controller}-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        {actions}
+                                    </ul>
+                                </div>
+                            </li>
+"""
 
 
 def get_actions(fn, control):
@@ -71,41 +86,32 @@ def get_actions(fn, control):
     return actions
 
 
-def get_controls():
+def get_controllers():
     fp = "/Users/111244rfsf/Documents/Repositories/alecscripts/Controllers"
     fn, _, controls = list(os.walk(fp))[0]
-    string = ""
-    lst = []
 
-    # sort controllers 
     controls = sorted(controls)
+    actions = {}
+    for controller in controls:
+        new_action = get_actions(fn, controller)
+        actions[controller] = new_action
+    return actions
 
-    # move home to the top
-    controls.pop(controls.index("HomeController.cs"))
-    controls = ["HomeController.cs"] + controls
-    for control in controls:
-        string += (f'<details>')
-        string += f"""
-        <summary>
-            {replace_specials(control.split("Controller.cs")[0].title())}
-        </summary>
-        """.replace("\n", "")
 
+def create_links(controller, actions):
+    actions = sorted(actions)
+    links = [asp_link(controller.split("Controller.cs")[0], action) for action in actions]
+    return links
+
+def create_sidebar(controllers):
+    sidebar = ""
+    for controller, actions in controllers.items():
+        links = "\n".join(create_links(controller, actions))
+        sidebar += html(controller, links)
+    return sidebar
         
 
-        string += "".join(asp_link(control.split("Controller.cs")
-                            [0], action) 
-                                for action in get_actions(fn, control))
+controllers = get_controllers()
 
-        string += (f'</details>')
-        lst.append(string)
-        string = ""
-    lst = list(map(lambda x: " ".join(x),map(lambda x: x.split(), lst)))
-    return " ".join(lst)
-
-
-res = get_controls()
-new_sidebar = res
-
-# clipboard.copy(res)
-
+res = create_sidebar(controllers)
+clipboard.copy(res)

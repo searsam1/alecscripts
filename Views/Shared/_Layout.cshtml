@@ -1,27 +1,22 @@
 ﻿@{
-    string Version = "v0.1.1-beta";
-    string WebMaster = "amsears60441@gmail.com";
+    string Version = "v2.1a";
 }
 
-
-
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Keywords" content="HTML, Python, CSS, JavaScript, How to, Java, C, C++, C#, dotnet, .NET, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website" />
-    <meta name="Description" content="Excellent programming tutorials with examples of HTML, CSS, JavaScript, Dotnet, Python, PHP, Bootstrap, Java, and more." />
-    <meta name="author" content="Alec Scripts" />
-    
-    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors && Alec Sears">
+    <meta name="generator" content="Hugo 0.84.0">
     <title>@ViewData["controller"] @ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    
-    
-    @* favicon *@
-    @* <link rel="icon" href="~/lib/favicon.ico?ver=2" /> *@
+
+    @* <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/"> *@
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/lib/bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/sidebars.css" rel="stylesheet">
 
     @* favicon Recommended Settings *@
     <link rel="apple-touch-icon" sizes="180x180" href="~/lib/apple-touch-icon.png">
@@ -35,315 +30,539 @@
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
 
     @* For /alecscripts/Views/Sass/SassVariablesCSS.css *@
-    <link rel="stylesheet" href="Views/Sass/SassVariablesCSS.css"/>
+    <link rel="stylesheet" href="Views/Sass/SassVariablesCSS.css" />
 
     @* Google fonts *@
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&family=Lexend:wght@200&family=Poppins&family=UnifrakturCook&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&family=Lexend:wght@200&family=Poppins&family=UnifrakturCook&family=UnifrakturMaguntia&display=swap"
+        rel="stylesheet">
 
     @* /Prism CSS *@
     <link rel="stylesheet" href="~/css/prism.css" asp-append-version="true" />
-    
-</head>
+
+    @* Google Icons *@
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
 
-<body>
-    
-    <div class="row sticky-top">
-                <nav id="navy" class="px-4 py-0 navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white shadow-sm ">
-        <div class="container-fluid">
-
-            <a asp-action="index" asp-controller="home" class="navbar-brand text-black" >
-                <span style="font-family: 'UnifrakturMaguntia', cursive; font-size: 35px;">
-                    AlecScripts
-                </span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span style="color: white;" class=" navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item ">
-                        <a class="nav-link text-black" asp-area="" asp-controller="Home" asp-action="CodeTut">Coding Tutorials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" asp-area="" asp-controller="Home" asp-action="index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" asp-area="" asp-controller="Glossary" asp-action="index">Glossary</a>
-                    </li>
-                    
-                </ul>
-                    
-                
-            </div>
-
-        </div>
-    </nav>
-        </div>
-    </div>
-    <div class="row">
-    
-    <div class="col-sm-2">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    @* Sidebar *@ 
-        <div class="sidebar pt-3 fixed-top" >
-            <details> <summary> Home </summary> <a class="sidebar-link" asp-action=Index asp-controller=Home> Home Home </a> <br> <a class="sidebar-link" asp-action=Privacy asp-controller=Home> Home Privacy </a> <br> <a class="sidebar-link" asp-action=CodeTut asp-controller=Home> Home Code Tut </a> <br></details> <details> <summary> Bash </summary> <a class="sidebar-link" asp-action=Index asp-controller=Bash> Bash Home </a> <br> <a class="sidebar-link" asp-action=Variables asp-controller=Bash> Bash Variables </a> <br> <a class="sidebar-link" asp-action=PrintVariables asp-controller=Bash> Bash Print Variables </a> <br> <a class="sidebar-link" asp-action=Bashrc asp-controller=Bash> Bash Bashrc </a> <br> <a class="sidebar-link" asp-action=Comments asp-controller=Bash> Bash Comments </a> <br> <a class="sidebar-link" asp-action=Lowercase asp-controller=Bash> Bash Lowercase </a> <br> <a class="sidebar-link" asp-action=Uppercase asp-controller=Bash> Bash Uppercase </a> <br> <a class="sidebar-link" asp-action=StringLength asp-controller=Bash> Bash String Length </a> <br> <a class="sidebar-link" asp-action=SplitString asp-controller=Bash> Bash Split String </a> <br> <a class="sidebar-link" asp-action=Substring asp-controller=Bash> Bash Substring </a> <br> <a class="sidebar-link" asp-action=AppendString asp-controller=Bash> Bash Append String </a> <br> <a class="sidebar-link" asp-action=FileNames asp-controller=Bash> Bash File Names </a> <br> <a class="sidebar-link" asp-action=Tips asp-controller=Bash> Bash Tips </a> <br></details> <details> <summary> C++ </summary> <a class="sidebar-link" asp-action=Index asp-controller=Cpp> C++ Home </a> <br> <a class="sidebar-link" asp-action=CPPversionHistory asp-controller=Cpp> C++ C++version History </a> <br> <a class="sidebar-link" asp-action=Comments asp-controller=Cpp> C++ Comments </a> <br> <a class="sidebar-link" asp-action=Variables asp-controller=Cpp> C++ Variables </a> <br> <a class="sidebar-link" asp-action=UserInput asp-controller=Cpp> C++ User Input </a> <br> <a class="sidebar-link" asp-action=DataTypes asp-controller=Cpp> C++ Data Types </a> <br> <a class="sidebar-link" asp-action=Operators asp-controller=Cpp> C++ Operators </a> <br> <a class="sidebar-link" asp-action=AssignmentOperators asp-controller=Cpp> C++ Assignment Operators </a> <br> <a class="sidebar-link" asp-action=ComparisonOperators asp-controller=Cpp> C++ Comparison Operators </a> <br> <a class="sidebar-link" asp-action=Strings asp-controller=Cpp> C++ Strings </a> <br> <a class="sidebar-link" asp-action=Math asp-controller=Cpp> C++ Math </a> <br> <a class="sidebar-link" asp-action=Booleans asp-controller=Cpp> C++ Booleans </a> <br> <a class="sidebar-link" asp-action=Conditions asp-controller=Cpp> C++ Conditions </a> <br> <a class="sidebar-link" asp-action=TernaryOperator asp-controller=Cpp> C++ Ternary Operator </a> <br> <a class="sidebar-link" asp-action=SwitchStatement asp-controller=Cpp> C++ Switch Statement </a> <br> <a class="sidebar-link" asp-action=WhileLoop asp-controller=Cpp> C++ While Loop </a> <br> <a class="sidebar-link" asp-action=ForLoop asp-controller=Cpp> C++ For Loop </a> <br> <a class="sidebar-link" asp-action=BreakAndContinue asp-controller=Cpp> C++ Break And Continue </a> <br> <a class="sidebar-link" asp-action=Arrays asp-controller=Cpp> C++ Arrays </a> <br> <a class="sidebar-link" asp-action=Structures asp-controller=Cpp> C++ Structures </a> <br> <a class="sidebar-link" asp-action=References asp-controller=Cpp> C++ References </a> <br> <a class="sidebar-link" asp-action=Pointers asp-controller=Cpp> C++ Pointers </a> <br> <a class="sidebar-link" asp-action=RandomNumbers asp-controller=Cpp> C++ Random Numbers </a> <br></details> <details> <summary> Css </summary> <a class="sidebar-link" asp-action=Index asp-controller=Css> Css Home </a> <br> <a class="sidebar-link" asp-action=SlowUnderlineWithCss asp-controller=Css> Css Slow Underline With Css </a> <br> <a class="sidebar-link" asp-action=Gradients asp-controller=Css> Css Gradients </a> <br> <a class="sidebar-link" asp-action=Colors asp-controller=Css> Css Colors </a> <br> <a class="sidebar-link" asp-action=Comments asp-controller=Css> Css Comments </a> <br> <a class="sidebar-link" asp-action=Backgrounds asp-controller=Css> Css Backgrounds </a> <br> <a class="sidebar-link" asp-action=Borders asp-controller=Css> Css Borders </a> <br> <a class="sidebar-link" asp-action=Margins asp-controller=Css> Css Margins </a> <br> <a class="sidebar-link" asp-action=Padding asp-controller=Css> Css Padding </a> <br> <a class="sidebar-link" asp-action=HeightAndWidth asp-controller=Css> Css Height And Width </a> <br> <a class="sidebar-link" asp-action=BoxModel asp-controller=Css> Css Box Model </a> <br> <a class="sidebar-link" asp-action=Outline asp-controller=Css> Css Outline </a> <br> <a class="sidebar-link" asp-action=Text asp-controller=Css> Css Text </a> <br> <a class="sidebar-link" asp-action=Fonts asp-controller=Css> Css Fonts </a> <br> <a class="sidebar-link" asp-action=Icons asp-controller=Css> Css Icons </a> <br> <a class="sidebar-link" asp-action=Links asp-controller=Css> Css Links </a> <br></details> <details> <summary> .NET </summary> <a class="sidebar-link" asp-action=Index asp-controller=Dotnet> .NET Home </a> <br> <a class="sidebar-link" asp-action=RandomNumber asp-controller=Dotnet> .NET Random Number </a> <br></details> <details> <summary> Git </summary> <a class="sidebar-link" asp-action=Index asp-controller=Git> Git Home </a> <br></details> <details> <summary> Glossary </summary> <a class="sidebar-link" asp-action=Index asp-controller=Glossary> Glossary Home </a> <br></details> <details> <summary> Go </summary> <a class="sidebar-link" asp-action=Index asp-controller=Go> Go Home </a> <br></details> <details> <summary> Html </summary> <a class="sidebar-link" asp-action=Index asp-controller=Html> Html Home </a> <br> <a class="sidebar-link" asp-action=Tags asp-controller=Html> Html Tags </a> <br> <a class="sidebar-link" asp-action=Colors asp-controller=Html> Html Colors </a> <br> <a class="sidebar-link" asp-action=BasicExample asp-controller=Html> Html Basic Example </a> <br> <a class="sidebar-link" asp-action=Comments asp-controller=Html> Html Comments </a> <br> <a class="sidebar-link" asp-action=CSS asp-controller=Html> Html Css </a> <br> <a class="sidebar-link" asp-action=ColorPicker asp-controller=Html> Html Color Picker </a> <br> <a class="sidebar-link" asp-action=MathSymbols asp-controller=Html> Html Math Symbols </a> <br></details> <details> <summary> Java </summary> <a class="sidebar-link" asp-action=Index asp-controller=Java> Java Home </a> <br> <a class="sidebar-link" asp-action=Comments asp-controller=Java> Java Comments </a> <br></details> <details> <summary> Js </summary> <a class="sidebar-link" asp-action=Index asp-controller=Js> Js Home </a> <br> <a class="sidebar-link" asp-action=GetMonth asp-controller=Js> Js Get Month </a> <br> <a class="sidebar-link" asp-action=ExpressionsOperators asp-controller=Js> Js Expressions Operators </a> <br> <a class="sidebar-link" asp-action=BinaryArrayToDecimal asp-controller=Js> Js Binary Array To Decimal </a> <br> <a class="sidebar-link" asp-action=ToFixed asp-controller=Js> Js To Fixed </a> <br> <a class="sidebar-link" asp-action=Json asp-controller=Js> Js Json </a> <br> <a class="sidebar-link" asp-action=RandomColorCreater asp-controller=Js> Js Random Color Creater </a> <br> <a class="sidebar-link" asp-action=AlternateTableRows asp-controller=Js> Js Alternate Table Rows </a> <br></details> <details> <summary> Python </summary> <a class="sidebar-link" asp-action=Index asp-controller=Python> Python Home </a> <br> <a class="sidebar-link" asp-action=Password asp-controller=Python> Python Password </a> <br> <a class="sidebar-link" asp-action=swapcase asp-controller=Python> Python Swapcase </a> <br> <a class="sidebar-link" asp-action=vars asp-controller=Python> Python Vars </a> <br> <a class="sidebar-link" asp-action=abs asp-controller=Python> Python Abs </a> <br> <a class="sidebar-link" asp-action=funnyNumbers asp-controller=Python> Python Funny Numbers </a> <br> <a class="sidebar-link" asp-action=stringFormattingTypes asp-controller=Python> Python String Formatting Types </a> <br> <a class="sidebar-link" asp-action=controllerGetter asp-controller=Python> Python Controller Getter </a> <br> <a class="sidebar-link" asp-action=Comments asp-controller=Python> Python Comments </a> <br> <a class="sidebar-link" asp-action=Syntax asp-controller=Python> Python Syntax </a> <br> <a class="sidebar-link" asp-action=VariableNames asp-controller=Python> Python Variable Names </a> <br> <a class="sidebar-link" asp-action=VariableValues asp-controller=Python> Python Variable Values </a> <br> <a class="sidebar-link" asp-action=VariableOutput asp-controller=Python> Python Variable Output </a> <br> <a class="sidebar-link" asp-action=VariableGlobals asp-controller=Python> Python Variable Globals </a> <br> <a class="sidebar-link" asp-action=DataTypes asp-controller=Python> Python Data Types </a> <br> <a class="sidebar-link" asp-action=Numbers asp-controller=Python> Python Numbers </a> <br> <a class="sidebar-link" asp-action=Modules asp-controller=Python> Python Modules </a> <br> <a class="sidebar-link" asp-action=ReFlags asp-controller=Python> Python Re Flags </a> <br> <a class="sidebar-link" asp-action=Casting asp-controller=Python> Python Casting </a> <br></details> <details> <summary> Sass </summary> <a class="sidebar-link" asp-action=Index asp-controller=Sass> Sass Home </a> <br> <a class="sidebar-link" asp-action=Variables asp-controller=Sass> Sass Variables </a> <br></details> <details> <summary> Seo </summary> <a class="sidebar-link" asp-action=Index asp-controller=seo> seo Home </a> <br> <a class="sidebar-link" asp-action=HtmlTags asp-controller=seo> seo Html Tags </a> <br></details> 
-        </div>
-    @* /Sidebar *@                                                                                                                                                       
-    </div>
-
-        <div class="col-sm-8">
-            
-            <main  id="bodyRender" role="main" class="pb-3 ">
-                <div class="pt-5">
-                    <h1 class=" border-bottom display-4">@ViewData["controller"] @ViewData["Title"] </h1>
-                </div>
-                <div id="toc">
-
-                    <ul class="toc-container shadow-sm rounded-3 text-dark">
-                        <center>
-                            <h2 style="color:black; border-bottom:1px solid rgb(0,0,0,.0538) ;">
-                                Table of Contents
-                            </h2>
-                        </center>
-                        @* @foreach (var item in Toc)
-                            {
-                            <li><a class="link" href="#@item">@item</a></li>
-                            } *@
-                    </ul>
-                </div>
-                <div id="mainBody" class="pt-3">
-                    @RenderBody()
-                </div>
-                <div style="padding-bottom: 50px;">
-                    <hr>
-                    <p>
-                        Popular Topics:
-                    </p>
-                    <ul style="color: darkblue;">
-                        <li>
-                            <a style="color: black;" asp-controller=Python asp-action=index> Python </a>
-                        </li>
-                        <li>
-                            <a style="color: var(--pink);" asp-controller=Bash asp-action=index> Bash </a>
-                        </li>
-                        <li>
-                            <a  style="color: black;" asp-controller=HTML asp-action=index> HTML </a>
-                        </li>
-                        <li>
-                            <a style="color: var(--pink);" asp-controller=CSS asp-action=index> CSS </a>
-                        </li>
-                    </ul>
-                    <p class="shadow-sm p-3 bg-light text-center" style="font-size: 15px; margin-top: 250px; max-width: 100%; width: 100%;">
-                        alecscripts aims to stay up-to-date on everything, but given 
-                        the large number of topics, nothing can be guaranteed. Site is not responsible for 
-                        any code written and/or executed.    
-                    </p>
-                    <div class="text-center">
-                        <span style="font-family: 'UnifrakturMaguntia', cursive; font-size: 35px;">
-                            - A.S.
-                        </span>
-                    </div>
-                </div>
-                <hr>
-            </main>
-        
-        </div>
-
-            <div class="col-sm-2">
-    @* Other SB *@
-        <div class="mt-5 sidebar-2 sticky-top">
-            <p>@ViewData["controller"] > @ViewData["title"]</p>
-            
-            
-
-        </div>
-    @* Other SB *@                                            
-    </div>
-    </div>
-
-
-
-<div id="controller" class="hidden">
-    @ViewData["controller"]
-</div>
-
-</body>
-
-<div class="row">
-
-    <div class="col-sm-2">
-<footer id="foot" class="sticky-bottom text-muted">    
-        <ul>
-            <li>
-                <a style="color: var(--pink);" href="https://github.com/searsam1/alecscripts/commits/main">Repository</a>
-                |
-                <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                |
-                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                |
-                <a asp-area="" asp-controller="Python" asp-action="Index">Python</a>
-
-            </li>
-            <li>
-                @Version
-            </li>
-            
-            <li>
-                @WebMaster
-            </li>
-            <li id="pageID">
-            </li>
-            <li>Built With <span class="text-dark"> Python </span> <span class="text-dark"> .NET </span> <span class="text-dark"> GitHub </span> </li>
-        </ul>
-    </footer>
-    </div>
-</div>
-
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/HToDisplay.js" asp-append-version="true"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-
-<script>
-function makeSidebar2(){
-    let toc = document.querySelector(".toc-container")
-    let links = toc.querySelectorAll("li")
-    let sb2 = document.querySelector(".sidebar-2")
-    for (let link of links){
-        // have to clone or it steals 
-        // the list elements from 
-        // the sidebar 
-        sb2.appendChild(link.cloneNode(true))
-    }
-    console.log(sb2)
-}
-makeSidebar2()
-</script>
-
-<script>
-function openSidebarLink(){
-    let sidebar = document.querySelector(".sidebar");
-    let controllers = sidebar.querySelectorAll("details");
-    let pageController = document.querySelector("#controller").textContent.trim();
-    let header
-
-    for (let c of controllers){
-        header = c.querySelector("summary").textContent.trim()
-        if (header == pageController){
-            c.setAttribute("open", "open")
-            let links = c.getElementsByClassName("sidebar-link")
-            for (let a of links){
-                if (a.textContent.trim().split(" ").slice(1).join(" ") == '@ViewData["title"]') {
-                    a.style.backgroundColor = "black";
-                    a.style.color = "white";
-                    a.style.paddingRight = "100%"
-                }
-
-                
+        @@media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
             }
         }
-    }
-    
-}
-openSidebarLink()
-</script>
-@* Prism JS *@
-<script src="~/js/prism.js" asp-append-version="true"></script>
-@await RenderSectionAsync("Scripts", required: false)
-</html>
+    </style>
 
+
+    <!-- Custom styles for this template -->
+    <link href="sidebars.css" rel="stylesheet">
+</head>
+
+<style>
+    #jumbo{
+        @* background: 
+            linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); *@
+            background: linear-gradient(45deg, black, rgb(1,1,1,.1));
+            max-width: 100%;
+            width: 100%;
+    }
+</style>
+
+@{
+    int h = 10;
+    string height = h.ToString() + "px";
+}
+<body>
+    
+    <nav style="z-index: 100; position: fixed; width: 100%; height: @height;" class=" ">
+        <div id="jumbo" class=" p-3 rounded border-bottom ">
+            <center>
+                @* style="font-family: UnifrakturMaguntia, cursive;" *@
+                <h2 style="display: none; border-left:">
+                    ^
+                </h2>
+                
+            </center>
+        </div>
+    </nav>
+    @* Navbar *@
+    <nav style="top: @height;" class="navbar shadow-sm sticky-top navbar-expand-lg bg-white">
+        
+        <div class="container-fluid">
+            <img src="~/lib/favicon-32x32.png">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="home" asp-action="CodeTut">Directory</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class=" dropdown-item" asp-controller="Python" asp-action="Index" >Python</a></li>
+                            <li><a class="dropdown-item" asp-controller="Cpp" asp-action="Index" >C++</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" asp-controller="HTML" asp-action="Index" >HTML</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                @* <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> *@
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main style="margin-top: 20px; ">
+            <div class="row">
+                <div style="top: 90px;" id="leftSidebar" class="sticky-top col-sm-2 text-end ">
+                    <div class="  p-3 bg-white">
+                        <a href="/"
+                            class=" d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none ">
+                            <svg  class="bi me-2" width="30" height="24">
+                                <use xlink:href="#bootstrap"></use>
+                            </svg>
+                            Topics
+                            <div style="width: 100%">
+                                                                
+                            </div>
+                        </a>
+                        @* Sidebar *@
+                        <ul class="list-unstyled ps-0">
+                                
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Bash-collapse" aria-expanded="false">
+                                    Bash
+                                </button>
+                                <div class="collapse" id="Bash-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="AppendString" asp-controller="Bash">Bash Append String</a></li>
+<li><a class="link-dark rounded" asp-action="Bashrc" asp-controller="Bash">Bash Bashrc</a></li>
+<li><a class="link-dark rounded" asp-action="Comments" asp-controller="Bash">Bash Comments</a></li>
+<li><a class="link-dark rounded" asp-action="FileNames" asp-controller="Bash">Bash File Names</a></li>
+<li><a class="link-dark rounded" asp-action="Index" asp-controller="Bash">Bash Home</a></li>
+<li><a class="link-dark rounded" asp-action="Lowercase" asp-controller="Bash">Bash Lowercase</a></li>
+<li><a class="link-dark rounded" asp-action="PrintVariables" asp-controller="Bash">Bash Print Variables</a></li>
+<li><a class="link-dark rounded" asp-action="SplitString" asp-controller="Bash">Bash Split String</a></li>
+<li><a class="link-dark rounded" asp-action="StringLength" asp-controller="Bash">Bash String Length</a></li>
+<li><a class="link-dark rounded" asp-action="Substring" asp-controller="Bash">Bash Substring</a></li>
+<li><a class="link-dark rounded" asp-action="Tips" asp-controller="Bash">Bash Tips</a></li>
+<li><a class="link-dark rounded" asp-action="Uppercase" asp-controller="Bash">Bash Uppercase</a></li>
+<li><a class="link-dark rounded" asp-action="Variables" asp-controller="Bash">Bash Variables</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Cpp-collapse" aria-expanded="false">
+                                    C++
+                                </button>
+                                <div class="collapse" id="Cpp-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="Arrays" asp-controller="Cpp">C++ Arrays</a></li>
+<li><a class="link-dark rounded" asp-action="AssignmentOperators" asp-controller="Cpp">C++ Assignment Operators</a></li>
+<li><a class="link-dark rounded" asp-action="Booleans" asp-controller="Cpp">C++ Booleans</a></li>
+<li><a class="link-dark rounded" asp-action="BreakAndContinue" asp-controller="Cpp">C++ Break And Continue</a></li>
+<li><a class="link-dark rounded" asp-action="CPPversionHistory" asp-controller="Cpp">C++ C++version History</a></li>
+<li><a class="link-dark rounded" asp-action="Comments" asp-controller="Cpp">C++ Comments</a></li>
+<li><a class="link-dark rounded" asp-action="ComparisonOperators" asp-controller="Cpp">C++ Comparison Operators</a></li>
+<li><a class="link-dark rounded" asp-action="Conditions" asp-controller="Cpp">C++ Conditions</a></li>
+<li><a class="link-dark rounded" asp-action="DataTypes" asp-controller="Cpp">C++ Data Types</a></li>
+<li><a class="link-dark rounded" asp-action="ForLoop" asp-controller="Cpp">C++ For Loop</a></li>
+<li><a class="link-dark rounded" asp-action="Index" asp-controller="Cpp">C++ Home</a></li>
+<li><a class="link-dark rounded" asp-action="Math" asp-controller="Cpp">C++ Math</a></li>
+<li><a class="link-dark rounded" asp-action="Operators" asp-controller="Cpp">C++ Operators</a></li>
+<li><a class="link-dark rounded" asp-action="Pointers" asp-controller="Cpp">C++ Pointers</a></li>
+<li><a class="link-dark rounded" asp-action="RandomNumbers" asp-controller="Cpp">C++ Random Numbers</a></li>
+<li><a class="link-dark rounded" asp-action="References" asp-controller="Cpp">C++ References</a></li>
+<li><a class="link-dark rounded" asp-action="Strings" asp-controller="Cpp">C++ Strings</a></li>
+<li><a class="link-dark rounded" asp-action="Structures" asp-controller="Cpp">C++ Structures</a></li>
+<li><a class="link-dark rounded" asp-action="SwitchStatement" asp-controller="Cpp">C++ Switch Statement</a></li>
+<li><a class="link-dark rounded" asp-action="TernaryOperator" asp-controller="Cpp">C++ Ternary Operator</a></li>
+<li><a class="link-dark rounded" asp-action="UserInput" asp-controller="Cpp">C++ User Input</a></li>
+<li><a class="link-dark rounded" asp-action="Variables" asp-controller="Cpp">C++ Variables</a></li>
+<li><a class="link-dark rounded" asp-action="WhileLoop" asp-controller="Cpp">C++ While Loop</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Css-collapse" aria-expanded="false">
+                                    Css
+                                </button>
+                                <div class="collapse" id="Css-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="Backgrounds" asp-controller="Css">Css Backgrounds</a></li>
+<li><a class="link-dark rounded" asp-action="Borders" asp-controller="Css">Css Borders</a></li>
+<li><a class="link-dark rounded" asp-action="BoxModel" asp-controller="Css">Css Box Model</a></li>
+<li><a class="link-dark rounded" asp-action="Colors" asp-controller="Css">Css Colors</a></li>
+<li><a class="link-dark rounded" asp-action="Comments" asp-controller="Css">Css Comments</a></li>
+<li><a class="link-dark rounded" asp-action="Fonts" asp-controller="Css">Css Fonts</a></li>
+<li><a class="link-dark rounded" asp-action="Gradients" asp-controller="Css">Css Gradients</a></li>
+<li><a class="link-dark rounded" asp-action="HeightAndWidth" asp-controller="Css">Css Height And Width</a></li>
+<li><a class="link-dark rounded" asp-action="Icons" asp-controller="Css">Css Icons</a></li>
+<li><a class="link-dark rounded" asp-action="Index" asp-controller="Css">Css Home</a></li>
+<li><a class="link-dark rounded" asp-action="Links" asp-controller="Css">Css Links</a></li>
+<li><a class="link-dark rounded" asp-action="Margins" asp-controller="Css">Css Margins</a></li>
+<li><a class="link-dark rounded" asp-action="Outline" asp-controller="Css">Css Outline</a></li>
+<li><a class="link-dark rounded" asp-action="Padding" asp-controller="Css">Css Padding</a></li>
+<li><a class="link-dark rounded" asp-action="SlowUnderlineWithCss" asp-controller="Css">Css Slow Underline With Css</a></li>
+<li><a class="link-dark rounded" asp-action="Text" asp-controller="Css">Css Text</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Dotnet-collapse" aria-expanded="false">
+                                    .NET
+                                </button>
+                                <div class="collapse" id="Dotnet-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="Index" asp-controller="Dotnet">.NET Home</a></li>
+<li><a class="link-dark rounded" asp-action="RandomNumber" asp-controller="Dotnet">.NET Random Number</a></li>
+<li><a class="link-dark rounded" asp-action="RazorPages" asp-controller="Dotnet">.NET Razor Pages</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Git-collapse" aria-expanded="false">
+                                    Git
+                                </button>
+                                <div class="collapse" id="Git-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="Index" asp-controller="Git">Git Home</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Glossary-collapse" aria-expanded="false">
+                                    Glossary
+                                </button>
+                                <div class="collapse" id="Glossary-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="Index" asp-controller="Glossary">Glossary Home</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Go-collapse" aria-expanded="false">
+                                    Go
+                                </button>
+                                <div class="collapse" id="Go-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="Index" asp-controller="Go">Go Home</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Home-collapse" aria-expanded="false">
+                                    Home
+                                </button>
+                                <div class="collapse" id="Home-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="CodeTut" asp-controller="Home">Home Code Tut</a></li>
+<li><a class="link-dark rounded" asp-action="Index" asp-controller="Home">Home Home</a></li>
+<li><a class="link-dark rounded" asp-action="Privacy" asp-controller="Home">Home Privacy</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Html-collapse" aria-expanded="false">
+                                    Html
+                                </button>
+                                <div class="collapse" id="Html-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="BasicExample" asp-controller="Html">Html Basic Example</a></li>
+<li><a class="link-dark rounded" asp-action="CSS" asp-controller="Html">Html Css</a></li>
+<li><a class="link-dark rounded" asp-action="ColorPicker" asp-controller="Html">Html Color Picker</a></li>
+<li><a class="link-dark rounded" asp-action="Colors" asp-controller="Html">Html Colors</a></li>
+<li><a class="link-dark rounded" asp-action="Comments" asp-controller="Html">Html Comments</a></li>
+<li><a class="link-dark rounded" asp-action="Index" asp-controller="Html">Html Home</a></li>
+<li><a class="link-dark rounded" asp-action="MathSymbols" asp-controller="Html">Html Math Symbols</a></li>
+<li><a class="link-dark rounded" asp-action="Tags" asp-controller="Html">Html Tags</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Java-collapse" aria-expanded="false">
+                                    Java
+                                </button>
+                                <div class="collapse" id="Java-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="Comments" asp-controller="Java">Java Comments</a></li>
+<li><a class="link-dark rounded" asp-action="Index" asp-controller="Java">Java Home</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Js-collapse" aria-expanded="false">
+                                    Js
+                                </button>
+                                <div class="collapse" id="Js-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="AlternateTableRows" asp-controller="Js">Js Alternate Table Rows</a></li>
+<li><a class="link-dark rounded" asp-action="BinaryArrayToDecimal" asp-controller="Js">Js Binary Array To Decimal</a></li>
+<li><a class="link-dark rounded" asp-action="ExpressionsOperators" asp-controller="Js">Js Expressions Operators</a></li>
+<li><a class="link-dark rounded" asp-action="GetMonth" asp-controller="Js">Js Get Month</a></li>
+<li><a class="link-dark rounded" asp-action="Index" asp-controller="Js">Js Home</a></li>
+<li><a class="link-dark rounded" asp-action="Json" asp-controller="Js">Js Json</a></li>
+<li><a class="link-dark rounded" asp-action="RandomColorCreater" asp-controller="Js">Js Random Color Creater</a></li>
+<li><a class="link-dark rounded" asp-action="ToFixed" asp-controller="Js">Js To Fixed</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Python-collapse" aria-expanded="false">
+                                    Python
+                                </button>
+                                <div class="collapse" id="Python-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="Casting" asp-controller="Python">Python Casting</a></li>
+<li><a class="link-dark rounded" asp-action="Comments" asp-controller="Python">Python Comments</a></li>
+<li><a class="link-dark rounded" asp-action="DataTypes" asp-controller="Python">Python Data Types</a></li>
+<li><a class="link-dark rounded" asp-action="Index" asp-controller="Python">Python Home</a></li>
+<li><a class="link-dark rounded" asp-action="Modules" asp-controller="Python">Python Modules</a></li>
+<li><a class="link-dark rounded" asp-action="Numbers" asp-controller="Python">Python Numbers</a></li>
+<li><a class="link-dark rounded" asp-action="Password" asp-controller="Python">Python Password</a></li>
+<li><a class="link-dark rounded" asp-action="ReFlags" asp-controller="Python">Python Re Flags</a></li>
+<li><a class="link-dark rounded" asp-action="Syntax" asp-controller="Python">Python Syntax</a></li>
+<li><a class="link-dark rounded" asp-action="VariableGlobals" asp-controller="Python">Python Variable Globals</a></li>
+<li><a class="link-dark rounded" asp-action="VariableNames" asp-controller="Python">Python Variable Names</a></li>
+<li><a class="link-dark rounded" asp-action="VariableOutput" asp-controller="Python">Python Variable Output</a></li>
+<li><a class="link-dark rounded" asp-action="VariableValues" asp-controller="Python">Python Variable Values</a></li>
+<li><a class="link-dark rounded" asp-action="abs" asp-controller="Python">Python Abs</a></li>
+<li><a class="link-dark rounded" asp-action="controllerGetter" asp-controller="Python">Python Controller Getter</a></li>
+<li><a class="link-dark rounded" asp-action="funnyNumbers" asp-controller="Python">Python Funny Numbers</a></li>
+<li><a class="link-dark rounded" asp-action="stringFormattingTypes" asp-controller="Python">Python String Formatting Types</a></li>
+<li><a class="link-dark rounded" asp-action="swapcase" asp-controller="Python">Python Swapcase</a></li>
+<li><a class="link-dark rounded" asp-action="vars" asp-controller="Python">Python Vars</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Sass-collapse" aria-expanded="false">
+                                    Sass
+                                </button>
+                                <div class="collapse" id="Sass-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="Index" asp-controller="Sass">Sass Home</a></li>
+<li><a class="link-dark rounded" asp-action="Variables" asp-controller="Sass">Sass Variables</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Seo-collapse" aria-expanded="false">
+                                    Seo
+                                </button>
+                                <div class="collapse" id="Seo-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="HtmlTags" asp-controller="Seo">Seo Html Tags</a></li>
+<li><a class="link-dark rounded" asp-action="Index" asp-controller="Seo">Seo Home</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        <li class="border-top my-3"></li>
+                            
+                        </ul>
+                        @* End Sidebar *@
+                    </div>
+                </div>
+                <div id="mainBody" class="pt-3 col-sm-8">
+                    <h1 style="border-bottom: 1px dashed palegreen" class=" display-5 mb-5">@ViewData["Controller"]: @ViewData["title"]</h1>
+                    @RenderBody()
+                    <nav class="bg-dark" style="width: 100%; height: 1px;">
+                    </nav>
+                   
+                </div>
+                <div id="rightSidebar" class="border-left col-sm-2 text-start ">
+                    <div style="top: 83px;" class="sticky-top flex-shrink-0 p-3 bg-white ">
+                        <a href="/"
+                            class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none">
+                            <svg class="bi me-2" width="30" height="24">
+                                <use xlink:href="#bootstrap"></use>
+                            </svg>
+                            
+                        </a>
+                        <ul class="list-unstyled ps-0">
+                            
+                            <ul id="rightSideList" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <span class="">
+                                    @ViewData["controller"] &gt; @ViewData["title"]    
+                                </span>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="~/lib/bootstrap/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/sidebars.js"></script>
+    <script src="~/js/prism.js" asp-append-version="true"></script>
+
+@* <li><a href="#" class="link-dark rounded">Annually</a></li> *@
+
+@{
+    string controller = ViewData["controller"].ToString();
+}
+
+<script>
+    
+    let h2s = document.querySelectorAll("H2");
+    let h3s = document.querySelectorAll("H3");
+    let sidebar = document.querySelector("#rightSideList");
+    
+    for (let h2 of h2s){
+        h2.setAttribute('class', 'header')
+    }
+    for (let h2 of h3s){
+
+        h2.setAttribute('class', 'header header-3')
+
+    }
+
+
+    let c = document.querySelector("H1").textContent.split(":")[0]
+    
+    let btns = document.querySelector("#leftSidebar").querySelector("UL").querySelectorAll('button')
+    
+    for (let btn of btns)
+    {
+        if (btn.textContent.trim(" ") == c ){
+            btn.ariaExpanded = "true"
+            btn.parentElement.querySelector("div").setAttribute('class', 'collapse show')
+        }
+    }
+
+    let title = document.querySelector("H1").textContent.split(":")[1].replace(/ /g, "")
+    let links = document.querySelector("#leftSidebar").querySelector("UL").querySelectorAll("LI");
+    for (let link of links){
+        let res = link.textContent.replace(/ /g, "").replace(/\n/g, "")
+        @* console.log(res)
+        console.log(c + title) *@
+        
+        if(c + title == res){
+            link.querySelector('a').style.background = '#98FB98 '
+            
+        }
+    }
+</script>
+
+<script>
+    let headers = document.querySelectorAll(".header")
+    
+
+    for (let header of headers){
+            let link = document.createElement('A')
+            let li = document.createElement('LI')
+            let text= header.textContent.trim("\n").replace(/ /g, "" ).replace(/[.,\/#!$%\^&\*;:{}=\-\?_`~()]/g,"").trim(" ");
+            
+
+            link.setAttribute("class", "link-dark")
+            header.setAttribute('id', text)
+            link.setAttribute('href','#' + text)
+            link.textContent = header.textContent
+            li.appendChild(link)
+            sidebar.append(li)
+
+            if (header.getAttribute('class') == "header header-3"){
+                link.style.paddingLeft = "25px"
+                link.style.borderLeft = "3px solid grey"
+            }
+            else {
+                link.style.borderLeft = "4px solid palegreen"
+            }
+
+            if (header.textContent.trim(" ") == "^"){
+                link.style.borderLeft = "none"
+            }
+
+    }
+</script>
+
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+@* Footer *@
+
+<div class="pt-5 container">
+    <div class="row">
+        <div class="col-sm-2 text-end ">
+            
+        </div>
+        <div class="col-sm-8">
+            <footer >
+                <ul class="nav justify-content-center pb-3 mb-3 border-bottom">
+                    <li class="nav-item"><a asp-action="index" asp-controller="home" class="nav-link px-2 text-muted">Home</a></li>
+                    
+                    
+                </ul>
+                Contact Creator <a href="mailto:amsears60441@gmail.com">amsears60441@gmail.com</a>
+                <p class="text-center text-muted"><i>@Version</i></p>                
+            </footer>
+        </div>
+        <div class=" col-sm-2 text-end ">
+            
+        </div>
+        
+    </div>
+
+
+</div>
+
+</html>

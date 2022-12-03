@@ -1,0 +1,80 @@
+<h2>
+    Link States
+</h2>
+<p>
+    Links have different states, like if the link has been clicked or not, 
+    is it being actively clicked, etc.. The four(4) possible states are: 
+</p>
+<ul>
+    <li>
+        <code>a:link</code> - normal link
+    </li>
+    <li>
+        <code>a:visited</code> - user has clicked the link before
+    </li>
+    <li>
+        <code>a:hover</code> - when mouse is put on the link but not clicked 
+    </li>
+    <li>
+        <code>a:active</code> - the moment when the link is clicked 
+    </li>
+</ul>
+
+
+<pre><code class="lang-css">
+/* normal link color */ 
+a.link:link{
+    color: black;
+}
+/* user has clicked link before */ 
+a.link:visited{
+    color: purple;
+}
+/* hover over a link */ 
+a.link:hover{
+    color: red;
+}
+/* link is clicked */ 
+a.link:active{
+    color: black;
+}
+</code></pre>
+<a style="margin-left: 3%" href="" id="normalLink">
+        Red hover
+</a>
+
+<style>
+    #normalLink:hover{
+        color: red;
+    }
+    #normalLink:active{
+        color: black;
+    }
+    @* #normalLink:visited{
+        color: var(--purple);
+    } *@
+</style>
+<h2>
+    Link Styling
+</h2>
+<p>
+    To change the color of a link, use the <code>color</code>
+    property. Other properties like background can be changed as well. 
+</p>
+<a style="margin-left: 3%; color: var(--red);" href="">
+    Example Colored Link
+</a>
+<p>
+    Buttons are easy to make with CSS, just add some padding, a background and an <code>&lt;a&gt;</code> tag.
+</p>
+<pre><code class="lang-css">a {
+    color: white;
+    background: black;
+    padding: 10px;
+}
+</code></pre>
+<p>
+    <a class="mx-2" style=" padding: 10px; background: black; color: white;" href="">Example Button 1</a>
+    <a class="mx-2" style=" padding: 10px; background: black; color: white;" href="">Example Button 2</a>
+    <a class="mx-2" style=" padding: 10px; background: black; color: white;" href="">Example Button 3</a>
+</p>

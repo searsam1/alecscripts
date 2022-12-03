@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MvcAlecScripts.Controllers
 {
-    public class seoController : Controller
+    public class SeoController : Controller
     {
         public string controllerName = "Seo";
         public IActionResult Index()

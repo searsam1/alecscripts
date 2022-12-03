@@ -41,12 +41,16 @@ p{
 <h2>
     Alignment
 </h2>
+
 <p>
     Aligning text is done with the <code>text-align</code>
     property, which has a variety of styles like center, end, 
     start, etc..
 </p>
-
+<pre><code class="lang-css">p {
+    text-align: center;
+}
+</code></pre>
 @{
     string[] props = "start end left right center justify justify-all match-parent".Split(" ");
 }
@@ -71,15 +75,226 @@ p{
 <h2>
     Decoration
 </h2>
+<p>
+    Text decoration controls the decorative lines of text. It is a shorthand 
+    for the other text-decoration properties: 
+    <ul>
+        <li>
+            text-decoration-color
+        </li>
+        <li>
+            text-decoration-line
+        </li>
+        <li>
+            text-decoration-style
+        </li>
+    </ul>
+</p>
+<pre><code class="lang-css">p{
+    text-decoration: solid red underline;
+}
+</code></pre>
+<p style="text-decoration: solid red underline; text-decoration-style: solid; text-decoration-color: red; text-decoration-line: underline;">
+    Result text is underlined 
+</p>
+<pre><code class="lang-css">p {
+    text-decoration-style: solid; 
+    text-decoration-color: blue; 
+    text-decoration-line: underline;
+}
+</code></pre>
+
+<p style="text-decoration-style: solid; text-decoration-color: blue; text-decoration-line: underline;">
+    Result text is underlined 
+</p>
+
+<pre><code class="lang-css">p {
+    text-decoration-style: solid;
+    text-decoration-color: red;
+    text-decoration-line: line-through;
+}
+</code></pre>
+<p style="text-decoration-style: solid; text-decoration-color: red; text-decoration-line: line-through;">
+    Result crossed out
+</p>
 
 <h2>
     Transformation
 </h2>
+<p>
+    The <code>text-transform</code> property makes text lowercase, uppercase or 
+    both. 
+</p>
+<pre><code class="lang-css">p.upper{
+    text-transform: uppercase;
+}
+</code></pre>
+<p class="upper">
+    Phasellus finibus ullamcorper neque.
+</p>
+
+<pre><code class="lang-css">p.lower{
+    text-transform: lowercase;
+}
+</code></pre>
+<p class="lower">
+    Phasellus finibus ullamcorper neque.
+</p>
+
+<pre><code class="lang-css">p.title{
+    text-transform: capitalize;
+}
+</code></pre>
+<p class="title">
+    Phasellus finibus ullamcorper neque.
+</p>
+
+<style>
+p.upper{
+    text-transform: uppercase;
+}
+p.lower{
+    text-transform: lowercase;
+}
+p.title{
+    text-transform: capitalize;
+}
+</style>
 
 <h2>
     Spacing
 </h2>
+<p>
+    Space can be added between words or between letters to increase 
+    the readability or style of text. Some of the properties used in CSS are:
+</p>
+@{string[] s = "text-indent letter-spacing line-height word-spacing white-space".Split(" ");}
+<ul>
+    @foreach (string item in s)
+    {
+        <li>
+            @item
+        </li>
+    }
+</ul>
+
+<h3>
+    text-indent
+</h3>
+<p>
+    An indent is a tab or set of spaces used before the first word 
+    in a paragraph. 
+</p>
+<pre><code class="lang-css">
+p {
+  text-indent: 50px;
+}
+</code></pre>
+
+<p style="text-indent: 50px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo libero a auctor tincidunt. Vestibulum non aliquam quam. Phasellus vel ex interdum, sagittis lectus id, imperdiet augue. Phasellus sed arcu tellus. Mauris a commodo leo, nec molestie enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam fringilla placerat.
+</p>
+
+<h3>
+    letter-spacing
+</h3>
+<p>
+    Letter-spacing is the margin or space between each character in a word. 
+</p>
+<pre><code class="lang-css">
+p {
+  letter-spacing: 10px;
+}
+</code></pre>
+
+<p style="letter-spacing: 10px;">
+    Lorem ipsum
+</p>
+
+<h3>
+    line-height
+</h3>
+<p>
+    Line-height defines the space between each newline <code>\n</code> in a paragraph. 
+</p>
+<pre><code class="lang-css">
+p {
+  line-height: 75px;
+}
+</code></pre>
+
+<p style="line-height: 75px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo libero a auctor tincidunt. Vestibulum non aliquam quam. Phasellus vel ex interdum, sagittis lectus id, imperdiet augue. Phasellus sed arcu tellus. Mauris a commodo leo, nec molestie enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam fringilla placerat aliquam. Phasellus quam massa, feugiat nec tellus nec.
+</p>
+
+
+<h3>
+    Word Spacing
+</h3>
+<p>
+    Line-height defines the space between each word. 
+</p>
+<pre><code class="lang-css">
+p {
+  word-spacing: 50px;
+}
+</code></pre>
+
+<p style="word-spacing: 50px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo libero a auctor tincidunt. Vestibulum non aliquam quam. Phasellus vel ex interdum, sagittis lectus id, imperdiet augue. Phasellus sed arcu tellus. Mauris a commodo leo, nec molestie enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam fringilla placerat aliquam. Phasellus quam massa, feugiat nec tellus nec.
+</p>
+
+<h3>
+    White Space
+</h3>
+<p>
+    White-space is how the wrapping is treated with text. 
+</p>
+<pre><code class="lang-css">
+p {
+  white-space: nowrap;
+}
+</code></pre>
+
+<p style="white-space: nowrap; overflow-x: scroll;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo libero a auctor tincidunt. Vestibulum non aliquam quam. Phasellus vel ex interdum, sagittis lectus id, imperdiet augue. Phasellus sed arcu tellus. Mauris a commodo leo, nec molestie enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam fringilla placerat aliquam. Phasellus quam massa, feugiat nec tellus nec.
+</p>
+
+
+<pre><code class="lang-css">
+p {
+    white-space: pre-wrap;
+}
+</code></pre>
+
+<p style="white-space: pre-wrap;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+</p>
+
 
 <h2>
     Shadow
 </h2>
+<p>
+    The <code>text-shadow</code> property paints a shadow behind text. The horizontal and veritcal aspects 
+    are defined, as well as the color and how blurry the shadow is. 
+</p>
+<pre><code class="lang-plain">
+  text-shadow:
+    horizontal vertical blur color; 
+
+</code></pre>
+
+<h3>
+    Examples
+</h3>
+<pre><code class="lang-css">text-shadow: 2px 3px 5px lime;
+</code></pre>
+<h1 style="margin-left: 3%; text-shadow: 2px 3px 5px lime;">
+    text-shadow
+</h1>
+<pre><code class="lang-css">text-shadow: 2px 3px 5px crimson;
+</code></pre>
+<h1 style="margin-left: 3%; text-shadow: 2px 3px 5px crimson;">
+    text-shadow-2
+</h1>
