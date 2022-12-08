@@ -2,4 +2,149 @@
     Arrays are fixed size in Java and cannot go above their set limit. They hold a collection 
     of values that have the same type. For example, to store 100 numbers in an array: 
 </p>
-<pre><code class="lang-java">String[] array = new String[100];</code></pre>
+<pre><code class="lang-java">int[] array = new int[100];</code></pre>
+
+<p>
+    Arrays start at zero(0) and work up from there. To access a spot in the array, 
+    use square brackets <code>[]</code> and the index.
+</p>
+
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) { 
+        int[] array = new int[100];
+        array[0] = 22;
+        System.out.println(array[0]);
+        // 22
+    }
+}</code></pre>
+
+<h2>
+    Declaring Arrays
+</h2>
+<p>
+    Arrays are declared with a type and name.
+</p>
+<pre><code class="lang-plain">type[] name;</code></pre>
+<p>
+    Declaration and assignment do not have to happen at the same time, 
+    but they can if needed. Assignment is adding a value to the array 
+    at a certain location. 
+</p>
+<pre><code class="lang-java">// declare new array with doubles 
+double[] arr;
+
+// allocate 10 spots in memory
+arr = new double[10];
+</code></pre>
+
+<h2>
+    Initializing Arrays
+</h2>
+<p>
+    Arrays can be predefined or initialized with a set of values. Put the 
+    set of values in curly braces <code>{}</code> after the declaration. 
+</p>
+<pre><code class="lang-java">
+// declare and initialize an array
+int[] age = {1, 2, 3, 4, 5};
+</code></pre>
+
+
+<h2>
+    Get Length of an Array
+</h2>
+<p>
+    Java comes with the <code>.length</code> property which returns how many 
+    elements are inside the array. This is useful in loops, because loops require the length 
+    of an array. 
+</p>
+<pre><code class="lang-java">arr.length</code></pre>
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) { 
+        int[] array = new int[100];
+        System.out.println(array.length);
+        // 100
+    }
+}</code></pre>
+
+<h2>
+    Looping over arrays 
+</h2>
+<p>
+    Often times there needs to be a way to access every value in an 
+    array or put some sort of filter through it. Looping is how to go through each 
+    element and do something with it in an array.
+</p>
+
+<h3>
+    For Loop
+</h3>
+<p>
+    The first way of looping is to loop over a range that ends at the length of the array. 
+    This is also known as a for loop. 
+</p>
+
+@{
+    string Example = @"class Main {
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3, 4 };
+        int n; 
+        for (int i=0; i<arr.length; i++){
+            n = arr[i];
+            System.out.print(n + ""\n"");
+        // 1
+        // 2
+        // 3
+        // 4
+        }
+    }
+}";
+}
+<pre><code class="lang-java">@Example</code></pre>
+
+<h3>
+    For Each Loop
+</h3>
+<p>
+    The other way of looping is using a for each loop. This doesn't use the index of the arr or the length; instead, it returns each value on its own. 
+</p>
+@{
+    string Example2 = @"class Main {
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3, 4 };
+        for (int n: arr){
+            System.out.print(n + ""\n"");
+        // 1
+        // 2
+        // 3
+        // 4
+        }
+    }
+}";
+    }
+<pre><code class="lang-java">@Example2</code></pre>
+
+<h2>
+    Multidimensional Arrays
+</h2>
+<p>
+    Multidimensional arrays have other arrays inside them. Each time 
+    another array is nested in another one, it is called another 
+    level or dimension. The example below uses the <code>int</code> type, but it works with 
+    almost all primitive types, not just normal ints.
+</p>
+<pre><code class="lang-java">int[][][] intArray = new int[10][20][30];</code></pre>
+<p>
+    Each set of square brackets <code>[]</code> on the left side has a matching pair 
+    with its size on the right. In the example above, the first level of the array will have (ten)10 elements, 
+    the second level twenty(20) elements and the last level will have thirty(30). 
+</p>
+<pre><code class="lang-java">class Main {
+	public static void main(String[] args)
+	{
+		int[][] arr = new int[1][1];
+		arr[0][0] = 1;
+		System.out.println("arr[0][0] = " + arr[0][0]);
+        // arr[0][0] = 1
+	}
+}</code></pre>
