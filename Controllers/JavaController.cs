@@ -69,5 +69,19 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Strings()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Strings";
+        return View();
+    }
+    
+    public IActionResult ControlFlow()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Control Flow";
+        return View();
+    }
+    
     }
 }

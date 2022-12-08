@@ -1,0 +1,74 @@
+
+<p>
+    Strings are a collection or sequence of characters: this sentence is 
+    an example of a string. In Java, strings are surrounded by double quotes <code>""</code> 
+    and preceded by the <code>String</code> type. 
+</p>
+
+<h2>
+    String Literals 
+</h2>
+<p>
+    The easiest way to create strings in Java is 
+    string literals, a series of characters surrounded by double quotes <code>""</code>. 
+</p>
+<pre><code class="lang-java">String greeting = "Pozdrav svijete!";</code></pre>
+
+<h2>
+    Get character at an Index 
+</h2>
+<p>
+    Use the <code>charAt</code> method and an index to find a character in a given position 
+    in a string. Like arrays, strings start at index zero(0). 
+</p>
+<pre><code class="lang-java">String s = "Hello, Brother"
+// s.chatAt(0) = H
+// s.chatAt(1) = e
+// s.chatAt(2) = l
+// s.chatAt(3) = l
+// s.chatAt(4) = o
+// ...
+</code></pre>
+
+<h2>
+    String Length
+</h2>
+<p>
+    To find the length of a string in Java, use the <code>length()</code> method. A palindrome 
+    is a string that is the same backwards and forwards, like "Murder for a jar of red rum" ('mur der fo raj a rof redruM'). 
+    In order to check if a string is a palindrome or not, it needs to be reversed, which is where <code>length()</code> is useful. 
+</p>
+<pre><code class="lang-java">String palindrome = "saippuakivikauppias";
+int len = palindrome.length();
+// 19
+</code></pre>
+
+<p>
+    The first thing to do is reverse the string. If ifs the same reversed, 
+    its a palindrome. To reverse a string, loop over each index and use <code>len - 1 - i</code> 
+    for the normal string to access it from the back (where <code>i</code> is the iterator variable). 
+</p>
+<pre><code class="lang-java">class Main {
+    
+    public static String reverseString(String s) {
+        int len = s.length();
+        char[] arr = new char[len];
+        for (int i=0; i < len; i++){
+            arr[i] = s.charAt(len - 1 - i);
+        }
+        return new String(arr); 
+    }
+    public static void main(String[] args) {
+        String input = "racecar";
+        System.out.println( reverseString( input ) );
+        // racecar
+    }
+}</code></pre>
+
+<h2>
+    Concatenating Strings
+</h2>
+<p>
+    <a href="/Glossary/Index#concatenation">Concatenating</a> is another way to say adding together. In programming, it means 
+    adding two(2) strings together, and is done with the normal <code>+</code> operator: <code>"Hello," + " world" + "!"</code>. 
+</p>
