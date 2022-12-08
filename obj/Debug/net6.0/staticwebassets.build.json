@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5n+h3VrQaRP3RIvz6iAxZruT/f8gbYDwb4SlABQugpY=",
+  "Hash": "oHPG51s+7uiaP8+LWMpRbUqts9N9mCVoUPq9IxWQKBg=",
   "Source": "MvcAlecScripts",
   "BasePath": "_content/MvcAlecScripts",
   "Mode": "Default",
@@ -136,6 +136,23 @@
       "OriginalItemSpec": "wwwroot/css/alecScriptsStyles.css.map"
     },
     {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/css/old_prism.css",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "css/old_prism.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/old_prism.css"
+    },
+    {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/css/prism.css",
       "SourceId": "MvcAlecScripts",
       "SourceType": "Discovered",
@@ -236,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/HToDisplay.js"
+    },
+    {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/js/old_prism.js",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "js/old_prism.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/old_prism.js"
     },
     {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/js/openSidebarLink.js",
@@ -1428,6 +1462,23 @@
       "OriginalItemSpec": "wwwroot/lib/Resources/.DS_Store"
     },
     {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/bell-peppers.png",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/Resources/bell-peppers.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/Resources/bell-peppers.png"
+    },
+    {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/book-half.svg",
       "SourceId": "MvcAlecScripts",
       "SourceType": "Discovered",
@@ -1698,6 +1749,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/Resources/typewriter-g7fca08b4e_1920.jpeg"
+    },
+    {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/wheat-g88af31ed1_1920.png",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/Resources/wheat-g88af31ed1_1920.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/Resources/wheat-g88af31ed1_1920.png"
     },
     {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/site.webmanifest",

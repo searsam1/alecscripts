@@ -19,10 +19,7 @@ def create_new_publicIAction(new_page=None):
     {2}
     """.format(new_page, "{", "}", title)
     return text, new_page
-
-create_new_publicIAction("loops")
-
-
+    
 def get_controller_name(controller=None):
     if not controller:
         controller = input("Controller Name? : ").title().strip()
@@ -50,14 +47,10 @@ def change_controller_file(controller_name=None, page_name=None):
         os.chdir("Views/{}".format(controller_name))
         os.system("touch {}.cshtml".format(page_name))
         os.system("code {}.cshtml".format(page_name))
-        
-        print("waiting for page to update...")
-        time.sleep(5)
         os.system("open -a Safari https://localhost:7290/{}/{}".format(controller_name, page_name))
-        
         print("Created Views/{}/{}.cshtml".format(controller_name,page_name))
 
     make_new_file()    
 
 change_controller_file()
-__update_sidebar.update_file()
+__update_sidebar.update_layout_with_sidebar()

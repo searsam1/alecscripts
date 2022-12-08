@@ -1,0 +1,321 @@
+
+<h2>
+    Types of Operators 
+</h2>
+<p>
+    Operators perform actions on two or more values or variables. The <code>+</code> is the add 
+    operator and adds to operands together. Java's operators are split 
+    into six(6) types: 
+</p>
+
+<ul style="list-style-type: decimal;">
+    <li>
+        Arithmetic Operators
+    </li>
+    <li>
+        Assignment Operators
+    </li>
+    <li>
+        Relational Operators
+    </li>
+    <li>
+        Logical Operators
+    </li>
+    <li>
+        Unary Operators
+    </li>
+    <li>
+        Bitwise Operators
+    </li>
+</ul>
+
+<h3>
+    Arithmetic Operators
+</h3>
+<p>
+    Arithmetic Operators are the basic math operators for performing basic calculations like addition and 
+    subtraction.
+</p>
+<ul>
+    <li>
+        <code>+</code> Addition
+    </li>
+    <li>
+        <code>-</code> Subtraction
+    </li>
+    <li>
+        <code>*</code> Multiplication
+    </li>
+    <li>
+        <code>/</code> Division
+    </li>
+    <li>
+        <code>%</code> Modulo
+    </li>
+</ul>
+
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {
+      
+      // declare variables
+      int a = 2, b = 3;
+  
+      // addition operator
+      System.out.println("a + b = " + (a + b));
+      // a + b = 5
+  
+      // subtraction operator
+      System.out.println("a - b = " + (a - b));
+      // a - b = -1
+  
+      // multiplication operator
+      System.out.println("a * b = " + (a * b));
+      // a * b = 6
+  
+      // division operator
+      System.out.println("a / b = " + (a / b));
+      // a / b = 0
+  
+      // modulo operator
+      System.out.println("b % a = " + (b % a));
+      // b % a = 1
+    }
+  }</code></pre>
+<h3>
+    Assignment Operators
+</h3>
+<p>
+    Assignment operators use the equals <code>=</code> sign. They're 
+    used to assign values to variables.
+</p>
+<ul>
+    <li>
+        <code>=</code>
+    </li>
+    <li>
+        <code>+ =</code>
+    </li>
+    <li>
+        <code>- =</code>
+    </li>
+    <li>
+        <code>* =</code>
+    </li>
+    <li>
+        <code>/ =</code>
+    </li>
+    <li>
+        <code>% =</code>
+    </li>
+</ul>
+<p>
+    Use these when adding(or subtracting, dividing, etc.) a variable and assigning it back to itself. 
+    For example, <code>a += b</code> is the same as <code>a = a + b</code>. 
+</p>
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {
+      
+      int a = 2;
+      int variable;
+  
+    //   assignment
+      variable = a;
+      System.out.println("var using =: " + variable);
+    //   var using =: 2
+  
+    //   =+ operator 
+      variable += a;
+      System.out.println("var using +=: " + variable);
+    //   var using +=: 4
+  
+    //   =* operator
+      variable *= a;
+      System.out.println("var using *=: " + variable);
+    //   var using *=: 8
+    }
+  }</code></pre>
+  <h3>
+    Relational Operators
+  </h3>
+  <p>
+    Relational operators compare the values of two operands and returns 
+    a true or false value. 
+    For example, <code>a > b</code> or <code>a == b</code>. It is used to control to flow 
+    of the program and what happens and what doesn't. 
+  </p>
+  <ul>
+    <li>
+        <code>= =</code>
+    </li>
+    <li>
+        <code>! =</code>
+    </li>
+    <li>
+        <code> > </code>
+    </li>
+    <li>
+        <code> < </code>
+    </li>
+    <li>
+        <code> > = </code>
+    </li>
+    <li>
+        <code> < = </code>
+    </li>
+  </ul>
+
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {
+      
+      // create variables
+      int a = 55, b = 5;
+  
+      // value of a and b
+      System.out.println("a is " + a + " and b is " + b);
+      // a is 55 and b is 5
+  
+      // == operator
+      System.out.println(a == b);
+      // false
+  
+      // != operator
+      System.out.println(a != b);  
+      // true
+  
+      // > operator
+      System.out.println(a > b);  
+      // true
+  
+      // < operator
+      System.out.println(a < b);  
+      // false
+  
+      // >= operator
+      System.out.println(a >= b);  
+      // true
+  
+      // <= operator
+      System.out.println(a <= b);  
+      // false
+    }
+  }
+  </code></pre>
+
+<h3>
+    Logical Operators
+</h3>
+<ul>
+    <li>
+        <code>&&</code> (Logical AND)
+    </li>
+    <li>
+        <code>||</code> (Logical OR)
+    </li>
+    <li>
+        <code>!</code> (Logical NOT)
+    </li>
+</ul>
+<p>
+    Logical operators check if conditions are true or false and also 
+    control flow in a program. 
+</p>
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {
+  
+      int a, b; 
+      a = 10; b = 20; 
+  
+      // && operator
+      System.out.println((a > b) && (b < a));
+      // false
+      System.out.println((b > a) && (b == 20));
+      // true 
+  
+      // || operator
+      System.out.println((a > b) || (a < b));
+      // true 
+      System.out.println((a < b) || (a > b));
+      // true 
+      System.out.println((a == b) || (b != a));
+      // true 
+  
+      // ! operator
+      System.out.println(!(a == b));
+      // true 
+      System.out.println(!(b > a));
+      // false 
+    }
+  }</code></pre>
+
+<h3>
+    Unary Operators
+</h3>
+<p>
+    The decrement <code>--</code> operator will minus one from the variable it is put with. 
+    The increment <code>++</code> adds one, and the unary minus <code>-</code> takes the negative 
+    of a number. 
+</p>
+<ul>
+    <li>
+        <code>+</code> - Unary Plus 
+    </li>
+    <li>
+        <code>-</code> - Unary Minus
+    </li>
+    <li>
+        <code>++</code> - Increment 
+    </li>
+    <li>
+        <code>--</code> - Decrement 
+    </li>
+    <li>
+        <code>!</code> - Logical Compliment 
+    </li>
+</ul>
+
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {
+      
+    //   declare variables
+      int a = 7, b = 9;
+      int result1, result2;
+  
+    //   original value
+      System.out.println("Value of a: " + a);
+    //   Value of a: 7
+  
+    //   increment operator
+      result1 = ++a;
+      System.out.println("After increment: " + result1);
+    //   After increment: 8
+  
+      System.out.println("Value of b: " + b);
+    //   Value of b: 9
+  
+    //   decrement operator
+      result2 = --b;
+      System.out.println("After decrement: " + result2);
+    //   After decrement: 8
+    }
+  }</code></pre>
+
+
+<h2>Ternary Operator</h2>
+
+<p>
+    Sometimes, instead of using if-else blocks, the ternary operator <code>?</code> 
+    is shorter to write and easier to read. First comes the condition, then the values to return 
+    if the condition is true and false. 
+</p>
+<pre><code class="lang-java">class Java {
+    public static void main(String[] args) {
+  
+      int month = 0;
+      String result;
+  
+      // ternary operator
+      result = (month == 0) ? "Jan." : "Not Jan";
+      System.out.println(result);
+      // Jan.
+    }
+  }</code></pre>

@@ -275,12 +275,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHRtbC9Db21tZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/CountryCodes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHRtbC9Db3VudHJ5Q29kZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/CSS.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHRtbC9DU1MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/FoodForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHRtbC9Gb29kRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/Forms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHRtbC9Gb3Jtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHRtbC9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/InputTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHRtbC9JbnB1dFR5cGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/LanguageCodes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHRtbC9MYW5ndWFnZUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Html/MathSymbols.cshtml]
@@ -291,12 +311,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSHRtbC90YWdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Arrays.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9BcnJheXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Comments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9Db21tZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/DataTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9EYXRhVHlwZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Math.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9NYXRoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Operators.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9PcGVyYXRvcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Variables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9WYXJpYWJsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/AlternateTableRows.cshtml]
@@ -305,6 +345,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/BinaryArrayToDecimal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvQmluYXJ5QXJyYXlUb0RlY2ltYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/Classes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvQ2xhc3Nlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/CreateFileSafeNames.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvQ3JlYXRlRmlsZVNhZmVOYW1lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/ExpressionsOperators.cshtml]
@@ -323,8 +371,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvSnNvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/MethodDefinitions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvTWV0aG9kRGVmaW5pdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/RandomColorCreater.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvUmFuZG9tQ29sb3JDcmVhdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/RegexExec.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvUmVnZXhFeGVjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/Replace.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnMvUmVwbGFjZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/ToFixed.cshtml]
@@ -337,6 +397,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Casting.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL0Nhc3RpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Classes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL0NsYXNzZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Comments.cshtml]
@@ -369,6 +433,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/password.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL3Bhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL1ByaW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/ReFlags.cshtml]
@@ -427,12 +495,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/old_layout_copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL29sZF9sYXlvdXRfY29weS5jc2h0bWw=
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/old_outlay_copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL29sZF9vdXRsYXlfY29weS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/v2/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvdjIvaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/_ViewImports.cshtml]

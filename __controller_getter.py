@@ -45,13 +45,15 @@ def replace_specials(txt):
 def asp_link(controller, action):
     controller_label = replace_specials(controller)
     action_label = replace_specials(title_split(action))
-    string = f"""<li><a class="link-dark rounded" asp-action="{action}" asp-controller="{controller}">{controller_label} {action_label}</a></li>"""
+    if controller_label != action_label:
+        string = f"""<li><a class="link-dark rounded" asp-action="{action}" asp-controller="{controller}">{controller_label} {action_label}</a></li>"""
+    else:
+        string = f"""<li><a class="link-dark rounded" asp-action="{action}" asp-controller="{controller}">{action_label}</a></li>"""
     controller_label_g = controller_label
     return string
 
 def html(controller, actions):
     controller = controller.split("Controller.cs")[0]
-    print(controller)
     return f"""
                             <li class="mb-1">
                                 <button class="btn btn-toggle align-items-center rounded collapsed"
@@ -97,21 +99,42 @@ def get_controllers():
         actions[controller] = new_action
     return actions
 
+def sort_controllers(controllers):
+    actions = controllers.values()
+    # get home for sorting
+    home = controllers["HomeController.cs"]
+    excluded_controllers = ["HomeController.cs", "v2Controller.cs"]
+    sorted_controllers = dict( 
+                [("HomeController.cs", home)] + sorted( [ (k,v) for k,v in controllers.items() if not k in excluded_controllers ], 
+                            key=lambda tup: len( tup[1]),
+                            reverse=True
+                            
+                        )
+                            )    
+    # print(sorted_controllers)
+    
+    return sorted_controllers
+
+
+def sort_actions(actions):
+    actions = sorted(actions, key=lambda x: x.lower() )
+    actions = [action for action in actions 
+                    if action.lower() != "index"]
+    actions = ["index"] + actions
+    return actions
 
 def create_links(controller, actions):
-    actions = sorted(actions)
+    actions = sort_actions(actions)
     links = [asp_link(controller.split("Controller.cs")[0], action) for action in actions]
     return links
 
 def create_sidebar(controllers):
+    controllers = sort_controllers(controllers)
     sidebar = ""
     for controller, actions in controllers.items():
         links = "\n".join(create_links(controller, actions))
         sidebar += html(controller, links)
     return sidebar
-        
 
-controllers = get_controllers()
 
-res = create_sidebar(controllers)
-clipboard.copy(res)
+

@@ -1,0 +1,48 @@
+<h2>
+    The <code>print</code> function
+</h2>
+<p>
+    To display output to the console in python, use the <code>print</code> function.
+
+    It has parameters like <code>end</code> and <code>sep</code> to control how it prints out to the screen. 
+</p>
+<pre><code class="lang-py">print("Printing...")
+# Printing...
+</code></pre>
+
+<h2>
+    Syntax
+</h2>
+<pre><code class="lang-py">print(value, sep=' ', end='\n', file=sys.stdout, flush=False)
+</code></pre>
+
+<h2>
+    Parameters
+</h2>
+<ul>
+    <li>
+        <code>value</code> - object to be printed 
+    </li>
+    <li>
+        <code>sep</code> - Separator between objects (default is a space)
+    </li>
+    <li>
+        <code>end</code> - Character to print at the end of <code>value</code>
+    </li>
+    <li>
+        <code>file</code> - Write Method Object 
+    </li>
+    <li>
+        <code>flush</code> - Flushed or buffered
+    </li>
+</ul>
+
+<h3>
+    Flush
+</h3>
+<p>
+    When the output is buffered, it waits until a newline is hit 
+    to print. A flush, on the other hand, prints without waiting. The 
+    default value for flush is false, meaning output is normally buffered.
+    
+</p>

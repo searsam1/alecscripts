@@ -1,0 +1,41 @@
+
+@{
+    string[] inputTypes = "button checkbox color date datetime-local email file hidden image month number password radio range reset search submit tel text time url week".Split(' ');
+}
+
+<p>
+    The input tag is used along with the label tag to collect input of different types. 
+    It has a <code>type</code> attribute which controls how the input is collected. For example, 
+    the <code>date</code> value will display a calender to choose from. 
+</p>
+
+<p>
+    Input Tags involve forms, which are containers for collecting input. 
+</p>
+<p>
+    See more about forms <a asp-action="Forms" asp-controller="Html" >here</a>
+</p>
+
+<h2>Input Types</h2>
+<ul>    
+@foreach (string inputType in inputTypes)
+{
+    <li>
+        <code>@inputType</code>
+    </li>
+}
+</ul>
+
+<h3>
+    Examples
+</h3>
+@foreach (string inputType in inputTypes)
+{
+    <div class="bg-light border border-secondary container p-2 mb-5 rounded-3">
+        <pre><code class="lang-html">&lt;input type="@inputType"&gt;</code></pre>
+        <form class="">
+            <label for="@inputType">@inputType</label>: 
+            <input id="@inputType" type="@inputType" value="123">
+        </form>
+    </div>
+}

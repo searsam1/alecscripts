@@ -1,0 +1,132 @@
+
+<h2>
+    boolean
+</h2>
+<p>
+    Can take on <code>true</code> or <code>false</code> values. 
+</p>
+<pre><code class="lang-java">class Main {
+  public static void main(String[] args) {
+    boolean boolFlag = true;
+    System.out.println(boolFlag);    
+    // true
+  }
+}
+</code></pre>
+<h2>
+    byte
+</h2>
+<p>
+    A byte is a value in the range of <code>-128</code> to <code>127</code>.
+</p>
+<pre><code class="lang-java">class Main {
+  public static void main(String[] args) {
+    byte byteExample = 10;
+    System.out.println(byteExample);
+    // 10
+  }
+}
+</code></pre>
+<h2>
+    short
+</h2>
+<p>
+    The short type is a 16-bit integer in the range <b>-32,768</b> to <b>32,767</b>
+</p>
+<pre><code class="lang-java">class Main {
+  public static void main(String[] args) {
+    	
+    short hourlyRate = 300;
+    System.out.println(hourlyRate);
+    // prints 300
+  }
+}
+</code></pre>
+<h2>
+    int
+</h2>
+<p>
+    Ints are 32-bits and take on values in the range -2<span class="fs-3">&#xb3;&#xb9;</span> to 2<span class="fs-3">&#xb3;&#xb9;</span>  - 1. 
+</p>
+
+<pre><code class="lang-java">class Main {
+  public static void main(String[] args) {
+    	
+    int intExample = 123000;
+    System.out.println(intExample);  
+    // 123000
+  }
+}</code></pre>
+<h2>
+    long
+</h2>
+<p>
+    Long types are 64-bit long ints with an <code>L</code> behind them (for long). 
+    They take on values of -2^63 to 2^63 - 1. 
+</p>
+<pre><code class="lang-java">class main {
+  public static void main(String[] args) {
+    	
+    long longExample = -922337203685376L;
+    System.out.println(longExample);
+    // -922337203685376
+  }
+}</code></pre>
+<h2>
+    double
+</h2>
+<p>
+    Doubles should never be used for floating point precision. It is 
+    64-bits long and has double-precision. A <code>d</code> can be put behind the, 
+    but decimal numbers with the double type will automatically take on that type. 
+</p>
+<pre><code class="lang-java">class Main {
+  public static void main(String[] args) {
+    	
+    double decimalNumber = -66.98;
+    System.out.println(decimalNumber);
+    // -66.98
+  }
+}</code></pre>
+<h2>
+    float
+</h2>
+<p>
+    Floats are single-precision floating point numbers 
+    that also should not be used for precision. They are 32-bits long 
+    and have an <code>f</code> behind them. This is important, because without the 
+    <code>f</code> it will treat a decimal as a double rather than a float.
+</p>
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {
+          
+      float n = -10.23f; // must use f or F
+      System.out.println(n);  
+      // -10.23
+    }
+  }</code></pre>
+<h2>
+    char
+</h2>
+<p>
+    Chars, or characters, are unicode characters that have a value of <code>'\u0000'</code> to 
+    <code>'\uffff'</code>. 
+</p>
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {
+          
+      char letter = '\u0056';
+      System.out.println(letter);
+      // V
+    }
+  }</code></pre>
+
+<h2>
+    Strings
+</h2>
+<p>
+    Strings are text that is a collection characters. They are 
+    not primitive types, they are objects. Use the <code>String </code> type 
+    to declare a new string variable. 
+</p>
+<pre><code class="lang-java">String ExampleStr = "Java Is Great!";</code></pre>

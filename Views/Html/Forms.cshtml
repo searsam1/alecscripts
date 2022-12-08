@@ -1,0 +1,211 @@
+@model MvcAlecScripts.Models.HtmlFormsModel
+<p>
+    Forms collect user input and usually send
+    it to a server for processing.
+</p>
+
+
+
+<h2>
+    Form Example
+</h2>
+<div class="container bg-light p-3">
+    <form action="/Html/Forms">
+        <label for="FirstName">First Name</label>
+        <input class="bg-light text-success " type="text" id="FirstName" name="FirstName">
+        <br><br>
+        <label for="LastName">Last Name</label>
+        <input class="bg-light text-success " type="text" id="LastName" name="LastName">
+        <br><br>
+        <input class="shadow btn btn-success" type="submit" value="Submit">
+        <a class="shadow btn btn-outline-danger" role="button" href="/Html/Forms">
+            Cancel
+        </a>
+    </form>
+
+    <p class="p-1 m-2">
+        First Name: @Model.FirstName.ToUpper()
+    </p>
+    <p class="p-1 m-2">
+        Last Name: @Model.LastName.ToUpper()
+    </p>
+
+</div>
+
+<h2>
+    &lt;form&gt; tag
+</h2>
+<p>
+    The form tag is a box that holds 
+    all input tags for collecting user input. This input 
+    can be a checkbox, textbox, radio buttons, etc..
+</p>
+<pre><code class="lang-html">&lt;form&gt;
+    &lt;!-- 
+    Form Tags go here
+    .
+    . 
+    --&gt;
+&lt;/form&gt;
+</code></pre>
+
+<h2>
+    &lt;input&gt; Tag
+</h2>
+<p>
+    The input tag has differnt types, depending on the input. 
+    Use the <code>type</code> attrbiute to change to one of several values: 
+</p>
+<table>
+ <tbody><tr>
+  <th>Type</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td>&lt;input type="text"&gt;</td>
+  <td>Basic Input Textbox</td>
+ </tr>
+ <tr>
+  <td>&lt;input type="radio"&gt;</td>
+  <td>Selectable circles for multiple choices</td>
+ </tr>
+ <tr>
+  <td>&lt;input type="checkbox"&gt;</td>
+  <td>Checkbox with multiple, some or zero checks </td>
+ </tr>
+ <tr>
+  <td>&lt;input type="submit"&gt;</td>
+  <td>Button for submitting form</td>
+ </tr>
+ <tr>
+  <td>&lt;input type="button"&gt;</td>
+  <td>Basic Clickable button</td>
+ </tr>
+ </tbody></table>
+<br>
+<p>
+    These are just the basic examples: there are many more. 
+</p>
+
+@{
+    string formExample1 = @"<form>
+  <!-- first name -->
+  <label for='fname'>First name:</label><br>
+  <input type='text' id='fname' name='fname'><br>
+  
+  <!-- last name -->
+  <label for='lname'>Last name:</label><br>
+  <input type='text' id='lname' name='lname'>
+</form>";
+}
+
+<pre><code class="lang-html">
+@formExample1
+</code></pre>
+
+<form>
+  <label for='fname'>First name:</label><br>
+  <input type='text' id='fname' name='fname'><br>
+  <label for='lname'>Last name:</label><br>
+  <input type='text' id='lname' name='lname'>
+</form>
+
+<h3>
+    The label tag
+</h3>
+<p>
+    The label tag is used to label certain input tags. It has a <code>for</code>
+    attribute which identifies what input to attach it to. As such, 
+    the <code>for</code> attribute of the label tag must match its 
+    input's tag <code>id</code> attribute. 
+</p>
+<pre><code class="lang-html">
+&lt;!-- 
+for = lname and id = lname 
+--&gt;
+&lt;label for='lname'>Last name:&lt;/label&gt;
+&lt;input type='text' id='lname' name='lname'&gt;
+</code></pre>
+
+<h3>
+    The Name Attribute
+</h3>
+<p>
+    Each input field must have a <code>name</code> attribute, or the form 
+    will not work.
+</p>
+
+<h2>
+    Examples
+</h2>
+<h3>
+    Radio Buttons
+</h3>
+<p>
+    Radio buttons are selectable bubbels where one 
+    can only be chosen.
+</p>
+@{
+    string example2 = @"<form>
+  <input type=""radio"" id=""html"" name=""fav_language"" value=""HTML"">
+  <label for=""html"">HTML</label><br>
+  <input type=""radio"" id=""css"" name=""fav_language"" value=""CSS"">
+  <label for=""css"">CSS</label><br>
+  <input type=""radio"" id=""javascript"" name=""fav_language"" value=""JavaScript"">
+  <label for=""javascript"">JavaScript</label>
+</form>";
+}
+<pre><code class="lang-html">@example2
+</code></pre>
+<div class="container bg-light p-3">
+    <p>
+        Favorite Coding Language 
+    </p>
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Python</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">JavaScript</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">C++</label>
+    </form>
+</div>
+
+<h3>
+    Checkboxes
+</h3>
+<p>
+    Checkboxes are selectable squares and zero or more 
+    can be chosen at a time. 
+</p>
+
+
+@{
+    string example3 = @"<form>
+  <input type=""checkbox"" id=""vehicle1"" name=""vehicle1"" value=""Bike"">
+  <label for=""vehicle1""> I have a bike</label><br>
+  <input type=""checkbox"" id=""vehicle2"" name=""vehicle2"" value=""Car"">
+  <label for=""vehicle2""> I have a car</label><br>
+  <input type=""checkbox"" id=""vehicle3"" name=""vehicle3"" value=""Boat"">
+  <label for=""vehicle3""> I have a boat</label>
+</form>";
+}
+<pre><code class="lang-html">@example3
+</code></pre>
+<div class="container bg-light p-3">
+    <p>
+        Vehicle Type
+    </p>
+    <form>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label>
+    </form>
+</div>
+
+<p>
+    See <a asp-controller="Html" asp-action="FoodForm"> Food Form Example </a>
+</p>

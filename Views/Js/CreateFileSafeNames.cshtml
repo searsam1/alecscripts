@@ -1,0 +1,78 @@
+
+
+<p>
+    File names should only have regular characters (<code>abc</code>) and no punctuation (<code>!@@#$%^&*()><_+</code>) or spaces(<code>" "</code>). 
+</p>
+
+<pre><code class="lang-md">*** Example File Names ***
+file.txt
+project.py 
+profits.csv
+loses.csv
+</code></pre>
+
+<h2>
+    Using Loops
+</h2>
+<p>
+    One solution to remove punctuation is to loop through 
+    each character and add it to a "clean" string if its 
+    an alphabetic character. This is done with regex: 
+    <code>/[a-zA-Z ]/i</code>. <code>a-zA-Z</code> means match characters 
+    in the alphabet, and the space behind the <code>z</code> catches any spaces. 
+</p>
+<pre><code class="lang-js">function removePunctuation(txt){
+    let cleanTxt = "";
+    for (let char of txt){
+        if (char.match(/[a-zA-Z ]/i)){
+            cleanTxt += char; 
+        }
+    }
+    cleanTxt = cleanTxt.trim(" ")
+    return cleanTxt.split(" ").join("-");
+}
+removePunctuation("testing tesT!$#!! ")
+// "testing-tesT" 
+</code></pre>
+<p>
+    After the punctuation is gone, trim the spaces and split to get each word. 
+    That way, there can be a custom delimiter like a dash<code>-</code> or underscore <code>_</code>.
+</p>
+
+<h2>
+    Using <code>join</code>
+</h2>
+<p>
+    Similar to looping, but the pattern uses <code>/[a-zA-Z ]/g</code> and <code>join</code>. 
+</p>
+<pre><code class="lang-js">function removePunctuation2(txt){
+    txt = txt.trim(" ")
+    return txt.match(/[a-zA-Z ]/g).join("").split(" ").join("-") ;
+}
+removePunctuation2("testing tesT!$#!! ")
+// "testing-tesT"
+</code></pre>
+
+
+<h2>
+    Using <code>replace</code>
+</h2>
+
+<p>
+    Replace takes the pattern to replace and its replacement and its arguments. 
+    If the pattern to replace is a string, it will only replace the 
+    first occurrence with the replacement.
+</p>
+<pre><code class="lang-js">
+function replaceSpecials(string){
+    // ^ inside [] means don't match 
+    // [ don't match a through z or A though Z or spaces ]
+    string = string.trim(" ")
+    return string.replace(/[^a-zA-Z ]/g,'').replace(/ /, "-");
+}
+replaceSpecials("testing tesT!$#!! ")
+// "testing-tesT" 
+</code></pre>
+<figcaption>
+    <a href="https://stackoverflow.com/questions/9705194/replace-special-characters-in-a-string-with-underscore">Credit: stackoverflow.com</a>
+</figcaption>

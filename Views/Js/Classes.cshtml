@@ -1,0 +1,59 @@
+
+<p>
+    Classes are recipes for objects and their operations. They package 
+    data into private or public sections and are built on prototypes.
+</p>
+
+<h2>creating classes</h2>
+<p>
+    Classes are created with declarations or expressions, similar 
+    to functions.
+</p>
+<h3>
+    class declarations
+</h3>
+<p>
+    To declare a new class, use the 
+    <code>class</code> keyword and the 
+    name of the new class.
+</p>
+<pre><code class="lang-js">
+// Declare "person" class. 
+class person {
+  constructor(height, age) {
+    this.height = height;
+    this.age = age;
+  }
+}
+
+</code></pre>
+
+<h3>
+    class expressions
+</h3>
+<p>
+    Classes expressions, defined as another way to create a class, are named or unnamed. The class name 
+    in named expressions can only be accessed inside the class body. 
+</p>
+<pre><code class="lang-js">// unnamed
+let Person = class {
+  constructor(height, age) {
+    this.height = height;
+    this.age = age;
+  }
+};
+console.log(Person.name); // "Person"
+
+// named
+Person = class Person2 {
+  constructor(height, age) {
+    this.height = height;
+    this.age = age;
+  }
+};
+console.log(Person.name); // "Person2"
+
+console.log(Person2.name);
+// ReferenceError: Can't find variable: Person2
+
+</code></pre>

@@ -1,44 +1,53 @@
-
+@model MvcAlecScripts.Models.HtmlFormsModel
 <section>
     <h2>
         Input Tag
     </h2>
     <p>
-        The <code>input</code> tag is used with the <code>type</code> attribute set to color to 
-        make an html color picker. Additionally, the default value can be 
-        set with the <code>value</code> attribute, which must be in hexadecimal. 
+        The <code>input</code> tag is used with the <code>type</code> attribute set to color to
+        make an html color picker. Additionally, the default value can be
+        set with the <code>value</code> attribute, which must be in hexadecimal.
     </p>
     @{
         string example1 = @"<input type=""color"" id=""colorPicker"" value=""#0000ff"">";
     }
     <pre><code class="lang-html">@example1</code></pre>
     <p>
-        That input is then combined with a <code>label</code> tag 
-        to show the color: 
+        That input is then combined with a <code>label</code> tag
+        to show the color:
     </p>
     @{
         string example2 = @"<label for=""colorPicker"">Color Picker:</label>";
     }
     <pre><code class="lang-html">@example2
-@example1
+            @example1
 </code></pre>
-   <h3>
+    <h3>
         Example
-   </h3>
+    </h3>
+
+        <p>
+            <form action="#colorSelection">
+                <label id="colorValue" for="colorpicker">Choose Color:</label>
+                <input name="colorpicker" type="color" id="colorpicker" value="#0000ff">
+                <br><br>
+                <input class="btn btn-danger" type="submit" value="Change Color">
+            </form>
+        </p>
+</section>
+
+<div class="rounded-3" id="colorSelection">
     
-    <label for="colorValue">
-   <p>
-        <label id="colorValue" for="colorpicker">Choose Color:</label>
-        <input 
-            type="color" id="colorpicker" value="#0000ff">
-   </p>
-   <style>
-    #colorpicker{
+</div>
+
+<style>
+    #colorSelection{
+        background-color: @Model.ColorPickerExampleColor;
         width: 100px;
         height: 100px;
-        
     }
-   </style>
-    </label>
-   
-</section>
+</style>
+<pre><code class="lang-">
+Color Hex: @Model.ColorPickerExampleColor
+</code></pre>
+

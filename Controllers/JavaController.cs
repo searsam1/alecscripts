@@ -34,5 +34,40 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Variables()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Variables";
+        return View();
+    }
+    
+    public IActionResult Math()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Math";
+        return View();
+    }
+    
+    public IActionResult DataTypes()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Data Types";
+        return View();
+    }
+    
+    public IActionResult Operators()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Operators";
+        return View();
+    }
+    
+    public IActionResult Arrays()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Arrays";
+        return View();
+    }
+    
     }
 }

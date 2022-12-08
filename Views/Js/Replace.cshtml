@@ -1,0 +1,83 @@
+
+<p>
+    Replace is a string method in javascript that 
+    can replace all or a single occurrence of a regex pattern 
+    or string with a given replacement. 
+</p>
+
+<h2>
+    Syntax
+</h2>
+<pre><code class="lang-js">replace(strOrPattern, repl)</code></pre>
+<h3>
+    Parameters
+</h3>
+<p>
+    <code>
+        strOrPattern
+    </code>
+</p>
+<ul>
+    <li>
+        Can be a string or a regex pattern. If string, only one occurrence will be replaced. 
+        A regex pattern will replace all occurrences.
+    </li>
+</ul>
+<p>
+    <code>
+        repl
+    </code>
+</p>
+<ul>
+    <li>
+        The replacement can be a string or function. If a string, it will 
+        replace occurrences of <code>strOrPattern</code>.
+    </li>
+    <li>
+        If its a function, every match will call the function use the return value 
+        as its replacement. 
+    </li>
+</ul>
+
+<h3>
+    Return value
+</h3>
+<p>
+    Returns a string that replaced <code>repl</code> with <code>strOrPattern</code> one(1) or 
+    more times. 
+</p>
+
+<h2>
+    Examples
+</h2>
+
+<h3>
+    Using the <code>i</code> (ignore case) flag
+</h3>
+<p>
+    Flags go behind the regex expression. The ignore case flag 
+    uses <code>i</code> for ignore: <code>/soda/i</code> would match 
+    <code>"SODA"</code>. 
+    In the example, <code>/coke/i</code> is replaced by <code>"sprite"</code>. The regular expression or regex 
+    goes inside two forward slashes <code>/like so/&lt;flagsGoHere&gt;</code>. 
+</p>
+<pre><code class="lang-js">
+const str = "Coke is my favorite soda!";
+const newstr = str.replace(/coke/i, "Sprite");
+console.log(newstr);
+// Sprite is my favorite soda!
+</code></pre>
+<h3>
+    using ignoreCase and global flags
+</h3>
+<p>
+    To replace every occurrence in a string, the <code>g</code> global flag is used. 
+    This is combined with the <code>i</code> ignoreCase flag to match all occurrences of a string 
+    and ignore the case. 
+</p>
+<pre><code class="lang-js">const re = /diamonds/gi;
+const str = "Diamonds are great, and Diamonds are shiny.";
+const newstr = str.replace(re, "rubies");
+console.log(newstr);
+// rubies are great, and rubies are shiny.
+</code></pre>

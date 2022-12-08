@@ -1,0 +1,99 @@
+
+<p>
+    Variables are containers that fall into
+    categories that act a certain way: these categories 
+    are types.  
+</p>
+<p>
+    Some of the basic types include: 
+</p>
+<ul>
+    <li>
+        <code>String</code>
+    </li>
+    <li>
+        <code>int</code>
+    </li>
+    <li>
+        <code>float</code>
+    </li>
+    <li>
+        <code>char</code>
+    </li>
+    <li>
+        <code>bool</code>
+    </li>
+</ul>
+<h2>
+    Creating Variables 
+</h2>
+<p>
+    When a variable is created it must have a type declaration and a name. A value 
+    can be assigned later with the assignment <code>=</code> operator.
+</p>
+<pre><code class="lang-plain">type variableName = value;</code></pre>
+<pre><code class="lang-java">int z = 10;
+int x;
+x = 10;
+</code></pre>
+<h2>
+    Final Variables
+</h2>
+<p>
+    Normally, values of variables can be changed: the <code>final</code> keyword 
+    modifies this so it is read-only.
+</p>
+<pre><code class="lang-java">final int x = 15;
+x = 20;  // Error
+</code></pre>
+
+<h2>
+    Number Types
+</h2>
+<p>
+    The basic number types include floats and ints, which are decimal and whole numbers. 
+    Floats have an <code>f</code> behind them and use a decimal. 
+</p>
+<pre><code class="lang-java">float myFloatNum = .99f;
+int myNum = 1;
+</code></pre>
+
+<h2>
+    Declare Multiple Variables
+</h2>
+<p>
+    If there are multiple variables with the same type, 
+    the type can be referenced once and all variables assigned that type at once. 
+</p>
+<pre><code class="lang-java">type var1, var2, var3;</code></pre>
+<pre><code class="lang-java">/* public class main{
+public static void main(String[] args){ */
+		int x, y, z;
+		x = 2;
+		System.out.println(x);
+		// 2
+	}
+}
+</code></pre>
+
+<h2>
+    Rules for Naming
+</h2>
+<p>
+    Naming conventions are like most other programming languages, expect 
+    a dollar sign<code>$</code> can be put as the first character of the name. Underscores
+    <code>_</code> or lowercase letters are also acceptable first characters, and numbers can 
+    be in the name, just not as first characters. 
+</p>
+<pre><code class="lang-java">
+int age;  // Best Practice 
+int _age; // _ as first letter
+int $age;  // $ as first letter
+int age_1; // number in name
+</code></pre>
+
+<p>
+    Use descriptive names for variables and avoid single letter variables 
+    like <code>x</code> or <code>y</code>: they are dry and nondescriptive. Use 
+    a name that represents what's inside the variable. 
+</p>

@@ -1,33 +1,33 @@
 
-from __controller_getter import get_controls
 import re 
+from bs4 import BeautifulSoup
 import clipboard
+import __controller_getter
 
-def get_file_text(path=r"""/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_Layout.cshtml"""):
+fp = r"""/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_Layout.cshtml"""
+
+
+def get_file_text(path=fp):
     file_text = ""
     with open(path, 'r') as f:
-        file_text = f.read()
+        file_text = f.readlines()
     return file_text
 
-p = r"(@\* Sidebar \*@)(.*)(@\* /Sidebar \*@)"
+def get_new_layout(path=fp):
+    controllers = __controller_getter.get_controllers()
+    sidebar = __controller_getter.create_sidebar(controllers)
+    
+    text = list( map(lambda x : x.strip(), get_file_text()) )
+    start = text.index("@* Sidebar *@") + 1 
+    end = text.index("@* /End Sidebar *@")
+    
+    text = text[:start] + [sidebar] + text[end:]
+    return "\n".join(text)
+    
+def update_layout_with_sidebar():
+    new_layout = get_new_layout()
+    with open(fp, "w") as f:
+        f.write(new_layout)
+        print("\nNew Sidebar Added.")
 
-def text_repl(matchgroup):
-    return f"""
-    @* Sidebar *@ 
-        <div class="sidebar pt-3 fixed-top" >
-            {get_controls()} 
-        </div>
-    @* /Sidebar *@ """
 
-
-
-
-
-
-def update_file(path=r"""/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_Layout.cshtml"""):
-    updated_file = re.sub(p, text_repl, get_file_text(), flags=re.DOTALL)
-    with open(path, 'w') as f:
-        f.write(updated_file)
-    print("updated _layout with fresh sidebar.")
-
-update_file()

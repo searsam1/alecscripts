@@ -1,0 +1,183 @@
+@model MvcAlecScripts.Models.FoodModel
+
+<p>
+    Forms are ways to input data to html through input and other 
+    tags.
+</p>
+<p>
+    The food form consists of all the basic nutrition facts, like fat, sugar, etc..
+    The output is then displayed in <code>JSON</code> format. 
+</p>
+
+<style>
+    input:not(.btn){
+        border: none;
+        margin: 10px;
+        background: linear-gradient(45deg, rgb(240, 239, 239) 0% 50%, white 50% 100%);
+        border-bottom: 1px solid rgb(240, 239, 239);
+        padding: 5px;
+        border-radius: 4px;
+        vertical-align: middle;
+        width: 200px;
+    }
+    input:focus:not(.btn){
+        outline: none;
+        background: linear-gradient(45deg, white 0% 50%, rgb(240, 239, 239) 50% 100%);
+        color: green;
+    }
+    label {
+        border: none;
+        margin: 10px;
+
+        border-bottom: 1px solid rgb(240, 239, 239, 0%);
+        padding: 5px;
+        border-radius: 4px;
+        width: 100px;
+    }
+        
+
+    form {
+        border-bottom: 25px solid rgb(1,1,1,.25); 
+        border-radius: 20px; 
+        @* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%), linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%), linear-gradient(336deg, rgba(0,0,150,.8), rgba(0,0,150,0) 70.71%); *@
+        background-image: url("/lib/Resources/wheat-g88af31ed1_1920.png");
+        background-position: left ;   
+    }
+    
+</style>
+<h2>
+    Food Form
+</h2>
+<form action="" class="container border-bottom text-dark">
+    <div class="row">
+        <div class="col">
+            <label class="bg-light mr-2" for="Fat">Fat</label>
+            <input id="Fat"  type="text" name="Fat">
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="bg-light" for="Sodium">Sodium </label>
+            <input id="Sodium" type="text" name="Sodium">
+        </div>
+        <div class="col-sm-2">
+            
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="bg-light" for="Carbs">Carbs</label>
+            <input id="Carbs" type="text" name="Carbs">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="bg-light" for="Sugars">Sugars</label>
+            <input id="Sugars"  type="text" name="Sugars">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="bg-light" for="Protein">Protein</label>
+            <input id="Protein"  type="text" name="Protein">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="bg-light" for="Calories">Calories</label>
+            <input id="Calories"  type="text" name="Calories">    
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input class="btn btn-light" type="submit" value="Submit">
+            <a class="btn btn-light" href="/Html/foodform">Reset</a>
+        </div>        
+    </div>
+    
+    
+</form>
+
+<h3>
+    Output In Json
+</h3>
+<pre class="bg-white"><code class="lang-json">{ 
+    "Fat": "@Model.Fat g",
+    "Sodium" : "@Model.Sodium mg",
+    "Carbs": "@Model.Carbs g",
+    "Sugars": "@Model.Sugars g",
+    "Protein": "@Model.Protein g",
+    "Calories": "@Model.Calories"
+}
+</code></pre>
+
+<h3>
+    Food Form Source Code
+</h3>
+@{
+    string example = @"<form action="" class=""container border-bottom text-dark"">
+    <div class=""row"">
+        <div class=""col-6 text-end"">
+            <label class=""bg-light mr-2"" for=""Fat"">
+                Fat
+            </label>
+            <input id=""Fat""  type=""text"" name=""Fat"">
+        </div>
+        
+    </div>
+    <div class=""row"">
+        <div class=""col-6 text-end"">
+            <label class=""bg-light"" for=""Sodium"">
+                Sodium
+            </label>
+            <input id=""Sodium"" type=""text"" name=""Sodium"">
+        </div>
+        
+    </div>
+    <div class=""row"">
+        <div class=""col-6 text-end"">
+            <label class=""bg-light"" for=""Carbs"">
+                Carbs
+            </label>
+            <input id=""Carbs"" type=""text"" name=""Carbs"">
+        </div>
+    </div>
+
+    <div class=""row"">
+        <div class=""col-6 text-end"">
+            <label class=""bg-light"" for=""Sugars"">
+                Sugars
+            </label>
+            <input id=""Sugars""  type=""text"" name=""Sugars"">
+        </div>
+    </div>
+    
+    <div class=""row"">
+        <div class=""col-6 text-end"">
+            <label class=""bg-light"" for=""Protein"">
+                Protein
+            </label>
+            <input id=""Protein""  type=""text"" name=""Protein"">
+        </div>
+    </div>
+    
+    <div class=""row"">
+        <div class=""col-6 text-end"">
+            <label class=""bg-light"" for=""Calories"">
+                Calories
+            </label>
+            <input id=""Calories""  type=""text"" name=""Calories"">    
+        </div>
+    </div>
+    
+    <div class=""row"">
+        <div class=""col-6 text-center"">
+            <input class=""btn btn-light"" type=""submit"" value=""Submit"">
+            <a class=""btn btn-light"" href=""/Html/foodform""></a>
+        </div>        
+    </div>
+</form>";
+}
+<pre><code class="lang-html">@example</code></pre>

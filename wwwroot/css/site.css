@@ -73,10 +73,13 @@ h3 {
 }
 
 #leftSidebar{
-    max-height: 750px;
+    max-height: 950px;
     overflow-y: scroll;
     z-index: 0;
-    
+}
+
+#leftSidebar a{
+    margin: 5px;
 }
 
 .nav-link{
@@ -89,4 +92,40 @@ h3 {
 
 .nav-link:active{
     border-bottom: 1px solid grey ;
+}
+
+
+td, th{
+    padding: 20px;
+
+
+}
+td{
+    border-bottom: 1px solid black;
+    
+}
+
+tr {
+    align-items: center;
+    
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+table{
+    margin-top: 20px;
+    border: 1px solid black;
+    
+}
+.tagFormat{
+    padding-left: 20px;
+    background: linear-gradient(45deg, rgb(0,0,0,.5) 0% 3%,white 3% 25%, rgb(0,0,0,.05) 25% 80%, rgb(1,1,1,.1) 80%);
+    font-family: monospace;
+    margin-top: 50px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-bottom-left-radius: 5px;
+    font-size: .9em;
 }

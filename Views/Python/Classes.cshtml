@@ -1,0 +1,199 @@
+
+<h2>
+    Classes & Objects
+</h2>
+<p>
+    A class is a template for creating objects. Everything 
+    in python is an object, from functions to variables. Classes 
+    determine what functions and variables its object contains, and 
+    how the class object behaves. 
+</p>
+
+<p>
+    Objects are the children of its parent class, meaning it will inherit
+    everything that the class has. 
+</p>
+
+<h2>
+    Creating Classes
+</h2>
+<p>
+    To create a class in python, use the <code>class</code> keyword. Parenthesis are optional, 
+    and arguments to an instance variable do not go in them. Other classes to inherit from go inside them if 
+    they are used. 
+</p>
+<pre><code class="lang-py">class ExampleClass:
+    var = 1
+class ExampleClass2(ExampleClass):
+    ...
+print(ExampleClass2.var)
+# 1
+</code></pre>
+
+<h2>
+    Creating Objects
+</h2>
+<p>
+    To create a class object, call the class and assign it
+    to a variable. 
+</p>
+<pre><code class="lang-py">
+class ExampleClass:
+    ...
+example_object = ExampleClass()
+</code></pre>
+
+<h2>
+    The __init__() Function
+</h2>
+<p>
+    The <code>__init__()</code> Function is how variables 
+    are passed into an object at creation. Once created, this object 
+    is bound to the arguments passed in.  
+</p>
+
+<pre><code class="lang-py">class ExampleClass:
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+example_object = ExampleClass(1, 2, 3)
+
+print(example_object.z)
+# 3
+</code></pre>
+<h3>
+    Attributes
+</h3>
+<p>
+    These bound variables are called attributes: variables that belong to 
+    an object. Now, there are class attributes, which belong to the class, and instance attributes, which belong 
+    to instances of the class or objects.  
+</p>
+<pre><code class="lang-py">class ExampleClass:
+    
+    class_attrib = 5
+    
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+obj = ExampleClass(1,2,3)
+print(ExampleClass.class_attrib)
+# 5
+print(ExampleClass.z)
+# AttributeError: type object 'ExampleClass' has no attribute 'z'
+</code></pre>
+
+<p>
+    Since the class is the parent of the object, the object will have 
+    access to the parent class attributes, but the class will not have access 
+    to instance attributes.  
+</p>
+
+<h2>
+    Object Methods
+</h2>
+<p>
+    Functions inside the class definition will also 
+    belong to any of its objects: these functions are 
+    called methods. 
+</p>
+<pre><code class="lang-py">class ExampleClass:
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+    
+    def method_example(self):
+        print("I am a Method")
+    
+example_object = ExampleClass(1, 2, 3)
+example_object.method_example()
+# I am a Method
+</code></pre>
+
+<h2>
+    Self
+</h2>
+<p>
+    Self is how to refer to the object inside of the object. Anywhere 
+    where the object is referred to on the outside, self is where it will be 
+    set on the inside. 
+</p>
+
+<p>
+    For example, if there is a variable <code>x</code> that belongs to <code>class Object</code>, then 
+    to refer to it inside the class use <code>self.x</code>.When outside of the class, use 
+    <code>Object.x</code>. 
+</p>
+<pre><code class="lang-py">class ExampleClass:
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+    
+    def method_example(self):
+        print(self.x, self.y, self.z, sep=", ")
+    
+example_object = ExampleClass(1, 2, 3)
+example_object.method_example()
+# 1, 2, 3
+
+</code></pre>
+
+<h2>
+    Private Methods
+</h2>
+<p>
+    To make a class method only accessible inside the class, 
+    put two underscores <code>__</code> before the class name. 
+</p>
+<pre><code class="lang-py">class ExampleClass:
+    def __private_method(self):
+        return 0
+    def pubic_method(self):
+        # private methods are 
+        # class-accessible
+        return self.__private_method()
+
+example = ExampleClass()
+print( example.pubic_method() )
+# 0
+
+print( example.__private_method() )
+# AttributeError: 'ExampleClass' object 
+# has no attribute '__private_method'
+</code></pre>
+<p>
+    These are more of guideline than actual rules: 
+    private methods are meant to stay unchanged, but 
+    can still be changed. To access a private method, 
+    add the class name with two underscores <code>_ClassName_</code> before the 
+    reference to the method. 
+</p>
+<pre><code class="lang-py">class ExampleClass:
+    ...
+
+# _ExampleClass_ + _private_method()
+example._ExampleClass__private_method()
+</code></pre>
+<pre><code class="lang-py">class ExampleClass:
+    def __init__(self,x):
+        self.x = x
+    def __private_method(self):
+        return 0
+    def pubic_method(self):
+        # private methods are 
+        # class-accessible
+        return self.__private_method()
+
+example = ExampleClass(1)
+
+# __private_method 
+# shouldn't be accessible
+# outside of the class
+print( example._ExampleClass__private_method() )
+</code></pre>

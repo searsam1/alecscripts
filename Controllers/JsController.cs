@@ -69,6 +69,41 @@ namespace MvcMovie.Controllers
         ViewData["title"] = "Alternate Table Rows";
         return View();
     }
+
+    public IActionResult Classes()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Classes";
+        return View();
+    }
+    
+    public IActionResult MethodDefinitions()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Method Definitions";
+        return View();
+    }
+    
+    public IActionResult CreateFileSafeNames()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Create File Safe Names";
+        return View();
+    }
+    
+    public IActionResult Replace()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Replace";
+        return View();
+    }
+    
+    public IActionResult RegexExec()
+    {   
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Regex Exec";
+        return View();
+    }
     
     }
 }
