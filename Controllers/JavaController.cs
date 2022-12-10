@@ -83,5 +83,69 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Functions()
+    {   
+        ViewData["creationDate"] = "Fri Dec  9 02:41:11 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Functions";
+        return View();
+    }
+    
+    public IActionResult Packages()
+    {   
+        ViewData["creationDate"] = "Fri Dec  9 05:46:51 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Packages";
+        return View();
+    }
+    
+    public IActionResult Io()
+    {   
+        ViewData["creationDate"] = "Fri Dec  9 06:37:01 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Io";
+        return View();
+    }
+    
+    public IActionResult Output()
+    {   
+        ViewData["creationDate"] = "Fri Dec  9 09:17:15 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Output";
+        return View();
+    }
+    
+    public IActionResult TypeCasting()
+    {   
+        ViewData["creationDate"] = "Fri Dec  9 15:59:16 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Type Casting";
+        return View();
+    }
+    
+    public IActionResult WhileLoops()
+    {   
+        ViewData["creationDate"] = "Fri Dec  9 16:15:29 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "While Loops";
+        return View();
+    }
+    
+    public IActionResult ForLoops()
+    {   
+        ViewData["creationDate"] = "Fri Dec  9 16:31:48 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "For Loops";
+        return View();
+    }
+    
+    public IActionResult SwitchStatements()
+    {   
+        ViewData["creationDate"] = "Fri Dec  9 20:35:47 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Switch Statements";
+        return View();
+    }
+    
     }
 }

@@ -6,10 +6,113 @@
 </p>
 
 <h2>
-    If Statement 
+    If-else Statement 
 </h2>
-<pre><code class="lang-java">
-if (condition) {
-  // block of code to be executed if the condition is true
+<h3>
+    If Statement
+</h3>
+<p>
+    If statements start with <code>if</code> and have a condition to check in parenthesis <code>()</code>, followed 
+    by a body in brackets <code>{}</code> to execute if the condition is met. 
+</p>
+<pre><code class="lang-java">if (condition) {
+  // do something 
+}</code></pre>
+
+<p>
+    A basic real life example is: if it's raining, put on a jacket. If not, don't put 
+    on a jacket. It works the same way in programming, its just more prevalent.
+</p>
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {
+        String weatherCondition = "Snowing";
+        String prompt;
+        if (weatherCondition == "Snowing"){
+            prompt = "Snow Weather Conditions";
+            System.out.println(prompt);  
+            // Snow Weather Conditions  
+                }
+        }
+}</code></pre>
+
+<h3>
+    Else-if
+</h3>
+<p>
+    If the first if statement fails, it will try any other 
+    else if statements, which check another condition but are still in 
+    the same flow. Once one of these conditions are met, however, the control flow 
+    stops on that condition that was true.
+</p>
+<pre><code class="lang-java">if (condition) {
+  // do something 
+}
+else if (anotherCondition) {
+  // do something else
 }
 </code></pre>
+<p>
+    The condition usually consists of operators comparing values. If the value 
+    meets a criteria, then the condition is met and the code inside the if block 
+    will execute.  
+</p>
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {
+        String weatherCondition = "Raining";
+        String prompt;
+        if (weatherCondition == "Snowing"){
+            prompt = "Cold/Snow Weather Conditions";
+            System.out.println(prompt);  
+            }
+        else if (weatherCondition == "Raining"){
+            prompt = "Wet/Rain Weather Conditions";
+            System.out.println(prompt);  
+            // Wet/Rain Weather Conditions  
+            }
+        }
+}
+</code></pre>
+
+<h3>
+    Else
+</h3>
+<p>
+    Last comes else, which will automatically execute if the 
+    other conditions are not met. It comes at the bottom of the flow, after the 
+    ifs and else-ifs. It checks no condition, so it acts as more of a default value 
+    to return when nothing catches. 
+</p>
+
+<pre><code class="lang-java">
+if (condition) {
+  // do something 
+}
+else if (anotherCondition) {
+  // do something else
+}
+else {
+    //...
+}</code></pre>
+<p>
+    For each else statement there needs to be an if statement. It must check a condition before it hits the else. 
+    Not every if has to have an else, however, and it can skip the else-if and just contain if and else. 
+</p>
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {
+        String weatherCondition = "Sunny";
+        String prompt;
+        if (weatherCondition == "Snowing"){
+            prompt = "Cold/Snow Weather Conditions";
+            System.out.println(prompt);  
+            }
+        else if (weatherCondition == "Raining"){
+            prompt = "Wet/Rain Weather Conditions";
+            System.out.println(prompt);  
+            }
+        else {
+            prompt = "Not raining or snowing";
+            System.out.println(prompt);  
+            }
+            // Not raining or snowing
+        }
+}</code></pre>

@@ -327,8 +327,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9EYXRhVHlwZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/ForLoops.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9Gb3JMb29wcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Functions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9GdW5jdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Io.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9Jby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Math.cshtml]
@@ -339,12 +351,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9PcGVyYXRvcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Output.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9PdXRwdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Packages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9QYWNrYWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Strings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9TdHJpbmdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/SwitchStatements.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9Td2l0Y2hTdGF0ZW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/TypeCasting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9UeXBlQ2FzdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Variables.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9WYXJpYWJsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/WhileLoops.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9XaGlsZUxvb3BzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/AlternateTableRows.cshtml]
@@ -421,6 +453,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/DataTypes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL0RhdGFUeXBlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/Datetime.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHl0aG9uL0RhdGV0aW1lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/funnyNumbers.cshtml]

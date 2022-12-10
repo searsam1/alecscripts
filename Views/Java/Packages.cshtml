@@ -1,0 +1,52 @@
+<p>
+    Packages are imported to get certain objects inside that package. 
+    This also makes it better for avoiding naming conflicts and keeping the code 
+    faster and more organized. 
+    Additionally, 
+    these packages are split into <b>Built-In</b> and <b>User-defined packages</b>. 
+</p>
+
+<h2>
+    Built-in Packages
+</h2>
+<p>
+    Built-in packages can be imported by class or by the whole package.
+    Importing is done via the <code>import</code> keyword. It also uses dot notation to 
+    access either the package or class inside the package. If it's the latter, use an asterisk <code>*</code> instead of the class name. 
+</p>
+
+<pre><code class="lang-java">import java.util.Scanner;   // Import the Scanner class
+import java.util.*;   // Import the whole package
+</code></pre>
+
+<h2>
+    User-defined Packages
+</h2>
+<p>
+    Packages work in a file structure. A folder contains the file that contains the class to import. 
+</p>
+<pre><code class="lang-md">└── root
+  └── mypack
+    └── MyPackageClass.java 
+      └── MyPackageClass
+        └── main
+    </code></pre>
+        
+        
+<p>
+    Custom packages are made with the <code>package</code> keyword and are then compiled into a 
+    file. 
+</p>
+
+<pre><code class="lang-java">// /MyPackageClass.java
+package mypack;
+class MyPackageClass {
+  public static void main(String[] args) {
+    System.out.println("My package!");
+  }
+}
+</code></pre>
+<p>
+    Save this file as <code>MyPackageClass.java</code>, and then compile it with <code>javac -d . &lt;packagename&gt;</code>. 
+    Run the file with <code>java mypack.MyPackageClass</code>
+</p>

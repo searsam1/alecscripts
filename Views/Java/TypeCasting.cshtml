@@ -1,0 +1,48 @@
+
+<p>
+    Type casting is going from one primitive type to another. It doesn't convert 
+    the variable or object itself to another type, it just makes a new variable 
+    with the new type.
+</p>
+
+<h2>
+    Widening
+</h2>
+<p>
+    Widening is going from a smaller data type to a larger one: the opposite of narrowing. 
+    This is done automatically from the compiler. The order goes:<br>
+    <code>byte</code> → <code>short</code> → <code>char</code> → <code>int</code> → <code>long</code> → <code>float</code> → <code>double</code>
+</p>
+<pre><code class="lang-java">class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt; // int → double
+
+    System.out.println(myInt);
+    // Outputs 9      
+    System.out.println(myDouble);
+    // Outputs 9.0
+  }
+}
+</code></pre>
+
+<h2>
+    Narrowing
+</h2>
+<p>
+    Narrowing is shrinking a bigger data size into a smaller one.
+    The order will go by: <br>
+    <code>double</code> → <code>float</code> → <code>long</code> → <code>int</code> → <code>char</code> → <code>short</code> → <code>byte</code>. 
+    This has to be done manually by putting the type in parenthesis <code>()</code> on the right side. 
+</p>
+<pre><code class="lang-java">class Main {
+  public static void main(String[] args) {
+    double myDouble = 9.99d;
+    int myInt = (int) myDouble; // double → int
+    System.out.println(myDouble);   
+    // Outputs 9.99
+    System.out.println(myInt);      
+    // Outputs 9
+  }
+}
+</code></pre>

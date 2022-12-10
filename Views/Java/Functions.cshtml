@@ -1,0 +1,138 @@
+<p>
+    Functions are also known as methods. They are blocks of code that can 
+    be bunched into one place and reused. Java has keywords like <code>static</code>  
+    that define what has access to the method. It also needs a return type like <code>int</code> 
+    or <code>void</code>. Like mathematical functions, sometimes functions return a value 
+    and the type of the value needs to be known before hand. 
+</p>
+
+<h2>
+    Defining New Functions
+</h2>
+<p>
+    Java functions must also go inside of a class. Then, to create a function, use an access modifier, return type and the name 
+    of the class followed by parenthesis <code>()</code> and the function body in brackets<code>{}</code>. 
+</p>
+<pre><code class="lang-java">class AS {
+    // define new function "greeting()"
+    static void greeting() {
+      System.out.println("Buenos días");
+    }
+    public static void main(String[] args) {
+        greeting(); // <-- Call new function
+        // Buenos días
+    }
+}</code></pre>
+
+<h2>
+    Parameters & Arguments
+</h2>
+<p>
+    Parameters are inputs to the function before they are actually input, 
+    while arguments are the objects that are passed into the function. Each parameter 
+    also needs a type.  
+</p>
+<pre><code class="lang-java">class AS {
+    // define new function "greeting(String name)"
+    static void greeting(String name) {
+      System.out.println("Buenos días, " + name);
+    }
+    public static void main(String[] args) {
+        greeting("John");
+        // Buenos días, John
+    }
+}</code></pre>
+<p>
+    A function can have zero or more inputs, and they can be 
+    containers, like arrays, as well. 
+</p>
+
+<h2>
+    Function Overloading 
+</h2>
+<p>
+    Function Overloading is where one function has multiple definitions with 
+    different parameters. 
+</p>
+
+<pre><code class="lang-java">class AS {
+    static int add(int x, int y) {
+      System.out.println(x + y);
+      return x+y;
+    }
+    
+    // same name, different parameters
+    static float add(float x, float y) {
+      System.out.println(x + y);
+      return x+y;
+    }
+
+    static String add(String x, String y) {
+      System.out.println(x + y);
+      return x+y;
+    }
+
+    public static void main(String[] args) {
+        add(2,2);
+        // 4
+        add(3.2f, 1.5f);
+        // 4.7
+        add("hello", "World");
+        // helloWorld
+    }
+}</code></pre>
+
+<p>
+    Basically, it is better to overload one function with other parameters 
+    than have multiple functions doing the same thing. 
+</p>
+
+<h2>
+    Scope
+</h2>
+<p>
+    When variables are created inside of functions, they cannot be accessed outside 
+    of it. This is called scope. The values of a variable can be flushed to another 
+    variable outside of the function, but once outside a function, it can no longer 
+    be accessed by that variable name. 
+</p>
+<pre><code class="lang-java">class AS {
+    // define new function "greeting()"
+    static void greeting() {
+      int age = 25; 
+      int yearsLeft = age - 100;
+    }
+    public static void main(String[] args) {
+        greeting();
+        age;
+        // Syntax error: age cannot be resolved
+    }
+}</code></pre>
+
+<h2>
+    Recursion
+</h2>
+<p>
+    Recursion is when a function calls itself in the function body. 
+    Eventually, it has to come to an end point or it will go on forever. 
+</p>
+<p>
+    Think about a function that sums numbers up to <code>n</code>. 
+    Inside the function, add the result of plugging in <code>n-1</code> 
+    to the function itself. Check for a condition where n is zero: that is 
+    the end point. At that point, return the sum of all the numbers. 
+</p>
+<pre><code class="lang-java">class AS {
+    public static void main(String[] args) {
+      int result = sum(10);
+      System.out.println(result);
+      // 55
+    }
+    public static int sum(int n) {
+      if (n > 0) {
+        return n + sum(n - 1);
+      } else {
+        return 0;
+      }
+    }
+  }</code></pre>

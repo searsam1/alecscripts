@@ -1,0 +1,64 @@
+
+<p>
+    While loops are useful for reducing code and making it more organized. Do while loops 
+    are the same, except it checks the condition after the block of code rather than before it. 
+</p>
+
+<h2>
+    While Loop
+</h2>
+<p>
+    To make a while loop, use the <code>while</code> keyword followed by a condition in parenthesis <code>()</code> and a 
+    body of code to execute if that condition is true in curly braces <code>{}</code>. 
+</p>
+<pre><code class="lang-java">while (condition) {
+  //...
+}</code></pre>
+
+<p>
+    In a while loop, something has to be changed throughout each loop 
+    so that the condition will eventually hit false. 
+</p>
+
+<pre><code class="lang-java">class Main{
+    public static void main(String[] args){
+        int i = 0;
+        while (i < 5) {
+        System.out.println(i);
+        // 0
+        // ...
+        // 4
+        i++;
+        }           
+    }
+}</code></pre>
+
+<h2>
+    Do While Loop
+</h2>
+<p>
+    The same as a while loop, except the code block comes first and the condition second. 
+</p>
+<pre><code class="lang-java">do {
+  // ...
+}
+while (condition);</code></pre>
+
+<p>
+    Also watch out for infinite loops in a do while loop. 
+</p>
+<pre><code class="lang-java">class Main{
+    public static void main(String[] args){
+        int i = 0;
+        do {
+        System.out.println(i);
+        i++;
+        }
+        while (i < 5);
+            // 0
+            // 1
+            // 2
+            // 3
+            // 4
+    }
+}</code></pre>

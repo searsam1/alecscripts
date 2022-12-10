@@ -1,10 +1,19 @@
 
-import time 
+from datetime import datetime as dt
+import datetime
 import os
 import __update_sidebar
 
+def creation_date():
+    tz = datetime.timezone(offset=datetime.timedelta(hours=-7), name="GMT-7")
+    time_date = dt.now(tz)
+    time_date = time_date.strftime("%c (%Z)")
+    return time_date
+
+
 def title_split(string):
     return "".join(map(lambda x: x.title(), string.split())) 
+
 
 def create_new_publicIAction(new_page=None):
     if not new_page:
@@ -13,11 +22,12 @@ def create_new_publicIAction(new_page=None):
     new_page = title_split(new_page)
     text = """public IActionResult {0}()
     {1}   
+        ViewData["creationDate"] = "{4}";
         ViewData["controller"] = controllerName;
         ViewData["title"] = "{3}";
         return View();
     {2}
-    """.format(new_page, "{", "}", title)
+    """.format(new_page, "{", "}", title, creation_date())
     return text, new_page
     
 def get_controller_name(controller=None):

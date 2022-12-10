@@ -1,0 +1,49 @@
+<p>
+    For loops loop over a range and usually 
+    go over an array or other container. For loops are essential 
+    in programming.
+</p>
+
+<h2>Syntax</h2>
+<p>
+    There are three(3) parts to every for loop: 
+    <pre><code class="lang-java">for (statement-1; statement-2; statement-3) {
+    //...
+}
+    </code></pre>
+    <ul>
+        <li>
+            First statement is executed once
+        </li>
+        <li>
+            Second is the condition to go to 
+        </li>
+        <li>
+            Third is the part that executes every time 
+        </li>
+    </ul>
+</p>
+
+<pre><code class="lang-java">int n = 5;
+for (int i=0; i&lt;n; i++) {
+    System.out.println(i);
+}
+</code></pre>
+<p>
+    In the example above, <code>i</code> is the iterator variable, and it is 
+    defined in the first statement of the for loop <code class="lang-java">int i = 0;</code>. <br/><br/>The second statement 
+    defines when the loop stops which is a condition checking <code>i&lt;n</code>. The loop will run until that condition is false. 
+    <br/><br/>Lastly, the third statement defines how <code>i</code> changes on each loop. In this case it's <code>i++</code>, which means 
+    <code class="px-3 py-1 lang-java">i = i + 1</code> on each iteration. 
+</p>
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for (int i=0; i&lt;n; i++) {
+        System.out.println(i);
+            // 0
+            // ...
+            // 4
+      }
+    }
+  }</code></pre>
