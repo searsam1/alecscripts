@@ -1,0 +1,47 @@
+
+<ul id="directoryElement">
+
+</ul>
+
+
+
+<script>
+    function get_sidebar_links(){
+        let leftSidebarUL = document.querySelector("#leftSidebar").querySelector("UL");
+        let links = leftSidebarUL.querySelectorAll("a")
+        let txt, controller, header;
+        
+        let directoryElement = document.querySelector("#directoryElement"); 
+        for (let link of links){
+            
+            new_li = document.createElement("LI")
+            new_controller = link.textContent.split(" ")[0]
+            if (new_controller != controller){
+                header = document.createElement("LI")
+                header.textContent = new_controller
+                header.style.borderBottom = "1px solid black"
+                
+                
+                header.style.textAlign = "center"
+                header.style.listStyle = "none"
+                header.style.padding = "5px"
+                header.style.margin = "10px 0px 10px 0px"
+                directoryElement.appendChild(header)
+                controller = new_controller
+            }
+            link.textContent = link.textContent.split(" ").slice(1).join(" ")
+            
+            new_li.appendChild(link)
+            new_li.style.listStyle = "none"
+            new_li.style.margin = "10px"
+            new_li.style.borderRadius = "10px"
+            new_li.style.padding = "10px"
+
+
+            directoryElement.appendChild(new_li)
+        }
+        
+
+}   
+get_sidebar_links()
+</script>

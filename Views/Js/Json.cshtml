@@ -2,80 +2,209 @@
     
 }
 <h2 >
-    JSON (JavaScript Object Notation)
+    What is JSON? 
 </h2>
 
 <p>
-    Json works where objects are wrapped in "double quotes"
-    and key-value pairs are linked with <code>:</code> colons.
-    Its a good data structure to learn and is useful for 
-    storing organized information.
+    <b>JSON</b> (Java Script Object Notation) is a popular text format for communicating data 
+    because of is human-readable syntax. It consists of of objects, which can contain arrays, 
+    numbers, strings, booleans and nulls.
 </p>
 
-@* #- Code -# *@
-<pre><code class=" lang-json">
-[
+<h2>
+    Types
+</h2>
+@{
+    string[] collection = @"Number-Double precision floating-point
+String-Series of characters
+Boolean-true or false
+Array-Ordered sequence of values
+Value-String, Number, Boolean, null etc
+Object-Unordered collection of key/value pairs
+null-Null or Empty".Split('\n');
+}
+<table>
+    <tr>
+        <th>
+            Type
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    @foreach (var item in collection)
     {
-        "key": "Value",
-        "list": [
-            1,
-            2,
-            3,
-            4,
-            5
-        ],
-        "objInObj": {
-            "key": "Value"
-        }
+        <tr>
+            <td>
+                <b>@item.Split("-")[0]</b>
+            </td>
+            <td>
+                ~ @item.Split("-")[1]
+            </td>
+        </tr>
     }
-]
+</table>
+<br>
+<figcaption>
+    Table from: <a href="https://quickref.me/json">https://quickref.me/json</a>
+</figcaption>
+
+<h2>
+    Objects
+</h2>
+<p>
+    Objects are unordered key-value pairs inside curly braces <code>{}</code>.
+</p>
+<pre><code class="lang-json">
+{
+  "color": "red",
+  "id": "123",
+  "composition": {
+    "R": 250,
+    "G": 0,
+    "B": 0
+  },
+  "empty_object": {}
+}
 </code></pre>
-@* #- Code -# *@
+
+<h2>
+    Key-value Pairs
+</h2>
 <p>
-    One can then access the data through a scripting language like
-    python and run an analysis or whatever is needed. 
+    Keys and values are seperated by a colon <code>:</code>, and each pair is seperated by a comma. 
+    To get a value, use the key against the object it's in. It can be done with dot <code>.</code> notation or 
+    with square brackets <code>[]</code>. 
 </p>
+<pre><code class="lang-js">
+let people = {"name1" : "Hrvatin", "name2" : "Novak"}
+// people.name1 = "Hrvatin"
+// people.name2 = "Novak"
+
+// people["name1"] = "Hrvatin"
+// people["name2"] = "Novak"
+    </code></pre>
+
+<h2>
+    Strings
+</h2>
+
 <p>
-    Json has a container that can hold a list of other objects that are separated by a comma. 
+    A lot of the data in JSON is in string format, which is text wrapped in double quotes <code>""</code>. 
 </p>
+<pre><code class="lang-json">"Example String"</code></pre>
+@{
+    string[] collection2 = @"\""-Double quote
+\\-Backslash
+\/-Forward slash
+\b-Backspace
+\f-Form feed
+\n-Newline
+\r-Carriage return
+\t-Tab
+\u-Trailed by four hex digits".Split('\n');
+}
+<table>
+    <tr>
+        <th>
+            Type
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    @foreach (var item in collection2)
+    {
+        <tr>
+            <td>
+                <code class="">@item.Split("-")[0]</code>
+            </td>
+            <td>
+                ~ @item.Split("-")[1]
+            </td>
+        </tr>
+    }
+</table>
+
+
+<pre><code class="lang-json">let obj = {
+    "DoubleQuote" : "\"Double Quote in Text\"",
+    "Backslash" : "Backslashes: \"\\ \\ \\ \\\"",
+    "Tab" : "\tTab"
+}
+</code></pre>
+
+<pre><code id="Code" class="lang-json">
+obj.DoubleQuote
+obj.Backslash
+obj.Tab
+</code></pre>
+
+<script>
+let obj = {
+    "DoubleQuote" : "\"Double Quote in Text\"",
+    "Backslash" : "backslashes: \"\\ \\ \\ \\\"",
+    "Tab" : "\tTab"
+}
+document.querySelector("#Code").textContent += "\n" + obj.DoubleQuote + "\n"
+document.querySelector("#Code").textContent += obj.Backslash + "\n"
+document.querySelector("#Code").textContent += obj.Tab + "\n"
+</script>
+
+<h2>
+    Arrays
+</h2>
 <p>
-    <code>{ "list" : ["I", "Am", "Legend", "Mr. Wayne"] }</code>
+    Arrays are lists of information separated by commas and wrapped in square brackets <code>[]</code>.
 </p>
+<pre><code class="lang-json">["this", "is", "an", "array"]</code></pre>
 <p>
-    Lists, a.k.a arrays, are accessed by index while values are accessed with 
-    a <code>.</code> and the key. This is if one is working inside of 
-    JavaScript; depending on the language used to decipher the json, 
+    Accessing an array is done with square brackets <code>[]</code> and an index (arrays start at zero). 
 </p>
-<p>
-    The nice thing about JSON is its human-readability and 
-    ease of use through extended language support.
-</p>
+
+<pre><code class="lang-json">let arr = ["this", "is", "an", "array"]
+arr[0]
+// this    
+</code></pre>
+
 <h2>
     Examples
 </h2>
-<p>
-    <pre><code class="lang-json">
 
-{
-    "Dream-Word-Coke" : {
-        "Total-Fat" : "0g",
-        "Sodium" : "50mg",
-        "Total Sugar" : "65g"
+<h3>
+    Example I
+</h3>
+<pre><code class="lang-json">{
+"People" : {
+    "Gerald" : {
+        "Full-Name" : "Gerald Hopkins",
+        "Height" : "6ft-2in",
+        "Age" : 35,
+        "Hobbies" : 
+            ["Video Games", "Exercise", "Rock Climbing", "Wood Working"]
+        },
+    "Nicole" : {
+        "Full-Name" : "Nicole Squarest",
+        "Height" : "5ft-6in",
+        "Age" : 27,
+        "Hobbies" : 
+            ["No Hobbies."]
+        }
     }
-}        
-    </code></pre>
-</p>
+}
+</code></pre>
 
-<p>
-    <pre><code class="lang-json">
 
-{
-    "Good Habits" : {
-        "Exercising" : "Everyday",
-        "Reading" : "Twice a day",
-        "Mediation" : "30 mins. a day",
-        "Singing in the Shower" : "Three times daily",
-    }
-}        
-    </code></pre>
-</p>
+
+<h3>
+    Example II
+</h3>
+
+<pre><code class="lang-json">{
+  "positive number" : 999,
+  "negative number" : -999,
+  "fractional number" : 16.5,
+  "exponent" : 1.0E+7,
+  "zero" : 0
+}
+</code></pre>

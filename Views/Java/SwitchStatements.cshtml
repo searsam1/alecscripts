@@ -1,0 +1,74 @@
+
+<p>
+    Use a switch statement instead of a lot of if-else statements.
+</p>
+
+<h2>
+    Syntax  
+</h2>
+<pre><code class="lang-java">switch(expression) {
+  case x:
+    //...
+    break;
+  case y:
+    //...
+    break;
+  default:
+    //...
+}</code></pre>
+<p>
+    The <code>expression</code> above is the variable to check, and each <code>case</code> will compare that value 
+    against the values in each case. <code>break</code> is used to break outside of the statement. 
+</p>
+
+
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {    
+        int num = 10;
+        // Define new switch case
+        switch(num) {
+            // if num == 10: 
+            case 10:
+                System.out.println("Num is 10");
+                break;
+            // if num == 20: 
+            case 20:
+                System.out.println("Num is 20");
+                break;
+            // else:
+            default:
+                System.out.println("Num is not 10 or 20");
+        }
+        // Output - "Num is 10"
+    }
+}</code></pre>
+<h2>
+    Break and default
+</h2>
+<p>
+    Break and default are optional. Still, it's good practice to use them. Default is like the 
+    else block in an if-else statement: it runs if no break statement is hit. Defaults, on the other hand, 
+    do not need a break statement if they on the last line. 
+</p>
+
+<pre><code class="lang-java">class Main {
+    public static void main(String[] args) {    
+        int num = 10;
+        switch(num) {
+            // no break
+            case 10:
+                System.out.println("Num is 10");
+            // no break
+            case 20:
+                System.out.println("Num is 20");
+            // default will always run if there's 
+            // no break
+            default:
+                System.out.println("Num is not 10 or 20");
+        }
+        // Output -
+        // Num is 10
+        // Num is 20
+        // Num is not 10 or 20
+    }
+}</code></pre>

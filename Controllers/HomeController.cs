@@ -39,5 +39,13 @@ public class HomeController : Controller
         ViewData["title"] = "Code Tut";
         return View();
     }
-
+    public IActionResult Directory()
+    {   
+        ViewData["creationDate"] = "Sat Dec 10 01:53:46 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Directory";
+        return View();
+    }
+    
+    
 }

@@ -112,9 +112,14 @@ tr {
 
 th {
     border-bottom: 1px solid black;
+    background-color: black;
+    color: white;
+    font-size: .9em;
+
 }
 table{
     margin-top: 20px;
+    margin-bottom: 50px;
     border: 1px solid black;
     
 }

@@ -86,7 +86,7 @@ pre[class*=language-] {
 .token.property,
 .token.symbol,
 .token.tag {
-    color: green
+    color: rgb(0, 121, 54)
 }
 
 .token.attr-name,
@@ -95,7 +95,7 @@ pre[class*=language-] {
 .token.inserted,
 .token.selector,
 .token.string {
-    color: green
+    color: rgb(0, 121, 54)
 }
 
 .language-css .token.string,
@@ -214,4 +214,8 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
 /* For Margin */
 div.code-toolbar{
     margin-bottom: 30px;
+}
+
+.language-json > .token.property{
+    color: rgb(211, 0, 56);
 }

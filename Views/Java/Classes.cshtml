@@ -1,0 +1,149 @@
+
+<p>
+    Classes are like templates or blueprints for creating new objects. A train is an example 
+    of an object. It has attributes like color and weight, and it has methods like drive 
+    and load coal. A class might be the schematics for a train that is mass-producible. 
+</p>
+
+<h2>
+    Creating Classes
+</h2>
+<p>
+    Use the <code>class</code> keyword to define a new class, along with a new name and
+    a class body in curly braces <code>{}</code>. The name of the class should match the name of the file, and the 
+    first letter of the class name should be uppercase. 
+</p>
+
+<pre><code class="lang-java">// create new class "Main"
+public class Main {
+  int x = 5;
+}
+</code></pre>
+
+<h2>
+    Creating Objects
+</h2>
+<p>
+    To create an object of a class, specify the class as the type
+    followed by the new objects name. Set that equal to the <code>new</code> keyword 
+    being used on the class being called. 
+</p>
+<pre><code class="lang-java">class Main {
+  int num = 5;
+
+  public static void main(String[] args) {
+    // Create new Main object 
+    Main myObj = new Main();
+    System.out.println(myObj.num);
+    // 5
+  }
+}
+</code></pre>
+
+<h2>
+    Class Attributes
+</h2>
+<p>
+    Class attributes are variables that belong to a class. The variable is then accessed with dot <code>.</code> notation (<code>class.attribute</code>).
+</p>
+<pre><code class="lang-java">class Main {
+    int numAttribute1 = 5;
+    int numAttribute2 = 10;
+    int numAttribute3 = 15;
+  
+    public static void main(String[] args) {
+      Main myObj = new Main();
+      
+      // access myObj.numAttribute3
+      System.out.println(myObj.numAttribute3);
+      // 15
+    }
+}</code></pre>
+<p>
+    Attributes have optional modifiers, which change the behavior of the attribute. For example, the <code>final</code>
+    keyword modifies an attribute to be real-only. 
+</p>
+
+<h2>
+    Class Methods / Functions
+</h2>
+<p>
+    Class methods are like attributes but they are functions that have to be called with parenthesis <code>()</code>.
+    Their access level is determined by their access modifier <code>static</code> or <code>public</code>. <code>static</code> 
+    means a method can be accessed with creating an object, and <code>public</code> means an object must be 
+    created to access the method. 
+</p>
+<pre><code class="lang-java">class Main {
+    // static method
+    static void myStaticMethod() {
+      System.out.println("Hello, brother");
+    }
+    // public method
+    public void myPublicMethod() {
+        System.out.println("Hello, brother");
+      }
+    public static void main(String[] args) {
+          myStaticMethod(); 
+          // Hello, brother
+        
+          Main myObj = new Main();
+          myObj.myPublicMethod(); // public needs an object 
+          // Hello, brother     
+    } 
+  }</code></pre>
+
+<h2>
+    Constructors
+</h2>
+<p>
+    Constructors initialize object attributes. For example, if there is a 
+    car object that has a color attribute, the constructor is used to 
+    set the initial value of the color to red. 
+</p>
+<pre><code class="lang-java">class Car {
+    String color;
+    // class constructor for Car
+    public Car() {
+      // Set initial color for Car object 
+      color = "red";  
+    }
+  
+    public static void main(String[] args) {
+      // This calls the constructor
+      Car myCar = new Car(); 
+      // Print the color
+      System.out.println(myCar.color); 
+      // red
+    }
+}</code></pre>
+<p>
+    The name of the constructor must match the name of the class. In the example above, <code>public Car()</code> matches the 
+    class name of <code>car</code>. 
+</p>
+
+<h3>
+    Using Parameters
+</h3>
+<p>
+    In the car example, it's possible to input the color 
+    on the creation of the car instead of having it predefined, but 
+    it will still belong to that object. 
+</p>
+<pre><code class="lang-java">class Car {
+    String carColor;
+    int carMileage;
+    // class constructor for Car
+    public Car(String color, int mileage) {
+      // Set initial color for Car object 
+      carColor = color;  
+      carMileage = mileage;  
+    }
+  
+    public static void main(String[] args) {
+      // This calls the constructor
+      Car myCar = new Car("Green", 12000); 
+      // Print the color
+      System.out.println(myCar.carColor + " " + myCar.carMileage); 
+      // Green 12000
+    }
+}</code></pre>
