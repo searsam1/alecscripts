@@ -155,5 +155,13 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Modifiers()
+    {   
+        ViewData["creationDate"] = "Mon Dec 12 07:36:12 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Modifiers";
+        return View();
+    }
+    
     }
 }

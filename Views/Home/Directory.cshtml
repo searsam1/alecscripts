@@ -14,18 +14,18 @@
         let directoryElement = document.querySelector("#directoryElement"); 
         for (let link of links){
             
-            new_li = document.createElement("LI")
+            new_li = document.createElement("a")
+            new_li.setAttribute("class", "btn btn-light")
             new_controller = link.textContent.split(" ")[0]
             if (new_controller != controller){
                 header = document.createElement("LI")
                 header.textContent = new_controller
-                header.style.borderBottom = "1px solid black"
-                
-                
                 header.style.textAlign = "center"
                 header.style.listStyle = "none"
                 header.style.padding = "5px"
-                header.style.margin = "10px 0px 10px 0px"
+                header.style.background = "rgb(1,1,1,.05)"
+                header.style.borderRadius = "4px"
+                header.style.margin = "100px 0px 10px 0px"
                 directoryElement.appendChild(header)
                 controller = new_controller
             }

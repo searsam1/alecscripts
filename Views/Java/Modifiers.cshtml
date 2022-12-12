@@ -1,0 +1,151 @@
+
+<p>
+    Modifiers can be <b>access</b> or <b>non-access</b>. Access modifiers modify 
+    the access level of classes, constructors, attributes and methods. Non-access 
+    modifiers have other functionality like controlling inheritance. 
+</p>
+
+<h2>
+    Access Modifiers
+</h2>
+<h3>
+    Class Modifiers
+</h3>
+<p>
+    Classes can be accessed by any class outside its package or in its package if 
+    its given the <code>public</code> modifier. If the class is not public, it can only be 
+    referenced by classes inside the same <a class="link-primary rounded" href="/Java/Packages">package</a>. 
+</p>
+@{
+    string[] classAccessModifiers = @"public-The class can be accessed by all classes$default-Class only accessible by classes in same package. Used when no modifier is given."
+    .Split("$");  
+}
+<ul>
+    @foreach (string classMod in classAccessModifiers)
+    {
+        <li>
+            <code>@classMod.Split("-")[0]</code>
+            <ul style="list-style: none;"><li>
+                @classMod.Split("-")[1]
+            </li></ul>
+        </li>
+    }
+</ul>
+<pre><code class="lang-java">// public
+public class Main
+// default 
+class Main
+</code></pre>
+<h3>
+    Other Modifiers
+</h3>
+<p>
+    These modifiers act on <b>constructors</b>, <b>methods</b> and <b>attributes</b>. 
+</p>
+@{
+    string[] otherAccessModifiers = @"public-Accessible to all classes.
+private-Accessible within declared class.
+default-Accessible in same package. Used when modifier isn't given.
+protected-Accessible in the same package & subclasses."
+    .Split("\n");  
+}
+<ul>
+    @foreach (string classMod in otherAccessModifiers)
+    {
+        <li>
+            <code>@classMod.Split("-")[0]</code>
+            <ul style="list-style: none;"><li>
+                @classMod.Split("-")[1]
+            </li></ul>
+        </li>
+    }
+</ul>
+<pre><code class="lang-java">//
+class Main{
+    // public constructor
+    public Main(){
+        ;
+    }
+
+    // Private Method
+    private void privMethod(){
+        System.out.println("Private Method");
+    }
+
+    // Protected Method
+    protected void procMethod(){
+        System.out.println("Protected Method");
+    }
+    
+    // Default Method
+    void defaultMethod(){
+        System.out.println("Default Method");
+    }
+    public static void main(String[] args){
+        Main mainObj = new Main();
+        mainObj.privMethod();
+        mainObj.procMethod();
+        mainObj.defaultMethod();
+        // Private Method
+        // Protected Method
+        // Default Method
+    }
+}</code></pre>
+<h2>
+    Non-Access Modifiers
+</h2>
+<h3>
+    Class Non-Access
+</h3>
+<p>
+    Classes can use <b>final</b> or <b>abstract</b>. A final class cannot be inherited, and an abstract class 
+    cannot create objects. 
+</p>
+@{
+    string[] classNonAccessModifiers = @"final-Class is not inheritable.  
+abstract-Class cannot create objects." 
+    .Split("\n");  
+}
+<ul>
+    @foreach (string classMod in classNonAccessModifiers)
+    {
+        <li>
+            <code>@classMod.Split("-")[0]</code>
+            <ul style="list-style: none;"><li>
+                @classMod.Split("-")[1]
+            </li></ul>
+        </li>
+    }
+</ul>
+<pre><code class="lang-java">// final
+final class Main
+// abstract 
+abstract class Main
+</code></pre>
+
+<h3>
+    Other Non-Access
+</h3>
+<p>
+    Attributes and methods use final, static, abstract, transient, synchronized or volatile: 
+</p>
+@{
+    string[] otherNonAccessModifiers = @"final-Attributes & Methods are final.  
+static-Attributes & Methods belong to the class and not the object
+abstract-Methods that can only be used in an abstract class
+transient-Attributes & Methods are skipped during object serialization. 
+synchronized-Methods only have one thread access at a time. 
+volatile-Attribute value is never cached thread-locally, always from main memory." 
+    .Split("\n");  
+}
+<ul>
+    @foreach (string classMod in otherNonAccessModifiers)
+    {
+        <li>
+            <code>@classMod.Split("-")[0]</code>
+            <ul style="list-style: none;"><li>
+                @classMod.Split("-")[1]
+            </li></ul>
+        </li>
+    }
+</ul>
