@@ -44,5 +44,39 @@
     When the output is buffered, it waits until a newline is hit 
     to print. A flush, on the other hand, prints without waiting. The 
     default value for flush is false, meaning output is normally buffered.
-    
+</p>
+<pre><code class="lang-py">for i in range(10):
+    print(i, end="\t", flush=False)
+#0	1	2	3	4	5	6	7	8	9
+</code></pre>
+<p>
+    When the flush is false, it will hold the output until the last 
+    thing to print is reached. Then the output will show as one line. 
+    It makes more sense to hold the print output until it is ready, versus 
+    having to print every character one at a time.
+</p>
+<p>
+    Instead of going to the grocery store 
+    seven(7) times a week, people usually stock up in one trip and wait until 
+    next week to go back. This is because it takes work to drive there, park, 
+    find everything, etc.. Going once a week reduces the amount of times 
+    one has to do that baseline work. 
+</p>
+<p>
+    Print works in the same way: it takes work to print something. 
+    Instead of going back and fourth between fetching characters and 
+    printing, its easier to gather a line at a time then print out each line. 
+</p>
+
+<pre><code class="lang-py">import time
+for i in range(4):
+    print(i, end="...",flush=True)
+    # pause for one(1) second
+    time.sleep(1)
+# 0...1...2...3...
+</code></pre>
+<p>
+    When flush is true, however, it will not store(buffer) each line, 
+    it will flush the output text to the console during each iteration. This is useful 
+    for things like timers. 
 </p>

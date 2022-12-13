@@ -163,5 +163,13 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Encapsulation()
+    {   
+        ViewData["creationDate"] = "Mon Dec 12 21:25:22 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Encapsulation";
+        return View();
+    }
+    
     }
 }
