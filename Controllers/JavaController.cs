@@ -171,5 +171,29 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Inheritance()
+    {   
+        ViewData["creationDate"] = "Mon Dec 12 21:41:30 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Inheritance";
+        return View();
+    }
+    
+    public IActionResult Polymorphism()
+    {   
+        ViewData["creationDate"] = "Mon Dec 12 21:57:52 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Polymorphism";
+        return View();
+    }
+    
+    public IActionResult InnerClasses()
+    {   
+        ViewData["creationDate"] = "Tue Dec 13 00:00:38 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Inner Classes";
+        return View();
+    }
+    
     }
 }

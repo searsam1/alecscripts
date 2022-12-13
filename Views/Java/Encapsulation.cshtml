@@ -1,3 +1,58 @@
+<h2>
+    What is Encapsulation?
+</h2>
 <p>
     Encapsulation is keeping secrets hidden from users. 
+    To encapsulate data in Java, it must be set to <code>private</code>
+    and therefore must have <code>get</code> and <code>set</code> methods.
+    <b>Get</b> will retrieve a value, while <b>set</b> will assign a value. 
 </p>
+
+<pre><code class="lang-java">class Person {
+    // restricted access
+    private String name; 
+  
+    // get
+    public String getName() {
+      return name;
+    }
+  
+    // set
+    public void setName(String newName) {
+      this.name = newName;
+    }
+    public static void main(String args[]){
+        Person newPerson = new Person();
+        newPerson.setName("Matt");
+        System.out.println(newPerson.getName());
+        // Matt
+    }
+  }</code></pre>
+
+<p>
+    Now <code>name</code> is private and cannot be accessed from outside the class body directly. 
+</p>
+<pre><code class="lang-java">class Main {
+  public static void main(String[] args) {
+    Person myObj = new Person();
+    
+    // Causes error, must use setName()
+    myObj.name = "John";  
+  }
+}
+</code></pre>
+
+<h2>
+    Why Encapsulation?
+</h2>
+<ul>
+    <li>
+        More control over class attributes and methods
+    </li>
+    <li>
+        Greater security 
+    </li>
+    <li>
+        Increased Flexibility 
+    </li>
+</ul>

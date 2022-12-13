@@ -1,0 +1,61 @@
+
+<h2>
+    What is Inheritance?
+</h2>
+<p>
+    Inheritance is when a parent class shares its attributes and methods 
+    with a child class.
+    <ul>
+        <li>
+            subclass (child)
+        </li>
+        <li>
+            superclass (parent)
+        </li>
+    </ul>
+</p>
+<p>
+    This is done with the <code>extends</code> keyword. 
+</p>
+<pre><code class="lang-java">class Ford {
+    // Vehicle attribute
+    protected String brand = "Ford";        
+    
+    // Vehicle method
+    public void honk() {                    
+      System.out.println("Honk!");
+    }
+  }
+  
+  // Car is a child of Ford
+  class Car extends Ford {
+    // Car attribute
+    private String modelName = "Focus";    
+    public static void main(String[] args) {
+  
+      Car myCar = new Car();
+  
+      myCar.honk();
+      // Honk!
+      System.out.println(myCar.brand + " " + myCar.modelName);
+      // Ford Focus
+
+    }
+  }</code></pre>
+  <p>
+    In the example, the <code>Ford</code> class gives its attributes and methods to 
+    the <code>car</code> subclass. 
+  </p>
+
+  <h2>
+    Final Classes
+  </h2>
+  <p>
+    To make a class final or non-inheritable, use the <code>final</code> keyword. This 
+    way, it cannot give any of its methods or attributes to another class. 
+  </p>
+
+  <pre><code class="lang-java">final class Ford {
+  // Non-inheritable
+}
+  </code></pre>
