@@ -1,0 +1,84 @@
+
+<p>
+    Classes can be nested inside of each other for better organization and readability.
+</p>
+<h2>
+    Inner Classes
+</h2>
+<p>
+    Inner classes are nested inside another class. To 
+    access an inner class, create the outer class then create 
+    the inner one as an object of the outer one. 
+</p>
+
+<pre><code class="lang-java">class Outer {
+    int x = 10;
+  
+    class Inner {
+      int y = 5;
+    }
+  }
+  
+  class Main {
+    public static void main(String[] args) {
+        Outer myOuter = new Outer();
+        Outer.Inner myInner = myOuter.new Inner();
+        System.out.println(
+            myInner.y + myOuter.x
+                );
+        // 15
+    }
+  }</code></pre>
+
+<h2>
+    Private Inner Class
+</h2>  
+<p>
+    Inner classes can be <b>private</b> or <b>protected</b>. Private inner classes 
+    will be unaccessible to an outer object. 
+</p>
+
+<pre><code class="lang-java">class Outer {
+    int x = 10;
+  
+    private class Inner {
+      int y = 5;
+    }
+  }
+  
+  class Main {
+    public static void main(String[] args) {
+        Outer myOuter = new Outer();
+        
+        // Error: 
+        // The type Outer.Inner is not visible
+        Outer.Inner myInner = myOuter.new Inner();
+    }
+  }</code></pre>
+  <p>
+    Private inner classes can only be accessed inside the class. 
+  </p>
+
+<h2>
+    Static Inner Class
+</h2>
+<p>
+    To be able to create an inner class without 
+    creating an outer class object, use the 
+    <code>static</code> keyword modifier. 
+</p>
+<pre><code class="lang-java">class Outer {
+    int x = 10;
+  
+    static class Inner {
+      int y = 5;
+    }
+  }
+  
+  class Main {
+    public static void main(String[] args) {
+        Outer.Inner myInner = new Outer.Inner();
+        System.out.println(myInner.y);
+        // 5
+    }
+  }</code></pre>

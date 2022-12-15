@@ -195,5 +195,37 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Abstraction()
+    {   
+        ViewData["creationDate"] = "Tue Dec 13 00:24:55 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Abstraction";
+        return View();
+    }
+    
+    public IActionResult Enums()
+    {   
+        ViewData["creationDate"] = "Tue Dec 13 09:28:46 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Enums";
+        return View();
+    }
+    
+    public IActionResult UserInput()
+    {   
+        ViewData["creationDate"] = "Wed Dec 14 01:36:24 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "User Input";
+        return View();
+    }
+    
+    public IActionResult DateAndTime()
+    {   
+        ViewData["creationDate"] = "Wed Dec 14 02:22:36 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Date And Time";
+        return View();
+    }
+    
     }
 }

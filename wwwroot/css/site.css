@@ -13,9 +13,10 @@ html {
     font-size: 16px;
 }
 p {
-    font-size: 1.1em;
+    
     margin-bottom: 25px;
-    line-height: 1.75em;
+    line-height: 28px;
+    font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -32,10 +33,6 @@ h3 {
     font-weight: 300;
 }
 
-#mainBody{
-    padding-left: 7%;
-
-}
 
 .cursive {
     font-family: 'UnifrakturMaguntia', cursive;
@@ -72,10 +69,13 @@ h3 {
     top: 0;
 }
 
-#leftSidebar{
-    max-height: 950px;
+#leftSidebar, #rightSidebar{
+    max-height: 815px;
     overflow-y: scroll;
     z-index: 0;
+    font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 13.328px;
+    
 }
 
 #leftSidebar a{
@@ -83,10 +83,14 @@ h3 {
 }
 
 .nav-link{
-    color: grey;
+    color: black;
+    border-bottom: 1px solid white ;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .nav-link:hover{
-    color: black;
+    color: blue;
     border-bottom: 1px solid grey ;
 }
 
@@ -97,8 +101,6 @@ h3 {
 
 td, th{
     padding: 20px;
-
-
 }
 td{
     border-bottom: 1px solid black;
@@ -110,6 +112,7 @@ tr {
     
 }
 
+
 th {
     border-bottom: 1px solid black;
     background-color: black;
@@ -117,10 +120,14 @@ th {
     font-size: .9em;
 
 }
+
+
 table{
     margin-top: 20px;
     margin-bottom: 50px;
     border: 1px solid black;
+    max-width: 100%;
+    width: 100%;
     
 }
 .tagFormat{

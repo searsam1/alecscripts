@@ -1,0 +1,160 @@
+
+<p>
+    Abstraction is based on ideas over actions. In other words, 
+    it hides the details but displays the same end result, almost 
+    like a black box. 
+</p>
+<h2>
+    Why Use Abstraction?
+</h2>
+<p>
+    Abstraction grants another layer of security that hides secretive information from users. 
+</p>
+
+<h2>
+    Abstract Classes / Methods
+</h2>
+<p>
+    Use the <code>abstract</code> keyword to make a class abstract: a class that 
+    cannot make objects. Abstract methods can only be used inside of abstract classes and 
+    are defined in the subclass of the abstract parent class. 
+</p>
+<p>
+    Non-abstract methods can also be used inside of an abstract class. 
+</p>
+
+<pre><code class="lang-java">abstract class Animal {
+  public abstract void animalSound();
+  public void sleep() {
+    System.out.println("SleepySleep Time");
+  }
+}
+</code></pre>
+
+<pre class="border border-warning" style=""><code class="lang-java">Animal myObj = new Animal(); // error</code></pre>
+
+<p>
+    Abstract methods are defined in the body of the subclass. Abstract classes must 
+        be inherited to access. 
+</p>
+<pre><code class="lang-java">abstract class Ford {
+    // Vehicle attribute
+    protected String brand = "Ford";        
+    
+    // Vehicle method
+    abstract public void honk();
+  }
+  
+  // Car is a child of Ford
+  class Car extends Ford {
+    // Car attribute
+    private String modelName = "Focus";    
+    
+    // define honk here, not in Ford class
+    public void honk(){
+        System.out.println("Ford Beep Beep");
+    }
+    
+    public static void main(String[] args) {
+  
+      // Car inherits honk from Ford 
+      Car myCar = new Car();
+      myCar.honk();
+      // Ford Beep Beep
+      System.out.println(myCar.brand + " " + myCar.modelName);
+      // Ford Focus
+
+    }
+  }</code></pre>
+<h2>
+    Interfaces
+</h2>
+<p>
+    An interface is an abstractly default class with a group similar methods. 
+</p>
+<pre><code class="lang-java">// interface
+interface Car {
+  public void honk(); 
+  // no body
+  public void start(); 
+  // no body
+}</code></pre>
+
+<p>
+    Interfaces implement instead of extend. It is similar to inheritance.  
+    The methods defined in an interface are defined outside of it and inside 
+    an implemented class. 
+</p>
+
+<p>
+    Use the <code>implements</code> keyword to define an interface method. 
+</p>
+
+<pre><code class="lang-java">// New interface 
+interface Car {
+    public void honk(); 
+    // no body
+    public void start(); 
+    // no body
+}
+  
+// use the implements keyword
+class EV implements Car {
+    public void honk() {
+      System.out.println("The car says: honk");
+    }
+    public void start() {
+      // method body provided here
+      System.out.println("No emissions");
+    }
+}
+  
+class Main {
+    public static void main(String[] args) {
+      EV myTesla = new EV();  
+      myTesla.honk();
+    //   The car says: honk
+        
+      myTesla.start();
+    //   No emissions
+    }
+}</code></pre>
+
+<h3>
+    Multiple interfaces
+</h3>
+<p>
+    While Multiple-inheritance isn't doable in Java, multiple-interface can be done 
+    with the same results. 
+    To implement more than one interface, separate them by commas after the <code>implements</code> keyword. 
+</p>
+<pre><code class="lang-java">interface InterfaceOne {
+    public void methodOne(); 
+}
+  
+interface InterfaceTwo {
+    public void methodTwo();
+}
+
+class InterfaceExample implements InterfaceOne, InterfaceTwo {
+    public void methodOne() {
+      System.out.println("Method One Is implemented");
+    }
+    public void methodTwo() {
+      System.out.println("Method Two Is also implemented");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+      InterfaceExample myObj = new InterfaceExample();
+      myObj.methodOne();
+    //   Method One Is implemented
+
+      myObj.methodTwo();
+    //   Method Two Is also implemented
+    }
+}</code></pre>
+<p>
+    In the example, <code>myObj</code> captures both <code>methodOne</code> and <code>methodTwo</code>, like 
+    multiple-inheritance would.
+</p>

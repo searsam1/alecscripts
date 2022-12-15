@@ -6,6 +6,10 @@
     @* 
     glossary.Add("", ""); 
     *@
+        
+    @* TEST #rightSidebar overflow-y *@
+    void runRightSideTest(){for (int i = 0; i < 2000; i++){glossary.Add(i.ToString(), "Testing");}}
+    
     glossary.Add("Algorithm(Algo)", "A set of instructions to perform."); 
     glossary.Add("Coding", "Writing a set of instructions that will be compiled to another version or language."); 
     glossary.Add("Variable Types", "The way an object is meant to be viewed by the computer."); 
@@ -30,12 +34,14 @@
     glossary.Add("Object-Oriented Programming (OOP)", "Programming paradigm that emphasizes objects, object attributes and object methods.");
     glossary.Add("API", "Application Programming Interface: waiter between the server and the client");
     glossary.Add("con·cat·e·na·tion", "The action of linking things together in a series.");
+
+
     @* glossary.Add("CSS", "Cascading Style Sheets"); *@
     @* glossary.Add("CSS", "Cascading Style Sheets"); *@
     @* glossary.Add("CSS", "Cascading Style Sheets"); *@
     @* glossary.Add("CSS", "Cascading Style Sheets"); *@
     @* glossary.Add("CSS", "Cascading Style Sheets"); *@
-    @* glossary.Add("CSS", "Cascading Style Sheets"); *@
+    
     
     var sortedGlossary = from entry in glossary orderby entry.Key ascending select entry;
 

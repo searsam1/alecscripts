@@ -1,4 +1,9 @@
 
+<p class="text-center">
+    total links: <code class="text-success fs-4" id="count"></code> 
+</p>
+
+
 <ul id="directoryElement">
 
 </ul>
@@ -40,8 +45,7 @@
 
             directoryElement.appendChild(new_li)
         }
-        
-
+    document.querySelector("#count").textContent = links.length
 }   
 get_sidebar_links()
 </script>

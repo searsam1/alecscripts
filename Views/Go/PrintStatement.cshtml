@@ -1,0 +1,65 @@
+
+<p>
+    Printing is another way of saying displaying. 
+    Printing a variable is the same thing as displaying the variable 
+    to the user.
+</p>
+
+<h2>
+    Using the fmt Package
+</h2>
+<p>
+    The <code>fmt</code>(format) package comes with:
+    <ul>
+        <li>
+            <code>fmt.Print()</code>
+        </li>
+        <li>
+            <code>fmt.Println()</code>
+        </li>
+        <li>
+            <code>fmt.Printf()</code>
+        </li>
+    </ul>
+</p>
+<p>
+    The fmt package must first be imported to access any of its methods. 
+</p>
+<pre><code class="lang-go">package main
+// import fmt package
+import "fmt"
+
+func main() {
+  fmt.Print("Hello, ")
+  fmt.Print("World!")
+  // Hello, World!
+}</code></pre>
+<p>
+    Print will <b>not</b> add a newline to the end each time it prints. <code>Println</code>, however, 
+    does add a newline at the end of each print: 
+</p>
+<pre><code class="lang-go">package main
+// import fmt package
+import "fmt"
+
+func main() {
+  fmt.Println("Hello, ")
+  fmt.Println("World!")
+  // Hello, 
+  // World!
+}</code></pre>
+
+<p>
+    <code>Printf</code> is for string interpolation. 
+</p>
+<pre><code class="lang-go">package main
+import "fmt"
+
+func main() {
+  var str = "Hello world"
+  // %s for string
+  fmt.Printf("str value: %s", str)
+  // str value: Hello world
+}
+</code></pre>
+

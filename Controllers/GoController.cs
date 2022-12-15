@@ -18,5 +18,13 @@ namespace MvcMovie.Controllers
             ViewData["title"] = "Home";
             return View();
         }
+    public IActionResult PrintStatement()
+    {   
+        ViewData["creationDate"] = "Tue Dec 13 01:12:16 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Print Statement";
+        return View();
+    }
+    
     }
 }

@@ -8,6 +8,7 @@
         "bytecode",
         "Cppversion",
         "Datagrams",
+        "datetime",
         "jquery"
     ]
 }

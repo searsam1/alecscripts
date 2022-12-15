@@ -1,0 +1,90 @@
+
+<h2>
+    java.time Package
+</h2>
+<p>
+    Import the <b>java.time</b> package to work with dates and times in Java. 
+</p>
+
+<p>
+    Some useful functions from the <b>java.time</b> package: 
+</p>
+
+@{
+    string[] table1 = @"LocalDate	year, month, day (yyyy-MM-dd)
+LocalTime	hour, minute, second and nanoseconds (HH-mm-ss-ns)
+LocalDateTime	(yyyy-MM-dd-HH-mm-ss-ns)
+DateTimeFormatter	Formatter for date-time objects".Split("\n");
+}
+
+<table>
+    <tr>
+        <th>
+            Class
+        </th>
+        <th>
+            Description
+        </th>
+    </tr>
+    <tr>
+        @foreach (string method in table1){<tr><td><code class="lang-java">@method.Split("\t")[0]</code></td><td>@method.Split("\t")[1]</td></tr>}
+    </tr>
+</table>
+
+<h2>
+    Get Current Date
+</h2>
+<p>
+    Use <code class="lang-java">LocalDate.now()</code> to get the current date in <code class="lang-">yyyy-MM-dd</code>
+    format. 
+</p>
+<pre><code class="lang-java">import java.time.LocalDate; // now()
+
+class example {
+  public static void main(String[] args) {
+    // Create a date object
+    // to get current date 
+    LocalDate myObj = LocalDate.now(); 
+    System.out.println(myObj); 
+    // 2022-12-14
+  }
+}</code></pre>
+
+<h2>
+    Get Current Time
+</h2>
+<p>
+    Use <code class="lang-java">LocalTime.now()</code> to get the current time in <code class="lang-">HH-mm-ss-ns</code>
+    format. 
+</p>
+<pre><code class="lang-java">import java.time.LocalTime; // now()
+
+class example {
+  public static void main(String[] args) {
+    // Create a time object
+    // to get current time
+    LocalTime myObj = LocalTime.now(); 
+    System.out.println(myObj); 
+    // 02:42:44.536963
+  }
+}
+</code></pre>
+
+<h2>
+    Get Current DateTime
+</h2>
+<p>
+    Use <code class="lang-java">LocalDateTime.now()</code> to get the current datetime in <code class="lang-">yyyy-MM-dd-HH-mm-ss-ns</code>
+    format. 
+</p>
+<pre><code class="lang-java">import java.time.LocalDateTime; // now()
+
+class example {
+  public static void main(String[] args) {
+    // Create a LocalDateTime object
+    // to get current DateTime 
+    LocalDateTime myObj = LocalDateTime.now(); 
+    System.out.println(myObj); 
+    // 2022-12-14T02:46:20.481976
+  }
+}</code></pre>

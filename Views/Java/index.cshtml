@@ -28,5 +28,44 @@
 </h2>
 <p>
     Every Java program has a main method: without it, the program won't run. 
+    This must be inside a class (all methods must). The class name should also 
+    match the filename. 
 </p>
-<pre><code class="lang-java">public static void main(String[] args)    </code></pre>
+<pre><code class="lang-java">// Example.java
+public class Example {
+    // main method 
+    public static void main(String[] args){
+        System.out.println("Example");
+        // Example
+    }
+}</code></pre>
+
+<h2>
+    Variables
+</h2>
+<pre><code class="lang-java">int num = 10;
+float floatNum = 5.23f;
+char letter = 'A';
+boolean bool = false;
+String site = "alecscripts.com";
+</code></pre>
+
+<h2>
+    Strings
+</h2>
+<pre><code class="lang-java">String first = "Alec";
+String last = "Scripts";
+String name = first + " " + last;
+System.out.println(name);
+// Alec Scripts
+</code></pre>
+
+<h2>
+    For Each Loops
+</h2>
+<pre><code class="lang-java">String word = "iPhone";
+for (char c: word.toCharArray()) {
+  System.out.print(c + "_");
+}
+// i_P_h_o_n_e_
+</code></pre>
