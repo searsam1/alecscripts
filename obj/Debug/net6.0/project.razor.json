@@ -16333,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/RegularExpressions.cshtml",
+      "TargetPath": "Views\\Java\\RegularExpressions.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/WrapperClasses.cshtml",
       "TargetPath": "Views\\Java\\WrapperClasses.cshtml",
       "FileKind": "mvc"

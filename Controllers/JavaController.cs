@@ -283,5 +283,13 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult RegularExpressions()
+    {   
+        ViewData["creationDate"] = "Sat Dec 17 04:47:15 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Regular Expressions";
+        return View();
+    }
+    
     }
 }
