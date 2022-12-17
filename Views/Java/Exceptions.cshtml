@@ -1,0 +1,98 @@
+
+<p>
+    Exceptions are errors that occur when a program is executed. They can
+    come from user error or by programmer error, and there are different types 
+    of errors for different situations. 
+</p>
+<h2>
+    try and catch
+</h2>
+
+<p>
+    In Java, <code class="lang-java">try</code> is used paired with <code class="lang-java">catch</code>
+    to catch errors / exceptions. Try is where the exception happens, and catch catches the error 
+    so the program can continue. 
+</p>
+<pre><code class="lang-java">try {
+  //  Where Exception can happen. 
+}
+catch(Exception e) {
+  //  Handle errors here.
+}</code></pre>
+<style>
+    pre.bg-error{
+        background-color: rgb(255,0,0,.2);
+        border: 3px solid crimson;
+    }
+    pre.bg-catch{
+        background-color: rgb(0,255,0,.2);
+        border: 3px solid green;
+    }
+</style>
+
+<p>
+    The following example will cause an exception because the array is not <code class="lang-java">10</code> ints large. 
+    Without a try-catch statement, the program will halt at the exception. 
+</p>
+<pre class="bg-error"><code class="lang-java">public class Main {
+  public static void main(String[ ] args) {
+    int[] myNumbers = {7, 8, 9};
+    // Causes Exception. 
+    System.out.println(myNumbers[10]); 
+  }
+}</code></pre>
+
+<p>
+    Use a try-catch block to catch the index exception caused above. 
+</p>
+<pre class="bg-catch"><code class="lang-java">public class Main {
+  public static void main(String[ ] args) {
+    try {
+      int[] myNumbers = {7, 8, 9};
+      System.out.println(myNumbers[10]);
+    } catch (Exception e) {
+      System.out.println("Error: index");
+    }
+  }
+}</code></pre>
+
+<h2>
+    Finally Keyword
+</h2>
+<p>
+    The keyword <code>finally</code> will execute in a try-catch block no matter the results. It goes 
+    last, after the catch statement.    
+</p>
+<pre><code class="lang-java">try {
+  //  Where Exception can happen. 
+}
+catch(Exception e) {
+  //  Handle errors here.
+} finally {
+    // Always runs
+}
+
+</code></pre>
+
+<h2>
+    Throwing Custom Errors
+</h2>
+<p>
+    Custom error messages can be created from predefined exceptions like <code class="lang-java">ArithmeticException</code>
+    and the <code class="lang-java">throw</code> keyword. 
+</p>
+<pre><code class="lang-java">public class Main {
+    static void checkAge(int age) {
+      if (age < 21) {
+        throw new ArithmeticException("Access denied - You must be at least 21 to drink.");
+      }
+      else {
+        System.out.println("Access granted - Bottoms up.");
+      }
+    }
+  
+    public static void main(String[] args) {
+      checkAge(15); // Set age below 21 (15)
+    }
+  }
+  </code></pre>
