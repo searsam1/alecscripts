@@ -1,0 +1,238 @@
+
+<h2>
+    ArrayList
+</h2>
+<p>
+    Java has a list type from the <code>java.util</code> package, which is an array with 
+    a dynamic size. Normally, arrays are static in size and cannot add or subtract address locations. 
+    Array lists can add new memory locations and delete old ones.
+</p>
+<p>
+    To create a new ArrayList, <code class="lang-java">import java.util.ArrayList</code> and make a 
+    new <code class="lang-java">ArrayList</code> object. 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+
+// Create an ArrayList
+ArrayList&lt;String&gt; cars = new ArrayList&lt;String&gt;(); 
+</code></pre>
+
+<p>
+    ArrayLists come built-in with the <code class="lang-java">.add()</code>, <code class="lang-java">.get()</code>, <code class="lang-java">.set()</code>, <code class="lang-java">.remove()</code> and <code class="lang-java">.size()</code> methods
+    , making them easy to change and manipulate. 
+</p>
+
+<h2>
+    Using Different Types
+</h2>
+<p>
+    In an ArrayList, Java stores objects and cannot store types like <code class="lang-java">int</code> or <code class="lang-java">char</code>. 
+    Instead, use wrapper classes like <code class="lang-java">&lt;Integer&gt;</code> or <code class="lang-java">&lt;Character&gt;</code>. 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    // String Objects
+    ArrayList&lt;String&gt; strings = new ArrayList&lt;String&gt;();
+    // Integer Objects 
+    ArrayList&lt;Integer&gt; integers = new ArrayList&lt;Integer&gt;();
+    // Character Objects 
+    ArrayList&lt;Character&gt; characters = new ArrayList&lt;Character&gt;();
+  }
+}</code></pre>
+
+<p>
+    See more about wrapper classes <a asp-action="Java" asp-controller="java">here</a>
+</p>
+
+<h2>
+    Add Items
+</h2>
+<p>
+    Use <code class="lang-java">.add()</code> to add elements to an ArrayList. 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;String&gt; planes = new ArrayList&lt;String&gt;();
+    planes.add("Saab JAS 39E Gripen");
+    planes.add("Sukhoi Su-35S");
+    planes.add("Eurofighter Typhoon");
+    planes.add("Lockheed Martin F-35 Lightning II");
+    System.out.println(planes);
+    // [Saab JAS 39E Gripen, Sukhoi Su-35S, Eurofighter Typhoon, Lockheed Martin F-35 Lightning II]
+  }
+}
+</code></pre>
+
+<h2>
+    Access Items
+</h2>
+<p>
+    Use <code class="lang-java">.get()</code> to get elements of an ArrayList. It is based off index and 
+    starts at zero(0). 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;String&gt; planes = new ArrayList&lt;String&gt;();
+    planes.add("Saab JAS 39E Gripen");
+    // planes.get(0)
+    System.out.println(planes.get(0));
+    // Saab JAS 39E Gripen
+  }
+}
+</code></pre>
+
+<h2>
+    Change Items
+</h2>
+<p>
+    Use <code class="lang-java">.set()</code> to change elements of an ArrayList. Their must 
+    be a value at the index given before changing it. 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;String&gt; planes = new ArrayList&lt;String&gt;();
+    planes.add("Saab JAS 39E Gripen");
+    // change first element with 
+    // .set()
+    planes.set(0, "SR-71 Blackbird");
+    System.out.println(planes.get(0));
+    // SR-71 Blackbird
+  }
+}</code></pre>
+
+<h2>
+    Remove an Item
+</h2>
+<p>
+    Use <code class="lang-java">.remove()</code> to remove elements of an ArrayList. Input the index of 
+    the element to remove. The example adds two planes, removes the first plane and prints the second.  
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;String&gt; planes = new ArrayList&lt;String&gt;();
+    planes.add("Saab JAS 39E Gripen");
+    planes.add("SR-71 Blackbird");
+    planes.remove(0);
+    System.out.println(planes.get(0));
+    // SR-71 Blackbird
+  }
+}</code></pre>
+
+<h2>
+    ArrayList Size
+</h2>
+<p>
+    Use <code class="lang-java">.size()</code>to get an ArrayList's size. 
+</p>
+<Pre><code class="lang-java">import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;String&gt; planes = new ArrayList&lt;String&gt;();
+    planes.add("Saab JAS 39E Gripen");
+    planes.add("SR-71 Blackbird");
+    // get size of planes list
+    System.out.println(planes.size());
+    // 2
+  }
+}</code></Pre>
+
+<h2>
+    Loop Through an ArrayList
+</h2>
+<p>
+    Foreach loop or loop by index using <code class="lang-java">.size()</code>. 
+</p>
+<h3>
+    Loop
+</h3>
+<p>
+    Loop over an ArrayList using the <code class="lang-java"> for (int i=0; i&lt;planes.size(); i++)</code> syntax 
+    to get the index. Use <code class="lang-java">.get()</code> to index the ArrayList. 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;String&gt; planes = new ArrayList&lt;String&gt;();
+    planes.add("Saab JAS 39E Gripen");
+    planes.add("Sukhoi Su-35S");
+    planes.add("Eurofighter Typhoon");
+    planes.add("Lockheed Martin F-35 Lightning II");
+    
+    for (int i=0; i&lt;planes.size(); i++){
+        System.out.println(planes.get(i));
+        // Saab JAS 39E Gripen
+        // Sukhoi Su-35S
+        // Eurofighter Typhoon
+        // Lockheed Martin F-35 Lightning II
+    }    
+  }
+}
+</code></pre>
+<h3>
+    For-each Loop
+</h3>
+<p>
+    For-each loop over an array using the <code class="lang-java"> for (String plane : planes)</code> syntax, where <code>planes</code>
+    is the ArrayList. 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;String&gt; planes = new ArrayList&lt;String&gt;();
+    planes.add("Saab JAS 39E Gripen");
+    planes.add("Sukhoi Su-35S");
+    planes.add("Eurofighter Typhoon");
+    planes.add("Lockheed Martin F-35 Lightning II");
+    
+    for (String plane : planes){
+        System.out.println(plane);
+        // Saab JAS 39E Gripen
+        // Sukhoi Su-35S
+        // Eurofighter Typhoon
+        // Lockheed Martin F-35 Lightning II
+    }
+  }
+}</code></pre>
+<h2>
+    Sort an ArrayList
+</h2>
+<p>
+    Sort an ArrayList using the <code class="lang-java">Collections</code> class from <code class="lang-java">java.util</code>. 
+    <code>collection</code> comes with <code class="lang-java">.sort()</code> that sorts numerically or alphabetically. 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+import java.util.Collections;  // .sort()
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;String&gt; planes = new ArrayList&lt;String&gt;();
+    planes.add("Antonov A-1");
+    planes.add("Sukhoi Su-35S");
+    planes.add("Eurofighter Typhoon");
+    planes.add("Lockheed Martin F-35 Lightning II");
+    
+    // sort planes
+    Collections.sort(planes);
+
+    for (String plane : planes){
+        System.out.println(plane);
+        // Antonov A-1
+        // Eurofighter Typhoon
+        // Lockheed Martin F-35 Lightning II
+        // Sukhoi Su-35S
+    }
+  }
+}</code></pre>

@@ -1,0 +1,118 @@
+
+<p>
+    See <a asp-action="ArrayList" asp-controller="Java">ArrayLists</a>. Linked lists and array lists share 
+    the same methods because they come from the same <code>List</code> interface. 
+</p>
+
+<pre><code class="lang-java">import java.util.ArrayList;
+import java.util.LinkedList;
+
+class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String&gt; linkStrings = new LinkedList&lt;String&gt;();
+    linkStrings.add("first");
+    linkStrings.get(0);
+    linkStrings.set(0, "new first");
+    linkStrings.remove(0);
+    linkStrings.size();
+  }
+}
+</code></pre>
+
+<h2>
+    LinkedList V ArrayList
+</h2>
+<p>
+    LinkedLists are similar to ArrayLists in how they operate, but they are internally
+    made different. 
+</p>
+
+<h3>
+    LinkedList
+</h3>
+<pre><code class="lang-java">import java.util.LinkedList;
+
+class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String&gt; linkedStrings = new LinkedList&lt;String&gt;();
+  }
+}</code></pre>
+<p>
+    Linked lists are chains of containers that link together. 
+    Each new element is put in a container and added to the chain. 
+</p>
+<h3>
+    ArrayList
+</h3>
+<p>
+    Array Lists have regular arrays internally. Each time a new object 
+    is added and the array gets full, it creates a bigger one to replace it. 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+
+class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;String&gt; ArrayStrings = new ArrayList&lt;String&gt;();
+  }
+}</code></pre>
+
+<h2>
+    LinkList Methods
+</h2>
+<p>
+    Linked lists do come with some methods that are 
+    faster than the ArrayList's implementations. 
+</p>
+
+@{
+    string[] s = @"addFirst()	Add to front
+addLast()	Add to end
+removeFirst()	Remove from front
+removeLast()	Remove from end
+getFirst()	Get first item
+getLast()	Get last item".Split("\n");
+}
+
+<table>
+    <tr>
+        <th>
+            Method
+        </th>
+        <th>
+            Description
+        </th>
+        
+        @foreach (string item in s)
+        {
+            <tr> 
+                <td>
+                    <code class="lang-java">@item.Split("\t")[0]</code>
+                </td>
+                <td>
+                    @item.Split("\t")[1]
+                </td>
+            </tr>    
+        }
+    </tr>
+</table>
+
+
+<pre><code class="lang-java">import java.util.ArrayList;
+import java.util.LinkedList;
+
+class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String&gt; linkStrings = new LinkedList&lt;String&gt;();
+    linkStrings.addFirst("first");
+    linkStrings.addLast("last");
+    System.out.println(linkStrings.getFirst());
+    // first
+    System.out.println(linkStrings.getLast());
+    // last
+    linkStrings.removeFirst();
+    linkStrings.removeLast();
+    System.out.println(linkStrings);
+    // [] 
+  }
+}
+</code></pre>

@@ -319,6 +319,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9BYnN0cmFjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Arraylist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9BcnJheWxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Arrays.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9BcnJheXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -351,12 +355,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9FbnVtcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Exceptions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9FeGNlcHRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/ForLoops.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9Gb3JMb29wcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Functions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9GdW5jdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/HashMaps.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9IYXNoTWFwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/HashSet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9IYXNoU2V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/index.cshtml]
@@ -373,6 +389,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Io.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9Jby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Iterators.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9JdGVyYXRvcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/LinkedList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9MaW5rZWRMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Math.cshtml]
@@ -421,6 +445,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/WhileLoops.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9XaGlsZUxvb3BzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/WrapperClasses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9XcmFwcGVyQ2xhc3Nlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Js/AlternateTableRows.cshtml]
@@ -585,6 +613,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/old_outlay_copy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL29sZF9vdXRsYXlfY29weS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_homeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19ob21lTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_ValidationScriptsPartial.cshtml]

@@ -70,7 +70,7 @@ font-size: 3.5rem;
 </head>
 
 <style>
-#jumbo{
+.jumbo{
 @* background:
 linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
 linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
@@ -87,58 +87,59 @@ string height = h.ToString() + "px";
 }
 <body>
 
+
 @* Navbar *@
-<nav style="" class="shadow-sm navbar  sticky-top navbar-expand-lg bg-white ">
+<nav style="" class="py-0 my-0 shadow-sm navbar  sticky-top navbar-expand-lg bg-white ">
 
 
 <div class="container-fluid">
 <a role="button" href="/">
-    <img src="~/lib/favicon-32x32.png">
+<img src="~/lib/favicon-32x32.png">
 </a>
 
 <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
 </svg></span>
 </button>
 <div class=" collapse navbar-collapse " id="navbarSupportedContent">
 
 
 <ul class=" navbar-nav mx-auto mb-2 mb-lg-0 ">
-    <li class="nav-item">
-    <a class="nav-link" asp-controller="home" asp-action="Directory">Directory</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="java" asp-action="index">Java</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="cpp" asp-action="index">C++</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="css" asp-action="index">CSS</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="bash" asp-action="index">Bash</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="html" asp-action="index">HTML</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="JS" asp-action="index">JavaScript</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="dotnet" asp-action="index">.NET</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="go" asp-action="index">GO</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" asp-controller="Glossary" asp-action="index">Glossary</a>
-    </li>
-    
-    
+<li class="nav-item">
+<a class="nav-link" asp-controller="home" asp-action="Directory">Directory</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" asp-controller="java" asp-action="index">Java</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" asp-controller="cpp" asp-action="index">C++</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" asp-controller="css" asp-action="index">CSS</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" asp-controller="bash" asp-action="index">Bash</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" asp-controller="html" asp-action="index">HTML</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" asp-controller="JS" asp-action="index">JavaScript</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" asp-controller="dotnet" asp-action="index">.NET</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" asp-controller="go" asp-action="index">GO</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" asp-controller="Glossary" asp-action="index">Glossary</a>
+</li>
+
+
 <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 aria-expanded="false">
@@ -207,6 +208,7 @@ Topics
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                         <li><a class="link-dark rounded" asp-action="index" asp-controller="Java">Java Home</a></li>
 <li><a class="link-dark rounded" asp-action="Abstraction" asp-controller="Java">Java Abstraction</a></li>
+<li><a class="link-dark rounded" asp-action="Arraylist" asp-controller="Java">Java Arraylist</a></li>
 <li><a class="link-dark rounded" asp-action="Arrays" asp-controller="Java">Java Arrays</a></li>
 <li><a class="link-dark rounded" asp-action="Classes" asp-controller="Java">Java Classes</a></li>
 <li><a class="link-dark rounded" asp-action="Comments" asp-controller="Java">Java Comments</a></li>
@@ -215,11 +217,16 @@ Topics
 <li><a class="link-dark rounded" asp-action="DateAndTime" asp-controller="Java">Java Date And Time</a></li>
 <li><a class="link-dark rounded" asp-action="Encapsulation" asp-controller="Java">Java Encapsulation</a></li>
 <li><a class="link-dark rounded" asp-action="Enums" asp-controller="Java">Java Enums</a></li>
+<li><a class="link-dark rounded" asp-action="Exceptions" asp-controller="Java">Java Exceptions</a></li>
 <li><a class="link-dark rounded" asp-action="ForLoops" asp-controller="Java">Java For Loops</a></li>
 <li><a class="link-dark rounded" asp-action="Functions" asp-controller="Java">Java Functions</a></li>
+<li><a class="link-dark rounded" asp-action="HashMaps" asp-controller="Java">Java Hash Maps</a></li>
+<li><a class="link-dark rounded" asp-action="HashSet" asp-controller="Java">Java Hash Set</a></li>
 <li><a class="link-dark rounded" asp-action="Inheritance" asp-controller="Java">Java Inheritance</a></li>
 <li><a class="link-dark rounded" asp-action="InnerClasses" asp-controller="Java">Java Inner Classes</a></li>
 <li><a class="link-dark rounded" asp-action="Io" asp-controller="Java">Java Io</a></li>
+<li><a class="link-dark rounded" asp-action="Iterators" asp-controller="Java">Java Iterators</a></li>
+<li><a class="link-dark rounded" asp-action="LinkedList" asp-controller="Java">Java Linked List</a></li>
 <li><a class="link-dark rounded" asp-action="Math" asp-controller="Java">Java Math</a></li>
 <li><a class="link-dark rounded" asp-action="Modifiers" asp-controller="Java">Java Modifiers</a></li>
 <li><a class="link-dark rounded" asp-action="Operators" asp-controller="Java">Java Operators</a></li>
@@ -232,6 +239,7 @@ Topics
 <li><a class="link-dark rounded" asp-action="UserInput" asp-controller="Java">Java User Input</a></li>
 <li><a class="link-dark rounded" asp-action="Variables" asp-controller="Java">Java Variables</a></li>
 <li><a class="link-dark rounded" asp-action="WhileLoops" asp-controller="Java">Java While Loops</a></li>
+<li><a class="link-dark rounded" asp-action="WrapperClasses" asp-controller="Java">Java Wrapper Classes</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -484,21 +492,15 @@ Topics
 
 </div>
 </div>
-<div id="mainBody" class="col-8 px-5 my-5">
+<div id="mainBody" class="col-8 px-5 my-5 ">
 <h1 class=" mb-5">@ViewData["Controller"]: @ViewData["title"]</h1>
 @RenderBody()
 </div>
-<div style="top: 57px;" id="rightSidebar" class="sticky-top col text-start ">
+<div id="rightSidebar" class="sticky-top col text-start ">
 <div  class="bg-white ">
-<a href="/"
-class="d-flex align-items-center  pb-3 mb-3 link-dark text-decoration-none">
-@ViewData["controller"] &gt; @ViewData["title"]
-<svg class="bi me-2" width="30" height="24">
-
-<use xlink:href="#bootstrap"></use>
-</svg>
-
-</a>
+<a href="/"class="d-flex align-items-center  pb-3 mb-3 link-dark text-decoration-none">
+<span class="text-primary">@ViewData["controller"]</span> <span class="text-danger">&MediumSpace; &gt; &MediumSpace;</span> <span class="text-success"> @ViewData["title"]</span>
+<svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use> </svg></a>
 <ul class="list-unstyled ps-0">
 
 <ul id="rightSideList" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -559,7 +561,11 @@ let res = link.textContent.replace(/ /g, "").replace(/\n/g, "")
 
 
 if(c + title == res){
-link.querySelector('a').style.background = '#98FB98 '
+link.querySelector('a').style.background = 'rgba(0, 0, 0, .1) '
+link.querySelector('a').style.color = 'black '
+link.querySelector('a').style.fontWeight = '500 '
+link.style.background = "linear-gradient(45deg, white, rgb(255,255,0,.5), rgb(255,1,0,.5))";
+link.style.borderRadius = "10px";
 
 }
 }
@@ -584,10 +590,13 @@ sidebar.append(li)
 
 if (header.getAttribute('class') == "header header-3"){
 link.style.paddingLeft = "25px"
-link.style.borderLeft = "3px solid grey"
+link.style.borderLeft = "1px double black"
+
 }
 else {
-link.style.borderLeft = "4px solid palegreen"
+link.style.borderLeft = "2px solid black"
+
+
 }
 
 if (header.textContent.trim(" ") == "^"){
@@ -597,6 +606,21 @@ link.style.borderLeft = "none"
 }
 </script>
 
+<script>
+let txt;
+let navbar = document.querySelector(".collapse.navbar-collapse").querySelector("UL")
+let controller = '@ViewData["Controller"]'.toLowerCase().replace("c&#x2b;&#x2b;","c++").replace("js","javascript")
+let t = '@ViewData["title"]'.toLowerCase()
+for (let li of navbar.querySelectorAll("LI")){
+txt = li.textContent.trim(" ").toLowerCase();
+if (txt == controller || txt == t){
+li.setAttribute("class", "navlinkSelected")
+}
+}
+
+
+
+</script>
 
 
 @await RenderSectionAsync("Scripts", required: false)

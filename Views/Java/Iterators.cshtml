@@ -1,0 +1,70 @@
+
+<p>
+    Iterators are objects used to loop through collections like 
+    ArrayLists or HashSets. Iterators are imported from the <code class="lang-java">java.util.Iterator</code> class.
+</p>
+
+<h2>
+    Create an Iterator
+</h2>
+<p>
+    First create a collection of objects, then use 
+    the <code class="lang-java">.iterator()</code> method to create an 
+    iterator for that collection. 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;String&gt; planes = new ArrayList&lt;String&gt;();
+    planes.add("Saab JAS 39E Gripen");
+    planes.add("Sukhoi Su-35S");
+    planes.add("Eurofighter Typhoon");
+    // Get the iterator
+    Iterator&lt;String&gt; it = planes.iterator();
+
+    // Print first item
+    System.out.println(it.next());
+    // Saab JAS 39E Gripen
+  }
+}</code></pre>
+
+<h2>
+    Use Iterator to loop
+</h2>
+<p>
+    Use the <code class="lang-java">.hasNext()</code> method inside a while loop to print each item 
+    in a collection. 
+</p>
+<pre><code class="lang-java">while(it.hasNext()) {
+  System.out.println(it.next());
+}</code></pre>
+<h2>
+    Removing Elements 
+</h2>
+<p>
+    Use the <code class="lang-java">.remove()</code> method 
+    to modify collections. 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;String&gt; planes = new ArrayList&lt;String&gt;();
+    planes.add("Saab JAS 39E Gripen");
+    planes.add("Sukhoi Su-35S");
+    planes.add("Eurofighter Typhoon");
+    // Get the iterator
+    Iterator&lt;String&gt; it = planes.iterator();
+
+    while(it.hasNext()) {
+        System.out.println(it.next());
+        // to clear planes arrayList
+        it.remove();
+      }
+    System.out.println(planes);
+    // [] 
+  }
+}</code></pre>

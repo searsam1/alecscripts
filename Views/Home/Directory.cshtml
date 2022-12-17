@@ -8,44 +8,59 @@
 
 </ul>
 
+<style>
+     #directoryElement{
+        border: 2px solid black;
+        border-radius: 5px;
+        border-right: 10px solid black;
+        background-position: top right;
+        padding: 20px;
 
+     }
+     .link-dark{
+        
+        transition: background-color .5s ;
+        
+    }
+    .link-dark:hover{
+        transition: background-color .25s;
+    }
+    .link-dark:focus{
+        outline: none;
+    }
+    
 
+</style>
 <script>
     function get_sidebar_links(){
+        let ControllerCount = 0;
+        let PageCount = 0;
         let leftSidebarUL = document.querySelector("#leftSidebar").querySelector("UL");
-        let links = leftSidebarUL.querySelectorAll("a")
-        let txt, controller, header;
-        
         let directoryElement = document.querySelector("#directoryElement"); 
-        for (let link of links){
-            
-            new_li = document.createElement("a")
-            new_li.setAttribute("class", "btn btn-light")
-            new_controller = link.textContent.split(" ")[0]
-            if (new_controller != controller){
-                header = document.createElement("LI")
-                header.textContent = new_controller
-                header.style.textAlign = "center"
-                header.style.listStyle = "none"
-                header.style.padding = "5px"
-                header.style.background = "rgb(1,1,1,.05)"
-                header.style.borderRadius = "4px"
-                header.style.margin = "100px 0px 10px 0px"
-                directoryElement.appendChild(header)
-                controller = new_controller
-            }
-            link.textContent = link.textContent.split(" ").slice(1).join(" ")
-            
-            new_li.appendChild(link)
+        let new_li;
+
+
+        
+        for (let a of leftSidebarUL.querySelectorAll(".mb-1")){
+            new_li = document.createElement("LI")
             new_li.style.listStyle = "none"
-            new_li.style.margin = "10px"
-            new_li.style.borderRadius = "10px"
-            new_li.style.padding = "10px"
+            new_li.append(a)
+            directoryElement.append(new_li )
+            ControllerCount ++;
+            PageCount += a.querySelectorAll("li").length;
 
-
-            directoryElement.appendChild(new_li)
+            
         }
-    document.querySelector("#count").textContent = links.length
+        document.querySelector("#count").textContent += PageCount;
+        document.querySelector("#count").textContent += "-" + ControllerCount;
 }   
+
 get_sidebar_links()
+
+</script>
+
+<script>
+    let rs = document.querySelector("#rightSidebar"); 
+    console.log(rs)
+    rs.style.display = "none"
 </script>

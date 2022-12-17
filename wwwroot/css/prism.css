@@ -219,3 +219,7 @@ div.code-toolbar{
 .language-json > .token.property{
     color: rgb(211, 0, 56);
 }
+
+.token.selector {
+    color: rgb(135, 43, 255);
+}

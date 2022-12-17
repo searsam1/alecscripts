@@ -1,170 +1,59 @@
-﻿
-
-<h2 class="display-6">
-     Welcome
-</h2>
+﻿@{
+    Layout = "../Shared/_homeLayout.cshtml";
+ }
 
 
-
-<p>
-    <div class="container border border-dark rounded-3 bg-light">
-        <h3>
-            <span style="font-family: 'UnifrakturMaguntia', cursive; font-size: 35px;">
-                November 24, 2022 
-            </span>
-        </h3>
-        
-        <p>
-            What does it mean to work hard as a programmer?
-        </p>
-        <ul>
-            <li>
-                Learning a new language 
-            </li>
-            <li>
-                Creating a new language 
-            </li>
-            <li>
-                10 pages / day -> 3,650 pages / year
-            </li>
-            <li>
-                Regular physical exercise
-            </li>
-            <li>
-                Break every 30 Minutes
-            </li>
-            <li>
-                Perfecting SEO
-            </li>
-            <li>
-                TDD : Test Driven Development - Tests first, code second
-            </li>
-            <li>
-                Testing through real-life use
-            </li>
-            
-        </ul>
-
-    </div>
-</p>
-
-<p>
-    <div class="container border border-dark rounded-3 bg-light">
-        <h3>
-            <span style="font-family: 'UnifrakturMaguntia', cursive; font-size: 35px;">
-                November 21, 2022 
-            </span>
-        </h3>
-        <br>    
-        <p class="quote">Who has deceived thee so oft as thyself</p>
-        <figcaption>-Poor Richard</figcaption>
-        <p>
-            Don't deceive people 
-        </p>
-    </div>
-</p>
-
-<p>
-    <div class="container border border-dark rounded-3 bg-light">
-        <h3>
-            <span style="font-family: 'UnifrakturMaguntia', cursive; font-size: 35px;">
-                November 20, 2022 
-            </span>
-        </h3>
-        <br>    
-        <p class="quote">Tongue double brings trouble</p>
-        <figcaption>-Poor Richard</figcaption>
-        <p>
-            Don't let your words 
-            overload your back 
-        </p>
-    </div>
-</p>
-
-<p>
-    <div class="container border border-dark rounded-3 bg-light">
-        <h3>
-            <span style="font-family: 'UnifrakturMaguntia', cursive; font-size: 35px;">
-                November 19, 2022 
-            </span>
-        </h3>
-        <br>    
-        <p class="quote">It's easier to keep holidays than commandments</p>
-        <figcaption>-Poor Richard</figcaption>
-        <p>
-            It's easier to take days off than go in 
-            on off days. 
-        </p>
-    </div>
-</p>
-
-
-<p>
-    <div class="container border border-dark rounded-3 bg-light">
-        <h3>
-            <span style="font-family: 'UnifrakturMaguntia', cursive; font-size: 35px;">
-                November 18, 2022 
-            </span>
-        </h3>
-        <br>    
-        <p class="quote">Man's understanding is dull'd by idleness  </p>
-        <figcaption>-Poor Richard</figcaption>
-        
-        <p>
-            The feeling of guilt adds up to form rust that is hard to clean. 
-        </p>
-        <p>
-            Adding value is important to feel valuable; a sensor is built-in to 
-            determine inner self-worth in every person.
-        </p>
-    </div>
-</p>
-
-<h2 class="display-6">
-     Site Description 
-</h2>
-
-
-        <ul>
-            <li class="fs-6">
-                Tutorials
-                
-                    <ul>
-                        <li>
-                            <a asp-action=index asp-controller=python>
-                                Python
-                            </a>
-                        </li>
-                    </ul>
-                
-            </li>
-            <s>
-                <li class="fs-6 ">
-                    Coding Sandbox
-                </li>
-            </s>
-            <s>
-                <li class="fs-6 ">
-                    Achievements
-                </li>
-            </s>
-        </ul>
+<center class="mb-5">
+    <img style=" background: white;" width=100 src="/lib/android-chrome-512x512.png">
     
-<h2 class="display-6">
-     Most Recent Update
-</h2>
-<p>
-    <ul>
-        <li>
-            Bug Fixes
-        </li>
-    </ul>
+    <p class="text-center">alecscripts.com</p>
+    <h2 style="font-family: 'UnifrakturMaguntia', cursive;">
+        <span class=" p-3 rounded-3 bg-dark text-light">Welcome To Alec Scripts</span>
+    </h2>
+    
+</center>
+
+    <p class="text-center">
+        Alecscripts is designed to bring simple tutorials to users. 
+    </p>
+
+
+<p class="p-3 bg-dark text-light text-center  rounded-3">
+    Find a <a class="link-info" asp-action="Directory" asp-controller="home">Tutorial</a>
 </p>
 
-<h2 class="display-6">
-    Why Did I Make This Website? 
-</h2>
 
-<p>
-    Coding is my prescription for happiness. 
-</p>
+<div class="text-center">
+    <a asp-controller="Java" asp-action="index" class=" btn m-2 btn-primary">
+        Java
+    </a>
+    <a asp-controller="cpp" asp-action="index" class="btn m-2 btn-info">
+        C++
+    </a>
+    <a asp-controller="python" asp-action="index" class="btn m-2 btn-light">
+        Python
+    </a>
+    <a asp-controller="CSS" asp-action="index" class="btn m-2 btn-primary">
+        CSS
+    </a>
+    <a asp-controller="Bash" asp-action="index" class="btn m-2 btn-info">
+        Bash
+    </a>
+    <a asp-controller="HTML" asp-action="index" class="btn m-2 btn-light">
+        HTML
+    </a>
+    <a asp-controller="js" asp-action="index" class="btn m-2 btn-primary">
+        JavaScript
+    </a>
+    <a asp-controller="dotnet" asp-action="index" class="btn m-2 btn-info">
+        .NET
+    </a>
+    <a asp-controller="go" asp-action="index" class="btn m-2 btn-light">
+        GoLang
+    </a>
+    <a asp-controller="glossary" asp-action="index" class="btn m-2 btn-primary">
+        Glossary
+    </a>
+    
+</div>
+

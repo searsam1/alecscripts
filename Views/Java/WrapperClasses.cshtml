@@ -1,0 +1,80 @@
+
+<p>
+    Wrapper classes are the object versions of data types.  
+</p>
+
+@{
+    string[] s = @"byte	Byte
+short	Short
+int	Integer
+long	Long
+float	Float
+double	Double
+boolean	Boolean
+char	Character".Split("\n");
+}
+
+<table>
+        <tr>
+            <th>
+                Type
+            </th>
+            <th>
+                Wrapper Class
+            </th>
+        </tr>
+        @foreach (var item in s)
+        {
+            <tr>
+                <td>
+                    @item.Split("\t")[0]
+                </td>
+                <td>
+                    @item.Split("\t")[1]
+                </td>
+            </tr>
+        }   
+</table>
+
+<p>
+    Collection types like <a asp-action="ArrayList" asp-controller="java">ArrayLists</a> that cannot use primitive types 
+    must use wrapper classes as their types. 
+</p>
+
+<pre><code class="lang-java">import java.util.ArrayList;
+
+// Create an ArrayList
+ArrayList&lt;Integer&gt; arrayListExample = new ArrayList&lt;Integer&gt;(); 
+</code></pre>
+
+<h2>
+    Create Wrapper Objects
+</h2>
+<p>
+    To create a wrapper object, use the wrapper instead of the primitive type. 
+</p>
+<pre><code class="lang-java">public class Main {
+  public static void main(String[] args) {
+    Integer n = 7;
+    Double dd = 5.89;
+    Character c = 'b';
+  }
+}</code></pre>
+
+<h2>
+    To Strings
+</h2>
+
+<p>
+    <code class="lang-java">.toString()</code> is a useful method for wrapper objects, 
+    converting them to their string version. 
+</p>
+
+<pre><code class="lang-java">public class Main {
+  public static void main(String[] args) {
+    Integer n = 100;
+    String s = n.toString();
+    System.out.println(s.length());
+    // 3
+  }
+}</code></pre>

@@ -1,0 +1,67 @@
+
+<p>
+    HashSets in Java are set objects with only unique objects (each object can only appear once).
+</p>
+
+<h2>
+    Create HashSet
+</h2>
+<p>
+    To create a new HashSet, import the <code class="lang-java"> java.util.HashSet</code> class 
+    and create a new <code class="lang-java"> HashSet</code> object. 
+</p>
+<pre><code class="lang-java">// Import HashSet class
+import java.util.HashSet; 
+
+HashSet&lt;String&gt; drinks = new HashSet&lt;String&gt;();</code></pre>
+<p>
+    HashSets use wrapper classes like <code class="lang-java">Integer</code>  or <code class="lang-java">String</code> as the type 
+    instead of the normal <code class="lang-java">int</code> / <code class="lang-java">String</code>. 
+</p>
+<pre><code class="lang-java">import java.util.HashSet;
+
+class Main {
+  public static void main(String[] args) {
+    // use Integer, not int
+    HashSet&lt;Integer&gt; drinks = new HashSet&lt;Integer&gt;();
+  }
+}</code></pre>
+
+<h2>
+    Add to HashSet
+</h2>
+<p>
+    Use <code class="lang-java">.add()</code> to add new items to 
+    a HashSet. 
+</p>
+<pre><code class="lang-java">import java.util.HashSet;
+
+class Main {
+  public static void main(String[] args) {
+    HashSet&lt;String&gt; drinks = new HashSet&lt;String&gt;();
+    drinks.add("Juice");
+    drinks.add("Soda");
+    drinks.add("Milk");
+    
+    System.out.println(drinks);
+    // [Juice, Soda, Milk]
+  }
+}</code></pre>
+
+<h2>
+    Check For Items
+</h2>
+<p>
+    Use <code class="lang-java">.contains(obj)</code> to check if an item is in a HashSet. 
+</p>
+<pre><code class="lang-java">drinks.contains("Milk") // -> True;
+</code></pre>
+
+<h2>
+    Remove Items
+</h2>
+<p>
+    Use <code class="lang-java">.remove(obj)</code> to remove if an item is in a HashSet. 
+</p>
+<pre><code class="lang-java">drinks.remove("Milk")
+</code></pre>

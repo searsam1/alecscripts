@@ -1,0 +1,146 @@
+
+<h2>
+    HashMap
+</h2>
+<p>
+    A HashMap is like a python dictionary: it stores key-value pairs. To access a value, use the 
+    key. Keys and values can have the same or different types. Like ArrayLists, they use 
+    wrapper classes as types. 
+</p>
+<pre><code class="lang-java">import java.util.HashMap;
+// create new HashMap Capitals
+HashMap&lt;String, String&gt; Capitals = new HashMap&lt;String, String&gt;();
+</code></pre>
+
+
+<h2>
+    Add Items
+</h2>
+<p>
+    Hash maps use the <code class="lang-java">.put()</code> method, where the first argument is the key and the second is the value. 
+</p>
+    
+
+<pre><code class="lang-java">import java.util.HashMap;
+
+class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String&gt; Capitals = new HashMap&lt;String, String&gt;();
+    Capitals.put("A", "a");
+  }
+}
+
+</code></pre>
+<h2>
+    Access Items
+</h2>
+<p>
+    Use <code class="lang-java">.get()</code> to access an item by key. 
+</p>
+<pre><code class="lang-java">import java.util.HashMap;
+
+class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String&gt; Capitals = new HashMap&lt;String, String&gt;();
+    Capitals.put("A", "a");
+    
+    // use .get() to get value of "A"
+    System.out.println(Capitals.get("A"));
+    // a 
+  }
+}</code></pre>
+
+<h2>
+    Remove Items
+</h2>
+<p>
+    Use <code class="lang-java">.remove()</code> to delete an item by key. 
+</p>
+<pre><code class="lang-java">import java.util.HashMap;
+
+class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String&gt; Capitals = new HashMap&lt;String, String&gt;();
+    Capitals.put("A", "a");
+    
+    // use .get() to remove "A"
+    Capitals.remove("A");
+    System.out.println(Capitals);
+    // {}
+  }
+}</code></pre>
+<h2>
+    HashMap Size
+</h2>
+<p>
+    Use <code class="lang-java">.size()</code> to get the size of a hashmap. 
+</p>
+<pre><code class="lang-java">import java.util.HashMap;
+
+class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String&gt; Capitals = new HashMap&lt;String, String&gt;();
+    Capitals.put("A", "a");
+    Capitals.put("B", "b");
+    Capitals.put("C", "c");
+    
+    System.out.println(Capitals.size());
+    // 3
+  }
+}</code></pre>
+<h2>
+    Loop Through a HashMap
+</h2>
+<p>
+    Use <code class="lang-java">.keySet()</code> to loop over keys and 
+    <code class="lang-java">.values()</code> to loop over values. 
+</p>
+<pre><code class="lang-java">import java.util.HashMap;
+
+class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String&gt; Capitals = new HashMap&lt;String, String&gt;();
+    Capitals.put("A", "a");
+    Capitals.put("B", "b");
+    Capitals.put("C", "c");
+    
+    // Print keys
+    for (String i : Capitals.keySet()) {
+        System.out.print(i + ' ');
+    }
+    // A B C
+
+    // Print values
+    for (String i : Capitals.values()) {
+        System.out.print(i + ' ');
+    }
+    // a b c
+  }
+}</code></pre>
+<h3>
+    Loop Over Keys & Values
+</h3>
+<p>
+    To loop over keys and values, loop over the keys and 
+    use the <code class="lang-java">.get()</code> method 
+    to access the values with the key. 
+</p>
+<pre><code class="lang-java">import java.util.HashMap;
+
+class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String&gt; Capitals = new HashMap&lt;String, String&gt;();
+    Capitals.put("A", "a");
+    Capitals.put("B", "b");
+    Capitals.put("C", "c");
+    
+    // Print keys & values
+    for (String i : Capitals.keySet()) {
+        System.out.println(i + ' ' + Capitals.get(i));
+        // A a
+        // B b
+        // C c
+    }
+  }
+}
+</code></pre>

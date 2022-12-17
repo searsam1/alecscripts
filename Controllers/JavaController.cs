@@ -227,5 +227,61 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Arraylist()
+    {   
+        ViewData["creationDate"] = "Thu Dec 15 21:41:22 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Arraylist";
+        return View();
+    }
+    
+    public IActionResult WrapperClasses()
+    {   
+        ViewData["creationDate"] = "Fri Dec 16 06:27:18 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Wrapper Classes";
+        return View();
+    }
+    
+    public IActionResult LinkedList()
+    {   
+        ViewData["creationDate"] = "Fri Dec 16 06:39:06 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Linked List";
+        return View();
+    }
+    
+    public IActionResult HashMaps()
+    {   
+        ViewData["creationDate"] = "Fri Dec 16 07:14:38 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Hash Maps";
+        return View();
+    }
+    
+    public IActionResult HashSet()
+    {   
+        ViewData["creationDate"] = "Sat Dec 17 02:40:20 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Hash Set";
+        return View();
+    }
+    
+    public IActionResult Iterators()
+    {   
+        ViewData["creationDate"] = "Sat Dec 17 03:16:26 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Iterators";
+        return View();
+    }
+    
+    public IActionResult Exceptions()
+    {   
+        ViewData["creationDate"] = "Sat Dec 17 04:13:14 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Exceptions";
+        return View();
+    }
+    
     }
 }
