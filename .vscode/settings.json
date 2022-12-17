@@ -9,6 +9,7 @@
         "Cppversion",
         "Datagrams",
         "datetime",
-        "jquery"
+        "jquery",
+        "Metacharacters"
     ]
 }

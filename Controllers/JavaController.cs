@@ -291,5 +291,13 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Threads()
+    {   
+        ViewData["creationDate"] = "Sat Dec 17 05:48:02 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Threads";
+        return View();
+    }
+    
     }
 }

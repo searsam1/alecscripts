@@ -1,0 +1,174 @@
+
+
+
+<h2>
+    What is a RegEx?
+</h2>
+<p>
+    Regular Expressions, or RegEx for short, is a format for matching 
+    patterns or characters in a string. It can replace, remove, add and 
+    more to strings. To use Regex in Java, import the <code class="lang-java">java.util.regex</code> <a asp-action="packages" asp-controller="java">package</a>.
+</p>
+
+<p>
+    Regular expressions consist of a pattern and a matcher.
+    To use regular expressions in Java, use: 
+    <ul>
+        <li>
+            <code class="lang-java">java.util.regex.Pattern</code>
+        </li>
+        <li>
+            <code class="lang-java">java.util.regex.Matcher</code>
+        </li>
+        <li>
+            <code class="lang-java">java.util.regex.PatternSyntaxException</code>
+        </li>
+    </ul>
+</p>
+<p>
+    The Pattern is the core of regex. It is where the regex formatting comes in. 
+</p>
+<h3>
+    Regex Example
+</h3>
+<pre><code class="lang-java">import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+  public static void main(String[] args) {
+    Pattern pattern = Pattern.compile("alecscripts", Pattern.CASE_INSENSITIVE);
+    Matcher matcher = pattern.matcher("Visit alecscripts!");
+    boolean matchFound = matcher.find();
+    if(matchFound) {
+      System.out.println("Match found");
+      // Match found
+      System.out.println(matcher);
+      // .Matcher[pattern=alecscripts region=0,18 lastmatch=alecscripts]
+      
+    } else {
+      System.out.println("Match not found");
+    }
+  }
+}
+</code></pre>
+
+<p>
+    In the example above, the pattern to look for is <code class="lang-java">"pattern"</code>, and that is 
+    input into <code class="lang-java">Pattern.compile()</code>. The matcher 
+    is the string to check, or <code class="lang-java">"Visit alecscripts!"</code>, in this case. 
+</p>
+<p>
+    A boolean is created using <code class="lang-java">matcher.find()</code>, 
+    and that will return <code class="lang-java">true</code> if any matches are found and <code class="lang-java">false</code> otherwise. 
+</p>
+
+<h2>
+    Flags
+</h2>
+<p>
+    Flags are set in <code class="lang-java">Pattern.compile()</code> after the first argument. 
+    In the example, <code class="lang-java">Pattern.CASE_INSENSITIVE</code> was used to ignore the 
+    case of the strings. Flags set the way the regex will behave. 
+</p>
+<ul>
+    <li>
+        <code class="lang-java">Pattern.CASE_INSENSITIVE</code> - Ignores case 
+    </li>
+    <li>
+        <code class="lang-java">Pattern.CASE_LITERAL</code> - Special delimiters have no effect
+    </li>
+    <li>
+        <code class="lang-java">Pattern.UNICODE_CASE</code> - Used with <code class="lang-java">Pattern.CASE_INSENSITIVE</code> 
+        to get alphanumeric characters. 
+    </li>
+</ul>
+<h2>
+    Patterns
+</h2>
+<p>
+    Brackets <code>[]</code> are used to create a range of characters to include in the search. 
+</p>
+<ul>
+    <li>
+        <code>[abc]</code> - Find any/all three characters
+    </li>
+    <li>
+        <code>[^abc]</code> - Exclude all three characters
+    </li>
+    <li>
+        <code>[0-9]</code> - Find in the range 1 thru 9
+    </li>
+    <li>
+        <code>[A-Za-z]</code> - A thru Z ; a thru z inclusive
+    </li>
+    <li>
+        <code>[a-d[m-p]]</code> - a-d or m-p (union)
+    </li>
+    <li>
+        <code>[a-z&&[^bc]]</code> - a-z expect for b and c
+    </li>
+    
+</ul>
+<h2>
+    Metacharacters
+</h2>
+<p>
+    Meta Characters are special characters that represent a rule. 
+    For example, <code>$</code> means find matches only at the end of the string. <code>\s</code> is a 
+    whitespace character. 
+</p>
+<ul>
+    <li> 
+        <code>|</code> -Find match for any of the patterns separated by <code>|</code>
+    </li>
+    <li>
+        <code>.</code> -Matches any character
+    </li>
+    <li>
+        <code>^</code> -Matches beginning of string
+    </li>
+    <li>
+        <code>$</code> -Matches end of string
+    </li>
+    <li>
+        <code>\d</code> -Matches digit
+    </li>
+    <li>
+        <code>\s</code> -Matches whitespace character
+    </li>
+    <li>
+        <code>\b</code> -Find matches start or end of string 
+    </li>
+    <li>
+        <code>\A</code> -Find at the start of input 
+    </li>
+</ul>
+<h2>
+    Quantifiers
+</h2>
+<p>
+    Quantifiers control how many times a pattern will match a string.
+</p>
+<ul>
+    <li>
+        <code>+</code> 1 match or more
+    </li>
+    <li>
+        <code>*</code> 0 matches or more
+    </li>
+    <li>
+        <code>?</code> 0 or 1 match
+    </li>
+    <li>
+        <code>{x}</code> match <code>x</code> times
+    </li>
+    <li>
+        <code>{x,y}</code> match in range of <code>x</code> to <code>y</code> times
+    </li>
+    <li>
+        <code>{x,}</code> match at least <code>x</code> number of times
+    </li>
+</ul>
+See <a href="https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html">
+    docs.oracle
+</a> for a complete java regex reference. 
