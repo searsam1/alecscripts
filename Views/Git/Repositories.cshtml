@@ -1,0 +1,131 @@
+
+<p>
+    A repository (repo) is a save asset for a project
+    that contains all of its files and revision histories. It can 
+    be given access to other people, organizations, or it can 
+    be kept private.  
+</p>
+
+<h2>
+    Why use repositories?
+</h2>
+<p>
+    Make faster decisions, make debugging easier, but most importantly
+    repos use version control: they keep track of the changes. For bigger 
+    organizations, keeping track of file changes is a must for debugging. 
+</p>
+<p>
+    It also can act as a saving tool for personal projects
+    that are important. It's almost like a professional folder or save 
+    point for code. 
+</p>
+
+<h2>
+    Best practices
+</h2>
+<h3>
+    Create a README
+</h3>
+<p>
+    To add a description to the project and make the work 
+    more navigable, add a README file. It should answer: 
+    <ul>
+        <li>
+            What is this repo or project?
+        </li>
+        <li>
+            How does it work?
+        </li>
+        <li>
+            Who will use it?
+        </li>
+        <li>
+            What is the goal?
+        </li>
+    </ul> 
+    <figcaption>Credit: <a href="https://github.com/18F/open-source-guide/blob/18f-pages/pages/making-readmes-readable.md">github.com/18F</a></figcaption>
+</p>
+<p>
+    README files also support markdown. 
+</p>
+<pre><code class="lang-md">_README.md_
+# This readme is an example README.md file
+# It works by giving examples and describing what READMEs need. 
+# It is for developers or freshers learning about READMEs
+# The aim is to demo a README.md file
+</code></pre>
+
+
+<h3>
+    Branching over forking
+</h3>
+<p>
+    It is better practice to work out of a single repo and use branches 
+    rather than other repos. other repos is for outside contributors.
+</p>
+<p>
+    Branching also supports protection, meaning their are status checks and pull request reviews. 
+    This is good for important branches like <code>main</code>. 
+</p>
+
+
+<h3>
+    Use Git Large File Storage(Git LFS)
+</h3>
+<p>
+    Instead of holding large files in a repo, its better to store them in a large 
+    storage platform like Git LFS. There are also file limits on github to optimize  performance.
+</p>
+
+<h2>
+    Creating a repo
+</h2>
+<p>
+    Run <code class="lang-shell">git init</code> to make a new repo from a project. 
+    It can also be made from a new empty folder. If its from a project, the command 
+    must be run inside the directory. Change directories by using the <code class="lang-shell">cd</code> command. 
+</p>
+<pre><code class="lang-shell">cd path/to/project 
+git init
+git add .
+git commit 
+</code></pre>
+<h3>
+    Cloning
+</h3>
+<p>
+    It is also possible to create a repo from an existing one by 
+    cloning it. This will create a new directory and track 
+    all the branches from the main. It then checks out a new 
+    branch that is a fork from the active branch of the main repo. 
+</p>
+
+<pre><code class="lang-shell">git clone  "ssh|git|http[s]|ftp[s]"&lt;url&gt; repo-name
+cd repo-name    
+</code></pre>
+
+<h2>
+    Staging Repos 
+</h2>
+
+<p>
+    Files are either tracked or untracked. If tracked, 
+    it can be a working file or a staged file. Staged files 
+    are ready to be committed; working files are waiting 
+    to be staged. From the staging area it goes to the remote repository. 
+</p>
+
+<p>
+    Use the <code>git add</code> command to add files to the 
+    staging area, then <code>git commit</code> to commit them 
+    to the repo. 
+</p>
+
+<pre><code class="lang-shell">git add . 
+git commit -m "message"
+</code></pre>
+<p>
+    <code class="lang-shell"> git add .  </code> will stage all tracked files that 
+    are modified. Otherwise, specific files can be added to the staging area 
+    and committed.   
+</p>

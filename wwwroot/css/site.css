@@ -58,10 +58,8 @@ h3 {
             display: none;
         }
         #mainBody {
-            
             max-width: 100%;
             width: auto;
-            
         }
     }    
 
@@ -169,3 +167,13 @@ table{
     border-bottom-left-radius: 5px;
     font-size: .9em;
 }
+figcaption{
+    color: grey;
+    font-size: 10px;
+    margin-bottom: 25px;
+}
+
+footer {
+    min-height: 50vh;
+}
+

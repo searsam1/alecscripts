@@ -235,8 +235,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L1Jhem9yUGFnZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/Branching.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2l0L0JyYW5jaGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/CommitHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2l0L0NvbW1pdEhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/Commits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2l0L0NvbW1pdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2l0L2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/Repositories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2l0L1JlcG9zaXRvcmllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/UndoingThings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2l0L1VuZG9pbmdUaGluZ3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Glossary/index.cshtml]
@@ -249,6 +269,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Go/PrintStatement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR28vUHJpbnRTdGF0ZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Home/AboutThisWebsite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dFRoaXNXZWJzaXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Home/Directory.cshtml]
@@ -359,6 +383,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9FeGNlcHRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/FibonacciSequence.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9GaWJvbmFjY2lTZXF1ZW5jZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/ForLoops.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9Gb3JMb29wcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -393,6 +421,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Iterators.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9JdGVyYXRvcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/LambdaExpressions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSmF2YS9MYW1iZGFFeHByZXNzaW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/LinkedList.cshtml]

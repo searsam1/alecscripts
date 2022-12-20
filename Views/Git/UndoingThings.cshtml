@@ -1,0 +1,196 @@
+<p>
+    Mistakes are common in programming, so git has 
+    features to help correct some 
+    of those mistakes. 
+</p>
+
+<h2>
+    Redo a commit 
+</h2>
+<p>
+    Redo a commit with <code class="lang-shell">git commit --amend</code>. It does 
+    not fix anything, it just makes a new commit with the staged files. 
+    To only change the commit message, run <code>git commit --amend</code> right 
+    after the bad commit was created, but add the correct message. Otherwise, make the 
+    changes that were forgotten and run the command. 
+</p>
+
+<pre><code class="lang-shell">git commit -m 'Initial COMMIT'
+# change message from 'Initial COMMIT' to "Initial Commit"
+git commit --amend -m 'Initial Commit'
+</code></pre>
+
+<p>
+    Only amend commits that are local and haven't been pushed yet. 
+</p>
+
+<h2>
+    Unstage a File
+</h2>
+<p>
+    Say there are two files that have been changed, but the 
+    developer wants to commit each change separately. 
+
+    <code>git add .</code> is accidentally used, so both 
+    files are currently staged. To unstage only one of them, 
+    use <code class="lang-shell">git reset HEAD &lt;file&gt;</code>. 
+    Using <code class="lang-shell">git reset HEAD &lt;file&gt;</code>
+</p>
+
+<pre><code class="lang-shell">touch file1.txt file2.txt
+git add .</code></pre>
+
+<p>
+    Using the status command shows that 2 new files have been staged, but it 
+    also shows how to undo it: 
+</p>
+
+<pre><code class="lang-shell">git status
+
+: '
+On branch main
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+	new file:   file1.txt
+	new file:   file2.txt
+'
+</code></pre>
+<p>
+    So, to unstage <code>file2.txt</code>, use:
+</p>
+<pre><code class="lang-shell">git reset HEAD file2.txt
+git status 
+
+: 'Changes to be committed:
+  (use "git restore --staged &lt;file&gt;..." to unstage)
+	new file:   file1.txt
+
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+	file2.txt
+'
+</code></pre>
+<p>
+    Now <code>file1.txt</code> can be committed separately from <code>file2.txt</code>. 
+</p>
+<figcaption class="bg-light rounded-3 p-3 text-danger">note: git reset can be dangerous (especially with <code>--hard</code>)</figcaption>
+
+<h2>
+    Revert a changed file
+</h2>
+<p>
+    Use the <code class="lang-shell">git checkout -- &lt;file&gt;</code> command to revert a file 
+    back to its previous state before the changes. Below the readme file is changed, which can be seen 
+    with <code class="lang-shell">git status</code>
+</p>
+<pre><code class="lang-shell"># change README.md
+echo "New text" > README.md
+git status
+:'On branch main
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git restore &lt;file&gt;..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")'
+</code></pre>
+<p>
+    To revert the change to the readme, use the <code class="lang-shell">git checkout --</code> command:
+</p>
+
+<pre><code class="lang-shell">git checkout -- README.md
+git status
+
+:'
+On branch main
+nothing to commit, working tree clean
+'
+</code></pre>
+<p>
+    The working tree is clean and the changes to readme have been reverted. 
+</p>
+<figcaption class="bg-light rounded-3 p-3 text-danger">note: <code class="lang-shell">git checkout --</code> is a dangerous command: it can cause unwanted deletion or changes that cannot be recovered if not yet commited.</figcaption>
+
+<h2>
+    Undoing things with git restore
+</h2>
+<p>
+    <code>restore</code> is similar to <code>reset</code>, but it was introduced in a later version <code>(2.23.0)</code>
+    and takes the place of <code>reset</code> in most cases. 
+</p>
+<p>
+    Two files exist: <code>file1</code> and <code>file2</code>. 
+    One file needs to be staged at a time on separate commits, 
+    but <code class="lang-shell">git add .</code> was used and it staged both files.
+    If <code class="lang-shell">git status</code> is used, it shows both files 
+    ready to be committed and how to unstage them. 
+</p>
+
+<pre><code class="lang-shell">git add . # or git add *
+git status
+:'
+Changes to be committed:
+  (use "git restore --staged &lt;file&gt;..." to unstage)
+	new file:   file1
+	new file:   file2
+'</code></pre>
+<p>
+    Following git's advice of using <code class="lang-shell">git restore --staged file1</code> will unstage 
+    the file and they can be committed separately. 
+</p>
+<pre><code class="lang-shell">git restore --staged file1
+git status
+:'
+On branch main
+Changes to be committed:
+  (use "git restore --staged &lt;file&gt;..." to unstage)
+	new file:   file2
+
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+	file1
+'</code></pre>
+<h3>
+    Using restore to unmodify a file
+</h3>
+<p>
+    What if changes are made to README and they need to be reverted? 
+    <code>git restore &lt;file&gt;</code> will revert any file changes. 
+</p>
+<pre><code class="lang-shell">echo "NEW TEXT" > README.md
+git status
+
+:'
+On branch main
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git restore &lt;file&gt;..." to discard changes in working directory)
+	modified:   README.md
+
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+	file1
+	file2
+
+no changes added to commit (use "git add" and/or "git commit -a")
+'</code></pre>
+<p>
+    Git says that the README has been modified. To remove that change:
+</p>
+
+<pre><code class="lang-shell">git restore README.md
+git status
+
+:'
+On branch main
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+	file1
+	file2
+
+nothing added to commit but untracked files present (use "git add" to track)
+'</code></pre>
+<p>
+    Now the file changes to README no longer exist. 
+</p>
+<figcaption class="bg-light rounded-3 p-3 text-danger">note: <code class="lang-shell">git restore </code> is a dangerous command: it can cause unwanted deletion or changes that cannot be recovered if not yet committed.</figcaption>

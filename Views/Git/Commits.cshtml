@@ -1,0 +1,42 @@
+<h2>
+    What are git commits?
+</h2>
+<p>
+    Commits are another important part of using git: 
+    they are snapshots taken of the staged files
+    and can be considered like save points.
+</p>
+
+<h2>
+    Tracked & untracked 
+</h2>
+<p>
+    There are two types of files in git: <b>tracked</b> and <b>untracked</b>. 
+    Tracked files will get committed and untracked files won't. Additionally, before committing 
+    files, the wanted files must be added with <code class="lang-shell">git add &lt;filename&gt;</code>. 
+</p>
+<pre><code class="lang-shell">git add README.md
+# use git add . to add all files
+</code></pre>
+
+<h2>
+    Skip Staging
+</h2>
+<p>
+    Normally, commits have to be staged. This can be skipped 
+    with the <code>-a</code> power user option, letting git automatically 
+    stage all changed files that are also tracked and commit them. 
+</p>
+<pre><code class="lang-shell">touch new_file.txt 
+git commit -a 
+# skip git add new_file.txt
+</code></pre>
+
+<p>
+    When creating a new commit, a textEditor will popup for a commit message. This can 
+    be skipped with the <code>-m &lt;message&gt; </code> option and an inline message. 
+</p>
+
+<pre><code class="lang-shell">touch new_file.txt 
+git commit -a -m "Added new_file.txt"
+</code></pre>

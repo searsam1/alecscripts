@@ -8,3 +8,96 @@
 <p>
     Threads are created by implementation or by extending the main class.  
 </p>
+
+<h3>
+    Implement Runnable
+</h3>
+<p>
+    One way of creating a thread is have the main class implement 
+    the Runnable interface. 
+</p>
+<pre><code class="lang-java">public class Main implements Runnable {
+  public void run() {
+    System.out.println("thread time");
+  }
+}
+</code></pre>
+
+<h3>
+    Using Thread Class
+</h3>
+<p>
+    Another way to create a thread is to have the main class extend the <code class="lang-java">Thread</code> class and 
+    override its <code class="lang-java">run()</code> method. 
+</p>
+<pre><code class="lang-java">public class Main extends Thread {
+  public void run() {
+    System.out.println("pizza (thread) time");
+  }
+}</code></pre>
+
+<h2>
+    Executing Threads
+</h2>
+<p>
+    Executing or running a thread depends on how it was made. If it was implemented by Runnable, create a 
+    new Main class object, then create a new Thread object and pass in the Main class object just created. 
+</p>
+<pre><code class="lang-java">public class Main implements Runnable {
+    public static void main(String[] args) {
+      Main obj = new Main();
+      Thread thread = new Thread(obj);
+      thread.start();
+      System.out.println("no thread");
+      // no thread
+      // yes thread
+    }
+    public void run() {
+      System.out.println("yes thread");
+    }
+  }</code></pre>
+
+<p>
+    If Main extended Thread, all that has to be done is to create a new Main object called thread, and then call 
+    <code class="lang-java">.start()</code> on <code>thread</code>.
+</p>
+<pre><code class="lang-java">public class Main extends Thread {
+  public static void main(String[] args) {
+    Main thread = new Main();
+    thread.start();
+    System.out.println("Outside Thread");
+  }
+  public void run() {
+    System.out.println("Inside Thread");
+  }
+}</code></pre>
+
+<h2>
+    Problems with Concurrency
+</h2>
+<p>
+    When threading, problems can arise because there is no order to threads because 
+    they all happen at the same time. Variables can become unpredictable. It is 
+    best to check if a thread is alive before using any attributes its going to change. 
+</p>
+<pre><code class="lang-java">public class Main extends Thread {
+    public static int amount = 0;
+  
+    public static void main(String[] args) {
+      Main thread = new Main();
+      thread.start();
+      System.out.println(amount);
+      // 0
+      amount++;
+      System.out.println(amount);
+      // 2
+    }
+  
+    public void run() {
+      amount++;
+    }
+}</code></pre>
+<p>
+    The problem with this example is its unpredictable what will happen first, the 
+    thread ++ or the main ++. 
+</p>

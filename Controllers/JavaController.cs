@@ -299,5 +299,21 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult LambdaExpressions()
+    {   
+        ViewData["creationDate"] = "Sat Dec 17 06:23:24 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Lambda Expressions";
+        return View();
+    }
+    
+    public IActionResult FibonacciSequence()
+    {   
+        ViewData["creationDate"] = "Mon Dec 19 11:00:32 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Fibonacci Sequence";
+        return View();
+    }
+    
     }
 }

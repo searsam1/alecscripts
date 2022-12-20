@@ -1,0 +1,120 @@
+<center>
+    <img class="rounded-3" width="75%" src="/lib/Resources/fibonacci-g3510f71b8_1280.png">
+    <figcaption>
+        Image by <a href="https://pixabay.com/users/dg-ra-4854875/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3594147">Rafael Javier</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3594147">Pixabay</a>
+    </figcaption>
+</center>
+
+<h2>
+    What is the fibonacci sequence? 
+</h2>
+<p>
+    The Fibonacci sequence is special sequence that 
+    start at 0,1 at goes to infinity. On each new 
+    iteration, add the previous two numbers together. 
+    So, the next after 0,1 is 1, then it becomes 0,1,1. The 
+    next number is 2, and so on. 
+</p>
+<pre><code class="lang-python">Fn = Fn-1 + Fn-2
+
+#First 46 Fibonacci Terms
++-=============================================================-+
+|0 ➜ 1 ➜ 1 ➜ 2 ➜ 3 ➜ 5 ➜                                        |
+|# =============================================================|
+|8 ➜ 13 ➜ 21 ➜ 34 ➜ 55 ➜                                        |
+|# =============================================================|
+|89 ➜ 144 ➜ 233 ➜ 377 ➜ 610 ➜                                   | 
+|# =============================================================|
+|987 ➜ 1597 ➜ 2584 ➜ 4181 ➜ 6765 ➜                              |
+|# =============================================================|
+|10946 ➜ 17711 ➜ 28657 ➜ 46368 ➜ 75025 ➜                        |
+|# =============================================================|
+|121393 ➜ 196418 ➜ 317811 ➜ 514229 ➜ 832040 ➜                   |
+|# =============================================================|
+|1346269 ➜ 2178309 ➜ 3524578 ➜ 5702887 ➜ 9227465 ➜              |
+|# =============================================================|
+|14930352 ➜ 24157817 ➜ 39088169 ➜ 63245986 ➜ 102334155 ➜        |
+|# =============================================================|
+|165580141 ➜ 267914296 ➜ 433494437 ➜ 701408733 ➜ 1134903170 ➜   | 
++-=============================================================-+
+1836311903 ➜ 
+
+</code></pre>
+
+<h2>
+    Finding the Fibonacci sequence in Java
+</h2>
+<h3>
+    Using Loops
+</h3>
+<p>
+    There are a couple of ways to solve this problem.
+    First and foremost: using a loop. In the example, there is an array 
+    that starts with <code>0</code> and <code>1</code>. It then loops 
+    over a range for the given <code>n</code>. On each iteration it appends 
+    the sum of the previous two elements. 
+</p>
+<pre><code class="lang-java">public static int[] fib(int n){
+        // if n = 5: 
+        // 0 ➜ 1 ➜ 1 ➜ 2 ➜ 3 ➜ 5 ➜ 
+        n++;
+        
+        // create new fib array 
+        int[] fib = new int[n];
+        
+        // starts at [0,1]
+        fib[0] = 0; fib[1] = 1;
+        
+        // start @@ 2 because there 
+        // are already two elements. 
+        for (int i=2; i&lt;n; i++)
+        {
+            // Assign each new element
+            // to the sum of the previous 
+            // two.
+            fib[i] = fib[i-1] + fib[i-2];
+        }
+        return fib;
+    }</code></pre>
+
+<h3>
+    Solving via recursion
+</h3>
+<p>
+    This is a classic recursive exercise. Return n back only when n is less than or equal to one. 
+</p>
+<pre><code class="lang-java">public static int fib(int n){
+        if (n <= 1)
+            {
+                return n;
+            }
+        return fib(n - 1) + fib(n - 2);
+    }
+</code></pre>
+
+<h3>
+    Solving with LinkedLists
+</h3>
+<p>
+    Linked lists can be used to quickly pop out the last two elements, add them back in 
+    and add in a new third number that is the sum of the previous two. 
+</p>
+
+<pre><code class="lang-java">import java.util.LinkedList;    // .getLast, .get, .size, .add
+import java.util.Arrays;        // .asList
+
+class Main {
+    public static void fibLinkedLists(int n) {
+        LinkedList&lt;Integer&gt; lst = new LinkedList&lt;Integer&gt;(Arrays.asList(0,1));
+        for (int i=2; i&lt;n; i++){
+            lst.add(lst.getLast() + lst.get(lst.size() - 2));
+        }
+        System.out.println(lst);
+        // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...]
+      }
+    public static void main(String[] args) {
+        fibLinkedLists(10);
+        // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+  }
+}
+</code></pre>

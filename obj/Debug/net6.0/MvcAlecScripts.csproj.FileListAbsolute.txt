@@ -481,4 +481,4 @@
 /Users/111244rfsf/Documents/Repositories/alecscripts/obj/Debug/net6.0/ref/MvcAlecScripts.dll
 /Users/111244rfsf/Documents/Repositories/alecscripts/obj/Debug/net6.0/MvcAlecScripts.pdb
 /Users/111244rfsf/Documents/Repositories/alecscripts/obj/Debug/net6.0/MvcAlecScripts.genruntimeconfig.cache
-/Users/111244rfsf/Documents/Repositories/alecscripts/bin/Debug/net6.0/ref/MvcAlecScripts.dll
+/Users/111244rfsf/Documents/Repositories/alecscripts/obj/Debug/net6.0/refint/MvcAlecScripts.dll

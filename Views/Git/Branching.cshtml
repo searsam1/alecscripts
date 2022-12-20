@@ -1,0 +1,95 @@
+<h2>
+    What is a branch?
+</h2>
+<p>
+    Branching is important to git. One of the main 
+    points of using git is to diverge from a main 
+    save path and make experimental adjustments that 
+    can be taken back. 
+</p>
+
+<p>
+    Git works by storing pointers to commits as branches. This makes 
+    it fast to switch back and fourth which isn't encouraged in other VCS. 
+    There is a special pointer called HEAD that points to 
+    which branch the user is on. 
+
+</p>
+
+<h2>
+    Creating Branches
+</h2>
+<p>
+    Making a new branch creates a new pointer to a commit. HEAD then has
+    to be switched to point to the new branch, which points to a commit. 
+    The <code>git branch</code> command creates a new branch but will not 
+    switch to it. 
+</p>
+
+<pre><code class="lang-shell">git branch &lt;branch-name&gt;</code></pre>
+
+<p>
+    To switch to create and switch to a branch at the same time, use 
+    the <code class="lang-shell">git checkout -b &lt;newbranchname&gt;</code> command. 
+    In v2.23 and up, the <code>switch</code> command with the <code>-c</code> flag 
+    can create and switch to a branch at the same time as well. 
+</p>
+
+<pre><code class="lang-shell">git checkout -b &lt;newbranchname&gt;
+git switch -c|--create &lt;newbranchname&gt;
+</code></pre>
+
+<h2>
+    Deleting Branches
+</h2>
+<p>
+    Use <code class="lang-shell">git branch -d &lt;branch-name&gt;</code> to delete a branch 
+    from a git repo. 
+</p>
+
+<h2>
+    Switching branches
+</h2>
+<p>
+    To switch from branch to branch, use the <code class="lang-shell">git checkout &lt;branch-name></code> command. 
+    It is like checking out a book from a library. <code class="lang-shell">git switch</code> can also switch 
+    branches, with <code class="lang-shell">git switch -</code> switching to the last one checked out before the current 
+    branch. 
+</p>
+
+<pre><code class="lang-shell">git branch "testing"
+git checkout "testing"
+git log --oneline --decorate
+# 1184a61 (HEAD -> testing, origin/main, test, main)
+</code></pre>
+
+<p>
+    From log, it is clear that the HEAD is now pointing to the testing branch, 
+    which is pointing to the <code class="lang-shell">1184a61</code> commit. Now make changes 
+    and make a new commit while on the testing branch. 
+</p>
+
+<h2>
+    Basic Branching 
+</h2>
+<p>
+    First, create a new branch and make some 
+    file changes. Track the files by adding them, 
+    then commit them in the new branch. These file changes 
+    will only show up in the new commit, which the new branch is 
+    pointing to. 
+</p>
+<pre><code class="lang-shell">git checkout -b "testing"
+# Make some file changes 
+echo "README" > README.md 
+
+# track file changes  
+git add .
+
+# make new commit 
+git commit -m "Test Commit"
+</code></pre>
+<p>
+    Now the testing branch and main branch track different commits and 
+    have different readme.md files. 
+</p>

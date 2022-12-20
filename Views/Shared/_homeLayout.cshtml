@@ -73,6 +73,12 @@
 </head>
 
 <style>
+    .navbar-toggler-icon{
+        color: white;
+    }
+</style>
+
+<style>
     .jumbo {
         @*background:linear-gradient(217deg,rgba(255,0,0,.8),rgba(255,0,0,0)70.71%),linear-gradient(127deg,rgba(0,255,0,.8),rgba(0,255,0,0)70.71%),linear-gradient(336deg,rgba(0,0,255,.8),rgba(0,0,255,0)70.71%);*@background: white;
         max-width: 100%;
@@ -87,18 +93,38 @@
 
 <body>
 
+<style>
+.pre-nav{
+background: #212529;
+width: 100%;
+height: 100px;
+color: white;
+font-family: 'UnifrakturMaguntia', cursive;
+border-bottom: 1px solid white;
+}
+</style>
 
+<div class="pre-nav ">
+<center class="fs-2 ">
+alecscripts.com
+
+</center>
+
+<figcaption class="me-2 mt-4 pt-2 text-light text-end ">
+        Created by Alec Sears
+</figcaption>
+</div>
     @* Navbar *@
-    <nav style="" class="py-0 my-0 shadow-sm navbar navbar-expand-lg bg-white ">
-        <div class="container-fluid">
-            <a role="button" href="/">
-                <img src="~/lib/favicon-32x32.png">
+    <nav style="" class="py-0 my-0 shadow-sm navbar navbar-expand-lg ">
+        <div class="container-fluid bg-dark">
+            <a asp-action="directory" asp-controller="home">
+                <img src="~/lib/Resources/compass-fill.svg">
             </a>
             <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                        fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        fill="white" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg></span>
@@ -108,38 +134,38 @@
 
                 <ul class=" navbar-nav mx-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="home" asp-action="Directory">Directory</a>
+                        <a class="nav-link text-light" asp-controller="home" asp-action="Directory">Directory</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" asp-controller="java" asp-action="index">Java</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="java" asp-action="index">Java</a>
+                        <a class="nav-link text-light" asp-controller="cpp" asp-action="index">C++</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="cpp" asp-action="index">C++</a>
+                        <a class="nav-link text-light" asp-controller="css" asp-action="index">CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="css" asp-action="index">CSS</a>
+                        <a class="nav-link text-light" asp-controller="bash" asp-action="index">Bash</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="bash" asp-action="index">Bash</a>
+                        <a class="nav-link text-light" asp-controller="html" asp-action="index">HTML</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="html" asp-action="index">HTML</a>
+                        <a class="nav-link text-light" asp-controller="JS" asp-action="index">JavaScript</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="JS" asp-action="index">JavaScript</a>
+                        <a class="nav-link text-light" asp-controller="dotnet" asp-action="index">.NET</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="dotnet" asp-action="index">.NET</a>
+                        <a class="nav-link text-light" asp-controller="go" asp-action="index">GO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="go" asp-action="index">GO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Glossary" asp-action="index">Glossary</a>
+                        <a class="nav-link text-light" asp-controller="Glossary" asp-action="index">Glossary</a>
                     </li>
 
 
-                    <li class="nav-item dropdown">
+                    @* <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Python
@@ -153,7 +179,7 @@
                                 <hr class="dropdown-divider">
                             </li>
                         </ul>
-                    </li>
+                    </li> *@
                 </ul>
 
                 @* <form class="d-flex" role="search">

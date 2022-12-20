@@ -1,0 +1,263 @@
+
+<h2>
+    Using <code class="lang-shell">git log</code>
+</h2>
+<p>
+    Commit history is shown by using the powerful <code class="lang-shell">git log</code> command. 
+    It will display commits from most recent to oldest with detailed information about each commit.
+    By default, log will display the :
+    <ul>
+        <li>
+            SHA-1 checksum
+        </li>
+        <li>
+            Author's name & email
+        </li>
+        <li>
+            Date Made 
+        </li>
+        <li>
+            Commit Message 
+        </li>
+    </ul> 
+</p>
+
+<p>
+    There are lots of useful options with log: for displaying 
+    more information or less, pretty-formatting or no formatting, etc..
+</p>
+
+<h2>
+    Example repository
+</h2>
+<p>
+    To follow the tutorial, download the repository using: 
+</p>
+<pre><code class="lang-shell">git clone "https://github.com/searsam1/easy-git"</code></pre>
+
+<p>
+    Running <code class="lang-shell">git log</code> inside the repo should yield similar results 
+    to the output below: 
+</p>
+<pre><code class="lang-shell">cd easy-git 
+git log
+</code></pre>
+<pre><code class="lang-shell">
+commit 0745d369ae306d0ecdf4ec4fbd7a710ca271baa4 (HEAD -> main, origin/main, origin/HEAD)
+Author: Alec Sears &lt;76724804+searsam1@users.noreply.github.com&gt;
+Date:   Mon Dec 19 04:42:10 2022 -0700
+
+    add tests
+    
+    add 100 tests that compare fact and math.factorial
+
+commit 830c0bd509dbc6c5abadcc73e1d00973dba6eefe
+Author: Alec Sears &lt;76724804+searsam1@users.noreply.github.com&gt;
+Date:   Mon Dec 19 04:38:36 2022 -0700
+
+    added formula
+    
+    added formula:
+     n! = n × (n-1) × (n-2) × …1
+
+commit 837600c117457ce95b5279bba4ed12c48146a39f
+Author: Alec Sears &lt;76724804+searsam1@users.noreply.github.com&gt;
+Date:   Mon Dec 19 04:08:35 2022 -0700
+
+    Edit prod
+.
+.
+.
+</code></pre>
+
+<h2>
+    Useful log options
+</h2>
+
+<h3>
+    <code>-p</code> & <code>--stat</code>
+</h3>
+<p>
+    One popular option is <code>-p</code> (for patch). It will show 
+    the difference made in each commit. To limit the number of commits shown, use a number 
+    like <code>-2</code> to show the last two commits, or <code>-1</code> to show the most recent commit. 
+</p>
+
+<pre><code class="lang-shell">git log -p -1</code></pre>
+<pre><code class="lang-shell">commit 0745d369ae306d0ecdf4ec4fbd7a710ca271baa4 (HEAD -> main, origin/main, origin/HEAD)
+Author: Alec Sears &lt;76724804+searsam1@users.noreply.github.com&gt;
+Date:   Mon Dec 19 04:42:10 2022 -0700
+
+    add tests
+    
+    add 100 tests that compare fact and math.factorial
+
+diff --git a/factorial.py b/factorial.py
+index b6e7bc7..3592d3a 100644
+--- a/factorial.py
++++ b/factorial.py
+@@ -1,5 +1,6 @@
+ # By AS
+-def factorial(n):
++import math
++def fact(n):
+   """
+   n! = n × (n-1) × (n-2) × …1  
+   Return n!
+@@ -13,7 +14,8 @@ def factorial(n):
+   return prod 
+ 
+ def main():
+-  assert factorial(3) == 6
++  for i in range(100):
++    assert math.factorial(i) == fact(i)
+   print("Tests Passed")
+ 
+ if __name__ == "__main__":
+~
+(END)</code></pre>
+
+<p>
+    To show a summary of the changes made, use the <code>--stat</code> option. 
+    Only the last commit is shown here for brevity. 
+</p>
+<pre><code class="lang-shell">commit 0745d369ae306d0ecdf4ec4fbd7a710ca271baa4 (HEAD -> main, origin/main, origin/HEAD)
+Author: Alec Sears &lt;76724804+searsam1@users.noreply.github.com&gt;
+Date:   Mon Dec 19 04:42:10 2022 -0700
+
+    add tests
+    
+    add 100 tests that compare fact and math.factorial
+
+ factorial.py | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+(END)
+</code></pre>
+<h3>
+    <code>--pretty</code>
+</h3>
+<p>
+    One of the best options is <code>--pretty</code>, which comes 
+    with a few defaults that do the trick. Some include: 
+    <ul>
+        <li>
+            <code>oneline</code>
+        </li>
+        <li>
+            <code>short</code>
+        </li>
+        <li>
+            <code>full</code>
+        </li>
+        <li>
+            <code>fuller</code>
+        </li>
+    </ul>
+</p>
+<p>
+    Oneline is a great example of the --pretty flag. <code>--oneline</code> can also be 
+    used as an alias. 
+</p>
+<pre><code class="lang-shell">git log --pretty=oneline
+# or git log --oneline
+</code></pre>
+<pre><code class="lang-shell">0745d369ae306d0ecdf4ec4fbd7a710ca271baa4 (HEAD -> main, origin/main, origin/HEAD) add tests
+830c0bd509dbc6c5abadcc73e1d00973dba6eefe added formula
+837600c117457ce95b5279bba4ed12c48146a39f Edit prod
+df73db7fbe1f8c1311a80c8232aa8fc4b2b0ad84 Create factorial.py
+721e007eb6b3ca796db958ed2b6428763fb49d7d Detail README
+0f270ccfefa0495a7dd529f70134efd8079afe51 Initial commit</code></pre>
+
+<h2>
+    Pretty format
+</h2>
+<p>
+    The <code>--pretty</code> command also comes with the 
+    <code>format</code> option, which allows for custom formatting. 
+</p>
+<pre><code class="lang-shell">git log --pretty=format:"%h - %an, %ar : %s"</code></pre>
+<pre><code class="lang-shell">0745d36 - Alec Sears, 4 hours ago : add tests
+830c0bd - Alec Sears, 4 hours ago : added formula
+837600c - Alec Sears, 5 hours ago : Edit prod
+df73db7 - Alec Sears, 5 hours ago : Create factorial.py
+721e007 - Alec Sears, 5 hours ago : Detail README
+0f270cc - Alec Sears, 5 hours ago : Initial commit</code></pre>
+
+<p>There is a format string with special characters like <code>%h</code>
+that represent some form of time or the author information. The code goes as follows:
+</p>
+
+@{
+    string[] s = @"%H`Commit hash 
+%h`Abbreviated commit hash
+%T`Tree hash
+%t`Abbreviated tree hash
+%P`Parent hashes
+%p`Abbreviated parent hashes
+%an`Author name
+%ae`Author email
+%ad`Author date (format respects the --date=option)
+%ar`Author date, relative
+%cn`Committer name
+%ce`Committer email
+%cd`Committer date
+%cr`Committer date, relative
+%s`Subject".Split("\n");
+}
+
+<table >
+    @foreach (var item in s)
+    {
+        <tr>
+            <td>
+                <code >@item.Split('`')[0]</code>
+            </td>
+            <td>
+                @item.Split('`')[1]
+            </td>
+        </tr>
+    }
+</table>
+
+<h2>
+    Limiting Output
+</h2>
+<p>
+    Limiting output is a useful feature in git. Any negative number <code>-n</code> can be 
+    supplied to give the last <code>-n</code> number of commits. Something even more useful: time commands.
+    Use <code>--until</code> or <code>--since</code> to add a time frame to the shown commits. 
+</p>
+
+<p>
+    For example, to get the last 2 months of commits, use: 
+</p>
+<pre><code class="lang-shell">git log --since=2.weeks</code></pre>
+
+<pre><code class="lang-shell">commit 0745d369ae306d0ecdf4ec4fbd7a710ca271baa4 (HEAD -> main, origin/main, origin/HEAD)
+Author: Alec Sears &lt;76724804+searsam1@users.noreply.github.com&gt;
+Date:   Mon Dec 19 04:42:10 2022 -0700
+
+    add tests
+    
+    add 100 tests that compare fact and math.factorial
+
+commit 830c0bd509dbc6c5abadcc73e1d00973dba6eefe
+Author: Alec Sears &lt;76724804+searsam1@users.noreply.github.com&gt;
+Date:   Mon Dec 19 04:38:36 2022 -0700
+
+    added formula
+    
+    added formula:
+     n! = n × (n-1) × (n-2) × …1
+
+commit 837600c117457ce95b5279bba4ed12c48146a39f
+.
+.
+.
+</code></pre>
+
+<p>
+    Additionally, searching for a string is easy with the <code>-S</code> ("pickaxe") option. 
+    It will only give commits that changed the number of occurrences that changed the string. 
+</p>
+<pre><code class="lang-shell">git log -S function_name</code></pre>

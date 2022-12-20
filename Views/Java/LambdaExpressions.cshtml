@@ -1,0 +1,44 @@
+<p>
+    Lambdas are shorthand functions that 
+    are nameless and can fit inside other methods.
+</p>
+
+<h2>
+    Making Lambda Expressions
+</h2>
+<p>
+    Lambdas can be simple and short and only have one input element. No brackets or 
+    parenthesis required. They use <code>-></code>  and then the return value. 
+</p>
+<pre><code class="lang-java">parameter -> expression</code></pre>
+<p>
+    They can have multiple inputs, but parenthesis must go around the parameters. 
+</p>
+<pre><code class="lang-java">(x,y) -> expression</code></pre>
+<p>
+    This is still limited: to gain full access put curly braces around the expression to make a code block. These 
+    must have a manual return; it will not return anything automatically. 
+</p>
+<pre><code class="lang-java">(parameter1, parameter2) -> { code block }</code></pre>
+
+<h2>
+    Lambda Example
+</h2>
+<p>
+    For Example, the forEach method from ArrayLists are useful when combined with lambda functions. 
+</p>
+<pre><code class="lang-java">import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;Integer&gt; numbers = new ArrayList&lt;Integer&gt;();
+    numbers.add(1);
+    numbers.add(2);
+    numbers.add(3);
+    // (n) -> { System.out.println(n); }
+    numbers.forEach( (n) -> { System.out.println(n); } );
+    // 1 
+    // 2 
+    // 3
+  }
+}</code></pre>

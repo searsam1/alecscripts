@@ -1,4 +1,7 @@
 
+<h2>
+    What is Java?
+</h2>
 <p>
     Java is an easy to learn, high-level programming language 
     created by James Gosling in May 1995. Java is compiled 
@@ -7,17 +10,93 @@
     different operating systems. 
 </p>
 
+@{
+    string[] jsUses = @"Android Apps
+Desktop and Web Apps
+Web and Application servers
+enterprise-level Apps
+Video Games
+Database Connections
+Chatbots / Marketing Tools
+AI
+IoT (Internet of Things)
+...".Split("\n");
+
+    string[] jsUses2 = @"Robust
+Simple
+Object-oriented
+Multithreaded
+Architecturally neutral (bytecode)
+...".Split("\n");
+
+    string[] companies = @"Airbnb
+Amazon
+eBay
+Netflix
+Spotify
+Uber    
+...".Split("\n");
+
+}
+
+<p>
+    Java is mainly used for: 
+</p>
+<ul>
+    @foreach (string jsUse in jsUses)
+    {
+        <li>
+            @jsUse
+        </li>
+    }
+</ul>
+
+<p>
+    Pros of using Java: 
+</p>
+<ul>
+    @foreach (string jsUse in jsUses2)
+    {
+        <li>
+            @jsUse
+        </li>
+    }
+</ul>
+
+<p>
+    Companies that use Java
+</p>
+<ul>
+    @foreach (string jsUse in companies)
+    {
+        <li>
+            @jsUse
+        </li>
+    }
+</ul>
+
 <h2>
     Other Resources
 </h2>
+
 <ul>
     <li>
-        <a class=" link link-dark bg-light p-2 rounded-3" href="https://quickref.me/java">
+        <a class=" link link-dark bg-light rounded-3" href="https://quickref.me/java">
             quickref.me/java
         </a>
     </li>
+        <li>
+        <a class=" link link-dark bg-light rounded-3" href="https://www.coursera.org/articles/what-is-java-used-for">
+            coursera.org/articles/what-is-java-used-for
+        </a>
+    </li>
     <li>
-        <a class=" link link-dark bg-light p-2 rounded-3" href="https://docs.oracle.com/javase/tutorial/getStarted/index.html">
+        <a class=" link link-dark bg-light rounded-3" href="https://www.w3schools.com/java/java_intro.asp">
+            w3schools.com/java
+        </a>
+    </li>
+    <li>
+        <a class=" link link-dark bg-light  rounded-3" href="https://docs.oracle.com/javase/tutorial/getStarted/index.html">
             docs.oracle.com
         </a>
     </li>
