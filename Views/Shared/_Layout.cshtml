@@ -456,6 +456,7 @@ Topics
 <li><a class="link-dark rounded" asp-action="Commits" asp-controller="Git">Git Commits</a></li>
 <li><a class="link-dark rounded" asp-action="Remotes" asp-controller="Git">Git Remotes</a></li>
 <li><a class="link-dark rounded" asp-action="Repositories" asp-controller="Git">Git Repositories</a></li>
+<li><a class="link-dark rounded" asp-action="Tags" asp-controller="Git">Git Tags</a></li>
 <li><a class="link-dark rounded" asp-action="UndoingThings" asp-controller="Git">Git Undoing Things</a></li>
                                     </ul>
                                 </div>
@@ -532,7 +533,14 @@ Topics
 </div>
 </div>
 <div id="mainBody" class="col-8 px-5 my-5 ">
+
 <h1 class=" mb-5">@ViewData["Controller"]: @ViewData["title"]</h1>
+<div class="shadow-sm" id="toc">
+On This page:
+<ul id="tocList">
+
+</ul>
+</div>
 @RenderBody()
 </div>
 <div id="rightSidebar" class="sticky-top col text-start ">
@@ -664,8 +672,28 @@ if (txt == controller || txt == t){
 li.setAttribute("class", "navlinkSelected")
 }
 }
+</script>
+
+<script>
+
+function createToc(){
+tocList = document.querySelector("#tocList")
+headers = document.querySelectorAll("H2")
+
+for (let header of headers){
+li = document.createElement("li")
+a = document.createElement("a")
+a.setAttribute("href", "#" + header.getAttribute("id"))
+a.setAttribute("class", "nav-link")
+a.textContent = header.textContent
+li.appendChild(a)
+tocList.appendChild(li)
+}
+}
+createToc();
 
 </script>
+
 
 <script>
 

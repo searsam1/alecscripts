@@ -16763,6 +16763,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/Tags.cshtml",
+      "TargetPath": "Views\\Git\\Tags.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Python/VariableOutput.cshtml",
       "TargetPath": "Views\\Python\\VariableOutput.cshtml",
       "FileKind": "mvc"

@@ -190,3 +190,16 @@ h3:not(#logo)::after{
     content: "⁺⁺⁺";
     color: rgb(255,0,0,.55);
 }
+
+#toc{
+    padding: 10px;
+    margin: 10px 10px 30px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(0,0,0,.2);
+
+}
+#tocList li {
+    list-style-type: decimal;
+    margin: 10px;
+    border-bottom: 1px dotted rgb(0,0,0,.2);
+}

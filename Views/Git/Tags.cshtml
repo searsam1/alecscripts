@@ -1,0 +1,204 @@
+
+<p>
+    Tagging is marking a point in a repositories history 
+    import, like a version release (<code>v1.00</code>, <code>v1.01</code>, etc.). 
+    
+</p>
+<h2 >Listing Tags</h2>
+<p>
+    Tags are listed with <code class="lang-shell">git tag [-l|--list]</code>. It will 
+    list the tags alphabetically with no significant meaning. 
+</p>
+<pre><code class="lang-shell">cd alecscripts
+git tag
+# beta
+# V3
+</code></pre>
+    
+
+<p>
+    Additionally, patterns can be searched using <code class="lang-shell">git tag -l|--list "pattern"</code>. 
+    As of <span style="font-size: 20px; font-family: 'UnifrakturMaguntia', cursive;">Dec 21 ,05:31:37 2022,</span>, git has <span style="font-size: 20px; font-family: 'UnifrakturMaguntia', cursive;">875</span> tags. To view only the <code>v1.8.4</code> series, 
+    use <code class="lang-shell">git tag -l "v1.8.4*"</code>: 
+</p>
+
+<pre><code class="lang-shell">git tag -l "v1.8.4*"
+:'
+v1.8.4
+v1.8.4-rc0
+v1.8.4-rc1
+v1.8.4-rc2
+v1.8.4-rc3
+v1.8.4-rc4
+v1.8.4.1
+v1.8.4.2
+v1.8.4.3
+v1.8.4.4
+v1.8.4.5
+'
+</code></pre>
+
+<h2 >Creating Tags</h2>
+<p>
+    There are lightweight and annotated tags: annotated tags 
+    have a tagger name, email and date; a tagging message; and can 
+    be signed with GNU Privacy Guard (GPG). 
+</p>
+<h3>Annotated Tags</h3> 
+<p>
+    Use the <code class="lang-shell">git tag -a</code> command to create an new annotated tag:
+</p>
+<pre><code class="lang-shell">
+git tag -a v1.5 -m "Version 1.4"
+git tag
+v0.2
+v1.4
+v1.5
+</code></pre>
+<p>
+    <code>-m</code> is for the tag message, which is stored with the tag. If none is given, a 
+    text editor pops up for one to be input. 
+</p>
+<p>
+    Git show is used to show information about a tag:
+</p>
+<pre><code class="lang-shell">git show v1.5
+':
+tag v1.5
+Tagger: John Smith &lt;@@js-mails&gt;
+Date:   Sat May 3 20:19:12 1999 -0700
+
+Version 1.5
+
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Tyler ascoot &lt;taea.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+Change version number'
+</code></pre>
+<h3>Lightweight Tags</h3>
+<p>
+    Create lightweight tags by ignoring the <code>-a</code>, <code>-s</code> or <code>-m</code> options. Only provide a tag name. 
+</p>
+<pre><code class="lang-shell">git tag v1.5-lw
+git tag
+:'
+v0.1
+v1.3
+v1.4
+v1.5-lw
+v1.5
+'
+</code></pre>
+<p>
+    Now when git show is run, only the commit information is shown.  
+</p>
+<pre><code class="lang-shell">git tag v1.5-lw
+git tag v1.5-lw
+':
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Tyler ascoot <taea.com>
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+Change version number'
+</code></pre>
+<h2>Tagging Later</h2> 
+<p>
+    Going back to tag previous commits is also possible by adding the commit hash 
+    (or part of it) to the end of the git tag command. To get the 
+    current commit hashes, use <code class="lang-shell">git log --oneline</code>
+</p>
+
+<pre><code class="lang-shell">cd easy-git
+git log --oneline
+:'
+0745d36 (HEAD -> main, origin/main, origin/HEAD) add tests
+830c0bd added formula
+837600c Edit prod
+df73db7 Create factorial.py
+721e007 Detail README
+0f270cc Initial commit
+'
+</code></pre>
+
+<p>
+    To add a tag to commit #<code>837600c</code> (edit prod) after it has been created, 
+    use:
+</p>
+<pre><code class="lang-shell">git tag -a v1.5 837600c</code></pre>
+
+<p>
+    Tag <code>v1.5</code> is now tagged to commit <code>837600c</code>, as shown with 
+    git show v1.5: 
+</p>
+<pre><code class="lang-shell">git show v1.5
+:
+'tag v1.5
+Tagger: Alec &lt;76724804+searsam1@users.noreply.github.com&gt;
+Date:   Wed Dec 21 06:48:54 2022 -0700
+
+Adding 837600c tag
+
+commit 837600c117457ce95b5279bba4ed12c48146a39f (tag: v1.5)
+Author: Alec Sears &lt;76724804+searsam1@users.noreply.github.com&gt;
+Date:   Mon Dec 19 04:08:35 2022 -0700
+
+    Edit prod
+    
+    Edit
+    `prod = 0 ` -> `prod = 1`
+    Starting at zero will give the wrong answer.
+
+diff --git a/factorial.py b/factorial.py
+index f161818..52ef9ef 100644
+--- a/factorial.py
++++ b/factorial.py
+@@ -6,7 +6,7 @@ def factorial(n):
+     n! = 1 * 2 * 3
+     n! = 6 
+'
+</code></pre>
+<h2>Sharing Tags</h2>
+<p>
+    Git tags need to be manually pushed and to any remote repos. It doesn't happen automatically, like pushing to remote branches. 
+    Just use <code class="lang-shell">git push origin &lt;tagname&gt;</code> to push a single tag, and <code>--tags</code> to push all 
+    lightweight and annotated tags.
+</p>
+<pre><code class="lang-shell">git push origin v1.5 # or git push origin --tags
+:'
+Counting objects: 14, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (14/14), 2.05 KiB | 0 bytes/s, done.
+Total 14 (delta 3), reused 0 (delta 0)
+To git@github.com:s/sg.git
+ * [new tag]         v1.5 -> v1.5
+'
+</code></pre>
+<h2>Deleting Tags</h2> 
+<p>
+    Delete a tag with the <code>-d</code> option with git tag and specify the tag name.
+</p>
+<pre><code class="lang-shell">git tag -d v1.5-lw</code></pre>
+<p>
+    This will only impact local repos: deleting tags on remotes 
+    is a little more complex and can be done in two ways: 
+    <ul>
+        <li>
+            <pre><code class="lang-shell">git push &lt;remote&gt; :refs/tags/&lt;tagname&gt;</code></pre>
+        </li>
+        
+        <li>
+            <pre><code class="lang-shell">git push origin --delete &lt;tagname&gt;</code></pre>
+        </li>
+    </ul>
+</p>
+
+<!-- 
+Coming Soon:
+<h2>Checking out Tags</h2>
+-->
+
+<figcaption>
+    Sources: <a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging" >https://git-scm.com/book/en/v2/Git-Basics-Tagging</a>
+</figcaption>

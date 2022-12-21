@@ -1,3 +1,178 @@
+
+<h2>
+    What are remotes?
+</h2>
 <p>
     Remotes are versions of a project that live on another host or network. 
+    Remote repositories are important for working with other collaborates: 
+    it is common to push and pull data on a project with remotes. 
 </p>
+
+<p>
+    Working with remotes includes: 
+</p>
+<ul>
+    <li>
+        Adding remote repositories
+    </li>
+    <li>
+         Removing remote repositories
+    </li>
+    <li>
+         Managing remote branches
+    </li>
+</ul>
+
+<h2>
+    Showing remotes
+</h2>
+<p>
+    <code class="lang-shell">git remote</code> will show all 
+    remotes in a repository. If cloned, origin will automatically 
+    be there as a shorthand. The <code>-v</code>  option
+    displays the shorthand names for the remotes and the URLs. 
+</p>
+<pre><code class="lang-bash">
+git clone https://github.com/searsam1/easy-git
+
+:'Cloning into "easy-git"...
+remote: Enumerating objects: 19, done.
+remote: Counting objects: 100% (19/19), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 19 (delta 7), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (19/19), 4.95 KiB | 4.95 MiB/s, done.
+Resolving deltas: 100% (7/7), done.
+'
+cd easy-git 
+git remote
+# origin
+
+git remote -v
+:'
+origin	https://github.com/searsam1/easy-git (fetch)
+origin	https://github.com/searsam1/easy-git (push)
+'
+</code></pre>
+
+<p>
+    If there is work from multiple contributors and there 
+    are multiple remotes, git remote will list all of them. 
+</p>
+
+<h2>
+    Adding Remotes 
+</h2>
+<p>
+    Cloning will add the origin automatically. However, to add 
+    remotes with explicit names, use <code class="lang-shell">git remote add &lt;shortname&gt; &lt;url&gt;</code>.
+</p>
+
+<pre><code class="lang-shell">git remote add test https://github.com/searsam1/easy-git
+git remote -v
+
+:'
+origin	https://github.com/searsam1/easy-git (fetch)
+origin	https://github.com/searsam1/easy-git (push)
+test	https://github.com/searsam1/easy-git (fetch)
+test	https://github.com/searsam1/easy-git (push)
+'
+</code></pre>
+
+<p>
+    Now test can be used as a shorthand. This is super useful when 
+    working with other remotes / contributors.
+</p>
+
+<pre><code class="lang-shell">git fetch test
+
+:'
+From https://github.com/searsam1/easy-git
+ * [new branch]      main       -> test/main
+'
+</code></pre>
+
+<h2>
+    Fetching and pulling from remotes
+</h2>
+<pre><code class="lang-shell">git fetch &lt;remote&gt;</code></pre>
+<p>
+    Getting data from a remote repository is done with fetching. 
+    Git will go out and capture all the latest changes to a repository. 
+    It will not automatically merge any local changes or modify what is 
+    currently being worked on. 
+</p>
+<p>
+    If the current branch is already tracking a remote branch, <code class="lang-shell">git pull</code> 
+    can be used to automatically fetch any new changes. It also 
+    merges any current changes with the new ones. 
+</p>
+
+<h2>
+    Pushing to a remote 
+</h2>
+<pre><code class="lang-shell">git push &lt;remote&gt; &lt;branch&gt;</code></pre>
+<p>
+    Pushing is uploading local changes to an 
+    upstream remote repository. This is done with the 
+    push command. For example, to push the <b>main</b> branch 
+    to the <b>origin</b> remote: 
+</p>
+<pre><code class="lang-shell">git push origin main</code></pre>
+
+<p>
+    Only one push can be done at a time: that is, if two people try to push, 
+    only the first one will work. The other will have to fetch the one that worked then 
+    push separately. 
+</p>
+
+<h2>
+    Inspecting a remote
+</h2>
+<p>
+     Use the <code class="lang-shell">git remote show &lt;remote&gt;</code> command to get more info on a remote. 
+     For example, if used on origin it will look something like:
+</p>
+<pre><code class="lang-shell">git remote show origin
+:'
+* remote test
+  Fetch URL: https://github.com/searsam1/easy-git
+  Push  URL: https://github.com/searsam1/easy-git
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local ref configured for "git push":
+    main pushes to main (up to date)
+'
+</code></pre>
+<p>
+    There can be more information displayed for more heavy git usage. 
+</p>
+
+<h2>
+    Renaming and removing remotes
+</h2>
+
+<p>
+    To rename a remote use the <code class="lang-shell">git remote rename</code> command. 
+    For example, to rename the test remote made earlier to <code>newt</code>:
+</p>
+
+<pre><code class="lang-shell">git remote rename 'test' 'newt'
+git remote -v
+
+:'
+newt	https://github.com/searsam1/easy-git (fetch)
+newt	https://github.com/searsam1/easy-git (push)
+origin	https://github.com/searsam1/easy-git (fetch)
+origin	https://github.com/searsam1/easy-git (push)
+'</code></pre>
+<p>
+    The remote to rename goes first and the replacement goes after. Additionally,
+    to delete a remote, use the <code class="lang-shell">git remote remove</code> or <code class="lang-shell">git remote rm</code>
+    command. 
+</p>
+<pre><code class="lang-shell">git remote remove newt
+git remote
+
+# Origin
+</code></pre>
