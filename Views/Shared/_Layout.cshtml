@@ -1,5 +1,5 @@
 @{
-string Version = "v2.2a";
+string Version = "V3";
 
 }
 
@@ -454,6 +454,7 @@ Topics
 <li><a class="link-dark rounded" asp-action="Branching" asp-controller="Git">Git Branching</a></li>
 <li><a class="link-dark rounded" asp-action="CommitHistory" asp-controller="Git">Git Commit History</a></li>
 <li><a class="link-dark rounded" asp-action="Commits" asp-controller="Git">Git Commits</a></li>
+<li><a class="link-dark rounded" asp-action="Remotes" asp-controller="Git">Git Remotes</a></li>
 <li><a class="link-dark rounded" asp-action="Repositories" asp-controller="Git">Git Repositories</a></li>
 <li><a class="link-dark rounded" asp-action="UndoingThings" asp-controller="Git">Git Undoing Things</a></li>
                                     </ul>
@@ -566,9 +567,9 @@ string controller = ViewData["controller"].ToString();
 
 <script>
 
-    if ($( window ).width() < 768){
-        document.querySelector(".col-8.px-5.my-5").setAttribute("class", "col-8 my-5")
-    }
+if ($( window ).width() < 768){
+document.querySelector(".col-8.px-5.my-5").setAttribute("class", "col-8 my-5")
+}
 
 </script>
 
@@ -735,13 +736,13 @@ rightLink.querySelector("a").style.backgroundColor = "white"
 <li class="nav-item"><a asp-action="index" asp-controller="glossary" class="nav-link px-2 text-white border-bottom mx-2">Glossary</a></li>
 
 </ul>
-    <ul class="nav justify-content-start pb-3 mb-3">
-    <li class="nav-item"><a asp-action="index" asp-controller="home" class="nav-link px-2 text-white">@Version</a></li>
-    <li class="nav-item"><a asp-action="aboutthiswebsite" asp-controller="home" class="nav-link px-2 text-white">
-        About This Website <figcaption>Feedback Welcome</figcaption>
-    </a></li>
-    
-    
+<ul class="nav justify-content-start pb-3 mb-3">
+<li class="nav-item"><a asp-action="index" asp-controller="home" class="nav-link px-2 text-white">@Version</a></li>
+<li class="nav-item"><a asp-action="aboutthiswebsite" asp-controller="home" class="nav-link px-2 text-white">
+About This Website <figcaption>Feedback Welcome</figcaption>
+</a></li>
+
+
 
 
 

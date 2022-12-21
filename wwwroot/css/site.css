@@ -177,3 +177,16 @@ footer {
     min-height: 50vh;
 }
 
+h1:not(#logo)::after{ 
+    content: "⁺";
+    color: rgb(255,0,0,.55);
+}
+h2:not(#logo)::after{ 
+    content: "⁺⁺";
+    color: rgb(255,0,0,.55);
+}
+
+h3:not(#logo)::after{
+    content: "⁺⁺⁺";
+    color: rgb(255,0,0,.55);
+}

@@ -2,16 +2,49 @@
     Layout = "../Shared/_homeLayout.cshtml";
  }
 
+<style>
 
+h2:not(#logo)::after{ 
+    content: "";
+    color: rgb(255,0,0,.55);
+}
+</style>
 <center class="mb-5">
-    <h2 style="text-shadow: 2px 2px black;  color: white; font-size: 100px; font-family: 'UnifrakturMaguntia', cursive;">A</h2>
+    <h2 id="logo" style="text-shadow: 2px 2px black;  color: white; font-size: 100px; font-family: 'UnifrakturMaguntia', cursive;">A</h2>
     
     <h2 style="font-size: 40px; font-family: 'UnifrakturMaguntia', cursive;">
         <span class=" border-bottom p-3 bg-dark text-light">Welcome To Alec Scripts</span>
     </h2>
     
 </center>
-
+<div class="container" style="max-width: 896px;">
+    <h2>
+        Why alecscripts?
+    </h2>
+    <div class="border-bottom">
+        <p>
+            While programming knowledge is abundant, it isn't 
+            always written properly. Grammar errors and lots of 
+            mistakes persist. Sure, no one is perfect: but alecscripts 
+            aims to be better. One place with reliable tutorials 
+            for all. 
+        </p>
+    </div>
+    <h2>
+        What is alecscripts?
+    </h2>
+    <div class="border-bottom">
+        <ul>
+            <li>
+                Alec Scripts is an online school for 
+                all developers. It is designed 
+                around the Feynman method: explaining things 
+                as simply as possible to convey 
+                an understanding of a subject. 
+            </li>
+        </ul>
+    </div>
+</div>
 
 
 <p class="p-3 bg-dark text-light text-center  rounded-3">

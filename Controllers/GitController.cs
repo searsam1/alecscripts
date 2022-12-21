@@ -56,5 +56,13 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Remotes()
+    {   
+        ViewData["creationDate"] = "Wed Dec 21 01:19:01 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Remotes";
+        return View();
+    }
+    
     }
 }
