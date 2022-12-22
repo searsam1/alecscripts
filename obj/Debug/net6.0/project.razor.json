@@ -17038,6 +17038,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/BranchingWorkflows.cshtml",
+      "TargetPath": "Views\\Git\\BranchingWorkflows.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/index.cshtml",
       "TargetPath": "Views\\Git\\index.cshtml",
       "FileKind": "mvc"

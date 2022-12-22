@@ -88,5 +88,13 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult BranchingWorkflows()
+    {   
+        ViewData["creationDate"] = "Thu Dec 22 14:37:29 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Branching Workflows";
+        return View();
+    }
+    
     }
 }

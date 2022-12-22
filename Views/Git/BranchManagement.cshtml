@@ -1,0 +1,92 @@
+
+<h2>Managing Branches</h2>
+<p>
+    Branch is a useful tool for working with branches. <code class="lang-shell">git branch</code>
+    on its own with no arguments will list all the current branches with the checked out branch 
+    listed with an asterisk <code>*</code> (the branch HEAD is pointing to). 
+</p>
+
+<pre><code class="lang-shell">git branch
+:'
+iss54
+* main
+testing
+'
+</code></pre>
+<p>
+    Whichever branch HEAD is pointing to, git will move that 
+    commit forward. To see the last commit on each branch, use <br><code class="lang-shell">git branch -v</code>. 
+</p>
+
+<p>
+    <code>--merged</code> and <code>--no-merged</code> are useful commands that will show 
+    either merged commits are commits that have not been merged yet. 
+</p>
+<pre><code class="lang-shell">git branch --merged
+:'
+iss54
+* main
+'
+</code></pre>
+<p>
+    Trying to delete an unmerged branch will fail unless <code>-D</code> is used 
+    to force it. Once a branch is merged, there should be no problems in deleting it. 
+    Branches that are merged into other ones are safely stored
+    and can usually be deleted. 
+</p>
+<pre><code class="lang-shell">git branch -d testing
+:"
+error: The branch 'testing' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D testing'.
+"
+</code></pre>
+
+<h2>
+    Changing a branch name
+</h2>
+<p>
+    Thankfully, branch names are not permanent and can be changed. Branches 
+    are renamed locally with the <code class="lang-shell">git branch --move</code>
+    command, but that will not push it to any remotes. To change the name 
+    of a branch on a remote branch, use <pre><code class="lang-shell">git push --set-upstream origin corrected-branch-name</code></pre>
+</p>
+<p>
+    The branch is now renamed on the remote, but the old one with the old name 
+    is still in the remote. It can be safely deleted because the same branch with a 
+    different name is on the remote. To delete it, use 
+</p>
+<pre><code class="lang-shell">git push origin --delete bad-branch-name</code></pre>
+
+<h2>
+    Renaming the main branch
+</h2>
+
+<div class="bg-light border border-danger p-2 mb-3  rounded-3">
+    <span class="text-danger border-bottom border-danger">Warning:</span> renaming the main/master branch will have consequences. Talk 
+    to other contributors before changing the name.  
+</div>
+<p>
+    To change the main's branch name to master, use:
+</p>
+<pre><code class="lang-shell">git branch --move main master</code></pre>
+<p>
+    Now master takes the place of main on the local repo, but no changes 
+    have been made to the remote yet. To do that, push the changes:
+</p>
+<pre><code class="lang-shell">git push --set-upstream origin master</code></pre>
+<p>
+    Now the master branch is on the remote, but developers will still use the old main 
+    branch until further changes are made. According the the <i>Git Book</i>, these additional changes include:
+</p>
+<ul>
+    <li>"Any projects that depend on this one will need to update their code and/or configuration."</li>
+    <li>Update any test-runner configuration files.</li>
+    <li>Adjust build and release scripts.</li>
+    <li>Redirect settings on your repo host for things like the repo’s default branch, merge rules, and other things that match branch names.</li>
+    <li>Update references to the old branch in documentation.</li>
+    <li>Close or merge any pull requests that target the old branch.</li>
+</ul>
+
+<figcaption>
+    More info: <a href="https://git-scm.com/book/en/v2/Git-Branching-Branch-Management">Git-Branching-Branch-Management</a>
+</figcaption>
