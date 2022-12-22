@@ -12,7 +12,7 @@ string Version = "V3";
 @* Mark Otto, Jacob Thornton, and Bootstrap contributors *@
 <meta name="author" content="Alec Sears">
 @* <meta name="generator" content="Hugo 0.84.0"> *@
-<title>@ViewData["controller"] @ViewData["Title"]</title>
+<title>@ViewData["controller"] - @ViewData["Title"]</title>
 
 @* <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/"> *@
 
@@ -453,6 +453,7 @@ Topics
                                         <li><a class="link-dark rounded" asp-action="index" asp-controller="Git">Git Home</a></li>
 <li><a class="link-dark rounded" asp-action="Aliases" asp-controller="Git">Git Aliases</a></li>
 <li><a class="link-dark rounded" asp-action="Branching" asp-controller="Git">Git Branching</a></li>
+<li><a class="link-dark rounded" asp-action="BranchManagement" asp-controller="Git">Git Branch Management</a></li>
 <li><a class="link-dark rounded" asp-action="CommitHistory" asp-controller="Git">Git Commit History</a></li>
 <li><a class="link-dark rounded" asp-action="Commits" asp-controller="Git">Git Commits</a></li>
 <li><a class="link-dark rounded" asp-action="Remotes" asp-controller="Git">Git Remotes</a></li>
@@ -537,7 +538,7 @@ Topics
 
 <h1 class=" mb-5">@ViewData["Controller"]: @ViewData["title"]</h1>
 <div class="shadow-sm" id="toc">
-On This page:
+In this tutorial:
 <ul id="tocList">
 
 </ul>

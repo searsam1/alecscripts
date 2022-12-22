@@ -80,5 +80,13 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult BranchManagement()
+    {   
+        ViewData["creationDate"] = "Thu Dec 22 13:12:20 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Branch Management";
+        return View();
+    }
+    
     }
 }

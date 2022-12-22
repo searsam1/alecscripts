@@ -1,0 +1,69 @@
+<h2>
+    What are git aliases?
+</h2>
+<p>
+    Git aliases are useful shortcuts for long 
+    terminal commands. 
+    It makes using git faster and easier. 
+</p>
+
+<p>
+    To create custom aliases, use the git <code>config</code> command. 
+</p>
+<pre><code class="lang-shell">git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status</code></pre>
+
+<p>
+    The name with the alias is all that has to be called. In this 
+    example, co is checkout, br is branch, ci is commit and st is status. 
+    Feel free to create new aliases: that's what they were made for.  
+</p>
+
+<h2>
+    Some useful examples
+</h2>
+
+<p>
+    A good example is <code class="lang-shell">git config --global alias.unstage 'reset HEAD --'</code>, which will 
+    create a new unstage command. To use it, just type <code class="lang-shell">git unstage </code> and the filename 
+    to unstage a file. 
+</p>
+<p>
+    Now these two statements are equivalent:
+</p>
+<pre><code class="lang-shell">git unstage fileX
+git reset HEAD -- fileX
+</code></pre>
+
+<p>
+    Another good alias to have is <code>last</code>, which displays the last commit 
+    using <code class="lang-shell">git config --global alias.last 'log -1 HEAD'</code>. This 
+    is useful for quickly grabbing the latest commit. 
+</p>
+<pre><code class="lang-shell">git config --global alias.last 'log -1 HEAD'
+git last
+:'commit 0745d369ae306d0ecdf4ec4fbd7a710ca271baa4 (HEAD -> main, origin/main, origin/HEAD)
+Author: Alec Sears &lt;76724804+searsam1@users.noreply.github.com&gt;
+Date:   Mon Dec 19 04:42:10 2022 -0700
+
+    add tests
+    
+    add 100 tests that compare fact and math.factorial
+    '
+
+</code></pre>
+
+<h2>
+    External Commands
+</h2>
+<p>
+    It is possible to run commands outside of git
+    by adding <code>!</code> in front of the command. 
+    For example:  
+</p>
+<pre><code class="lang-shell">git config --global alias.visual '!gitk'</code></pre>
+<figcaption>
+    More info: <a href="https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases">git-scm.com/…/Git-Basics-Git-Aliases</a>
+</figcaption>
