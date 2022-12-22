@@ -72,5 +72,13 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Aliases()
+    {   
+        ViewData["creationDate"] = "Wed Dec 21 23:19:50 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Aliases";
+        return View();
+    }
+    
     }
 }
