@@ -165,7 +165,7 @@ aria-label="Toggle navigation">
 <a class="nav-link" asp-controller="Glossary" asp-action="index">Glossary</a>
 </li>
 <li class="nav-item">
-    <a role="button" onclick="changeToDarkMode()" class="nav-link" >Dark Mode</a>
+<a role="button" onclick="changeToDarkMode()" class="nav-link" >Dark Mode</a>
 </li>
 
 
@@ -201,7 +201,7 @@ Python
 <div class="row">
 <div style="top: 57px;" id="leftSidebar" class="sticky-top col text-end ">
 <div class="bg-white">
-    
+
 <a href="/"
 class=" d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none ">
 <svg  class="bi me-2" width="30" height="24">
@@ -402,6 +402,30 @@ Topics
 
                             <li class="mb-1">
                                 <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Git-collapse" aria-expanded="false">
+                                    Git
+                                </button>
+                                <div class="collapse" id="Git-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Git">Git Home</a></li>
+<li><a class="link-dark rounded" asp-action="Aliases" asp-controller="Git">Git Aliases</a></li>
+<li><a class="link-dark rounded" asp-action="Branching" asp-controller="Git">Git Branching</a></li>
+<li><a class="link-dark rounded" asp-action="BranchingWorkflows" asp-controller="Git">Git Branching Workflows</a></li>
+<li><a class="link-dark rounded" asp-action="BranchManagement" asp-controller="Git">Git Branch Management</a></li>
+<li><a class="link-dark rounded" asp-action="CommitHistory" asp-controller="Git">Git Commit History</a></li>
+<li><a class="link-dark rounded" asp-action="Commits" asp-controller="Git">Git Commits</a></li>
+<li><a class="link-dark rounded" asp-action="Protocols" asp-controller="Git">Git Protocols</a></li>
+<li><a class="link-dark rounded" asp-action="Rebasing" asp-controller="Git">Git Rebasing</a></li>
+<li><a class="link-dark rounded" asp-action="Remotes" asp-controller="Git">Git Remotes</a></li>
+<li><a class="link-dark rounded" asp-action="Repositories" asp-controller="Git">Git Repositories</a></li>
+<li><a class="link-dark rounded" asp-action="Tags" asp-controller="Git">Git Tags</a></li>
+<li><a class="link-dark rounded" asp-action="UndoingThings" asp-controller="Git">Git Undoing Things</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
                                     data-bs-toggle="collapse" data-bs-target="#Html-collapse" aria-expanded="false">
                                     Html
                                 </button>
@@ -444,29 +468,6 @@ Topics
 <li><a class="link-dark rounded" asp-action="RegexExec" asp-controller="Js">Js Regex Exec</a></li>
 <li><a class="link-dark rounded" asp-action="Replace" asp-controller="Js">Js Replace</a></li>
 <li><a class="link-dark rounded" asp-action="ToFixed" asp-controller="Js">Js To Fixed</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#Git-collapse" aria-expanded="false">
-                                    Git
-                                </button>
-                                <div class="collapse" id="Git-collapse">
-                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Git">Git Home</a></li>
-<li><a class="link-dark rounded" asp-action="Aliases" asp-controller="Git">Git Aliases</a></li>
-<li><a class="link-dark rounded" asp-action="Branching" asp-controller="Git">Git Branching</a></li>
-<li><a class="link-dark rounded" asp-action="BranchingWorkflows" asp-controller="Git">Git Branching Workflows</a></li>
-<li><a class="link-dark rounded" asp-action="BranchManagement" asp-controller="Git">Git Branch Management</a></li>
-<li><a class="link-dark rounded" asp-action="CommitHistory" asp-controller="Git">Git Commit History</a></li>
-<li><a class="link-dark rounded" asp-action="Commits" asp-controller="Git">Git Commits</a></li>
-<li><a class="link-dark rounded" asp-action="Rebasing" asp-controller="Git">Git Rebasing</a></li>
-<li><a class="link-dark rounded" asp-action="Remotes" asp-controller="Git">Git Remotes</a></li>
-<li><a class="link-dark rounded" asp-action="Repositories" asp-controller="Git">Git Repositories</a></li>
-<li><a class="link-dark rounded" asp-action="Tags" asp-controller="Git">Git Tags</a></li>
-<li><a class="link-dark rounded" asp-action="UndoingThings" asp-controller="Git">Git Undoing Things</a></li>
                                     </ul>
                                 </div>
                             </li>

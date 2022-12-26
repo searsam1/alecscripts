@@ -16978,6 +16978,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/Protocols.cshtml",
+      "TargetPath": "Views\\Git\\Protocols.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Java/Inheritance.cshtml",
       "TargetPath": "Views\\Java\\Inheritance.cshtml",
       "FileKind": "mvc"

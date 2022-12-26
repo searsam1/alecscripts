@@ -104,5 +104,13 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Protocols()
+    {   
+        ViewData["creationDate"] = "Mon Dec 26 11:12:28 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Protocols";
+        return View();
+    }
+    
     }
 }
