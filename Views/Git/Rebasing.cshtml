@@ -1,0 +1,92 @@
+
+<h2>
+    What is rebasing? 
+</h2>
+<p>
+    In git, their are two ways to combine branches: <b>rebasing</b> and <b>merging</b>. 
+    Rebasing creates a linear history, while merging keeps 
+    the history as it is. The end result of merging and rebasing is the same, only 
+    the history changes.  
+</p>
+
+<p>
+    As an example, say there are two branches <b>main</b> and <b>test</b>. One commit is made 
+    on the <b>main</b> branch while one is made on the <b>test</b> branch. They can be integrated by merging 
+    or by rebasing. Rebasing will replay the changes made on the test branch onto the main branch.  
+</p>
+
+<center>
+    <img alt="Simple Divergent History" style="max-width: 100%" src="/lib/Resources/GitRebasing.png">
+</center>
+<figcaption>Figure 443: Git rebasing</figcaption>
+
+<p>
+    The C3 and C4 branches can be merged with C2 to create a 
+    new C5 branch.
+</p>
+<center><img style="max-width: 100%" alt="Branching" src="/lib/Resources/GitHub branches-2.png"></center>
+
+<p>
+    However, another way of doing this is through rebasing. It will play the changes made on the test branch (C4) onto 
+    the main branch. To rebase the following example, use:
+    <pre><code class="lang-shell">git checkout test 
+git rebase main</code></pre>
+</p>
+
+<p>
+    Now the log will show a linear history and won't show the original C4, only C4' 
+    that was rebased onto main.  
+</p>
+
+<center><img src="/lib/Resources/GitHub-rebase-branches-3.png"> </center>
+
+<p>
+    Now a fast forward can be done on the main branch to point it to the new C4'. 
+</p>
+
+<h2>
+    Interesting Rebase
+</h2>
+<p>
+    A rebase can play on something other than the target branch. 
+    Say there are a couple different branches: <code>main</code>, <code>b1</code> and <code>b2</code>. 
+</p>
+
+<center><img style="max-width: 100%" src="/lib/Resources/GitHub-rebase-branches-5.png"> </center>
+
+<p>
+    Rebasing has a cool but complex feature that allows the <code>b2</code> branch to be 
+    played onto the main branch while including the patches that intersect in <code>b1</code> and <code>b2</code>. 
+    Use <code> git rebase --onto main b1 b2</code> to rebase the b2 branch into main without 
+    bringing the b1 branch with it. 
+</p>
+
+<center><img style="max-width: 100%" src="/lib/Resources/GitHub-rebase-branches-6.png"> </center>
+<figcaption>Figure 445: Git Interesting Rebase</figcaption>
+
+<p>
+    The <code>b1</code> branch can also be rebased onto the main branch without 
+    having to switch to it using the <code class="lang-shell">git rebase &lt;basebranch&gt; &lt;topicbranch&gt;</code>
+    command. This replays the <code>b1</code> branch onto the main branch. 
+</p>
+
+<center><img style="max-width: 100%" src="/lib/Resources/GitHub-rebase-branches-7.png"> </center>
+<figcaption>Figure 447: Git linear history</figcaption>
+
+<p>
+    Now the main branch can be moved to point to the most recent branch <code>C10'</code> and 
+    the other branches deleted. 
+</p>
+<pre><code class="lang-shell">git branch -d b1
+git branch -d b2</code></pre>
+
+<center><img style="max-width: 100%" src="/lib/Resources/GitHub-rebase-branches-9.png"> </center>
+<figcaption>Figure 449: Git linear history</figcaption>
+
+<h2>
+    The bad about rebasing 
+</h2>
+<p>
+    According to the git book, <b>"Do not rebase commits that exist outside your repository and that people may have based work on"</b>.
+    If there are commits that others work on, it's bad to rebase those commits. 
+</p>

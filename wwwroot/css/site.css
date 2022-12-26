@@ -6,7 +6,9 @@
   'GRAD' 0,
   'opsz' 48
 }
-
+:root {
+    --small-plus-color: greenyellow;
+  }
 
 
 html {
@@ -177,29 +179,13 @@ footer {
     min-height: 50vh;
 }
 
-h1:not(#logo)::after{ 
-    content: "⁺";
-    color: rgb(255,0,0,.55);
-}
-h2:not(#logo)::after{ 
-    content: "⁺⁺";
-    color: rgb(255,0,0,.55);
-}
-
-h3:not(#logo)::after{
-    content: "⁺⁺⁺";
-    color: rgb(255,0,0,.55);
-}
-
 #toc{
     padding: 10px;
     margin: 10px 10px 30px 10px;
     border-radius: 10px;
-    border: 1px solid rgb(0,0,0,.2);
-
 }
 #tocList li {
-    list-style-type: decimal;
+    list-style-type: disc;
+    color: grey;
     margin: 10px;
-    border-bottom: 1px dotted rgb(0,0,0,.2);
 }

@@ -1,0 +1,53 @@
+@model MvcAlecScripts.Models.ChallengesModel
+
+
+@{
+    Layout = "../Shared/_ChallengeLayout.cshtml";
+    @* --------- *@
+    Model.name = "Sum of Prime Factors";
+    Model.challengeId = "Kgf3KkDWyye7Jw=='"; 
+    Model.Description = "Find the sum of a number's prime factors. For example, 9 would sum to 6 because of 3 and 3. ";
+    Model.Notes = "Do not include the number or 1 in the sum.";
+    Model.Resources = "https://www.codecademy.com/code-challenges/code-challenge-sum-of-prime-factors-python";
+    @* --------- *@
+}
+
+@* name - challengeId - Description - Notes - Resources *@
+
+<style>
+    textarea{
+        width: 100%;
+        background: white;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        border: 1px solid black;
+        outline: 2px dotted grey;
+        padding: 10px;
+        min-height: 50vh;
+        margin-bottom: 100px;
+    }
+    .test{
+        transition: margin-left 1s ,background-color 1s;
+    }
+    .test:hover{
+        margin-left: 10px;
+        transition: margin-left .5s ,background-color .5s;
+        background-color: rgb(1,1,1,.05);
+    }
+    .test:selected{
+        outline: 2px dotted grey;
+    }
+</style>
+
+<div class="container-fluid bg-light text-dark">
+    <div  class=" container pt-5">
+        <h2 class="test shadow rounded-3 p-3">@Model.name</h2>
+        <p class="container p-3 border border-dark rounded-3 shadow">
+            @Model.Description
+        </p>
+    </div>
+    <div class="container">
+        <textarea class="shadow " spellcheck="false" withspellcheck="true">def sum_prime_facts():
+    </textarea>
+    </div>
+</div>

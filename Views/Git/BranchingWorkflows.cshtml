@@ -1,0 +1,54 @@
+
+<p>
+    What are branches capable of doing? What do they add 
+    to the workflow and development cycle that improves it?
+</p>
+
+<h2>
+    Long-Running branches
+</h2>
+<p>
+    In Git, its useful to have different branches 
+    for different stages of development. Say there is 
+    the main branch but also a branch called testing. The 
+    testing branch is only used to test new features, while 
+    main will keep the production code. 
+</p>
+<p>
+    Once the testing branch is ready for production it can be merged
+    with the main branch. There can be other layers of 
+    stability as well, such as making branches for certain 
+    new features and putting them in the testing branch
+    and merging once ready.   
+</p>
+<img alt="A linear view of progressive-stability branching" width=100% src="/lib/Resources/GitHub-branches.png">
+<figcaption>Figure 45: A linear view of progressive-stability branching</figcaption>
+
+<h2>
+    Topic branches
+</h2>
+<p>
+    Topic branches are separate, one-time use branches that 
+    experiment with a new feature. This is seen above as the idea branch 
+    on the right. Doing this makes doing code reviews easier and 
+    a project more organized. 
+</p>
+
+<p>
+    Say there is a new branch, iss53 (issue 53). Work in done on that branch and 
+    eventually a new iss53_v2 branch is created. 
+</p>
+
+
+
+
+<p>
+    There were two commits made in iss53 after the iss53_v2 creation. After v2's initial 
+    commit, two more commits are added as well. It is decided that iss53_v2 is going to be kept and 
+    it will replace the original iss53 branch. This will get rid of C5 and C6.
+</p>
+<center><img class="my-3" alt="A linear view of progressive-stability branching" width=50% src="/lib/Resources/GitHub branches-4.png"></center>
+
+<figcaption>
+    More info: <a href="https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows">Git-Branching-Branching-Workflows</a>
+</figcaption>

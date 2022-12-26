@@ -96,5 +96,13 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Rebasing()
+    {   
+        ViewData["creationDate"] = "Sat Dec 24 22:28:51 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Rebasing";
+        return View();
+    }
+    
     }
 }

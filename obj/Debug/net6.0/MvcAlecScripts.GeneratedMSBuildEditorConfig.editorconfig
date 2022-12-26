@@ -67,6 +67,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmFzaC9WYXJpYWJsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Challenges/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbGxlbmdlcy9pbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Cpp/Arrays.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3BwL0FycmF5cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -261,6 +265,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2l0L2luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/Rebasing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2l0L1JlYmFzaW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/Remotes.cshtml]
@@ -673,6 +681,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/old_outlay_copy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL29sZF9vdXRsYXlfY29weS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_ChallengeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DaGFsbGVuZ2VMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Shared/_homeLayout.cshtml]
