@@ -122,11 +122,6 @@ h3 {
 }
 
 
-.nav-link:active{
-    border-bottom: 1px solid grey ;
-}
-
-
 td, th{
     padding: 20px;
 }

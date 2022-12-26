@@ -164,6 +164,9 @@ aria-label="Toggle navigation">
 <li class="nav-item">
 <a class="nav-link" asp-controller="Glossary" asp-action="index">Glossary</a>
 </li>
+<li class="nav-item">
+    <a role="button" onclick="changeToDarkMode()" class="nav-link" >Dark Mode</a>
+</li>
 
 
 <li class="nav-item dropdown">
@@ -190,6 +193,7 @@ Python
 </div>
 
 </div>
+
 </nav>
 
 <div class="container-fluid">
@@ -197,6 +201,7 @@ Python
 <div class="row">
 <div style="top: 57px;" id="leftSidebar" class="sticky-top col text-end ">
 <div class="bg-white">
+    
 <a href="/"
 class=" d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none ">
 <svg  class="bi me-2" width="30" height="24">
@@ -583,6 +588,8 @@ In this tutorial:
 <script src="~/js/formatTables.js"></script>
 <script src="~/js/prism.js" asp-append-version="true"></script>
 
+
+
 @* <li><a href="#" class="link-dark rounded">Annually</a></li> *@
 
 @{
@@ -755,7 +762,7 @@ rightLink.querySelector("a").style.backgroundColor = "white"
 
 
 </script>
-
+<script src="~/js/darkBtn.js" asp-append-version="true"></script>
 
 
 @await RenderSectionAsync("Scripts", required: false)
