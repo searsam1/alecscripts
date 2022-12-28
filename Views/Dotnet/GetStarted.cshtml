@@ -1,0 +1,35 @@
+
+<h2>
+    Make a web app
+</h2>
+<p>
+    To create a new ASP.NET web app, first create a folder 
+    where the project will live. Change directories <code>cd</code> into 
+    that folder and use <code class="lang-shell">dotnet new mvc -o &lt;project-name&gt;</code>
+    to make a new web app. To open the new project in VS code, run <code>code -r &lt;project-name&gt;</code>. 
+</p>
+
+<p>
+    For example, to create a new web app named <code>MvcFallout</code> use:
+</p>
+<pre><code class="lang-shell">dotnet new mvc -o MvcFallout
+code -r MvcFallout
+</code></pre>
+
+<h2>
+    Run the web app
+</h2>
+<p>
+    To run the new <code>MvcFallout</code> app, first add an Https certificate 
+    via <code>dotnet dev-certs https --trust</code>. A security warning should pop up. Select yes 
+    and continue. 
+</p>
+
+<pre><code class="lang-shell">dotnet dev-certs https --trust</code></pre>
+
+<p>
+    To run without debugging, use <code>Ctrl+F5</code> or <code>dotnet run</code> in the integrated terminal. 
+    This will navigate to <code>localhost:&lt;port#&gt;</code>. Localhost 
+    means the web app can only serve local requests from the same network. 
+</p>
+

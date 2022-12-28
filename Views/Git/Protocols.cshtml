@@ -1,0 +1,95 @@
+
+
+<h2>
+    Local Protocol
+</h2>
+<p>
+    The local protocol is when the remote repository is on the same host machine. 
+    The URL is the path to the remote. To clone a local repository: 
+</p>
+<pre><code class="lang-shell">git clone /path/to/git/project.git</code></pre>
+
+<p>
+    To setup a local file as a remote use:
+</p>
+<pre><code class="lang-shell">git remote add local_proj /path/to/git/project.git</code></pre>
+<p>
+    Now the <code>local_proj</code> remote can be pushed to and pulled from as if 
+    it were across a network. 
+</p>
+
+<h2>
+    The HTTP Protocols
+</h2>
+<p>
+    HTTP comes in two flavors: smart and dumb. Smart HTTP acts more like SSH and 
+    the dumb HTTP is the old way git used to use the HTTP protocol. 
+</p>
+
+<h3>
+    Smart HTTP
+</h3>
+<p>
+    Runs similarly to SSH and or Git protocols but over HTTPS ports 
+    and can use basic HTTP auth. It's also easier to setup than 
+    something like SSH because it uses a user - password based 
+    system and not SSH keys. 
+</p>
+
+<p>
+    A single URL can be used to serve anonymously and push securely. 
+    If a push is attempted, it will ask for a username and password 
+    if the repository requires authentication.  
+</p>
+
+<h3>
+    Dumb HTTP
+</h3>
+<p>
+    When smart HTTP doesn't work git falls back on 
+    the dumb HTTP protocol. It's easy to setup, only having to 
+    put up a bare repository and create a specific <code>post-update</code> hook. 
+    For example, to allow read-access for a repository using HTTP:  
+</p>
+<pre><code class="lang-shell">cd /var/www/htdocs/
+git clone --bare /path/to/git_project gitproject.git
+cd gitproject.git
+mv hooks/post-update.sample hooks/post-update
+chmod a+x hooks/post-update</code></pre>
+
+<p>
+    Now the <code>post-update</code> hook will update the server info 
+    to make cloning and fetching work. Now other people can clone this repo via:
+</p>
+<pre><code class="lang-shell">git clone https://example.com/gitproject.git</code></pre>
+
+<h2>
+    The SSH Protocol
+</h2>
+<p>
+    SSH is secure, fast and easy to use. It stands for secure shell 
+    and is an authenticated network protocol: all data in and out is encrypted. 
+</p>
+<p>
+    For example, to clone a git repository using SSH, use:
+</p>
+<pre><code class="lang-shell">git clone ssh://[user@@]server/project.git</code></pre>
+
+<p>
+    The shorter scp-style can also be used:
+</p>
+<pre><code class="lang-shell">git clone [user@@]server:project.git</code></pre>
+<h2>
+    The Git Protocol
+</h2>
+<p>
+    Lastly, the Git protocol. It is a daemon that comes 
+    packaged with Git and has no authentication. It is usually used 
+    for pulling and not pushing, because it enables the public 
+    to push to that repo. 
+</p>
+
+<p>
+    Usually, everyone will have pull access through the Git protocol but only a 
+    few developers will have push access through SSH or HTTPS. 
+</p>

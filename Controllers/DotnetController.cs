@@ -31,5 +31,21 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult GetStarted()
+    {   
+        ViewData["creationDate"] = "Wed Dec 28 09:17:45 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Get Started";
+        return View();
+    }
+    
+    public IActionResult AddController()
+    {   
+        ViewData["creationDate"] = "Wed Dec 28 09:41:40 2022 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Add Controller";
+        return View();
+    }
+    
     }
 }
