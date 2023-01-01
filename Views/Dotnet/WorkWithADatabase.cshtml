@@ -1,0 +1,126 @@
+
+<p>
+    The <code>MvcGameContext</code> is responsible for connecting the website to a database. It is 
+    registered with dependency injection. 
+</p>
+
+<p>
+    The ASP.NET Core configuration system reads from a <code>ConnectionString</code>. For local 
+    development, the connection string comes from <code>appsettings.json</code>. 
+    For production, an environment variable can set the connection string to a SQL server. 
+</p>
+<pre><code class="lang-cs">var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext&lt;MvcGameContext&gt;(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("MvcGameContext")));</code></pre>
+
+<h2>
+    Seed the database
+</h2>
+<p>
+    To add initial values to the database in MvcFallout, create a new class <code>SeedData</code>
+    in the models folder and add the following code: 
+</p>
+
+<pre><code class="lang-cs">using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MvcFallout.Data;
+using System;
+using System.Linq;
+
+namespace MvcFallout.Models;
+
+public static class SeedData
+{
+    public static void Initialize(IServiceProvider serviceProvider)
+    {
+        using (var context = new MvcGameContext(
+            serviceProvider.GetRequiredService&lt;
+                DbContextOptions&lt;MvcGameContext&gt;&gt;()))
+        {
+            // Look for any Games.
+            if (context.Game.Any())
+            {
+                return;   // DB has been seeded
+            }
+            context.Game.AddRange(
+                new Game
+                {
+                    Title = "Fallout: A Post Nuclear Role Playing Game",
+                    ReleaseDate = DateTime.Parse("1997-10-10"),
+                    Price = 19.99M
+                },
+                new Game
+                {
+                    Title = "Fallout 2: A Post Nuclear Role Playing Game",
+                    ReleaseDate = DateTime.Parse("1998-10-29"),
+                    Price = 19.99M
+                },
+                new Game
+                {
+                    Title = "Fallout 3",
+                    ReleaseDate = DateTime.Parse("2008-10-28"),
+                    Price = 59.99M
+                }
+
+            );
+            context.SaveChanges();
+        }
+    }
+}</code></pre>
+
+<p>
+    Now update <code>Program.cs</code> with the following code:
+</p>
+
+<pre><code class="lang-cs">using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MvcFallout.Data;
+using MvcFallout.Models;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext&lt;MvcGameContext&gt;(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("MvcGameContext")));
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedData.Initialize(services);
+}
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();</code></pre>
+
+<p>
+    To see if the code works, build the project and delete all the games if there is any. Restart 
+    the project and the table should be filled in. 
+</p>
+<p><img alt="Fallout Games Seeded Data" width=100% src="/lib/Resources/seed-data-example.png"></p>
+<p>
+    If there is already data in the database, it will ignore the seeding process. 
+</p>

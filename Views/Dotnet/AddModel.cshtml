@@ -1,0 +1,142 @@
+
+<p>
+    Classes are used to manage objects inside a database. These classes 
+    are known as models and are used with Entity Framework Core for scaffolding. 
+</p>
+
+<h2>
+    Adding a model to MvcFallout
+</h2>
+<p>
+    Create a new file named <code>Game.cs</code> inside the <i>Models</i> folder and 
+    add the following code: 
+</p>
+<pre><code class="lang-cs">// Game.cs
+using System.ComponentModel.DataAnnotations;
+namespace MvcFallout.Models;
+
+public class Game
+{
+    public int Id { get; set; }
+    public string? Title { get; set; }
+    [DataType(DataType.Date)]
+    public DateTime ReleaseDate { get; set; }
+    public decimal Price { get; set; }
+}</code></pre>
+<p>
+    The public class <code>Game</code> is the model
+    for a fallout game object. The questions marks <code>?</code> behind the strings 
+    means the string object is nullable.
+</p>
+
+<p>
+    The <code>DateTime</code> object is created with <code class="lang-cs"> [DataType(DataType.Date)] </code>
+    and is apart of <code>System.ComponentModel.DataAnnotations</code>
+</p>
+
+<h2>
+    Add NuGet packages
+</h2>
+<p>
+    To install the required Entity Framework Core package, use:
+</p>
+<pre><code class="lang-shell">dotnet tool uninstall --global dotnet-aspnet-codegenerator
+dotnet tool install --global dotnet-aspnet-codegenerator
+dotnet tool uninstall --global dotnet-ef
+dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SQLite
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer</code></pre>
+
+<p>
+    This will get all the required packages in order, and also install the <code>dotnet-aspnet-codegenerator</code> tool. 
+    It also installs <code>EntityFrameworkCore.SQLite</code> and <code>EntityFrameworkCore.SqlServer</code> for local and server database 
+    management. 
+</p>
+<p>
+    After the commands have run, build the project to check for compile errors.     
+</p>
+
+<h2>
+    Start scaffolding 
+</h2>
+<p>
+    Scaffolding is having a program write all the base code 
+    for a CRUD (Create Read Update Delete) application.
+</p>
+<p>
+    Before preceding, switch to the project directory (it has <code>Program.cs</code> and <code>.csproj</code> files). 
+</p>
+<p>
+    The <code>dotnet-aspnet-codegenerator</code> tool needs to be added 
+    to path on linux and macOS. Do this with: 
+</p>
+<pre><code class="lang-shell">export PATH=$HOME/.dotnet/tools:$PATH</code></pre>
+<p>
+    Now run the following command:
+</p>
+<pre><code class="lang-shell">dotnet aspnet-codegenerator controller -name GamesController -m Game -dc MvcFallout.Data.MvcGameContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -sqlite</code></pre>
+
+<h2>
+    SQLite and SQL Server
+</h2>
+<p>
+    Use SQLite for local development and SQL Server for production. Scaffolding will 
+    do the setup on its own and the data just has to be added. 
+</p>
+
+<p>
+    The following code shows how to use SQL Server or SQLite. 
+</p>
+<pre><code class="lang-cs">// Program.cs
+var builder = WebApplication.CreateBuilder(args);
+
+if (builder.Environment.IsDevelopment())
+{
+    builder.Services.AddDbContext&lt;MvcGameContext&gt;(options =>
+        options.UseSqlite(builder.Configuration.GetConnectionString("MvcGameContext")));
+}
+else
+{
+    builder.Services.AddDbContext&lt;MvcGameContext&gt;(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("ProductionMvcGameContext")));
+}</code></pre>
+
+<p>
+    Scaffolding will also:
+    <ul>
+        <li>
+            Add a Games controller
+        </li>
+        <li>
+            Add CRUD razor views 
+        </li>
+        <li>
+            Create database Context class <code>Data/MvcGameContext.cs</code>
+        </li>
+    </ul>
+</p>
+<p>
+    Before these pages can be used, however, the data base must be created with EF migrations. 
+</p>
+
+<h2>
+    Adding a migration
+</h2>
+
+<p>
+    If dotnet-aspnet-codegenerator is not installed, install it with:
+    <pre><code class="lang-shell">dotnet tool install --global dotnet-ef</code></pre>
+</p>
+<p>
+    Migrations are tools used for creating and updating databases. Since this is 
+    using VS code and not Visual Studio, migrations update the database by creating a new 
+    one, not updating. 
+</p>
+<p>
+    To create an initial migration, run the following commands:
+</p>
+
+<pre><code class="lang-">dotnet ef migrations add InitialCreate
+dotnet ef database update</code></pre>

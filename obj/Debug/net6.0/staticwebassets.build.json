@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3+B67gzCLYLGt2LBChI4Gmt5W31iTr1UlQKE4zYBSC4=",
+  "Hash": "HmbPXb89cP893ZF2hDRwP9ZbPjzsP92ODDhxVSuH/04=",
   "Source": "MvcAlecScripts",
   "BasePath": "_content/MvcAlecScripts",
   "Mode": "Default",
@@ -1649,6 +1649,40 @@
       "OriginalItemSpec": "wwwroot/lib/Resources/css-box-outline.png"
     },
     {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/Fallout_logo.svg.png",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/Resources/Fallout_logo.svg.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/Resources/Fallout_logo.svg.png"
+    },
+    {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/favicon_io.zip",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/Resources/favicon_io.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/Resources/favicon_io.zip"
+    },
+    {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/fibonacci-g3510f71b8_1280.png",
       "SourceId": "MvcAlecScripts",
       "SourceType": "Discovered",
@@ -2055,6 +2089,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/Resources/ScreenShot_a1.png"
+    },
+    {
+      "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/seed-data-example.png",
+      "SourceId": "MvcAlecScripts",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/",
+      "BasePath": "_content/MvcAlecScripts",
+      "RelativePath": "lib/Resources/seed-data-example.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/Resources/seed-data-example.png"
     },
     {
       "Identity": "/Users/111244rfsf/Documents/Repositories/alecscripts/wwwroot/lib/Resources/solitaire-g3db8a8d03_1920.jpeg",

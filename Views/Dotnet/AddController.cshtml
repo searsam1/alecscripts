@@ -1,0 +1,140 @@
+
+<p>
+    <a>
+        See <a asp-controller="dotnet" asp-action="AddViews">Add Views</a>
+    </a>
+</p>
+
+<p>
+    <a>
+        See <a asp-controller="dotnet" asp-action="GetStarted">Get Started</a>
+    </a>
+</p>
+
+<p>
+    Controllers are apart of the model view controller (MVC) model for an app. 
+    Controller public methods act as HTTP endpoints. Controllers control the input logic of 
+    an app while the UI logic lives in the view. 
+</p>
+
+<h2>
+    Creating a controller
+</h2>
+<p>
+    To create a new controller, navigate to the 
+    <code>Controllers</code> folder and create a new 
+    file with the name of the controller. In this example it's 
+    <code>HelloWorldController.cs</code>
+</p>
+
+<p>
+    Copy and paste the code below into the new file <code>HelloWorldController.cs</code>:
+</p>
+
+<pre><code class="lang-cs">using Microsoft.AspNetCore.Mvc;
+using System.Text.Encodings.Web;
+
+namespace MvcFallout.Controllers;
+
+public class HelloWorldController : Controller
+{
+    public string Index()
+    {
+        return "default action...";
+    }
+
+    public string Welcome()
+    {
+        return "Welcome action method...";
+    }
+}</code></pre>
+
+<p>
+    Each action above returns a string, and every public action 
+    inside a controller is an HTTP endpoint. An endpoint is 
+    a URL that belongs to the web app, like <code>https://localhost:5009/HelloWorld</code>.
+</p>
+
+<h2>
+    Routing
+</h2>
+<p>
+    By default, MVC uses a routing scheme of <code>/[Controller]/[ActionName]/[Parameters]</code>. 
+    This is set in the <code>Program.cs</code> file:
+</p>
+<pre><code class="lang-cs">app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");</code></pre>
+
+<p>
+    A route is the URL of a page and tells .NET which code to run. 
+    If no arguments are given and it is just the base URL of the app, .NET 
+    goes to the default route, which is initially set to the <code>Home</code> controller 
+    and <code>Index</code> action. There are two methods in <code>HelloWorldController</code>:
+    <code>Index</code> and <code>Welcome</code>. 
+</p>
+
+<p>
+    Navigate to <code>https://localhost:&lt;port#&gt;/HelloWorld</code> while the app is running. 
+    It should display the text <code class="lang-shell">"default action..."</code>.  Going to the 
+    other page, <code>/HelloWorld/Welcome</code>, will display <code class="lang-shell">"Welcome action method..."</code>.
+</p>
+
+<h2>
+    Parameters
+</h2>
+<p>
+    Parameters are passed in through the last part of the URL with a query string. 
+    For example: <code>/HelloWorld/Welcome?name=John&numtimes=20</code>. Update 
+    the <code>Welcome</code> method in <code>HelloWorldController.cs</code> 
+    to include two new variables <code>name</code> and <code>numTimes</code>:
+</p>
+<pre><code class="lang-cs">// GET: /HelloWorld/Welcome/ 
+// Requires using System.Text.Encodings.Web;
+public string Welcome(string name, int numTimes = 1)
+{
+    return HtmlEncoder.Default.Encode($"Hola {name}, NumTimes = {numTimes}");
+}
+</code></pre>
+
+<p>
+    Now run the app and go to <code>https://localhost:{PORT}/HelloWorld/Welcome?name=John&numtimes=20</code>. 
+    It should display the text <code class="lang-shell">"Hola John, NumTimes = 20"</code>. 
+</p>
+<p>
+    This example doesn't used the last part parameters, just a query string.
+    To use the parameters part of the URL, match one of the variables in the 
+    controller to a variable on the route. 
+</p>
+<pre><code class="lang-cs">app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");</code></pre>
+
+<p>
+    The <code>id</code> variable is set in the pattern with a question mark <code>?</code>
+    to indicate it is optional. Update the <code>Welcome</code> method to 
+    include the ID variable. 
+</p>
+<pre><code class="lang-cs">public string Welcome(string name, int ID = 1)
+{
+    return HtmlEncoder.Default.Encode($"Hola {name}, ID: {ID}");
+}</code></pre>
+
+<p>
+    Now go to <code>https://localhost:{PORT}/HelloWorld/Welcome/4?name=John</code>. There 
+    should be text <code class="lang-shell">"Hola John, ID: 4"</code>. The first argument, <code>4</code>, 
+    is the <code>ID</code> variable, and the <code>?</code> starts the query string filling 
+    in the <code>name</code> variable. 
+</p>
+
+<p>
+    <a>
+        See <a asp-controller="dotnet" asp-action="AddViews">Add Views</a>
+    </a>
+</p>
+
+<p>
+    <a>
+        See <a asp-controller="dotnet" asp-action="GetStarted">Get Started</a>
+    </a>
+</p>

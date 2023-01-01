@@ -231,6 +231,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L0FkZENvbnRyb2xsZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/AddModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L0FkZE1vZGVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/AddViews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L0FkZFZpZXdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/GetStarted.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L0dldFN0YXJ0ZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -245,6 +253,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/RazorPages.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L1Jhem9yUGFnZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Dotnet/WorkWithADatabase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG90bmV0L1dvcmtXaXRoQURhdGFiYXNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Git/Aliases.cshtml]

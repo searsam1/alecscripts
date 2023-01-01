@@ -1,0 +1,94 @@
+
+<p>
+    Views are html that is sent to the client using razor. 
+    Razor is just a hybrid language of html and C# that gets
+    output into html for a page. 
+</p>
+
+<h2>
+    Adding a view
+</h2>
+<p>
+    Views live in the <code>Views/&lt;Controller&gt;</code> folder, where each <code>&lt;Controller&gt;</code>. 
+    has its own set of views. In the <code>Views/HelloWorld</code> folder, create a new file named <code>index.cshtml</code>
+    and add the following code to it:
+</p>
+@{
+        string s = @"@{
+    ViewData[""Title""] = ""Index"";
+}
+
+<h2>Index</h2>
+
+<p>Hello from our View Template!</p>"; 
+    }
+<pre><code class="lang-cshtml">@s</code></pre>
+
+<p>
+    This is the view that will be returned when the <code>HelloWorld</code> action is called. The
+    <code>return View();</code> statement in the controller will connect with the view created here to 
+    display to the client. 
+</p>
+
+<p>
+    Currently, the <code>index</code> method in the controller only returns a string. Change that 
+to: 
+</p>
+<pre><code class="lang-cs">public IActionResult Index()
+{
+    return View();
+}
+</code></pre>
+<p>
+    This connects the view and the controller.
+</p>
+
+<h2>
+    Change View and layout page
+</h2>
+<p>
+    Each view is connected to a layout and the two are mushed to create one 
+    final html page for the client to view. Every layout file will have a <code>RenderBody()</code> method, 
+    which is where each View gets put. The layout wraps around each view. 
+</p>
+
+<p>
+    The default layout is the <code>Views/Shared/_Layout.cshtml</code> file. Changing this 
+    file will affect every other file that uses this Layout. Having a layout page is useful 
+    for things like navbars and sidebars, or elements that belong to every page. Instead 
+    of having to copy and paste the layout onto each new page (or View), each View is copy and 
+    pasted into the layout. 
+</p>
+
+<p>
+    To change the default layout that is used, browse 
+    to the <code>Views/_ViewStart.cshtml</code> file. It contains:
+    <pre><code class="lang-cshtml">@@{
+    Layout = "_Layout";
+}</code></pre>
+</p>
+<p>
+    This means that all views will use the <code>_Layout</code> file as its layout. To change this, 
+    change the value of the <code>Layout</code> variable. For example, to use the <code>_DarkMode</code> layout: 
+<pre><code class="lang-cshtml">@@{
+    Layout = "_DarkMode";
+}</code></pre>
+</p>
+
+
+<h2>
+    Giving data to the view from the controller 
+</h2>
+<p>
+    There is a razor dictionary called <code>ViewData</code> that can hold any object. 
+    Data is passed from the controller into the view with <code>ViewData</code>. Pass in 
+    data through the controller into the view in order to keep the source code clean.
+</p>
+
+<p>
+    To create an object named <code>message</code> inside <code>ViewData</code>, set the value in 
+    the controller with <code class="lang-cs">ViewData["Message"] = "This is a message"; </code>. Then, inside the 
+    view, display the variable: 
+</p>
+<pre><code class="lang-cshtml">&lt;p&gt; @@ViewData["Message"] &lt;/p&gt;</code></pre>
+
