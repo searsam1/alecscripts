@@ -31,6 +31,3 @@ tags are put in the table of contents and the right sidebar.
 - .NET v6.0.302
 - Python 3.7+
 
-<script>
-
-</script>
