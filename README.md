@@ -1,40 +1,30 @@
-# alecscripts
+# ***alecscripts.com***
 
-## Commands 
-- `sidebar`
-    - Updates Sidebar
-- `page`
-    - Create new Page
-- `controller`
-    - Create New Controller 
+_**alecscripts.com** is a free website to **learn** coding or **teach** others_
+## For 
+- **Developers** that program in modern, higher-level languages like:
+    - _Python_ 🐍
+    - _Java_ ☕️
+    - _C#_ 💽
+- New Developers | Programers | Coders
 
-----
+## How to use
+Run <code style="padding: 2px; background: rgb(1,1,1,.1);"> page</code> 
+inside the *alecscripts* directory. It will prompt for a controller name and 
+a page name. 
 
-- Fixed Sidebar scroll-x issues
-- Added color to the website (magenta sunset)
-- Changed SassVariable -> Variables + update sidebar
+- The page name is the name of the action
+- Uses python for IO and strings
+- Creates a new view and controller action
+- Updates Left Sidebar with new link
 
-## [ Format ]
+### Headers
 
-### [ Headers ]
-- `<h1> class = "display-6"`
+All <code style="padding: 2px; background: rgb(1,1,1,.1);"> &lt;h2&gt;</code> and <code style="padding: 2px; background: rgb(1,1,1,.1);"> &lt;h3&gt;</code> 
+tags are put in the table of contents and the right sidebar. 
 
-### [ Inner Link ]
-- `<h1> class = "display-6"`
+<code style="padding: 2px; background: rgb(1,1,1,.1);"> &lt;h3&gt;</code> acts as a subheader of <code style="padding: 2px; background: rgb(1,1,1,.1);"> &lt;h2&gt;</code>, and the subheader will be indented more on the right sidebar. 
 
-### [ Sidebar ]
-- `<a class="link">` 
-
-## [SCSS]
-
-### [ color-Color ]
-- `<a class="color-HotPink">` 
-
-### [ circle-[ 1-20 ] ]
-- smaller 
-- `<div class="circle-1">`
-- `<div class="circle-2">`  
-- `<div class="circle-3">` 
-- `...`
-- `<div class="circle-20">` 
-- bigger 
+## Dependencies
+- .NET v6.0.302
+- Python 3.7+
