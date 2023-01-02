@@ -68,6 +68,7 @@ TestResults/
 *.sqlite
 # OS generated files #
 ######################
+.DS_Store
 .DS_Store?
 ehthumbs.db
 Icon?
@@ -87,3 +88,4 @@ _[Ss]cripts
 *.nupkg
 *.ncrunchsolution
 *.dot[Cc]over
+wwwroot/lib/Resources/DS_Store
