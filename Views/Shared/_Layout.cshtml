@@ -378,6 +378,31 @@ Topics
 
                             <li class="mb-1">
                                 <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#Html-collapse" aria-expanded="false">
+                                    Html
+                                </button>
+                                <div class="collapse" id="Html-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Html">Html Home</a></li>
+<li><a class="link-dark rounded" asp-action="BasicExample" asp-controller="Html">Html Basic Example</a></li>
+<li><a class="link-dark rounded" asp-action="ColorPicker" asp-controller="Html">Html Color Picker</a></li>
+<li><a class="link-dark rounded" asp-action="Colors" asp-controller="Html">Html Colors</a></li>
+<li><a class="link-dark rounded" asp-action="Comments" asp-controller="Html">Html Comments</a></li>
+<li><a class="link-dark rounded" asp-action="CountryCodes" asp-controller="Html">Html Country Codes</a></li>
+<li><a class="link-dark rounded" asp-action="CSS" asp-controller="Html">Html Css</a></li>
+<li><a class="link-dark rounded" asp-action="FoodForm" asp-controller="Html">Html Food Form</a></li>
+<li><a class="link-dark rounded" asp-action="Forms" asp-controller="Html">Html Forms</a></li>
+<li><a class="link-dark rounded" asp-action="InputTypes" asp-controller="Html">Html Input Types</a></li>
+<li><a class="link-dark rounded" asp-action="LanguageCodes" asp-controller="Html">Html Language Codes</a></li>
+<li><a class="link-dark rounded" asp-action="Markdown" asp-controller="Html">Html Markdown</a></li>
+<li><a class="link-dark rounded" asp-action="MathSymbols" asp-controller="Html">Html Math Symbols</a></li>
+<li><a class="link-dark rounded" asp-action="Tags" asp-controller="Html">Html Tags</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
                                     data-bs-toggle="collapse" data-bs-target="#Bash-collapse" aria-expanded="false">
                                     Bash
                                 </button>
@@ -426,30 +451,6 @@ Topics
 
                             <li class="mb-1">
                                 <button class="btn btn-toggle align-items-center rounded collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#Html-collapse" aria-expanded="false">
-                                    Html
-                                </button>
-                                <div class="collapse" id="Html-collapse">
-                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Html">Html Home</a></li>
-<li><a class="link-dark rounded" asp-action="BasicExample" asp-controller="Html">Html Basic Example</a></li>
-<li><a class="link-dark rounded" asp-action="ColorPicker" asp-controller="Html">Html Color Picker</a></li>
-<li><a class="link-dark rounded" asp-action="Colors" asp-controller="Html">Html Colors</a></li>
-<li><a class="link-dark rounded" asp-action="Comments" asp-controller="Html">Html Comments</a></li>
-<li><a class="link-dark rounded" asp-action="CountryCodes" asp-controller="Html">Html Country Codes</a></li>
-<li><a class="link-dark rounded" asp-action="CSS" asp-controller="Html">Html Css</a></li>
-<li><a class="link-dark rounded" asp-action="FoodForm" asp-controller="Html">Html Food Form</a></li>
-<li><a class="link-dark rounded" asp-action="Forms" asp-controller="Html">Html Forms</a></li>
-<li><a class="link-dark rounded" asp-action="InputTypes" asp-controller="Html">Html Input Types</a></li>
-<li><a class="link-dark rounded" asp-action="LanguageCodes" asp-controller="Html">Html Language Codes</a></li>
-<li><a class="link-dark rounded" asp-action="MathSymbols" asp-controller="Html">Html Math Symbols</a></li>
-<li><a class="link-dark rounded" asp-action="Tags" asp-controller="Html">Html Tags</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="mb-1">
-                                <button class="btn btn-toggle align-items-center rounded collapsed"
                                     data-bs-toggle="collapse" data-bs-target="#Js-collapse" aria-expanded="false">
                                     Js
                                 </button>
@@ -486,7 +487,7 @@ Topics
 <li><a class="link-dark rounded" asp-action="GetStarted" asp-controller="Dotnet">.NET Get Started</a></li>
 <li><a class="link-dark rounded" asp-action="RandomNumber" asp-controller="Dotnet">.NET Random Number</a></li>
 <li><a class="link-dark rounded" asp-action="RazorPages" asp-controller="Dotnet">.NET Razor Pages</a></li>
-<li><a class="link-dark rounded" asp-action="WorkWithADatabase" asp-controller="Dotnet">.NET Work With A Database</a></li>
+<li><a class="link-dark rounded" asp-action="WorkWithADatabase" asp-controller="Dotnet">.NET Work With Adatabase</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -519,13 +520,13 @@ Topics
 
                             <li class="mb-1">
                                 <button class="btn btn-toggle align-items-center rounded collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#Seo-collapse" aria-expanded="false">
-                                    Seo
+                                    data-bs-toggle="collapse" data-bs-target="#seo-collapse" aria-expanded="false">
+                                    seo
                                 </button>
-                                <div class="collapse" id="Seo-collapse">
+                                <div class="collapse" id="seo-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Seo">Seo Home</a></li>
-<li><a class="link-dark rounded" asp-action="HtmlTags" asp-controller="Seo">Seo Html Tags</a></li>
+                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="seo">seo Home</a></li>
+<li><a class="link-dark rounded" asp-action="HtmlTags" asp-controller="seo">seo Html Tags</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -617,12 +618,15 @@ let h3s = document.querySelectorAll("H3");
 let sidebar = document.querySelector("#rightSideList");
 
 for (let h2 of h2s){
-h2.setAttribute('class', 'header')
+    if (h2.getAttribute("class") != "ignore"){
+        h2.setAttribute('class', 'header')
+    }
+    
 }
-for (let h2 of h3s){
-
-h2.setAttribute('class', 'header header-3')
-
+for (let h3 of h3s){
+    if (h3.getAttribute("class") != "ignore"){
+        h3.setAttribute('class', 'header header-3')
+    }
 }
 
 
@@ -660,32 +664,35 @@ let headers = document.querySelectorAll(".header")
 
 
 for (let header of headers){
-let link = document.createElement('A')
-let li = document.createElement('LI')
-let text = header.textContent.replace(/[^a-zA-Z]/g,'');
+    
+    console.log(header.getAttribute('class'))
+    
+    let link = document.createElement('A')
+    let li = document.createElement('LI')
+    let text = header.textContent.replace(/[^a-zA-Z]/g,'');
 
 
-link.setAttribute("class", "link-dark")
-header.setAttribute('id', text)
-link.setAttribute('href','#' + text)
-link.textContent = header.textContent
-li.appendChild(link)
-sidebar.append(li)
+    link.setAttribute("class", "link-dark")
+    header.setAttribute('id', text)
+    link.setAttribute('href','#' + text)
+    link.textContent = header.textContent
+    li.appendChild(link)
+    sidebar.append(li)
 
-if (header.getAttribute('class') == "header header-3"){
-link.style.paddingLeft = "25px"
-link.style.borderLeft = "1px double black"
+    if (header.getAttribute('class') == "header header-3"){
+    link.style.paddingLeft = "25px"
+    link.style.borderLeft = "1px double black"
 
-}
-else {
-link.style.borderLeft = "2px solid black"
+    }
+    else {
+    link.style.borderLeft = "2px solid black"
 
 
-}
+    }
 
-if (header.textContent.trim(" ") == "^"){
-link.style.borderLeft = "none"
-}
+    if (header.textContent.trim(" ") == "^"){
+    link.style.borderLeft = "none"
+    }
 
 }
 </script>
@@ -707,7 +714,7 @@ li.setAttribute("class", "navlinkSelected")
 
 function createToc(){
 tocList = document.querySelector("#tocList")
-headers = document.querySelectorAll("H2")
+headers = document.querySelectorAll(".header")
 
 for (let header of headers){
 li = document.createElement("li")

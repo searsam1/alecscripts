@@ -22,7 +22,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewData["controller"] = controllerName;
-        ViewData["title"] = "Home";
+        ViewData["title"] = "";
         return View();
     }
 
