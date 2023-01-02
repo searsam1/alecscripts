@@ -1,5 +1,7 @@
 # ***alecscripts.com***
 
+[![Build and deploy ASP.Net Core app to Azure Web App - alecScriptsMVC](https://github.com/searsam1/alecscripts/actions/workflows/main_alecscriptsmvc.yml/badge.svg)](https://github.com/searsam1/alecscripts/actions/workflows/main_alecscriptsmvc.yml)
+
 _**alecscripts.com** is a free website to **learn** coding and **teach** others_
 ## For 
 - **Developers** that program in modern, higher-level languages like:
@@ -29,6 +31,3 @@ tags are put in the table of contents and the right sidebar.
 - .NET v6.0.302
 - Python 3.7+
 
-<script>
-
-</script>
