@@ -1,6 +1,6 @@
 # ***alecscripts.com***
-
-[![Build and deploy ASP.Net Core app to Azure Web App - alecScriptsMVC](https://github.com/searsam1/alecscripts/actions/workflows/main_alecscriptsmvc.yml/badge.svg)](https://github.com/searsam1/alecscripts/actions/workflows/main_alecscriptsmvc.yml)
+- [**alecscriptsmvc**](https://alecscriptsmvc.azurewebsites.net)  
+- [![Build and deploy ASP.Net Core app to Azure Web App - alecScriptsMVC](https://github.com/searsam1/alecscripts/actions/workflows/main_alecscriptsmvc.yml/badge.svg)](https://github.com/searsam1/alecscripts/actions/workflows/main_alecscriptsmvc.yml)
 
 _**alecscripts.com** is a free website to **learn** coding and **teach** others_
 ## For 
