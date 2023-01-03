@@ -1,4 +1,15 @@
 
+<p>
+    Programming <b>definitions</b> for developers and coding hobbyists. 
+</p>
+
+<p>
+    <b>Glossary</b> - an alphabetical list of terms or words found in or relating to a specific subject, text, or dialect, with explanations; a brief dictionary.
+</p>
+
+<img src="lib/Resources/dictionary-g5bb7f1ca8_1280.jpg">
+<figcaption>Image by <a href="https://pixabay.com/users/blickpixel-52945/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=585004">Michael Schwarzenberger</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=585004">Pixabay</a></figcaption>
+
 @{
     Dictionary<string, string> glossary =
     new Dictionary<string, string>();
@@ -10,6 +21,21 @@
     @* TEST #rightSidebar overflow-y *@
     @* void runRightSideTest(){for (int i = 0; i < 2000; i++){glossary.Add(i.ToString(), "Testing");}} *@
     
+    glossary.Add("String", "A collection of characters, like a word or sentence."); 
+    glossary.Add("LAN", "Local Access Network"); 
+    glossary.Add("Host", "Computer on a network managing other computers"); 
+    glossary.Add("Cookie", "Text files send to computer from the browser"); 
+    glossary.Add("Cloud Storage", "Remote storage over the internet"); 
+    glossary.Add("Latency", "Delay between entering input and getting output"); 
+    glossary.Add("Compiling", "Translating high-level code to low-level machine code"); 
+    glossary.Add("Boolean", "True or False value / 0 or 1"); 
+    glossary.Add("I/O", "Input / Output"); 
+    glossary.Add("ROM", "Read-only memory"); 
+    glossary.Add("Secondary storage", "Longer term storage like a Hard Drive or SSD"); 
+    glossary.Add("RAM", "Random Access Memory - Store data for processor "); 
+    glossary.Add("bit", "A zero or a one (0 or 1)"); 
+    glossary.Add("CPU", "Central Processing Unit"); 
+    glossary.Add("Programming", "the planning, scheduling, or performing of a program"); 
     glossary.Add("Algorithm(Algo)", "A set of instructions to perform."); 
     glossary.Add("Coding", "Writing a set of instructions that will be compiled to another version or language."); 
     glossary.Add("Variable Types", "The way an object is meant to be viewed by the computer."); 
@@ -34,10 +60,8 @@
     glossary.Add("Object-Oriented Programming (OOP)", "Programming paradigm that emphasizes objects, object attributes and object methods.");
     glossary.Add("API", "Application Programming Interface: waiter between the server and the client");
     glossary.Add("con·cat·e·na·tion", "The action of linking things together in a series.");
-
-
-    @* glossary.Add("CSS", "Cascading Style Sheets"); *@
-    @* glossary.Add("CSS", "Cascading Style Sheets"); *@
+    glossary.Add("spam", "Repeated, unwanted requests");
+    glossary.Add("USB", "Universal Serial Bus");
     @* glossary.Add("CSS", "Cascading Style Sheets"); *@
     @* glossary.Add("CSS", "Cascading Style Sheets"); *@
     @* glossary.Add("CSS", "Cascading Style Sheets"); *@
@@ -48,8 +72,8 @@
 
     int term_count = glossary.Count;
     <center>
-        <p class="btm-border-Magenta">
-            @term_count Total Terms
+        <p class="pt-2 text-center btm-border-Magenta">
+            <span class=" text-success border-bottom border-success">@term_count</span> Total Terms
         </p>
     </center>
     <ul style="list-style: none;">
@@ -76,3 +100,27 @@
     document.querySelector("h1").style.display = "none";
     document.querySelector("#toc").style.display = "none";
 </script>
+
+<script>
+    for (let h of document.querySelectorAll("h3")){
+        h.style.fontSize = "1.2em";
+        h.style.fontWeight = "bold";
+        h.style.margin = "1px";
+        h.style.padding = "1px";
+        h.style.paddingTop = "25px"
+    }
+</script>
+
+<style>
+    ul ul {
+        list-style-type: none;
+    }
+    ul > ul > li::before {
+        content: "↪︎";
+    }
+    #rightSidebar ul ul li::before{
+        content: none;
+    }
+</style>
+
+See <a href="https://www.collinsdictionary.com/us/word-lists/computer-terms-used-in-computing">more terms</a>

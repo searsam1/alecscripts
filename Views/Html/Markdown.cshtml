@@ -3,9 +3,12 @@
     document.querySelector("H1").style.display = "none";
 </script>
 
-<p class="display-6">
-    Markdown
+<p style="background-position: right ;background-image: url('/lib/Resources/galaxy-gb02ae9ca9_1280.jpg');" class="display-6 text-center rounded-3 py-5">
+    <span style="background: linear-gradient(225deg, rgb(45,51,21), rgb(0,0,0,.77), rgb(0,0,255,.5), rgb(255,0,0,.5));" class="text-light px-5 py-5 rounded-3">Markdown</span>
 </p>
+
+<!-- For linkedIn  -->
+<img alt="Galaxy" style="display: none;" src="/lib/Resources/galaxy-gb02ae9ca9_1280.jpg">
 
 <h2>
     Headers
@@ -135,13 +138,13 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 <h2>
     Links
 </h2>
-<pre><code class="lang-md">[I'm an inline-style link](https://www.google.com)
+<pre><code class="lang-md">[inline-style](https://www.google.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[inline-style - title](https://www.google.com "Google's Homepage")
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+[reference-style][Arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+[relative reference to a repository file](../blob/master/LICENSE)
 
 [You can use numbers for reference-style link definitions][1]
 
@@ -156,6 +159,51 @@ Some text to show that the reference links can follow later.
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com</code></pre>
+
+<a href="#">inline-style</a>
+<br/><br/>
+<a title="Google's Homepage" href="#">inline-style - title</a>
+<br/><br/>
+
+<h2>Images</h2>
+
+<pre><code class="lang-md">Here's our logo (hover to see the title text):
+
+Inline-style: 
+![alt text](https://github.com/searsam1/alecscripts/blob/main/wwwroot/lib/favicon-32x32.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/searsam1/alecscripts/blob/main/wwwroot/lib/favicon-32x32.png "Logo Title Text 2"
+</code></pre>
+
+Here's our logo (hover to see the title text):<br><br>
+Inline-style: <img title="Logo Title Text 1" src="/lib/favicon-32x32.png"><br><br>
+Reference-style: <img title="Logo Title Text 2" src="/lib/favicon-32x32.png">
+
+
+<h2>
+    Code and Syntax Highlighting
+</h2>
+
+<p>
+    Single-line code blocks are enclosed in backticks, <code>`like this`</code>. 
+</p>
+
+<p>
+    Multiline code blocks have three backticks <code>```</code> and a language name:
+</p>
+<pre><code class="lang-md">```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+```python
+s = "Python syntax highlighting"
+print s
+```</code></pre>
+
 
 <p>
     More <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links">info</a>
