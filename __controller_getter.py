@@ -100,7 +100,6 @@ def get_controllers():
     return actions
 
 def sort_controllers(controllers):
-    actions = controllers.values()
     # get home for sorting
     home = controllers["HomeController.cs"]
     excluded_controllers = ["HomeController.cs", "v2Controller.cs"]

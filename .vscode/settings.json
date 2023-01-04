@@ -10,8 +10,11 @@
         "Datagrams",
         "datetime",
         "distros",
+        "figcaption",
         "jquery",
-        "Metacharacters"
+        "Maguntia",
+        "Metacharacters",
+        "Unifraktur"
     ],
     "editor.rulers": [80],
     "workbench.colorCustomizations": {
