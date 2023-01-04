@@ -25,11 +25,7 @@ string Version = "V3";
 <link rel="icon" type="image/png" sizes="32x32" href="~/lib/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="~/lib/favicon-16x16.png">
 <link rel="manifest" href="~/lib/site.webmanifest">
-
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/MvcAlecScripts.styles.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/css/alecScriptsStyles.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
 
 @* Google fonts *@
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,17 +62,7 @@ font-size: 3.5rem;
 <link href="../css/sidebars.css" rel="stylesheet">
 </head>
 
-<style>
-.jumbo{
-@* background:
-linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); *@
-background: white;
-max-width: 100%;
-width: 100%;
-}
-</style>
+
 
 @{
 int h = 10;
@@ -592,7 +578,6 @@ Topics
 <script src="~/lib/bootstrap/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/sidebars.js"></script>
-<script src="~/js/formatTables.js"></script>
 <script src="~/js/prism.js" asp-append-version="true"></script>
 
 
@@ -775,7 +760,6 @@ rightLink.querySelector("a").style.backgroundColor = "white"
 
 
 </script>
-<script src="~/js/darkBtn.js" asp-append-version="true"></script>
 
 
 @await RenderSectionAsync("Scripts", required: false)
