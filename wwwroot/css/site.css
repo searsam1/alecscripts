@@ -1,4 +1,32 @@
 
+
+/* from https://www.w3schools.com/howto/howto_css_loader.asp */
+    /* ==== */
+.loader {
+    border: 16px solid #000;
+    border-top: 16px solid#ffffff;
+    border-bottom: 16px solid black;
+    border-left: 16px solid #000; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin .5s linear infinite;
+    position: absolute;
+    z-index: 10000;
+  }
+
+  .loaded {
+    animation: none;
+  }
+  
+  @keyframes spin {
+    0% {  transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  /* ==== */
+
+
+
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
