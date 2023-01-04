@@ -48,7 +48,5 @@ namespace MvcAlecScripts.Controllers
             ViewData["title"] = "About This Website";
             return View();
         }
-    
-    
     }
 }
