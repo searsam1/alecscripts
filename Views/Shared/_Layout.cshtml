@@ -55,13 +55,7 @@ string Version = "V3";
    int h = 10;
    string height = h.ToString() + "px";
    }
-   <body>
-      <script>
-        window.addEventListener("load", function() {
-            document.querySelector(".loader").setAttribute('class', "loaded")
-        }, false); 
-      </script>
-      <div class="loader"></div>
+   <body>   
       <style>
          .pre-nav{
          background: linear-gradient(45deg, black, rgb(0,0,0,.7));
@@ -88,11 +82,8 @@ string Version = "V3";
             }
          </style>
          <div class="container-fluid">
-            <a class="text-dark" role="button" href="home/index">
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
-                  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
-               </svg>
+            <a  class="text-decoration-none btn btn-dark" asp-action="index" asp-controller="home" >
+               HOME
             </a>
             <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -269,7 +260,8 @@ string Version = "V3";
             link.querySelector('a').style.background = 'rgba(0, 0, 0, .1) '
             link.querySelector('a').style.color = 'white'
             link.querySelector('a').style.fontWeight = '500 '
-            link.querySelector('a').setAttribute('class', "")
+            link.querySelector('a').setAttribute('id', "activeLeft")
+            link.querySelector('a').setAttribute('class', "none")
             link.style.borderRadius = "10px";
             link.style.background = "#000";
          }
@@ -327,14 +319,16 @@ string Version = "V3";
          for (let i=0; i<len; i++){
          header = h2_s[i];
          rightLink = rightSidebar[i];
+         rightLink.querySelector("a").style.width = "100%"
          if ($( header ).position()["top"] - 38 < $( document ).scrollTop()){
          rightLink.querySelector("a").style.color = "white"
          rightLink.querySelector("a").style.backgroundColor = "black"
+         rightLink.querySelector("a").setAttribute('class', 'none')
          if (i != 0){
          header = h2_s[i-1];
          rightLink = rightSidebar[i-1];
          rightLink.querySelector("a").style.color = "black"
-         rightLink.querySelector("a").style.backgroundColor = "white"
+         rightLink.querySelector("a").style.backgroundColor = "rgb(1,1,1,.1)"
          }
          }
          else {
@@ -343,6 +337,13 @@ string Version = "V3";
          }
          }
          });
+      </script>
+      <script>
+        let leftSidebar = document.querySelector('#leftSidebar');
+        let activeLeft = document.querySelector("#activeLeft")
+        let height = $( activeLeft ).position()["top"]
+        leftSidebar.scrollTop = height - 5
+        @* messageBody.scrollTop = height.scrollHeight - height.clientHeight; *@
       </script>
       @await RenderSectionAsync("Scripts", required: false)
    </body>
