@@ -220,6 +220,6 @@ div.code-toolbar{
     color: rgb(211, 0, 56);
 }
 
-.token.selector {
+.token.selector, .language-python > .token.decorator.annotation.punctuation {
     color: rgb(135, 43, 255);
 }

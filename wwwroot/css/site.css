@@ -188,8 +188,8 @@
   
   
   #tocList li, #tocList li .nav-link{
-      list-style-type: none;
-      color: grey;
+      list-style-type: disc;
+      color: black;
       padding: 1px ;
   }
   
@@ -199,7 +199,7 @@
       
   }
   #tocList li .nav-link::before{
-      content: "!";
+      content: "";
       color: black;
   }
   
