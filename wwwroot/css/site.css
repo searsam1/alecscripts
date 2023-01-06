@@ -199,7 +199,7 @@
       
   }
   #tocList li .nav-link::before{
-      content: "- ";
+      content: "!";
       color: black;
   }
   
