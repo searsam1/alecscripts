@@ -16,5 +16,9 @@ namespace MvcAlecScripts.Controllers
             ViewData["controller"] = controllerName;
             return View();
         }
+        public string Version()
+        {
+            return "v3.1";
+        }
     }
 }
