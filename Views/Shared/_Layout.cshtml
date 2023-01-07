@@ -267,7 +267,6 @@ string Version = "V3";
       <script>
          let headers = document.querySelectorAll(".header")
          for (let header of headers){
-         console.log(header.getAttribute('class'))
          let link = document.createElement('A')
          let li = document.createElement('LI')
          let text = header.textContent.replace(/[^a-zA-Z]/g,'');
@@ -335,11 +334,14 @@ string Version = "V3";
          });
       </script>
       <script>
-        let leftSidebar = document.querySelector('#leftSidebar');
-        let activeLeft = document.querySelector("#activeLeft")
-        let height = $( activeLeft ).position()["top"]
-        leftSidebar.scrollTop = height - 5
-        @* messageBody.scrollTop = height.scrollHeight - height.clientHeight; *@
+        if (document.querySelector){
+            let leftSidebar = document.querySelector('#leftSidebar');
+            let activeLeft = document.querySelector("#activeLeft")
+            let height = $( activeLeft ).position()["top"]
+            leftSidebar.scrollTop = height - 5
+            @* messageBody.scrollTop = height.scrollHeight - height.clientHeight; *@    
+        }
+        
       </script>
       @await RenderSectionAsync("Scripts", required: false)
    </body>
