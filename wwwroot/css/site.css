@@ -78,13 +78,20 @@
   
   #leftSidebar, #rightSidebar{
       height: 93vh;
-      overflow-y: scroll;
       z-index: 0;
       font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
       font-size: 13.328px;
-      
   }
   
+  #leftSidebar, #rightSidebar {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+  }
+  
+  #leftSidebar::-webkit-scrollbar, #rightSidebar::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
   
   #leftSidebar a{
       margin: 5px;

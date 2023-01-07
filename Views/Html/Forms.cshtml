@@ -24,10 +24,21 @@
     </form>
 
     <p class="p-1 m-2">
-        First Name: @Model.FirstName.ToUpper()
+        @{
+            if (@Model.FirstName is not null)
+            {
+                <span>First Name: @Model.FirstName.ToUpper()</span>
+            }
+        }
+        
     </p>
     <p class="p-1 m-2">
-        Last Name: @Model.LastName.ToUpper()
+        @{
+            if (@Model.LastName is not null)
+            {
+                <span>Last Name: @Model.LastName.ToUpper()</span>
+            }
+        }
     </p>
 
 </div>
