@@ -301,30 +301,34 @@ alecscripts.com
 
 @* Footer *@
 
-<div class="container-fluid bg-light">
-    <div class="row">
-        <div class="col ">
-            <footer>
-                <ul class="nav justify-content-end pb-1 mb-1">
-                    <li class="nav-item"><a asp-action="index" asp-controller="home"
-                            class="nav-link px-2 text-muted">Home</a></li>
-                    <li class="nav-item"><a asp-action="index" asp-controller="python"
-                            class="nav-link px-2 text-muted">Python</a></li>
-                    <li class="nav-item"><a asp-action="index" asp-controller="Cpp"
-                            class="nav-link px-2 text-muted">C++</a></li>
-                    <li class="nav-item"><a asp-action="index" asp-controller="Css"
-                            class="nav-link px-2 text-muted">CSS</a></li>
-                </ul>
-                <ul class="nav justify-content-end pb-3 mb-3 pt-1">
-                    <li class="nav-item"><a asp-action="index" asp-controller="home"
-                            class="nav-link px-2 text-muted">@Version</a></li>
-                </ul>
+   <div class="container-fluid bg-light">
+      <div class="row">
+         <div class="col ">
+            <footer >
+               <ul class="nav justify-content-center pb-1 mb-1">
+                  <li class="nav-item"><a asp-action="index" asp-controller="home" class="nav-link px-2 text-dark border-bottom mx-2">Home</a></li>
+                  <li class="nav-item"><a asp-action="index" asp-controller="python" class="nav-link px-2 text-dark border-bottom mx-2">Python</a></li>
+                  <li class="nav-item"><a asp-action="index" asp-controller="Cpp" class="nav-link px-2 text-dark border-bottom mx-2">C++</a></li>
+                  <li class="nav-item"><a asp-action="index" asp-controller="Css" class="nav-link px-2 text-dark border-bottom mx-2">CSS</a></li>
+                  <li class="nav-item"><a asp-action="index" asp-controller="bash" class="nav-link px-2 text-dark border-bottom mx-2">Bash</a></li>
+                  <li class="nav-item"><a asp-action="index" asp-controller="html" class="nav-link px-2 text-dark border-bottom mx-2">HTML</a></li>
+                  <li class="nav-item"><a asp-action="index" asp-controller="js" class="nav-link px-2 text-dark border-bottom mx-2">javaScript</a></li>
+                  <li class="nav-item"><a asp-action="index" asp-controller="dotnet" class="nav-link px-2 text-dark border-bottom mx-2">.NET</a></li>
+                  <li class="nav-item"><a asp-action="index" asp-controller="go" class="nav-link px-2 text-dark border-bottom mx-2">Go</a></li>
+                  <li class="nav-item"><a asp-action="index" asp-controller="glossary" class="nav-link px-2 text-dark border-bottom mx-2">Glossary</a></li>
+               </ul>
+               <ul class="nav justify-content-center pb-3 mb-3">
+                  <li class="nav-item"><a asp-action="index" asp-controller="home" class="nav-link px-2 text-dark">@Version</a></li>
+                  <li class="nav-item">
+                     <a asp-action="aboutthiswebsite" asp-controller="home" class="nav-link px-2 text-dark">
+                        About This Website 
+                        <figcaption>Feedback Welcome</figcaption>
+                     </a>
+                  </li>
+               </ul>
             </footer>
-        </div>
-
-    </div>
-
-
-</div>
+         </div>
+      </div>
+   </div>
 
 </html>

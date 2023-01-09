@@ -1,5 +1,8 @@
-﻿@{
+﻿
+@{
     Layout = "../Shared/_homeLayout.cshtml";
+    
+
 }
 
 <style>
@@ -18,72 +21,28 @@ h2:not(#logo)::after{
     
 </center>
 <div class="container" style="max-width: 896px;">
-    <h2>
-        Why alecscripts?
-    </h2>
+
     <div class="border-bottom">
-        <p>
-            While programming knowledge is abundant, it isn't 
-            always written properly. Grammar errors and lots of 
-            mistakes persist. Sure, no one is perfect: but alecscripts 
-            aims to be better. One place with reliable tutorials 
-            for all. 
+        <p class="text-center" style="font-family: monospace;">
+            @ViewData["RandomQuote"]
         </p>
-    </div>
-    <h2>
-        What is alecscripts?
-    </h2>
-    <div class="border-bottom">
-        <ul>
-            <li>
-                Alec Scripts is an online school for 
-                all developers. It is designed 
-                around the Feynman method: explaining things 
-                as simply as possible to convey 
-                an understanding of a subject. 
-            </li>
-        </ul>
     </div>
 </div>
 
 
 <p class="p-3 bg-dark text-light text-center  rounded-3">
-    Find a <a class="link-info" asp-action="Directory" asp-controller="home">Tutorial</a>
+    Find a <a class=" btn btn-outline-warning" asp-action="Directory" asp-controller="home">Tutorial</a>
 </p>
 
 
-<div class="text-center">
-    <a asp-controller="Java" asp-action="index" class=" btn m-2 btn-primary">
-        Java
-    </a>
-    <a asp-controller="cpp" asp-action="index" class="btn m-2 btn-info">
-        C++
-    </a>
-    <a asp-controller="python" asp-action="index" class="btn m-2 btn-light">
-        Python
-    </a>
-    <a asp-controller="CSS" asp-action="index" class="btn m-2 btn-primary">
-        CSS
-    </a>
-    <a asp-controller="Bash" asp-action="index" class="btn m-2 btn-info">
-        Bash
-    </a>
-    <a asp-controller="HTML" asp-action="index" class="btn m-2 btn-light">
-        HTML
-    </a>
-    <a asp-controller="js" asp-action="index" class="btn m-2 btn-primary">
-        JavaScript
-    </a>
-    <a asp-controller="dotnet" asp-action="index" class="btn m-2 btn-info">
-        .NET
-    </a>
-    <a asp-controller="go" asp-action="index" class="btn m-2 btn-light">
-        GoLang
-    </a>
-    <a asp-controller="glossary" asp-action="index" class="btn m-2 btn-primary">
-        Glossary
-    </a>
-    
-</div>
+<p class="text-center">
+    <a class="text-decoration-none link-warning" href="https://github.com/searsam1/alecscripts">
+        Repo
+    </a>    
+</p>
 
-
+<p class="text-center">
+    <a class="text-decoration-none link-warning" asp-controller="home" asp-action="AboutThisWebsite">
+        About alecscripts.com
+    </a>    
+</p>
