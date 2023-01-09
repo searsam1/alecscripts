@@ -1,0 +1,46 @@
+
+<h2>
+    Sorting an Array
+</h2>
+
+<p>
+    Use the <code class="lang-js">.sort()</code> method on arrays to sort them 
+    alphabetically. 
+</p>
+
+<pre><code class="lang-js">const fruits = ["Pear", "Apple", "Pineapple", "Watermelon"];
+fruits.sort();
+
+// ["Apple", "Pear", "Pineapple", "Watermelon"] 
+</code></pre>
+
+<h3>
+    Reverse Sort
+</h3>
+
+<p>
+    Use <code class="lang-js">.reverse()</code> to reverse sort an 
+    array. 
+</p>
+
+<pre><code class="lang-js">const fruits = ["Pear", "Apple", "Pineapple", "Watermelon"];
+fruits.sort();
+fruits.reverse();
+
+// ["Watermelon", "Pineapple", "Pear", "Apple"]
+</code></pre>
+
+<h2>Numeric Sort</h2>
+<p>
+    Numbers cannot be sorted as strings properly. To sort an 
+    array of number types, use a <b>compare</b> function. 
+    A compare function takes in two arguments and returns 
+    a <b>negative</b> or <b>positive</b> value, or <b>zero</b>.
+</p>
+
+
+<pre><code class="lang-js">const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
+
+// [1, 5, 10, 25, 40, 100]
+</code></pre>

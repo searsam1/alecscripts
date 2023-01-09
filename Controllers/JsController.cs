@@ -99,5 +99,13 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult ArraySort()
+    {   
+        ViewData["creationDate"] = "Mon Jan  9 10:09:57 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Array Sort";
+        return View();
+    }
+    
     }
 }
