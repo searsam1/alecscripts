@@ -1,4 +1,8 @@
 
+@{
+    
+}
+
 <p>
     <b class="text-danger">Functools</b> is a module for <b>higher-order functions (HOF)</b>. According 
     to <a href="https://en.wikipedia.org/wiki/Higher-order_function">Wikipedia</a>, a HOF must have one or more of
@@ -13,8 +17,9 @@
     </li>
 </ul>
 
+<hr />
 <h2>
-    <code>functools.cache</code>
+    <code class="lang-python">@@functools.cache</code>
 </h2>
 <p>
     Smaller and faster version of <a href="https://docs.python.org/3/library/functools.html#functools.lru_cache">lru_cache</a>. 
@@ -32,3 +37,166 @@ factorial(5)       # wont calculate new value, will lookup from cache
 factorial(12)      # looks up first 10 from cache, then makes 2 new calls
 # 479001600</code></pre>
 <figcaption>Code from <a href="https://docs.python.org/3/library/functools.html#functools.cache">Python Docs</a></figcaption>
+
+<hr />
+<h2>
+    <code class="lang-python">@@functools.cached_property</code>
+</h2>
+<p>
+    Converts a class method into a property that is calculated once 
+    and then cached. 
+</p>
+<pre><code class="lang-python">class DataSet:
+
+    def __init__(self, sequence_of_numbers):
+        self._data = tuple(sequence_of_numbers)
+
+    @@cached_property
+    def variance(self):
+        return statistics.variance(self._data)
+</code></pre>
+<p>
+    This method does, however, make instance dictionaries less storage-efficient. 
+    To avoid this, stack <code class="lang-py">@@property</code> with <code class="lang-py">@@cache</code> to get
+    a similar result. 
+</p>
+
+<pre><code class="lang-python">class DataSet:
+
+    def __init__(self, sequence_of_numbers):
+        self._data = tuple(sequence_of_numbers)
+
+    @@property
+    @@cached
+    def variance(self):
+        return statistics.variance(self._data)
+</code></pre>
+<hr />
+<h2>
+    <code class="lang-python">functools.cmp_to_key()</code>
+</h2>
+
+<p>
+    Transform a comparison style function to a key function. It is used with 
+    functions that have the key parameter. (like <code>sorted()</code>, <code>min()</code>, <code>max()</code>, etc.). According to 
+    the <a href="https://docs.python.org/3/library/functools.html#functools.cmp_to_key">python3 docs</a>, 
+    its main use is converting caparison functions from python2 into key functions for python3.
+
+    <ul>
+        <li>
+            <b>Key Function</b> - Used for sorting: accepts one value and returns another for sorting 
+        </li>
+        <li>
+            <b>Comparison Function</b> - Accepts two args and returns negative
+            for less than, zero for equality, or a positive number for 
+            greater than. 
+
+        </li>
+    </ul>
+
+</p>
+
+<pre><code class="lang-py">import locale, functools 
+sorted(['abc', 'ab', 'a'], 
+    key=functools.cmp_to_key(locale.strcoll))
+
+# ['a', 'ab', 'abc']</code></pre>
+<hr />
+<h2>
+    <code class="lang-python">@@functools.lru_cache</code>
+</h2>
+<p>
+    Threadsafe cache that takes a <code>maxsize</code> argument. If no maxsize is 
+    given, it will ditch the LRU and cache without bounds. 
+</p>
+
+<pre><code class="lang-python">from functools import lru_cache
+
+@@lru_cache
+# very slow without cache 
+def count_digits(sentence):
+    return sum(sentence.count(digit) for digit in '0123456789')
+
+# long string 
+# 4,000,000 length
+string = "NAZ 9"*1000000
+for i in range(128):
+    count_digits(string)
+
+print(count_digits.cache_info())
+# CacheInfo(hits=127, misses=1, maxsize=128, currsize=1)
+
+# 0.05s with cache
+# 2.20s without cache</code></pre>
+
+<p>
+    In the example above, the program runs about <b><i>44 times</i></b> faster 
+    when caching is used. It is a pointless program, but it demonstrates
+    how useful it is to store a value that has already been calculated.  
+    It takes a long time to loop through <strong>4,000,000</strong> characters and see which ones 
+    are digits, so instead of redoing it on each loop, it will lookup in the cache if 
+    it already has the answer, and it will not do the work over again.
+</p>
+
+<p>
+    An <b>LRU</b> (least recently used) cache works best when the previous call is a 
+    decent predictor of the next one. They should only be used when calls are
+    repeated and not on function side effects. 
+</p>
+
+<p>
+    It is also great for expensive I/O calls, like reading a large file. 
+</p>
+
+<h2>
+    <code class="lang-python">@@functools.total_ordering</code>
+</h2>
+<p>
+    This is a class decorator that saves time by not having to 
+    implement all the rich comparison operators like <code>__lt__</code> and
+     <code>__gt__</code>. Only one needs to be specified, and <code>__eq__</code>
+     needs to be specified as well. 
+</p>
+
+<p>
+    There is a class, Students, that only has one rich comparison defined (<code>__lt__</code>), 
+    but it uses the class decorator <code>@@total_ordering</code> to fill in the rest:
+</p>
+
+<pre><code class="lang-python">from functools import total_ordering
+
+@@total_ordering
+class Students:
+    def __init__(self, gpa):
+        self.gpa = gpa
+  
+    def __lt__(self, other):
+        return self.gpa < other.gpa
+  
+    def __eq__(self, other):
+        return self.gpa == other.gpa
+  
+Yoda = Students(3.3)
+  
+Vader = Students(2.99)
+  
+print(Yoda < Vader) # False
+print(Yoda <= Vader) # False
+print(Yoda > Vader) # True
+print(Yoda >= Vader) # True
+print(Yoda == Vader) # False
+print(Yoda != Vader) # True</code></pre>
+<h2>
+    <code>functools.reduce</code>
+</h2>
+<pre><code class="lang-python">functools.reduce(function, iterable[, initializer])</code></pre>
+<p>
+    Work to return a single value from an iterable by combining all the values 
+    from left to right until one is left. It will use the <code>function</code> 
+    supplied to deal with combining values. 
+</p>
+
+<pre><code class="lang-python">reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
+# Returns 1+2+3+4+5</code></pre>
+<pre><code class="lang-python">reduce(lambda x, y: x*y, [1, 2, 3, 4, 5])
+# Returns 1*2*3*4*5</code></pre>

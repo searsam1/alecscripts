@@ -1,25 +1,39 @@
-
-
-<div id="directory" class="container">
+<h2>
     Directory
+</h2>
+
+<div id="count" class="bg-dark text-white p-3 rounded-3">
+    Pages
 </div>
 
+<div class="container">
+    <ul id="directory">
 
+    </ul>
+</div>
 
-<script>   
-    let directory = document.querySelector("#directory"); 
-    let new_btn; 
+<script>
+    document.querySelector("h1").style.display = "none"
+    toc = document.querySelector("#TOC")
+    toc.style.display = "none"
+</script>
+
+<script>
+    let directory = document.querySelector("#directory");
+    let new_btn;
     let sideBar = document.querySelector("#leftSidebar").querySelector("UL").querySelectorAll(".link-dark")
-    controller = "n"; 
+    document.querySelector("#count").textContent = "Around " + sideBar.length + " Pages"
+    
+    controller = "n";
     color = "secondary"
-    for (let link of sideBar){
+    for (let link of sideBar) {
         new_contrller = link.textContent.split(" ")[0].toLowerCase()
         // to change color for each header (controller)
-        if (new_contrller != controller){
+        if (new_contrller != controller) {
             new_h = document.createElement("H2")
-            new_h.style.textAlign = "center"
+            new_h.style.textAlign = "start"
             new_h.style.textTransform = "capitalize"
-            
+
             controller = new_contrller
             new_h.textContent = controller
             directory.appendChild(new_h)
@@ -27,11 +41,12 @@
         }
         new_btn = document.createElement("a")
         new_btn.setAttribute('href', link.getAttribute('href'))
-        new_btn.setAttribute("class", ` btn btn-outline-${color} my-2 mx-1`)
+        new_btn.setAttribute("class", `link-dark`)
         new_btn.textContent = link.textContent != "Home" ? link.textContent.split(" ").slice(1,).join(" ") : link.textContent
-        directory.appendChild(new_btn)
+        new_li = document.createElement("LI")
+        new_li.appendChild(new_btn)
+        directory.appendChild(new_li)
     }
-
 
 </script>
 

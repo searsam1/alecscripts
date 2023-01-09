@@ -33,12 +33,6 @@ namespace MvcMovie.Controllers
         
         return View();
     }
-    public IActionResult ExpressionsOperators()
-    {
-        ViewData["controller"] = controllerName;
-        ViewData["title"] = "Expressions Operators";
-        return View();
-    }
     public IActionResult BinaryArrayToDecimal() 
     {
         ViewData["controller"] = controllerName;

@@ -15,6 +15,7 @@
         "jquery",
         "Maguntia",
         "Metacharacters",
+        "Threadsafe",
         "Unifraktur"
     ],
     "editor.rulers": [80],
