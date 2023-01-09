@@ -1,0 +1,40 @@
+
+<p>
+    JavaScript has a variety of different methods for outputting data 
+    to the user. 
+</p>
+@{string[] outputMethods = {".innerHTML", "document.write()", "window.alert()", 
+    "console.log()"};}
+<ul>
+    @foreach (string outputMethod in outputMethods)
+    {   
+        <li> <code class="lang-js">@outputMethod</code> </li>   
+    }
+</ul>
+
+
+<h2>
+    innerHTML
+</h2>
+
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;body&gt;
+
+    &lt;h1&gt;My First Web Page&lt;/h1&gt;
+    &lt;p&gt;
+        My Paragraph, the best Paragraph
+    &lt;/p&gt;
+
+    &lt;p id="bestP"&gt;
+
+    &lt;/p&gt;
+
+    &lt;!-- Set bestP element to 11 (5 + 6)  --&gt;
+    &lt;script&gt;
+        document.getElementById("bestP").innerHTML = 5 + 6;
+    &lt;/script&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>

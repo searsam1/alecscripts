@@ -127,5 +127,13 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult PostFormatter()
+    {   
+        ViewData["creationDate"] = "Mon Jan  9 14:55:00 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Post Formatter";
+        return View();
+    }
+    
     }
 }
