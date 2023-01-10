@@ -1,0 +1,147 @@
+
+<h2>
+    Variable declarations
+</h2>
+<p>
+    Variables hold data and can be declared with one of the following keywords:
+    <ul>
+        <li>
+            var
+        </li>
+        <li>
+            let
+        </li>
+        <li>
+            const
+        </li>
+    </ul>
+</p>
+
+<h3>
+    <code class="lang-js">let</code>
+</h3>
+<p>
+    The <code>let</code> keyword was introduced in ES6 because function scope 
+    was confusing. <code>let</code> will define a variable inside a code block, 
+    where as <code>var</code> will be available to the entire function it is declared inside.
+</p>
+
+<p>
+    Take the following example. It defines the variable <code>x</code> in the 
+    function and once inside an if-else block. It takes on a new value inside the 
+    block, and the outside <code>x</code> stays the same. 
+</p>
+
+<pre><code class="lang-js">function scopeTesting(){
+    let x = 5; 
+    if (x == 5){
+        let x = 10; 
+        console.log(x);
+        // 10
+    }
+    console.log(x);
+    // 5
+}
+scopeTesting(); 
+// 10 
+// 5</code></pre>
+
+<p>
+    The <code>let</code> keyword can also not be declared twice, while var can 
+    be declared an unlimited number of times. 
+</p>
+
+<pre><code class="lang-js">function scopeTesting(){
+    let x = 5; 
+    let x = 10;
+    // SyntaxError: Cannot declare a let variable twice: 'x'. 
+}</code></pre>
+
+<h3> <code class="lang-js">
+    var
+</code></h3>
+
+<p>
+    As mentioned above, var can be re-declared:
+</p>
+<pre><code class="lang-js">function scopeTesting(){
+    var x = 5; 
+    var x = 10; // no error
+    console.log(x); 
+    // 10
+}</code></pre>
+
+<p>
+    The entire function has access to a <code>var</code> variable, even inside 
+    a different block of code. 
+</p>
+<pre><code class="lang-js">function scopeTesting(){
+    let y = 5; 
+    if (y == 5){
+        var x = 10;
+    }
+    console.log(x);
+    // 10
+}</code></pre>
+<p>
+    This can only be done with <code>var</code> and not <code>let</code> because 
+    of the scoping rules. 
+</p>
+
+<pre><code class="lang-js">function scopeTesting(){
+    let y = 5; 
+    if (y == 5){
+        let x = 10;
+    }
+    console.log(x);
+    // ReferenceError: Can't find variable: x
+}</code></pre>
+
+<h3>
+    <code class="lang-js">const</code>
+</h3>
+<p>
+    Const stands for constant and makes a read-only reference 
+    to an object. It must be assigned on creation, because it cannot be 
+    changed after. If the object is a container of some sort, however, 
+    the objects inside can be changed or modified. 
+    It also treats scope like let, being defined in the same block. 
+</p>
+
+<pre><code class="lang-js">// define MY_NUM as a constant and give it the value 99
+const MY_NUM = 99;
+
+// error - Uncaught TypeError: Assignment to constant variable.
+MY_NUM = 20;
+
+// MY_NUM is 99
+console.log("my favorite number is: " + MY_NUM);
+
+// Uncaught SyntaxError: Identifier 'MY_NUM' has already been declared
+const MY_NUM = 20;
+
+// name MY_NUM is reserved for constant, this will fail too
+var MY_NUM = 20;
+
+// throws errorname MY_NUM is reserved for constant, this will fail too
+let MY_NUM = 20;
+
+</code></pre>
+
+<p>
+    Even though const arrays cannot change its pointer, it can change the array itself. 
+    This means that the object inside is mutable. 
+</p>
+
+<pre><code class="lang-js">const MY_ARRAY = [];
+// Cannot assign to new array 
+MY_ARRAY = ["B"];
+// TypeError: Attempted to assign to readonly property.
+</code></pre>
+
+<p>
+    To change whats inside the array it points to: 
+</p>
+<pre><code class="lang-js">const MY_ARRAY = [];
+MY_ARRAY.push("A"); // ["A"]
+</code></pre>
