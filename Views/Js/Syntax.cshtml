@@ -1,0 +1,179 @@
+
+<p>
+    <b>Syntax</b>: <i>the arrangement of words and phrases to create well-formed sentences in a language.</i>
+</p>
+<figcaption> From <a href="https://languages.oup.com/google-dictionary-en/">Oxford Languages</a></figcaption>
+
+<p>
+    The syntax or rules of javaScript are pretty similar 
+    to python. That means the syntax is simple and intuitive while 
+    still being powerful and dynamic. 
+</p>
+<pre><code class="lang-js">console.log("hey");
+let message = "This is JavaScript";
+let n = 10;
+</code></pre>
+
+<h2>
+    Values
+</h2>
+<p>
+    There are two types of values in JS: 
+    <ul>
+        <li>
+            literals (static)
+        </li>
+        <li>
+            variables (dynamic)
+        </li>
+    </ul>
+</p>
+<pre><code class="lang-js">"String Literal" // literal
+let message = "I am a variable" // variable
+</code></pre>
+
+<h2>
+    Literals
+</h2>
+<p>
+    Literals can be strings or numbers: text-based or numerical. 
+</p>
+<p>
+    Strings are written in double or single quotes <code>"" | ''</code>:
+</p>
+<pre><code class="lang-js">"String Literal"
+'String literal'
+</code></pre>
+
+<p>
+    While numbers are written as is with or without a decimal. 
+</p>
+<pre><code class="lang-js">100
+3.14
+</code></pre>
+<h2>
+    Variables
+</h2>
+<p>
+    Variables use the equals sign <code>=</code> for assignment, not to be 
+    confused with <code>==</code> which checks equality.
+</p>
+<p>
+    Variables are declared with: 
+    <ul>
+        <li>
+            <code class="lang-js">let</code>
+        </li>
+        <li>
+            <code class="lang-js">var</code>
+        </li>
+        <li>
+            <code class="lang-js">const</code>
+        </li>
+    </ul>
+</p>
+<p>
+    Put the keyword before the name and assign it to a value. 
+</p>
+<pre><code class="lang-js">let message; 
+message = "Hello, Brother."
+
+var x; 
+x = 21; 
+
+const arr = [1, 2, 3]; 
+</code></pre>
+
+<h2>
+    Operators
+</h2>
+<p>
+    The most basic operators are the arithmetic operators <code> + - / * </code>, which can be 
+    done on literals or variables. 
+</p>
+<pre><code class="lang-js">let x, y;
+x = 5;
+y = 6;
+console.log(x * y, x + y, x - y, x / y); 
+// 30, 11, -1, 0.8333333333333334
+</code></pre>
+
+<p>
+    Lines that used variables and operators are called expressions 
+    and, they compute to an evaluation. 
+</p>
+
+<p>
+    Another basic operator is the assignment operator <code>=</code>, 
+    which assigns a value to a declared variable. The traditional 
+    equals sign that is used to check if both sides are equal is 
+    done with two equal signs in js: <code>x == y</code>. 
+</p>
+
+
+<h2>
+    Keywords
+</h2>
+<p>
+    Keywords are the controls to give the computer to have it perform 
+    tasks. 
+</p>
+<p>
+    A basic example of a keyword is <code class="lang-js">let</code>, 
+    which is used to declare a new variable. <code class="lang-js">var</code>,
+    yet similar, is not the same command. 
+</p>
+<pre><code class="lang-js">let x = 10; 
+var y = 5; 
+</code></pre>
+
+<h2>
+    Comments
+</h2>
+
+<p>
+    Comments are key to writing good code. It explains why the 
+    code does what it does and how. These comments will 
+    be ignored by the computer and will not be executed. 
+</p>
+
+
+<p>
+    Comments either use two forward slashes <code>//</code> or 
+    are put between <code>/*</code> and <code>*/</code>. 
+</p>
+<pre><code class="lang-js">// Define message
+let message = "My hair is red..."
+
+/* message has value "My hair is red..."  
+These comments can be multiline
+*/
+</code></pre>
+
+
+<h2>
+    Names
+</h2>
+<p>
+    Variables have identifiers, or names, that let it be accessed at a later
+    time. Names can contain: 
+    <ul>
+        <li>
+            letters and numbers <code>[a-zA-Z0-9]</code>
+            <ul>
+                <li>
+                    <b>Cannot</b> start with a number (like <code>1message</code>)
+                </li>
+            </ul>
+        </li>
+        <li>
+            Dollar Sign <code>$</code>
+        </li>
+        <li>
+            Underscore <code>_</code>
+        </li>
+        <li>
+            Camel Case (<code>firstName, lastName, creditCard, debitCard</code>)
+        </li>
+    </ul>
+</p>

@@ -107,5 +107,45 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult Output()
+    {   
+        ViewData["creationDate"] = "Mon Jan  9 16:06:14 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Output";
+        return View();
+    }
+    
+    public IActionResult Statements()
+    {   
+        ViewData["creationDate"] = "Tue Jan 10 02:42:13 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Statements";
+        return View();
+    }
+    
+    public IActionResult Syntax()
+    {   
+        ViewData["creationDate"] = "Tue Jan 10 03:24:55 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Syntax";
+        return View();
+    }
+    
+    public IActionResult Comments()
+    {   
+        ViewData["creationDate"] = "Tue Jan 10 04:16:15 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Comments";
+        return View();
+    }
+    
+    public IActionResult Variables()
+    {   
+        ViewData["creationDate"] = "Tue Jan 10 04:30:39 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Variables";
+        return View();
+    }
+    
     }
 }
