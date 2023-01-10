@@ -16,8 +16,13 @@
 <h2>
     innerHTML
 </h2>
+<p>
+    First use <code class="lang-js">document.getElementById</code> to capture 
+    the element to modify. After that, change the innerHTML of the 
+    element to <code>11</code> with <code>.innerHTML</code>:
+</p>
 
-<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+<pre><code class=" lang-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;body&gt;
 
@@ -32,9 +37,96 @@
 
     &lt;!-- Set bestP element to 11 (5 + 6)  --&gt;
     &lt;script&gt;
-        document.getElementById("bestP").innerHTML = 5 + 6;
+        <p>document.getElementById("bestP").innerHTML = 5 + 6;</p>
     &lt;/script&gt;
 
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+
+<h2>
+    document.write()
+</h2>
+<p>
+    Nice for quick testing. User needs to be careful to 
+    to overwrite the document. The write method 
+    adds something to the document, and if the HTML is already loaded and 
+    write is used, it will delete the page and overwrite it. 
+</p>
+
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;body&gt;
+
+    &lt;h1&gt;
+        My First Web Page
+    &lt;/h1&gt;
+    &lt;p&gt;
+        My first paragraph.
+    &lt;/p&gt;
+
+     &lt;!-- Write 5 + 6 to the document  --&gt;
+    &lt;script&gt;
+        document.write(5 + 6);
+    &lt;/script&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<h2>
+    window.alert()
+</h2>
+
+<p>
+    Window can be skipped in <code>window.alert()</code>. It takes in data 
+    and alerts it to the user with a pop-up message on the browser. 
+</p>
+
+<img style="max-width: 80vw" src="/lib/Resources/outputJs.png">
+
+<p>
+    Simply put the function in a button or script tag and see the pop-up with 
+    the message. 
+</p>
+
+    <pre><code class="lang-html">&lt;script&gt;
+    document.write(5 + 6);
+&lt;/script&gt;
+
+&lt;button onclick="window.print()">Print this page&lt;/button&gt;
+</code></pre>
+
+<p>
+    <button class="btn btn-dark" onclick="alert('Alert Example Text')">Alert Example</button>
+</p>
+
+<h2>
+    console.log
+</h2>
+<p>
+    A popular choice to print is to use <code>console.log()</code> becuase it is easy 
+    to use and remember. It is super useful for debugging a website or logging a stack trace 
+    to a local terminal. 
+</p>
+<pre><code class="lang-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;body&gt;
+
+        &lt;script&gt;
+            console.log("11 is not 7");
+        &lt;/script&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2>
+    Print Pages
+</h2>
+<p>
+    To physically print an element, use <code class="lang-js">window.print()</code>. Besides that, 
+    there is no other <i>print</i> function in javaScript. 
+</p>
+
+<button class="btn btn-warning text-dark" onclick="window.print()">Print this page</button>
