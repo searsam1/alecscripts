@@ -1,0 +1,197 @@
+
+
+@{
+    string[] BitwiseOperators = @"&	AND
+|	OR
+~	NOT
+^	XOR
+<<	left shift
+>>	right shift
+>>>	unsigned right shift".Split("\n");
+    string[] TypeOperators = @"typeof	Returns the type of a variable
+instanceof	Returns true if an object is an instance of an object type".Split("\n");
+    
+    string[] ops = @"=	x = y	x = y
++=	x += y	x = x + y
+-=	x -= y	x = x - y
+*=	x *= y	x = x * y
+/=	x /= y	x = x / y
+%=	x %= y	x = x % y
+**=	x **= y	x = x ** y".Split("\n");
+
+ string[] LogicalOperators = @"&&	logical and
+||	logical or
+!	logical not".Split("\n");
+
+    string[] ComparisonOperators = @"==	equal to
+===	equal value and equal type
+!=	not equal
+!==	not equal value or not equal type
+>	greater than
+<	less than
+>=	greater than or equal to
+<=	less than or equal to
+?	ternary operator".Split("\n");
+}
+
+
+<p>
+    Operators are used when something needs to be done 
+    to two operands (variables/literals). 
+    The most basic is the assignment operator <code>=</code>, 
+    being used to assign a value to a variable. 
+</p>
+
+<pre><code class="lang-js">let x = 22;
+let y = 222; 
+let z = 2222;
+</code></pre>
+
+<h2>
+    Using arithmetic (math) operators
+</h2>
+<p>
+    JavaScript comes with basic math operators like addition and subtraction, more 
+    complex operators like exponentiation, and even more complex functions in 
+    the Math module. 
+</p>
+
+<p>
+    The arithmetic operators include:
+    <ul>
+        <li>
+            <code class="lang-js">+</code> Addition <code class="lang-js">+</code>
+        </li>
+        <li>
+            <code class="lang-js">-</code> subtraction <code class="lang-js">-</code> 
+        </li>
+        <li>
+            <code class="lang-js">*</code> Multiplication <code class="lang-js">*</code> 
+        </li>
+        <li>
+            <code class="lang-js">/</code> Division <code class="lang-js">/</code>
+        </li>
+        <li>
+            <code class="lang-js">**</code> Exponentiation <code><i>(ES2016)</i></code> <code class="lang-js">**</code>
+        </li>
+        <li>
+            <code class="lang-js">++</code> Increment(add) by 1 <code class="lang-js">++</code>
+        </li>
+        <li>
+            <code class="lang-js">--</code> Decrement(subtract) by 1 <code class="lang-js">--</code>
+        </li>
+    </ul>
+</p>
+
+<pre><code class="lang-js">let x = 3;
+let y = 2; 
+
+console.log(x * y);
+// 6
+
+console.log(x + y);
+// 5
+
+x++;
+console.log(x);
+// 4
+</code></pre>
+
+<p>
+    Increment by 1 (<code>++</code>) is the same thing as <code>x = x + 5</code>, or 
+    whatever operator is being used (like <code>+=, -=, *=, etc.</code>).
+</p>
+
+<h2> Using assignment operators</h2>
+<p>
+    Assignment operators work the same as increment: they add the value to the 
+    variable and set the variable to that new value.  
+</p>
+
+<ul>
+    @foreach (string line in ops)
+    {
+        <li>
+            <code class="lang-js">@line.Split("\t")[0]</code>
+        </li>
+    }
+</ul>
+
+<pre><code class="lang-js">let x = 3;
+x++; // x = x + 1
+x--; // x = x - 1
+x += 3; // x = x + 3
+x -= 3; // x = x - 3
+</code></pre>
+
+<h2>
+    Adding Strings
+</h2>
+
+<p>
+    The plus <code>+</code> operator is also used to combine 
+    strings (concatenate). It will join the strings together 
+    in the order they are added. 
+</p>
+
+
+<pre><code class="lang-js">let text1 = "Alec";
+let text2 = "Scripts";
+let text3 = text1 + " " + text2;
+
+console.log(text3);
+// Alec Scripts
+</code></pre>
+
+<p>
+    The plus equals operator <code>+=</code> also works on strings:
+</p>
+
+<pre><code class="lang-js">let text1 = "It is";
+text1 += " coding time";
+
+console.log(text1);
+// It is coding time
+</code></pre>
+
+<h2>
+    Comparison Operators
+</h2>
+
+<ul>
+    @foreach (string line in ComparisonOperators)
+    {
+        <li><code>@line.Split("\t")[0]</code> @line.Split("\t")[1]</li>
+    }
+</ul>
+
+
+<h2>
+    Logical Operators
+</h2>
+<ul>
+    @foreach (string line in LogicalOperators)
+    {
+        <li><code>@line.Split("\t")[0]</code> @line.Split("\t")[1]</li>
+    }
+</ul>
+
+<h2>
+    Type Operators
+</h2>
+<ul>
+    @foreach (string line in TypeOperators)
+    {
+        <li><code>@line.Split("\t")[0]</code> @line.Split("\t")[1]</li>
+    }
+</ul>
+
+<h2>
+    Bitwise Operators
+</h2>
+<ul>
+    @foreach (string line in BitwiseOperators)
+    {
+        <li><code>@line.Split("\t")[0]</code> @line.Split("\t")[1]</li>
+    }
+</ul>
