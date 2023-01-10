@@ -1,0 +1,90 @@
+
+@{
+    string[] keywords = @"abstract	arguments	await*	boolean
+break	byte	case	catch
+char	class*	const	continue
+debugger	default	delete	do
+double	else	enum*	eval
+export*	extends*	false	final
+finally	float	for	function
+goto	if	implements	import*
+in	instanceof	int	interface
+let*	long	native	new
+null	package	private	protected
+public	return	short	static
+super*	switch	synchronized	this
+throw	throws	transient	true
+try	typeof	var	void
+volatile	while	with	yield".Split("\n");
+}
+
+<p>
+    Programs work by compiling human language into a machine readable code 
+    like machine code. JavaScript uses bytecode, which can then be interpreted 
+    as machine code by the local architecture. There is an interpreter that
+    turns the bytecode into the correct machine code. 
+</p>
+
+<h2>
+    Statements
+</h2>
+<p>
+    A program is comprised of statements: instructions read by the computer 
+    to perform a task. It is important to know that 
+    these statements are executed one by one in the same 
+    order they are written. 
+</p>
+<pre><code class="lang-js">console.log("hello"); // Statement
+console.log("hello World"); // Statement
+</code></pre>
+
+<h2>
+    Semicolons ;
+</h2>
+
+<p>
+    Semicolons <code>;</code> mark the end of a statement, but they 
+    are not required like <code>C++</code> or <code>C#</code> (but are 
+    recommended). 
+</p>
+<pre><code class="lang-js">console.log("hello"); // Statement with ;
+console.log("hello") // Statement with no ;
+</code></pre>
+
+<h2>
+    Code blocks
+</h2>
+<p>
+    Blocks of code go inside curly brackets <code>{ }</code>, like a function 
+    body, for example. A code block is a group of statements that are executed 
+    together. 
+</p>
+<pre><code class="lang-js">function add(a, b){
+    console.log(`"a is ${a}"`); 
+    console.log(`"b is ${b}"`); 
+    return a + b;
+}
+</code></pre>
+
+<h2>
+    Keywords
+</h2>
+<p>
+    Javascript has predefined keyword that perform certain tasks. 
+    One of the most common is <code>let</code>, which is used to assign a value  
+    to a variable. 
+</p>
+
+<div class="container">
+    <ul>
+        @foreach (string line in keywords)
+        {
+            <li>
+                @foreach (string keyword in @line.Split("\t"))
+                {
+                    <code class="lang-js">@keyword</code>
+                }
+            </li>
+        }
+    </ul>
+</div>
