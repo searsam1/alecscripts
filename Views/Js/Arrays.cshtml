@@ -1,0 +1,177 @@
+
+@{
+    string [] items = @"concat()	Joins arrays and returns an array with the joined arrays
+constructor	Returns the function that created the Array object's prototype
+copyWithin()	Copies array elements within the array, to and from specified positions
+entries()	Returns a key/value pair Array Iteration Object
+every()	Checks if every element in an array pass a test
+fill()	Fill the elements in an array with a static value
+filter()	Creates a new array with every element in an array that pass a test
+find()	Returns the value of the first element in an array that pass a test
+findIndex()	Returns the index of the first element in an array that pass a test
+forEach()	Calls a function for each array element
+from()	Creates an array from an object
+includes()	Check if an array contains the specified element
+indexOf()	Search the array for an element and returns its position
+isArray()	Checks whether an object is an array
+join()	Joins all elements of an array into a string
+keys()	Returns a Array Iteration Object, containing the keys of the original array
+lastIndexOf()	Search the array for an element, starting at the end, and returns its position
+length	Sets or returns the number of elements in an array
+map()	Creates a new array with the result of calling a function for each array element
+pop()	Removes the last element of an array, and returns that element
+prototype	Allows you to add properties and methods to an Array object
+push()	Adds new elements to the end of an array, and returns the new length
+reduce()	Reduce the values of an array to a single value (going left-to-right)
+reduceRight()	Reduce the values of an array to a single value (going right-to-left)
+reverse()	Reverses the order of the elements in an array
+shift()	Removes the first element of an array, and returns that element
+slice()	Selects a part of an array, and returns the new array
+some()	Checks if any of the elements in an array pass a test
+sort()	Sorts the elements of an array
+splice()	Adds/Removes elements from an array
+toString()	Converts an array to a string, and returns the result
+unshift()	Adds new elements to the beginning of an array, and returns the new length
+valueOf()	Returns the primitive value of an array".Split("\n");
+}
+
+<p>
+    Arrays are containers that hold one or more objects. 
+</p>
+<pre><code class="lang-js">const drinks = ["Water", "Cola", "Juggernog"];</code></pre>
+
+<p>
+    Arrays are really useful when there are lots of objects, like 3000 versus 3 
+    here. 
+    Having to declare 3000 variables takes a lot longer than creating an 
+    array. 
+</p>
+
+<h2>
+    Creating arrays
+</h2>
+<pre><code class="lang-js">const &lt;arrayName&gt; = [&lt;objects&gt;];</code></pre>
+<p>
+    The const keyword is usually used for creating a new array. Spaces and line
+    breaks also do not matter. Objects are often separated by a newline
+    for code readability. 
+</p>
+<pre><code class="lang-js">const drinks = [
+    "Water", 
+    "Cola", 
+    "Juggernog"
+    ];</code></pre>
+
+<p>
+    The array can also be created first and the elements added second. 
+</p>
+<pre><code class="lang-js">const drinks = [];
+    drinks[0] = "Water";
+    drinks[1] = "Cola";
+    drinks[2] = "Juggernog";</code></pre>
+
+<h2>
+    Access element
+</h2>
+<p>
+    To get the value of an index of an array, use square brackets <code>[]</code>
+    and the index, for example <code>drinks[0];</code> to get the first drink. 
+</p>
+
+<p>
+    To go through each element, loop over the length of the array using a for loop. 
+</p>
+<pre><code class="lang-js">const drinks = ["Water", "Cola", "Juggernog"];
+for (let i=0; i&lt;drinks.length; i++){
+        console.log(drinks[i]);
+    }
+/*
+Water
+Cola
+Juggernog
+*/ 
+</code></pre>
+
+<p>
+    Notice, the example above used the array.length attribute, 
+    which returns how many elements are inside the array.
+</p>
+
+<p>
+    Another way is to for-each loop over the array using the <code>of</code> 
+    keyword: 
+</p>
+
+<pre><code class="lang-js">const drinks = ["Water", "Cola", "Juggernog"];
+for (let drink of drinks){
+        console.log(drink);
+    }
+/*
+Water
+Cola
+Juggernog
+*/ 
+</code></pre>
+
+<h2>
+    Adding to array
+</h2>
+<p>
+    To add elements to an array, use the <code>array.push()</code> method. 
+    The length of the array can also be indexed and used as a new spot in the array. 
+</p>
+
+<pre><code class="lang-js">const drinks = ["Water", "Cola", "Juggernog"];
+drinks.push("Lemonade")
+
+// use length property
+drinks[drinks.length] = "Strawberry Milkshake"
+
+console.log(drinks);
+// ["Water", "Cola", 
+//  "Juggernog", "Lemonade",
+//  "Strawberry Milkshake"]
+</code></pre>
+
+<h2>
+    Using <code class="lang-js">new Array</code>
+</h2>
+
+<p>
+    Use the <code class="lang-js">new Array(&lt;array-length&gt;)</code> syntax to create an 
+    array with <code>&lt;array-length&gt;</code> number of undefined values. 
+</p>
+
+<pre><code class="lang-js">const drinks = new Array(500);
+console.log(drinks); // [] (500)
+console.log(drinks.length); // 500
+</code></pre>
+
+<p>
+    This is not the same as: <code class="lang-js">const drinks = [500]</code>. That is 
+    an array with the first value being 500, the first example being an 
+    empty array with 500 placeholders. 
+</p>
+
+<h2>
+    Get Array type from variable
+</h2>
+<p>
+    To check if a variable is an array use the <code class="lang-js">Array.isArray(&lt;arr&gt;)</code> syntax. 
+    The <code class="lang-js">instanceof</code> operator can also be used. 
+</p>
+
+<pre><code class="lang-js">const numbers = [1, 2, 3];
+console.log(Array.isArray(numbers))
+// true
+
+const x = 5; 
+console.log(x instanceof Array);
+// false
+</code></pre>
+
+<p>Learn More:</p>
+<figcaption>@@ <a href="https://www.w3schools.com/js/js_arrays.asp">w3schools.com</a></figcaption>
+<figcaption>@@ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">MDN web docs</a></figcaption>
+<figcaption>@@ <a href="https://www.programiz.com/javascript/array">programiz.com</a></figcaption>
+<figcaption>@@ <a href="https://quickref.me/javascript#javascript-arrays">quickrefs/javascript-arrays</a></figcaption>
