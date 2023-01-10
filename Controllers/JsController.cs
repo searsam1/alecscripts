@@ -155,5 +155,13 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult ArrayReference()
+    {   
+        ViewData["creationDate"] = "Tue Jan 10 10:01:40 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Array Reference";
+        return View();
+    }
+    
     }
 }

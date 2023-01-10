@@ -1,0 +1,60 @@
+
+<h2>
+    Array Methods and Properties
+</h2>
+
+@{
+    string [] items = @"concat()	Combines arrays
+constructor	Returns function that created Array object's prototype
+copyWithin()	Copies array elements
+entries()	Returns key/value pair Array Iteration Object
+every()	Checks if every element passes a test
+fill()	Fill the elements of an array with a static value
+filter()	Create a new array where every element passes a test
+find()	Return first element's value in an array that passes a test
+findIndex()	Return first element's index that passes a test
+forEach()	For each over an Array
+from()	Creates array from object
+includes()	Check if array has an element
+indexOf()	Search array for element and returns index
+isArray()	Checks if an object is an array
+join()	Joins all elements of array into a string
+keys()	Return the keys of the original array
+lastIndexOf()	Search for element starting from the back
+length	Return size of array
+map()	Apply function to every array element 
+pop()	Remove & Capture last element of array 
+prototype	Allows properties and methods to be added to an Array object
+push()	append new elements, return new length
+reduce()	Combine all values into one (left to right)
+reduceRight()	Combine all values into one (right to left)
+reverse()	Reverse order or array
+shift()	Same as pop, but with the last element 
+slice()	return a section of the array 
+some()	Check if at least one element passes a tet
+sort()	Sort array
+splice()	add / remove array elements 
+toString()	Convert array to string, return as string 
+unshift()	Prepend elements to the array
+valueOf()	Get primitive array value".Split("\n");
+}
+<p>
+<ul style="list-style:none;">
+    @foreach (string item in items)
+    {
+    <li>
+        <code class="lang-js">@item.Split("\t")[0]</code>
+    </li>
+    <ul style="list-style:none;">
+        <li class="mb-4">
+            @item.Split("\t")[1]
+        </li>
+    </ul>
+    
+    }
+</ul>
+</p>
+
+<script>
+    document.querySelector("h1").style.display = "none";
+</script>
