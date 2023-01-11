@@ -3,3 +3,145 @@
     Functions are blocks of code that can be re-run to save on development time.
     They must be called (invoked) to do anything after they are defined. 
 </p>
+
+<pre><code class="lang-js">// Define function `multiply` that returns a * b
+function multiply(a, b) {
+  return a * b;
+}
+// call () multiply
+multiply(2,3)
+// 6
+</code></pre>
+
+<h2>
+    Function Syntax
+</h2>
+<pre><code class="lang-js">function &lt;name&gt;(&lt;arg&gt;) {
+  // ...
+}</code></pre>
+
+<p>
+    Functions use the <code>function</code> keyword to define a function, followed 
+    by a name, parenthesis <code>()</code>, and a code block in curly braces <code>{}</code>.
+</p>
+
+<pre><code class="lang-js">// Define function `multiply` that returns a * b
+function multiply(a, b) {
+  return a * b;
+}
+</code></pre>
+
+<p>
+    The function above has a name <code>multiply</code> and two arguments, <code>a</code>
+    and <code>b</code>. The function body returns <code>a</code> multiplied by <code>b</code>. 
+</p>
+
+<h2>
+    Function scope
+</h2>
+<p>
+    Variables created inside the function will only 
+    be available in the main function scope. Trying to use it 
+    outside the function will result in a reference error. Scope is 
+    where variables live and can be accessed. 
+</p>
+
+<pre style="background-color: rgb(255,0,0,.1);"><code class=" lang-js">// Define function `multiply` that returns a * b
+function multiply(a, b) {
+  let res = a * b; 
+  return res;
+  
+}
+console.log(res)
+// ReferenceError: Can't find variable: res
+</code></pre>
+
+<h2>
+    Calling functions
+</h2>
+
+<p>
+    Functions must be invoked or called with the <code>()</code> operator. 
+    If a function is never called, it will never execute or run. Place the <code>()</code>
+    behind the function name with its arguments inside to "activate" the function. 
+</p>
+
+<p>
+    Functions can be manually called or called by an event, a button click, or other 
+    events. 
+</p>
+
+
+<pre><code class="lang-js">// Define function `multiply` that returns a * b
+function multiply(a, b) {
+  return a * b;
+}
+
+// doesn't do anything until called 
+multiply(3, 3)
+</code></pre>
+
+<h2>
+    Return value
+</h2>
+<p>
+    Once the function is called it either has side effects, returns a value, or both. 
+    Side effects are effects that come from calling a function and it prints 
+    out a value, changes a value, or does something besides acting like 
+    a mathematical function. 
+</p>
+
+<p>
+    Returning values is done with the <code>return</code> keyword, and the function 
+    terminates after it hits that word. That value can then be stored in a variable 
+    and used later. 
+</p>
+
+<pre><code class="lang-js">// Define function `multiply` that returns a * b
+function multiply(a, b) {
+  return a * b;
+}
+
+// store return value in res variable 
+let res = multiply(3, 3);
+console.log(res);
+// 9
+</code></pre>
+<p>
+    Since javaScript is dynamically typed, the function does not have 
+    to specify the return type of the variable (like in C++) . 
+</p>
+
+<h2>
+    Arrow Functions
+</h2>
+<p>
+    Arrow functions are shorthand functions that have a different syntax. 
+</p>
+<pre><code class="lang-js">let multiply = (a, b) => a * b;
+
+multiply(2,3)
+// 6
+</code></pre>
+
+<p>
+    If the function has one statement that needs to be returned, 
+    the return keyword can be skipped along with the brackets.
+</p>
+
+<pre><code class="lang-js">helloWorld = () => "Hello World!";
+
+helloWorld(); 
+// Hello World!
+</code></pre>
+
+<p>
+    If there is only one parameter, the parenthesis can be skipped as well. 
+</p>
+
+<pre><code class="lang-js"> // no parenthesis () around name
+helloWorld = name => "Hello " + name + "!";
+
+helloWorld("John"); 
+// Hello John!
+</code></pre>
