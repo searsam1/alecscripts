@@ -1,0 +1,153 @@
+
+<p>
+    Objects have <b>properties</b> and <b>methods</b>. Properties are attributes 
+    or values of the object, and methods are actions that belong to it. 
+    For example, crayons have a color which is an attribute, and crayons can color,
+    which is an action. 
+</p>
+
+<p>
+    Every crayon has a color property, but not every crayon has the same color, 
+    obviously. The color of a specific crayon is the value of the property (for
+    example, a <span class="text-primary">blue</span> crayon). 
+</p>
+
+<center>
+    <img style="max-width: 25%;" src="/lib/Resources/pen-307492.svg" />
+</center>
+
+<h2>
+    Syntax
+</h2>
+<p>
+    Objects are assigned values like variables. What makes objects 
+    different are the key-value pairs they contain. Separate key-value 
+    pairs with a colon <code>:</code> and separate different pairs 
+    with commas. 
+</p>
+
+<pre><code class="lang-js">const car = {
+    type : "Maserati", 
+    model : "Levante", 
+    color : "white"
+};
+</code></pre>
+
+<p>
+    These properties can be accessed with dot <code>.</code> notation or 
+    with the <code>[]</code> operator.
+</p>
+<ul>
+    <li>
+        <code class="lang-js">code.type</code> || 
+        <code class="lang-js">code["type"]</code>
+    </li>
+    <li>
+        <code class="lang-js">code.model</code> ||
+        <code class="lang-js">code["model"]</code>
+    </li>
+    <li>
+        <code class="lang-js">code.color</code> || 
+        <code class="lang-js">code["color"]</code>
+    </li>
+</ul>
+
+<h2>
+    Object methods
+</h2>
+
+<p>
+    Object methods are actions that live inside an object and return a function. 
+</p>
+
+<pre><code class="lang-js">const car = {
+    type : "Maserati", 
+    model : "Levante", 
+    color : "white",
+    driving : false,
+    drive : function () {
+        this.driving = true; 
+    }
+};
+
+console.log(car.driving)
+// false
+
+car.drive()
+
+console.log(car.driving)
+// true
+</code></pre>
+
+<h3>
+    <code class="lang-js">this</code>
+</h3>
+<p>
+    In the example above, <code class="lang-js">this.driving</code> is used 
+    to access the car's driving variable. Without using <code>this</code> it would 
+    have created a local variable inside the function and used that instead 
+    of the one that belongs to the parent, car. Depending on where and how it is 
+    used, <code>this</code> will have different meanings. 
+</p>
+
+<h2>
+    Static methods
+</h2>
+
+<ul style="list-style: none;">
+    <li>
+        <code class="lang-js">Object.assign()</code>
+    </li>
+    <ul style="list-style: none;" class="mt-3 mb-4">
+        <li>
+            Copies the properties of a source object into a target object. 
+        </li>
+    </ul>
+
+    <li>
+        <code class="lang-js">Object.freeze()</code>
+    </li>
+    <ul style="list-style: none;" class="mt-3 mb-4">
+        <li>
+            Freeze an object making it read-only to other code. 
+        </li>
+    </ul>
+    
+    <li>
+        <code class="lang-js">Object.keys()</code>
+    </li>
+    <ul style="list-style: none;" class="mt-3 mb-4">
+        <li>
+            Return the keys of an object packaged in an array. 
+        </li>
+    </ul>
+    
+    <li>
+        <code class="lang-js">Object.values()</code>
+    </li>
+    <ul style="list-style: none;" class="mt-3 mb-4">
+        <li>
+            Return the values of an object packaged in an array. 
+        </li>
+    </ul>
+
+    <li>
+        <code class="lang-js">Object.entries()</code>
+    </li>
+    <ul style="list-style: none;" class="mt-3 mb-4">
+        <li>
+            Return key-value pairs of an object in array format.
+        </li>
+    </ul>
+    
+    <li>
+        <code class="lang-js">Object.seal()</code>
+    </li>
+    <ul style="list-style: none;" class="mt-3 mb-4">
+        <li>
+            Seal an object: protect its properties from 
+            being deleted. 
+        </li>
+    </ul>
+</ul>
+<figcaption>See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#static_methods">more</a></figcaption>
