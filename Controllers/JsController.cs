@@ -179,5 +179,13 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult Functions()
+    {   
+        ViewData["creationDate"] = "Tue Jan 10 23:49:58 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Functions";
+        return View();
+    }
+    
     }
 }
