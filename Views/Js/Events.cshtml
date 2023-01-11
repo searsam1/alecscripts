@@ -1,0 +1,131 @@
+
+<p>
+    Events happen when things change on a webpage. When something is clicked, a 
+    state is changed and that is an event. Javascript can react to these 
+    events and perform an action.  
+</p>
+
+<h2>
+    Common Events
+</h2>
+
+<ul>
+    <li>
+        <code>onchange</code>
+    </li>
+    <li>
+        <code>onclick</code>
+    </li>
+    <li>
+        <code>onmouseover</code>
+    </li>
+    <li>
+        <code>onmouseout</code>
+    </li>
+    <li>
+        <code>onkeydown</code>
+    </li>
+    <li>
+        <code>onload</code>
+    </li>
+</ul>
+
+<p>
+    One common event is the <code>onclick</code> event, which is associated with 
+    buttons.  
+</p>
+
+<pre><code class="lang-html">&lt;button class="btn btn-dark" onclick=" const currentDate = new Date();
+    alert(currentDate.toTimeString())"> The time is?&lt;/button>
+</code></pre>
+<button class="btn btn-dark" onclick=" const currentDate = new Date();
+    alert(currentDate.toTimeString())"> The time is?</button>
+
+<p>
+    This button shows the current time by calling <code>alert</code> on the button 
+    click event.
+</p>
+
+<h2>
+    Event listeners
+</h2>
+
+<p>
+    listeners can be assigned to an element or group of tags, like 
+    applying a click feature to a header to make it yellow and copy 
+    it to the clipboard (try it). 
+</p>
+
+<p>
+    A simpler example is to add an event handler to an element and 
+    make it red on click. 
+</p>
+
+<p>
+    Use the <code>addEventListener</code> method to add a function when 
+    an event happens on an object. 
+</p>
+
+<pre><code class="lang-js">let demo = document.querySelector("#DEMO")
+
+function f(){
+    this.style.backgroundColor = 
+    this.style.backgroundColor == "red" ? "black" : "red" 
+}
+
+demo.addEventListener("click", f, false)
+</code></pre>
+
+<p><button id="DEMO" class="btn btn-dark">
+DEMO
+</button></p>
+
+<p>
+    This DEMO button will turn red
+    when clicked because it now how a listener that will react when a click 
+    event occurs. 
+</p>
+
+<script>
+    let demo = document.querySelector("#DEMO")
+
+function f(){
+    this.style.backgroundColor = this.style.backgroundColor == "red" ? "black" : "red" 
+}
+
+demo.addEventListener("click", f, false)
+</script>
+
+<p>
+    The <code>mouseover</code> event controls what happens when the mouse 
+    hovers over the element. In the event listener, use <code>addEventListener("mouseover", ...)</code>
+    instead of <code>click</code> to make the button red on hover instead of on click. 
+</p>
+
+<pre><code class="lang-js">let demo = document.querySelector("#DEMO2")
+
+function f(){
+    this.style.backgroundColor = 
+    this.style.backgroundColor == "red" ? "black" : "red" 
+}
+
+demo.addEventListener("mouseover", f, false)
+</code></pre>
+
+
+<p><button id="DEMO2" class="btn btn-dark">
+Hover over me
+</button></p>
+
+<script>
+    let demo2 = document.querySelector("#DEMO2")
+
+function f(){
+    this.style.backgroundColor = 
+    this.style.backgroundColor == "red" ? "black" : "red" 
+}
+
+demo2.addEventListener("mouseover", f, false)
+demo2.addEventListener("mouseout", f, false)
+
+</script>
