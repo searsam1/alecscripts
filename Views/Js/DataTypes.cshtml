@@ -1,0 +1,66 @@
+@{
+    string[] DataTypes = @"1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object".Split("\n");
+}
+
+<p>
+    Data types are how variables are defined. Numbers 
+    will act differently than strings (text) based variables. There are 
+    a total of eight data types in javaScript:
+</p>
+
+<ul>
+    @foreach (string DType in DataTypes)
+    {
+        <li>
+            @DType.Split(" ")[1]
+        </li>
+    }
+</ul>
+
+<h2>
+    Dynamic Typing
+</h2>
+<p>
+    Variables in javascript can take on different data types in its 
+    lifetime. It can go from a number to a string and possibly back to a 
+    number. The types still have to be compatible with each other, or unwanted 
+    behavior might occur. 
+</p>
+
+<p>
+    Still, javaScript has no problem with a variable starting as 
+    a string and ending as a number or boolean. This is referred to 
+    as <b>dynamic typing</b>. 
+</p>
+
+
+
+<pre><code class="lang-js">let x;       // declare x with let
+x = 5;       // assign x to 5 (a number)
+x = "PickleMcDickle";  // Change type of x to string 
+// and value to PickleMcDickle </code></pre>
+
+<p>
+    A palindrome is a word or number the same forwards and backwards (like racecar). 
+    It demonstrates the ability JS has to switch between the data types. 
+</p>
+
+<pre><code class="lang-js">function reverse(n){
+    // convert n to string -> array -> string
+    return [...n.toString()].reverse().join("")
+}
+
+function palindrome(n){
+    let check = reverse(n); 
+    // check if n is the same forwards as backwards
+    return check == n; 
+}
+console.log(palindrome(1541))
+// false</code></pre>
