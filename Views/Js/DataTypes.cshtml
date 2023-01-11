@@ -64,3 +64,184 @@ function palindrome(n){
 }
 console.log(palindrome(1541))
 // false</code></pre>
+
+<h2>
+    Strings
+</h2>
+<p>
+    A string is a text-based variable with different characters "strung"
+    together, like <code>"Apples are great."</code>. Strings are enclosed in 
+    quotes, double or single, and have a length property. 
+</p>
+
+<pre><code class="lang-js">let band1 = "Led Zeppelin"
+// single '' or double "" quotes
+let band2 = 'Cream'
+
+console.log(band2.length)
+// 5
+</code></pre>
+
+<p>
+    Quotes can be used inside a string but they must 
+    be different from the outside quotes:
+</p>
+
+
+<pre><code class="lang-js">let band1 = "Led's Zeppelin" // led's has a single quote</code></pre>
+
+<h2>
+    Numbers
+</h2>
+<p>
+    Numbers are stored as floating point numbers (decimals). They can be written 
+    with or without a decimal. 
+</p>
+
+<pre><code class="lang-js">// With decimal:
+let xWithDecimal = 69.00;
+
+// Without decimal:
+let xWithoutDecimal = 69;
+
+console.log(xWithDecimal + " " + xWithoutDecimal)
+// 69 69
+</code></pre>
+
+<h3>
+    Scientific Notation
+</h3>
+
+<p>
+    Bigger numbers can be formatted in scientific notation:
+</p>
+
+<pre><code class="lang-js">let a = 199e5;    // 19900000
+let b = 199e-5;   // 0.00199
+
+console.log(a, b)
+// 19900000
+// 0.00199
+</code></pre>
+
+<h2>
+    BigInt
+</h2>
+<p>
+    A new data type introduced in 2020 for numbers to big for the normal 
+    64 bit floating-point representation. 
+</p>
+
+
+<pre><code class="lang-js">let x = BigInt("31415926535897932384626433832795028841971693993");
+x += 1n; 
+// 31415926535897932384626433832795028841971693994n
+</code></pre>
+
+<p>
+    To convert a number to a BigInt, use <code>BigInt()</code> or append an <code>n</code>
+    to the back of the number. 
+</p>
+
+<h2>
+    Booleans
+</h2>
+
+<p>
+    Booleans have true or false values (1 or 0). They are used in control flow 
+    and conditional testing. 
+</p>
+
+
+<pre><code class="lang-js">let x = 10; 
+if (x == 10){
+    console.log(x == 10); 
+    // true [1]
+}
+</code></pre>
+
+<p>
+    Booleans have lowercase values: <code>true</code> and <code>false</code>, as 
+    opposed to python which has title case booleans <code>True</code> and <code>False</code>. 
+</p>
+
+<h2>
+    Arrays
+</h2>
+<p>
+    Arrays are the basic collection type of javaScript. They hold one 
+    or more objects and can hold different data types in the same array. 
+    The const keyword is usually used to define a new array. 
+</p>
+
+<pre><code class="lang-js">const carBrands = ["Ford", "Lexus", "Kia"];</code></pre>
+
+<figcaption>
+    Learn more about  <a asp-action="Arrays" asp-controller="js">Arrays</a>
+</figcaption>
+
+<h2>
+    Objects
+</h2>
+<p>
+    Objects are enclosed in curly braces <code>{}</code> and have key-value pairs 
+    that are separated by colons <code>:</code>. 
+</p>
+
+
+<pre><code class="lang-js">const car = {
+    make: "Ford", 
+    model: "F-150",
+    color: "Jet black",
+    engine: "V6 Ecoboost",
+};
+
+car.make
+// ford
+
+car.model
+// F-150
+</code></pre>
+
+<h2>
+    Undefined
+</h2>
+
+<p>
+    Variables that have no value are undefined. To clear a variable
+    that has a value, set the variable to <code>undefined</code>.
+</p>
+
+<pre><code class="lang-js">let make; // undefined
+
+// give make a value so it can be cleared
+make = "Ford"; 
+
+// clear `make` variable 
+make = undefined
+
+console.log(make)
+// undefined
+
+</code></pre>
+
+<h2>
+    <code class="lang-js">null</code>
+</h2>
+<p>
+    A null value acts falsy and is NOT an identifier for a property of a global
+    object. That is how it differs from <code>undefined</code>: its a lack of 
+    an object to point to with a variable. 
+    
+</p>
+<pre><code class="lang-js">function getVowels(str) {
+  const matches = str.match(/[aeiou]/gi);
+  if (matches === null) {
+    return 0;
+  }
+  return matches.length;
+}
+
+console.log(getVowels('dry'));
+// expected output: 0
+</code></pre>
