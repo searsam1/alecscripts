@@ -36,6 +36,9 @@
       margin-bottom: 25px;
       margin-top: 50px;
   }
+  h2{
+    cursor: copy;
+  }
   
   
   h3 {

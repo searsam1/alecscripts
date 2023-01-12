@@ -3,6 +3,71 @@
     A map is a collection of key-value pairs that remembers its insertion order. 
 </p>
 
+@{
+    string[] meths = @"new Map()	Creates a new Map
+set()	Sets the value for a key in a Map
+get()	Gets the value for a key in a Map
+delete()	Removes a Map element specified by the key
+has()	Returns true if a key exists in a Map
+forEach()	Calls a function for each key/value pair in a Map
+entries()	Returns an iterator with the [key, value] pairs in a Map
+size	Returns the number of elements in a Map".Split("\n");
+}
+
+<h2>
+    Standard Methods
+</h2>
+<figcaption><b>Click</b> on definition to copy</figcaption>
+<ul style="list-style: none;" class="container">
+    @foreach (string method in meths)
+    {
+        string[] arr = method.Split("\t");
+        string left = arr[0], right = arr[1];
+        <li class="standardMethods shadow-sm bg-light rounded-3 p-2 mt-3">
+            <code class="lang-js">@left</code>
+            <ul class="mt-2 shadow-sm rounded-3" style="list-style: none;">
+                <li style="font-size: .9em" class="mb-3">
+                    @right
+                </li>
+            </ul>
+        </li>
+    }
+</ul>
+
+<style>
+    .standardMethods ul:hover{
+        background-color: rgb(255, 250,0,.2);
+
+    }
+    .standardMethods{
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    
+    function copyOnClick(){
+        let copyText = this.textContent;
+        let bg = this.querySelector("ul").style.background
+        copyText = (copyText.trim(" ").trim("\n").trim("\t")) + "\n"
+        navigator.clipboard.writeText(copyText);
+        this.querySelector("ul").style.background = bg == "rgb(255, 250,0,.2)" ? "white" : "rgb(255, 250,0,.2)" 
+    }
+    
+    function standardMeths(){
+        let standms = document.querySelectorAll(".standardMethods")
+        
+        for (let meth of standms){
+            meth.addEventListener("click", copyOnClick, false)
+        }
+
+
+    }
+    standardMeths()
+    
+
+</script>
+
 <h2>
     Creating maps
 </h2>
@@ -119,13 +184,90 @@ console.log(person.has("lastName"))
 </h2>
 
 <p>
-    Looping over maps can be done a few ways. First is by 
-    looping through each pair, next is looping through the keys, and lastly 
-    is looping through the values. A callback can be invoked on each 
-    pair by "foreach-ing" over it. 
+    Iterating is done by applying a function to each value 
+    with <code class="lang-js">Map.forEach()</code>, or it 
+    can be done by looping over a map iterator given by 
+    <code class="lang-js">Map.entries()</code>
 </p>
 
+<h3>
+    <code class="lang-js">Map.forEach</code>
+</h3>
 <p>
-    Use <code>Map.forEach</code> to apply a callback to each key-value pair in a
+    Use <code class="lang-js">Map.forEach</code> to apply a function to each key-value pair in a
     Map:
 </p>
+
+<pre><code class="lang-js">// List all entries
+const person = new Map([
+    ["firstName", "Joe"],
+    ["lastName", "Schmit"],
+    ["Address", "P. Sherman, 42 Wallaby Wa..."]
+])
+person.forEach (function(value, key) {
+    console.log(key + ": " + value)
+})
+</code></pre>
+<p>
+    A <b>predefined</b> function can also be used:
+</p>
+<pre><code class="lang-js">// List all entries
+const person = new Map([
+    ["firstName", "Joe"],
+    ["lastName", "Schmit"],
+    ["Address", "P. Sherman, 42 Wallaby Wa..."]
+])
+
+function printKeyValue(v, k){
+    console.log(k + ": " + v)
+}
+
+// use predefined printKeyValue function
+person.forEach(printKeyValue)
+
+// firstName: Joe
+// lastName: Schmit
+// Address: P. Sherman, 42 Wallaby Wa...
+</code></pre>
+
+<h3>
+    <code class="lang-js">Map.entries</code>
+</h3>
+<p>
+    The <b>entries</b> method returns a map operator:
+</p>
+
+
+<pre><code class="lang-js">// List all entries
+const person = new Map([
+    ["firstName", "Joe"],
+    ["lastName", "Schmit"],
+    ["Address", "P. Sherman, 42 Wallaby Wa..."]
+])
+
+console.log(person.entries())
+// Map Iterator [["firstName", "Joe"], ["lastName", "Schmit"], ["Address", "P. Sherman, 42 Wallaby Wa..."]]
+</code></pre>
+
+<p>
+    This can then be <b>for</b> looped over using the iteration variable as 
+    an array of the key-value pair:
+</p>
+
+<pre><code class="lang-js">// shorter example for simplicity 
+const person = new Map([
+    ["firstName", "Joe"], 
+])
+for (i of person.entries())
+    {
+        k = i[0]; v = i[1]; 
+        console.log(k); 
+        console.log(v);
+    }
+// firstName
+// Joe
+</code></pre>
+
+
+
+
