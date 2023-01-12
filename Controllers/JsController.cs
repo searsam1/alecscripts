@@ -219,5 +219,13 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult Maps()
+    {   
+        ViewData["creationDate"] = "Wed Jan 11 22:38:50 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Maps";
+        return View();
+    }
+    
     }
 }
