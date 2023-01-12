@@ -101,6 +101,17 @@ console.log(car.driving)
     <ul style="list-style: none;" class="mt-3 mb-4">
         <li>
             Copies the properties of a source object into a target object. 
+            <pre><code class="lang-js">const target = { a: 3, b: 4 };
+const source = { b: 7, c: 1 };
+
+const combinedObj = Object.assign(target, source);
+
+console.log(target);
+// {a: 3, b: 7, c: 1}
+
+console.log(combinedObj === target);
+// true
+</code></pre>
         </li>
     </ul>
 
@@ -111,6 +122,18 @@ console.log(car.driving)
         <li>
             Freeze an object making it read-only to other code. 
         </li>
+        <pre><code class="lang-js">const obj = {
+  prop: 99
+};
+
+Object.freeze(obj);
+
+obj.prop = 12;
+// Error in strict mode
+
+console.log(obj.prop);
+// 99
+</code></pre>
     </ul>
     
     <li>
@@ -120,6 +143,15 @@ console.log(car.driving)
         <li>
             Return the keys of an object packaged in an array. 
         </li>
+        <pre><code class="lang-js">const object1 = {
+  k1: 'v1',
+  k2: 'v2',
+  k3: 'v3'
+};
+
+console.log(Object.keys(object1));
+// ["k1", "k2", "k3"]
+</code></pre>
     </ul>
     
     <li>
@@ -129,6 +161,15 @@ console.log(car.driving)
         <li>
             Return the values of an object packaged in an array. 
         </li>
+        <pre><code class="lang-js">const object1 = {
+  k1: 'v1',
+  k2: 'v2',
+  k3: 'v3'
+};
+
+console.log(Object.values(object1));
+// ["v1", "v2", "v3"]
+</code></pre>
     </ul>
 
     <li>
@@ -138,6 +179,15 @@ console.log(car.driving)
         <li>
             Return key-value pairs of an object in array format.
         </li>
+        <pre><code class="lang-js">const object1 = {
+  k1: 'v1',
+  k2: 'v2',
+  k3: 'v3'
+};
+
+console.log(Object.entries(object1));
+// [["k1", "v1"], ["k2", "v2"], ["k3", "v3"]]
+</code></pre>
     </ul>
     
     <li>
@@ -146,8 +196,22 @@ console.log(car.driving)
     <ul style="list-style: none;" class="mt-3 mb-4">
         <li>
             Seal an object: protect its properties from 
-            being deleted. 
+            being deleted. No properties can be added.
         </li>
+        <pre><code class="lang-js">const object1 = {
+  k1: 'v1',
+  k2: 'v2',
+  k3: 'v3'
+};
+
+Object.seal(object1)
+
+// wont work because of seal
+delete object1.k1;
+
+console.log(object1.k1)
+// v1 (delete didn't work)
+</code></pre>
+<figcaption>See more <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#static_methods">static Object methods</a></figcaption>
     </ul>
 </ul>
-<figcaption>See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#static_methods">more</a></figcaption>
