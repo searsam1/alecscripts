@@ -211,138 +211,28 @@ string Version = "V3";
       @* 
       <li><a href="#" class="link-dark rounded">Annually</a></li>
       *@
+      <script src="/js/adjustCol8.js"></script>
       <script>
-         if ($( window ).width() < 768){
-         document.querySelector(".col-8.px-5.my-5").setAttribute("class", "col-8 my-5")
-         }
-      </script>
-            <script>
-         let txt;
-         let navbar = document.querySelector(".collapse.navbar-collapse").querySelector("UL")
-         let controller = '@ViewData["Controller"]'.toLowerCase().replace("c&#x2b;&#x2b;","c++").replace("js","javascript")
-         let t = '@ViewData["title"]'.trim(" ").toLowerCase()
-         for (let li of navbar.querySelectorAll("LI")){
-         txt = li.textContent.trim(" ").toLowerCase();
-         if (txt == controller || txt == t){
-         li.setAttribute("class", "navlinkSelected")
-         }
-         }
-      </script>
-      <script>
-         let h2s = document.querySelectorAll("H2");
-         let h3s = document.querySelectorAll("H3");
-         let sidebar = document.querySelector("#rightSideList");
-         for (let h2 of h2s){
-         if (h2.getAttribute("class") != "ignore"){
-         h2.setAttribute('class', 'header')
-         }
-         }
-         for (let h3 of h3s){
-         if (h3.getAttribute("class") != "ignore"){
-         h3.setAttribute('class', 'header header-3')
-         }
-         }
-         let c = document.querySelector("H1").textContent.split(":")[0]
-         let btns = document.querySelector("#leftSidebar").querySelector("UL").querySelectorAll('button')
-         for (let btn of btns)
-         {
-         if (btn.textContent.trim(" ") == c ){
-         btn.ariaExpanded = "true"
-         btn.parentElement.querySelector("div").setAttribute('class', 'collapse show')
-         }
-         }
-         let title = document.querySelector("H1").textContent.split(":")[1].replace(/ /g, "")
-         let links = document.querySelector("#leftSidebar").querySelector("UL").querySelectorAll("LI");
-         for (let link of links){
-         let res = link.textContent.replace(/ /g, "").replace(/\n/g, "")
-         if(c + title == res){
-            link.querySelector('a').style.background = 'rgba(0, 0, 0, .1) '
-            link.querySelector('a').style.color = 'white'
-            link.querySelector('a').style.fontWeight = '500 '
-            link.querySelector('a').setAttribute('id', "activeLeft")
-            link.querySelector('a').setAttribute('class', "none")
-            link.style.borderRadius = "10px";
-            link.style.background = "#000";
-         }
-         }
-      </script>
-      <script>
-         let headers = document.querySelectorAll(".header")
-         for (let header of headers){
-         let link = document.createElement('A')
-         let li = document.createElement('LI')
-         let text = header.textContent.replace(/[^a-zA-Z]/g,'');
-         link.setAttribute("class", "link-dark")
-         header.setAttribute('id', text)
-         link.setAttribute('href','#' + text)
-         link.textContent = header.textContent
-         li.appendChild(link)
-         sidebar.append(li)
-         if (header.getAttribute('class') == "header header-3"){
-         link.style.paddingLeft = "25px"
-         link.style.borderLeft = "1px double black"
-         }
-         else {
-         link.style.borderLeft = "2px solid black"
-         }
-         if (header.textContent.trim(" ") == "^"){
-         link.style.borderLeft = "none"
-         }
-         }
-      </script>
-      <script>
-         function createToc(){
-         tocList = document.querySelector("#tocList")
-         headers = document.querySelectorAll(".header")
-         for (let header of headers){
-         li = document.createElement("li")
-         a = document.createElement("a")
-         a.setAttribute("href", "#" + header.getAttribute("id"))
-         a.setAttribute("class", "nav-link")
-         a.textContent = header.textContent
-         li.appendChild(a)
-         tocList.appendChild(li)
-         }
-         }
-         createToc();
-      </script>
-      <script>
-         // get list of sidebar links and
-         // page h2's
-         let rightSidebar = $( "#rightSidebar li" )
-         let h2_s = $( ".header" )
-         let len = rightSidebar.length
-         $( window ).scroll(function() {
-         for (let i=0; i<len; i++){
-         header = h2_s[i];
-         rightLink = rightSidebar[i];
-         rightLink.querySelector("a").style.width = "100%"
-         if ($( header ).position()["top"] - 38 < $( document ).scrollTop()){
-         rightLink.querySelector("a").style.color = "white"
-         rightLink.querySelector("a").style.backgroundColor = "black"
-         rightLink.querySelector("a").setAttribute('class', 'none')
-         if (i != 0){
-         header = h2_s[i-1];
-         rightLink = rightSidebar[i-1];
-         rightLink.querySelector("a").style.color = "black"
-         rightLink.querySelector("a").style.backgroundColor = "rgb(1,1,1,.1)"
-         }
-         }
-         else {
-         rightLink.querySelector("a").style.color = "black"
-         rightLink.querySelector("a").style.backgroundColor = "white"
-         }
-         }
-         });
-      </script>
-      <script>
-        if (document.querySelector){
-            let leftSidebar = document.querySelector('#leftSidebar');
-            let activeLeft = document.querySelector("#activeLeft")
-            let height = $( activeLeft ).position()["top"]
-            leftSidebar.scrollTop = height - 5
-            @* messageBody.scrollTop = height.scrollHeight - height.clientHeight; *@    
+function navlinkSelected(){
+    let txt;
+    let navbar = document.querySelector(".collapse.navbar-collapse").querySelector("UL")
+    let controller = '@ViewData["Controller"]'.toLowerCase().replace("c&#x2b;&#x2b;", "c++").replace("js", "javascript")
+    let t = '@ViewData["title"]'.trim(" ").toLowerCase()
+    for (let li of navbar.querySelectorAll("LI")) {
+        txt = li.textContent.trim(" ").toLowerCase();
+        if (txt == controller || txt == t) {
+            li.setAttribute("class", "navlinkSelected")
         }
+    }
+}
+navlinkSelected()
+</script>
+      <script src="/js/activateLeft.js"></script>
+      <script src="/js/activateRight.js"></script>
+      <script src="/js/createToc.js"></script>
+      <script src="/js/highlightRight.js"></script>
+      <script src="/js/leftScrollTop.js">
+
         
       </script>
       @await RenderSectionAsync("Scripts", required: false)
