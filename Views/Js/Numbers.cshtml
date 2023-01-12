@@ -1,0 +1,212 @@
+
+<h2>
+    Numbers
+</h2>
+
+<p>
+    Numbers in javaScript are 64-bit floating point numbers they can 
+    be written with or without decimals. 
+</p>
+
+<pre><code class="lang-js">let x = 3.15;    // A number with decimals
+let y = 3;       // A number without decimals</code></pre>
+
+<p>
+    <b>Scientific notation</b> can also be used for extra large or 
+    small numbers:
+</p>
+
+<pre><code class="lang-js">let x = 125e5;    // 12,500,000
+let y = 125e-5;   // 0.00125</code></pre>
+
+<h2>
+    Precision
+</h2>
+<p>
+    Numbers in javaScript have <code>64</code> bits: 
+    <ul style="list-style: none;">
+        <li>
+            Value (Mantissa) <ul style="list-style: none;">
+                <li class="mb-3">
+                    Bits <code>0 - 51</code>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Exponent <ul style="list-style: none;">
+                <li class="mb-3">
+                    Bits <code>52 - 62</code>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Sign <ul style="list-style: none;">
+                <li class="mb-3">
+                    Bit <code>63</code>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</p>
+
+<p>
+    The max a number can be and still be precise is <code>2^53 - 1</code>, or 
+    <code>+/- 9,007,199,254,740,991</code>. After that, it is recommended to use 
+    <code class="lang-js">BigInt</code>. 
+</p>
+
+<figcaption>
+    See this <a href="https://stackoverflow.com/questions/307179/what-is-javascripts-highest-integer-value-that-a-number-can-go-to-without-losin">S/O</a> post for 
+    more info
+</figcaption>
+
+<p>
+    Floating point numbers can misbehave. Take <code class="lang-js">.2 + .1</code>, for example. 
+    It will return <code class="lang-js">0.30000000000000004</code> instead of <code>.30</code>. 
+    To help combat this, use multiplication to take away the decimal and then divide to get it back. 
+</p>
+
+<pre><code class="lang-js">let x = (0.2 * 10 + 0.1 * 10) / 10;
+
+console.log(x);
+// .3
+</code></pre>
+
+<h2>
+    Numbers and Strings
+</h2>
+
+<p>
+    Numbers can be converted into strings and then concatenated to other strings. 
+    This is usually done automatically without having to manually change types. 
+</p>
+
+<pre><code class="lang-js">let str = "My age is: ";
+let age = 99; 
+
+console.log(str + age);
+// My age is: 99
+</code></pre>
+
+<p>
+    Even if both strings are numbers, if they are added they are treated like 
+    strings.
+</p>
+
+<pre><code class="lang-js">let age1 = "11";
+let age2 = "11"; 
+
+console.log(age1 + age2);
+// 1111 (not 22)
+
+</code></pre>
+<p>
+    Other operators like <code>-, *, and /</code> will try to convert both strings 
+    to numbers and will do the operation if both strings are numbers. 
+</p>
+
+<pre><code class="lang-js">let age1 = "11";
+let age2 = "11"; 
+
+console.log(age1 - age2);
+// 0
+console.log(age1 / age2);
+// 1
+console.log(age1 * age2);
+// 121
+
+</code></pre>
+
+<h2>
+    NaN (not a number)
+</h2>
+<p>
+    When there is a problem with a number, javaScript will turn that 
+    number into a <code class="lang-js">NaN</code> (not a number). 
+</p>
+
+<pre><code class="lang-js">let age1 = "11" / "FruitCakes";
+
+console.log(age1)
+// NaN
+</code></pre>
+
+<p>
+    Use <code class="lang-js">isNaN()</code> to check if a given number is 
+    NaN or not:
+</p>
+
+<pre><code class="lang-js">let age1 = "11" / "FruitCakes";
+
+console.log(isNaN(age1))
+// true
+</code></pre>
+
+<h2>
+    Other numerical types
+</h2>
+
+<h3>
+    <code class="lang-js">Infinity</code>
+</h3>
+<p>
+    <code class="lang-js">Infinity</code> / <code class="lang-js">-Infinity</code> are used when a number goes past the 
+    maximum possible or when a number is divided by <code>0</code>. 
+</p>
+
+<pre><code class="lang-js">let myNumber = 2 / 0;
+
+console.log(myNumber)
+// Infinity
+</code></pre>
+<figcaption>In <b>mathematical</b> terms, dividing by zero does <b>not</b> equal infinity.<br><code>n / 0 != infinity</code></figcaption>
+
+
+<pre><code class="lang-js">let myNumber = 2;
+// Execute until Infinity
+while (myNumber != Infinity) {
+  // nyNumber * 2 until it 
+  // maxes out to infinity
+  myNumber = myNumber * myNumber;
+}
+// Infinity</code></pre>
+
+<p>
+    Infinity is a number and will return the <code class="lang-js">Number</code>
+    type when type checked. 
+</p>
+<pre><code class="lang-js">console.log(typeof Infinity);
+// number
+</code></pre>
+
+<h3>
+    <code class="lang-js">Hexadecimal</code>
+</h3>
+
+<p>
+    Hexadecimal values are preceded by a <code class="lang-js">0x</code>:
+</p>
+
+<pre><code class="lang-js">let hex = 0xFFFFFF;
+
+// logs in base 10 (decimal)
+console.log(hex);
+// 16777215
+</code></pre>
+
+<p>
+    Hexadecimal is <b>base-16</b>: to convert to other bases up to <code>36</code>, 
+    use the <code class="lang-js">Number.toString(&lt;base&gt;)</code> method. 
+</p>
+
+<pre><code class="lang-js">let myNumber = 16;
+console.log(myNumber.toString(2));
+// 10000
+
+console.log(myNumber.toString(8));
+// 20
+
+// hex
+console.log(myNumber.toString(16));
+// 10
+</code></pre>

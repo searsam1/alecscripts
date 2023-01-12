@@ -1,0 +1,156 @@
+
+@{
+    string[] ops = @"charAt()	Returns the character of an index (position)
+charCodeAt()	Returns the unicode of a character at an index
+concat()	Returns two or more strings joined
+constructor	Returns string's constructor function
+endsWith()	Returns if a string ends with a value
+fromCharCode()	Returns Unicode values converted to characters
+includes()	Returns if a string contains a value
+indexOf()	Returns the index of a value in a string (first)
+lastIndexOf()	Returns the index of a value in a string (last)
+length	Returns the length of a string
+localeCompare()	Compares two strings
+match()	Searches a string for a value or a regular expression and returns the matches
+prototype	Allows you to add properties and methods to object
+repeat()	Returns a new string repeated
+replace()	Return string with values replaced with another value
+search()	Search string for value and return index
+slice()	Slice string into parts
+split()	Splits a string based of delimiter
+startsWith()	Check if string begins with a character
+substr()	Take a slice from a starting position
+substring()	Take a slice and give start and end position
+toLocaleLowerCase()	return lowercase using locale's settings 
+toLocaleUpperCase()	return uppercase using locale's settings 
+toLowerCase()	return lowercase string 
+toString()	return object as string
+toUpperCase()	return uppercase string
+trim()	Returns a string with removed whitespaces
+trimEnd()	Returns a string with removed whitespaces from the end
+trimStart()	Returns a string with removed whitespaces from the start
+valueOf()	Returns the primitive value of a string or a string object".Split("\n");
+}
+<h2>
+    Strings
+</h2>
+<pre><code class="lang-js">let bandName = "Rage Against The Machine";
+let house = "Medieval Tavern";
+let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+</code></pre>
+<p>
+    A string is a text-based variable with different characters "strung"
+    together, like <code>"Apples are great."</code>. Strings are enclosed in 
+    quotes, double or single, and have a length property. 
+</p>
+
+<pre><code class="lang-js">let band1 = "Led Zeppelin"
+// single '' or double "" quotes
+let band2 = 'Cream'
+
+console.log(band2.length)
+// 5
+</code></pre>
+
+<p>
+    Quotes can be used inside a string but they must 
+    be different from the outside quotes:
+</p>
+
+
+<pre><code class="lang-js">let band1 = "Led's Zeppelin" // led's has a single quote</code></pre>
+
+<h2>
+    Escape character <code>\</code>
+</h2>
+<p>
+    Escape characters are used to get the literal meaning 
+    of a character. For example, to use quotes inside quotes, 
+    use the escape character (backslash <code>\</code>) before the 
+    quotes. 
+</p>
+
+<pre><code class="lang-js">let band1 = 'Led\'s Zeppelin' // led\'s </code></pre>
+
+<p>
+    To use a literal backslash <code>\</code>, put one before it <code>\\</code>. 
+</p>
+
+<pre><code class="lang-js">let band1 = 'Backslash -> \\' // \\ </code></pre>
+
+<h3>
+    Long strings 
+</h3>
+
+<p>
+    Newlines can also be escaped with a backslash <code>\</code> to 
+    chunk strings into smaller pieces over multiple lines. 
+</p>
+
+<pre><code class="lang-js">let band1 = 'Backslash \
+-> \\'</code></pre>
+
+<p>
+    Strings can also be split up by putting the entire string on a newline, like
+    so:
+</p>
+
+<pre><code class="lang-js">let band1 = 
+'Backslash \-> \\'</code></pre>
+
+<pre><code class="lang-js">let cls1 = 
+document.querySelectorAll(".A Super Duper Long String \
+That takes up Space")[0]</code></pre>
+
+<p>
+    Notice how in the example above a newline to define the string is 
+    used <b>and</b> a newline inside the string is used. 
+</p>
+
+<h2>
+    Template Literals
+</h2>
+<p>
+    Template literals are strings that use backticks <code>``</code> instead of 
+    quotes and can perform string interpolation using <code>`${&lt;variable&gt;}`</code>. 
+</p>
+<pre><code class="lang-js">let age = 26;
+
+// ${age} = "26"
+let str = `You are ${age} years old`;
+
+console.log(str);
+// "You are 26 years old";
+</code></pre>
+<p>
+    Template literals also allow for newlines, double or single quotes, and 
+    other special characters.  
+</p>
+
+<pre><code class="lang-js">// define a multiline string
+let text =
+`The slow
+white fox
+crawls under
+the hyperactive ICBM`;</code></pre>
+
+
+
+<h2>
+    String Methods
+</h2>
+
+
+<ul style="list-style: none;">
+    @foreach (string line in ops)
+    {
+        <li class="mt-3">
+            <code class="lang-js">@line.Split("\t")[0]</code>
+            <ul style="list-style: none;">
+                <li>
+                    <p>@line.Split("\t")[1]</p>
+                </li>
+            </ul>
+        </li>
+    }
+</ul>
