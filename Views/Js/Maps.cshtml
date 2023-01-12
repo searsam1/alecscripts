@@ -1,0 +1,131 @@
+
+<p>
+    A map is a collection of key-value pairs that remembers its insertion order. 
+</p>
+
+<h2>
+    Creating maps
+</h2>
+
+<p>
+    To create a new <code class="lang-js">Map</code>, use the following syntax:
+</p>
+<pre><code class="lang-js">
+const person = new Map([ 
+    ["firstName", "Joe"],
+    ["lastName", "Schmit"],
+    ["Address", "P. Sherman, 42 Wallaby Wa..."]
+]);
+</code></pre>
+
+<p>
+    Pairs can be later after declaration using the <code class="lang-js">Map.set()</code>
+    method.     
+</p>
+<pre><code class="lang-js">
+const person = new Map()
+person.set("firstName", "Joe"),
+person.set("lastName", "Schmit"),
+person.set("Address", "P. Sherman, 42 Wallaby Wa...")
+
+</code></pre>
+
+<p>
+    To access one of the values, use the <code class="lang-js">Map.get()</code>
+    method along with the key. 
+</p>
+<pre><code class="lang-js">
+const person = new Map()
+person.set("firstName", "Joe"),
+
+console.log( person.get("firstName") )
+// joe
+</code></pre>
+
+<h2>
+    Deletion
+</h2>
+<p>
+    To delete a single element:
+</p>
+
+<pre><code class="lang-js">
+const person = new Map()
+person.set("firstName", "Joe")
+
+// delete first name
+person.delete("firstName", "Joe")
+
+console.log( person.get("firstName") )
+// undefined
+</code></pre>
+
+<p>
+    Or, to clear an entire map, use <code class="lang-js">Map.clear()</code>:
+</p>
+<pre><code class="lang-js">
+const person = new Map([
+    ["firstName", "Joe"],
+    ["lastName", "Schmit"],
+    ["Address", "P. Sherman, 42 Wallaby Wa..."]
+])
+person.clear();
+console.log(person);
+
+// Map {}
+</code></pre>
+
+<h2>
+    Other useful methods
+</h2>
+<p>
+    To get the length or <b>size</b> of a map:
+</p>
+
+<pre><code class="lang-js">Map.size
+</code></pre>
+
+<p>
+    To check if a key exists in a map:
+</p>
+<pre><code class="lang-js">Map.has(&lt;key&gt;)
+</code></pre>
+
+<p>
+    The following example creates a map with <code>3</code> pairs. 
+    It then <b>deletes</b> <code class="lang-js">"lastName"</code>, gets the 
+    new size, and checks to see if <code class="lang-js">"lastName"</code>
+    was deleted. 
+</p>
+<pre><code class="lang-js">// create new person map
+const person = new Map([
+    ["firstName", "Joe"],
+    ["lastName", "Schmit"],
+    ["Address", "P. Sherman, 42 Wallaby Wa..."]
+])
+
+// delete lastName
+person.delete("lastName");
+console.log(person.size)
+// 2
+console.log(person.has("lastName"))
+// false
+
+</code></pre>
+
+
+<h2>
+    Iterating over maps
+</h2>
+
+<p>
+    Looping over maps can be done a few ways. First is by 
+    looping through each pair, next is looping through the keys, and lastly 
+    is looping through the values. A callback can be invoked on each 
+    pair by "foreach-ing" over it. 
+</p>
+
+<p>
+    Use <code>Map.forEach</code> to apply a callback to each key-value pair in a
+    Map:
+</p>
