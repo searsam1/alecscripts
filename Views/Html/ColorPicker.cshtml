@@ -1,73 +1,139 @@
-@model MvcAlecScripts.Models.HtmlFormsModel
-<section>
-    <h2>
-        Input Tag
-    </h2>
-    <p>
-        The <code>input</code> tag is used with the <code>type</code> attribute set to color to
-        make an html color picker. Additionally, the default value can be
-        set with the <code>value</code> attribute, which must be in hexadecimal.
-    </p>
-    @{
-        string example1 = @"<input type=""color"" id=""colorPicker"" value=""#0000ff"">";
-    }
-    <pre><code class="lang-html">@example1</code></pre>
-    <p>
-        That input is then combined with a <code>label</code> tag
-        to show the color:
-    </p>
-    @{
-        string example2 = @"<label for=""colorPicker"">Color Picker:</label>";
-    }
-    <pre><code class="lang-html">@example2
-            @example1
-</code></pre>
-    <h3>
-        Example
-    </h3>
-
-        <p>
-            <form action="#colorSelection">
-                <label id="colorValue" for="colorpicker">Choose Color:</label>
-                <input name="colorpicker" type="color" id="colorpicker" value="#0000ff">
-                <br><br>
-                <input class="btn btn-danger" type="submit" value="Change Color">
-            </form>
-        </p>
-</section>
-
-<div class="rounded-3" id="colorSelection">
-    
-</div>
+<center>
+    <label class="btn btn-warning p-3" for="colorInp">Pick a color</label>
+    <br />
+    <input value="#ffc107" id="colorInp" type="color">
+</center>
 
 <style>
-    #colorSelection{
-        background-color: @Model.ColorPickerExampleColor;
-        width: 100px;
-        height: 100px;
+    .box {
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        padding-top: 35px;
+        border-radius: 10px;
+    }
+    .big-box {
+        width:100%;
+        height: 300px;
+    }
+    .box {
+        transition: background 1s;
     }
 </style>
-<pre><code id=test  class="lang-">
-Color Hex: @Model.ColorPickerExampleColor
 
-</code></pre>
+<center><div class="box my-3" id="Color"></div></center>
+    <div class="container p-3 m-3 bg-light text-dark" id="RGBLabel">RGB</div>
+    <div class="container p-3 m-3 bg-light text-dark" id="HEXLabel">HEX</div>
+    <div class="container p-3 m-3 bg-light text-dark" id="RevRGBLabel">Reverse</div>
+    <div class="container p-3 m-3 bg-light text-dark" id="SimilarColors_1"></div>
+    <div class="container p-3 m-3 bg-light text-dark" id="SimilarColors_2"></div>
+    <div class="container p-3 m-3 bg-light text-dark" id="SimilarColors_4"></div>
+    <div class="container p-3 m-3 bg-light text-dark" id="SimilarColors_5"></div>
+<div id="colors" class="m-3" style=" background-color: grey;">
+        <div class="container p-3 mx-3 bg-light text-dark opa-1" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-2" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-3" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-4" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-5" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-6" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-7" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-8" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-9" ></div>
+</div>
+<div id="colors_r" class="m-3" style=" background-color: grey;">
+    <div class="container p-3 mx-3 bg-light text-dark opa-9" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-8" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-7" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-6" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-5" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-4" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-3" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-2" ></div>
+    <div class="container p-3 mx-3 bg-light text-dark opa-1" ></div>
+</div>
 
-<p >
+    <div class="big-box m-3" id="SimilarColors_3"></div>
+    
 
-</p>
+
 
 <script>
-function hexToRgbA(hex){
-    var c;
-    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
-        c= hex.substring(1).split('');
-        if(c.length== 3){
-            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
-        }
-        c= '0x'+c.join('');
-        document.querySelector("#test").textContent += 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',1)';
+    function hexToRgb(hex) {
+        var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? {
+            r: parseInt(result[1], 16),
+            g: parseInt(result[2], 16),
+            b: parseInt(result[3], 16),
+        } : null;
     }
-}
-hexToRgbA('@Model.ColorPickerExampleColor')
-</script>
 
+    function changeColor() {
+        let HEX = this.value;
+
+        // element to change background color
+        let Color = document.querySelector("#Color");
+        
+        let RGB = hexToRgb(HEX);
+
+        // convert color to rgb and reverse to show text
+        let newTextColor = `rgb(${Math.abs(RGB.r - 255)}, 
+            ${Math.abs(RGB.g - 255)}, 
+            ${Math.abs(RGB.b - 255)})`
+
+        // add color buffer 
+        let span = document.createElement("span")
+
+        
+        // set background to new color input (this.value)
+        Color.style.backgroundColor = HEX;
+        Color.style.color = newTextColor
+        Color.appendChild(span)
+        
+        if (Color.textContent == ""){
+            span.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec lacus erat."
+        }
+
+        document.querySelector("#RGBLabel").textContent = `RGB : (${RGB.r}, ${RGB.g}, ${RGB.b})`;
+        document.querySelector("#HEXLabel").textContent = "HEX: " + HEX;
+        document.querySelector("#RevRGBLabel").textContent = "Reverse: " + newTextColor;
+        document.querySelector("#SimilarColors_1").style.background = `linear-gradient(45deg, ${HEX}, ${newTextColor})`
+        document.querySelector("#SimilarColors_2").style.background = `linear-gradient(225deg, ${HEX}, ${newTextColor})`
+        document.querySelector("#SimilarColors_3").style.background = `linear-gradient(90deg, ${HEX}, ${newTextColor})`
+        document.querySelector("#colors").style.backgroundColor = HEX
+        document.querySelector("#colors_r").style.background = `linear-gradient(90deg, ${HEX}, ${newTextColor})`
+        
+        document.querySelector("#SimilarColors_4").style.background = `linear-gradient(45deg, 
+            rgb(${RGB.r}, ${RGB.g}, ${RGB.b}) 0% 10%, 
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .9) 10% 20%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .8) 20% 30%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .7) 30% 40%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .6) 40% 50%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .5) 50% 60%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .4) 60% 70%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .3) 70% 80%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .2) 80% 90%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .1) 90% 100%
+            )`
+        document.querySelector("#SimilarColors_5").style.background = `linear-gradient(225deg, 
+            rgb(${RGB.r}, ${RGB.g}, ${RGB.b}) 0% 10%, 
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .9) 10% 20%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .8) 20% 30%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .7) 30% 40%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .6) 40% 50%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .5) 50% 60%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .4) 60% 70%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .3) 70% 80%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .2) 80% 90%,
+            rgba(${RGB.r}, ${RGB.g}, ${RGB.b}, .1) 90% 100%
+            )`
+
+        
+        
+    }
+    // get the color input 
+    let colorInp = document.querySelector("#colorInp")
+    // listen to when their is input to the button, 
+    // and run `changeColor` when a change event occurs 
+    colorInp.addEventListener("change", changeColor, true);
+    
+</script>

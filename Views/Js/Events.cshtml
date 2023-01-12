@@ -1,8 +1,7 @@
-
 <p>
-    Events happen when things change on a webpage. When something is clicked, a 
-    state is changed and that is an event. Javascript can react to these 
-    events and perform an action.  
+    Events happen when things change on a webpage. When something is clicked, a
+    state is changed and that is an event. Javascript can react to these
+    events and perform an action.
 </p>
 
 <h2>
@@ -31,8 +30,8 @@
 </ul>
 
 <p>
-    One common event is the <code>onclick</code> event, which is associated with 
-    buttons.  
+    One common event is the <code>onclick</code> event, which is associated with
+    buttons.
 </p>
 
 <pre><code class="lang-html">&lt;button class="btn btn-dark" onclick=" const currentDate = new Date();
@@ -42,7 +41,7 @@
     alert(currentDate.toTimeString())"> The time is?</button>
 
 <p>
-    This button shows the current time by calling <code>alert</code> on the button 
+    This button shows the current time by calling <code>alert</code> on the button
     click event.
 </p>
 
@@ -51,19 +50,19 @@
 </h2>
 
 <p>
-    listeners can be assigned to an element or group of tags, like 
-    applying a click feature to a header to make it yellow and copy 
-    it to the clipboard (try it). 
+    listeners can be assigned to an element or group of tags, like
+    applying a click feature to a header to make it yellow and copy
+    it to the clipboard (try it).
 </p>
 
 <p>
-    A simpler example is to add an event handler to an element and 
-    make it red on click. 
+    A simpler example is to add an event handler to an element and
+    make it red on click.
 </p>
 
 <p>
-    Use the <code>addEventListener</code> method to add a function when 
-    an event happens on an object. 
+    Use the <code>addEventListener</code> method to add a function when
+    an event happens on an object.
 </p>
 
 <pre><code class="lang-js">let demo = document.querySelector("#DEMO")
@@ -77,29 +76,29 @@ demo.addEventListener("click", f, false)
 </code></pre>
 
 <p><button id="DEMO" class="btn btn-dark">
-DEMO
-</button></p>
+        DEMO
+    </button></p>
 
 <p>
     This DEMO button will turn red
-    when clicked because it now how a listener that will react when a click 
-    event occurs. 
+    when clicked because it now how a listener that will react when a click
+    event occurs.
 </p>
 
 <script>
     let demo = document.querySelector("#DEMO")
 
-function f(){
-    this.style.backgroundColor = this.style.backgroundColor == "red" ? "black" : "red" 
-}
+    function f() {
+        this.style.backgroundColor = this.style.backgroundColor == "red" ? "black" : "red"
+    }
 
-demo.addEventListener("click", f, false)
+    demo.addEventListener("click", f, false)
 </script>
 
 <p>
-    The <code>mouseover</code> event controls what happens when the mouse 
+    The <code>mouseover</code> event controls what happens when the mouse
     hovers over the element. In the event listener, use <code>addEventListener("mouseover", ...)</code>
-    instead of <code>click</code> to make the button red on hover instead of on click. 
+    instead of <code>click</code> to make the button red on hover instead of on click.
 </p>
 
 <pre><code class="lang-js">let demo = document.querySelector("#DEMO2")
@@ -114,18 +113,130 @@ demo.addEventListener("mouseover", f, false)
 
 
 <p><button id="DEMO2" class="btn btn-dark">
-Hover over me
-</button></p>
+        Hover over me
+    </button></p>
 
 <script>
     let demo2 = document.querySelector("#DEMO2")
 
-function f(){
-    this.style.backgroundColor = 
-    this.style.backgroundColor == "red" ? "black" : "red" 
-}
+    function f() {
+        this.style.backgroundColor =
+            this.style.backgroundColor == "red" ? "black" : "red"
+    }
 
-demo2.addEventListener("mouseover", f, false)
-demo2.addEventListener("mouseout", f, false)
+    demo2.addEventListener("mouseover", f, false)
+    demo2.addEventListener("mouseout", f, false)
 
 </script>
+
+<h2>
+    Color picker
+</h2>
+
+<p>
+    Below is a color picker to demonstrate on the <code>onchange</code> event
+    works. When the color input is given a value, it changes the color
+    of the box below it.
+</p>
+
+<details>
+    <summary>
+        javaScript
+    </summary>
+    <pre><code class="lang-js">function changeColor(){        
+    // element to change background color
+    let Color = document.querySelector("#Color")
+
+    // set background to new color input (this.value)
+    Color.style.backgroundColor = this.value
+    }
+
+// get the color input 
+let colorInp = document.querySelector("#colorInp")
+
+// listen to when there is input to the button, 
+// and run `changeColor` when a change event occurs 
+colorInp.addEventListener("change",  changeColor, false)
+
+</code></pre>
+</details>
+
+<details>
+    <summary>
+        CSS
+    </summary>
+    <pre><code class="lang-css">.box {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding-top: 35px;
+    border-radius: 10px;
+}
+
+.box {
+    transition: background 1s;
+}
+
+.big-box {
+    width:100%;
+    height: 300px;
+}
+
+
+</code></pre>
+</details>
+
+<details>
+    <summary>
+        HTML
+    </summary>
+    <pre><code class="lang-html">&lt;center&gt;
+    &lt;label class="btn btn-warning p-3" for="colorInp"&gt;Pick a color&lt;/label&gt;
+    &lt;br /&gt;
+    &lt;input value="#ffc107" id="colorInp" type="color"&gt;
+    &lt;center&gt;&lt;div class="box my-3" id="Color"&gt;&lt;/div&gt;&lt;/center&gt;
+&lt;/center&gt;</code></pre>
+</details>
+
+<style>
+    .box {
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        padding-top: 35px;
+        border-radius: 10px;
+    }
+    .big-box {
+        width:100%;
+        height: 300px;
+    }
+    .box {
+        transition: background 1s;
+    }
+</style>
+
+<center>
+    <label class="btn btn-warning p-3" for="colorInp">Pick a color</label>
+    <br />
+    <input value="#ffc107" id="colorInp" type="color">
+
+    <center><div class="box my-3" id="Color"></div></center>
+</center>
+
+<script>function changeColor(){        
+    // element to change background color
+    let Color = document.querySelector("#Color")
+
+    // set background to new color input (this.value)
+    Color.style.backgroundColor = this.value
+}
+
+// get the color input 
+let colorInp = document.querySelector("#colorInp")
+
+// listen to when there is input to the button, 
+// and run `changeColor` when a change event occurs 
+colorInp.addEventListener("change",  changeColor, false)
+
+</script>
+

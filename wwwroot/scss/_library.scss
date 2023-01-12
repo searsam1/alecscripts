@@ -1,8 +1,11 @@
-
+@use "sass:math";
 // _library.scss
 $red: #ff0000 !default;
 
-#codeExample {
-  color: $red;
-}
-    
+
+@for $i from 1 through 10 {
+    .opa-#{$i}{
+        opacity: math.div($i, 10);
+        background-color: inherit;
+  };
+  }
