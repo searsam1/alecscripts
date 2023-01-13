@@ -1,8 +1,6 @@
 ﻿
 @{
     Layout = "../Shared/_homeLayout.cshtml";
-    
-
 }
 
 <style>
@@ -11,38 +9,41 @@ h2:not(#logo)::after{
     content: "";
     color: rgb(255,0,0,.55);
 }
+
 </style>
 <center class="mb-5">
-    <h2 id="logo" style="text-shadow: 2px 2px black;  color: white; font-size: 100px; font-family: 'UnifrakturMaguntia', cursive;">A</h2>
-    
-    <h2 >
-        <span class=" border-bottom p-3 bg-dark text-light">Welcome To Alec Scripts</span>
+    <h2 class="border-warning border-bottom text-dark display-3">
+        Alec Scripts
     </h2>
     
 </center>
 <div class="container" style="max-width: 896px;">
-
-    <div  class="p-3 m-3 rounded-3">
-        <p style="font-size: 25px; line-height: 75px; font-family: Stencil Std, fantasy" class="text-center">
-        " The supreme art of coding "
+    <div  class="text-secondary p-3 m-3 rounded-3">
+        <p style="" class="display-6 text-center">
+        The <span class="text-dark">Supreme</span> Art <span class="text-dark">of</span> Coding
+        </p>
+    </div>
+</div>
+<div class="container" style="max-width: 896px;">
+    <div  class="text-secondary p-3 m-3 rounded-3">
+        <p style="" class="display-6 text-center">
+        <a asp-action="Tutorials" asp-controller="Home" class="text-dark text-decoration-none border-warning border-bottom"> ⧫ Tutorials </a>
         </p>
     </div>
 </div>
 
+<div class="container" style="max-width: 896px;">
+    <div  class="text-secondary p-3 m-3 rounded-3">
+        <p style="" class="display-6 text-center">
+        <a href="https://github.com/searsam1/alecscripts" class="text-dark text-decoration-none border-warning border-bottom"> ⧫ Repository </a>
+        </p>
+    </div>
+</div>
 
-<p class="p-3 bg-dark text-light text-center  rounded-3">
-    Find a <a class=" btn btn-outline-warning" asp-action="Directory" asp-controller="home">Tutorial</a>
-</p>
-
-
-<p class="text-center">
-    <a class="text-decoration-none link-warning" href="https://github.com/searsam1/alecscripts">
-        Repo
-    </a>    
-</p>
-
-<p class="text-center">
-    <a class="text-decoration-none link-warning" asp-controller="home" asp-action="AboutThisWebsite">
-        About alecscripts.com
-    </a>    
-</p>
+<div class="container" style="max-width: 896px;">
+    <div  class="text-secondary p-3 m-3 rounded-3">
+        <p style="" class="display-6 text-center">
+        <a asp-controller="home" asp-action="AboutThisWebsite" class="text-dark text-decoration-none border-warning border-bottom"> ⧫ About </a>
+        </p>
+    </div>
+</div>

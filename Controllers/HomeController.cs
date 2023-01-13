@@ -68,5 +68,13 @@ namespace MvcAlecScripts.Controllers
             ViewData["title"] = "About This Website";
             return View();
         }
+    public IActionResult Tutorials()
+    {   
+        ViewData["creationDate"] = "Fri Jan 13 01:49:02 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Tutorials";
+        return View();
+    }
+    
     }
 }

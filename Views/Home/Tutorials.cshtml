@@ -1,240 +1,47 @@
+
 @{
-string Version = "V3";
+    Layout = "../Shared/_homeLayout.cshtml";
 }
-<html lang="en-US">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="Coding Tutorials with examples">
-      <meta name="author" content="Alec Sears">
-      <title>@ViewData["controller"] - @ViewData["Title"]</title>
-      
-      <!-- Bootstrap core CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-      
-      <!-- Site CSS -->
-      <link rel="stylesheet" href="~/css/style.css" >
-      <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-      <!-- Sidebar CSS -->
-      <link rel="stylesheet" href="~/css/sidebars.css" >
-      
-      <!-- favicon -->
-      <link rel="apple-touch-icon" sizes="180x180" href="~/lib/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="~/lib/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="~/lib/favicon-16x16.png">
-      <link rel="manifest" href="~/lib/site.webmanifest">
-      
-      <!-- Google Fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link
-         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&family=Lexend:wght@200&family=Poppins&family=UnifrakturCook&family=UnifrakturMaguntia&display=swap"
-         rel="stylesheet">
-      
-      <!-- Prism CSS -->
-      <link rel="stylesheet" href="~/css/prism.css" asp-append-version="true" />
-      <!-- Google Icons -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-      <!-- Custom styles sidebar -->
-      
-   </head>
-   <body>   
-      <style>
-      </style>
-      <div class="pre-nav ">
-         <center class="fs-2 ">
-            alecscripts.com
-         </center>
-         <figcaption class="me-2 mt-4 pt-2 text-light text-end ">
-            Created by Alec Sears
-         </figcaption>
-      </div>
-      @* Navbar *@
-      <nav style="" class="py-0 my-0 shadow-sm navbar  sticky-top navbar-expand-lg bg-white ">
-         <style>
-            .material-symbols-outlined{
-            color: black;
-            }
-         </style>
-         <div class="container-fluid">
-            <a  class="text-decoration-none btn btn-dark" asp-action="index" asp-controller="home" >
-               HOME
-            </a>
-            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
-               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                  </svg>
-               </span>
-            </button>
-            <div class=" collapse navbar-collapse " id="navbarSupportedContent">
-               <ul class=" navbar-nav mx-auto mb-2 mb-lg-0 ">
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="home" asp-action="Directory">Directory</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="java" asp-action="index">Java</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="cpp" asp-action="index">C++</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="css" asp-action="index">CSS</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="bash" asp-action="index">Bash</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="html" asp-action="index">HTML</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="JS" asp-action="index">JavaScript</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="dotnet" asp-action="index">.NET</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="go" asp-action="index">GO</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="Glossary" asp-action="index">Glossary</a>
-                  </li>
-                  <li class="nav-item">
-                     @* <a role="button" onclick="changeToDarkMode()" class="nav-link" >Dark Mode</a> *@
-                  </li>
-                  @* 
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                     Python
-                     </a>
-                     <ul class="dropdown-menu">
-                        <li><a class=" dropdown-item" asp-controller="Python" asp-action="Index"> Home </a></li>
-                        <li><a class=" dropdown-item" asp-controller="Python" asp-action="Abs"> Abs </a></li>
-                        <li><a class=" dropdown-item" asp-controller="Python" asp-action="Casting"> Casting </a></li>
-                        <li>
-                           <hr class="dropdown-divider">
-                        </li>
-                        *@
-                     </ul>
-                  </li>
-               </ul>
-               @* 
-               <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-               </form>
-               *@
-            </div>
-         </div>
-      </nav>
-      <div class="container-fluid">
-         <main >
-            <div class="row">
-               <div style="top: 57px;" id="leftSidebar" class="sticky-top col text-end ">
-                  <div class="bg-white">
-                     <a href="/"
-                        class=" d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none ">
-                        <svg  class="bi me-2" width="30" height="24">
-                           <use xlink:href="#bootstrap"></use>
-                        </svg>
-                        Topics
-                     </a>
-                     <ul class="list-unstyled ps-0">
+
+<center class="mb-5">
+    <h2 class="border-warning border-bottom text-dark display-3">
+        Tutorials
+    </h2>
+    
+</center>
+<div class="container" style="max-width: 896px;">
+    <div  class="text-secondary p-3 m-3 rounded-3">
+        <p style="" class="display-6 text-center">
+        Find a coding tutorial or documentation
+        </p>
+    </div>
+</div>
+<div class="container" style="max-width: 896px;">
+    <div  class="text-secondary p-3 m-3 rounded-3">
+        <p style="" class="display-6 text-center">
+        <a asp-action="Directory" asp-controller="Home" class="text-dark text-decoration-none border-warning border-bottom"> ⧫ Listed by Language </a>
+        </p>
+    </div>
+</div>
+<style>
+    .btn-toggle::before {
+    width: 1.5em;
+    line-height: 0;
+    content:"›";
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+  
+  }
+  #tutorials li:active{
+    color: black;
+    background-color: inherit;
+  }
+ 
+  
+</style>
+                     <ul id="Tutorials" class="list-unstyled ps-0">
                         @* Sidebar *@
                             <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Home-collapse" aria-expanded="false">                                    Home                                </button>                                <div class="collapse" id="Home-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Home">Home</a></li><li><a class="link-dark rounded" asp-action="AboutThisWebsite" asp-controller="Home">Home About This Website</a></li><li><a class="link-dark rounded" asp-action="Directory" asp-controller="Home">Home Directory</a></li><li><a class="link-dark rounded" asp-action="Privacy" asp-controller="Home">Home Privacy</a></li><li><a class="link-dark rounded" asp-action="Tutorials" asp-controller="Home">Home Tutorials</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Java-collapse" aria-expanded="false">                                    Java                                </button>                                <div class="collapse" id="Java-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Java">Java Home</a></li><li><a class="link-dark rounded" asp-action="Abstraction" asp-controller="Java">Java Abstraction</a></li><li><a class="link-dark rounded" asp-action="Arraylist" asp-controller="Java">Java Arraylist</a></li><li><a class="link-dark rounded" asp-action="Arrays" asp-controller="Java">Java Arrays</a></li><li><a class="link-dark rounded" asp-action="Classes" asp-controller="Java">Java Classes</a></li><li><a class="link-dark rounded" asp-action="Comments" asp-controller="Java">Java Comments</a></li><li><a class="link-dark rounded" asp-action="ControlFlow" asp-controller="Java">Java Control Flow</a></li><li><a class="link-dark rounded" asp-action="DataTypes" asp-controller="Java">Java Data Types</a></li><li><a class="link-dark rounded" asp-action="DateAndTime" asp-controller="Java">Java Date And Time</a></li><li><a class="link-dark rounded" asp-action="Encapsulation" asp-controller="Java">Java Encapsulation</a></li><li><a class="link-dark rounded" asp-action="Enums" asp-controller="Java">Java Enums</a></li><li><a class="link-dark rounded" asp-action="Exceptions" asp-controller="Java">Java Exceptions</a></li><li><a class="link-dark rounded" asp-action="FibonacciSequence" asp-controller="Java">Java Fibonacci Sequence</a></li><li><a class="link-dark rounded" asp-action="ForLoops" asp-controller="Java">Java For Loops</a></li><li><a class="link-dark rounded" asp-action="Functions" asp-controller="Java">Java Functions</a></li><li><a class="link-dark rounded" asp-action="HashMaps" asp-controller="Java">Java Hash Maps</a></li><li><a class="link-dark rounded" asp-action="HashSet" asp-controller="Java">Java Hash Set</a></li><li><a class="link-dark rounded" asp-action="Inheritance" asp-controller="Java">Java Inheritance</a></li><li><a class="link-dark rounded" asp-action="InnerClasses" asp-controller="Java">Java Inner Classes</a></li><li><a class="link-dark rounded" asp-action="Io" asp-controller="Java">Java Io</a></li><li><a class="link-dark rounded" asp-action="Iterators" asp-controller="Java">Java Iterators</a></li><li><a class="link-dark rounded" asp-action="LambdaExpressions" asp-controller="Java">Java Lambda Expressions</a></li><li><a class="link-dark rounded" asp-action="LinkedList" asp-controller="Java">Java Linked List</a></li><li><a class="link-dark rounded" asp-action="Math" asp-controller="Java">Java Math</a></li><li><a class="link-dark rounded" asp-action="Modifiers" asp-controller="Java">Java Modifiers</a></li><li><a class="link-dark rounded" asp-action="Operators" asp-controller="Java">Java Operators</a></li><li><a class="link-dark rounded" asp-action="Output" asp-controller="Java">Java Output</a></li><li><a class="link-dark rounded" asp-action="Packages" asp-controller="Java">Java Packages</a></li><li><a class="link-dark rounded" asp-action="Polymorphism" asp-controller="Java">Java Polymorphism</a></li><li><a class="link-dark rounded" asp-action="RegularExpressions" asp-controller="Java">Java Regular Expressions</a></li><li><a class="link-dark rounded" asp-action="Strings" asp-controller="Java">Java Strings</a></li><li><a class="link-dark rounded" asp-action="SwitchStatements" asp-controller="Java">Java Switch Statements</a></li><li><a class="link-dark rounded" asp-action="Threads" asp-controller="Java">Java Threads</a></li><li><a class="link-dark rounded" asp-action="TypeCasting" asp-controller="Java">Java Type Casting</a></li><li><a class="link-dark rounded" asp-action="UserInput" asp-controller="Java">Java User Input</a></li><li><a class="link-dark rounded" asp-action="Variables" asp-controller="Java">Java Variables</a></li><li><a class="link-dark rounded" asp-action="WhileLoops" asp-controller="Java">Java While Loops</a></li><li><a class="link-dark rounded" asp-action="WrapperClasses" asp-controller="Java">Java Wrapper Classes</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Js-collapse" aria-expanded="false">                                    Js                                </button>                                <div class="collapse" id="Js-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Js">Js Home</a></li><li><a class="link-dark rounded" asp-action="AlternateTableRows" asp-controller="Js">Js Alternate Table Rows</a></li><li><a class="link-dark rounded" asp-action="ArrayReference" asp-controller="Js">Js Array Reference</a></li><li><a class="link-dark rounded" asp-action="Arrays" asp-controller="Js">Js Arrays</a></li><li><a class="link-dark rounded" asp-action="ArraySort" asp-controller="Js">Js Array Sort</a></li><li><a class="link-dark rounded" asp-action="BinaryArrayToDecimal" asp-controller="Js">Js Binary Array To Decimal</a></li><li><a class="link-dark rounded" asp-action="Classes" asp-controller="Js">Js Classes</a></li><li><a class="link-dark rounded" asp-action="Comments" asp-controller="Js">Js Comments</a></li><li><a class="link-dark rounded" asp-action="CreateFileSafeNames" asp-controller="Js">Js Create File Safe Names</a></li><li><a class="link-dark rounded" asp-action="DataTypes" asp-controller="Js">Js Data Types</a></li><li><a class="link-dark rounded" asp-action="Events" asp-controller="Js">Js Events</a></li><li><a class="link-dark rounded" asp-action="Functions" asp-controller="Js">Js Functions</a></li><li><a class="link-dark rounded" asp-action="GetMonth" asp-controller="Js">Js Get Month</a></li><li><a class="link-dark rounded" asp-action="Json" asp-controller="Js">Js Json</a></li><li><a class="link-dark rounded" asp-action="Maps" asp-controller="Js">Js Maps</a></li><li><a class="link-dark rounded" asp-action="MathObject" asp-controller="Js">Js Math Object</a></li><li><a class="link-dark rounded" asp-action="MethodDefinitions" asp-controller="Js">Js Method Definitions</a></li><li><a class="link-dark rounded" asp-action="Numbers" asp-controller="Js">Js Numbers</a></li><li><a class="link-dark rounded" asp-action="Objects" asp-controller="Js">Js Objects</a></li><li><a class="link-dark rounded" asp-action="Operators" asp-controller="Js">Js Operators</a></li><li><a class="link-dark rounded" asp-action="Output" asp-controller="Js">Js Output</a></li><li><a class="link-dark rounded" asp-action="RandomColorCreater" asp-controller="Js">Js Random Color Creater</a></li><li><a class="link-dark rounded" asp-action="RegexExec" asp-controller="Js">Js Regex Exec</a></li><li><a class="link-dark rounded" asp-action="Replace" asp-controller="Js">Js Replace</a></li><li><a class="link-dark rounded" asp-action="Statements" asp-controller="Js">Js Statements</a></li><li><a class="link-dark rounded" asp-action="Strings" asp-controller="Js">Js Strings</a></li><li><a class="link-dark rounded" asp-action="Syntax" asp-controller="Js">Js Syntax</a></li><li><a class="link-dark rounded" asp-action="ToFixed" asp-controller="Js">Js To Fixed</a></li><li><a class="link-dark rounded" asp-action="Variables" asp-controller="Js">Js Variables</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Cpp-collapse" aria-expanded="false">                                    C++                                </button>                                <div class="collapse" id="Cpp-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Cpp">C++ Home</a></li><li><a class="link-dark rounded" asp-action="Arrays" asp-controller="Cpp">C++ Arrays</a></li><li><a class="link-dark rounded" asp-action="AssignmentOperators" asp-controller="Cpp">C++ Assignment Operators</a></li><li><a class="link-dark rounded" asp-action="Booleans" asp-controller="Cpp">C++ Booleans</a></li><li><a class="link-dark rounded" asp-action="BreakAndContinue" asp-controller="Cpp">C++ Break And Continue</a></li><li><a class="link-dark rounded" asp-action="Comments" asp-controller="Cpp">C++ Comments</a></li><li><a class="link-dark rounded" asp-action="ComparisonOperators" asp-controller="Cpp">C++ Comparison Operators</a></li><li><a class="link-dark rounded" asp-action="Conditions" asp-controller="Cpp">C++ Conditions</a></li><li><a class="link-dark rounded" asp-action="CPPversionHistory" asp-controller="Cpp">C++ C++version History</a></li><li><a class="link-dark rounded" asp-action="DataTypes" asp-controller="Cpp">C++ Data Types</a></li><li><a class="link-dark rounded" asp-action="ForLoop" asp-controller="Cpp">C++ For Loop</a></li><li><a class="link-dark rounded" asp-action="Math" asp-controller="Cpp">C++ Math</a></li><li><a class="link-dark rounded" asp-action="Operators" asp-controller="Cpp">C++ Operators</a></li><li><a class="link-dark rounded" asp-action="Pointers" asp-controller="Cpp">C++ Pointers</a></li><li><a class="link-dark rounded" asp-action="RandomNumbers" asp-controller="Cpp">C++ Random Numbers</a></li><li><a class="link-dark rounded" asp-action="References" asp-controller="Cpp">C++ References</a></li><li><a class="link-dark rounded" asp-action="Strings" asp-controller="Cpp">C++ Strings</a></li><li><a class="link-dark rounded" asp-action="Structures" asp-controller="Cpp">C++ Structures</a></li><li><a class="link-dark rounded" asp-action="SwitchStatement" asp-controller="Cpp">C++ Switch Statement</a></li><li><a class="link-dark rounded" asp-action="TernaryOperator" asp-controller="Cpp">C++ Ternary Operator</a></li><li><a class="link-dark rounded" asp-action="UserInput" asp-controller="Cpp">C++ User Input</a></li><li><a class="link-dark rounded" asp-action="Variables" asp-controller="Cpp">C++ Variables</a></li><li><a class="link-dark rounded" asp-action="WhileLoop" asp-controller="Cpp">C++ While Loop</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Python-collapse" aria-expanded="false">                                    Python                                </button>                                <div class="collapse" id="Python-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Python">Python Home</a></li><li><a class="link-dark rounded" asp-action="abs" asp-controller="Python">Python Abs</a></li><li><a class="link-dark rounded" asp-action="Casting" asp-controller="Python">Python Casting</a></li><li><a class="link-dark rounded" asp-action="Classes" asp-controller="Python">Python Classes</a></li><li><a class="link-dark rounded" asp-action="Comments" asp-controller="Python">Python Comments</a></li><li><a class="link-dark rounded" asp-action="controllerGetter" asp-controller="Python">Python Controller Getter</a></li><li><a class="link-dark rounded" asp-action="DataTypes" asp-controller="Python">Python Data Types</a></li><li><a class="link-dark rounded" asp-action="Datetime" asp-controller="Python">Python Datetime</a></li><li><a class="link-dark rounded" asp-action="Functools" asp-controller="Python">Python Functools</a></li><li><a class="link-dark rounded" asp-action="funnyNumbers" asp-controller="Python">Python Funny Numbers</a></li><li><a class="link-dark rounded" asp-action="Modules" asp-controller="Python">Python Modules</a></li><li><a class="link-dark rounded" asp-action="Numbers" asp-controller="Python">Python Numbers</a></li><li><a class="link-dark rounded" asp-action="Password" asp-controller="Python">Python Password</a></li><li><a class="link-dark rounded" asp-action="Print" asp-controller="Python">Python Print</a></li><li><a class="link-dark rounded" asp-action="ReFlags" asp-controller="Python">Python Re Flags</a></li><li><a class="link-dark rounded" asp-action="stringFormattingTypes" asp-controller="Python">Python String Formatting Types</a></li><li><a class="link-dark rounded" asp-action="swapcase" asp-controller="Python">Python Swapcase</a></li><li><a class="link-dark rounded" asp-action="Syntax" asp-controller="Python">Python Syntax</a></li><li><a class="link-dark rounded" asp-action="VariableGlobals" asp-controller="Python">Python Variable Globals</a></li><li><a class="link-dark rounded" asp-action="VariableNames" asp-controller="Python">Python Variable Names</a></li><li><a class="link-dark rounded" asp-action="VariableOutput" asp-controller="Python">Python Variable Output</a></li><li><a class="link-dark rounded" asp-action="VariableValues" asp-controller="Python">Python Variable Values</a></li><li><a class="link-dark rounded" asp-action="vars" asp-controller="Python">Python Vars</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Css-collapse" aria-expanded="false">                                    Css                                </button>                                <div class="collapse" id="Css-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Css">Css Home</a></li><li><a class="link-dark rounded" asp-action="Backgrounds" asp-controller="Css">Css Backgrounds</a></li><li><a class="link-dark rounded" asp-action="Borders" asp-controller="Css">Css Borders</a></li><li><a class="link-dark rounded" asp-action="BoxModel" asp-controller="Css">Css Box Model</a></li><li><a class="link-dark rounded" asp-action="Colors" asp-controller="Css">Css Colors</a></li><li><a class="link-dark rounded" asp-action="Comments" asp-controller="Css">Css Comments</a></li><li><a class="link-dark rounded" asp-action="Fonts" asp-controller="Css">Css Fonts</a></li><li><a class="link-dark rounded" asp-action="Gradients" asp-controller="Css">Css Gradients</a></li><li><a class="link-dark rounded" asp-action="HeightAndWidth" asp-controller="Css">Css Height And Width</a></li><li><a class="link-dark rounded" asp-action="Icons" asp-controller="Css">Css Icons</a></li><li><a class="link-dark rounded" asp-action="Links" asp-controller="Css">Css Links</a></li><li><a class="link-dark rounded" asp-action="Margins" asp-controller="Css">Css Margins</a></li><li><a class="link-dark rounded" asp-action="Outline" asp-controller="Css">Css Outline</a></li><li><a class="link-dark rounded" asp-action="Padding" asp-controller="Css">Css Padding</a></li><li><a class="link-dark rounded" asp-action="SlowUnderlineWithCss" asp-controller="Css">Css Slow Underline With Css</a></li><li><a class="link-dark rounded" asp-action="Text" asp-controller="Css">Css Text</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Html-collapse" aria-expanded="false">                                    Html                                </button>                                <div class="collapse" id="Html-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Html">Html Home</a></li><li><a class="link-dark rounded" asp-action="BasicExample" asp-controller="Html">Html Basic Example</a></li><li><a class="link-dark rounded" asp-action="ColorPicker" asp-controller="Html">Html Color Picker</a></li><li><a class="link-dark rounded" asp-action="Colors" asp-controller="Html">Html Colors</a></li><li><a class="link-dark rounded" asp-action="Comments" asp-controller="Html">Html Comments</a></li><li><a class="link-dark rounded" asp-action="CountryCodes" asp-controller="Html">Html Country Codes</a></li><li><a class="link-dark rounded" asp-action="CSS" asp-controller="Html">Html Css</a></li><li><a class="link-dark rounded" asp-action="FoodForm" asp-controller="Html">Html Food Form</a></li><li><a class="link-dark rounded" asp-action="Forms" asp-controller="Html">Html Forms</a></li><li><a class="link-dark rounded" asp-action="InputTypes" asp-controller="Html">Html Input Types</a></li><li><a class="link-dark rounded" asp-action="LanguageCodes" asp-controller="Html">Html Language Codes</a></li><li><a class="link-dark rounded" asp-action="Markdown" asp-controller="Html">Html Markdown</a></li><li><a class="link-dark rounded" asp-action="MathSymbols" asp-controller="Html">Html Math Symbols</a></li><li><a class="link-dark rounded" asp-action="PostFormatter" asp-controller="Html">Html Post Formatter</a></li><li><a class="link-dark rounded" asp-action="Tags" asp-controller="Html">Html Tags</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Bash-collapse" aria-expanded="false">                                    Bash                                </button>                                <div class="collapse" id="Bash-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Bash">Bash Home</a></li><li><a class="link-dark rounded" asp-action="AppendString" asp-controller="Bash">Bash Append String</a></li><li><a class="link-dark rounded" asp-action="Bashrc" asp-controller="Bash">Bash Bashrc</a></li><li><a class="link-dark rounded" asp-action="Comments" asp-controller="Bash">Bash Comments</a></li><li><a class="link-dark rounded" asp-action="FileNames" asp-controller="Bash">Bash File Names</a></li><li><a class="link-dark rounded" asp-action="Lowercase" asp-controller="Bash">Bash Lowercase</a></li><li><a class="link-dark rounded" asp-action="PrintVariables" asp-controller="Bash">Bash Print Variables</a></li><li><a class="link-dark rounded" asp-action="SplitString" asp-controller="Bash">Bash Split String</a></li><li><a class="link-dark rounded" asp-action="StringLength" asp-controller="Bash">Bash String Length</a></li><li><a class="link-dark rounded" asp-action="Substring" asp-controller="Bash">Bash Substring</a></li><li><a class="link-dark rounded" asp-action="Tips" asp-controller="Bash">Bash Tips</a></li><li><a class="link-dark rounded" asp-action="Uppercase" asp-controller="Bash">Bash Uppercase</a></li><li><a class="link-dark rounded" asp-action="Variables" asp-controller="Bash">Bash Variables</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Git-collapse" aria-expanded="false">                                    Git                                </button>                                <div class="collapse" id="Git-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Git">Git Home</a></li><li><a class="link-dark rounded" asp-action="Aliases" asp-controller="Git">Git Aliases</a></li><li><a class="link-dark rounded" asp-action="Branching" asp-controller="Git">Git Branching</a></li><li><a class="link-dark rounded" asp-action="BranchingWorkflows" asp-controller="Git">Git Branching Workflows</a></li><li><a class="link-dark rounded" asp-action="BranchManagement" asp-controller="Git">Git Branch Management</a></li><li><a class="link-dark rounded" asp-action="CommitHistory" asp-controller="Git">Git Commit History</a></li><li><a class="link-dark rounded" asp-action="Commits" asp-controller="Git">Git Commits</a></li><li><a class="link-dark rounded" asp-action="Protocols" asp-controller="Git">Git Protocols</a></li><li><a class="link-dark rounded" asp-action="Rebasing" asp-controller="Git">Git Rebasing</a></li><li><a class="link-dark rounded" asp-action="Remotes" asp-controller="Git">Git Remotes</a></li><li><a class="link-dark rounded" asp-action="Repositories" asp-controller="Git">Git Repositories</a></li><li><a class="link-dark rounded" asp-action="Tags" asp-controller="Git">Git Tags</a></li><li><a class="link-dark rounded" asp-action="UndoingThings" asp-controller="Git">Git Undoing Things</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Dotnet-collapse" aria-expanded="false">                                    .NET                                </button>                                <div class="collapse" id="Dotnet-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Dotnet">.NET Home</a></li><li><a class="link-dark rounded" asp-action="AddController" asp-controller="Dotnet">.NET Add Controller</a></li><li><a class="link-dark rounded" asp-action="AddModel" asp-controller="Dotnet">.NET Add Model</a></li><li><a class="link-dark rounded" asp-action="AddViews" asp-controller="Dotnet">.NET Add Views</a></li><li><a class="link-dark rounded" asp-action="GetStarted" asp-controller="Dotnet">.NET Get Started</a></li><li><a class="link-dark rounded" asp-action="RandomNumber" asp-controller="Dotnet">.NET Random Number</a></li><li><a class="link-dark rounded" asp-action="RazorPages" asp-controller="Dotnet">.NET Razor Pages</a></li><li><a class="link-dark rounded" asp-action="WorkWithADatabase" asp-controller="Dotnet">.NET Work With Adatabase</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Go-collapse" aria-expanded="false">                                    Go                                </button>                                <div class="collapse" id="Go-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Go">Go Home</a></li><li><a class="link-dark rounded" asp-action="PrintStatement" asp-controller="Go">Go Print Statement</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Sass-collapse" aria-expanded="false">                                    Sass                                </button>                                <div class="collapse" id="Sass-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Sass">Sass Home</a></li><li><a class="link-dark rounded" asp-action="Variables" asp-controller="Sass">Sass Variables</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#seo-collapse" aria-expanded="false">                                    seo                                </button>                                <div class="collapse" id="seo-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="seo">seo Home</a></li><li><a class="link-dark rounded" asp-action="HtmlTags" asp-controller="seo">seo Html Tags</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Challenges-collapse" aria-expanded="false">                                    Challenges                                </button>                                <div class="collapse" id="Challenges-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Challenges">Challenges Home</a></li>                                    </ul>                                </div>                            </li>                            <li class="mb-1">                                <button class="btn btn-toggle align-items-center rounded collapsed"                                    data-bs-toggle="collapse" data-bs-target="#Glossary-collapse" aria-expanded="false">                                    Glossary                                </button>                                <div class="collapse" id="Glossary-collapse">                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">                                        <li><a class="link-dark rounded" asp-action="index" asp-controller="Glossary">Glossary Home</a></li>                                    </ul>                                </div>                            </li>
                         @* /End Sidebar *@
                      </ul>
-                  </div>
-               </div>
-               
-               <div id="mainBody" class="col-8 px-5 my-5 ">
-                  <div class="text-secondary">alecscripts.com&MediumSpace;&MediumSpace;&MediumSpace;>&MediumSpace;&MediumSpace;&MediumSpace;<span class="text-dark">@ViewData["controller"]</span> <span class="text-dark">&MediumSpace; &gt; &MediumSpace;</span> <span class="text-dark"> @ViewData["title"]</span>
-                  &MediumSpace;&MediumSpace;&MediumSpace;|&MediumSpace;&MediumSpace;&MediumSpace;Created on: <code>@ViewData["creationDate"]</code>
-                  <br /><br /><br /></div>
-                  <h1 class=" mb-5">@ViewData["Controller"]: @ViewData["title"]</h1>
-                  <div id="toc">
-                     <span class="border-bottom mx-2">Table of Contents</span>
-                     <ul id="tocList">
-                     </ul>
-                  </div>
-                  @RenderBody()
-               </div>
-               <div id="rightSidebar" class="sticky-top col text-start ">
-                  <div  class="bg-white ">
-                     <a href="/"class="d-flex align-items-center  pb-3 mb-3 link-dark text-decoration-none">
-                        <svg class="bi me-2" width="30" height="24">
-                           <use xlink:href="#bootstrap"></use>
-                        </svg>
-                     </a>
-                     <ul class="list-unstyled ps-0">
-                        <ul id="rightSideList" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                           <span class="text-dark">@ViewData["controller"]</span> <span class="text-dark">&MediumSpace; &gt; &MediumSpace;</span> <span class="text-dark"> @ViewData["title"]</span>
-                            @* Dont delete this *@
-                           <span class=""></span>
-                        </ul>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </main>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-      <script src="~/js/addH2events.js"></script>
-      <script src="~/lib/jquery/dist/jquery.min.js"></script>
-      <script src="~/js/sidebars.js"></script>
-      <script src="~/js/prism.js" asp-append-version="true"></script>
-      @* 
-      <li><a href="#" class="link-dark rounded">Annually</a></li>
-      *@
-      <script src="/js/adjustCol8.js"></script>
-      
-      <!-- 
-        assign @@ViewData["Controller"] for external js access 
-      in /navlinkSelected.js 
-      -->
-      <script>var viewdataName = '@ViewData["Controller"]';</script>
-      <script src="/js/navlinkSelected.js"></script>
-      <script src="/js/activateLeft.js"></script>
-      <script src="/js/activateRight.js"></script>
-      <script src="/js/createToc.js"></script>
-      <script src="/js/highlightRight.js"></script>
-      <script src="/js/leftScrollTop.js">
-        
-      </script>
-      @await RenderSectionAsync("Scripts", required: false)
-   </body>
-   @* Footer *@
-   <!-- Footer -->
-   <div class="container-fluid bg-dark">
-      <div class="row">
-         <div class="col ">
-            <footer >
-               <ul class="nav justify-content-center pb-1 mb-1">
-                  <li class="nav-item"><a asp-action="index" asp-controller="home" class="nav-link px-2 text-white border-bottom mx-2">Home</a></li>
-                  <li class="nav-item"><a asp-action="index" asp-controller="python" class="nav-link px-2 text-white border-bottom mx-2">Python</a></li>
-                  <li class="nav-item"><a asp-action="index" asp-controller="Cpp" class="nav-link px-2 text-white border-bottom mx-2">C++</a></li>
-                  <li class="nav-item"><a asp-action="index" asp-controller="Css" class="nav-link px-2 text-white border-bottom mx-2">CSS</a></li>
-                  <li class="nav-item"><a asp-action="index" asp-controller="bash" class="nav-link px-2 text-white border-bottom mx-2">Bash</a></li>
-                  <li class="nav-item"><a asp-action="index" asp-controller="html" class="nav-link px-2 text-white border-bottom mx-2">HTML</a></li>
-                  <li class="nav-item"><a asp-action="index" asp-controller="js" class="nav-link px-2 text-white border-bottom mx-2">javaScript</a></li>
-                  <li class="nav-item"><a asp-action="index" asp-controller="dotnet" class="nav-link px-2 text-white border-bottom mx-2">.NET</a></li>
-                  <li class="nav-item"><a asp-action="index" asp-controller="go" class="nav-link px-2 text-white border-bottom mx-2">Go</a></li>
-                  <li class="nav-item"><a asp-action="index" asp-controller="glossary" class="nav-link px-2 text-white border-bottom mx-2">Glossary</a></li>
-               </ul>
-               <ul class="nav justify-content-center pb-3 mb-3">
-                  <li class="nav-item"><a asp-action="index" asp-controller="home" class="nav-link px-2 text-white">@Version</a></li>
-                  <li class="nav-item">
-                     <a asp-action="aboutthiswebsite" asp-controller="home" class="nav-link px-2 text-white">
-                        About This Website 
-                        <figcaption>Feedback Welcome</figcaption>
-                     </a>
-                  </li>
-               </ul>
-            </footer>
-         </div>
-      </div>
-   </div>
-</html>
+
