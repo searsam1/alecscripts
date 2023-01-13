@@ -1,0 +1,196 @@
+<p>
+    The math object is a static object used
+    for mathematical operations and its constants (like pi).
+
+    Since <code class="lang-js">Math</code> is static, it does <b>not</b> need
+    an object to be used.
+<pre><code class="lang-js">console.log( Math.PI )
+// 3.141592653589793</code></pre>
+</p>
+
+<h2>
+    Math Constants
+</h2>
+<pre><code class="lang-js">Math.E        // Euler's number
+Math.PI       // pi 
+Math.SQRT2    // square root of 2
+Math.SQRT1_2  // square root of 1/2
+Math.LN2      // natural log of 2
+Math.LN10     // natural log of 10
+Math.LOG2E    // base 2 log of E
+Math.LOG10E   // base 10 log of E
+</code></pre>
+
+<h2>
+    Math Methods
+</h2>
+
+<pre><code class="lang-js">pow(x, y)
+random()
+abs(x)
+acos(x)
+acosh(x)
+asin(x)
+asinh(x)
+atan(x)
+atan2(y, x)
+atanh(x)
+cbrt(x)
+ceil(x)
+cos(x)
+cosh(x)
+exp(x)
+floor(x)
+log(x)
+max(x, y, z, ..., n)
+min(x, y, z, ..., n)
+round(x)
+sign(x)
+sin(x)
+sinh(x)
+sqrt(x)
+tan(x)
+tanh(x)
+trunc(x)
+</code></pre>
+
+<h2>
+    Examples
+</h2>
+<h3>
+    Solve the quadratic equation
+</h3>
+<center>
+    <img class="mb-3" src="/lib/Resources/00c22777378f9c594c71158fea8946f2495f2a28.svg">
+    <figcaption>
+        Photo Credit: <a href="https://en.wikipedia.org/wiki/Quadratic_equation">
+            wikipedia
+        </a>
+    </figcaption>
+</center>
+<pre><code class="lang-js">/* 
+    solve quadratic question with: 
+        -b ± sqrt(b^2 - 4ac) 
+        --------------------
+                2a
+*/
+
+function getDiscriminate(a, b, c){
+    // return sqrt(b^2 - 4ac)
+    return Math.sqrt(Math.pow(b, 2) - (4 * a * c))
+}
+
+
+// d for discriminate
+function getRoots(a, b, c){
+    let discriminate = getDiscriminate(a, b, c)
+
+    // use +
+    x1 = (-b + discriminate) / (2*a);
+    // use -
+    x2 = (-b - discriminate) / (2*a)
+
+    return { root1 : x1, root2 : x2 }
+}
+
+var res = getRoots(1,6,-9); 
+console.log(res.root1, res.root2)
+// 1.2426406871192848 -7.242640687119285</code></pre>
+
+
+<div class="bg-dark rounded-3 p-3">
+    <span class="text-white">Quadratic Equation Calculator</span>
+    <p id="quadInput">
+    <div class="p-2 m-2 rounded-3 shadow-sm bg-light">
+        <label for="a">a:
+        <input class="mb-1" value="1" id="a">
+    </div>
+    <div class="p-2 m-2 rounded-3 shadow-sm bg-light">
+        <label for="b">b:
+        <input class="mb-1" value="6" id="b">
+    </div>
+    <div class="p-2 m-2 rounded-3 shadow-sm bg-light">
+        <label for="c">c:
+        <input class="mb-1" value="9" id="c">
+    </div>
+    </p>
+
+    <p id="X1">
+        <code class="bg-light p-3 m-3">X1: </code>
+        <code class="bg-light p-3 m-3">-3</code>
+    </p>
+    <p id="X2">
+        <code class="bg-light p-3 m-3">X2: </code>
+        <code class="bg-light p-3 m-3">-3</code>
+    </p>
+</div>
+
+<script>
+    function getDiscriminate(a, b, c) {
+        // return sqrt(b^2 - 4ac)
+        return Math.sqrt(Math.pow(b, 2) - (4 * a * c))
+    }
+
+
+    // d for discriminate
+    function getRoots(a, b, c) {
+        a = parseFloat(a);
+        b = parseFloat(b);
+        c = parseFloat(c);
+
+        let discriminate = getDiscriminate(a, b, c)
+        // use +
+        x1 = (-b + discriminate) / (2 * a);
+        // use -
+        x2 = (-b - discriminate) / (2 * a)
+
+        return { root1: x1, root2: x2 }
+    }
+    @*
+            var res = getRoots(1,6,-9);
+            console.log(res.root1, res.root2)
+            // 1.2426406871192848 -7.242640687119285 *@
+</script>
+
+<script>
+
+        function fillResult() {
+            let a = document.querySelector("#a"),
+                b = document.querySelector("#b"),
+                c = document.querySelector("#c")
+
+            let resultX1 = document.querySelector("#X1")
+            let resultX2 = document.querySelector("#X2")
+            let abc = [a, b, c]
+            abc.forEach(el => el.addEventListener(
+                "change", function () {
+                    res = getRoots(a.value, b.value, c.value);
+
+                    x1Label = document.createElement("span")
+                    x2Label = document.createElement("span")
+
+                    x1Label.setAttribute("class", "bg-light p-3 m-3 ")
+                    x1Label.textContent = "X1: "
+
+                    x2Label.setAttribute("class", "bg-light p-3 m-3")
+                    x2Label.textContent = "X2: "
+
+                    x1 = document.createElement("code")
+                    x1.textContent = res.root1
+                    x1.setAttribute("class", "bg-light p-3 m-3")
+                    resultX1.textContent = ""
+                    resultX1.appendChild(x1Label)
+                    resultX1.appendChild(x1)
+
+                    x2 = document.createElement("code")
+                    x2.textContent = res.root2
+                    x2.setAttribute("class", "bg-light p-3 m-3")
+                    resultX2.textContent = ""
+                    resultX2.appendChild(x2Label)
+                    resultX2.appendChild(x2)
+
+                }, false)
+            )
+        }
+    fillResult()
+</script>

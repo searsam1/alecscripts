@@ -150,6 +150,9 @@ string Version = "V3";
                   </div>
                </div>
                <div id="mainBody" class="col-8 px-5 my-5 ">
+                  <div class="text-secondary">alecscripts.com&MediumSpace;&MediumSpace;&MediumSpace;>&MediumSpace;&MediumSpace;&MediumSpace;<span class="text-dark">@ViewData["controller"]</span> <span class="text-dark">&MediumSpace; &gt; &MediumSpace;</span> <span class="text-dark"> @ViewData["title"]</span>
+                  &MediumSpace;&MediumSpace;&MediumSpace;|&MediumSpace;&MediumSpace;&MediumSpace;Created on: <code>@ViewData["creationDate"]</code>
+                  <br /><br /><br /></div>
                   <h1 class=" mb-5">@ViewData["Controller"]: @ViewData["title"]</h1>
                   <div id="toc">
                      <span class="border-bottom mx-2">Table of Contents</span>
@@ -161,15 +164,16 @@ string Version = "V3";
                <div id="rightSidebar" class="sticky-top col text-start ">
                   <div  class="bg-white ">
                      <a href="/"class="d-flex align-items-center  pb-3 mb-3 link-dark text-decoration-none">
-                        <span class="text-dark">@ViewData["controller"]</span> <span class="text-dark">&MediumSpace; &gt; &MediumSpace;</span> <span class="text-dark"> @ViewData["title"]</span>
+
                         <svg class="bi me-2" width="30" height="24">
                            <use xlink:href="#bootstrap"></use>
                         </svg>
                      </a>
                      <ul class="list-unstyled ps-0">
                         <ul id="rightSideList" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                           <span class="">
-                           </span>
+                           <span class="text-dark">@ViewData["controller"]</span> <span class="text-dark">&MediumSpace; &gt; &MediumSpace;</span> <span class="text-dark"> @ViewData["title"]</span>
+                            @* Dont delete this *@
+                           <span class=""></span>
                         </ul>
                      </ul>
                   </div>
