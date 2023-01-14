@@ -223,3 +223,4 @@ function getColorArr(x) {
 }
 alternateTableColor()
 
+console.info("Main ASJS loaded")

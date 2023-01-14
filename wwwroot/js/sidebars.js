@@ -6,4 +6,4 @@
       new bootstrap.Tooltip(tooltipTriggerEl)
     })
   })()
-  
+  console.info("sidebar loaded")

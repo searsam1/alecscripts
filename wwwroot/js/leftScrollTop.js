@@ -8,3 +8,4 @@ function leftScrollTop(){
     }
 }
 leftScrollTop()
+console.info("Adjusted Left scroll top...")

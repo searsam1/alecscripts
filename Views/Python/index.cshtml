@@ -244,3 +244,179 @@ do_something(556)
 <h2>
     Built-in Functions 
 </h2>
+
+@{
+    string[] builtInFunctions = @"abs()
+aiter()
+all()
+any()
+anext()
+ascii()
+bin()
+bool()
+breakpoint()
+bytearray()
+bytes()
+callable()
+chr()
+classmethod()
+compile()
+complex()
+delattr()
+dict()
+dir()
+divmod()
+enumerate()
+eval()
+exec()
+filter()
+float()
+format()
+frozenset()
+getattr()
+globals()
+hasattr()
+hash()
+help()
+hex()
+id()
+input()
+int()
+isinstance()
+issubclass()
+iter()
+len()
+list()
+locals()
+map()
+max()
+memoryview()
+min()
+next()
+object()
+oct()
+open()
+ord()
+pow()
+print()
+property()
+range()
+repr()
+reversed()
+round()
+set()
+setattr()
+slice()
+sorted()
+staticmethod()
+str()
+sum()
+super()
+tuple()
+type()
+vars()
+zip()
+__import__()".Split("\n");
+}
+
+<pre><code class="lang-python">@foreach (string builtInFunction in builtInFunctions)
+{@builtInFunction<br />
+}
+
+ </code></pre>
+
+
+<h3>
+    abs(x)
+</h3>
+
+<p>
+    Return the absolute value <code>|x|</code> of a number. The input can be a 
+    floating point, integer, or an object using <code class="lang-py">__abs__</code>. 
+</p>
+
+<pre><code class="lang-py">x = -4
+print( abs(x) )
+# 4
+</code></pre>
+
+<p>
+    It will throw an error if given the wrong datatype:
+</p>
+
+<pre style="background-color: #FFC0CB;"><code class="lang-py">x = "AS"
+print( abs("AS") )
+# TypeError: bad operand type for abs(): 'str'
+</code></pre>
+
+<h3>
+    hex(x)
+</h3>
+<p>
+    Takes an integer and returns a hex prefixed with <code>0x</code>.
+</p>
+
+<pre><code class="lang-py">x = 10
+print( hex(x) )
+# 0xa
+</code></pre>
+
+<h3>
+    locals()
+</h3>
+<p>
+    Returns the local symbol table. It will return variables inside a 
+    function but not inside a class. 
+</p>
+
+<pre><code class="lang-py">x = 10
+y = 20
+print( locals() )
+# {...'x': 10, 'y': 20}
+
+
+def foo():
+    x = 2
+    y = 3
+    print(locals())
+
+foo()
+# {'x': 2, 'y': 3}
+</code></pre>
+
+<h3>
+    int(x, base)
+</h3>
+<p>
+    int is used to cast a different datatype to an integer. If no base 
+    is given it will use base 10. 
+</p>
+
+
+<pre ><code class="lang-py">x = "22"
+print(int(x))
+# 22
+
+x = "100000"
+# base 2 (binary) example
+print(int(x, 2))
+# 32
+</code></pre>
+
+<p>
+    Custom objects need to define an <b>__index__</b> method:
+</p>
+<pre ><code class="lang-py">
+class Weather:
+    temp = 23
+
+    def __index__(self):
+        return self.temp
+
+    # def __int__(self):
+    #     return self.age
+
+weather = Weather()
+
+print("Temp in C:", int(weather))
+# Temp in C: 23</code></pre>

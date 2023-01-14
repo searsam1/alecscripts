@@ -26,3 +26,5 @@ function editH3(){
 
 editH2()
 editH3()
+console.warn("'H to display' is no longer in use")
+console.info("H to display")

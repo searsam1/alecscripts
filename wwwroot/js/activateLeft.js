@@ -36,4 +36,4 @@ function activate_left() {
     }
 }
 activate_left()
-
+console.info("Activate Left")

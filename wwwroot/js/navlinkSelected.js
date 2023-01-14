@@ -14,3 +14,4 @@ function navlinkSelected(){
     }
 }
 navlinkSelected()
+console.info("Selected navbar")

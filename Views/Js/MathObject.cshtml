@@ -11,14 +11,14 @@
 <h2>
     Math Constants
 </h2>
-<pre><code class="lang-js">Math.E        // Euler's number
-Math.PI       // pi 
-Math.SQRT2    // square root of 2
-Math.SQRT1_2  // square root of 1/2
-Math.LN2      // natural log of 2
-Math.LN10     // natural log of 10
-Math.LOG2E    // base 2 log of E
-Math.LOG10E   // base 10 log of E
+<pre><code class="lang-js">Math.E           // 2.718281828459045
+Math.LOG10E      // 0.4342944819032518
+Math.PI          // 3.141592653589793
+Math.SQRT2       // 1.4142135623730951
+Math.SQRT1_2     // 0.7071067811865476
+Math.LN2         // 0.6931471805599453
+Math.LN10        // 2.302585092994046
+Math.LOG2E       // 1.4426950408889634
 </code></pre>
 
 <h2>
@@ -194,3 +194,22 @@ console.log(res.root1, res.root2)
         }
     fillResult()
 </script>
+
+<h3>
+    Engine Displacement
+</h3>
+
+<script>
+    
+    
+</script>
+<pre><code class="lang-js">function engineDisplacement(boreSize, strokeLength, cylinderCount){
+        // displacement = π / 4 * b^2 * s * c
+        let displacement =  (Math.PI / 4) * Math.pow(boreSize, 2) * strokeLength 
+            * cylinderCount
+        console.log(displacement)
+    }
+    
+    engineDisplacement(3.4, 3.6, 8)
+    // 261.481\\ in^3
+</code></pre>

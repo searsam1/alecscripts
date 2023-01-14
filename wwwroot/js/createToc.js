@@ -12,3 +12,4 @@ function createToc(){
     }
     }
 createToc();
+console.info("Created TOC")

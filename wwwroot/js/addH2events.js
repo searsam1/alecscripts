@@ -40,3 +40,4 @@ function addH2events(){
 
 }
 addH2events();
+console.info("Add h2 events")

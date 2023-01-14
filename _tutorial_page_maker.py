@@ -2,7 +2,7 @@
 # program to make tutorial page for me 
 # in html table format 
 
-import clipboard
+from clipboard import copy
 import re 
 import os 
 
@@ -60,10 +60,53 @@ for controller, actions in langs.items():
 
 def create_table(table_body=table_body):
     table_body = "\n".join(table_body)
-    res = f"""<table class=" table table-hover table-striped table-dark">
+    table = f"""<table class=" table table-hover table-striped table-dark">
     {table_body}
 </table>
     """
-    clipboard.copy(res)
+    return table
 
-create_table()
+def write_to_tutorial_file():
+    file_path = "/Users/111244rfsf/Documents/Repositories/alecscripts/Views/Home/Tutorials.cshtml"
+    with open(file_path, "r") as f:
+        tutorial_page = f.readlines()
+    for idx, line in enumerate(tutorial_page):
+        if "@* a09ba98393d12f113dd9dc8a450223abb7f17608fb65ad8866eda2108df61f67 *@" in line:
+            tutorial_page = tutorial_page[:idx + 1]
+            break 
+    tutorial_page = "".join(tutorial_page)    
+    table = create_table()
+    tutorial_page += table
+
+    with open(file_path, "w") as f:
+        f.write(tutorial_page)
+
+#==============================================================================#
+# def main():
+#     write_to_tutorial_file()
+
+# if __name__ == "__main__":
+#     main()
+#==============================================================================#
+
+js_constants = ["Math.E        // Euler's number", 'Math.PI       // pi ', 'Math.SQRT2    // square root of 2', 'Math.SQRT1_2  // square root of 1/2', 'Math.LN2      // natural log of 2', 'Math.LN10     // natural log of 10', 'Math.LOG2E    // base 2 log of E', 'Math.LOG10E   // base 10 log of E', "Math.E        // Euler's number", 'Math.PI       // pi ', 'Math.SQRT2    // square root of 2', 'Math.SQRT1_2  // square root of 1/2', 'Math.LN2      // natural log of 2', 'Math.LN10     // natural log of 10', 'Math.LOG2E    // base 2 log of E', 'Math.LOG10E   // base 10 log of E']
+
+# Math.PI       // pi 
+# Math.SQRT2    // square root of 2
+# Math.SQRT1_2  // square root of 1/2
+# Math.LN2      // natural log of 2
+# Math.LN10     // natural log of 10
+# Math.LOG2E    // base 2 log of E
+# Math.LOG10E   // base 10 log of E
+
+
+#==============================================================================#
+
+
+
+
+
+
+
+
+

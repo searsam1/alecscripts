@@ -1,0 +1,79 @@
+
+
+<h2>
+    Function Borrowing 
+</h2>
+
+<p>
+    One object can borrow a method from another object using the <code class="la">bind()</code>
+    method. 
+</p>
+
+<pre><code class="lang-js">const person = {
+  firstName:"John",
+  lastName: "Smith",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const Liam = {
+  firstName:"Liam",
+  lastName: "Nelson",
+}
+
+let fullName = person.fullName.bind(Liam);
+fullName()
+// "Liam Nelson"
+
+</code></pre>
+
+<p>
+    When <code>fullName()</code> is called it uses the 
+    method found in person but with the other object's data. 
+</p>
+
+<h2>
+    Conserving <code class="lang-js">this</code>
+</h2>
+
+<p>
+    When a function is used as an argument (a callback), <code class="lang-js">this</code>
+    no longer works. The <code lang-js>bind</code> method is used to preserve 
+    <code class="lang-js">this</code> inside of a callback.
+</p>
+
+<pre><code class="lang-js">const person = {
+  firstName:"John",
+  lastName: "Smith",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+}
+// callback 
+let fullName = person.fullName.bind(person)
+
+function printName(callback){
+    console.log(callback(person))
+}
+
+// Needs to be bound to work
+printName(person.fullName)
+// undefined 
+
+printName(fullName)
+// John Smith</code></pre>
+
+<p>
+    <code>fullname</code> will work as a callback, but <code>person.fullName</code> 
+    will not because it isn't bound.  
+</p>
+
+<pre><code class="lang-js">// callback 
+let fullName = person.fullName.bind(person)</code></pre>
+<p>
+    The code above is used to create a new 
+    variable that is bound to person 
+    so <code class="lang-js">this</code> still works.
+
+</p>

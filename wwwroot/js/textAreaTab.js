@@ -64,3 +64,4 @@ textarea.onkeydown = function(event) {
         }
     } 
 }
+console.info("Text area tab")

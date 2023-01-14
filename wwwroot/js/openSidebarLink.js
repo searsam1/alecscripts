@@ -22,3 +22,4 @@ function openSidebarLink(){
     
 }
 openSidebarLink()
+console.info("Open Sidebar")

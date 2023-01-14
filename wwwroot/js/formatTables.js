@@ -14,3 +14,4 @@ function alternateTableColor(){
     }
 }
 alternateTableColor()
+console.info("Format Tables")
