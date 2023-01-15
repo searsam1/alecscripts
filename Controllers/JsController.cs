@@ -251,5 +251,22 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult Ajax()
+    {   
+        ViewData["creationDate"] = "Sat Jan 14 19:33:14 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Ajax";
+        return View();
+    }
+
+    
+    public IActionResult AjaxXmlhttprequestObject()
+    {   
+        ViewData["creationDate"] = "Sat Jan 14 21:24:11 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Ajax Xmlhttprequest Object";
+        return View();
+    }
+    
     }
 }

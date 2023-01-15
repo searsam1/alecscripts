@@ -1,0 +1,80 @@
+
+<p>
+    Ajax stands for <b>A</b>synchronous <b>J</b>avaScript <b>A</b>nd <b>X</b>ML.
+    It is not a programming language, but a built-in browser object 
+    that interacts with javaScript and HTML DOM. 
+</p>
+<p>
+    Ajax runs in parallel with the browser so it can update 
+    a page without reloading all of it. The data uses Extensible Markup Language (<b>XML</b>)
+    as its format. 
+</p>
+
+<a>As a simple example, click the button below to change some of the text in the text box below.</a>
+
+<script>
+    function loadDoc() {
+  document.getElementById("example").querySelector("h3").textContent = "AJAX is Awesome"
+}
+</script>
+
+<div class="bg-light rounded-3 p-3" id="example">
+    <p>
+        <h3 class="display-6">Let AJAX change this text</h3>
+        <button class="btn btn-dark" type="button" onclick="loadDoc()">Change Content</button>
+    </p>
+</div>
+<br>
+<p>
+    A div is defined with the id <code class="lang-html">"example"</code>. Below that 
+    is a button that acts as the carrier between the HTML and the Javascript to 
+    give a request to a server. 
+</p>
+@{string htmlAjaxExample = @"<div id=""example"">
+  <h2>Let AJAX change this text</h2>
+  <button type=""button"" onclick=""loadDoc()"">Change Content</button> <!-- 1: Event -->
+</div>";
+
+    }
+<pre><code class="lang-html">@htmlAjaxExample</code></pre>
+
+<pre><code class="lang-js">function loadDoc() {
+  const xhttp = new XMLHttpRequest(); // 2: Create XMLHttpRequest
+  xhttp.onload = function() {
+    document.getElementById("example").innerHTML = this.responseText;
+    }
+  xhttp.open("GET", "ajax_example.txt", true); // 3: XMLHttpRequest sends request
+  xhttp.send();
+}</code></pre>
+
+<p>
+    A function is created to handle AJAX called <code>loadDoc</code>. It creates 
+    a <code class="lang-js">new XMLHttpRequest()</code> object that is used to 
+    get responses and requests. 
+</p>
+
+<h2>
+    How Ajax Works
+</h2>
+@{
+    string[] collection = @"Event occurs
+XMLHttpRequest object is created (JavaScript)
+XMLHttpRequest object sends a request web server
+server processes the request
+server sends response
+response read by JavaScript
+action performed by JavaScript".Split("\n");
+}
+
+<ul style="list-style: decimal;">
+@foreach (string item in collection)
+{
+    <li>
+        @item
+    </li>
+}
+</ul>
+
+<a class="btn btn-primary" asp-controller="Js" asp-action="AjaxXmlhttprequestObject">
+     Next: XMLHttpRequest
+</a>

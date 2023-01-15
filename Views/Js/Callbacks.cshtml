@@ -1,0 +1,81 @@
+
+<p>
+    <b>Callbacks</b> are functions passed in as arguments to other functions. 
+</p>
+
+    
+<h2>Call order</h2>
+
+<p>
+    Functions run when they are called <code>()</code> and will therefore 
+    run in the order they are called and not defined. 
+</p>
+<pre><code class="lang-js">// Define function `multiply` that returns a * b
+function multiply(a, b) {
+  let res = a * b;
+  console.log(res);  
+}
+multiply(2,3)
+// 6
+
+multiply(3,3)
+// 9
+</code></pre>
+<p>
+    In the example above, <code>6</code> will print before <code>9</code> 
+    because <code>multiply(2,3)</code> is called before <code><code>multiply(3, 3)</code></code>. 
+</p>
+
+<pre><code class="lang-js">// Define function `multiply` that returns a * b
+function multiply(a, b) {
+  let res = a * b;
+  console.log(res);  
+}
+
+function divide(a, b) {
+  let res = a / b;
+  console.log(res);  
+}
+
+divide(2, 3)
+// .66666
+
+multiply(2, 3)
+// 6
+
+</code></pre>
+
+<p>
+    Even though multiply is defined first, it is called second and 
+    will print after behind divide.
+</p>
+
+<h2>Callbacks</h2>
+
+<p>
+    Functions that are used as arguments are called callbacks. Since 
+    functions are only ran when they are called, functions can therefore 
+    be passed in as arguments because they will send the function itself 
+    and not the return result. 
+</p>
+
+<pre><code class="lang-js">function calculator(callback, a, b){
+    console.log(callback(a, b))
+}
+
+function divide(a, b) {
+  let res = a / b;
+  console.log(res);  
+}
+
+calculator(divide, 16, 4)
+// 4
+
+</code></pre>
+
+<p style="background-color: rgb(255,255,0,.2);" class="p-3 rounded-3 text-danger opacity-75">
+    Make sure to exclude parenthesis <code>()</code> when passing in a callback. 
+</p>
+<pre><code class="lang-js">// divide and NOT divide()
+calculator(divide, 16, 4)
+// 4</code></pre>
