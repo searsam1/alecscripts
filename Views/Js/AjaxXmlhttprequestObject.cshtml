@@ -1,0 +1,63 @@
+<p>
+    <a class="btn btn-primary" asp-controller="Js" asp-action="Ajax">
+         ❮ Previous: Ajax Intro
+    </a>
+</p>
+
+<h2>
+    The AJAX Process
+</h2>
+
+<p>
+    The <b>XMLHttpRequest</b> Object is supported on most modern browsers. It is 
+    the <b>core of AJAX</b>. 
+</p>
+
+<h3>
+    Create new Object
+</h3>
+<p>
+    First, create a new XMLHttpRequest object:
+</p>
+<pre><code class="lang-js">// create new xhttp variable 
+xhttp = new XMLHttpRequest();</code></pre>
+
+<h3>
+    Create callback function
+</h3>
+<p>
+    The object then needs a callback function to tell JavaScript 
+    what to do when the response is ready. A callback is a function 
+    passed into another function as an argument. 
+</p>
+
+<pre><code class="lang-js">xhttp.onload = function() {
+  // Code to run when response is ready
+}
+</code></pre>
+
+<h3>
+    Send Request
+</h3>
+<p>
+    Finally, a request is sent with <code>open()</code> and <code>send()</code>:
+</p>
+
+<pre><code class="lang-js">xhttp.open("GET", "ajax_data.json");
+xhttp.send();</code></pre>
+
+<p>
+    Now, smash all the code together:
+</p>
+
+<pre><code class="lang-js">// create new xhttp variable 
+xhttp = new XMLHttpRequest();
+
+xhttp.onload = function() {
+  // Code to run when response is ready
+}
+xhttp.open("GET", "ajax_data.json");
+xhttp.send();
+
+</code></pre>
+
