@@ -1,0 +1,76 @@
+
+<p>
+    Constants are unchangeable and read-only. They are usually 
+    named in all uppercase, and they can be typed or untyped. 
+</p>
+
+<h2>
+    Typed Constants
+</h2>
+<p>
+    Typed constants are just constants with a type given at declaration.
+</p>
+<pre><code class="lang-go">package main
+import ("fmt")
+
+const A int = 33 // int type
+const B int = 66;
+func main() {
+  fmt.Println(A)
+  // 33
+}</code></pre>
+
+
+<h2>
+    Untyped Constants
+</h2>
+<p>
+    With Untyped Constants, the type is inferred through the value. 
+</p>
+<pre><code class="lang-go">package main
+import ("fmt")
+
+const A = 0 // inferred type
+func main() {
+  fmt.Println(A)
+  // 0
+}</code></pre>
+
+<h2>
+    Declaring Multiple Constants
+</h2>
+<p>
+    Multiple constants can be grouped together into a block for 
+    better organization and code-readability. 
+</p>
+<pre><code class="lang-go">package main 
+import ("fmt") 
+
+const (
+  A int = 5
+  B = 2.71
+  C = "Iconic"
+)
+
+func main() { 
+  fmt.Println(A) 
+  fmt.Println(B) 
+  fmt.Println(C) 
+}
+// 5
+// 2.71
+// Iconic</code></pre>
+
+<h2>
+    Changing Constants
+</h2>
+<p>
+    The value of constant cannot be changed and will throw an error if tried. 
+</p>
+<pre><code class="lang-go">package main
+import ("fmt")
+
+const A = 0 // inferred type
+func main() {
+  A = 77; // cannot assign to A
+}</code></pre>
