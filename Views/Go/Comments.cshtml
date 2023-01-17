@@ -1,0 +1,39 @@
+
+<p>
+    Comments make code more readable, define what not to execute, and explain the code. Comments are ignored by the computer and are only useful for humans.
+</p>
+
+<h2>
+    Single-line Comments
+</h2>
+<p>
+    Single-line comments start with two forward slashes <code>//</code>. 
+</p>
+<pre><code class="lang-go">// Single-line Comment
+package main
+import ("fmt")
+
+func main() {
+  // output: "Hello World!"
+  // ^^^ Comments describe the code
+  fmt.Println("Hello World!")
+}</code></pre>
+
+<h2>
+    Multi-line Comments
+</h2>
+<p>
+    Multi-line comments start with <code>/*</code> and end with <code>*/</code>:
+</p>
+
+<pre><code class="lang-go">// Single-line Comment
+package main
+import ("fmt")
+
+func main() {
+  /* 
+    output: "Hello World!"
+     ^^^ Comments describe the code  
+  */
+  fmt.Println("Hello World!")
+}</code></pre>
