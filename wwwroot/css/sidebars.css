@@ -39,15 +39,10 @@ body {
     padding: .25rem .5rem;
     font-weight: 500;
     color: #000;
-    background-color: rgba(0, 0, 0, .05);
     width: 100%;
-    border: 0;
+    
   }
-  .btn-toggle:hover,
-  .btn-toggle:focus {
-    color: rgba(0, 0, 0, .85);
-    background-color: rgba(0, 0, 0, .05);
-  }
+
   
   .btn-toggle::before {
     width: 1.5em;
