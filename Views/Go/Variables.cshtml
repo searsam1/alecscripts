@@ -1,0 +1,196 @@
+
+<p>
+    Variables are containers that have a data type. 
+</p>
+
+
+<h2>
+    Naming Rules
+</h2>
+<p>
+    Variables have names and those names have a syntax. They must:
+</p>
+<ul>
+    <li>
+        Contain alphanumeric characters <code>[a-zA-Z0-9_]</code> or an underscore.
+    </li>
+    <li>
+        Be descriptive
+    </li>
+    <li>
+        Not start with a number
+    </li>
+    <li>
+        Use camel case (like <code>camelCase</code>)
+    </li>
+</ul>
+
+<h2>
+    Data Types
+</h2>
+<p>
+    Some of the different data types in Go include: 
+    <ul>
+        <li>
+            <code>uint8</code> | <code>uint16</code> | <code>uint16</code> | <code>uint64</code> 
+        </li>
+        <li>
+            <code>int8</code> | <code>int16</code> | <code>int32</code> | <code>int64</code> 
+        </li>
+        <li>
+            <code>float32</code> | <code>float64</code>
+        </li>
+    </ul>
+</p>
+
+<h2>
+    Declaring Variables
+</h2>
+<p>
+    Declaring a variable is a fancy way of saying creating a variable. 
+</p>
+<h3>
+    With <code class="lang-go">var</code>
+</h3>
+<p>
+    Variables can be declared with <code>var</code>:
+</p>
+<pre><code class="lang-go">var &lt;variablename&gt; &lt;type&gt; = &lt;value&gt;</code></pre>
+<pre><code class="lang-go">package main
+import ("fmt")
+
+func main() {
+    var student1 string = "Max" //string type
+    var student2 = "Joe" //inferred type
+    var student3 string //string type
+    fmt.Println(student1, student2, student3)
+    // Max Joe 
+}</code></pre>
+<p>
+    <b>NOTE</b>
+</p>
+<p style="background: pink" class=" p-3">
+    var must include a <code>type</code>, <code>value</code>, or both. 
+</p>
+
+<h3>
+    With <code>:=</code>
+</h3>
+<p>
+    Another way to declare a variable is with <code>:=</code>, but it 
+    must be assigned a value. 
+</p>
+<pre><code class="lang-go">&lt;variablename&gt; := &lt;value&gt;</code></pre>
+<pre><code class="lang-go">package main
+import ("fmt")
+
+func main() {
+    x := 2 //type is inferred
+    fmt.Println(x)
+    // 2
+}</code></pre>
+
+<h2>
+    Initial Values
+</h2>
+<p>
+    If no type is given when using var, Go will automatically initialize 
+    the variable with its type default value. For ints its <code>0</code>, 
+    for strings its <code>""</code>, and for booleans its <code>false</code>. 
+</p>
+<pre><code class="lang-go">package main
+import ("fmt")
+
+func main() {
+    var student1 string;
+    fmt.Println(student1)
+    //
+    // ^^ no output
+
+    var x int;
+    fmt.Println(x)
+    // 0
+}</code></pre>
+
+<h2>
+    Differences Between <code>var</code> and <code>:=</code>
+</h2>
+<table class="table table-striped">
+    <thead>
+        <th class="text-dark">
+            var
+        </th>
+        <th class="text-dark">
+            :=
+        </th>
+    </thead>
+    <tr>
+        <td>
+            Used inside AND outside of functions
+        </td>
+        <td>
+            Can only be used INSIDE functions
+        </td>
+    </tr>
+        <tr>
+        <td>
+            Declaration/ assignment can be done separately
+        </td>
+        <td>
+            Declaration/ assignment cannot be done separately
+        </td>
+    </tr>
+</table>
+
+<pre style="background-color: pink;"><code class="lang-go">package main
+import ("fmt")
+
+// must be inside function
+a := 1
+
+func main() {
+  fmt.Println(a)
+  // syntax error: non-declaration statement outside function body
+}</code></pre>
+
+<h2>
+    Declaring Multiple Variables
+</h2>
+<p>
+    Multiple variables can be declared in the same line.
+</p>
+<pre><code class="lang-go">package main
+import ("fmt")
+
+func main() {
+  var a, b, c, d int = 11, 15, 99, 102
+
+  fmt.Println(a)
+  fmt.Println(b)
+  fmt.Println(c)
+  fmt.Println(d)
+  // 11
+  // 15
+  // 99
+  // 102
+
+}</code></pre>
+
+<p>
+    If a type is used, only that type can be used on that line to define 
+    variables. If no type is used, multiple data types can be used on the same 
+    line.  
+</p>
+
+<pre><code class="lang-go">package main
+import ("fmt")
+
+func main() {
+  var a, b, c = 11, 15.6, "Hello world"
+  fmt.Println(a)
+  fmt.Println(b)
+  fmt.Println(c)
+  // 11
+  // 15.6
+  // Hello world
+}</code></pre>

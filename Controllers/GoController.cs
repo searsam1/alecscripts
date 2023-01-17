@@ -42,5 +42,13 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult Constants()
+    {   
+        ViewData["creationDate"] = "Tue Jan 17 02:21:04 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Constants";
+        return View();
+    }
+    
     }
 }
