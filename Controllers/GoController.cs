@@ -50,5 +50,13 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult WorkingWithFiles()
+    {   
+        ViewData["creationDate"] = "Tue Jan 17 08:51:45 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Working With Files";
+        return View();
+    }
+    
     }
 }
