@@ -116,32 +116,6 @@ function randomByte(){
 }
 
 
-function createTOC(){
-    let headers = document.getElementsByClassName("display-6")
-    let toc = document.getElementsByClassName("toc-container")[0]
-    let txt, child, childIsBorn;
-    
-    let i;
-    for (header of headers){
-        // https://stackoverflow.com/questions/4328500/how-can-i-strip-all-punctuation-from-a-string-in-javascript-using-regex
-        txt = header.textContent.replace(/[^\w\s\']|_/g, "")
-        .replace(/\s+/g, " ")
-        .trim(" ")
-        .replace(/\s/g, "-")
-
-        var att = document.createAttribute("id")
-        att.value = txt.trim(); // + "-" + randomByte().toString().trim();
-        header.setAttributeNode(att)
-        child = createTocLink(header, att.value)
-        childIsBorn = child != null;
-        if (childIsBorn){
-            toc.appendChild(child)
-        }
-            
-    }
-}
-createTOC();
-
 
 
 

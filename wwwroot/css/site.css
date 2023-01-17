@@ -272,3 +272,8 @@ img {
     background-color: white;
     border: none;
 }
+
+#leftSidebar li li:hover {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
