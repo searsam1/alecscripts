@@ -53,62 +53,13 @@ h3 {
     font-family: 'UnifrakturMaguntia', cursive;
 }
 
-@media (max-width: 1200px) {
-    #rightSidebar {
-        display: none;
-    }
 
-    #mainBody {
-        width: 70%;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-    #leftSidebar {
-        display: none;
-    }
-
-    #mainBody {
-        max-width: 100%;
-        width: auto;
-    }
-}
 
 .sticky {
     position: -webkit-sticky;
     /* Safari */
     position: sticky;
     top: 0;
-}
-
-#leftSidebar,
-#rightSidebar {
-    height: 93vh;
-    z-index: 0;
-    font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: .9em;
-}
-
-#leftSidebar,
-#rightSidebar {
-    -ms-overflow-style: none;
-    /* for Internet Explorer, Edge */
-    scrollbar-width: none;
-    /* for Firefox */
-    overflow-y: scroll;
-}
-
-#leftSidebar::-webkit-scrollbar,
-#rightSidebar::-webkit-scrollbar {
-    display: none;
-    /* for Chrome, Safari, and Opera */
-}
-
-#leftSidebar a {
-    margin: 5px;
-
 }
 
 
@@ -168,18 +119,6 @@ table {
     max-width: 100%;
     width: 100%;
 
-}
-
-.tagFormat {
-    padding-left: 20px;
-    background: linear-gradient(45deg, rgb(0, 0, 0, .5) 0% 3%, white 3% 25%, rgb(0, 0, 0, .05) 25% 80%, rgb(1, 1, 1, .1) 80%);
-    font-family: monospace;
-    margin-top: 50px;
-    border-bottom: 1px solid grey;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    border-bottom-left-radius: 5px;
-    font-size: .9em;
 }
 
 figcaption {
