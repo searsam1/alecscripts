@@ -47,7 +47,9 @@ body {
   .btn-toggle::before {
     width: 1.5em;
     line-height: 0;
-    content:"⚔";
+    content:"⍟";
+    font-size: 15px;
+    color: goldenrod;
     transition: transform .35s ease;
     transform-origin: .5em 50%;
   }
@@ -75,4 +77,3 @@ body {
   
   .fw-semibold { font-weight: 600; }
   .lh-tight { line-height: 1.25; }
-  
