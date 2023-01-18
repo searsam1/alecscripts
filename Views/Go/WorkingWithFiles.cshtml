@@ -1,0 +1,26 @@
+
+<p>
+    Go comes with several tools to work with files, mainly <code class="lang-go">"io/ioutil"</code>. 
+    The example below reads a file from the terminal using <code class="lang-go">ioutil.ReadFile</code>:
+</p>
+<pre><code class="lang-go">package main
+import ("fmt"
+		"io/ioutil"
+		"os"
+)
+
+func main() {
+     // get file from terminal
+	 inputFile := os.Args[1]
+	 // read whole file
+	 file, err := ioutil.ReadFile(inputFile)
+	 if err != nil {
+		// display error
+        fmt.Printf("ERROR: %s \n", err)
+	 }
+	 // convert the file binary to string
+	 fileContent := string(file)
+	 // print file content
+	 fmt.Println(fileContent)
+
+}</code></pre>

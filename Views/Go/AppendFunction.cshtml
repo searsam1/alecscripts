@@ -1,0 +1,116 @@
+
+<p>
+    Append is used to add values to a slice. 
+</p>
+
+<pre><code class="lang-go">package main
+
+import "fmt"
+
+func main() {
+
+    vals := []int{}
+    vals = append(vals, 1)
+    vals = append(vals, 7, 8, 9, 10)
+
+    fmt.Println(vals)
+    // [1 7 8 9 10]
+}</code></pre>
+
+<h2>
+    Append slice
+</h2>
+<p>
+    Slices can be added to other slices with the <code>append</code> method.
+</p>
+<pre><code class="lang-go">package main
+
+import "fmt"
+
+func main() {
+
+    slice1 := []int{1, 2, 3}
+    slice2 := []int{4, 5, 6}
+
+    sliceCombined = append(slice1, slice2...)
+    fmt.Println(sliceCombined)
+    // [1 2 3 4 5 6]
+}</code></pre>
+
+<h2>
+    Adding Bytes
+</h2>
+<p>
+    Bytes can be used with append as well to add bytes to a slice. 
+</p>
+<pre><code class="lang-go">package main
+
+import "fmt"
+
+func main() {
+
+    bytes := append([]byte("Brazen "), "Cow"...)
+
+    fmt.Println(bytes)
+    fmt.Println(string(bytes))
+    // [66 114 97 122 101 110 32 67 111 119]
+    // Brazen Cow
+
+}</code></pre>
+
+<h2>
+    Copying Elements 
+</h2>
+<p>
+    A copy of a slice can be created using the append method to create a new 
+    slice that is a copy of the old one. 
+</p>
+<pre><code class="lang-go">package main
+
+import "fmt"
+
+func main() {
+
+    arr1 := []int{1, 2, 3, 4}
+    arrCopy := []int{}
+    arrCopy = append(arrCopy, arr1...)
+
+    fmt.Println(arr1)
+    // [1 2 3 4]
+    fmt.Println(arrCopy)
+    // [1 2 3 4]
+
+
+}</code></pre>
+
+<p>
+    Arr1 is copied into arrCopy by putting arrCopy first and 
+    using <code>...</code> with arr1. 
+</p>
+
+<h2>
+    Excluding Elements
+</h2>
+<p>
+    A slice of the slice can be taken without including certain elements. This is 
+    the same as deleting elements. 
+</p>
+<pre><code class="lang-go">package main
+
+import "fmt"
+
+func main() {
+
+    a := []int{1, 2, 3, 4, 5}
+    b := []int{1, 2, 3, 4, 5}
+
+    i := 3
+    j := 0
+
+    a = append(a[:i], a[i+1:]...)
+
+    fmt.Println(a)
+
+    b = append(b[:j], b[j+1:]...)
+    fmt.Println(b)
+}</code></pre>
