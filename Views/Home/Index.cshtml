@@ -4,46 +4,150 @@
 }
 
 <style>
+    body{
+          min-height: 100vh;
+    }
+</style>
 
-h2:not(#logo)::after{ 
-    content: "";
-    color: rgb(255,0,0,.55);
+<style>.mainBody{
+  --s: 80px; /* the size */
+  --c: black;
+  
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%, rgb(250, 250, 250,.05) 68% 70%,#0000 72%;
+
+  background:
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
+    radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
+    var(--c);
+
+}
+.curve-yellow {
+  --s: 80px; /* the size */
+  --c: black;
+  
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%, rgb(250, 200, 0,.1) 68% 70%,#0000 72%;
+
+  background:
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
+    radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
+    var(--c);
+
 }
 
+.curve-red {
+  --s: 80px; /* the size */
+  --c: black;
+  
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%, rgb(250, 0, 0,.1) 68% 70%,#0000 72%;
+
+  background:
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
+    radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
+    var(--c);
+}
+
+.curve-lime {
+  --s: 80px; /* the size */
+  --c: black;
+  
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%, rgb(0,250,100, .1) 68% 70%,#0000 72%;
+
+  background:
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
+    radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
+    var(--c);
+}
+
+
 </style>
-<center class="mb-5">
-    <h2 class="border-warning border-bottom text-dark display-3">
-        Alec Scripts
-    </h2>
-    
-</center>
-<div class="container" style="max-width: 896px;">
-    <div  class="text-secondary p-3 m-3 rounded-3">
-        <p style="" class="display-6 text-center">
-        The <span class="text-dark">Supreme</span> Art <span class="text-dark">of</span> Coding
-        </p>
+<div class="container text-center border ">
+  <div class="row">
+    <div style="min-height: 100vh; color: white; black" class="col-lg">
+      <h2 class="display-1">
+        <span class="cursive">Welcome</span>
+      </h2>
+      
+      <div class="row text-center curve-red ">
+        <div class=" container  col m-2 rounded-3 text-light  " style="font-family: lato;">
+            <h2 class="cursive">
+                JavaScript
+            </h2>
+            <div class="p-3">
+                Js, or JavaScript, is the language of the web. 
+                It is used on every browser and 
+                comes into contact with most web developers.
+            </div>
+            <ul>
+                <li style="list-style: none;">
+                    <a asp-fragment="js" asp-controller="home" asp-action="directory" class="btn btn-outline-danger">
+                        Find a JavaScript Tutorial 
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </div>
+      <div class="row text-center curve-yellow ">
+        <div class=" container  col m-2 rounded-3 text-light  " style="font-family: lato;">
+            <h2 class="cursive">
+                Python
+            </h2>
+            <div class="p-3">
+                Js, or JavaScript, is the language of the web. 
+                It is used on every browser and 
+                comes into contact with most web developers.
+            </div>
+            <ul>
+                <li style="list-style: none;">
+                    <a asp-fragment="js" asp-controller="home" asp-action="directory" class="btn btn-outline-warning">
+                        Find a python Tutorial 
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </div>
+            <div class="row text-center curve-lime ">
+        <div class=" container  col m-2 rounded-3 text-light  " style="font-family: lato;">
+            <h2 class="cursive">
+                C++
+            </h2>
+            <div class="p-3">
+                Js, or JavaScript, is the language of the web. 
+                It is used on every browser and 
+                comes into contact with most web developers.
+            </div>
+            <ul>
+                <li style="list-style: none;">
+                    <a asp-fragment="js" asp-controller="home" asp-action="directory" class="btn btn-outline-success">
+                        Find a C++ Tutorial 
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </div>
     </div>
-</div>
-<div class="container" style="max-width: 896px;">
-    <div  class="text-secondary p-3 m-3 rounded-3">
-        <p style="" class="display-6 text-center">
-        <a asp-action="Tutorials" asp-controller="Home" class="text-dark text-decoration-none border-warning border-bottom"> ⧫ Tutorials </a>
-        </p>
-    </div>
-</div>
-
-<div class="container" style="max-width: 896px;">
-    <div  class="text-secondary p-3 m-3 rounded-3">
-        <p style="" class="display-6 text-center">
-        <a href="https://github.com/searsam1/alecscripts" class="text-dark text-decoration-none border-warning border-bottom"> ⧫ Repository </a>
-        </p>
-    </div>
-</div>
-
-<div class="container" style="max-width: 896px;">
-    <div  class="text-secondary p-3 m-3 rounded-3">
-        <p style="" class="display-6 text-center">
-        <a asp-controller="home" asp-action="AboutThisWebsite" class="text-dark text-decoration-none border-warning border-bottom"> ⧫ About </a>
-        </p>
-    </div>
+  </div>
 </div>

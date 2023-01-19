@@ -38,119 +38,18 @@ string Version = "V3";
       
    </head>
    <body id="bodyCapture">   
-      <div class="pre-nav bg-dark">
+      <div class="pre-nav bg-black">
          <center class="fs-2 ">
             <span class="text-warning">A</span>lec <span class="text-warning">S</span>cripts
          </center>
          <figcaption class="me-2 mt-4 pt-2 text-light text-end ">
-            Created by Alec Sears
+            --AS
          </figcaption>
       </div>
       @* Navbar *@
-      <nav style="" class="thenavbar py-0 my-0 shadow-sm navbar  sticky-top navbar-expand-lg bg-white ">
-         <style>
-            .material-symbols-outlined{
-            color: black;
-            }
-         </style>
-         <div class="container-fluid">
-            <a  class="text-decoration-none " asp-action="index" asp-controller="home" >
-               <img src="/lib/favicon-32x32.png">
-            </a>
-            <button style="margin-left: 2px"  class="navbar-toggler text-decoration-none btn" onclick="hideLeft()" >
-                              
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                  </svg>
-               
-            </button>
-            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
-               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                  </svg>
-            </button>
-            <div class=" collapse navbar-collapse " id="navbarSupportedContent">
-               <ul class=" navbar-nav mx-auto mb-2 mb-lg-0 ">
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="home" asp-action="Directory">Directory</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="java" asp-action="index">Java</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="cpp" asp-action="index">C++</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="css" asp-action="index">CSS</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="bash" asp-action="index">Bash</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="html" asp-action="index">HTML</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="JS" asp-action="index">JavaScript</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="dotnet" asp-action="index">.NET</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="go" asp-action="index">GO</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" asp-controller="Glossary" asp-action="index">Glossary</a>
-                  </li>
-                  <li class="nav-item">
-                     @* <a role="button" onclick="changeToDarkMode()" class="nav-link" >Dark Mode</a> *@
-                  </li>
-                  @* 
-                  <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                     Python
-                     </a>
-                     <ul class="dropdown-menu">
-                        <li><a class=" dropdown-item" asp-controller="Python" asp-action="Index"> Home </a></li>
-                        <li><a class=" dropdown-item" asp-controller="Python" asp-action="Abs"> Abs </a></li>
-                        <li><a class=" dropdown-item" asp-controller="Python" asp-action="Casting"> Casting </a></li>
-                        <li>
-                           <hr class="dropdown-divider">
-                        </li>
-                        *@
-                     </ul>
-                  </li>
-               </ul>
-               @* 
-               <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-               </form>
-               *@
-            </div>
-         </div>
-      </nav>
       <div class="divider"> </div>
-      <div class="container-fluid">
-         <main >
-            <div class="">
-               <div id="mainBody" class=" ">
-                  <div style="font-size: 10px" class="text-secondary">alecscripts.com&MediumSpace;&MediumSpace;&MediumSpace;>&MediumSpace;&MediumSpace;&MediumSpace;<span class="text-dark">@ViewData["controller"]</span> <span class="text-dark">&MediumSpace; &gt; &MediumSpace;</span> <span class="text-dark"> @ViewData["title"]</span>
-                  &MediumSpace;&MediumSpace;&MediumSpace;|&MediumSpace;&MediumSpace;&MediumSpace;Created on: @ViewData["creationDate"]
-                  <br /><br /><br /></div>
-                  <h1 class=" mb-5">@ViewData["Controller"]: @ViewData["title"]</h1>
-                  @* <div id="toc">
-                     <span class="border-bottom mx-2">Table of Contents</span>
-                     <ul id="tocList">
-                     </ul>
-                  </div> *@
-                  @RenderBody()
-               </div>
-
-            </div>
-         </main>
+      <div class="mainBody">
+         @RenderBody()
       </div>
    </body>
    @* Footer *@
@@ -197,10 +96,10 @@ string Version = "V3";
                </ul>
                
                
-                    <div class=" text-center">
+                    <div class=" text-center ">
                         
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-github text-light" viewBox="0 0 16 16">
+                        <svg style="border: 1px solid black; border-radius: 100%; background: white;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-github" viewBox="0 0 16 16">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                         </svg>
                         <br><br><br><br><img width=100 src="/lib/android-chrome-512x512.png">
@@ -220,9 +119,9 @@ string Version = "V3";
       </div>
    </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-      <script src="~/js/addH2events.js"></script>
+      
       <script src="~/lib/jquery/dist/jquery.min.js"></script>
-      <script src="~/js/sidebars.js"></script>
+      
       <script src="~/js/prism.js" asp-append-version="true"></script>
       @* 
       <li><a href="#" class="link-dark rounded">Annually</a></li>
