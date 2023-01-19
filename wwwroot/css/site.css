@@ -255,6 +255,7 @@ img {
     height: 2px;
     background: linear-gradient(45deg, gold, black, goldenrod);
 }
+
 #searchBar{
     margin-bottom: 10px;
     border: 1px solid black;
