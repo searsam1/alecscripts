@@ -1,0 +1,225 @@
+
+<pre><code class="lang-go">func minus(a int, b int) int {
+	return a - b
+}
+</code></pre>
+<h2>
+    What are functions?
+</h2>
+<p>
+    Programming functions are bunches of code that have side effects
+    or return values, or both. Adding functions to 
+    programs increases readability, saves time, and makes code more 
+    dry (don't repeat yourself).
+</p>
+<p>
+    Functions are given objects, or arguments, that the function takes, 
+    manipulates, and gives back with a return statement. They therefore 
+    have return types (the type of the data to return) along with argument 
+    types (data types of the arguments). 
+</p>
+
+
+<pre><code class="lang-go">func mult(a int, b int) int {
+	return a * b
+}
+</code></pre>
+
+<h2>
+    Creating Functions
+</h2>
+<pre><code class="lang-go"> func &lt;name&gt;(&lt;args&gt;) &lt;T&gt; {}</code></pre>
+<p>
+    To create a function, use the <code class="lang-go">func</code> keyword, followed 
+    by a function name, return type, and brackets <code>{}</code> to hold the body of the function. 
+    Calling the function is required to have it activate and is done with 
+    parenthesis <code>()</code> behind the function name, after it has been 
+    defined. 
+</p>
+
+<p>
+    As a simple example, a new function <code>add</code> is created that takes 
+    two ints and returns an int of the two input numbers added together.
+</p>
+
+<pre><code class="lang-go">package main
+
+import "fmt"
+
+// func &lt;name&gt;(&lt;args&gt;) &lt;T&gt; {}
+func add(a int, b int) int {
+    return a + b
+}
+
+func main() {
+    x := 4
+    y := 5
+    z := add(x, y)
+    fmt.Printf("Output: %d\n", z)
+    // 9
+}
+</code></pre>
+
+<h2>
+    Return 
+</h2>
+
+<p>
+    Returns values are values that get taken out of a function when its done running. 
+    It will also end a function so it can be used to terminate them as well 
+    to stop manipulating the variables. 
+</p>
+<pre><code class="lang-go">package main
+import "fmt"
+func inc(x1, x2, x3 int) (a, b, c int) {
+    a = x1 + 1
+    b = x2 + 1
+    c = x3 + 1
+    return
+}
+
+func main() {
+    a, b, c := inc(10, 100, 1000)
+    fmt.Println(a, b, c)
+    // 11 101 1001
+}</code></pre>
+
+<p>
+    They are a few things happening in the example above. First, it introduces named 
+    return values. This is putting the return value names next to the return type.
+</p>
+<pre><code class="lang-go">package main
+import "fmt"
+func inc(x1, x2, x3 int) (a, b, c int)... // <--- Here
+</code></pre>
+<p>
+    <code>a</code>, <code>b</code>,  and <code>c</code>
+    are the named return variables. 
+</p>
+<p>
+    Next, as a side note, notice how 
+    three variables are defined in one go with 
+    this line: 
+</p>
+<pre><code class="lang-go">...
+func main() {
+    a, b, c := inc(10, 100, 1000)
+}</code></pre>
+<p>
+    These variables are extracted out of the function 
+    because there are three return variables named.
+</p>
+
+<h2>
+    Anonymous functions
+</h2>
+
+<p>
+    Anonymous function, or nameless function, have no name 
+    and are an inline way to create a function. 
+</p>
+
+<pre><code class="lang-go">package main
+import "fmt"
+
+func main() {
+	sum := func(a, b, c int) int {
+		return a + b + c
+	}(3, 5, 7)
+	fmt.Println(sum); 
+    // 15
+}
+</code></pre>
+
+<p>
+    The Anonymous function above 
+    takes in three ints and returns 
+    their sum. Notice, the function is called at the end of its definition, 
+    <code>(3, 5, 7)</code>, so it returns the sum into the <code>sum</code>
+    variable. 
+
+</p>
+
+
+<p>
+    Sum can also act as the function itself and can be called later, like <code>sum(3, 4, 99000)</code>...
+</p>
+<pre><code class="lang-go">package main
+import "fmt"
+
+func main() {
+	sum := func(a, b, c int) int {
+		return a + b + c
+	}
+	fmt.Println(sum(3, 5, 7)); 
+    // 15
+}
+</code></pre>
+
+<h2>
+    Variadic Functions
+</h2>
+<p>
+    Variadic functions have a variable number of inputs. Take the sum example, 
+    where the input could range from 1 to 2, 3, 4, etc.. To make this possible 
+    in git, three dots are used <code>...</code> to define a variadic function.     
+</p>
+<pre><code class="lang-go">package main
+import "fmt"
+
+func main() {
+    s1 := sum(1, 2)
+    s3 := sum(1, 2, 3, 4, 5)
+    fmt.Println(s1, s3)
+    // 3 15
+}
+
+func sum(nums ...int) int { // ...int 
+    res := 0
+    for _, n := range nums {
+        res += n
+    }
+    return res
+}</code></pre>
+
+<p>
+    This is useful for the sum method, but also 
+    much more useful for more complex situations that 
+    arise when programming in the wild. 
+</p>
+
+<h2>
+    Deferring function calls
+</h2>
+<p>
+    Functions calls can be differed so that they only execute when the one they are
+    inside finishes.
+</p>
+<pre><code class="lang-go">package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("START")
+	defer sayHello()
+	fmt.Println("END")
+}
+
+func sayHello() {
+	fmt.Println("SAYHELLO EXC")
+}
+
+// START
+// END
+// SAYHELLO EXC
+</code></pre>
+
+<p>
+    Even though <code>sayHello</code> is called before <code>fmt.Println("END")</code>, it is 
+    deferred and executes after main is done. 
+</p>
+<pre><code class="lang-go">...
+	defer sayHello()
+	fmt.Println("END")
+}...
+</code></pre>

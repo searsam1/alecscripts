@@ -1,6 +1,33 @@
 @{
-    
+    string HTMLExample1 = @"<!-- Basic Html Template -->
+<!DOCTYPE html>
+<html>
+    <body>
+    <h2>
+        h2 Heading
+    </h2>
+    <p>
+        Paragraph
+    </p>
+    </body>
+</html>";    
+string HTMLExample2 = @"<p style='color: red;'> Attribute Example </p>";;    
 }
+
+<h2>
+    What is HTML?
+</h2>
+<p>
+    <b>HyperText Markup Language</b>, or HTML, is a <b>syntax</b> for the structure of a website.     
+    It contains elements which are the building blocks. Inside each element 
+    is its inner HTML or text that is displayed to the browser.
+    Tags contain the innerHTML and start and end with brackets <code>&lt;like this&gt;</code>. 
+    Most tags have end tags as well: tags that mark the end of an element and 
+    are differentiated with forward slashes <code>&lt;/like this&gt;</code> . 
+</p>
+<pre><code class="lang-html">&lt;!-- Create p tag --&gt;
+&lt;p&gt; inner HTML Goes Here &lt;p&gt;
+</code></pre>
 
 <h2 class="display-6">
     Tags
@@ -15,26 +42,61 @@
             tags comes the text content of the tag. Inside the start tag, there
             are attributes which are variables given a value with the <code>=</code> operator.
         </p>
-        <p>
-            <a  asp-action="tags" asp-controller="Html">All tags</a>
-        </p>
+    
+<pre><code class="lang-html">&lt;a&gt;Anchor Tag&lt;/a&gt;</code></pre>
+<pre><code class="lang-html">&lt;p&gt;Paragraph Tag&lt;/p&gt;</code></pre>
     
 
 <h2 class="display-6">
     Attributes
 </h2>
 
-        <p>
-            Between the start and end tags comes the text then inside the start tag, there
-            are attributes which are variables given a value with the <code>=</code> operator.
-        </p>
-    
 
-<h2 class="display-6">
-    Pages
+<p>
+    Between the start and end tags comes the text then inside the start tag, there
+    are attributes which are variables given a value with the <code>=</code> operator.
+</p>
+<pre><code class="lang-html">@HTMLExample2</code></pre>    
+<p>
+    In the example above, the p element has a style attribute that sets the color 
+    of that paragraph to red. 
+</p>
+<p>
+    Different tags have different attributes, like how 
+    buttons have the onclick attribute and paragraphs do not. 
+</p>
+
+<h2>
+    Example
 </h2>
+<pre><code class="lang-html">@HTMLExample1</code></pre>
 
-        <p>
-            <a  asp-action="tags" asp-controller="Html">All tags</a>
-        </p>
-    
+<h2>
+    Styling HTML
+</h2>
+<p>
+    Styling (colors, margin/padding, etc.) is done with Cascading Style Sheets, or 
+    CSS for short. It must be linked to the main HTML document or it can 
+    be inside a <code class="lang-html">&lt;style&gt;</code> tag on the same page. 
+</p>
+<pre><code class="lang-html">&lt;!-- Link into Style Sheet -->
+&lt;link rel="stylesheet" href="~/css/prism.css" asp-append-version="true" /></code></pre>
+<pre><code class="lang-html">&lt;!-- Using the Style Tag -->
+&lt;style&gt;
+p {
+    color: red;
+ }
+&lt;/style&gt;
+&lt;p &gt; Cola is great! &lt;/p&gt;</code></pre>
+
+ 
+
+<p>
+    There is also an attribute <code>style</code> that can be used to set 
+    the styling of an element. 
+</p>
+<pre><code class="lang-html">&lt;!-- in-line style -->
+&lt;p style="color: blueviolet;"&gt; Cola is great! &lt;/p&gt;</code></pre>
+
+<!-- in-line style -->
+<p style="color: blueviolet;"> Cola is great! </p>
