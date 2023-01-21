@@ -1,4 +1,12 @@
 @{
+    string htmlRowspanExample = @"<table>
+  <tr rowspan=""2"">
+    <td> Data </td>
+  </tr>
+</table>";
+}
+
+@{
     string htmlTableFULL = @"<table>
   <thead>
   </thead>
@@ -80,6 +88,11 @@
 <h3>
     Spanning over multiple rows
 </h3>
+<p>
+    The <code class="lang-html">rowspan</code> attribute is used like colspan to extend how many spots a row takes 
+    up in the table. 
+</p>
+<pre><code class="lang-html">@htmlRowspanExample</code></pre>
 <h2>
     Columns
 </h2>
