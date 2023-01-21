@@ -1,0 +1,147 @@
+@{
+    string htmlTableFULL = @"<table>
+  <thead>
+  </thead>
+
+  <tbody>
+  </tbody>
+
+  <tfoot>
+  </tfoot>
+
+</table>";
+}
+
+<p>
+    Tables in HTML have rows and columns which are composed of <code>&lt;tr&gt;</code> tags  
+    and <code>&lt;td&gt;</code> tags, respectively. 
+</p>
+<p>
+    There are three parts to a table: 
+</p>
+<ol>
+    <li>The Head</li>
+    <ul>
+        <li class="mb-2" >
+            <code  class=" lang-html ">&lt;thead&gt;</code>
+        </li>
+    </ul>
+    <li>The Body</li>
+    <ul>
+        <li class="mb-2" >
+            <code  class=" lang-html ">&lt;tbody&gt;</code>
+        </li>
+    </ul>
+    <li>The Footer</li>
+    <ul>
+        <li class="mb-2" >
+            <code  class=" lang-html ">&lt;tfoot&gt;</code>
+        </li>
+    </ul>
+</ol>
+
+<p>
+    Each row lives in one of these areas, and each column lives inside a row. 
+</p>
+<pre><code class="lang-html">@htmlTableFULL</code></pre>
+
+@{
+    string htmlColspanExample = @"<table>
+  <tr>
+    <td colspan=""2""> Data </td>
+  </tr>
+</table>";
+}
+@{
+    string htmlRowsExample = @"<table>
+  <tr> <!-- row --> 
+    <!-- Columns (<td>) go here -->
+  </tr>
+</table>";
+}
+<h2>
+    Rows
+</h2>
+<p>
+    Rows are the horizontal parts of a table that contain a section of columns. 
+    Rows are represented with <code>&lt;tr&gt;</code> tags in HTML. They contain 
+    the <code>&lt;td&gt;</code> tags (columns) that then contain the data. 
+</p>
+<pre><code class="lang-html">@htmlRowsExample</code></pre>
+
+@{
+    string htmlColsExample = @"<table>
+  <tr> <!-- row --> 
+    <td>73</td> <!-- column --> 
+    <td>81</td> <!-- column --> 
+  </tr>
+</table>";
+}
+<h3>
+    Spanning over multiple rows
+</h3>
+<h2>
+    Columns
+</h2>
+<p>
+    Columns are the vertical parts of a table. They are added with 
+    <code>&lt;td&gt;</code> (table data) tags inside of a <code>&lt;tr&gt;</code>
+    table row. 
+</p>
+<pre><code class="lang-html">@htmlColsExample</code></pre>
+<table>
+  <tr> <!-- row --> 
+    <td>73</td> <!-- column --> 
+    <td>81</td> <!-- column --> 
+  </tr>
+</table>
+
+<h3>
+    Spanning over multiple columns  
+</h3>
+<p>
+    If a column takes up two spaces in a row, use the <code>colspan</code> attribute 
+    to set it to a new length in terms of how many columns it takes up. 
+</p>
+<pre><code class="lang-html">@htmlColspanExample</code></pre>
+
+<h2>
+    Headers
+</h2>
+<p>
+    <code>&lt;th&gt;</code> is used to display table headers and has a scope attribute 
+    that sets if the header is for a row or a column. 
+</p>
+
+@{
+    string htmlHeaderExample = @"<table class=""defaultTable"">
+  <tr>
+    <th></th>
+    <th scope=""col"">Saturday</th>
+    <th scope=""col"">Sunday</th>
+  </tr>
+  <tr>
+    <th scope=""row"">Temperature</th>
+    <td>25</td>
+    <td>31</td>
+  </tr>
+</table>";
+}
+
+<pre><code class="lang-html">@htmlHeaderExample</code></pre>
+<p>
+    The table will look something like this:
+</p>
+<table class="defaultTable">
+  <tr>
+    <th></th>
+    <th scope="col">Saturday</th>
+    <th scope="col">Sunday</th>
+  </tr>
+  <tr>
+    <th scope="row">Temperature</th>
+    <td>25</td>
+    <td>31</td>
+  </tr>
+</table>
+

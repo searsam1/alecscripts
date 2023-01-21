@@ -140,7 +140,7 @@ h3 {
 
 
 td,
-th {
+:not(.defaultTable) th {
     padding: 20px;
 }
 
@@ -155,7 +155,7 @@ tr {
 }
 
 
-th {
+:not(.defaultTable) th{
     border-bottom: 1px solid black;
     background-color: black;
     color: white;
@@ -164,7 +164,7 @@ th {
 }
 
 
-table {
+table:not(.defaultTable) {
     margin-top: 20px;
     margin-bottom: 50px;
     border: 1px solid black;
