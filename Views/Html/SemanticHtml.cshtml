@@ -1,4 +1,10 @@
 
+
+<p>
+    Semantic Html uses descriptive tags like <code>&lt;header&gt;</code> or 
+    <code>&lt;footer&gt;</code> to make the html more readable. 
+</p>
+
 @{
     string audioHtml = @"<audio controls>
 <source
@@ -159,3 +165,22 @@
 </p>
 <pre><code class="lang-html">@audioHtml</code></pre>
 
+<audio controls>
+    <source src="https://file-examples.com/storage/fe7122043963cd639947840/2017/11/file_example_MP3_700KB.mp3">
+</audio>
+
+<h2>
+    Video
+</h2>
+<p>
+    Use the <code class="lang-html">&lt;video&gt;</code> tag to insert a video 
+    into an HTML document. 
+</p>
+
+@{
+    string videoHtml = @"<video
+    src=""path/to/video.mp4""
+    controls >
+</video>";
+}
+<pre><code class="lang-html">@videoHtml</code></pre>

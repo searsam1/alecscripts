@@ -1,1 +1,0 @@
-/Users/111244rfsf/Documents/Repositories/push-to-production-scripts/devToPro.sh

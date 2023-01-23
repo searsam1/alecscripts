@@ -1,4 +1,16 @@
 
+# custom 
+pro.sh
+__controller_getter.py
+__new_page.py
+__update_sidebar.py
+_EDIT_README.sh
+_html_to_razor.js
+_htmlFormat.py
+_tutorial_page_maker.py
+newController.sh
+newPage.sh
+updateSidebar.sh
 # OS generated files #
 ######################
 # .DS_Store # <-- In Compiled Source 
@@ -89,3 +101,20 @@ _[Ss]cripts
 *.ncrunchsolution
 *.dot[Cc]over
 wwwroot/lib/Resources/DS_Store
+
+######################
+# VScode #
+######################
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
