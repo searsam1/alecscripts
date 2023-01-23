@@ -143,5 +143,13 @@ namespace MvcMovie.Controllers
         return View();
     }
     
+    public IActionResult SemanticHtml()
+    {   
+        ViewData["creationDate"] = "Mon Jan 23 03:30:49 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Semantic Html";
+        return View();
+    }
+    
     }
 }

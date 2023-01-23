@@ -1,0 +1,161 @@
+
+@{
+    string audioHtml = @"<audio controls>
+<source
+    src=""https://source/to/a.mp3""
+    type=""audio/mp3""
+/>
+</audio>
+";
+    
+    string imgHtml = @"<figure>
+    <img src=""https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg""/>
+    <figcaption>Python3 Logo</figcaption>
+</figure>";
+    
+    string asideHtml = @"<main>
+    <section>
+        <article>
+            <h2>Python</h2>
+            <p>
+                Python is a programming language used for 
+                data analysis, AI and machine learning, 
+                scripting, and much more thanks 
+                to its simple yet powerful syntax. 
+            </p>
+        </article>
+        <aside>
+            <p>
+                Python refers to Monty Python and not the large reptile. 
+            </p>    
+        </aside>
+    </section>
+</main>";
+    
+    string sectionArticle = @"<main>
+    <section>
+    <article>
+        <h2>Python</h2>
+        <p>
+            Python is a programming language used for 
+            data analysis, AI and machine learning, 
+            scripting, and much more thanks 
+            to its simple yet powerful syntax. 
+        </p>
+    </article>
+    </section>
+</main>";
+    
+    string mainFootHtml = @"<body>
+  <main id=""main"">
+    <p>Chief Content</p>
+  </main>
+
+  <footer id=""footer"">
+    <p>contact@alecscripts.com</p>
+  </footer>
+</body>";
+    
+    string headerHtml = @"<header>
+  <h1>
+     Don't repeat yourself (D.R.Y)
+  </h1>
+</header>";
+    
+    string headerHtmlBad = @"<div id=""header"">
+  <h1>
+     Don't repeat yourself (D.R.Y)
+  </h1>
+</div>";
+
+    string NavHtml = @"<nav>
+  <ul>
+      <li><a href=""#directory"">Home</a></li>
+      <li><a href=""#contact"">About</a></li>      
+    </ul>
+</nav>";
+}
+
+<h2>
+    Headers / Navs
+</h2>
+<p>
+    Instead of using the div tag, put headers into the <code>&lt;header&gt;</code>
+    tag, and put navigation links inside of a <code>&lt;nav></code> tag. 
+</p>
+<p>
+    This makes it easier for web crawlers to read a website. 
+</p>
+<pre style="background: rgb(0,250,0,.2);"><code class="lang-html">@headerHtml</code></pre>
+
+<p>
+    This is more readable when compared to using a div tag. 
+</p>
+<pre style="background: rgb(250,0,0,.2);"><code class="lang-html">@headerHtmlBad</code></pre>
+<p>
+    Do not forget to put navigation links inside of a nav tag, 
+    this will improve the SEO of the website. 
+</p>
+<pre style="background: rgb(0,250,0,.2);"><code class="lang-html">@NavHtml</code></pre>
+
+<h2>
+    Main / Footer
+</h2>
+<p>
+    As the tag names suggest, the <em><code>&lt;main></code></em> tag wraps the central part of 
+    an html document, while the <em><code>&lt;footer></code></em> tag contains things like 
+    contact info, copyright info, a sitemap, etc..
+</p>
+<pre><code class="lang-html">@mainFootHtml</code></pre>
+
+<h2>
+    Section / Article
+</h2>
+<p>
+    Sections go inside of the <code class="lang-html">&lt;main></code> tag and contain a related
+    group of articles or information. As such, the <code class="lang-html">&lt;article></code>
+    tag goes inside of the section tag and contains paragraphs of the same 
+    article, story, or other form of writing. 
+
+</p>
+<pre><code class="lang-html">@sectionArticle</code></pre>
+<h3>
+    The aside tag
+</h3>
+<p>
+    Asides have content that is not necessary for the main page: the 
+    main page is supposed to be independent of an aside. It will add content 
+    to an article and should be used instead of a div with an <code class="lang-html">id</code> set to aside. 
+</p>
+
+<pre><code class="lang-html">@asideHtml</code></pre>
+
+<figcaption>See <a href="https://en.wikipedia.org/wiki/Monty_Python">Monty</a></figcaption>
+
+<h2>Figure / Figcaption</h2>
+<p>
+    Figures (or images) are an important part to most websites. Images go inside 
+    the <code>&lt;figure></code> tag along with their <code>&lt;figcaption></code> 
+    counterparts for labeling or captioning.
+</p>
+<pre><code class="lang-html">@imgHtml</code></pre>
+
+<figure>
+    <img src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"/>
+    <figcaption>Python3 Logo</figcaption>
+</figure>
+
+<h2>
+    Audio
+</h2>
+<p>
+    Audio tags <code>&lt;audio></code> are for putting audio on a website. 
+    It has a controls attribute which displays things like the play and pause 
+    button (the controls to the audio).
+</p>
+<p>
+    Inside <code>&lt;audio></code> there is a <code>&lt;source></code> element 
+    with an <code>src</code> attribute: that is where the audio file is linked.
+</p>
+<pre><code class="lang-html">@audioHtml</code></pre>
+
