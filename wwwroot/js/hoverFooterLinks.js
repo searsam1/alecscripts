@@ -1,12 +1,10 @@
 
-
-
 function callbackOVER(){
     this.setAttribute(
         "class", 
             this.getAttribute("class")
-                .replace("text-white", "text-warning")  
-                .replace("border-bottom", "")  
+                .replace("text-muted", "text-light")  
+                .replace("border-bottom border-secondary", "border-bottom border-warning")  
             )
 }
 
@@ -14,8 +12,8 @@ function callbackOUT(){
     this.setAttribute(
         "class", 
             this.getAttribute("class")
-                .replace("text-warning", "text-white")
-                + " border-bottom"
+                .replace("text-light", "text-muted")
+                .replace("border-bottom border-warning", "border-bottom border-secondary", )
                 )
 }
 

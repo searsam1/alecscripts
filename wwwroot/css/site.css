@@ -201,8 +201,6 @@ footer {
 
 }
 
-#tocList li {}
-
 #tocList li,
 #tocList li .nav-link {
     list-style-type: disc;

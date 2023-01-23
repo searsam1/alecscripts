@@ -160,9 +160,9 @@ img {
     background: red;
 }
 
-.thefoot li.nav-item a:hover{
+/* .thefoot li.nav-item a:hover{
     color: yellow;
-}
+} */
 
 
 .bd-placeholder-img {
@@ -242,4 +242,8 @@ img {
     width: 100%;
     height: 1px;
     background: linear-gradient(45deg, lime, black, lime);
+}
+
+.border-black{
+    border-bottom: 1px solid black;
 }

@@ -1,143 +1,37 @@
 ﻿
-    <a style=" background: linear-gradient(rgb(10,10,255,.3) 0% 50%, rgb(255,255,0,.3) 50% 100%); border-radius: 1px 10px 10px 1px;" title="💙💛" class="text-warning fs-4 p-3" href="https://play.google.com/store/apps/editorial_collection/promotion_topic_donations?hl=en_US&pli=1">Support Ukraine</a>
-
 @{
     Layout = "../Shared/_homeLayout.cshtml";
 }
 
 <style>
-    body{
+    .homeBody{
           min-height: 100vh;
+          max-width: 768px;
+    }
+    .box{
+          height: 400px;
+          width: 200px;
     }
 </style>
 
-<style>.mainBody{
-  --s: 80px; /* the size */
-  --c: black;
-  
-  --_s: calc(2*var(--s)) calc(2*var(--s));
-  --_g: 35.36% 35.36% at;
-  --_c: #0000 66%, rgb(250, 250, 250,.05) 68% 70%,#0000 72%;
-
-  background:
-    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
-    radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
-    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
-    radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
-    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
-    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
-    var(--c);
-}
-
-
-.curve-yellow {
-  --s: 80px; /* the size */
-  --c: black;
-  
-  --_s: calc(2*var(--s)) calc(2*var(--s));
-  --_g: 35.36% 35.36% at;
-  --_c: #0000 66%, rgb(250, 200, 0,.1) 68% 70%,#0000 72%;
-
-  background:
-    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
-    radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
-    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
-    radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
-    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
-    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
-    var(--c);
-
-}
-
-.curve-red {
-  --s: 80px; /* the size */
-  --c: black;
-  
-  --_s: calc(2*var(--s)) calc(2*var(--s));
-  --_g: 35.36% 35.36% at;
-  --_c: #0000 66%, rgb(250, 0, 0,.1) 68% 70%,#0000 72%;
-
-  background:
-    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
-    radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
-    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
-    radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
-    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
-    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
-    var(--c);
-}
-
-.curve-lime {
-  --s: 80px; /* the size */
-  --c: black;
-  
-  --_s: calc(2*var(--s)) calc(2*var(--s));
-  --_g: 35.36% 35.36% at;
-  --_c: #0000 66%, rgb(0,250,100, .1) 68% 70%,#0000 72%;
-
-  background:
-    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
-    radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
-    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
-    radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
-    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
-    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
-    var(--c);
-}
-
-
-</style>
-<div class="container text-center ">
-  <div class="row">
-    <div style="min-height: 100vh; color: white; black" class="col-lg">
-      <h2 class="display-1">
-        <span class="cursive">Welcome</span>
-      </h2>
-      
-      <div class="row text-center curve-red ">
-        <div class=" container  col m-2 rounded-3 text-light bg-black " style="font-family: lato;">
-            <h2 >
-                JavaScript
+<center>
+    <div class="homeBody text-start ">
+        <a class="btn" asp-action="tables" asp-controller="html">
+            <div class="bg-light shadow p-3 box text-start rounded-3">
+            <span  class="text-success">#</span><span style="font-size: .9em ;">HTML</span>
+            <h2 class="display-6 fs-3 shadow rounded-3 p-3">
+                HTML Tables
             </h2>
-                  <div class="divider-red "> </div>
-            <div class="p-3">
-                Js, or JavaScript, is the language of the web. 
-                It is used on every browser and 
-                comes into contact with most web developers.
+            <div class="container " style="font-size: .8em;">
+                Tables in HTML have rows and columns which are composed of &lt;tr> and &lt;td> tags, respectively.
             </div>
-                <a asp-fragment="js" asp-controller="home" asp-action="directory" class="btn btn-outline-danger">
-                    Find a JavaScript Tutorial 
-                </a>
-        </div>
-      </div>
-      <div class="row text-center curve-yellow ">
-        <div class=" container  col m-2 rounded-3 text-light bg-black  " style="font-family: lato;">
-            <h2 class="">
-                Python
-            </h2>
-            <div class="divider-yellow "> </div>
-            <div class="p-3">
-                Python is simply amazing. 
+            <div class=" mt-3 container " style="font-size: .8em;">
+                <center><img width=32 height=32 style="border-radius: 100%;" src="/lib/favicon-32x32.png"></center>
             </div>
-                <a asp-fragment="python" asp-controller="home" asp-action="directory" class="btn btn-outline-warning">
-                    Find a python Tutorial 
-                </a>
+        
         </div>
-      </div>
-            <div class="row text-center curve-lime ">
-        <div class=" container  col m-2 rounded-3 text-light bg-black  " style="font-family: lato;">
-            <h2 class="">
-                C++
-            </h2>
-            <div class="divider-green"></div>
-            <div class="p-3">
-                C++ is complexly awesome 
-            </div>
-            <a asp-fragment="c" asp-controller="home" asp-action="directory" class="btn btn-outline-success">
-                Find a C++ Tutorial 
-            </a>
-        </div>
-      </div>
+        </a>
+        
     </div>
-  </div>
-</div>
+    
+</center>

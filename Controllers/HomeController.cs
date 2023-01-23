@@ -76,5 +76,23 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult ContactUs(string firstname, 
+            string lastname, string country, string subject)
+    {   
+            var viewModel = new ContactModel
+            {
+                
+                Firstname = firstname,
+                Lastname = lastname,
+                Country = country,  
+                Subject = subject
+            };
+
+        ViewData["creationDate"] = "Sun Jan 22 02:38:27 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Contact Us";
+        return View(viewModel);
+    }
+    
     }
 }
