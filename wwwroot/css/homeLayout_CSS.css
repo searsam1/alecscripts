@@ -247,3 +247,6 @@ img {
 .border-black{
     border-bottom: 1px solid black;
 }
+body{
+    background: linear-gradient(45deg, white, rgb(200,150,1,.1));
+}
