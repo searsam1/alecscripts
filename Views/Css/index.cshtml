@@ -4,11 +4,48 @@
 </h2>
 
 <p>
-    Cascading style sheets, or CSS, is a way to style 
+    <strong>Cascading style sheets</strong>, or <strong>CSS</strong>, is a way to style 
     html websites with little effort. Css can be referenced 
-    from an external file, called a stylesheet, that is accessed by the 
+    from an <strong>external</strong> file, called a stylesheet, that is accessed by the 
     link tag. The other ways are inline, which uses the style attribute, 
     and internal, which uses the style tag. 
+</p>
+<p>
+    <h3>
+        Rulesets (Stylesheet Syntax):
+    </h3> 
+    <ul>
+        <li>
+            Selectors
+            <pre data-line="1" class="lang-css"><code>p {
+    color: blue;
+}</code></pre>
+        </li>
+        <li>
+            Declaration Blocks
+            <pre data-line="1-3" class="lang-css"><code><span>p</span> {
+    color: blue;
+}</code></pre>
+        </li>
+        <li>
+            Declarations
+            <pre data-line="2" class="lang-css"><code><span>p</span> {
+     color: blue; 
+}</code></pre>
+        </li>
+        <li>
+            Properties
+        </li>
+        <pre data-line="2" class="lang-css"><code><span>p</span> {
+     /* property --> */  color : blue;
+}</code></pre>
+        <li>
+            Values
+            <pre  data-line="2"  class="lang-css"><code><span>p</span> {
+    color :  blue /* <-- Value  */ ;
+}</code></pre>
+        </li>
+    </ul>
 </p>
 @{
     string example3 = @"<!-- Index.html -->

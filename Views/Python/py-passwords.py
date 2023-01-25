@@ -1,11 +1,34 @@
+
+import base64
 import secrets
+import string
+import os
 
 
-vals = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 58, 59, 60, 61, 62, 63, 64, 91, 92, 93, 94, 95, 96, 123, 124, 125, 126]
+class Password:
+
+    def __init__(self, username, password_length=10) -> None:
+        self.password_length = password_length
+        self.username = username
+        self.salt = os.urandom(256)
+
+    def get_random_character(self, string_type=string.printable):
+        return secrets.choice(string_type)
+
+    def get_random_printable(self):
+        return base64.b64encode(
+            "".join(
+                self.get_random_character()
+                for _ in range(self.password_length)
+            ).encode()
+        )
+
+    def hash_with_salt(self):
+        return abs(hash(self.get_random_printable() + self.salt))
 
 
-
-def password(l):
-    return [secrets.choice(vals) for _ in range(10)]
-p = password(10)
-print(p)
+pwd = Password("alec", 10)
+x = pwd.get_random_printable()
+y = pwd.hash_with_salt()
+z = pwd.username
+print(x, y, z )
