@@ -1,5 +1,5 @@
 body {
-    font-family: "Lato",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--bs-font-sans-serif);
 }
 
 
@@ -90,7 +90,7 @@ h3 {
 #rightSidebar {
     height: 93vh;
     z-index: 0;
-    font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: var(--bs-font-sans-serif);
     font-size: .9em;
 }
 
@@ -289,3 +289,57 @@ img {
     transition: color 1s background 1s;
 }
 
+pre[class*=language-]  {
+    background-color: #f8f9fa; /* grey-100 */
+    font-size: 14px;
+    
+}
+pre[class*=language-] code {
+    font-family: var(--bs-font-monospace);
+}
+
+/* var(--bs-font-monospace) */
+
+.token.boolean,
+.token.constant,
+.token.deleted,
+.token.number,
+.token.property,
+.token.symbol,
+.token.tag {
+    color: rgb(47, 111, 159);
+}
+
+
+.token.attr-name,
+.token.builtin,
+.token.char,
+.token.inserted,
+.token.string {
+    color: rgb(0, 110, 224); 
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: rgb(215, 48, 56);
+}
+.token.selector, .token.keyword.keyword-class{
+    color: blueviolet;
+}
+/* token keyword keyword-class */
+.token.function , .token.keyword.keyword-public, .token.keyword.keyword-import{
+    color: blue;
+}
+:not(pre[class*=language-]) > code {
+    color: black;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 3px;
+}
+.activeLeft::before{
+    content: "→";
+    margin-right: 10px;
+    color: black;
+
+}

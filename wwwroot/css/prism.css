@@ -5,8 +5,6 @@ pre[class*=language-] {
     color: #000;
     background: 0 0;
     text-shadow: 0 1px #fff;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    font-size: .9em;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -20,7 +18,6 @@ pre[class*=language-] {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    border-radius: 10px;
     
 }
 
@@ -52,7 +49,6 @@ pre[class*=language-] {
     padding: 1em;
     margin: .5em 0;
     overflow: auto;
-    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, .07);
 }
 
 :not(pre)>code[class*=language-],

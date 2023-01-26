@@ -25,13 +25,13 @@ function activate_left() {
     for (let link of links) {
         let res = link.textContent.replace(/ /g, "").replace(/\n/g, "")
         if (c + title == res) {
-            link.querySelector('a').style.background = 'rgba(0, 0, 0, .1) '
-            link.querySelector('a').style.color = 'white'
+            link.querySelector('a').style.color = 'black'
+            link.style.borderBottom = "1px solid #f1f1f1"
             link.querySelector('a').style.fontWeight = '500 '
             link.querySelector('a').setAttribute('id', "activeLeft")
-            link.querySelector('a').setAttribute('class', "none")
-            link.style.borderRadius = "10px";
-            link.style.background = "#000";
+            link.querySelector('a').setAttribute('class', "activeLeft")
+            
+            
         }
     }
 }
