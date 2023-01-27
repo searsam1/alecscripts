@@ -11,6 +11,11 @@
     and internal, which uses the style tag. 
 </p>
 <p>
+    The most common way to use CSS is through external <b>stylesheets</b>. It 
+    takes selectors and styles them according to the declaration. Inside the declaration
+        there is the property and then the value. 
+</p>
+<p>
     <h3>
         Rulesets (Stylesheet Syntax):
     </h3> 
@@ -103,8 +108,15 @@ p {
 </p>
 
 <h3>
-    Classes
+    .Classes
 </h3>
+<p>
+    Html offers classes which can be styled 
+    using CSS. This makes it more streamline for 
+    styling a custom collection of elements in the 
+    same class. Otherwise, tags would be the 
+    only groups to style. 
+</p>
 <p>
     Use dot <code>.</code> notation before the class name to 
     access a class. 
@@ -112,14 +124,59 @@ p {
 <pre><code class="lang-css">.column {
     max-width: 20%;
 } 
+.header {
+    background: red;
+}
 </code></pre>
 
-<h3>IDs</h3>
+<h3>#IDs</h3>
 <p>
-    Use a hashtag <code>#</code> before the element name to access an element by ID. 
+    Html elements can have IDs to label them. This makes it useful 
+    for styling a single element without all the others in the same 
+    class or tag. 
+    Use a hashtag <code>#</code> before an ID to access an element by ID. 
 </p>  
 <pre><code class="lang-css">
 #tableOfContents {
     color: red;
-} 
+}
+
+#title {
+    color: red;
+}
 </code></pre>
+
+<p>
+    In the example above, title is an ID and not the title tag. 
+</p>
+
+<h2>
+    Attribute Selectors
+</h2>
+<p>
+    Another way of accessing an element by attribute is with an attribute selector. 
+    There are other attributes besides class and ID, so that is where the attribute selector comes into 
+    play. It can be used alone or with a type on the outside. 
+</p>
+<pre><code class="lang-css">type[attribute*=value]</code></pre>
+
+<p>
+    Take a look at some examples to get more familiar: 
+</p>
+<pre><code class="lang-css">img[src*='lang-css'] {
+  height: 50px;
+}
+ 
+img[src*='lang-html'] {
+  height: 100px;
+}</code></pre>
+<p>
+    In the examples above, only img tags with <code>"lang-css"</code> in the src
+    will have a height of <code>50px</code>. All img tags 
+    with <code>"lang-css"</code> in the src will have a height of <code>100px</code>. 
+</p>
+
+
+<h2>
+    
+</h2>
