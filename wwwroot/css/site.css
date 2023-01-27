@@ -343,3 +343,7 @@ pre[class*=language-] code {
     color: black;
 
 }
+
+.token.variable{
+    color: blueviolet;
+}
