@@ -180,6 +180,67 @@ img[src*='lang-html'] {
     with <code>"lang-css"</code> in the src will have a height of <code>100px</code>. 
 </p>
 
-<a asp-controller="css" asp-action="boxModel" class="btn btn-primary">
-    Next: CSS Box Model
+<h2>
+    Fonts
+</h2>
+<p>
+    Fonts make words and sentences look different. Each font 
+    has its purpose, like <em style="font-family: monospace">Monospace</em> for code or <em style="font-family: 'Times New Roman'">Times New Roman </em>
+    for academic writing. 
+</p>
+
+<p>
+    In CSS, to change the font use the <code>font-family</code> property, followed 
+    by a font family like 'Times New Roman', 'Monospace', or 'Georgia'. 
+</p>
+
+
+<pre><code class="lang-css">/* Change h4 font-family
+to Georgia */
+h4 {
+  color: #000;
+  font-family: Georgia;
+}</code></pre>
+
+<style>
+    /* Change h4 font-family
+to Georgia */
+div .whorehey {
+  color: #000;
+  font-family: Georgia;
+  font-size: 25px;
+}
+</style>
+
+<div class="whorehey mb-5">$$ The lazy brown fox $$</div>
+
+<pre><code class="lang-css">/* Change h4 font-family
+to monospace */
+h4 {
+  color: #000;
+  font-family: monospace;
+}</code></pre>
+
+<style>
+    /* Change h4 font-family
+to monospace */
+h4 .monospace {
+  color: #000;
+  font-family: monospace;
+}
+</style>
+
+<h4 class="monospace">$$ The lazy brown fox $$</h4>
+
+<a class="btn btn-light shadow-sm mt-3" asp-controller="css" asp-action="fonts" >
+    CSS Fonts
 </a>
+<br>
+
+<a class="float-start btn btn-dark mt-5" asp-controller="html" asp-action="index" >
+    <span class="text-warning">←</span>HTML 
+</a>
+<a class="float-end btn btn-dark shadow-sm mt-5" asp-controller="css" asp-action="boxModel" >
+    CSS Box Model <span class="text-warning">→</span>
+</a>
+
