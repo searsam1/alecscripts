@@ -1,6 +1,5 @@
 
 
-
 <p>
     Programming <b>definitions</b> for developers and coding hobbyists. 
 </p>
@@ -8,9 +7,6 @@
 <p>
     <b>Glossary</b> - an alphabetical list of terms or words found in or relating to a specific subject, text, or dialect, with explanations; a brief dictionary.
 </p>
-
-
-<figcaption>Image by <a href="https://pixabay.com/users/blickpixel-52945/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=585004">Michael Schwarzenberger</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=585004">Pixabay</a></figcaption>
 
 @{
     Dictionary<string, string> glossary =
@@ -103,26 +99,5 @@
     document.querySelector("#toc").style.display = "none";
 </script>
 
-<script>
-    for (let h of document.querySelectorAll("h3")){
-        h.style.fontSize = "1.2em";
-        h.style.fontWeight = "bold";
-        h.style.margin = "1px";
-        h.style.padding = "1px";
-        h.style.paddingTop = "25px"
-    }
-</script>
-
-<style>
-    ul ul {
-        list-style-type: none;
-    }
-    ul > ul > li::before {
-        content: "↪︎";
-    }
-    #rightSidebar ul ul li::before{
-        content: none;
-    }
-</style>
 
 See <a href="https://www.collinsdictionary.com/us/word-lists/computer-terms-used-in-computing">more terms</a>

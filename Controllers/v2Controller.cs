@@ -20,5 +20,9 @@ namespace MvcAlecScripts.Controllers
         {
             return "v3.1";
         }
+        public string Test()
+        {
+            return "v3.1";
+        }
     }
 }

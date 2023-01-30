@@ -28,9 +28,14 @@
                </div>
                
                <div id="mainBody" class="col-8 px-4 my-3 ">
-                  <div class="text-secondary">alecscripts.com <span class=" text-dark">@ViewData["controller"]</span> <span class="text-dark">  &gt;  </span> <span class="text-dark"> @ViewData["title"]</span>
-                     |   Created on: @ViewData["creationDate"]
-                  <br /><br /><br /></div>
+                  <div style="font-size: 13px;" class="text-muted mb-3">/<span class=" text-dark">@ViewData["controller"]</span><span class="text-dark">/</span><span class="text-dark">@ViewData["title"]</span>
+                     
+                     @{
+                        if (ViewData.ContainsKey("creationDate")){
+                            <span class="text-dark">| Created on: @ViewData["creationDate"]</span>
+                        }
+                     }
+                  </div>
                   <h1 class=" mb-5">@ViewData["Controller"]: @ViewData["title"]</h1>
                   @* <div id="toc">
                      <span class="border-bottom mx-2">Table of Contents</span>
