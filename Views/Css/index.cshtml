@@ -1,14 +1,60 @@
 
+<a asp-controller="home" asp-action="directory" asp-fragment="css"  class="btn btn-light">
+    All CSS Pages
+</a>
+
 <h2 class="display-6">
     What is CSS?
 </h2>
 
 <p>
-    Cascading style sheets, or CSS, is a way to style 
+    <strong>Cascading style sheets</strong>, or <strong>CSS</strong>, is a way to style 
     html websites with little effort. Css can be referenced 
-    from an external file, called a stylesheet, that is accessed by the 
+    from an <strong>external</strong> file, called a stylesheet, that is accessed by the 
     link tag. The other ways are inline, which uses the style attribute, 
     and internal, which uses the style tag. 
+</p>
+<p>
+    The most common way to use CSS is through external <b>stylesheets</b>. It 
+    takes selectors and styles them according to the declaration. Inside the declaration
+        there is the property and then the value. 
+</p>
+<p>
+    <h3>
+        Rulesets (Stylesheet Syntax):
+    </h3> 
+    <ul>
+        <li>
+            Selectors
+            <pre data-line="1" class="lang-css"><code>p {
+    color: blue;
+}</code></pre>
+        </li>
+        <li>
+            Declaration Blocks
+            <pre data-line="1-3" class="lang-css"><code><span>p</span> {
+    color: blue;
+}</code></pre>
+        </li>
+        <li>
+            Declarations
+            <pre data-line="2" class="lang-css"><code><span>p</span> {
+     color: blue; 
+}</code></pre>
+        </li>
+        <li>
+            Properties
+        </li>
+        <pre data-line="2" class="lang-css"><code><span>p</span> {
+     /* property --> */  color : blue;
+}</code></pre>
+        <li>
+            Values
+            <pre  data-line="2"  class="lang-css"><code><span>p</span> {
+    color :  blue /* <-- Value  */ ;
+}</code></pre>
+        </li>
+    </ul>
 </p>
 @{
     string example3 = @"<!-- Index.html -->
@@ -66,8 +112,15 @@ p {
 </p>
 
 <h3>
-    Classes
+    .Classes
 </h3>
+<p>
+    Html offers classes which can be styled 
+    using CSS. This makes it more streamline for 
+    styling a custom collection of elements in the 
+    same class. Otherwise, tags would be the 
+    only groups to style. 
+</p>
 <p>
     Use dot <code>.</code> notation before the class name to 
     access a class. 
@@ -75,14 +128,119 @@ p {
 <pre><code class="lang-css">.column {
     max-width: 20%;
 } 
+.header {
+    background: red;
+}
 </code></pre>
 
-<h3>IDs</h3>
+<h3>#IDs</h3>
 <p>
-    Use a hashtag <code>#</code> before the element name to access an element by ID. 
+    Html elements can have IDs to label them. This makes it useful 
+    for styling a single element without all the others in the same 
+    class or tag. 
+    Use a hashtag <code>#</code> before an ID to access an element by ID. 
 </p>  
 <pre><code class="lang-css">
 #tableOfContents {
     color: red;
-} 
+}
+
+#title {
+    color: red;
+}
 </code></pre>
+
+<p>
+    In the example above, title is an ID and not the title tag. 
+</p>
+
+<h2>
+    Attribute Selectors
+</h2>
+<p>
+    Another way of accessing an element by attribute is with an attribute selector. 
+    There are other attributes besides class and ID, so that is where the attribute selector comes into 
+    play. It can be used alone or with a type on the outside. 
+</p>
+<pre><code class="lang-css">type[attribute*=value]</code></pre>
+
+<p>
+    Take a look at some examples to get more familiar: 
+</p>
+<pre><code class="lang-css">img[src*='lang-css'] {
+  height: 50px;
+}
+ 
+img[src*='lang-html'] {
+  height: 100px;
+}</code></pre>
+<p>
+    In the examples above, only img tags with <code>"lang-css"</code> in the src
+    will have a height of <code>50px</code>. All img tags 
+    with <code>"lang-css"</code> in the src will have a height of <code>100px</code>. 
+</p>
+
+<h2>
+    Fonts
+</h2>
+<p>
+    Fonts make words and sentences look different. Each font 
+    has its purpose, like <em style="font-family: monospace">Monospace</em> for code or <em style="font-family: 'Times New Roman'">Times New Roman </em>
+    for academic writing. 
+</p>
+
+<p>
+    In CSS, to change the font use the <code>font-family</code> property, followed 
+    by a font family like 'Times New Roman', 'Monospace', or 'Georgia'. 
+</p>
+
+
+<pre><code class="lang-css">/* Change h4 font-family
+to Georgia */
+h4 {
+  color: #000;
+  font-family: Georgia;
+}</code></pre>
+
+<style>
+    /* Change h4 font-family
+to Georgia */
+div .whorehey {
+  color: #000;
+  font-family: Georgia;
+  font-size: 25px;
+}
+</style>
+
+<div class="whorehey mb-5">$$ The lazy brown fox $$</div>
+
+<pre><code class="lang-css">/* Change h4 font-family
+to monospace */
+h4 {
+  color: #000;
+  font-family: monospace;
+}</code></pre>
+
+<style>
+    /* Change h4 font-family
+to monospace */
+h4 .monospace {
+  color: #000;
+  font-family: monospace;
+}
+</style>
+
+<h4 class="monospace">$$ The lazy brown fox $$</h4>
+
+<a class="btn btn-light shadow-sm mt-3" asp-controller="css" asp-action="fonts" >
+    CSS Fonts
+</a>
+<br>
+
+<a class="float-start btn btn-dark mt-5" asp-controller="html" asp-action="index" >
+    <span class="text-warning">←</span>HTML 
+</a>
+<a class="float-end btn btn-dark shadow-sm mt-5" asp-controller="css" asp-action="boxModel" >
+    CSS Box Model <span class="text-warning">→</span>
+</a>
+

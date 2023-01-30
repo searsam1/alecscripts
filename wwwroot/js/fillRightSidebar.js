@@ -1,5 +1,11 @@
-function activate_right() {
+
+
+
+function fillRightSidebar() {
+    // Get the H2's from the page and 
+    // add to the right sidebar 
     let sidebar = document.querySelector("#rightSideList");
+    // h2 tags
     let headers = document.querySelectorAll("h2")
 
     sidebar.style.borderLeft = "2px solid rgb(205, 205, 205)"
@@ -20,5 +26,5 @@ function activate_right() {
         link.style.textTransform = "capitalize"
     }
 }
-activate_right()
+fillRightSidebar()
 console.info("Activate Right")
