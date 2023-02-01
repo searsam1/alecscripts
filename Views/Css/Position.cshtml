@@ -1,0 +1,31 @@
+@{
+    string[] positions = @"static-relative-absolute-fixed-sticky".Split("-");
+}
+
+
+<p>
+    Elements take up space on a page and 
+    can be displayed in special ways 
+    relative to neighboring elements. 
+</p>
+
+<h2>
+    Positional Values
+</h2>
+<p>
+    To change the position of an element, assign the element's 
+    <code>position</code> property to one of the following:
+</p>
+
+<ul>
+@foreach (string position in positions)
+{   
+    <li class="mt-2">
+        <code class="lang-css">@position</code>
+    </li>
+}
+</ul>
+
+<h3>
+    Position: relative
+</h3>

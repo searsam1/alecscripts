@@ -120,5 +120,13 @@ namespace MvcAlecScripts.Controllers
         return View();
     }
     
+    public IActionResult Position()
+    {   
+        ViewData["creationDate"] = "Tue Jan 31 21:33:48 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Position";
+        return View();
+    }
+    
     }
 }
