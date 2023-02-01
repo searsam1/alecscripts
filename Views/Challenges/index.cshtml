@@ -1,18 +1,51 @@
 @model MvcAlecScripts.Models.ChallengesModel
 
-
-@{
-    Layout = "../Shared/_ChallengeLayout.cshtml";
-    @* --------- *@
-    Model.name = "Sum of Prime Factors";
-    Model.challengeId = "Kgf3KkDWyye7Jw=='"; 
-    Model.Description = "Find the sum of a number's prime factors. For example, 9 would sum to 6 because of 3 and 3. ";
-    Model.Notes = "Do not include the number or 1 in the sum.";
-    Model.Resources = "https://www.codecademy.com/code-challenges/code-challenge-sum-of-prime-factors-python";
-    @* --------- *@
-}
-
 @* name - challengeId - Description - Notes - Resources *@
+
+<p>
+    This is an introduction challenge to show how challenges work on alecscripts. 
+</p>
+
+<script>
+    function changeToCode(){
+        let ins = document.querySelector("#instructions")
+        let tbox = document.createElement("textarea")
+        tbox.placeholder = "Write Code Here..."
+        ins.innerHTML = ""
+        ins.setAttribute("class", "p-3")
+        ins.appendChild(tbox)
+
+    }
+</script>
+
+<div class="container">
+        <a class="btn btn-dark"> Information </a>
+    <button onclick="changeToCode()" class="btn btn-dark"> Code </button>
+    <a class="btn btn-dark"> Help </a>
+    <a class="btn btn-dark"> Comments </a>
+    <a class="btn btn-dark"> Solutions </a>
+</div>
+
+<div class="border p-3" id="instructions">
+
+    <h2>
+        @Model.InstructionsTitle
+    </h2>
+    <h3>
+        @Model.Subheader
+    </h3>
+    <p class=" bg-light p-3">
+        @Model.Tags
+    </p>
+    <p>
+        @Model.InstructionsInstructions
+    </p>
+    <h2>Examples</h2>
+    <pre><code class="lang-md">@Model.InstructionsExamples</code></pre>
+    
+    <h2>Notes</h2>
+    <pre><code class="lang-md">@Model.InstructionsNotes</code></pre>
+</div>
 
 <style>
     textarea{
@@ -39,15 +72,4 @@
     }
 </style>
 
-<div class="container-fluid bg-light text-dark">
-    <div  class=" container pt-5">
-        <h2 class="test shadow rounded-3 p-3">@Model.name</h2>
-        <p class="container p-3 border border-dark rounded-3 shadow">
-            @Model.Description
-        </p>
-    </div>
-    <div class="container">
-        <textarea class="shadow " spellcheck="false" withspellcheck="true">def sum_prime_facts():
-    </textarea>
-    </div>
-</div>
+

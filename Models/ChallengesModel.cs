@@ -2,11 +2,14 @@ namespace MvcAlecScripts.Models;
 
 public class ChallengesModel
 {
-    public string? name { get; set; }
-    public string? challengeId { get; set; }
-    public string? Description { get; set; }
-    public string? Notes { get; set; }
-    public string? Resources { get; set; }
-
-        
+    public string? Id { get; set; }
+    
+    // Instructions
+    public string? InstructionsTitle { get; set; }
+    public string? Subheader { get; set; }
+    public string? Tags { get; set; }
+    public string? InstructionsInstructions { get; set; }
+    public string? InstructionsExamples { get; set; }
+    public string? InstructionsNotes { get; set; }
+    
 }

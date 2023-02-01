@@ -201,6 +201,18 @@
     </div>
 </div>
 
-<figcaption style="margin-top: 10px; margin-left: 3%;">
-    Content-box in red
-</figcaption>
+<h2>
+    Changing the box model
+</h2>
+<p>
+    By default, CSS uses the <code>content-box</code> method for the box model. 
+    This can make elements longer than their max widths (from a border, for example). 
+</p>
+
+<p>
+    To fix this, use <code class="lang-css"> box-sizing: border-box;</code> to make 
+    CSS include borders in its calculations and it will obey the max/min rules. 
+</p>
+<pre><code class="lang-css">* {
+  box-sizing: border-box;
+}</code></pre>

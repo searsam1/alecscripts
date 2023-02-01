@@ -14,10 +14,18 @@ def creation_date():
 def title_split(string):
     return "".join(map(lambda x: x.title(), string.split())) 
 
+def collect_name():
+    
+    name = ""
+    try:
+        name = input("New Page Name? : ").strip()
+    except KeyboardInterrupt:
+        os.system.exit()
+    return name
 
 def create_new_publicIAction(new_page=None):
     if not new_page:
-        new_page = input("New Page Name? : ").strip()
+        new_page = collect_name().strip()
     title = new_page.title()
     new_page = title_split(new_page)
     text = """public IActionResult {0}()

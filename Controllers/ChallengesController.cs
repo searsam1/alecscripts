@@ -12,13 +12,18 @@ namespace MvcAlecScripts.Controllers
         public string controllerName = "Challenges";
         public IActionResult Index()
         {
+            
             ViewData["title"] = "Home";
             ViewData["controller"] = controllerName;
 
             var viewModel = new ChallengesModel
             {
-                
-
+                InstructionsTitle = "Introduction Challenge",
+                Subheader = "Return 'Hello world'",
+                InstructionsInstructions = "Return the string hello world to pass the tests",
+                Tags = "<Tags Go here>",
+                InstructionsExamples = "`main() -> hello world`",
+                InstructionsNotes = "### NA",
             };
 
             return View(viewModel);
