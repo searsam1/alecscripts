@@ -12,6 +12,7 @@
 <h2>
     Positional Values
 </h2>
+<hr>
 <p>
     To change the position of an element, assign the element's 
     <code>position</code> property to one of the following:
@@ -28,4 +29,111 @@
 
 <h3>
     Position: relative
+</h3>
+<p>
+    Relative in terms of an element's default static position, 
+    an offset modifer can be added to relatively positioned items 
+    to move them up, down, left, or right. 
+</p>
+<pre><code class="lang-css">.grn-box {
+  position: relative;
+  background-color: green;
+  top: 10px;
+  left: 40px
+}</code></pre>
+<style>.grn-box {
+  position: relative;
+  background-color: green;
+  top: 10px;
+  color: white;
+  padding: 10px;
+  left: 40px;
+  max-width: 100px
+}</style>
+<style>.grn-box-def {
+  max-width: 100px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  
+}</style>
+<p>
+    In the example above, the <code>.grn-box</code> class will be 
+    spaced from its static position 10 pixels from the top and 40 from the left. 
+</p>
+<div class="grn-box-def">
+    grn-box
+</div>
+<div class="grn-box">
+    grn-box
+</div>
+
+<br>
+<p>
+    Versus two <b>default</b> (static) green boxes:
+</p>
+
+<div class="grn-box-def">
+    grn-box
+</div>
+<div class="grn-box-def">
+    grn-box
+</div>
+<br>
+<p>
+    The offsets are:
+</p>
+<ul>
+    <li>
+        <code>left</code>
+    </li>
+    <li>
+        <code>right</code>
+    </li>
+    <li>
+        <code>top</code>
+    </li>
+    <li>
+        <code>bottom</code>
+    </li>
+</ul>
+<p>
+    Each offset will move the element so many pixels in the opposite direction. 
+    For example, if top was set to 40 pixels, the element would move 40 pixels down from 
+    the top. 
+</p>
+<h3>
+    Position: absolute
+</h3>
+<p>
+    Absolute positioning is where all other elements ignore that element. It is positioned off of 
+    its closest parent element. 
+</p>
+<pre><code class="lang-css">.grn-box {
+  position: absolute;
+}</code></pre>
+<p>
+    Absolute positioning will often block the view of other elements. They are often hidden and 
+    displayed with a button click, like a sidebar or navbar dropdown menu. 
+</p>
+
+<h3>
+    Position: fixed
+</h3>
+<p>
+    Fixed position is like absolute, but it won't scroll with the page. The navbar on this website (at the top 
+    where it says directory and glossary) is a close example to a fixed element. Even if the user scrolls, 
+    the element will stay in a fixed position. 
+</p>
+<pre><code class="lang-css">.grn-box {
+  position: fixed;
+  top: 10px;
+  left: 40px
+}</code></pre>
+<p>
+    Offsets are also used with the fixed position, being padded 
+    by so many pixels on a given side (top, left, right or bottom).
+</p>
+<h3>
+    Position: sticky
 </h3>
