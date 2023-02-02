@@ -142,3 +142,54 @@
     Sticky is like a fixed position but it will stick to a cetain element 
     when the user scrolls. 
 </p>
+
+<h2>
+    Z-Index
+</h2>
+<p>
+    Z-Index is how elements are layered on top of eachother in CSS. By default, objects 
+    are static and z-index doesn't apply to them. For objects it does apply to, however, 
+    a higher z-index will show over a smaller one. 
+</p>
+
+<p>
+    Take two boxes that are black and blue. Even though 
+    the blue box if defined after the black box, the black box 
+    still shows because it has a higher z-index. 
+</p>
+
+<style>
+    .box-1{
+        background: black;
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        z-index: 1;
+    }
+    .box-2{
+        background: blue;
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        
+    }
+</style>
+
+<pre><code class="lang-css">.box-1
+{
+    background: black;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+}
+.box-2
+{
+    background: blue;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    
+}</code></pre>
+<div class="box-1"></div>
+<div class="box-2"></div>
