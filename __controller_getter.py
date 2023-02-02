@@ -45,11 +45,7 @@ def replace_specials(txt):
 def asp_link(controller, action):
     controller_label = replace_specials(controller)
     action_label = replace_specials(title_split(action))
-    if controller_label != action_label:
-        string = f"""<li><a class="link-dark rounded" asp-action="{action}" asp-controller="{controller}">{controller_label} {action_label}</a></li>"""
-    else:
-        string = f"""<li><a class="link-dark rounded" asp-action="{action}" asp-controller="{controller}">{action_label}</a></li>"""
-    controller_label_g = controller_label
+    string = f"""<li><a class="link-dark rounded" asp-action="{action}" asp-controller="{controller}">{action_label}</a></li>"""
     return string
 
 def html(controller, actions):
