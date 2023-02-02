@@ -28,7 +28,7 @@ function activate_left() {
         
         // get rid of spaces and newlines
         let res = link.textContent.replace(/ /g, "").replace(/\n/g, "")
-        if (c + title == res) {
+        if (title == res) {
             link.style.borderBottom = "1px solid #f1f1f1"
             a.style.color = 'black'
             a.style.fontWeight = '500 '
