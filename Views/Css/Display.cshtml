@@ -79,12 +79,51 @@
 <pre><code class="lang-css">.box {
   display: inline-block;
 }</code></pre>
-<div style="display: inline-block; width: 100px; background: red;">
+<div style="display: inline-block; width: 100px; height: 200px; background: lightblue;">
         box
 </div>
-<div style="display: inline-block; background: blue;">
+<div style="display: inline-block; background: orange; height: 133px; width: 150px;">
         box
 </div>
+<pre><code class="lang-css">light-blue-box 
+{
+    display: inline-block;
+    background: orange;
+    height: 133px;
+    width: 150px; 
+}
+</code></pre>
+<pre><code class="lang-css">orange-box 
+    {
+        display: inline-block; 
+        width: 100px; 
+        height: 200px;
+        background: lightblue;
+    }
+</code></pre>
+
 <p>
-    The blue and red boxes are inline but have custom width properties. 
+    The blue box and orange box are inline elements that have different heights and widths. 
 </p>
+
+<h2>
+    Floating elements
+</h2>
+<p>
+    Elements can be "floated" left or right: the float property pushes the element 
+    the maximum amount to the <span class="border-bottom border-success">left</span> or <span class="border-bottom border-danger">right</span> . 
+</p>
+<div class="border border-dark" style="width: 50%;">
+    <span style="float: left;" class="text-success fs-2">←⚛︎</span>
+    <span style="float: right;" class="text-danger fs-2">⚛︎→</span>
+</div>
+<br>
+<br>
+<pre><code class="lang-css">f-left {
+        float: left;
+    }
+</code></pre>
+<pre><code class="lang-css">f-right {
+        float: right;
+    }
+</code></pre>

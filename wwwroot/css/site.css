@@ -1,8 +1,9 @@
 
 
 
-body {
+#mainBody {
     font-family: var(--bs-font-sans-serif);
+    max-width: 768px;
 }
 
 
@@ -59,7 +60,7 @@ h3 {
     font-family: 'UnifrakturMaguntia', cursive;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     #rightSidebar {
         display: none;
     }
@@ -68,11 +69,11 @@ h3 {
         max-width: 100px;
         
     }
-}
+} */
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #leftSidebar {
         display: none;
     }
@@ -81,7 +82,7 @@ h3 {
         max-width: 100%;
         width: auto;
     }
-}
+} */
 
 .sticky {
     position: -webkit-sticky;
@@ -92,7 +93,7 @@ h3 {
 
 #leftSidebar,
 #rightSidebar {
-    height: 93vh;
+    height: 93.5vh;
     z-index: 0;
     font-family: var(--bs-font-sans-serif);
     font-size: .9em;

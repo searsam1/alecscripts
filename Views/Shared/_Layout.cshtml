@@ -9,7 +9,10 @@
       <div class="container-fluid">
          <main >
             <div class="row">
-               <div style="top: 57px;" id="leftSidebar" class="px-0 pe-1 border-end sticky-top col text-end ">
+               <div id="leftSpacer" class="col">
+
+               </div>
+               <div style="top: 57px;" id="leftSidebar" class="px-0 pe-1 border-end sticky-top col-2 text-end ">
                   <div class="bg-white">
                      <a href="/"
                         class=" d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none ">
@@ -26,7 +29,7 @@
                   </div>
                </div>
                
-               <div id="mainBody" class="col-8 px-4 my-3 ">
+               <div id="mainBody" class="col-8   px-4 my-3 ">
                   <div style="font-size: 13px;" class="text-muted mb-3">/<span class=" text-dark">@ViewData["controller"]</span><span class="text-dark">/</span><span class="text-dark">@ViewData["title"]</span>
                      @{
                         if (ViewData.ContainsKey("creationDate")){
@@ -66,6 +69,9 @@
                      </ul>
                   </div>
                </div>
+               <div id="rightSpacer" class="col">
+
+               </div>
             </div>
          </main>
       </div>
@@ -74,7 +80,7 @@
    <!-- Footer -->
    <div class="container-fluid bg-black  pt-3">
       <div class="row">
-         <div class="col ">
+         <div class="col-2">
             <footer class="thefoot" >
                <ul class="nav justify-content-center pb-1 mb-1">
                   <figcaption class="col-7">

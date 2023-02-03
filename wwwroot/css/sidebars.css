@@ -84,3 +84,15 @@ body {
   
   .fw-semibold { font-weight: 600; }
   .lh-tight { line-height: 1.25; }
+
+@media only screen and (max-width: 1600px) {
+    #rightSpacer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1458px) {
+    #leftSpacer {
+        display: none;
+    }
+}
