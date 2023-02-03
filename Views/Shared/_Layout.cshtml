@@ -152,6 +152,7 @@
         assign @@ViewData["Controller"] for external js access 
       in /navlinkSelected.js 
       -->
+      <script src="/js/createNavlinks.js"></script>
       <script src="/js/hideLeftside.js"></script>
       <script>var viewdataName = '@ViewData["Controller"]';</script>
       <script src="/js/navlinkSelected.js"></script>
@@ -163,6 +164,8 @@
       <script src="/js/leftScrollTop.js"></script>
       <script src="/js/pageSearch.js"></script>
       <script src="/js/hoverFooterLinks.js"></script>
+      
+      
       
       
       @await RenderSectionAsync("Scripts", required: false)

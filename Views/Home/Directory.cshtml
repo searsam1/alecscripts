@@ -2,46 +2,44 @@
     Directory
 </h2>
 
-<div id="count" class="bg-dark text-white p-3 rounded-3">
-    Pages
-</div>
+<div class="container text-center border-top">
+    <div id="directory">
 
-<div class="container">
-    <ul id="directory">
-
-    </ul>
+    </div>
 </div>
 
 <script>
-    let directory = document.querySelector("#directory");
-    let new_btn;
-    let sideBar = document.querySelector("#leftSidebar").querySelector("UL").querySelectorAll(".link-dark")
-    document.querySelector("#count").textContent = "Around " + sideBar.length + " Pages"
     
-    controller = "n";
-    color = "secondary"
-    for (let link of sideBar) {
-        new_contrller = link.textContent.split(" ")[0].toLowerCase()
-        // to change color for each header (controller)
-        if (new_contrller != controller) {
-            new_h = document.createElement("H2")
-            new_h.style.textAlign = "start"
-            new_h.style.textTransform = "capitalize"
+    function createDirectory(){
+        let directory = document.querySelector("#directory");        
+        let navbar = document.querySelector(".navbar-nav");        
+        let Sidebar =  document.querySelector("#leftSidebar").querySelector("UL").querySelectorAll("li")
+        let header 
+        let a 
+        let btn 
 
-            controller = new_contrller
-            new_h.textContent = controller
-            directory.appendChild(new_h)
-            color = color == "secondary" ? "dark" : "secondary"
+        for (let link of Sidebar){
+            // for the headers
+
+
+            if (link.querySelector("button")){
+                header = document.createElement("h2")
+                header.textContent = link.querySelector("button").textContent
+                directory.appendChild(header)
+
+                
+            }
+            else {
+                a = link.cloneNode(true).querySelector("a")
+                a.setAttribute("class", "btn btn-light m-1  border")
+                directory.appendChild(a)
+
+            }
         }
-        new_btn = document.createElement("a")
-        new_btn.setAttribute('href', link.getAttribute('href'))
-        new_btn.setAttribute("class", `link-dark`)
-        new_btn.textContent = link.textContent != "Home" ? link.textContent.split(" ").slice(1,).join(" ") : link.textContent
-        new_li = document.createElement("LI")
-        new_li.appendChild(new_btn)
-        directory.appendChild(new_li)
+        
+        
     }
-
+createDirectory()
 </script>
 
 <style>
