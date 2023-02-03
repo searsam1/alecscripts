@@ -64,8 +64,9 @@ h3 {
         display: none;
     }
 
-    #mainBody {
-        width: 70%;
+    body {
+        max-width: 100px;
+        
     }
 }
 
@@ -353,3 +354,5 @@ pre[class*=language-] code {
 h1, h2, h3 {
     font-family: 'IBM Plex Sans', sans-serif;
 }
+
+
