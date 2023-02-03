@@ -46,3 +46,45 @@
     Block elements have no elements to the left or right. All headings 
     are block elements along with <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, and <code>&lt;footer&gt;</code> elements. 
 </p>
+<pre><code class="lang-css">i {
+  display: block;
+}</code></pre>
+
+<i style="display: block;">
+    Block
+</i>
+<i style="display: block;">
+    Block
+</i>
+<b>
+    Inline
+</b>
+<b>
+    Inline
+</b>
+<hr>
+<p>
+    Notice how the block element takes up the whole line, while the 
+    inline elements line up next to each other. 
+</p>
+
+<h3>
+    Inline-block
+</h3>
+<p>
+    Normally, inline elements cannot have height and width properties. Inline blocks 
+    can be next to each other but also have height and width properties, combing inline and block 
+    displays. 
+</p>
+<pre><code class="lang-css">.box {
+  display: inline-block;
+}</code></pre>
+<div style="display: inline-block; width: 100px; background: red;">
+        box
+</div>
+<div style="display: inline-block; background: blue;">
+        box
+</div>
+<p>
+    The blue and red boxes are inline but have custom width properties. 
+</p>
