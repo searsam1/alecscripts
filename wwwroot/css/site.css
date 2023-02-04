@@ -95,7 +95,7 @@ h3 {
 #leftSidebar,
 #rightSidebar {
 
-    height: 93.5vh;
+    height: 95vh;
     z-index: 0;
     font-family: var(--bs-font-sans-serif);
     font-size: .9em;
@@ -361,5 +361,6 @@ pre[class*=language-] code {
 h1, h2, h3 {
     font-family: 'IBM Plex Sans', sans-serif;
 }
+
 
 
