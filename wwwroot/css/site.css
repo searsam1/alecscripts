@@ -4,6 +4,7 @@
 #mainBody {
     font-family: var(--bs-font-sans-serif);
     max-width: 768px;
+    
 }
 
 
@@ -93,6 +94,7 @@ h3 {
 
 #leftSidebar,
 #rightSidebar {
+
     height: 93.5vh;
     z-index: 0;
     font-family: var(--bs-font-sans-serif);
@@ -225,6 +227,10 @@ img {
 
 .high-light {
     background: red;
+}
+
+.thefoot{
+    
 }
 
 .thefoot li.nav-item a:hover{
