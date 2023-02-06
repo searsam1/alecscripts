@@ -1,30 +1,28 @@
-﻿
-
-
-@{
+﻿@{
     Layout = "../Shared/_homeLayout.cshtml";
 }
 
 
 
 <style>
-@@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
+    @@keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
 
-    #codeIcon{
-      animation-name: spin ;
-    animation-duration: 50s;
-    background-color: crimson;
-    border-radius: 100%;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-}
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    #codeIcon {
+        animation-name: spin;
+        animation-duration: 50s;
+        background-color: crimson;
+        border-radius: 100%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
 
 
 
@@ -36,81 +34,92 @@
     .box {
         height: 400px;
         width: 200px;
-        transition: background .5s ,color .5s;
+        transition: background .5s, color .5s;
         background-color: #f8f9fa;
-        
+
     }
+
     .box:hover {
         background-color: black;
         color: white;
-        transition: background  .5s, color .5s;
-    }    
+        transition: background .5s, color .5s;
+    }
 </style>
 
 
 <center>
-    
+
     <h2 id="topHead" class="bg-light  fs-1 text-dark shadow Orbitron p-5 mt-0">
         a<span class="text-danger">l</span>ecscripts.com
     </h2>
     <h2>
-        <a asp-controller="home" asp-action="directory" class="text-decoration-none link-dark border-bottom border-dark">Documentation</a> for the Standard <span class="border-bottom border-dark">Programmer</span>
+        <a asp-controller="home" asp-action="directory"
+            class="text-decoration-none link-dark border-bottom border-dark">Documentation</a> for the Standard <span
+            class="border-bottom border-dark">Programmer</span>
     </h2>
     <h2>
         The Standard Tutorial
     </h2>
     <div style="max-width: 768px;">
-            <svg id="codeIcon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
-                <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
-            </svg>
-            <h3>
-                Coding
-            </h3>
-            <p class="text-center">
-                <em>the process of assigning a code to something for classification or identification.</em>
-            </p>
+        <svg id="codeIcon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+            class="bi bi-code" viewBox="0 0 16 16">
+            <path
+                d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z" />
+        </svg>
+        <h3>
+            Coding
+        </h3>
+        <p class="text-center">
+            <em>the process of assigning a code to something for classification or identification.</em>
+        </p>
         <hr>
 
         <h2>
             Computers and coding
         </h2>
 
-    <br>
-    <div class="text-center col-8">
-        <p>
-            The nice part about coding is the ability 
-            for anyone with a computer to 
-            become a software engineer.
-        </p>
-        <p>
-            Woodworking, on the other hand, is a hard profession to get into 
-            because big tools are needed to make big money. 
-            These tools are harder to maintain because they are physically bigger, 
-            require more complex mantinence, and are physically dangerous. 
-        </p>    
-        <p>
-            The tablesaw is an imperative tool to have in the workshop. It 
-            is expensive, messy, dangerous. That being said, it 
-            makes the job of cutting a lot easier and less physically 
-            demanding. Compare this to computers that only require 
-            a power source and an internet connection. 
-        </p>    
+        <br>
+        <div class="text-center col-8">
+            <p>
+                The nice part about coding is the ability
+                for anyone with a computer to
+                become a software engineer.
+            </p>
+            <p>
+                Woodworking, on the other hand, is a hard profession to get into
+                because big tools are needed to make big money.
+                These tools are harder to maintain because they are physically bigger,
+                require more complex mantinence, and are physically dangerous.
+            </p>
+            <p>
+                The tablesaw is an imperative tool to have in the workshop. It
+                is expensive, messy, dangerous. That being said, it
+                makes the job of cutting a lot easier and less physically
+                demanding. Compare this to computers that only require
+                a power source and an internet connection.
+            </p>
 
-        <div style="display: inline-block; height: 50px; width: 50px; background: black; border-radius: 100%"></div>
-        <div style="display: inline-block; height: 50px; width: 50px; background: crimson; border-radius: 100%"></div>
-        <h2>
-            Coding Languages
-        </h2>
-        <p>
-            Coding is done in languages that computers can translate into machine-readable 
-            code. Some of the more recent languages are <code>python</code>, <code>javaScript</code>, 
-            <code>java</code>, and more. 
-        </p>
-        
+            <div style="display: inline-block; height: 50px; width: 50px; background: black; border-radius: 100%"></div>
+            <div style="display: inline-block; height: 50px; width: 50px; background: crimson; border-radius: 100%">
+            </div>
+            <h2>
+                Coding Languages
+            </h2>
+            <p>
+                Coding is done in languages that computers can translate into machine-readable
+                code. Some of the more recent languages are <code>python</code>, <code>javaScript</code>,
+                <code>java</code>, and more.
+            </p>
+            <p>
+                For example, to output "hello world" in the python coding 
+                language, use the following code:
+            </p>
+            <pre><code class="lang-python">print("hello world")</code></pre>
 
 
-    </div>
-    
+
+        </div>
+
 
     </div>
 </center>
@@ -119,7 +128,7 @@
 
 
 <style>
-    body{
-        background: linear-gradient(45deg, white, rgb(255,0,0,.15));
+    body {
+        background: linear-gradient(45deg, white, rgb(255, 0, 0, .15));
     }
 </style>

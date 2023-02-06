@@ -27,17 +27,19 @@
 </div>
 
 <div class="border p-3" id="instructions">
-
-    <h2>
-        @Model.InstructionsTitle
+    
+    <h2 >
+        <span class="bg-light p-3 rounded shadow-sm">@Model.InstructionsTitle</span>
     </h2>
+    
     <h3>
         @Model.Subheader
     </h3>
-    <p class=" bg-light p-3">
+    
+    <p class=" border-bottom p-3 text-secondary">
         @Model.Tags
     </p>
-    <p>
+    <p class="p-3 border border-dark">
         @Model.InstructionsInstructions
     </p>
     <h2>Examples</h2>
