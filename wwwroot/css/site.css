@@ -60,6 +60,9 @@ h3 {
 .cursive {
     font-family: 'UnifrakturMaguntia', cursive;
 }
+.orbitron{
+    font-family: "Orbitron", sans-serif;
+}
 
 /* @media (max-width: 1200px) {
     #rightSidebar {
@@ -362,5 +365,16 @@ h1, h2, h3 {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+@keyframes topHeadAnimation {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: rgb(248,249,250);
+    }
+  }
 
+#topHead {
+    animation: "topHeadAnimation" 2s linear ;
+}
 
