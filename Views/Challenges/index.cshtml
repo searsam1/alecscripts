@@ -2,31 +2,34 @@
 
 @* name - challengeId - Description - Notes - Resources *@
 
+
+
 <p>
     This is an introduction challenge to show how challenges work on alecscripts. 
 </p>
 
 <script>
-    function changeToCode(){
-        let ins = document.querySelector("#instructions")
-        let tbox = document.createElement("textarea")
-        tbox.placeholder = "Write Code Here..."
-        ins.innerHTML = ""
-        ins.setAttribute("class", "p-3")
-        ins.appendChild(tbox)
-
+    function show(section){
+        let active = document.querySelector(".active")
+        active.setAttribute("class", "hidden border p-3")
+        let code = document.querySelector("#" + section)
+        code.setAttribute("class", "active border p-3")
     }
 </script>
 
 <div class="container">
-        <a class="btn btn-dark"> Information </a>
-    <button onclick="changeToCode()" class="btn btn-dark"> Code </button>
-    <a class="btn btn-dark"> Help </a>
-    <a class="btn btn-dark"> Comments </a>
-    <a class="btn btn-dark"> Solutions </a>
+    <button onclick="show('info')" class="btn btn-dark"> Info </button>
+    <button onclick="show('code')" class="btn btn-dark"> Code </button>
+    <button onclick="show('help')" class="btn btn-dark"> Help </button>
+    <button onclick="show('comments')" class="btn btn-dark"> Comments </button>
+    <button onclick="show('Solutions')" class="btn btn-dark"> Solutions </button>
 </div>
 
-<div class="border p-3" id="instructions">
+<div class="active border p-3" id="info">
+    
+        <div class="fs-3 ps-3 pt-3" style="font-family: orbitron">
+            Info
+        </div>
     
     <h2 >
         <span class="bg-light p-3 rounded shadow-sm">@Model.InstructionsTitle</span>
@@ -49,14 +52,38 @@
     <pre><code class="lang-md">@Model.InstructionsNotes</code></pre>
 </div>
 
+<div class="hidden border p-3" id="code">
+    <h3>
+        Code
+    </h3>
+    <textarea>def main():
+    ...</textarea>
+</div>
+
+<div class="hidden border p-3" id="Help">
+    <h2>
+        Help
+    </h2>
+</div>
+
+<div class="hidden border p-3" id="Comments">
+    <h2>
+        Comments
+    </h2>
+</div>
+
+<div class="hidden border p-3" id="Solutions">
+    <h2>
+        Solutions
+    </h2>
+</div>
+
 <style>
     textarea{
         width: 100%;
         background: white;
         color: black;
         font-family: 'Courier New', Courier, monospace;
-        border: 1px solid black;
-        outline: 2px dotted grey;
         padding: 10px;
         min-height: 50vh;
         margin-bottom: 100px;
@@ -72,6 +99,11 @@
     .test:selected{
         outline: 2px dotted grey;
     }
+    .hidden {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    
 </style>
-
-
