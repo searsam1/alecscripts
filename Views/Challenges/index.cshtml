@@ -64,6 +64,14 @@
     <h2>
         Help
     </h2>
+    <ul>
+        @foreach (string link in Model.HelpLinks.Split(" "))
+        {   
+            <li class="bg-light mt-3 p-3 rounded">
+                <a href="#">@link</a>
+            </li>
+        }
+    </ul>
 </div>
 
 <div class="hidden border p-3" id="Comments">

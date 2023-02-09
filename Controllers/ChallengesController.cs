@@ -22,6 +22,7 @@ namespace MvcAlecScripts.Controllers
                 Subheader = "Return 'Hello world'",
                 InstructionsInstructions = "Return the string hello world to pass the tests",
                 Tags = "<Tags Go here>",
+                HelpLinks = "Link1 Link2 Link3",
                 InstructionsExamples = "`main() -> hello world`",
                 InstructionsNotes = "### NA",
             };

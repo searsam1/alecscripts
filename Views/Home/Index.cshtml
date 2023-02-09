@@ -1,5 +1,11 @@
 ﻿@{
     Layout = "../Shared/_homeLayout.cshtml";
+
+    string[] basicTerminalCommands = @"pwd-Print Working Directory
+ls-Display directory contents
+cd-Change Directory
+mkdir-Make Directory
+touch-Make New File".Split("\n");
 }
 
 
@@ -114,10 +120,37 @@
                 For example, to output "hello world" in the python coding 
                 language, use the following code:
             </p>
-            <pre><code class="lang-python">print("hello world")</code></pre>
+            <pre><code class="lang-python">print("hello world")
+# hello world</code></pre>
 
-
-
+            <h2>
+                The Terminal
+            </h2>
+            <p>
+                The terminal is textbox that gets commands from a user 
+                to do things on a computer, like make new files, folders, etc..
+            </p>
+            <p>
+                Getting used to the terminal is an important stepping stone to 
+                becoming a developer. 
+            </p>
+            <p>
+                To open a new terminal window on mac, press command + space and type terminal 
+                and a little black box should show up. 
+            </p>
+            <h2>
+                Basic commands
+            </h2>
+            <ul class="text-start">
+                @foreach (string command in basicTerminalCommands)
+                {   
+                    <li class="pt-2" style="list-style: none;">
+                        <code class="lang-bash">@command.Split("-")[0]</code>
+                        <em class="text-muted">@command.Split("-")[1]</em>
+                        
+                    </li>
+                }
+            </ul>
         </div>
 
 
@@ -129,6 +162,6 @@
 
 <style>
     body {
-        background: linear-gradient(45deg, white, rgb(255, 0, 0, .15));
+        background: linear-gradient(45deg, white,rgb(250,200,0,.5));
     }
 </style>

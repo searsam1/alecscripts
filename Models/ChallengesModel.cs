@@ -11,5 +11,7 @@ public class ChallengesModel
     public string? InstructionsInstructions { get; set; }
     public string? InstructionsExamples { get; set; }
     public string? InstructionsNotes { get; set; }
+
+    public string? HelpLinks { get; set; }
     
 }
