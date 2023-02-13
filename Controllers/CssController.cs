@@ -137,5 +137,13 @@ namespace MvcAlecScripts.Controllers
     }
     
     
+    public IActionResult Navigation()
+    {   
+        ViewData["creationDate"] = "Sun Feb 12 20:51:01 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Navigation";
+        return View();
+    }
+    
     }
 }
