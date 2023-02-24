@@ -19,6 +19,27 @@
     These example fonts are from google fonts, but they demonstrate that fonts can make one feel different ways. 
     CSS comes with a set of generics to fall back on in case of emergency. 
 </p>
+
+<h2>
+    Serif and Sans-Serif
+</h2>
+<p>
+    Serif fonts have little marks on the ends of each line. Sans-Serif fonts 
+    do not have these lines. 
+</p>
+
+<p style="font-size: 30px; font-family: serif;">
+    Hi, I'm serif
+</p>
+<p style="font-size: 30px; font-family: sans-serif;">
+    Hi, I'm sans-serif
+</p>
+<p>
+    The sans-serif font has no points or tips on the edges of the lines, like on 
+    the ends of the H's. Serif, however, has little points where the H touches the top 
+    and bottom. 
+</p>
+
 <h2 >
     Generic Fonts
 </h2>
@@ -165,3 +186,42 @@ Fantasy
 </ul>
 
 
+<h2>
+    Web Fonts
+</h2>
+<p>
+    Web fonts come from websites like google fonts. They can be linked in 
+    the head of the document or can be used with the <code>font-face</code> ruleset in 
+    the style sheet. This uses local, downloaded files. These files have different formats: 
+    <ul>
+        <li>
+            OTF (Open Type Font)
+        </li>
+        <li>
+            TTF (True Type Font)
+        </li>
+        <li>
+            WOFF (Web Open Font Format)
+        </li>
+        <li>
+            WOFF2 (Web Open Font Format 2)
+        </li>
+    </ul>
+</p>
+
+<p>
+    Then, to reference the files in the css stylesheet, use:
+    <pre><code class="lang-css">@@font-face {
+  font-family: 'MyFontName';
+  src: url('fonts/exampleFont.woff2') format('woff2'),
+       url('fonts/exampleFont.woff') format('woff'),
+       url('fonts/exampleFont.ttf') format('truetype');
+}</code></pre>
+</p>
+
+<p>
+    The font <code>'MyFontName'</code> is now available to use inside the stylesheet. 
+</p>
+<pre><code class="lang-css">p {
+    font-family: 'MyFontName', sans-serif;;
+}</code></pre>

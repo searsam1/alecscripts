@@ -20,30 +20,37 @@
 
         for (let link of Sidebar){
             // for the headers
-
-
             if (link.querySelector("button")){
                 header = document.createElement("h2")
                 header.textContent = link.querySelector("button").textContent
-                directory.appendChild(header)
-
-                
+                directory.appendChild(header)   
+                ele = document.createElement("hr")
+            directory.appendChild(ele)
             }
             else {
                 a = link.cloneNode(true).querySelector("a")
-                a.setAttribute("class", "btn btn-light m-1  border")
+                a.setAttribute("class", "btn btn-dark rounded-0 p-2 border dirBtn")
                 directory.appendChild(a)
 
             }
+            
         }
         
         
     }
 createDirectory()
 </script>
-
 <style>
-    .active {
-        background-color: ;
+    
+    .dirBtn {
+        transition: background-color .5s, color .5s ;
+        margin: 1px;
+    }
+    
+    .dirBtn:hover{
+        background-color: rgba(255, 193, 9, 0.2);
+        transition: background-color .5s, color .5s ;
+        color: black;
+        
     }
 </style>

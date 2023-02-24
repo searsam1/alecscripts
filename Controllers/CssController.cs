@@ -152,11 +152,11 @@ namespace MvcAlecScripts.Controllers
         ViewData["title"] = "Flex";
         return View();
     }
-    public IActionResult Test1()
-    {
-        ViewData["creationDate"] = "Mon Feb 20 09:32:05 2023 (GMT-7)";
+        public IActionResult Navigation()
+    {   
+        ViewData["creationDate"] = "Sun Feb 12 20:51:01 2023 (GMT-7)";
         ViewData["controller"] = controllerName;
-        ViewData["title"] = "Test1";
+        ViewData["title"] = "Navigation";
         return View();
     }
     }

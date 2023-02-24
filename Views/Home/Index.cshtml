@@ -1,25 +1,34 @@
 ﻿@{
     Layout = "../Shared/_homeLayout.cshtml";
+
+    string[] basicTerminalCommands = @"pwd-Print Working Directory
+ls-Display directory contents
+cd-Change Directory
+mkdir-Make Directory
+touch-Make New File".Split("\n");
 }
+
+
 
 <style>
-@@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
+    @@keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
 
-    #codeIcon{
-      animation-name: spin ;
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+        to {
+            transform: rotate(360deg);
+        }
+    }
 
-    
-}
+    #codeIcon {
+        animation-name: spin;
+        animation-duration: 50s;
+        background-color: crimson;
+        border-radius: 100%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
 
 
 
@@ -31,53 +40,89 @@
     .box {
         height: 400px;
         width: 200px;
-        transition: background .5s ,color .5s;
+        transition: background .5s, color .5s;
         background-color: #f8f9fa;
-        
+
     }
+
     .box:hover {
         background-color: black;
         color: white;
-        transition: background  .5s, color .5s;
-    }    
+        transition: background .5s, color .5s;
+    }
 </style>
 
 
 <center style="background: #fcfcfc">
     <img style="margin: 30px;width: 50vw" src="lib\Resources\brandmark-design.png" />
     <div class="col-8">
+<center>
+
         <p class="text-center">
             <em>the process of assigning a code to something for classification or identification.</em>
         </p>
         <hr>
-        <a class=" text-dark text-decoration-none" asp-controller="python" asp-action="index">
-            <p class=" text-dark text-center" style="letter-spacing: .2rem; font-size: 25px; font-family: 'Orbitron', sans-serif;">
-                <span class="border-bottom border-dark">Python</span>
+
+        <h2>
+            Computers and coding
+        </h2>
+
+        <br>
+        <div class="text-center col-8">
+            <p>
+                The nice part about coding is the ability
+                for anyone with a computer to
+                become a software engineer.
             </p>
         </a>
 
         <a class=" text-dark text-decoration-none" asp-controller="css" asp-action="index">
             <p class=" text-dark text-center" style="letter-spacing: .2rem; font-size: 25px; font-family: 'Orbitron', sans-serif;">
                 <span class="border-bottom border-success">CSS</span>
+            <p>
+                Woodworking, on the other hand, is a hard profession to get into
+                because big tools are needed to make big money.
+                These tools are harder to maintain because they are physically bigger,
+                require more complex mantinence, and are physically dangerous.
             </p>
-        </a>
+            <p>
+                The tablesaw is an imperative tool to have in the workshop. It
+                is expensive, messy, dangerous. That being said, it
+                makes the job of cutting a lot easier and less physically
+                demanding. Compare this to computers that only require
+                a power source and an internet connection.
+            </p>
 
-        <a class=" text-dark text-decoration-none" asp-controller="html" asp-action="index">
-            <p class=" text-dark text-center" style="letter-spacing: .2rem; font-size: 25px; font-family: 'Orbitron', sans-serif;">
-                <span class="border-bottom border-success">HTML</span>
+            <div style="display: inline-block; height: 50px; width: 50px; background: black; border-radius: 100%"></div>
+            <div style="display: inline-block; height: 50px; width: 50px; background: crimson; border-radius: 100%">
+            </div>
+            <h2>
+                Coding Languages
+            </h2>
+            <p>
+                Coding is done in languages that computers can translate into machine-readable
+                code. Some of the more recent languages are <code>python</code>, <code>javaScript</code>,
+                <code>java</code>, and more.
             </p>
-        </a>
+            <p>
+                For example, to output "hello world" in the python coding 
+                language, use the following code:
+            </p>
+            <pre><code class="lang-python">print("hello world")
+# hello world</code></pre>
 
-        <a class=" text-dark text-decoration-none" asp-controller="java" asp-action="index">
-            <p class=" text-dark text-center" style="letter-spacing: .2rem; font-size: 25px; font-family: 'Orbitron', sans-serif;">
-                <span class="border-bottom border-success">Java</span>
+            <h2>
+                The Terminal
+            </h2>
+            <p>
+                The terminal is textbox that gets commands from a user 
+                to do things on a computer, like make new files, folders, etc..
             </p>
-        </a>
+            <p>
+                Getting used to the terminal is an important stepping stone to 
+                becoming a developer. 
+            </p>
 
-        <a class=" text-dark text-decoration-none" asp-controller="git" asp-action="index">
-            <p class=" text-dark text-center" style="letter-spacing: .2rem; font-size: 25px; font-family: 'Orbitron', sans-serif;">
-                <span class="border-bottom border-success">Git</span>
-            </p>
         </a>
 
 
@@ -85,6 +130,36 @@
 
 
 
+
+            <p>
+                To open a new terminal window on mac, press command + space and type terminal 
+                and a little black box should show up. 
+            </p>
+            <h2>
+                Basic commands
+            </h2>
+            <ul class="text-start">
+                @foreach (string command in basicTerminalCommands)
+                {   
+                    <li class="pt-2" style="list-style: none;">
+                        <code class="lang-bash">@command.Split("-")[0]</code>
+                        <em class="text-muted">@command.Split("-")[1]</em>
+                        
+                    </li>
+                }
+            </ul>
+        </div>
+
+
+    </div>
+
 </center>
 
 
+
+
+<style>
+    body {
+        background: linear-gradient(45deg, white,rgb(250,200,0,.5));
+    }
+</style>
