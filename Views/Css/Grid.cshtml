@@ -1,0 +1,85 @@
+
+@{
+    string HtmlContent = @"<div class=""grid-container"">
+    <div class=""btn grid-item"">1</div>
+    <div class=""btn grid-item"">2</div>
+    <div class=""btn grid-item"">3</div>
+    <div class=""btn grid-item"">4</div>
+    <div class=""btn grid-item"">5</div>
+    <div class=""btn grid-item"">6</div>
+    <div class=""btn grid-item"">7</div>
+    <div class=""btn grid-item"">8</div>
+    <div class=""btn grid-item"">9</div>
+</div>";
+}
+
+<pre id="htmlContent"><code class="lang-html">@HtmlContent</code></pre>
+
+<pre id="code1"><code class="lang-css">
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    }
+
+    .grid-item {
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    }
+</code></pre>
+
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        background-color: #f0f0f0;
+        padding: 10px;
+    }
+
+    .grid-item {
+        background-color: #ffffff;
+        border: 1px solid #999999;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<div style="display: none;" id="CSScontent">
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    }
+
+    .grid-item {
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    }
+</div>
+
+<div class="grid-container">
+    <div class="btn grid-item">1</div>
+    <div class="btn grid-item">2</div>
+    <div class="btn grid-item">3</div>
+    <div class="btn grid-item">4</div>
+    <div class="btn grid-item">5</div>
+    <div class="btn grid-item">6</div>
+    <div class="btn grid-item">7</div>
+    <div class="btn grid-item">8</div>
+    <div class="btn grid-item">9</div>
+</div>
+

@@ -135,15 +135,29 @@ namespace MvcAlecScripts.Controllers
         ViewData["title"] = "Display";
         return View();
     }
+
+    public IActionResult Grid()
+    {   
+        ViewData["creationDate"] = "Sunday Feb  19 21:42:11 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Grid";
+        return View();
+    }
     
     
-    public IActionResult Navigation()
+    public IActionResult Flex()
+    {
+        ViewData["creationDate"] = "Mon Feb 20 09:26:43 2023 (GMT-7)";
+        ViewData["controller"] = controllerName;
+        ViewData["title"] = "Flex";
+        return View();
+    }
+        public IActionResult Navigation()
     {   
         ViewData["creationDate"] = "Sun Feb 12 20:51:01 2023 (GMT-7)";
         ViewData["controller"] = controllerName;
         ViewData["title"] = "Navigation";
         return View();
     }
-    
     }
 }

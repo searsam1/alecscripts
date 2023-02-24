@@ -1,20 +1,24 @@
- <div class="pre-nav bg-dark text-light">
-         
-            <p   class=" float-center p-3 ms-5" style="font-size: 30px; font-family: 'Orbitron', sans-serif;">
-                <span class="bg-light text-dark p-1 rounded-3"><span >A<span class="text-danger">l</span>ec</span> scripts</span>
-            </p>
-      </div>
+ <div class="pre-nav text-start bg-white text-light">
+
+    <img style="margin: 12px; width: 250px" src="\lib\Resources\brandmark-design.png" />
+
+</div>
       @* Navbar *@
-      <nav style="" class="thenavbar py-0 my-0 shadow-sm navbar  sticky-top navbar-expand-lg bg-white ">
+      <nav style="" class="thenavbar py-0 my-0 shadow-sm navbar  sticky-top navbar-expand-lg ">
          <style>
             .material-symbols-outlined{
             color: black;
             }
          </style>
          <div class="container-fluid">
+             <a class="text-dark text-decoration-none " asp-action="index" asp-controller="home">
+                 <img width="50" src="\lib\Resources\logo.png" />
+
+             </a>
             <a class="fs-4 Orbitron text-dark text-decoration-none " asp-action="index" asp-controller="home" >
                A<span class="text-danger">l</span>ecscripts
             </a>
+
             <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                aria-label="Toggle navigation">
