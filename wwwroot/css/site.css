@@ -289,6 +289,8 @@ img {
     border: none;
 }
 
+
+
 #leftSidebar li li:hover {
     background-color: #f8f9fa;
     border-radius: 10px;
@@ -364,3 +366,14 @@ h1, h2, h3 {
 
 
 
+.thenavbar .container-fluid {
+    background: linear-gradient( 45deg, #212122, #2c4155, #376188, #4281bb );
+    opacity: 90%;
+}
+.nav-item .nav-link {
+    color: antiquewhite;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+       
+}

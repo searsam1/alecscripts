@@ -2,6 +2,16 @@
 import clipboard  # copy()
 import re  # findall()
 import os  # walk
+import platform
+
+# Define the file path based on the current operating system
+if platform.system() == 'Windows':
+    fp = os.path.join(os.path.expanduser("~"), 'OneDrive', 'Documents', 'Repositories', 'alecscripts', 'Views', 'Shared', '_Layout.cshtml')
+elif platform.system() == 'Darwin':
+    fp = os.path.join(os.path.expanduser("~"), 'Documents', 'Repositories', 'alecscripts', 'Views', 'Shared', '_Layout.cshtml')
+else:
+    print('Unknown OS')
+    fp = '/'
 controller_label_g = ""
 
 
@@ -72,7 +82,7 @@ def get_actions(fn, control):
     """
     actions = []
     p = r"IActionResult (\w+)"
-    fp = fn + "/" + control
+    fp = fn + "\\" + control
     with open(fp, "r") as f:
         lines = f.readlines()
     for line in lines:
@@ -85,7 +95,6 @@ def get_actions(fn, control):
 
 
 def get_controllers():
-    fp = "/Users/111244rfsf/Documents/Repositories/alecscripts/Controllers"
     fn, _, controls = list(os.walk(fp))[0]
 
     controls = sorted(controls)
