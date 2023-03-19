@@ -42,16 +42,9 @@ body {
     width: 100%;
     
   }
-  #leftSidebar .mb-1:hover {
-    border-bottom: 1px solid black;
-    transition: border-bottom .5s ease;
-    
-  }
   
-  #leftSidebar li {
-        border-bottom: 1px solid white;
-    transition: border-bottom .35s ease;
-  }
+  
+
 
   
 
@@ -85,30 +78,4 @@ body {
   .fw-semibold { font-weight: 600; }
   .lh-tight { line-height: 1.25; }
 
-@media only screen and (max-width: 1600px) {
-    #rightSpacer {
-        display: none;
-    }
-    .col-8{
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 1458px) {
-    #leftSpacer {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 1170px) {
-    #rightSidebar {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 921px) {
-    #leftSidebar {
-        display: none;
-    }
-}
 

@@ -1,9 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
-    "\\Views\\Css"
+    "\\Views",
+    "\\Views\\Home",
+    "\\Views\\Shared",
+    "\\wwwroot",
+    "\\wwwroot\\css",
+    "\\wwwroot\\js"
   ],
-  "SelectedNode": "\\__new_page.py",
+  "SelectedNode": "\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }

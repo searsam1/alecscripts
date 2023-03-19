@@ -64,29 +64,6 @@ h3 {
     font-family: "Orbitron", sans-serif;
 }
 
-/* @media (max-width: 1200px) {
-    #rightSidebar {
-        display: none;
-    }
-
-    body {
-        max-width: 100px;
-        
-    }
-} */
-
-
-
-/* @media (max-width: 768px) {
-    #leftSidebar {
-        display: none;
-    }
-
-    #mainBody {
-        max-width: 100%;
-        width: auto;
-    }
-} */
 
 .sticky {
     position: -webkit-sticky;
@@ -95,34 +72,6 @@ h3 {
     top: 0;
 }
 
-#leftSidebar,
-#rightSidebar {
-
-    height: 95vh;
-    z-index: 0;
-    font-family: var(--bs-font-sans-serif);
-    font-size: .9em;
-}
-
-#leftSidebar,
-#rightSidebar {
-    -ms-overflow-style: none;
-    /* for Internet Explorer, Edge */
-    scrollbar-width: none;
-    /* for Firefox */
-    overflow-y: scroll;
-}
-
-#leftSidebar::-webkit-scrollbar,
-#rightSidebar::-webkit-scrollbar {
-    display: none;
-    /* for Chrome, Safari, and Opera */
-}
-
-#leftSidebar a {
-    margin: 5px;
-
-}
 
 
 .nav-link {
@@ -381,7 +330,7 @@ h1, h2, h3 {
 }
 
 .thenavbar .container-fluid {
-    background: linear-gradient( 45deg, #212122, #2c4155, #376188, #4281bb );
+    background: #212122;
     opacity: 90%;
 }
 .nav-item .nav-link {
@@ -389,5 +338,12 @@ h1, h2, h3 {
     font-size: 16px;
     font-family: 'IBM Plex Sans', sans-serif;
 }
-       
+
+main {
+    background: #fcfcfc;
+    max-width: 768px;
 }
+#sidebar1, #sidebar2 {
+    background-color: white;
+}
+

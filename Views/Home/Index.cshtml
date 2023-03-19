@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = "../Shared/_homeLayout.cshtml";
+    Layout = "../Shared/new_general_layout.cshtml";
 
     string[] basicTerminalCommands = @"pwd-Print Working Directory
 ls-Display directory contents
@@ -54,9 +54,9 @@ touch-Make New File".Split("\n");
 
 
 <center style="background: #fcfcfc">
-    <img style="margin: 30px;width: 50vw" src="lib\Resources\brandmark-design.png" />
-    <div class="col-8">
-<center>
+    <img style="margin: 30px;width: 300px" src="lib\Resources\brandmark-design.png" />
+    <div>
+
 
         <p class="text-center">
             <em>the process of assigning a code to something for classification or identification.</em>
@@ -68,13 +68,12 @@ touch-Make New File".Split("\n");
         </h2>
 
         <br>
-        <div class="text-center col-8">
+        <div class="text-center">
             <p>
                 The nice part about coding is the ability
                 for anyone with a computer to
                 become a software engineer.
             </p>
-        </a>
 
         <a class=" text-dark text-decoration-none" asp-controller="css" asp-action="index">
             <p class=" text-dark text-center" style="letter-spacing: .2rem; font-size: 25px; font-family: 'Orbitron', sans-serif;">
@@ -151,15 +150,6 @@ touch-Make New File".Split("\n");
         </div>
 
 
-    </div>
-
 </center>
 
 
-
-
-<style>
-    body {
-        background: linear-gradient(45deg, white,rgb(250,200,0,.5));
-    }
-</style>
